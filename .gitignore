@@ -1,0 +1,5 @@
+*.pre.wav
+out_*/
+chk*/
+prev/
+__pycache__/

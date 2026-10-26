@@ -1,0 +1,95 @@
+{
+ "impact_big": {
+  "file": "lib/impact_big.wav",
+  "source": "Big cinematic impact",
+  "dur": 7.93,
+  "use": "chapter changes, big reveals",
+  "note": "has a ~1.3 s swell before the hit: align hit, not file start",
+  "hit_at": 2.17
+ },
+ "impact_trailer": {
+  "file": "lib/impact_trailer.wav",
+  "source": "Movie trailer epic impact",
+  "dur": 4.87,
+  "use": "the single biggest reveal of a video (use once)",
+  "note": "swell then hit",
+  "hit_at": 0.93
+ },
+ "sub_knock": {
+  "file": "lib/sub_knock.wav",
+  "source": "Knocking sub bass",
+  "dur": 0.62,
+  "use": "numbers/stats landing, list beats (felt, not heard)",
+  "note": ""
+ },
+ "heartbeat": {
+  "file": "lib/heartbeat.wav",
+  "source": "Human single heart beat",
+  "dur": 1.1,
+  "use": "tension 1\u20132 s before a reveal (repeat 2\u20133x)",
+  "note": ""
+ },
+ "riser": {
+  "file": "lib/riser.wav",
+  "source": "Cinematic trailer riser",
+  "dur": 2.58,
+  "use": "build into a reveal; ends at the hit",
+  "note": "",
+  "hit_at": 2.53
+ },
+ "woosh_deep": {
+  "file": "lib/woosh_deep.wav",
+  "source": "Deep air woosh",
+  "dur": 2.98,
+  "use": "transitions, maps/cards moving fast",
+  "note": ""
+ },
+ "swoosh_slow": {
+  "file": "lib/swoosh_slow.wav",
+  "source": "Slow sweeping swoosh",
+  "dur": 5.5,
+  "use": "slow camera moves, timeline travel",
+  "note": ""
+ },
+ "page_turn": {
+  "file": "lib/page_turn.wav",
+  "source": "Page turn single",
+  "dur": 0.45,
+  "use": "new chapter / next story",
+  "note": ""
+ },
+ "paper_slide": {
+  "file": "lib/paper_slide.wav",
+  "source": "Paper slide",
+  "dur": 1.09,
+  "use": "cards, labels, photos sliding in",
+  "note": ""
+ },
+ "tick": {
+  "file": "lib/tick.wav",
+  "source": "Clock ticker single",
+  "dur": 0.07,
+  "use": "one timeline step / counter tick",
+  "note": ""
+ },
+ "ticker_run": {
+  "file": "lib/ticker_run.wav",
+  "source": "Clock ticker single",
+  "dur": 0.85,
+  "use": "years rolling on a timeline",
+  "note": ""
+ },
+ "_missing": [
+  "keyboard typing",
+  "single key press",
+  "mouse click",
+  "camera shutter",
+  "polaroid",
+  "rubber stamp",
+  "marker/pen scribble",
+  "highlighter",
+  "thumbtack/pin",
+  "map unfold",
+  "sub drop"
+ ]
+}
