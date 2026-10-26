@@ -20,4 +20,4 @@ Black `#0A0A0A` · cream `#F4F1EA` · amber `#FFB224` · Archivo Black + Space M
 
 ## Adding sounds
 Drop real recordings (Pixabay / YouTube Audio Library; never AI-generated) into `sfx/` with a descriptive name.
-Wanted next: keyboard typing, key press, mouse click, camera shutter, polaroid, rubber stamp, marker scribble, highlighter, thumbtack, map unfold, sub drop.
+Wanted next: exact highlighter (Pixabay 385295), a real sub drop. Everything else is in the library.

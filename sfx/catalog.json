@@ -26,7 +26,7 @@
   "file": "lib/heartbeat.wav",
   "source": "Human single heart beat",
   "dur": 1.1,
-  "use": "tension 1\u20132 s before a reveal (repeat 2\u20133x)",
+  "use": "tension 1–2 s before a reveal (repeat 2–3x)",
   "note": ""
  },
  "riser": {
@@ -80,16 +80,160 @@
   "note": ""
  },
  "_missing": [
-  "keyboard typing",
-  "single key press",
-  "mouse click",
-  "camera shutter",
-  "polaroid",
-  "rubber stamp",
-  "marker/pen scribble",
-  "highlighter",
-  "thumbtack/pin",
-  "map unfold",
-  "sub drop"
- ]
+  "exact highlighter (Pixabay 385295): using scribble substitute",
+  "sub drop: using sub_knock"
+ ],
+ "typing_run": {
+  "file": "lib/typing_run.wav",
+  "source": "Mixkit keyboard typing 1386",
+  "license": "Mixkit Free Licence",
+  "dur": 26.31,
+  "use": "text typing on screen letter by letter (cut any length from it)",
+  "note": "",
+  "hit_at": 14.87
+ },
+ "key_press": {
+  "file": "lib/key_press.wav",
+  "source": "Mixkit single key 2533",
+  "license": "Mixkit Free Licence",
+  "dur": 0.35,
+  "use": "last letter / Enter on typed text",
+  "note": "",
+  "hit_at": 0.0
+ },
+ "mouse_click": {
+  "file": "lib/mouse_click.wav",
+  "source": "Mixkit mouse click close 1113",
+  "license": "Mixkit Free Licence",
+  "dur": 0.35,
+  "use": "subscribe tap, selecting an item",
+  "note": "",
+  "hit_at": 0.01
+ },
+ "paper_drop": {
+  "file": "lib/paper_drop.wav",
+  "source": "Mixkit newspaper falling 386",
+  "license": "Mixkit Free Licence",
+  "dur": 0.61,
+  "use": "card/photo landing on the desk",
+  "note": "",
+  "hit_at": 0.21
+ },
+ "marker": {
+  "file": "lib/marker.wav",
+  "source": "Mixkit pen marker line 2998",
+  "license": "Mixkit Free Licence",
+  "dur": 1.24,
+  "use": "circle/underline/arrow drawing",
+  "note": "lowpassed 9 kHz (source very bright)",
+  "hit_at": 0.04
+ },
+ "scribble": {
+  "file": "lib/scribble.wav",
+  "source": "Mixkit writing scribble 2369",
+  "license": "Mixkit Free Licence",
+  "dur": 1.19,
+  "use": "highlighter sweep / quick writing (substitute for highlighter)",
+  "note": "",
+  "hit_at": 0.17
+ },
+ "shutter": {
+  "file": "lib/shutter.wav",
+  "source": "Mixkit Nikon shutter 1434",
+  "license": "Mixkit Free Licence",
+  "dur": 0.4,
+  "use": "photo appears / hard cut to a photo",
+  "note": "",
+  "hit_at": 0.04
+ },
+ "boom_impact": {
+  "file": "lib/boom_impact.wav",
+  "source": "Mixkit movie impact intro 2902",
+  "license": "Mixkit Free Licence",
+  "dur": 5.99,
+  "use": "chapter / title impact (alternative to impact_big)",
+  "note": "",
+  "hit_at": 1.3
+ },
+ "boom_distant": {
+  "file": "lib/boom_distant.wav",
+  "source": "Mixkit distant explosion 1690",
+  "license": "Mixkit Free Licence",
+  "dur": 5.51,
+  "use": "deep distant boom under dramatic lines (keep low)",
+  "note": "",
+  "hit_at": 0.44
+ },
+ "riser_synth": {
+  "file": "lib/riser_synth.wav",
+  "source": "Mixkit cinematic synth riser 645",
+  "license": "Mixkit Free Licence",
+  "dur": 9.34,
+  "use": "long build into a reveal (tonal; use sparingly, low)",
+  "note": "",
+  "hit_at": 3.87
+ },
+ "woosh_tunnel": {
+  "file": "lib/woosh_tunnel.wav",
+  "source": "Mixkit tunnel reverb woosh 1486",
+  "license": "Mixkit Free Licence",
+  "dur": 6.75,
+  "use": "slow deep transition, chapter exit",
+  "note": "",
+  "hit_at": 0.62
+ },
+ "woosh_air": {
+  "file": "lib/woosh_air.wav",
+  "source": "Mixkit air woosh 1489",
+  "license": "Mixkit Free Licence",
+  "dur": 2.32,
+  "use": "quick soft transition / element flying in",
+  "note": "",
+  "hit_at": 0.71
+ },
+ "heartbeat_slow": {
+  "file": "lib/heartbeat_slow.wav",
+  "source": "Mixkit slow heartbeat 494",
+  "license": "Mixkit Free Licence",
+  "dur": 4.0,
+  "use": "tension before a reveal (2–3 beats)",
+  "note": "",
+  "hit_at": 0.45
+ },
+ "stamp": {
+  "file": "lib/stamp.wav",
+  "source": "Freesound 514486 \"Office stamp\" by whammy",
+  "license": "CC0",
+  "dur": 1.03,
+  "use": "✕/✓ verdicts, MYTH/TRUE stamps",
+  "note": "single stamp cut from 4; preview-quality MP3",
+  "hit_at": 0.02
+ },
+ "pin_push": {
+  "file": "lib/pin_push.wav",
+  "source": "Freesound 446634 \"ThumbTack\" by Nicolas4677",
+  "license": "CC0",
+  "dur": 0.5,
+  "use": "map pin drops",
+  "note": "source very quiet, normalized",
+  "hit_at": 0.27
+ },
+ "map_unfold": {
+  "file": "lib/map_unfold.wav",
+  "source": "Freesound 447931 \"Unfold a map\" by Breviceps",
+  "license": "CC0",
+  "dur": 1.42,
+  "use": "map opens / zooms in",
+  "note": "",
+  "hit_at": 0.6
+ },
+ "polaroid": {
+  "file": "lib/polaroid.wav",
+  "source": "Freesound 444682 \"taking a Polaroid photo\" by larspriebe",
+  "license": "CC0",
+  "dur": 3.41,
+  "use": "old/archival photo appears (shutter + eject)",
+  "note": "",
+  "hit_at": 0.8
+ }
 }
