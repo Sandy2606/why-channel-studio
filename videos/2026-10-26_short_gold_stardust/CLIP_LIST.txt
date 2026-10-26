@@ -1,0 +1,77 @@
+ORIGINAL CLIPS - NO DESCRIPT, NO WATERMARK, NO RE-ENCODE
+Downloaded straight from Pexels and NASA, as separate MP4 files.
+Pexels clips are free for commercial use under the Pexels licence.
+NASA clip: credit "NASA" - NASA's Goddard Space Flight Center/CI Lab.
+
+These are the full originals, NOT pre-cropped to 9:16.
+Most are 16:9 (ring is square, 2160x2160). Fill/crop them to 9:16
+in your editor - at 1080p/4K they will hold up far better than
+the old 720x1280 Descript pack. The 4K clips in particular give
+you ~1215px of width to crop from, so a 1080x1920 fill stays sharp.
+
+1. 01-gold-ring.mp4
+   GOLD ring, not silver. "Elegant Gold and Diamond Rings on Black Background"
+   Pexels 34369899, by Kat IE. 2160x2160, 15.7s.
+   https://www.pexels.com/video/elegant-gold-and-diamond-rings-on-black-background-34369899/
+
+2. 02-earth-from-space.mp4
+   Earth from space, rotating, half in shadow.
+   Pexels 33453197, by Adis Resic. 3840x2160 (4K), 12.3s.
+   https://www.pexels.com/video/rotating-earth-in-space-with-half-shadow-33453197/
+
+3. 03-sun-surface.mp4
+   The Sun's glowing surface, close-up. Not solar panels.
+   Pexels 33483595, by Adis Resic. 3840x2160 (4K), 16.7s.
+   https://www.pexels.com/video/detailed-close-up-animation-of-glowing-sun-surface-33483595/
+
+4. 04-gold-bars.mp4
+   Gold bars, stamped "Fine Gold 999.9".
+   NOTE - this is a 3D digital animation of gold bars, not live footage
+   of physical bars. No free Pexels clip of real, live-footage stacked
+   gold bars was found (only paid iStock thumbnails).
+   Pexels 8733007, "Digital Animation of Gold Bars", by crazy motions.
+   3840x2160 (4K), 12.0s.
+   https://www.pexels.com/video/digital-animation-of-gold-bars-8733007/
+
+   PLATINUM: no genuine platinum bar/ingot clip was found on Pexels.
+   As you said, gold bars only - no grey liquid texture included.
+
+5. 05-meteor.mp4
+   Meteor / shooting star - streak clearly visible at about 15 seconds,
+   upper left of frame. Night sky over trees.
+   "Stunning Night Sky with Shooting Star", Pexels 32270503,
+   by Jason Pittman. 1920x1080, 30.0s.
+   https://www.pexels.com/video/stunning-night-sky-with-shooting-star-32270503/
+   NOTE: a first meteor candidate (Pexels 2792967, a meteor-shower
+   timelapse) was checked frame by frame and NO clear streak could be
+   confirmed, so it was dropped and NOT included. This file replaces it.
+
+6. 06-gold-panning.mp4
+   Real gold panning - a green gold pan being swirled in a rocky stream.
+   NOT a gravel quarry / open-pit mine.
+   Pexels 24838309, by Alex Moliski. 1920x1080, 9.8s.
+   https://www.pexels.com/video/a-person-is-holding-a-green-bowl-filled-with-water-24838309/
+
+7. 07-gold-jewellery-shop.mp4
+   Gold jewellery on display in a shop window - necklaces, bracelets,
+   rings, with "22K GOLD" signage.
+   NOTE - location is NOT verified as India. The creator is based in
+   Istanbul, Turkey. No India-located gold jewellery shop display was
+   found on Pexels, so this is a clear shop display, not an India-verified one.
+   Pexels 36338911, "Luxurious Gold Jewelry Showcase Display",
+   by Sururi Ballidag Director. 3840x2160 (4K), 7.5s.
+   https://www.pexels.com/video/luxurious-gold-jewelry-showcase-display-36338911/
+
+8. 08-nasa-neutron-star-collision-1080p.mp4
+   NASA neutron-star collision animation - "Doomed Neutron Stars Create
+   Blast of Light and Gravitational Waves" (GW170817, SVS 12740).
+   This single animation covers BOTH the neutron-star collision AND
+   the kilonova jets / expanding debris, so no separate kilonova file
+   is needed. Credit: NASA.
+   1920x1080, 42.3s. A 4K version also exists on the same SVS page
+   but was not used, to keep the zip smaller and faster.
+   https://svs.gsfc.nasa.gov/12740
+   Direct file: https://svs.gsfc.nasa.gov/vis/a010000/a012700/a012740/12740_NS_Merger_Update_H264_1080.mp4
+
+All files were checked with ffprobe for resolution/duration and
+confirmed as MP4 video with no Descript watermark and no re-encoding.

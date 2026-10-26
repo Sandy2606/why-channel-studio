@@ -31,3 +31,16 @@ Real recordings only. Peak-normalized to -3 dBFS, 48 kHz stereo. `hit_at` in cat
 | `pin_push` | map pin drops | Freesound 446634 "ThumbTack" by Nicolas4677 (CC0) |
 | `map_unfold` | map opens / zooms in | Freesound 447931 "Unfold a map" by Breviceps (CC0) |
 | `polaroid` | old/archival photo appears (shutter + eject) | Freesound 444682 "taking a Polaroid photo" by larspriebe (CC0) |
+
+## Added Oct 26, 2026 (Gold week)
+| name | use |
+|---|---|
+| coin_prize | gold coin / ring landing: use first 0.35 s only |
+| coins_clink | coins, gold bars, money cards |
+| space_drone | low space bed under star scenes |
+| meteor_fall | meteor streak; peak at 2.54 s |
+| lava_bubble / lava_flow | molten Earth / volcano ambience |
+| sparkle_soft | stardust (very low) |
+| metal_transform | mechanical clunk (balance scale) |
+| phone_typing | typing on a phone |
+| waterfall | stream ambience (gold panning) |

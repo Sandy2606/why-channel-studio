@@ -222,6 +222,9 @@ The user is in Texas, so IST times are converted to local time.
 - 2D brand animations for the explaining parts (long video).
 - Phrase-anchored scene timing.
 - Why? Pace Model for long videos: fast hooks, lists and asks; explaining pace with natural pauses; beats after questions and before reveals (user: "it's good").
+- One explainer graphic per idea in Shorts too (user asked "add graphics for explanation"): element chain stopping at iron, balance scale, collapse, sugar-cube counter, spectrum, element tiles, Earth cutaway, timeline (Gold Short 1).
+- NASA SVS animations (public domain, credit Goddard/CI Lab) for space events; for 16:9 clips with moving subjects, use a wide feathered band over a starfield instead of a tight 9:16 crop (the subjects leave a tight crop).
+- Clips sent as original MP4s straight from Pexels/NASA (never through Descript: free-plan watermark).
 
 **DROP (failed; never repeat):**
 - Epic/cinematic style.
@@ -249,4 +252,5 @@ The user is in Texas, so IST times are converted to local time.
 - Ravana Short (Oct 23): not scored.
 - Saturday Short (Oct 24): v2 6.5, v3 about 7.5. The gaps were in the script: a question-first hook, and 75 s long.
 - Sunday Short "Why burn Ravana" (Oct 25): v1 8.0, v2 8.4. Remaining: an 8 s static end grid, estimated Telugu caption timing, and a 6 s AI image hold.
+- Gold Short 1 "Your gold came from dead stars" (Oct 26): EN 8.3, TE 8.0. Strong graphics and proof card. Holding it back: no on-screen hook text for the first 1.7 s, the iron-vs-gold scale is on screen only 1.5 s, Telugu caption timing is estimated, the meteor/panning clips are 1080p upscales, and the subscribe pop crowds the panning shot.
 - Long video "Dussehra Is NOT One Story. It's Three." (Oct 26): v1 8.3 on visuals, but the pacing was too fast (204 wpm). v3 final: Pace Model v2 (172 wpm), chapter pause plus boom, motion-graphics SFX, faint real fire/crowd/drums. The user felt the SFX were still one-note; the next video uses the real-SFX system.

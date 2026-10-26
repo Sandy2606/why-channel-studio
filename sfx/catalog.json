@@ -235,5 +235,85 @@
   "use": "old/archival photo appears (shutter + eject)",
   "note": "",
   "hit_at": 0.8
+ },
+ "coin_prize": {
+  "file": "coin_prize.wav",
+  "source": "Mixkit gold coin prize 1999",
+  "license": "Mixkit Free Licence",
+  "dur": 1.96,
+  "use": "gold coin / ring landing (use first 0.35 s only; long prize-ring tail)",
+  "note": "added Oct 26, 2026 (gold week)"
+ },
+ "coins_clink": {
+  "file": "coins_clink.wav",
+  "source": "Mixkit clinking coins 1993",
+  "license": "Mixkit Free Licence",
+  "dur": 1.02,
+  "use": "coins, gold bars, money cards",
+  "note": "added Oct 26, 2026 (gold week)"
+ },
+ "space_drone": {
+  "file": "space_drone.wav",
+  "source": "Mixkit low drone engine hum 2745",
+  "license": "Mixkit Free Licence",
+  "dur": 88.4,
+  "use": "deep space bed under star / space scenes (loop, low)",
+  "note": "added Oct 26, 2026 (gold week)"
+ },
+ "meteor_fall": {
+  "file": "meteor_fall.wav",
+  "source": "Mixkit small meteor falling 1337",
+  "license": "Mixkit Free Licence",
+  "dur": 5.04,
+  "use": "meteor / fireball streak; peak at 2.54 s = impact",
+  "note": "added Oct 26, 2026 (gold week)"
+ },
+ "lava_bubble": {
+  "file": "lava_bubble.wav",
+  "source": "Mixkit bubbling volcano lava 2440",
+  "license": "Mixkit Free Licence",
+  "dur": 83.26,
+  "use": "molten earth / lava ambience (low)",
+  "note": "added Oct 26, 2026 (gold week)"
+ },
+ "lava_flow": {
+  "file": "lava_flow.wav",
+  "source": "Mixkit volcano eruption with lava flow 2443",
+  "license": "Mixkit Free Licence",
+  "dur": 88.8,
+  "use": "volcano / eruption ambience",
+  "note": "added Oct 26, 2026 (gold week)"
+ },
+ "sparkle_soft": {
+  "file": "sparkle_soft.wav",
+  "source": "Mixkit magic wand sparkle 3062",
+  "license": "Mixkit Free Licence",
+  "dur": 2.5,
+  "use": "stardust / particles forming (keep very low; can feel childish)",
+  "note": "added Oct 26, 2026 (gold week)"
+ },
+ "metal_transform": {
+  "file": "metal_transform.wav",
+  "source": "Mixkit metal robot transformation 1428",
+  "license": "Mixkit Free Licence",
+  "dur": 1.95,
+  "use": "mechanical clunk: balance scale, machines, parts locking",
+  "note": "added Oct 26, 2026 (gold week)"
+ },
+ "phone_typing": {
+  "file": "phone_typing.wav",
+  "source": "Mixkit smartphone typing 1393",
+  "license": "Mixkit Free Licence",
+  "dur": 4.5,
+  "use": "typing on a phone screen",
+  "note": "added Oct 26, 2026 (gold week)"
+ },
+ "waterfall": {
+  "file": "waterfall.wav",
+  "source": "Mixkit flowing waterfall on forest 2516",
+  "license": "Mixkit Free Licence",
+  "dur": 8.5,
+  "use": "river / stream ambience (gold panning)",
+  "note": "added Oct 26, 2026 (gold week)"
  }
 }
