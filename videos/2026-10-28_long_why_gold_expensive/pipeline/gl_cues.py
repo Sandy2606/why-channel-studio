@@ -32,7 +32,7 @@ def get_cues(lang):
     # ---------- cold open ----------
     add(0.0, 'plain', ('clip', 'FC', .15, (1.0, 1.08)), credit='Pexels')
     add(K('In January'), 'price5k', ('clip', 'B', .55, (1.0, 1.1)), credit='crazy motions · Pexels (3D)',
-        t_gram=K("that's about 31", word='31'), t_cross=K('crossed', word='cross'), t_first=K('For the first'))
+        t_gram=K("that's about 31", word='31'), t_cross=K('crossed', .7, word='cross'), t_first=K('For the first'))
     add(K('And think about'), 'notfood', ('clip', 'GC', .45, (1.0, 1.1)), credit='cottonbro studio · Pexels',
         t_metal=K('Gold is just'), t_eat=K("We can't eat"), t_cars=K("We can't run"))
     add(K('And yet the whole'), 'plain', ('clip', 'ST', .1, (1.0, 1.1)), credit='Pexels')
@@ -43,8 +43,8 @@ def get_cues(lang):
     add(K('Chapter one'), 'chapter', ('stars',), num=L('CHAPTER 1', 'చాప్టర్ 1'), title=L('IT CAME FROM THE STARS', 'స్టార్స్ నుంచి వచ్చింది'), chap=1)
     add(K('So, first'), 'plain', ('clip', 'E', .1, (1.0, 1.06)), credit='Adis Resic · Pexels', pill=L('NOT FROM EARTH', 'భూమి మీద కాదు'), pill_t=K('Not from Earth'))
     add(K('Not from Earth', .45), 'plain', ('clip', 'S', .15, (1.0, 1.1)), credit='Adis Resic · Pexels', pill=L('NOT FROM THE SUN', 'సూర్యుడిలో కాదు'), pill_t=K('Not from Earth', .5))
-    add(K('Stars make new'), 'fusion', ('glow',), t_H=K('hydrogen', word='hydrogen'), t_He=K('hydrogen', word='helium'), t_C=K('hydrogen', word='carbon'),
-        t_Fe=K('hydrogen', word='iron'), t_stop=K('And there, it stops'), t_heavy=K('Gold is way heavier'))
+    add(K('Stars make new'), 'fusion', ('glow',), t_H=K('hydrogen', word='hydrogen'), t_He=K('hydrogen', .22, word='helium'), t_C=K('hydrogen', .52, word='carbon'),
+        t_Fe=K('hydrogen', .82, word='iron'), t_stop=K('And there, it stops'), t_heavy=K('Gold is way heavier'))
     add(K('Gold is made when'), 'nasa', ('nasa',), credit=CRN, t_crash=K('Gold is made when', word='smash', frac=.75), label=L('TWO DEAD STARS', 'రెండు చనిపోయిన స్టార్స్'))
     add(K('And in 2017'), 'y2017', ('nasa',), credit=CRN, t_away=K('130 million'))
     add(K("And here's the twist"), 'cutaway', ('stars',), t_sank=K('When Earth was young', word='sank', frac=.7))

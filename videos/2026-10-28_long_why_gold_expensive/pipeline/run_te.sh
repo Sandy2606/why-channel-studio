@@ -1,0 +1,2 @@
+cd /home/claude/goldL; D=out_te; mkdir -p $D
+python3 gl_render.py te $D audio && (python3 gl_render.py te $D part 0 2 & python3 gl_render.py te $D part 1 2 & wait) && printf "file 'part0.mp4'\nfile 'part1.mp4'\n" > $D/list.txt && ffmpeg -v error -y -f concat -safe 0 -i $D/list.txt -i $D/audio.wav -map 0:v -map 1:a -c:v copy -c:a aac -b:a 256k -shortest -movflags +faststart $D/why_gold_expensive_TE.mp4 && echo FIN
