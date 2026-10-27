@@ -45,6 +45,7 @@ Channel: "Why?" (YouTube @WhyEveryQuestionHasaStory, Instagram @whyeveryquestion
 - **Script voice: conversational, talking TO the viewer.**
   - Open with the shocking fact, then the question, then "Let me explain."
   - Never open with "Hey" or "Do you know".
+  - Friend telling a friend, NOT a teacher quizzing a class (user, Oct 26): "Okay, look at this…", "here's what blew my mind", "this is my favourite part", "right?". Avoid quiz-style "So why does X? Let me explain" chains. Telugu the same: "ఒక్కసారి చూడండి", "నాకు షాకింగ్ అనిపించింది", "కదా?".
 - **Ending, 8 s or less:** full-video pointer (Shorts only), then a follow/subscribe line, then "comment your why".
   - EN: "Subscribe for a new why every day, and comment your why below. We'll do the research and get you the answer."
   - The user records both FOLLOW and SUBSCRIBE takes; IG versions use FOLLOW, YT versions use SUBSCRIBE.
