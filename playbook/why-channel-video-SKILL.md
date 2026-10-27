@@ -41,6 +41,7 @@ Channel: "Why?" (YouTube @WhyEveryQuestionHasaStory, Instagram @whyeveryquestion
 
 ## Fixed brand
 - Colours: black #0A0A0A, cream #F4F1EA, amber #FFB224 accent, red for strikes and the subscribe button.
+- **Series tag (top-left stamp), user rule Oct 27:** week theme + video number / total that week, e.g. `GOLD · 2/6` (TE `గోల్డ్ · 2/6`). Not "GOLD WEEK", not bare "GOLD". The long video uses `GOLD · FULL STORY`.
 - Fonts: Archivo Black for headlines and captions, Space Mono for labels. Telugu uses Noto Sans Telugu Black (RAQM). Archivo has no ▶ or ↓ glyphs, so never use them.
 - **Script voice: conversational, talking TO the viewer.**
   - Open with the shocking fact, then the question, then "Let me explain."
