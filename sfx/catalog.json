@@ -315,5 +315,29 @@
   "dur": 8.5,
   "use": "river / stream ambience (gold panning)",
   "note": "added Oct 26, 2026 (gold week)"
+ },
+ "water_bubbles": {
+  "file": "water_bubbles.wav",
+  "source": "Mixkit deep water bubbles 1321",
+  "license": "Mixkit Free Licence",
+  "dur": 5.85,
+  "use": "liquid bubbling / dissolving in acid (closest real match to acid fizz)",
+  "note": "added Oct 27, 2026 (gold week)"
+ },
+ "jar_set_down": {
+  "file": "jar_set_down.wav",
+  "source": "Mixkit set down jelly jar 3148",
+  "license": "Mixkit Free Licence",
+  "dur": 0.5,
+  "use": "glass jar placed on a shelf/table",
+  "note": "added Oct 27, 2026 (gold week)"
+ },
+ "coin_flutter": {
+  "file": "coin_flutter.wav",
+  "source": "Mixkit fluttering coin 3183",
+  "license": "Mixkit Free Licence",
+  "dur": 1.75,
+  "use": "single metallic clink: medal, coin landing",
+  "note": "added Oct 27, 2026 (gold week)"
  }
 }
