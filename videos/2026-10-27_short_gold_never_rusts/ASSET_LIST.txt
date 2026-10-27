@@ -1,0 +1,78 @@
+BOHR / GOLD ASSETS — ORIGINAL FILES, NO DESCRIPT
+All files are the originals as downloaded, not re-encoded, not passed through Descript, no watermark added.
+Sizes, resolutions and durations below were checked on the downloaded files (ffprobe / file).
+
+PEXELS VIDEOS (Pexels licence — free for commercial use, no attribution required)
+1. Rusty metal close-up
+   File: 12214174_3840_2160_24fps.mp4 (53 MB)
+   Pexels video 27732551 — "Close-up video of a rusty iron chain hanging from an old gate"
+   Creator: Eudes cs
+   Page: https://www.pexels.com/video/a-close-up-of-a-rusty-metal-gate-with-a-chain-27732551/
+   Checked: 3840x2160, 13.9s, H.264
+   Note: close-up of a rusty chain on an old gate, not a flat sheet of rusty metal.
+
+2. Chemistry flask bubbling — CLOSEST MATCH, read this note
+   File: 9431132-hd_1920_1080_25fps.mp4 (6.1 MB)
+   Pexels video 9431132 — "Close-up of chemical reaction in test tube with blue-gloved hands"
+   Creator: Mikhail Nilov
+   Page: https://www.pexels.com/video/close-up-video-of-chemical-reaction-9431132/
+   Checked: 1920x1080, 15.7s, H.264 (this video's maximum; 4K was not offered)
+   Note: bubbling chemical reaction close-up, but it is a test tube, not an Erlenmeyer flask. No flask-shaped bubbling clip at this quality was found in this pass.
+
+3. Gold jewellery
+   File: 4716688-uhd_4096_2160_25fps.mp4 (37 MB)
+   Pexels video 4716688 — "Intricate golden chains glistening in close-up focus"
+   Creator: cottonbro studio
+   Page: https://www.pexels.com/video/a-close-up-of-a-gold-chain-necklace-4716688/
+   Checked: 4096x2160, 16.7s, H.264
+
+WIKIMEDIA COMMONS PHOTOS
+4. Tutankhamun's gold mask — clear front shot (PRIMARY)
+   File: tutmask-cairo.jpg (1.3 MB)
+   Commons file: CairoEgMuseumTaaMaskMostlyPhotographed.jpg
+   Checked: 1600x2000, visually confirmed as a straight front shot of the mask.
+   Note: licence for this specific file was not re-checked on its Commons page in this pass — check its file page before commercial use if you need a licence record.
+
+5. Tutankhamun's gold mask — BACKUP, licence verified
+   File: tutmask-jon-bodsworth.jpg (73 KB)
+   Commons file: Tutmask.jpg — "Golden funeral mask of king Tutankhamun", author Jon Bodsworth, 10 December 2007
+   Checked: 500x667 — clear and frontal, but low resolution.
+   Licence verified on its Commons page: copyrighted free use, free for any purpose including commercial use and modification.
+
+6. Niels Bohr Institute, Copenhagen
+   File: niels-bohr-institute.jpg (993 KB)
+   Commons file: Niels Bohr Institute 1.jpg, author Thue, public domain (per search-result / mirror record)
+   Checked: 2048x1349, visually confirmed — the building facade reads "NIELS BOHR INSTITUTET 1920".
+   Photo dated 26 March 2005 (EXIF, SONY DSC-P52).
+
+7. German troops in Copenhagen — standalone photo (PRIMARY for troops)
+   File: german-troops-copenhagen-airport.jpg (1.7 MB)
+   Commons file: Groups of German soldiers at Copenhagen Airport.jpg
+   Checked: 2550x1882, visually confirmed — German soldiers in uniform at an airfield, aircraft in the background.
+   CAVEAT: the Commons title places it at Copenhagen Airport, but no April 1940 date was verified for this file in this pass. Do not caption it as dated April 1940 on this file alone.
+
+8. German troops / Copenhagen, April 1940 — magazine page (DATE CONTEXT, extra)
+   File: signal-copenhagen-april9.jpg (4.2 MB)
+   Commons file: Signal May 1940 No 2 page 15 — Danish-language Signal No. 2, May 1940, headed "(April 9 in Oslo) in Copenhagen"
+   Checked: 3322x4372. Licence on its Commons page: no known copyright restrictions, public domain as official Wehrmacht work (uncredited photographers).
+   CAVEAT: this is a scanned magazine page, not a single press photo. Its bottom-right panel is captioned as photographed on the morning of 12 April — King Christian of Denmark on his morning ride in Copenhagen streets — and its top-left panel shows mountain troops on a ship en route to Norway. Use it for April 1940 Copenhagen context, not as a standalone "troops marching in Copenhagen" shot.
+
+SOUND EFFECTS (Mixkit Sound Effects Free Licence — free for commercial and non-commercial projects including YouTube, no attribution required)
+9. Acid fizz / bubbling — CLOSEST MATCH, read this note
+   File: mixkit-deep-water-bubbles-1321.wav (1009 KB)
+   Mixkit title: "Deep water bubbles"
+   Checked: WAV, stereo 44.1 kHz, 5.9s
+   Note: no literal "acid fizz" file exists in Mixkit's free library (searches for "acid fizz" and "fizz" returned only paid items). This is a liquid bubbling sound, not a chemical-acid recording.
+
+10. Glass jar being set down
+    File: mixkit-set-down-jelly-jar-3148.wav (88 KB)
+    Mixkit title: "Set down jelly jar"
+    Checked: WAV, stereo 44.1 kHz, 0.5s — a single short jar set-down thud, no breaking, no pouring.
+
+11. Metal medal clink — CLOSEST MATCH, read this note
+    File: mixkit-fluttering-coin-3183.wav (303 KB)
+    Mixkit title: "Fluttering coin"
+    Checked: WAV, stereo 44.1 kHz, 1.8s — a single metallic clink, not a jingle.
+    Note: this is a coin clink, not a medal specifically, and it is a different file from the previously delivered mixkit-gold-coin-prize-1999.wav. No literal "medal" file was found in Mixkit's free library.
+
+FILES IN THIS ZIP: 11 assets + this list = 12 files.
