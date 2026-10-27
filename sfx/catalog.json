@@ -339,5 +339,29 @@
   "dur": 1.75,
   "use": "single metallic clink: medal, coin landing",
   "note": "added Oct 27, 2026 (gold week)"
+ },
+ "vault_open": {
+  "file": "vault_open.wav",
+  "source": "Mixkit opening a metal vault 3186",
+  "license": "Mixkit Free Licence",
+  "dur": 2.0,
+  "use": "vault door opening (heavy metal)",
+  "note": "added Oct 27, 2026 (gold long)"
+ },
+ "machine_hum": {
+  "file": "machine_hum.wav",
+  "source": "Mixkit industrial machine hum 2504",
+  "license": "Mixkit Free Licence",
+  "dur": 50.0,
+  "use": "machines / printing press bed (low)",
+  "note": "added Oct 27, 2026 (gold long)"
+ },
+ "coin_win": {
+  "file": "coin_win.wav",
+  "source": "Mixkit magical coin win 1936",
+  "license": "Mixkit Free Licence",
+  "dur": 2.61,
+  "use": "AVOID mostly: bright game-like chime; only very low under a price reveal",
+  "note": "added Oct 27, 2026 (gold long)"
  }
 }
