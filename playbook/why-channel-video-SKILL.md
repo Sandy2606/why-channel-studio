@@ -274,3 +274,4 @@ The user is in Texas, so IST times are converted to local time.
 **Score history:**
 - Ravana new-style test (Oct 27): v1 ~8.0 (red + mascot rejected), v2 approved style.
 - Gold Short 3 "Why is gold yellow?" (Oct 28): EN/TE ~8.0. Holding back: soft BBC screenshot text, music not the gold-week bed, TE 69 s, TE captions sentence-level timing, no cover delivered.
+- **Covers (Oct 28):** hero image from ChatGPT (Claude gives the prompt; user generates) + Claude's layer: large taped real photo, real clipping with highlight, amber thread + glow dot linking them (user: "organic, stylish"), headline in the dark lower third (cream + amber gradient word), WHY? logo top-left, amber-outlined series pill "GOLD · 3/6" under the headline (TE: "గోల్డ్ · 3/6").
