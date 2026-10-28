@@ -1,0 +1,161 @@
+GOLD VIDEO — SCREENSHOTS + PHOTOS/CLIPS
+Captured / downloaded 2026-10-28. All page captures were checked visually:
+headline and key line are visible in the PNG named for each item.
+
+IMPORTANT — HOW THE SCREENSHOTS WERE MADE
+The browser cannot save a page screenshot as a PNG file (confirmed in
+testing). Each article below was therefore saved with the browser's
+print/save-as-PDF function, and the PNGs are pages rendered from that PDF
+at 150 dpi. They are print-layout renders, not browser screenshot PNGs:
+narrow article columns, site header/branding where the print layout keeps
+it, and some ad placeholders. The full PDF for each article is included,
+so the whole page is in the pack, not just the headline PNG.
+
+=====================================================================
+SCREENSHOTS
+=====================================================================
+
+1. Business Today — "few weeks of imports" article
+   Files: bt-may6-2026-article.pdf (11 pages, letter)
+          bt-may6-headline.png (PDF page 1)
+          bt-may6-few-weeks-line.png (PDF page 6)
+   Source: https://www.businesstoday.in/industry/banks/story/rbi-continues-to-bring-more-gold-back-to-india-heres-why-530171-2026-05-06
+   Headline: RBI continues to bring more gold back to India. Here's why
+   Author: Nachiket Kelkar
+   Date on page: Updated May 6, 2026 7:55 PM IST
+   Key line verified on page 6: the 1991 reserves passage — $1.2 billion,
+   barely enough for a few weeks of imports; March 2026 gold reserves
+   over $691 billion.
+   DATE FLAG: you labelled this Aug 16, 2026. No Business Today article
+   dated Aug 16, 2026 with these lines was found; the article carrying
+   the "few weeks of imports" line is dated May 6, 2026. Captured as
+   May 6, 2026.
+   SECRET FLAG: the phrase "kept largely secret" (and "secret"/"secrecy")
+   does NOT appear anywhere in this article — page text was searched.
+   The "secret" wording actually sits in The Week item below
+   (subheading + "kept under wraps"), not in this Business Today piece.
+   Do not caption this Business Today capture as a "secret operation"
+   article on the evidence of this page.
+
+2. Business Today — May 31, 2024 explainer (ORIGINAL, not a mirror)
+   Files: bt-2024-explainer.pdf (4 pages, letter)
+          bt-2024-headline.png (PDF page 1)
+   Source: https://www.businesstoday.in/latest/economy/story/what-made-rbi-move-100-tonnes-of-gold-from-uk-to-its-vaults-heres-an-explainer-431671-2024-06-01
+   Headline: What made RBI move 100 tonnes of gold from UK to its
+   vaults? Here's an explainer
+   Author: Business Today Desk
+   Date on page: Updated Jun 1, 2024 8:40 AM IST
+   DATE FLAG: you labelled this May 31, 2024. The live page shows
+   Updated Jun 1, 2024, and its URL slug is also 2024-06-01. It may
+   have first published May 31, but the page as captured shows Jun 1.
+
+3. The Week — Oct 31, 2024 (ORIGINAL, not a mirror)
+   Files: the-week-2024-gold.pdf (2 pages, letter)
+          the-week-2024-headline.png (PDF page 1)
+   Source: https://www.theweek.in/news/biz-tech/2024/10/31/india-reserve-bank-brings-back-102-metric-tonnes-of-gold-ahead-of-diwali.html
+   Headline: India's Reserve Bank brings back 102 metric tonnes of
+   gold ahead of Diwali
+   Subheading: RBI conducts secret move to repatriate 102 metric
+   tonnes of gold from London
+   Byline: Web Desk
+   Date on page: Published: October 31, 2024 12:33 PM IST
+   Body on page 1 also states the operation was kept under wraps.
+   This is the cleanest capture in the set: logo, headline, subheading
+   and date are all on one page.
+
+4. Drishti IAS — 77% line (ORIGINAL)
+   Files: drishti-ias-gold-repatriation.pdf (7 pages, letter)
+          drishti-ias-77pct.png (PDF page 3)
+   Source: https://www.drishtiias.com/daily-updates/daily-news-analysis/rbis-strategic-gold-repatriation
+   Headline: RBI's Strategic Gold Repatriation
+   Date on page: 06 May 2026 (matches your May 6, 2026 label)
+   Source line on page: IE (Indian Express)
+   Key line verified on page 3: Dominant Domestic Holdings — as of
+   March 2026, the RBI holds 77% of its total 880.52 MT gold reserves
+   domestically, up from 38% in March 2023.
+   Note: the site's floating share icons overlap the left edge of some
+   lines in the print render, but the headline and the 77% line are
+   fully readable.
+
+5. Reuters factbox (SUBSTITUTE — syndicated copy, NOT AOL)
+   Files: reuters-factbox-syndicated.pdf (15 pages, letter)
+          reuters-factbox-headline.png (PDF page 1)
+   Source: https://energiesnet.com/factbox-western-financial-sanctions-on-russia-reuters/
+   Headline: Factbox: Western financial sanctions on Russia -Reuters
+   Date on page: May 13, 2022; "Reporting by Reuters"
+   SUBSTITUTE FLAG: no AOL-hosted version of this factbox was found
+   after AOL/Yahoo and DuckDuckGo site searches. This EnergiesNet page
+   is a syndicated copy of the same Reuters factbox, clearly branded
+   EnergiesNet.com — do not present it as an AOL screenshot. Its body
+   covers the frozen Russian central-bank assets (around $300 billion
+   figure, PDF page 2). If you need the AOL masthead specifically, that
+   version still needs to be located.
+
+=====================================================================
+PHOTOS AND CLIPS (originals, no re-encode, no crop)
+=====================================================================
+
+6. RBI building, Mumbai — PHOTO
+   File: Tower_and_building_of_Reserve_Bank_of_India_Mumbai_02.jpg
+   Source: https://commons.wikimedia.org/wiki/File:Tower_and_building_of_Reserve_Bank_of_India,_Mumbai_02.jpg
+   Description: Tower and building of Reserve Bank of India, Mumbai
+   branch, Maharashtra. Author: Pinakpani. Date: 12 June 2018.
+   Resolution: 3096 x 4128 (portrait), 3.4 MB, JPEG.
+   Licence: CC BY-SA 4.0 International (attribution to Pinakpani).
+   Note: the file is stored 4128 x 3096 with EXIF orientation 6, so it
+   displays as the 3096 x 4128 portrait in EXIF-aware editors. Verified
+   visually: the RBI tower with Hindi/English signage and flag.
+
+7. Bank of England exterior — PHOTO
+   File: Bank_of_England_Building_London_UK_-_Diliff.jpg
+   Source: https://commons.wikimedia.org/wiki/File:Bank_of_England_Building,_London,_UK_-_Diliff.jpg
+   Description: The Bank of England building viewed from Lombard
+   Street. Author: Diliff (David Iliff). Date: 12 June 2015.
+   Resolution: 10000 x 5886, 15.95 MB, JPEG. Quality image on Commons.
+   Licence: CC BY-SA 3.0 Unported (also GFDL 1.2+; author lets you
+   choose) — attribution required: "Photo by DAVID ILIFF.
+   License: https://creativecommons.org/licenses/by-sa/3.0/"
+   Verified visually: the classic stone Bank of England frontage,
+   Threadneedle Street area, red London buses in frame.
+
+8. Cargo plane handling — CLIP (SUBSTITUTE: unloading, not loading)
+   File: 5696874-cargo.mp4
+   Source: https://www.pexels.com/video/people-unloading-the-cargo-on-the-airplane-5696874/
+   Title on Pexels: People Unloading the Cargo on the Airplane
+   Creator: LOC THAI. Uploaded Oct 26, 2020.
+   Resolution/duration: 1920 x 1080, 21 seconds, 30 fps, h264.
+   Licence: Pexels licence — free to use, including monetised video;
+   attribution not required.
+   SUBSTITUTE FLAG: you asked for a cargo plane being LOADED. This
+   clip, frame-checked at 2s / 12s / 20s, shows the opposite direction:
+   a wrapped cargo pallet starts up at the Delta plane's cargo door on
+   a scissor lift, then lowers to the ground and moves away from the
+   plane. It is cargo being UNLOADED. Included only as a labelled
+   cargo-handling substitute — do not caption it as loading.
+   REJECTED, not included: Pexels 18712143 (3840 x 2160, 11s) — its
+   frames show passenger boarding via jet bridge and a catering truck
+   passing, with no cargo being loaded at all.
+
+9. Bank vault door — PHOTO
+   File: pexels-14866072-vault-door.jpg
+   Source: https://www.pexels.com/photo/14866072/
+   Description on Pexels: A spacious bank interior showcasing a large,
+   open vault door under a modern ceiling. Creator: Connor Scott
+   McManus. Date: Dec 23, 2022.
+   Resolution: 3264 x 4896 (vertical, 2:3), JPEG.
+   Licence: Pexels licence — free to use, including monetised video;
+   attribution not required.
+   Verified visually: a large open round bank vault door (with its
+   circular door swung open) in a bank hall. Distinct from the vault
+   keypad close-up already owned from the long-video packs.
+
+=====================================================================
+NOT IN THIS PACK
+=====================================================================
+- No AOL-branded Reuters factbox screenshot (see item 5).
+- No true "cargo being loaded into the plane" clip (see item 8).
+- No browser screenshot PNGs — the browser cannot save them; all
+  article captures are print-to-PDF renders (see note at top).
+- Nothing duplicated from packs you already own (gold-clips-originals,
+  bohr-gold-assets, long-video parts 1/2, silver-gold-assets,
+  gold-colour-assets, ravana-pictures).
