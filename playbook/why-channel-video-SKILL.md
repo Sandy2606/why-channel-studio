@@ -258,3 +258,19 @@ The user is in Texas, so IST times are converted to local time.
 - Gold Short 2 "Why gold never rusts" (Oct 27): EN 8.2, TE 8.0. Strong: friend-to-friend script, 2026 study proof card, iron-vs-gold O2 graphics, hexagon lattice, jar/medal story graphics. Holding it back: 79-83 s long, the voice says "rusty is" (caption fixed), the 1940 scene is a magazine page rather than one photo, Telugu caption timing estimated. User-sent 'acid fizz / jar / medal' WAVs were synthetic and rejected; Mixkit real ones used.
 - Gold long "Why Is Gold So Expensive?" (Oct 28): EN 8.4, TE 8.2. Strong: 8-chapter structure with progress bar, Johnny-Harris-style paper/clippings title sequence after "Let's go", periodic-table elimination, central-bank and price charts, NASA kilonova footage, Pace Model v2 with 6.6 s title gap. Holding it back: some chapter middles are graphic-on-dark for long stretches, Telugu captions estimated (no word timestamps), TE fusion/price anchors set by fractions. KEEP: TE take list keyed by EN piece prefixes so one cue file drives both languages.
 - Long video "Dussehra Is NOT One Story. It's Three." (Oct 26): v1 8.3 on visuals, but the pacing was too fast (204 wpm). v3 final: Pace Model v2 (172 wpm), chapter pause plus boom, motion-graphics SFX, faint real fire/crowd/drums. The user felt the SFX were still one-note; the next video uses the real-SFX system.
+
+## Update Oct 28 2026: new style, new workflow, voice via ElevenLabs
+- **Workflow (replaces record-first):** topic → Claude script (EN+TE, visual beat under each line, sources + exact lines to screenshot, credit estimate) → user humanizes & approves → Claude generates both voices in ElevenLabs (cloned "Sandeep English" / "Sandeep Telugu", eleven_v4, ONE take each, generations_count=1) → visuals/music/SFX/screenshot list → user sends assets → render 4 versions (EN/TE × YT/IG) → one-block report (score, issues, credits used, credits left).
+- **Credits:** ~0.46 credits/char (eleven_v4). Telugu ≈ 1,200/Short, English ≈ 450/Short. Budget 121k/month: ~30 Shorts + 4 long (~10 min). Reuse the saved CTA lines (voice_lib/te_gold3_take2_source.wav, 75.30–86.64 s: subscribe/follow/comment) instead of regenerating. ElevenLabs is for voice ONLY.
+- **Target score: 8.5/10.**
+- **Style v2 (approved):** dark glass cards with amber edge bar, amber→orange gradient on key numbers/words, glowing amber dot as the guide (travels to what matters; rides the highlighter tip), highlighter swipe (from "paper" style), NO red anywhere, no mascot face; plain logo "?"→"!" only at Why/payoff/ending. Helpers: pipeline/style_v2.
+- **Evidence board (Johnny Harris verification):** real screenshots → torn paper clippings with tape, source tag chip, amber highlighter sweeping the exact quoted line in sync with the voice; taped real photos; amber threads connect pieces; ending zooms out to the full board. Never use recreated/AI "screenshots" — verify the URL in the image (Gemini-made pack had a 404 URL).
+- **Telugu captions:** PIL + RAQM (cairo toy fonts can't shape Telugu). Timing: sentence boundaries from the TTS pause map, words spread by length.
+- **Gotcha:** pill/scale(0) → cairo singular matrix → "out of memory" crash mid-render; guard s<=0.01.
+
+**KEEP:** evidence clippings + highlighter sync (Gold 3), relativity ON/OFF switch payoff, drawn objects (metals, gold bar, spectrum, atom) when stock is missing, real Pexels clips for hook/key beats.
+**DROP:** red accents; "?" mascot with eye; recreated screenshots; two-take TTS generations.
+
+**Score history:**
+- Ravana new-style test (Oct 27): v1 ~8.0 (red + mascot rejected), v2 approved style.
+- Gold Short 3 "Why is gold yellow?" (Oct 28): EN/TE ~8.0. Holding back: soft BBC screenshot text, music not the gold-week bed, TE 69 s, TE captions sentence-level timing, no cover delivered.
