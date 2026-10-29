@@ -1,0 +1,159 @@
+GOLD 5/6 — SCREENSHOTS + PHOTOS
+Captured / downloaded 2026-10-28. All PNG renders and photos below were checked visually.
+
+HOW THE ARTICLE CAPTURES WERE MADE
+The browser cannot save a page screenshot as a PNG file (confirmed in
+earlier packs). Each article below was therefore saved with the browser's
+print/save-as-PDF function, and the PNGs are pages rendered from that PDF
+at 150 dpi. They are print-layout renders, not browser screenshot PNGs.
+The full PDF for each article is included, except where noted.
+Exception: the ICMAI file is the original 6-page digest PDF itself,
+downloaded from ICMAI, not a browser print render. Its page-2 PNG is a
+150 dpi render of that original PDF.
+
+=====================================================================
+SCREENSHOTS
+=====================================================================
+
+1. Mint — gold loans
+   Files: mint-gold-loans.pdf (4 pages, letter, browser print-to-PDF)
+          mint-headline.png (PDF page 1)
+   Source: https://www.livemint.com/money/personal-finance/gold-loans-are-not-easy-money-in-a-volatile-market-second-largest-retail-credit-category-after-housing-loans-11776231218943.html
+   Headline: Gold loans are not 'easy money' in a volatile market
+   Author: Ann Jacob
+   Date on page: 15 Apr 2026, 05:48 PM IST
+   DATE FLAG: you labelled this Apr 16, 2026. The live page shows
+   15 Apr 2026, 05:48 PM IST. Captured as Apr 15, 2026.
+   Key line VERIFIED in this PDF, page 1: "second-largest retail
+   credit category" (gold loans, India; TransUnion Cibil report,
+   April 2026).
+   WITHIN-MINUTES FLAG — READ THIS: the "within minutes" line is
+   NOT in this print PDF. The live Mint page stops at a Premium
+   paywall after the lede, and the print PDF stops there too. The
+   "within minutes" disbursement line WAS verified in the article's
+   full text on Mint's pre-prod mirror
+   (origin-pre-prod.livemint.com, same article ID), but a browser
+   print of that mirror also stops at the same paywall, so no
+   print PDF in this pack shows that line. Do not caption the Mint
+   PDF as showing the "within minutes" line. It shows the headline
+   and the "second-largest" line only.
+
+2. Aditya Birla Capital — gold price history
+   Files: aditya-birla-gold-price-history.pdf (10 pages, letter,
+          browser print-to-PDF)
+          abc-headline.png (PDF page 1)
+          abc-2006-row.png (PDF page 2)
+   Source: https://www.adityabirlacapital.com/abc-of-money/gold-price-history-in-india
+   Headline: Gold Price History in India: Year-Wise Gold Rates and
+   Returns (1964-2025)
+   Dates on page: Posted 14 Oct 2024; Updated 21 Oct 2026
+   Year table VERIFIED, PDF page 2, row: 2006 — 24K 8,400;
+   22K 7,694; +20.0% (prices per 10g). The same 2006 / 8,400 figure
+   also appears in the CAGR table on PDF page 3 (20 Years row).
+   Note: abc-headline.png shows the page title and the start of
+   the year table (1964-1968); the 2006 row itself is on
+   abc-2006-row.png, as named.
+
+3. Business Standard — household gold stash (SUBSTITUTE SOURCE)
+   Files: icmai-digest-2025-03-29.pdf (6 pages, ORIGINAL digest PDF,
+          not a browser print render)
+          business-standard-25000-tonnes.png (digest PDF page 2,
+          150 dpi render)
+   Source of the file: https://www.icmai.co.in/upload/BI/DND_29_03_25.pdf
+   Digest: ICMAI Daily News Digest by BFSI Board, dated 29 March 2025
+   SUBSTITUTE FLAG: the original Business Standard article page
+   could NOT be opened — an exact-headline search on
+   business-standard.com returned "No Record Found", and a looser
+   search returned only unrelated stories. This capture is therefore
+   NOT a Business Standard page. It is the ICMAI digest QUOTING
+   Business Standard, and it is labelled as such. Do not present
+   the PNG as a Business Standard masthead screenshot.
+   What IS verified on digest page 2, all on one page in the PNG:
+   headline "Indian households' gold stash outweighs reserves
+   with top 10 central banks"; HSBC Global study mention; key
+   figure 25,000 tonnes for Indian household gold reserves; and
+   the attribution "(Business Standard)" in red at the end of the
+   item. The digest is dated 29 March 2025, the day after the
+   28 March 2025 date you gave; the HSBC report was described in
+   a related repost as released on Friday, 28 March 2025.
+
+=====================================================================
+PHOTOS (Pexels, originals, no re-encode, no crop)
+All Pexels photos are under the Pexels licence — free to use,
+including monetised video; attribution not required.
+None of the three ending cards is at a jewellery shop. Each is
+with gold jewellery, as your request allowed ("at a jewellery
+shop or with gold jewellery").
+=====================================================================
+
+4a. Indian mother — ending card 1
+   File: pexels-18064787-mother.jpg
+   Source: https://www.pexels.com/photo/woman-wearing-traditional-jewelry-and-bindi-18064787/
+   Description on Pexels: Elderly Indian woman wearing traditional
+   attire, featuring jewelry and bindi, outdoors. Creator: manas patra.
+   Resolution: 4928 x 3264, JPEG. Date on Pexels: Aug 21, 2023.
+   Verified visually: older Indian woman in traditional dress,
+   red bindi, gold nose ring and earring. Pexels tags include
+   "Indian Mother" / "Old Mother".
+   Note: she is an older woman, not a young mother, and she is
+   outdoors, not in a shop.
+
+4b. Young woman — ending card 2
+   File: pexels-28428075-young-woman.jpg
+   Source: https://www.pexels.com/photo/elegant-woman-in-traditional-indian-saree-with-gold-jewelry-28428075/
+   Description on Pexels: A woman wearing a traditional Indian
+   saree and gold jewelry, showcasing cultural elegance.
+   Creator: Dream_ maKkerzz.
+   Resolution: 4480 x 6720 (vertical, 2:3), JPEG. Date: Sep 14, 2024.
+   Verified visually: young woman in white/red saree, gold
+   necklace, gold earrings, gold bangles, jasmine in hair.
+
+4c. Couple — ending card 3
+   File: pexels-29153198-couple.jpg
+   Source: https://www.pexels.com/photo/traditional-indian-wedding-couple-outdoors-29153198/
+   Description on Pexels: A beautifully adorned Indian bride with
+   henna and floral hairstyle, outdoors with groom. Location on
+   Pexels: India. Creator: Dream_ maKkerzz.
+   Resolution: 4480 x 6720 (vertical, 2:3), JPEG. Date: Oct 29, 2024.
+   Verified visually: bride in foreground in sharp focus with
+   heavy gold necklaces, gold earrings and stacked gold bangles;
+   groom behind her, out of focus, in white traditional dress.
+   Note: the groom is blurred by design (shallow depth of field),
+   not a second sharp portrait, and the setting is outdoors,
+   not a shop.
+   REJECTED, not included: Pexels 33557623, titled "Traditional
+   Indian Wedding Couple in Regal Attire" — visually it is a
+   Nepali wedding (groom's topi hat, dubo-grass garlands), so it
+   was not used as an Indian couple card despite its title.
+
+5. Gold jewellery close-up — bangles
+   File: pexels-31017976-bangles.jpg
+   Source: https://www.pexels.com/photo/traditional-indian-bride-with-henna-and-bangles-31017976/
+   Description on Pexels: A close-up of a traditional Indian bride
+   adorned with intricate henna and gold jewelry. Creator: Ravi Gond.
+   Resolution: 4000 x 6000 (vertical, 2:3), JPEG. Date: Mar 5, 2025.
+   Verified visually: close-up of a bride's hennaed hand raised,
+   stacked gold/red bangles and gold kalire in sharp focus.
+
+6. Indian rupee notes close-up
+   File: pexels-14907379-rupee-notes.jpg
+   Source: https://www.pexels.com/photo/close-up-shot-of-a-coin-on-banknote-14907379/
+   Description on Pexels: Close-up image of Indian rupee notes
+   with a twenty rupee coin, illustrating financial themes.
+   Creator: Ravi Roshan. Location on Pexels: Patna, India.
+   Resolution: 5184 x 3456, JPEG. Date: Dec 27, 2022.
+   Verified visually: close-up of Rs 500 notes (Gandhi portrait,
+   Reserve Bank of India seal) with a Rs 20 coin on top.
+   Note: a coin is in frame as well as the notes, as in the
+   Pexels description — it is not notes alone.
+
+=====================================================================
+NOT IN THIS PACK
+=====================================================================
+- No original Business Standard article page (see item 3).
+- No Mint print PDF showing the "within minutes" line (see item 1).
+- No browser screenshot PNGs — all article PNGs are PDF renders
+  at 150 dpi (see method note at top).
+- No couple card at a jewellery shop; the couple card is a
+  wedding couple with gold jewellery (see item 4c).
+- Nothing duplicated from packs you already own.
