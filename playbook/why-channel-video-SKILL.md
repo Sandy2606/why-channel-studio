@@ -285,3 +285,4 @@ The user is in Texas, so IST times are converted to local time.
 - **Caption fix (Oct 29):** whisper drops/duplicates words at chunk edges on generated voice. Transcribe in ~25 s windows, then snap to the exact script text with difflib (fixw.py) and interpolate missing words. TE captions: map spelled-out numbers to digits (CAPMAP in tealign5.py).
 - **Number check (Oct 29):** every on-screen formula must match the script math (caught "1.07^19" for a 20-year FD before delivery).
 **KEEP:** kinetic-data template for money topics; source footnote on screen when a ranking changes by date; reuse ending lines from voice_lib.
+- **Cover rule (user, Oct 29):** no recognizable person's face on covers; a face grabs the eye before the headline. Use a scene/object photo that matches the topic (e.g. dense Indian homes rooftops for Gold 5). Unsplash MCP works for these (images.unsplash.com downloads from the shell).

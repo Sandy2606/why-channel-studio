@@ -25,7 +25,7 @@ def make(lang):
     im=Image.open('hero_blue.png').convert('RGB').resize((W,H),Image.LANCZOS)
     sf,_=R.surf_from_pil(im); c.set_source_surface(sf,0,0); c.paint()
     g=cairo.LinearGradient(0,0,0,H); g.add_color_stop_rgba(0.42,0,0,0,0.0); g.add_color_stop_rgba(0.62,0,0,0,0.6); g.add_color_stop_rgba(1,0,0,0,0.92); c.set_source(g); c.paint()
-    R.print_photo(c,'mother.jpg',270,960,400,99,0,rot=-5)
+    R.print_photo(c,'homes.jpg',280,960,440,99,0,rot=-5)
     R.draw_clip(c,'bs',730,880,620,99,0,rot=4,hl_t0=0,hl_dur=0.01,guide=False)
     R.thread(c,380,1080,620,960,99,0); R.glowdot(c,620,960,10)
     if lang=='en':

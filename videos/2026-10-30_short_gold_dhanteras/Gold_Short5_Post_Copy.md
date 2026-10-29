@@ -36,6 +36,7 @@ Note: the FD figure is a worked example at a fixed 7%; real FD rates moved betwe
 **CREDITS**
 - Pexels: bride's bangles, Ravi Gond · rupee notes, Ravi Roshan · mother, manas patra · young woman and couple, Dream_ maKkerzz
 - Article captures: ICMAI digest / Business Standard, Mint, Aditya Birla Capital (shown as sources)
+- Cover photo (Indian homes): Unsplash Momin, Unsplash (https://unsplash.com/photos/RC13W9yt5bg)
 - Flags, charts, counters and stopwatch graphics: made by WHY?
 - Music: "Where the River Bends" · Sound effects: Mixkit, Freesound (CC0)
 
