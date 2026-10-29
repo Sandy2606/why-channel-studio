@@ -26,7 +26,7 @@
   "file": "lib/heartbeat.wav",
   "source": "Human single heart beat",
   "dur": 1.1,
-  "use": "tension 1–2 s before a reveal (repeat 2–3x)",
+  "use": "tension 1\u20132 s before a reveal (repeat 2\u20133x)",
   "note": ""
  },
  "riser": {
@@ -196,7 +196,7 @@
   "source": "Mixkit slow heartbeat 494",
   "license": "Mixkit Free Licence",
   "dur": 4.0,
-  "use": "tension before a reveal (2–3 beats)",
+  "use": "tension before a reveal (2\u20133 beats)",
   "note": "",
   "hit_at": 0.45
  },
@@ -205,7 +205,7 @@
   "source": "Freesound 514486 \"Office stamp\" by whammy",
   "license": "CC0",
   "dur": 1.03,
-  "use": "✕/✓ verdicts, MYTH/TRUE stamps",
+  "use": "\u2715/\u2713 verdicts, MYTH/TRUE stamps",
   "note": "single stamp cut from 4; preview-quality MP3",
   "hit_at": 0.02
  },
@@ -363,5 +363,32 @@
   "dur": 2.61,
   "use": "AVOID mostly: bright game-like chime; only very low under a price reveal",
   "note": "added Oct 27, 2026 (gold long)"
+ },
+ "ui_click": {
+  "file": "ui_click.wav",
+  "source": "Mixkit Clear mouse clicks 2997",
+  "license": "Mixkit Free Licence",
+  "dur": 1.05,
+  "use": "CTA cursor click (press 0.00, release 0.21)",
+  "note": "",
+  "hit_at": 0.0
+ },
+ "ui_bell": {
+  "file": "ui_bell.wav",
+  "source": "Mixkit Attention bell ding 586",
+  "license": "Mixkit Free Licence",
+  "dur": 1.52,
+  "use": "CTA notification bell",
+  "note": "",
+  "hit_at": 0.0
+ },
+ "ui_pop": {
+  "file": "ui_pop.wav",
+  "source": "Mixkit Message pop alert 2354 (mp3\u2192wav)",
+  "license": "Mixkit Free Licence",
+  "dur": 1.07,
+  "use": "CTA check mark / Following",
+  "note": "",
+  "hit_at": 0.06
  }
 }
