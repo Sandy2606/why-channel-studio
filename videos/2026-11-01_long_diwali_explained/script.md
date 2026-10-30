@@ -1,4 +1,5 @@
-# DIWALI, EXPLAINED — full video script (Sun Nov 1) · v2 (your edits applied)
+# DIWALI, EXPLAINED — full video script (Sun Nov 1) · v3 (your edits applied)
+The video is the brother's own recording: in the cold open he props up his phone to record the answers for YouTube, which is why both talk to the camera at times.
 Two 2D characters: **ANNA** (older brother, explainer, *your cloned voice*) and **CHELLI** (younger sister, curious, glowing "?" over her head, *female Indian voice*).
 Format: speaker · [light mood] · **stress** · ⏸ pause · → visual beat. Target ≈ 9–10 min.
 
@@ -14,6 +15,9 @@ Format: speaker · [light mood] · **stress** · ⏸ pause · → visual beat. T
    → each question pops out as a card and piles up around her, faster and faster
 4. ANNA [laughing] Slow down, slow down! ⏸ One at a time.
 5. ANNA [warm] Let's take them one by one… and find the answers.
+5b. ANNA Actually, wait. ⏸ Let me **record** this. If you have these questions, so do a lot of people. I'll put it on YouTube, so anyone who's wondering can learn too.
+   → Anna props a phone on the table; screen flips to the phone's view, red REC dot blinks, both of them wave at the camera
+5c. CHELLI [excited] Hi everyone!
    → **TITLE SLIDE**: evidence board, all 9 cards pinned, amber threads join them to a glowing diya in the centre · **DIWALI, EXPLAINED** · progress bar appears (6 dots + 3 locked)
 
 ### CHAPTER 1 · WHY DOES DIWALI KEEP CHANGING ITS DATE?
@@ -123,7 +127,7 @@ Format: speaker · [light mood] · **stress** · ⏸ pause · → visual beat. T
 65. CHELLI Why does **Nepal** worship dogs on its Diwali? Why did **New York** give schools a Diwali holiday? And why do **green crackers** still pollute?
    → the 3 locked cards shake
 66. ANNA [warm] Those are big ones. ⏸ Let's save them for the **next Diwali video**.
-67. ANNA Or if you want them **sooner**, hit **like** and comment below. If most of you want it… we'll make it happen.
+67. ANNA [to camera] And everyone watching… if you want them **sooner**, hit **like** and comment below. If most of you want it… we'll make it happen.
    → like button + comment bubble typing "make it!"
 68. CHELLI And this whole week, there's a new Diwali Short every day… with **more** facts we didn't even get to today!
    → DIWALI WEEK series slide (this video + 6 Shorts, "TOMORROW" on 1/6)
@@ -140,6 +144,8 @@ Format: speaker · [light mood] · **stress** · ⏸ pause · → visual beat. T
 3. CHELLI [fast] Diwali ప్రతి సంవత్సరం **వేరే తేదీకి** ఎందుకు వస్తుంది? Diwali ముందు అందరూ **ఇల్లంతా** ఎందుకు శుభ్రం చేస్తారు? నా Diwali bonus **gift** ఆ, లేక company **ఇవ్వాల్సిందే**నా? **Space** నుంచి మెరిసిపోతున్న India photo నిజమేనా? Diwali రోజు **stock market** ఎందుకు open అవుతుంది? Diwali తర్వాత **Delhi** కి ఊపిరి ఎందుకు ఆడదు? ఆ, ఇంకా **Nepal** లో Diwali రోజు కుక్కల్ని ఎందుకు పూజిస్తారు? **New York** schools కి Diwali సెలవు ఎందుకు ఇచ్చింది? **Green crackers** కూడా pollution ఎందుకు చేస్తాయి?
 4. ANNA [laughing] ఆగు, ఆగు! ⏸ ఒక్కొక్కటిగా.
 5. ANNA [warm] ఒక్కొక్క ప్రశ్న తీసుకుందాం… answers కనుక్కుందాం.
+5b. ANNA ఆగు ఆగు. ⏸ ఇది **record** చేస్తా. నీకు ఈ ప్రశ్నలు ఉన్నాయంటే, చాలామందికి ఉంటాయి. YouTube లో పెడతా, తెలుసుకోవాలనుకునే వాళ్ళందరూ నేర్చుకోవచ్చు.
+5c. CHELLI [excited] Hi అందరికీ!
    → TITLE SLIDE: **DIWALI, EXPLAINED** / దీపావళి, ఎందుకు?
 
 ### CHAPTER 1
@@ -219,7 +225,7 @@ Format: speaker · [light mood] · **stress** · ⏸ pause · → visual beat. T
 64. CHELLI [urgent] ఆగు, ఆగు! ⏸ నా **చివరి మూడు** ప్రశ్నలకి ఇంకా answer చెప్పలేదు!
 65. CHELLI **Nepal** లో Diwali రోజు కుక్కల్ని ఎందుకు పూజిస్తారు? **New York** schools కి Diwali సెలవు ఎందుకు ఇచ్చింది? **Green crackers** కూడా pollution ఎందుకు చేస్తాయి?
 66. ANNA [warm] అవి పెద్ద ప్రశ్నలు. ⏸ **తర్వాతి Diwali video** కి దాచుకుందాం.
-67. ANNA అంతకంటే **ముందే** కావాలంటే, **like** చేసి comment చేయండి. ఎక్కువమంది అడిగితే… తప్పకుండా చేస్తాం.
+67. ANNA [to camera] చూస్తున్న మీ అందరూ… అంతకంటే **ముందే** కావాలంటే, **like** చేసి comment చేయండి. ఎక్కువమంది అడిగితే… తప్పకుండా చేస్తాం.
 68. CHELLI ఈ వారం మొత్తం, రోజుకో కొత్త Diwali Short వస్తుంది… ఈరోజు చెప్పని **ఇంకా ఎక్కువ** విషయాలతో!
 69. ANNA *(library line)* ఇలాంటి కొత్త విషయాలు నేర్చుకోవడం నచ్చితే, ప్రతి ఆదివారం ఒక full video, మిగతా ఆరు రోజులు రోజుకో Short పెడతాం. ఎప్పుడూ ఏదో ఒక కొత్తది ఉంటుంది. Subscribe చేయండి, మీకు నచ్చేలా చేస్తాం.
 
