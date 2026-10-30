@@ -1,4 +1,4 @@
-# DIWALI, EXPLAINED — full video script (Sun Nov 1) · v3 (your edits applied)
+# DIWALI, EXPLAINED — full video script (Sun Nov 1) · FINAL (≈8.5 min, mid-roll ready)
 The video is the brother's own recording: in the cold open he props up his phone to record the answers for YouTube, which is why both talk to the camera at times.
 Two 2D characters: **ANNA** (older brother, explainer, *your cloned voice*) and **CHELLI** (younger sister, curious, glowing "?" over her head, *female Indian voice*).
 Format: speaker · [light mood] · **stress** · ⏸ pause · → visual beat. Target ≈ 9–10 min.
@@ -36,6 +36,10 @@ Format: speaker · [light mood] · **stress** · ⏸ pause · → visual beat. T
    → an extra month card drops in, the marker jumps forward
 15. ANNA It's like a watch that runs a little fast. ⏸ Every few years, you fix the time.
 16. ANNA That's why Diwali always lands between **mid-October and mid-November**.
+16b. ANNA You can see the difference with two festivals you know. **Sankranti** follows the sun, so it's almost always January 14th or 15th.
+   → Sankranti kite on a fixed calendar date
+16c. ANNA And **Eid** follows the moon with **no** extra month. So it keeps moving about eleven days every year, through every season.
+   → crescent sliding across the year, summer → winter → summer
 17. CHELLI And why that **one** night?
 18. ANNA Diwali is on **Amavasya**, the new-moon night of the month of Kartika. ⏸ The night with **no moon at all**.
    → sky goes dark, the moon fades; diyas light up one by one
@@ -73,6 +77,8 @@ Format: speaker · [light mood] · **stress** · ⏸ pause · → visual beat. T
 35. CHELLI Why **8.33**?
 36. ANNA Because 8.33 percent is **one month** out of twelve. ⏸ One extra month's pay.
    → 12 month tiles + 1 glowing tile
+36b. ANNA And the law counts it on at least **7,000 rupees** a month, or the minimum wage, whichever is higher. So even the minimum is about **one month's** worth.
+   → ₹7,000 × 8.33% × 12 ≈ ₹7,000
 37. ANNA Companies have up to **eight months** after the year ends to pay it. Many pay it before Diwali, when families need it most.
 38. CHELLI That's why everyone goes **shopping**!
 39. ANNA And how. ⏸ Last Diwali, Indians spent about **6 lakh crore rupees**.
@@ -91,6 +97,8 @@ Format: speaker · [light mood] · **stress** · ⏸ pause · → visual beat. T
 45. ANNA And NASA says the extra Diwali light is so subtle… that space images **don't show it**.
    → clipping with the quote highlighted
 46. CHELLI So all those forwards…
+46b. ANNA [to camera] Here's an easy way to spot it. Real night photos from space look mostly **orange and white**, like street lights. Not a **rainbow**.
+   → side by side: rainbow composite vs orange real night image
 47. ANNA Wrong photo. ⏸ Next time someone sends it, now you know what to reply.
 
 ### CHAPTER 5 · WHY DOES THE STOCK MARKET OPEN ON DIWALI?
@@ -99,6 +107,8 @@ Format: speaker · [light mood] · **stress** · ⏸ pause · → visual beat. T
    → ticker board lights up on a dark night
 50. ANNA This year it's on **Sunday, November 8th**, from **2:20 to 3:30** in the afternoon.
 51. ANNA For many trading families, Diwali is the start of a **new financial year**. Old account books close, and new ones open with a puja.
+51b. ANNA In Gujarat and many trading families, it's called **Chopda Pujan**, the puja of the new account book.
+   → red ledger with a swastik and 'shubh labh' written, diya beside it
 52. ANNA So they make a small **first trade** of the new year… for good luck.
 53. ANNA The Bombay Stock Exchange started this in **1957**. ⏸ The National Stock Exchange joined in **1992**.
    → clipping with both dates
@@ -115,6 +125,8 @@ Format: speaker · [light mood] · **stress** · ⏸ pause · → visual beat. T
    → map: smoke arrows drifting towards Delhi
 59. ANNA And in early winter, cold, still air sits over the city like a **lid**. ⏸ The smoke can't escape.
    → lid graphic pressing smoke down
+59b. ANNA Mumbai bursts crackers too… ⏸ but the **sea breeze** keeps pushing its air out. Delhi is far from the sea, and in winter the wind almost stops.
+   → split: Mumbai with arrows out to sea / Delhi with still air
 60. ANNA An **IIT Delhi** study found the cracker spike fades in about **12 hours**… but smoke from burning crops and winter heating keeps the air bad for **days**.
    → clipping
 61. ANNA That's why the **Supreme Court** said this year that a blanket ban **alone** isn't the answer.
@@ -123,6 +135,9 @@ Format: speaker · [light mood] · **stress** · ⏸ pause · → visual beat. T
 63. ANNA Much bigger. ⏸ Diwali is just the night **everyone notices**.
 
 ### ENDING
+63b. CHELLI So… ⏸ the moon moves the date, the monsoon makes us clean, the bonus is the law, the photo is fake, Diwali starts a new financial year… and Delhi's air is a winter problem.
+   → the six answered cards flip to ✓ on the board
+63c. ANNA [proud] You got it.
 64. CHELLI [urgent] Hold on, hold on! ⏸ You still haven't answered my **last three**!
 65. CHELLI Why does **Nepal** worship dogs on its Diwali? Why did **New York** give schools a Diwali holiday? And why do **green crackers** still pollute?
    → the 3 locked cards shake
@@ -160,6 +175,8 @@ Format: speaker · [light mood] · **stress** · ⏸ pause · → visual beat. T
 14. ANNA ఎందుకంటే రెండు మూడు సంవత్సరాలకి ఒకసారి calendar లో **ఒక extra నెల** కలుపుతారు. దాన్ని **అధిక మాసం** అంటారు. అది పండుగల్ని మళ్ళీ సరైన చోటికి తెస్తుంది.
 15. ANNA కొంచెం fast గా నడిచే watch లాంటిది. ⏸ కొన్ని సంవత్సరాలకి ఒకసారి time సరిచేస్తాం.
 16. ANNA అందుకే Diwali ఎప్పుడూ **October మధ్య నుంచి November మధ్య** లోనే వస్తుంది.
+16b. ANNA మనకి తెలిసిన రెండు పండుగలతో తేడా చూడొచ్చు. **సంక్రాంతి** సూర్యుడిని follow అవుతుంది, అందుకే దాదాపు ఎప్పుడూ January 14 లేదా 15.
+16c. ANNA **రంజాన్** చంద్రుడిని follow అవుతుంది, కానీ extra నెల **ఉండదు**. అందుకే ప్రతి సంవత్సరం దాదాపు పదకొండు రోజులు ముందుకి జరుగుతూ, అన్ని కాలాల్లోకి వస్తుంది.
 17. CHELLI మరి **ఆ రాత్రే** ఎందుకు?
 18. ANNA Diwali **అమావాస్య** రోజు, కార్తీక మాసం అమావాస్య. ⏸ **చంద్రుడే లేని** రాత్రి.
 19. ANNA నెలలో అన్నిటికంటే చీకటి రాత్రి… ప్రతి దీపం నిజంగా కనిపించే రాత్రి.
@@ -185,6 +202,7 @@ Format: speaker · [light mood] · **stress** · ⏸ pause · → visual beat. T
 34. ANNA …company bonus **ఇవ్వాల్సిందే**. కనీసం **8.33 శాతం**, గరిష్టంగా **20 శాతం**.
 35. CHELLI **8.33** ఏ ఎందుకు?
 36. ANNA ఎందుకంటే 8.33 శాతం అంటే పన్నెండులో **ఒక నెల**. ⏸ ఒక extra నెల జీతం.
+36b. ANNA చట్టం దీన్ని నెలకి కనీసం **7,000 రూపాయల** మీద, లేదా minimum wage మీద, ఏది ఎక్కువైతే దాని మీద లెక్కిస్తుంది. అంటే కనీసం కూడా దాదాపు **ఒక నెల** విలువ.
 37. ANNA సంవత్సరం అయిపోయాక ఇవ్వడానికి companies కి **ఎనిమిది నెలల** time ఉంటుంది. చాలా companies Diwali ముందే ఇస్తాయి, కుటుంబాలకి ఎక్కువ అవసరమయ్యే సమయంలో.
 38. CHELLI అందుకే అందరూ **shopping** కి వెళ్తారు!
 39. ANNA అవును మరి. ⏸ పోయిన Diwali కి, మనవాళ్ళు దాదాపు **6 లక్షల కోట్ల రూపాయలు** ఖర్చు పెట్టారు.
@@ -197,6 +215,7 @@ Format: speaker · [light mood] · **stress** · ⏸ pause · → visual beat. T
 44. ANNA [turns to camera] మీ screen మీద చూడండి. ⏸ **ఇదే** NASA నిజంగా Diwali రాత్రి తీసిన photo, **2012** లో.
 45. ANNA Diwali అదనపు వెలుగు చాలా తక్కువ… space photos లో **కనిపించదు** అని NASA యే చెప్పింది.
 46. CHELLI అంటే ఆ forwards అన్నీ…
+46b. ANNA [to camera] గుర్తుపట్టడానికి ఒక easy trick. Space నుంచి నిజమైన రాత్రి photos ఎక్కువగా **orange, తెలుపు** రంగుల్లో ఉంటాయి, street lights లాగా. **ఇంద్రధనుస్సు** లాగా కాదు.
 47. ANNA తప్పు photo. ⏸ ఈసారి ఎవరైనా పంపితే, ఏం reply ఇవ్వాలో నీకు తెలుసు.
 
 ### CHAPTER 5
@@ -204,6 +223,7 @@ Format: speaker · [light mood] · **stress** · ⏸ pause · → visual beat. T
 49. ANNA సెలవే. ⏸ కానీ దాదాపు **ఒక గంట** open చేస్తారు. దాన్ని **Muhurat trading** అంటారు.
 50. ANNA ఈసారి **ఆదివారం, November 8**, మధ్యాహ్నం **2:20 నుంచి 3:30** వరకు.
 51. ANNA చాలా వ్యాపార కుటుంబాలకి Diwali అంటే **కొత్త financial year** మొదలు. పాత లెక్కల పుస్తకాలు మూసి, puja తో కొత్తవి తెరుస్తారు.
+51b. ANNA Gujarat లో, చాలా వ్యాపార కుటుంబాల్లో దీన్ని **చోప్డా పూజ** అంటారు, కొత్త లెక్కల పుస్తకానికి పూజ.
 52. ANNA అందుకే కొత్త సంవత్సరంలో ఒక చిన్న **మొదటి trade** చేస్తారు… మంచి జరగాలని.
 53. ANNA Bombay Stock Exchange ఇది **1957** లో మొదలుపెట్టింది. ⏸ National Stock Exchange **1992** లో కలిసింది.
 54. CHELLI అంటే **కొత్త notebook** లో మొదటి page రాసినట్టు.
@@ -216,12 +236,15 @@ Format: speaker · [light mood] · **stress** · ⏸ pause · → visual beat. T
 57. ANNA Crackers దాన్ని **చాలా** ఎక్కువ చేస్తాయి… ⏸ కానీ అదొక్కటే కారణం కాదు.
 58. ANNA Timing చూడు. సరిగ్గా Diwali సమయంలోనే **Punjab, Haryana** రైతులు పంట **వ్యర్థాలు** కాల్చుతారు.
 59. ANNA చలికాలం మొదట్లో, చల్లటి కదలని గాలి నగరం మీద **మూతలా** కూర్చుంటుంది. ⏸ పొగ బయటికి పోలేదు.
+59b. ANNA Mumbai లో కూడా crackers కాలుస్తారు… ⏸ కానీ **సముద్రపు గాలి** అక్కడి గాలిని బయటికి తోసేస్తుంది. Delhi సముద్రానికి దూరం, చలికాలంలో గాలి దాదాపు ఆగిపోతుంది.
 60. ANNA **IIT Delhi** study ప్రకారం, crackers వల్ల పెరిగే pollution దాదాపు **12 గంటల్లో** తగ్గిపోతుంది… కానీ పంట పొగ, చలికాలం heating వల్ల గాలి **రోజుల తరబడి** చెడుగానే ఉంటుంది.
 61. ANNA అందుకే ఈ సంవత్సరం **Supreme Court**, పూర్తి ban **ఒక్కటే** పరిష్కారం కాదు అని చెప్పింది.
 62. CHELLI అంటే పరిష్కారం Diwali కంటే **పెద్దది**.
 63. ANNA చాలా పెద్దది. ⏸ Diwali అందరూ **గమనించే** రాత్రి మాత్రమే.
 
 ### ENDING
+63b. CHELLI అంటే… ⏸ చంద్రుడు తేదీని మారుస్తాడు, వర్షాకాలం వల్ల శుభ్రం చేస్తాం, bonus చట్టం, ఆ photo fake, Diwali తో కొత్త financial year… Delhi గాలి చలికాలం సమస్య.
+63c. ANNA [proud] Correct గా చెప్పావ్.
 64. CHELLI [urgent] ఆగు, ఆగు! ⏸ నా **చివరి మూడు** ప్రశ్నలకి ఇంకా answer చెప్పలేదు!
 65. CHELLI **Nepal** లో Diwali రోజు కుక్కల్ని ఎందుకు పూజిస్తారు? **New York** schools కి Diwali సెలవు ఎందుకు ఇచ్చింది? **Green crackers** కూడా pollution ఎందుకు చేస్తాయి?
 66. ANNA [warm] అవి పెద్ద ప్రశ్నలు. ⏸ **తర్వాతి Diwali video** కి దాచుకుందాం.
@@ -232,7 +255,7 @@ Format: speaker · [light mood] · **stress** · ⏸ pause · → visual beat. T
 ---
 
 ## Credits estimate
-EN ≈ 5,200 chars · TE ≈ 5,150 chars (≈ 6,000 once numbers are spelled out for the voice); line 69 reused, free → **≈ 11,500 credits** for both languages. Runtime ≈ 6.5–7 min.
+EN ≈ 6,700 chars · TE ≈ 6,600 chars (≈ 7,600 once numbers are spelled out); line 69 reused, free → **≈ 14,500 credits** for both languages. Runtime ≈ 8.5 min (mid-roll ads allowed from 8:00).
 
 ## Sources (captures needed later)
 - Dates: Diwali 2025 Oct 20 · 2026 Nov 8 · 2027 Oct 29 — publicholidays.in
