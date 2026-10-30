@@ -31,7 +31,7 @@ burst(330, 300, 170, (1.0, 0.72, 0.2)); burst(1620, 250, 200, (1.0, 0.55, 0.3));
 burst(1780, 640, 110, (1.0, 0.8, 0.4), 20, 0.6); burst(130, 700, 100, (0.6, 0.85, 1.0), 18, 0.5)
 # question cards across the background
 POS = [(300, 150, -6), (760, 90, 3), (1250, 110, -3), (1700, 120, 5), (170, 470, 4), (1760, 420, -5), (420, 640, -3), (1560, 640, 4), (980, 300, 2)]
-POS = [(560, 75, -4), (1040, 60, 2), (1500, 95, -3), (330, 300, 4), (1640, 290, -4), (230, 520, -3), (1700, 500, 3), (960, 230, 2), (420, 700, 3)]
+POS = [(660, 70, -3), (1190, 62, 2), (1640, 100, -3), (330, 300, 4), (1640, 290, -4), (230, 520, -3), (1700, 500, 3), (960, 230, 2), (420, 700, 3)]
 for i, (x, y, r) in enumerate(POS):
     w = (text_w(c, L(*G1.QCARDS[i]), 30) + 90) * 1.45
     x = min(max(x, w / 2 + 24), W - w / 2 - 24)
@@ -82,17 +82,33 @@ RM.qmark(c, cx + 10, by - (660 + 168) * CS - 110, 150, 0.0, 1.0)
 g = cairo.LinearGradient(0, 700, 0, H); g.add_color_stop_rgba(0, 0, 0, 0, 0); g.add_color_stop_rgba(0.55, 0, 0, 0, 0.75); g.add_color_stop_rgba(1, 0, 0, 0, 0.95)
 c.set_source(g); c.rectangle(0, 700, W, H - 700); c.fill()
 if LANG == 'en':
-    w1 = text_w(c, 'DIWALI ', 170); w2 = text_w(c, 'EXPLAINED', 170); x0 = W / 2 - (w1 + w2) / 2
-    txt(c, 'DIWALI ', x0, 965, 170, CREAM, anchor='l', stroke=12); txt(c, 'EXPLAINED', x0 + w1, 965, 170, grad=True, anchor='l', stroke=12)
+    w1 = text_w(c, 'DIWALI ', 165); w2 = text_w(c, 'EXPLAINED', 165); x0 = W / 2 - (w1 + w2) / 2
+    txt(c, 'DIWALI ', x0, 880, 165, CREAM, anchor='l', stroke=12); txt(c, 'EXPLAINED', x0 + w1, 880, 165, grad=True, anchor='l', stroke=12)
 else:
-    w1 = text_w(c, 'దీపావళి ', 160); w2 = text_w(c, 'వివరంగా', 160); x0 = W / 2 - (w1 + w2) / 2
-    txt(c, 'దీపావళి ', x0, 955, 160, CREAM, anchor='l', stroke=12); txt(c, 'వివరంగా', x0 + w1, 955, 160, grad=True, anchor='l', stroke=12)
-# logo top-left
-av = Image.open('/home/claude/why-channel-studio/brand/avatars/' + ('why_profile_2160.png' if LANG == 'en' else 'why_telugu_profile_2160.png')).convert('RGBA').resize((150, 150), Image.LANCZOS)
-m = Image.new('L', (150, 150), 0); from PIL import ImageDraw; ImageDraw.Draw(m).ellipse((0, 0, 149, 149), fill=255); av.putalpha(m)
-sf, _ = surf_from_pil(av)
-c.set_source_rgba(*AMBER, 1); c.arc(110, 110, 81, 0, 2 * math.pi); c.fill()
-c.set_source_surface(sf, 35, 35); c.paint()
+    w1 = text_w(c, 'దీపావళి ', 155); w2 = text_w(c, 'వివరంగా', 155); x0 = W / 2 - (w1 + w2) / 2
+    txt(c, 'దీపావళి ', x0, 870, 155, CREAM, anchor='l', stroke=12); txt(c, 'వివరంగా', x0 + w1, 870, 155, grad=True, anchor='l', stroke=12)
 a = np.ndarray((H, W, 4), np.uint8, s.get_data())[:, :, [2, 1, 0]].copy()
-Image.fromarray(a).resize((1280, 720), Image.LANCZOS).save(f'/home/claude/dl/thumb2_diwali_long_{LANG.upper()}.jpg', quality=92)
+import sys
+sys.path.insert(0, '/home/claude/why-channel-studio/videos/2026-10-26_short_gold_stardust/pipeline'); sys.path.insert(0, '/home/claude/elnino')
+from thumbkit import logo
+from epic import font as efont
+from PIL import ImageFont, ImageDraw
+base = Image.fromarray(a).convert('RGBA')
+def tagpill(im, text, cy):
+    if LANG == 'en': f = efont('mono', 40)
+    else:
+        f = ImageFont.truetype('/home/claude/fonts/NotoSansTelugu.ttf', 40, layout_engine=ImageFont.Layout.RAQM)
+        try: f.set_variation_by_name('Bold')
+        except Exception: pass
+    w = int(f.getlength(text) + (len(text) * 6 if LANG == 'en' else 0) + 76); h = 78
+    t = Image.new('RGBA', (w, h), (0, 0, 0, 0)); d = ImageDraw.Draw(t)
+    d.rounded_rectangle((1, 1, w - 2, h - 2), radius=39, fill=(10, 10, 10, 170), outline=(255, 178, 36, 255), width=3)
+    if LANG == 'en':
+        x = 38
+        for ch in text: d.text((x, h / 2), ch, font=f, fill=(255, 178, 36), anchor='lm'); x += f.getlength(ch) + 6
+    else: d.text((w / 2, h / 2), text, font=f, fill=(255, 178, 36), anchor='mm')
+    im.alpha_composite(t, (int((W - w) / 2), cy - h // 2))
+tagpill(base, 'DIWALI · FULL STORY' if LANG == 'en' else 'దీపావళి · FULL STORY', 1010)
+logo(base, 56, 46, 80)
+base.convert('RGB').resize((1280, 720), Image.LANCZOS).save(f'/home/claude/dl/thumb2_diwali_long_{LANG.upper()}.jpg', quality=92)
 print('ok')
