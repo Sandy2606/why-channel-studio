@@ -1,4 +1,4 @@
-# DIWALI, EXPLAINED — full video script (Sun Nov 1) · v1 for approval
+# DIWALI, EXPLAINED — full video script (Sun Nov 1) · v2 (your edits applied)
 Two 2D characters: **ANNA** (older brother, explainer, *your cloned voice*) and **CHELLI** (younger sister, curious, glowing "?" over her head, *female Indian voice*).
 Format: speaker · [light mood] · **stress** · ⏸ pause · → visual beat. Target ≈ 9–10 min.
 
@@ -41,19 +41,21 @@ Format: speaker · [light mood] · **stress** · ⏸ pause · → visual beat. T
    → stamp "2027 · OCT 29"
 
 ### CHAPTER 2 · WHY DOES EVERY HOME GET DEEP-CLEANED?
-22. CHELLI Question two! Why does Amma make us clean the **entire** house before Diwali? Every single year.
+22. CHELLI Question two! Why do we clean the **entire** house before Diwali? Every single year.
    → both on screen; Chelli holding a broom, dust cloud
 23. ANNA Think about what just **ended**. ⏸ The monsoon.
 24. ANNA Four months of rain. Damp walls, fungus in the corners, that smell in the cupboards, insects everywhere.
    → wall with damp patches; humidity meter dropping
 25. ANNA By Diwali, the rain stops and the air turns **dry**. It's the first good time in months to clean, dry, and paint.
    → window opens, sunlight, fan
-26. ANNA And that white **lime** wash on old walls? Lime is a natural disinfectant. It fights fungus.
-   → lime bucket, brush strokes
+26. ANNA In our grandparents' time, homes had mud floors and **lime**-washed walls. Lime is a natural disinfectant, so after the rains, they washed the walls white again to fight the fungus.
+   → old house, lime bucket, brush strokes
+26b. ANNA Today we have paint and tiles… ⏸ but the **habit** stayed. Our ancestors built it around how they lived, and we still follow it, because the timing still makes sense.
+   → split screen: old lime-washed home / modern apartment, both being cleaned
 27. ANNA Shops do the same with money. ⏸ The old account books close, and **new ones** begin.
    → ledger closes, new red ledger opens
 28. CHELLI So the cleaning isn't just tradition…
-29. ANNA It's good **timing**. ⏸ And honestly, it's the only week Amma gets **everyone** to help.
+29. ANNA It's good **timing**. ⏸ And honestly, it's the only week the whole family cleans **together**.
 
 ### CHAPTER 3 · IS YOUR DIWALI BONUS A GIFT?
 30. CHELLI Question three! My friend says her Diwali bonus is a **gift** from her company. Is it?
@@ -80,8 +82,8 @@ Format: speaker · [light mood] · **stress** · ⏸ pause · → visual beat. T
    → stamp "NOT DIWALI"
 43. ANNA It was made in **2003** by a scientist, **Chris Elvidge**, from years of satellite data. The colours show how cities **grew** over time.
    → legend: white = before 1992, blue 1992, green 1998, red 2003
-44. ANNA NASA did take a real picture on Diwali night, in **2012**.
-   → real NASA Suomi NPP night image
+44. ANNA [turns to camera] You can see it right here on your screen. ⏸ **This** is the real picture NASA took on Diwali night, in **2012**.
+   → Anna turns to the viewer and points; real NASA Suomi NPP night image slides in beside him
 45. ANNA And NASA says the extra Diwali light is so subtle… that space images **don't show it**.
    → clipping with the quote highlighted
 46. CHELLI So all those forwards…
@@ -100,7 +102,10 @@ Format: speaker · [light mood] · **stress** · ⏸ pause · → visual beat. T
 55. ANNA Exactly.
 
 ### CHAPTER 6 · WHY CAN'T DELHI BREATHE AFTER DIWALI?
-56. CHELLI Last one. Why can't **Delhi** breathe after Diwali? ⏸ Is it only the crackers?
+56. CHELLI Okay, **last** one, I promise.
+56b. ANNA [smirking, to camera] Last one… ⏸ sure.
+   → Anna glances at the viewer; the 3 locked cards wobble behind Chelli
+56c. CHELLI Why can't **Delhi** breathe after Diwali? ⏸ Is it only the crackers?
 57. ANNA Crackers make it **much** worse… ⏸ but they're not the whole story.
 58. ANNA Look at the timing. Diwali comes right when farmers in **Punjab and Haryana** burn leftover crop **stubble**.
    → map: smoke arrows drifting towards Delhi
@@ -117,10 +122,10 @@ Format: speaker · [light mood] · **stress** · ⏸ pause · → visual beat. T
 64. CHELLI [urgent] Hold on, hold on! ⏸ You still haven't answered my **last three**!
 65. CHELLI Why does **Nepal** worship dogs on its Diwali? Why did **New York** give schools a Diwali holiday? And why do **green crackers** still pollute?
    → the 3 locked cards shake
-66. ANNA [warm] Those are big ones. ⏸ Let's save them for **next Diwali**.
-67. ANNA If you want those answers next year, hit **like**, and comment "**next year**." If enough of you ask… we'll make it.
-   → like button + comment bubble typing "next year"
-68. CHELLI And this whole week, there's a new Diwali **why** every day!
+66. ANNA [warm] Those are big ones. ⏸ Let's save them for the **next Diwali video**.
+67. ANNA Or if you want them **sooner**, hit **like** and comment below. If most of you want it… we'll make it happen.
+   → like button + comment bubble typing "make it!"
+68. CHELLI And this whole week, there's a new Diwali Short every day… with **more** facts we didn't even get to today!
    → DIWALI WEEK series slide (this video + 6 Shorts, "TOMORROW" on 1/6)
 69. ANNA *(library line, no new credits)* If you like learning things like this, we post a full video every Sunday and a new Short the other six days. So there's always something new. Subscribe, and we'll make it worth it.
    → subscribe card, click on "Subscribe"
@@ -156,14 +161,15 @@ Format: speaker · [light mood] · **stress** · ⏸ pause · → visual beat. T
 21. ANNA **October 29, 2027.** ⏸ దాదాపు పది రోజులు ముందు. చంద్రుడు చెప్పినట్టే.
 
 ### CHAPTER 2
-22. CHELLI రెండో ప్రశ్న! Diwali ముందు అమ్మ మాతో **ఇల్లంతా** ఎందుకు శుభ్రం చేయిస్తుంది? ప్రతి సంవత్సరం.
+22. CHELLI రెండో ప్రశ్న! Diwali ముందు మనం **ఇల్లంతా** ఎందుకు శుభ్రం చేస్తాం? ప్రతి సంవత్సరం.
 23. ANNA అప్పుడే ఏది **అయిపోయిందో** ఆలోచించు. ⏸ వర్షాకాలం.
 24. ANNA నాలుగు నెలల వర్షాలు. తడి గోడలు, మూలల్లో బూజు, బీరువాల్లో ఆ వాసన, ఎక్కడ చూసినా పురుగులు.
 25. ANNA Diwali వచ్చేసరికి వర్షాలు ఆగిపోతాయి, గాలి **పొడిగా** మారుతుంది. శుభ్రం చేయడానికి, ఆరబెట్టడానికి, paint వేయడానికి నెలల తర్వాత వచ్చే మొదటి మంచి సమయం.
-26. ANNA పాత గోడల మీద వేసే తెల్లటి **సున్నం**? సున్నం సహజమైన disinfectant. బూజుని తగ్గిస్తుంది.
+26. ANNA మన తాతల కాలంలో ఇళ్ళకి మట్టి నేలలు, **సున్నం** వేసిన గోడలు ఉండేవి. సున్నం సహజమైన disinfectant. అందుకే వర్షాల తర్వాత గోడలకి మళ్ళీ సున్నం వేసి బూజుని పోగొట్టేవారు.
+26b. ANNA ఇప్పుడు paint, tiles వచ్చాయి… ⏸ కానీ ఆ **అలవాటు** అలాగే ఉంది. మన పెద్దలు వాళ్ళ జీవన విధానానికి తగ్గట్టు పెట్టారు, timing ఇప్పటికీ సరిపోతుంది కాబట్టి మనం ఇంకా పాటిస్తున్నాం.
 27. ANNA Shops డబ్బు విషయంలో కూడా ఇదే చేస్తాయి. ⏸ పాత లెక్కల పుస్తకాలు మూసి, **కొత్తవి** మొదలుపెడతాయి.
 28. CHELLI అంటే ఈ శుభ్రం చేయడం కేవలం సంప్రదాయం కాదు…
-29. ANNA సరైన **timing**. ⏸ నిజం చెప్పాలంటే, అమ్మ **అందరి**తో పని చేయించుకోగలిగే వారం ఇదొక్కటే.
+29. ANNA సరైన **timing**. ⏸ నిజం చెప్పాలంటే, ఇల్లంతా **కలిసి** శుభ్రం చేసే వారం ఇదొక్కటే.
 
 ### CHAPTER 3
 30. CHELLI మూడో ప్రశ్న! మా friend తన Diwali bonus company ఇచ్చిన **gift** అంటోంది. నిజమేనా?
@@ -182,7 +188,7 @@ Format: speaker · [light mood] · **stress** · ⏸ pause · → visual beat. T
 41. CHELLI నాలుగో ప్రశ్న. ⏸ Diwali రాత్రి **space** నుంచి India రంగురంగులుగా మెరిసిపోతున్న ఆ photo తెలుసు కదా?
 42. ANNA అది నిజమైన satellite data… ⏸ కానీ అది Diwali **కాదు**.
 43. ANNA దాన్ని **2003** లో **Chris Elvidge** అనే scientist, కొన్ని సంవత్సరాల satellite data తో తయారు చేశారు. ఆ రంగులు నగరాలు ఎలా **పెరిగాయో** చూపిస్తాయి.
-44. ANNA NASA నిజంగానే Diwali రాత్రి ఒక photo తీసింది, **2012** లో.
+44. ANNA [turns to camera] మీ screen మీద చూడండి. ⏸ **ఇదే** NASA నిజంగా Diwali రాత్రి తీసిన photo, **2012** లో.
 45. ANNA Diwali అదనపు వెలుగు చాలా తక్కువ… space photos లో **కనిపించదు** అని NASA యే చెప్పింది.
 46. CHELLI అంటే ఆ forwards అన్నీ…
 47. ANNA తప్పు photo. ⏸ ఈసారి ఎవరైనా పంపితే, ఏం reply ఇవ్వాలో నీకు తెలుసు.
@@ -198,7 +204,9 @@ Format: speaker · [light mood] · **stress** · ⏸ pause · → visual beat. T
 55. ANNA అంతే.
 
 ### CHAPTER 6
-56. CHELLI చివరి ప్రశ్న. Diwali తర్వాత **Delhi** కి ఊపిరి ఎందుకు ఆడదు? ⏸ crackers వల్లేనా?
+56. CHELLI సరే, ఇదే **చివరి** ప్రశ్న, promise.
+56b. ANNA [smirking, to camera] చివరిదా… ⏸ సరే సరే.
+56c. CHELLI Diwali తర్వాత **Delhi** కి ఊపిరి ఎందుకు ఆడదు? ⏸ crackers వల్లేనా?
 57. ANNA Crackers దాన్ని **చాలా** ఎక్కువ చేస్తాయి… ⏸ కానీ అదొక్కటే కారణం కాదు.
 58. ANNA Timing చూడు. సరిగ్గా Diwali సమయంలోనే **Punjab, Haryana** రైతులు పంట **వ్యర్థాలు** కాల్చుతారు.
 59. ANNA చలికాలం మొదట్లో, చల్లటి కదలని గాలి నగరం మీద **మూతలా** కూర్చుంటుంది. ⏸ పొగ బయటికి పోలేదు.
@@ -210,9 +218,9 @@ Format: speaker · [light mood] · **stress** · ⏸ pause · → visual beat. T
 ### ENDING
 64. CHELLI [urgent] ఆగు, ఆగు! ⏸ నా **చివరి మూడు** ప్రశ్నలకి ఇంకా answer చెప్పలేదు!
 65. CHELLI **Nepal** లో Diwali రోజు కుక్కల్ని ఎందుకు పూజిస్తారు? **New York** schools కి Diwali సెలవు ఎందుకు ఇచ్చింది? **Green crackers** కూడా pollution ఎందుకు చేస్తాయి?
-66. ANNA [warm] అవి పెద్ద ప్రశ్నలు. ⏸ **వచ్చే Diwali** కి దాచుకుందాం.
-67. ANNA వచ్చే సంవత్సరం ఆ answers కావాలంటే, **like** చేసి, "**next year**" అని comment చేయండి. చాలామంది అడిగితే… తప్పకుండా చేస్తాం.
-68. CHELLI ఈ వారం మొత్తం, రోజుకో కొత్త Diwali **why** వస్తుంది!
+66. ANNA [warm] అవి పెద్ద ప్రశ్నలు. ⏸ **తర్వాతి Diwali video** కి దాచుకుందాం.
+67. ANNA అంతకంటే **ముందే** కావాలంటే, **like** చేసి comment చేయండి. ఎక్కువమంది అడిగితే… తప్పకుండా చేస్తాం.
+68. CHELLI ఈ వారం మొత్తం, రోజుకో కొత్త Diwali Short వస్తుంది… ఈరోజు చెప్పని **ఇంకా ఎక్కువ** విషయాలతో!
 69. ANNA *(library line)* ఇలాంటి కొత్త విషయాలు నేర్చుకోవడం నచ్చితే, ప్రతి ఆదివారం ఒక full video, మిగతా ఆరు రోజులు రోజుకో Short పెడతాం. ఎప్పుడూ ఏదో ఒక కొత్తది ఉంటుంది. Subscribe చేయండి, మీకు నచ్చేలా చేస్తాం.
 
 ---
