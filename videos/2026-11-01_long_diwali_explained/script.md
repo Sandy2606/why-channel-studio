@@ -8,16 +8,16 @@ Format: speaker · [light mood] · **stress** · ⏸ pause · → visual beat. T
 ## ENGLISH
 
 ### COLD OPEN
-1. CHELLI [excited] Anna! Anna! I have **so many** Diwali questions!
+1. CHELLI [cheerful] Anna! Anna! I have **so many** Diwali questions!
    → Chelli runs in, "?" pops above her head; Anna on the sofa looks up
 2. ANNA [warm] Okay… what happened?
-3. CHELLI [fast] Why does Diwali come on a **different date** every year? Why does everyone clean the **whole house** before Diwali? Is my Diwali bonus a **gift**, or do they **have** to pay it? Is that photo of India glowing from **space** real? Why does the **stock market** open on Diwali? And why can't **Delhi breathe** after Diwali? Oh, and why does **Nepal** worship dogs on Diwali? Why did **New York** give schools a Diwali holiday? And why do **green crackers** still pollute?
+3. CHELLI [curious, quick] Why does Diwali come on a **different date** every year? Why does everyone clean the **whole house** before Diwali? Is my Diwali bonus a **gift**, or do they **have** to pay it? Is that photo of India glowing from **space** real? Why does the **stock market** open on Diwali? And why can't **Delhi breathe** after Diwali? Oh, and why does **Nepal** worship dogs on Diwali? Why did **New York** give schools a Diwali holiday? And why do **green crackers** still pollute?
    → each question pops out as a card and piles up around her, faster and faster
 4. ANNA [laughing] Slow down, slow down! ⏸ One at a time.
 5. ANNA [warm] Let's take them one by one… and find the answers.
 5b. ANNA Actually, wait. ⏸ Let me **record** this. If you have these questions, so do a lot of people. I'll put it on YouTube, so anyone who's wondering can learn too.
    → Anna props a phone on the table; screen flips to the phone's view, red REC dot blinks, both of them wave at the camera
-5c. CHELLI [excited] Hi everyone!
+5c. CHELLI [cheerful] Hi everyone!
    → **TITLE SLIDE**: evidence board, all 9 cards pinned, amber threads join them to a glowing diya in the centre · **DIWALI, EXPLAINED** · progress bar appears (6 dots + 3 locked)
 
 ### CHAPTER 1 · WHY DOES DIWALI KEEP CHANGING ITS DATE?
@@ -138,7 +138,7 @@ Format: speaker · [light mood] · **stress** · ⏸ pause · → visual beat. T
 63b. CHELLI So… ⏸ the moon moves the date, the monsoon makes us clean, the bonus is the law, the photo is fake, Diwali starts a new financial year… and Delhi's air is a winter problem.
    → the six answered cards flip to ✓ on the board
 63c. ANNA [proud] You got it.
-64. CHELLI [urgent] Hold on, hold on! ⏸ You still haven't answered my **last three**!
+64. CHELLI [lightly insistent] Hold on, hold on! ⏸ You still haven't answered my **last three**!
 65. CHELLI Why does **Nepal** worship dogs on its Diwali? Why did **New York** give schools a Diwali holiday? And why do **green crackers** still pollute?
    → the 3 locked cards shake
 66. ANNA [warm] Those are big ones. ⏸ Let's save them for the **next Diwali video**.
@@ -154,13 +154,13 @@ Format: speaker · [light mood] · **stress** · ⏸ pause · → visual beat. T
 ## TELUGU
 
 ### COLD OPEN
-1. CHELLI [excited] అన్నయ్యా! అన్నయ్యా! నాకు Diwali గురించి **బోలెడు** ప్రశ్నలు ఉన్నాయి!
+1. CHELLI [cheerful] అన్నయ్యా! అన్నయ్యా! నాకు Diwali గురించి **బోలెడు** ప్రశ్నలు ఉన్నాయి!
 2. ANNA [warm] సరే… ఏమైంది?
-3. CHELLI [fast] Diwali ప్రతి సంవత్సరం **వేరే తేదీకి** ఎందుకు వస్తుంది? Diwali ముందు అందరూ **ఇల్లంతా** ఎందుకు శుభ్రం చేస్తారు? నా Diwali bonus **gift** ఆ, లేక company **ఇవ్వాల్సిందే**నా? **Space** నుంచి మెరిసిపోతున్న India photo నిజమేనా? Diwali రోజు **stock market** ఎందుకు open అవుతుంది? Diwali తర్వాత **Delhi** కి ఊపిరి ఎందుకు ఆడదు? ఆ, ఇంకా **Nepal** లో Diwali రోజు కుక్కల్ని ఎందుకు పూజిస్తారు? **New York** schools కి Diwali సెలవు ఎందుకు ఇచ్చింది? **Green crackers** కూడా pollution ఎందుకు చేస్తాయి?
+3. CHELLI [curious, quick] Diwali ప్రతి సంవత్సరం **వేరే తేదీకి** ఎందుకు వస్తుంది? Diwali ముందు అందరూ **ఇల్లంతా** ఎందుకు శుభ్రం చేస్తారు? నా Diwali bonus **gift** ఆ, లేక company **ఇవ్వాల్సిందే**నా? **Space** నుంచి మెరిసిపోతున్న India photo నిజమేనా? Diwali రోజు **stock market** ఎందుకు open అవుతుంది? Diwali తర్వాత **Delhi** కి ఊపిరి ఎందుకు ఆడదు? ఆ, ఇంకా **Nepal** లో Diwali రోజు కుక్కల్ని ఎందుకు పూజిస్తారు? **New York** schools కి Diwali సెలవు ఎందుకు ఇచ్చింది? **Green crackers** కూడా pollution ఎందుకు చేస్తాయి?
 4. ANNA [laughing] ఆగు, ఆగు! ⏸ ఒక్కొక్కటిగా.
 5. ANNA [warm] ఒక్కొక్క ప్రశ్న తీసుకుందాం… answers కనుక్కుందాం.
 5b. ANNA ఆగు ఆగు. ⏸ ఇది **record** చేస్తా. నీకు ఈ ప్రశ్నలు ఉన్నాయంటే, చాలామందికి ఉంటాయి. YouTube లో పెడతా, తెలుసుకోవాలనుకునే వాళ్ళందరూ నేర్చుకోవచ్చు.
-5c. CHELLI [excited] Hi అందరికీ!
+5c. CHELLI [cheerful] Hi అందరికీ!
    → TITLE SLIDE: **DIWALI, EXPLAINED** / దీపావళి, ఎందుకు?
 
 ### CHAPTER 1
@@ -245,7 +245,7 @@ Format: speaker · [light mood] · **stress** · ⏸ pause · → visual beat. T
 ### ENDING
 63b. CHELLI అంటే… ⏸ చంద్రుడు తేదీని మారుస్తాడు, వర్షాకాలం వల్ల శుభ్రం చేస్తాం, bonus చట్టం, ఆ photo fake, Diwali తో కొత్త financial year… Delhi గాలి చలికాలం సమస్య.
 63c. ANNA [proud] Correct గా చెప్పావ్.
-64. CHELLI [urgent] ఆగు, ఆగు! ⏸ నా **చివరి మూడు** ప్రశ్నలకి ఇంకా answer చెప్పలేదు!
+64. CHELLI [lightly insistent] ఆగు, ఆగు! ⏸ నా **చివరి మూడు** ప్రశ్నలకి ఇంకా answer చెప్పలేదు!
 65. CHELLI **Nepal** లో Diwali రోజు కుక్కల్ని ఎందుకు పూజిస్తారు? **New York** schools కి Diwali సెలవు ఎందుకు ఇచ్చింది? **Green crackers** కూడా pollution ఎందుకు చేస్తాయి?
 66. ANNA [warm] అవి పెద్ద ప్రశ్నలు. ⏸ **తర్వాతి Diwali video** కి దాచుకుందాం.
 67. ANNA [to camera] చూస్తున్న మీ అందరూ… అంతకంటే **ముందే** కావాలంటే, **like** చేసి comment చేయండి. ఎక్కువమంది అడిగితే… తప్పకుండా చేస్తాం.
