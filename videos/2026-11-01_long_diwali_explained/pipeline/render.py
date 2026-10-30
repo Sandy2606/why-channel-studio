@@ -380,7 +380,7 @@ def frame(t):
         if 1 <= k <= 6: progress(c, t, k)
     for tm, _ in MINI:
         if tm - 0.1 <= t < tm + 4.2:
-            c.save(); sc_ = 0.5; c.translate(1500 - 540 * sc_, 260 - 180 * sc_); c.scale(sc_, sc_)
+            c.save(); sc_ = 0.5; c.translate(1500 - 540 * sc_, (175 if LANG == 'te' else 260) - 180 * sc_); c.scale(sc_, sc_)
             CT.draw(c, t, tm, 'yt', LANG, y=180, t_out=tm + 3.8); c.restore()
     if not title and not in_chap:
         captions(c, t, y=1000 if st >= t0('68') - 0.2 and t < T_END else 975)

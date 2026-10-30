@@ -79,10 +79,13 @@ def text_w(c, s, px, kind='head'):
 def txt(c, s, x, y, px, col=CREAM, a=1.0, anchor='c', kind='head', grad=False, stroke=0.0, maxw=None):
     """draw text centred vertically on y. Telugu goes through PIL+RAQM."""
     if a <= 0.01 or not s: return 0
+    m = c.get_matrix()
+    if abs(m.xx * m.yy - m.xy * m.yx) < 1e-4: return 0
     if maxw:
         w0 = text_w(c, s, px, kind)
         if w0 > maxw: px *= maxw / w0
     if TE_RE.search(s):
+        s = s.replace(' → ', ' - ').replace('→', '-')
         key = (s, int(px), col, kind, grad, stroke)
         if key not in _TC:
             f = _tefont(px * 0.92, 'Black' if kind == 'head' else 'Bold')
