@@ -1,0 +1,192 @@
+DIWALI ASSETS — 30 October 2026
+Captured / downloaded 30 Oct 2026. Article files are full-page browser
+print-to-PDF captures; the PNGs in renders/ are 150 dpi renders of pages
+from those PDFs (headline page + key-line page where noted), NOT
+browser screenshot PNGs. Images and sounds are original downloads,
+not re-encoded, not cropped or upscaled. Sounds were verified by
+name, duration and licence on their source pages, not auditioned.
+
+IMPORTANT CORRECTIONS / LABELS — read before using on screen:
+- Item 1 is NOT IndiaCode. IndiaCode's old handle returned an Akamai
+  edge error and its new portal (indiacode.gov.in) did not return the
+  Bonus Act for that handle, so the ezyLegal explainer below was used
+  as the authorised fallback. It carries all three figures.
+- Item 7 is NOT a final Supreme Court ruling. On 29 Oct 2026 the
+  bench made observations during a hearing and the matter continued;
+  the capture is the hearing report, labelled as such.
+- Item 6 is NOT Hans India. No Hans India version of the IIT press
+  release was found in search; the Shiksha page below carries the
+  same IIT wording, including the 12-hour point, and is labelled
+  as that substitute. Its page did not display a publication date
+  in the rendered capture (the request's May 26, 2022 date is from
+  search results for the same release).
+- Item 4 is NOT the NSE circular itself. It is Zerodha's bulletin
+  summarising the NSE circulars, with links out to them. The times
+  below are the equity normal-market times in that bulletin.
+- Item 8 shows a split for 2025: see the note under item 8.
+- Sounds 11, 15, 16, 17, 18 are closest matches, not literal matches
+  — see each entry. No sound in this pack was presented as
+  something it is not.
+
+ARTICLES (articles/)
+1. 01-bonus-act-ezylegal.pdf — 8 pages, 1.6 MB
+   Source: https://www.ezylegal.in/blogs/understanding-the-payment-of-bonus-act-1965
+   (ezyLegal, "Understanding the Payment of Bonus Act 1965")
+   FALLBACK for IndiaCode (see above).
+   Verified in the PDF text: Section 10 minimum bonus 8.33%;
+   Section 11 maximum bonus 20%; employee wage ceiling Rs 21,000
+   per month (2015 amendment). Calculation cap Rs 7,000 also shown.
+   Renders: 01-bonus-headline-1.png (p.1), 01-bonus-keyline-2.png (p.2).
+
+2. 02-cait-diwali-businesstoday.pdf — 10 pages, 2.0 MB
+   Source: https://www.businesstoday.in/india/story/diwali-2025-sales-hit-rs-605-lakh-crore-87-of-consumers-chose-indian-made-products-cait-report-499067-2025-10-21
+   (Business Today, updated 21 Oct 2025, 4:11 PM IST)
+   Verified in the PDF text: total Diwali trade Rs 6.05 lakh crore
+   (Rs 5.40 lakh crore goods + Rs 65,000 crore services);
+   50 lakh temporary jobs in logistics, packaging, transport and
+   retail; 87% of buyers preferred Indian-made products.
+   Renders: 02-cait-headline-01.png (p.1), 02-cait-keyline-06.png (p.6).
+
+3. 03-earthsky-fake-diwali.pdf — 8 pages, 5.9 MB
+   Source: https://earthsky.org/earth/fake-image-of-india-during-diwali-versus-the-real-thing/
+   (EarthSky, "Fake image of Diwali still circulating")
+   Verified in the PDF text (p.3): the passage explaining that
+   Diwali's extra light is too faint/subtle to register in space
+   images. The article also identifies the viral colour image as
+   a DMSP-based composite, not a single Diwali-night photograph.
+   Renders: 03-earthsky-headline-1.png (p.1), 03-earthsky-keyline-3.png (p.3).
+
+4. 04-muhurat-2026-zerodha.pdf — 4 pages, 373 KB
+   Source: https://zerodha.com/marketintel/bulletin/461711/muhurat-trading-session-on-account-of-diwali-november-2026
+   (Zerodha bulletin summarising NSE/BSE/MCX circulars — NOT the
+   circular itself, see above)
+   Verified in the PDF text: Sunday, 8 November 2026;
+   pre-open 2:05–2:20 PM; normal market 2:20–3:30 PM for non-CAS
+   stocks and 2:20–3:15 PM for CAS stocks; F&O 2:20–3:40 PM.
+   Renders: 04-muhurat-headline-1.png (p.1, schedule table).
+
+5. 05-muhurat-history-icicidirect.pdf — 6 pages, 4.0 MB
+   Source: https://www.icicidirect.com/ilearn/stocks/articles/diwali-muhurat-trading
+   (ICICI Direct, Diwali Muhurat Trading)
+   Verified in the PDF text (p.3): BSE began the Muhurat Trading
+   tradition in 1957, and NSE adopted it in 1992.
+   Renders: 05-muhurat-keyline-3.png (p.3).
+
+6. 06-iit-delhi-shiksha.pdf — 3 pages, 692 KB
+   Source: https://www.shiksha.com/news/college-delhi-s-poor-air-quality-after-diwali-is-because-of-biomass-burning-not-fireworks-iit-delhi-study-blogId-91759
+   (Shiksha, carrying the IIT Delhi press-release wording —
+   SUBSTITUTE for Hans India, see above)
+   Verified in the PDF text (p.1): the lead author's point that
+   the fireworks impact falls away within around 12 hours after
+   Diwali; metal content in PM2.5 rose 1,100%, fireworks accounting
+   for 95% of metal PM2.5 during Diwali; biomass-burning emissions
+   drive poor air quality in the days after Diwali.
+   Renders: 06-iit-headline-1.png (p.1).
+
+7. 07-supreme-court-devdiscourse.pdf — 14 pages, 2.2 MB
+   Source: https://www.devdiscourse.com/article/headlines/3998914-festive-enthusiasm-high-absolute-ban-on-firecrackers-no-solution-but-dont-make-mockery-of-our-orders-sc-to-delhi-govt
+   (Devdiscourse / ANI, updated 29 Oct 2026, 17:51 IST)
+   HEARING REPORT, NOT A FINAL RULING (see above).
+   Verified in the PDF text: 29 Oct 2026 date; bench of Justices
+   MM Sundresh and PB Varale; the court's observation that an
+   absolute ban may not be the solution given festive enthusiasm,
+   with emphasis on enforcing existing directions rather than
+   seeking a complete ban.
+   Renders: 07-sc-headline-01.png (p.1).
+
+8. 08-diwali-dates-publicholidays.pdf — 3 pages, 101 KB
+   Source: https://publicholidays.in/diwali-deepavali/
+   (PublicHolidays.in, Diwali / Deepavali)
+   Verified in the PDF text (p.1 table):
+   2026 — 8 Nov (Sun) Diwali, National.
+   2027 — 29 Oct (Fri) Diwali, National except AP, GA, KA, KL,
+   PY, TN & TG (Deepavali listed same day for those states).
+   2025 SPLIT (shown on the same page, do not flatten to one
+   date): table lists 20 Oct (Mon) Diwali, National except MH
+   & MN, and 21 Oct (Tue) Diwali, MH & MN; the page's intro
+   text says Diwali across India on Tuesday 21 October.
+   Renders: 08-dates-headline-1.png (p.1).
+
+IMAGES (images/) — original downloads, no re-encode
+9. 09-india-diwali-rainbow-composite.jpg — 600 x 577, 94 KB
+   Source image: https://earthsky.org/upl/2012/11/India_Diwali_fake-e1353258478199.jpeg
+   (from the EarthSky article in item 3)
+   The viral rainbow image: colour composite based on DMSP
+   Operational Linescan System data, created in 2003 by NOAA
+   scientist Chris Elvidge to highlight population growth over
+   time — white = city lights visible before 1992; blue/green/red
+   = lights that became visible in 1992, 1998 and 2003
+   respectively. It is NOT a photograph of India on Diwali night.
+   Low resolution as published (600 x 577); not upscaled.
+
+10. 10-nasa-suomi-npp-india-2012-11-12.jpg — 4218 x 4218, 4.6 MB
+    Source: NASA Earth Observatory, "South Asian Night Lights"
+    (image of the day 15 Nov 2012; now redirects to
+    science.nasa.gov/earth/earth-observatory/south-asian-night-lights-79682/)
+    Download file: india_vir_2012317_lrg.jpg
+    Credit as shown on the page: NASA Earth Observatory image
+    by Jesse Allen and Robert Simmon, using VIIRS Day-Night
+    Band data from Suomi NPP. Data acquired 12 November 2012;
+    image brightened to make city lights easier to distinguish.
+    NASA imagery is public domain; keep the credit line with it.
+
+SOUNDS (sfx/) — original Mixkit downloads, WAV 16-bit stereo
+44.1 kHz unless noted. Mixkit Sound Effects Free Licence:
+free for commercial and personal projects including monetized
+video, no attribution required (mixkit.co/license/). Verified
+by name/duration on source pages, NOT auditioned — ear-check
+items 15, 17 and 18 before locking them in.
+11. SUBSTITUTE — mixkit-footsteps-on-mattress-loop-534.wav
+    26.1 s actual, 4.4 MB. Mixkit, "Footsteps on mattress loop".
+    Source: https://mixkit.co/free-sound-effects/footsteps/
+    Difference: indoor, soft/light solo footsteps, but WALKING
+    on a mattress, not running. No indoor running file exists
+    among Mixkit's footsteps sounds. The Pixabay indoor
+    walking/pacing file first chosen for this slot could not be
+    downloaded — Pixabay blocked the browser with a Cloudflare
+    block on the retry — so this Mixkit file replaces it.
+12. mixkit-sweeping-wooden-floor-3086.wav — 6.6 s actual, 1.1 MB.
+    Mixkit, "Sweeping wooden floor".
+    Source: https://mixkit.co/free-sound-effects/sweeping/
+13. mixkit-fire-match-lighting-2590.wav — 6.1 s actual, 1.5 MB.
+    Mixkit, "Fire match lighting" (tags Light, Fire).
+    Match lighting; not explicitly named as a strike.
+    Source: https://mixkit.co/free-sound-effects/discover/match/
+14. mixkit-light-rain-loop-2393.wav — 15.0 s, 2.5 MB.
+    Mixkit, "Light rain loop".
+    Source: https://mixkit.co/free-sound-effects/discover/light-rain/
+15. SUBSTITUTE — mixkit-wind-blowing-ambience-2658.wav
+    61.8 s actual, 10.4 MB. Mixkit, "Wind blowing ambience".
+    Difference: a wind ambience, NOT a discrete gust. No gust
+    file was found; use a short slice for a gust, or trim to
+    the strongest passage.
+    Source: https://mixkit.co/free-sound-effects/discover/wind-blowing/
+16. SUBSTITUTE — mixkit-camera-digital-shutter-1432.wav
+    1.5 s actual, 261 KB. Mixkit, "Camera digital shutter".
+    Difference: a camera shutter click, NOT a phone REC beep.
+    No REC beep was found among Mixkit free sounds; this is
+    the closest camera-start cue.
+    Source: https://mixkit.co/free-sound-effects/discover/camera-shutter/
+17. SUBSTITUTE — mixkit-bell-notification-933.wav — 3.4 s actual, 579 KB.
+    Mixkit, "Bell notification".
+    Difference: a generic clear ringing bell, NOT a
+    stock-exchange opening bell. No market-style bell was
+    found among Mixkit's bell sounds.
+    Source: https://mixkit.co/free-sound-effects/bell/
+18. CLOSEST MATCH, EAR-CHECK — mixkit-whistles-firework-echo-and-explosion-3106.wav
+    8.5 s actual, 1.6 MB. Mixkit, "Whistles firework echo and explosion".
+    Difference: chosen for the "echo" distance cue, but it
+    contains an explosion element and softness/distance were
+    NOT verified by listening. Do not assume it is soft or
+    truly distant until you hear it; lower it in the mix if needed.
+    Source: https://mixkit.co/free-sound-effects/fireworks/
+
+RENDERS (renders/) — 150 dpi PNG renders from the PDFs above:
+01-bonus-headline-1.png, 01-bonus-keyline-2.png,
+02-cait-headline-01.png, 02-cait-keyline-06.png,
+03-earthsky-headline-1.png, 03-earthsky-keyline-3.png,
+04-muhurat-headline-1.png, 05-muhurat-keyline-3.png,
+06-iit-headline-1.png, 07-sc-headline-01.png,
+08-dates-headline-1.png.
+These are renders, not screenshots — say so on screen if
+you caption them.

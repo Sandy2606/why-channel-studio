@@ -26,7 +26,7 @@
   "file": "lib/heartbeat.wav",
   "source": "Human single heart beat",
   "dur": 1.1,
-  "use": "tension 1\u20132 s before a reveal (repeat 2\u20133x)",
+  "use": "tension 1–2 s before a reveal (repeat 2–3x)",
   "note": ""
  },
  "riser": {
@@ -196,7 +196,7 @@
   "source": "Mixkit slow heartbeat 494",
   "license": "Mixkit Free Licence",
   "dur": 4.0,
-  "use": "tension before a reveal (2\u20133 beats)",
+  "use": "tension before a reveal (2–3 beats)",
   "note": "",
   "hit_at": 0.45
  },
@@ -205,7 +205,7 @@
   "source": "Freesound 514486 \"Office stamp\" by whammy",
   "license": "CC0",
   "dur": 1.03,
-  "use": "\u2715/\u2713 verdicts, MYTH/TRUE stamps",
+  "use": "✕/✓ verdicts, MYTH/TRUE stamps",
   "note": "single stamp cut from 4; preview-quality MP3",
   "hit_at": 0.02
  },
@@ -384,11 +384,75 @@
  },
  "ui_pop": {
   "file": "ui_pop.wav",
-  "source": "Mixkit Message pop alert 2354 (mp3\u2192wav)",
+  "source": "Mixkit Message pop alert 2354 (mp3→wav)",
   "license": "Mixkit Free Licence",
   "dur": 1.07,
   "use": "CTA check mark / Following",
   "note": "",
   "hit_at": 0.06
+ },
+ "footsteps_soft_indoor": {
+  "file": "footsteps_soft_indoor.wav",
+  "dur": 26.12,
+  "use": "Chelli running in (cold open)",
+  "note": "soft walking loop, not running: speed up ~1.3x and trim 1.5-2 s",
+  "hit_at": 0.19,
+  "source": "Mixkit (free licence, no attribution), Diwali pack Oct 30 2026"
+ },
+ "broom_sweep": {
+  "file": "broom_sweep.wav",
+  "dur": 6.63,
+  "use": "cleaning-the-house beat",
+  "note": "strongest strokes 3-4.5 s",
+  "hit_at": 3.99,
+  "source": "Mixkit (free licence, no attribution), Diwali pack Oct 30 2026"
+ },
+ "match_light": {
+  "file": "match_light.wav",
+  "dur": 6.14,
+  "use": "lighting the diya",
+  "note": "quiet file (mean -49 dB): strike at 0.14 s, boost ~+10 dB",
+  "hit_at": 0.14,
+  "source": "Mixkit (free licence, no attribution), Diwali pack Oct 30 2026"
+ },
+ "rain_light_loop": {
+  "file": "rain_light_loop.wav",
+  "dur": 15.0,
+  "use": "monsoon / harvest season bed",
+  "note": "seamless loop, keep under -24 dB",
+  "hit_at": 0.0,
+  "source": "Mixkit (free licence, no attribution), Diwali pack Oct 30 2026"
+ },
+ "wind_ambience": {
+  "file": "wind_ambience.wav",
+  "dur": 61.84,
+  "use": "winter air / smoke-not-leaving beat",
+  "note": "ambience not a gust: strongest swell 7.5-9 s",
+  "hit_at": 8.06,
+  "source": "Mixkit (free licence, no attribution), Diwali pack Oct 30 2026"
+ },
+ "camera_shutter": {
+  "file": "camera_shutter.wav",
+  "dur": 1.51,
+  "use": "phone starts recording (REC dot appears)",
+  "note": "stand-in for a REC beep; click at 0.27 s",
+  "hit_at": 0.27,
+  "source": "Mixkit (free licence, no attribution), Diwali pack Oct 30 2026"
+ },
+ "bell_ring": {
+  "file": "bell_ring.wav",
+  "dur": 3.36,
+  "use": "Muhurat trading opening bell",
+  "note": "generic bell, not an exchange bell; rings out by 2 s",
+  "hit_at": 0.07,
+  "source": "Mixkit (free licence, no attribution), Diwali pack Oct 30 2026"
+ },
+ "firework_whistle_echo": {
+  "file": "firework_whistle_echo.wav",
+  "dur": 8.5,
+  "use": "distant crackers",
+  "note": "LOUD sustained 0.5-4.5 s, not soft: lowpass ~2 kHz + -14 dB for distance",
+  "hit_at": 0.65,
+  "source": "Mixkit (free licence, no attribution), Diwali pack Oct 30 2026"
  }
 }

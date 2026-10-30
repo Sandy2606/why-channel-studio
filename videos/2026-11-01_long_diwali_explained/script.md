@@ -257,11 +257,12 @@ Format: speaker · [light mood] · **stress** · ⏸ pause · → visual beat. T
 ## Credits estimate
 EN ≈ 6,700 chars · TE ≈ 6,600 chars (≈ 7,600 once numbers are spelled out); line 69 reused, free → **≈ 14,500 credits** for both languages. Runtime ≈ 8.5 min (mid-roll ads allowed from 8:00).
 
-## Sources (captures needed later)
-- Dates: Diwali 2025 Oct 20 · 2026 Nov 8 · 2027 Oct 29 — publicholidays.in
-- Payment of Bonus Act 1965 (₹21,000, 30 days, 20+ employees, 8.33–20%, 8 months) — greytHR / labour ministry text
-- CAIT: Diwali 2025 sales ₹6.05 lakh crore, ~50 lakh temp jobs — Business Today, Oct 21 2025
-- Fake photo: Chris Elvidge 2003 composite; real NASA Suomi NPP Nov 12 2012; "so subtle that space images don't show it" — EarthSky / NASA Earth Observatory
-- Muhurat trading Nov 8 2026, 2:20–3:30 pm; BSE 1957, NSE 1992 — Business Today, Oct 19 2026
-- IIT Delhi study: fireworks effect fades in ~12 h; biomass burning drives the following days — Hans India, May 25 2022
-- Supreme Court: no blanket ban, Oct 29 2026 — Organiser / DNA
+## Sources (captured Oct 30 2026, in assets/; on-screen captures are PDF page renders)
+- Dates: 2025 split (Oct 20 national except MH & MN, Oct 21 MH & MN) · 2026 Nov 8 · 2027 Oct 29 — publicholidays.in → renders/08-dates-headline-1.png
+- Payment of Bonus Act 1965 (8.33% min, 20% max, ₹21,000 ceiling, ₹7,000 calc cap) — ezyLegal explainer (IndiaCode unreachable) → 01-bonus-headline-1 / keyline-2
+- CAIT: Diwali 2025 trade ₹6.05 lakh crore, 50 lakh temp jobs — Business Today, Oct 21 2025 → 02-cait-headline-01 / keyline-06
+- Fake photo: Chris Elvidge 2003 DMSP composite; "so subtle that space images don't show it" — EarthSky → 03-earthsky-headline-1 / keyline-3; images/09 (composite), images/10 (NASA Earth Observatory, Jesse Allen & Robert Simmon, VIIRS/Suomi NPP, Nov 12 2012 — keep credit on screen)
+- Muhurat trading Sun Nov 8 2026, normal market 2:20–3:30 pm (non-CAS) — Zerodha bulletin summarising NSE/BSE circulars → 04-muhurat-headline-1
+- BSE 1957, NSE 1992 — ICICI Direct → 05-muhurat-keyline-3
+- IIT Delhi study: fireworks impact falls within ~12 h; biomass burning drives the days after — Shiksha carrying the IIT press release → 06-iit-headline-1
+- Supreme Court, Oct 29 2026 hearing (Justices Sundresh & Varale): absolute ban not the solution, enforce existing orders — Devdiscourse/ANI → 07-sc-headline-01. HEARING OBSERVATION, not a final ruling: caption "SC hearing, Oct 29" (line 61 says "said", which is accurate)
