@@ -1,0 +1,67 @@
+GOLD ARTICLE CAPTURES - Oct 29, 2026
+Method: print-to-PDF captures via the live browser, like the Oct 28 packs.
+PNGs are renders of the PDF pages at 150 dpi, NOT browser screenshot PNGs.
+Full PDFs are included for every item. No re-encoding of the PDFs.
+
+1. Seoul Economic Daily - Oct 24, 2026
+   Source: https://en.sedaily.com/finance/2026/10/24/gold-slides-below-4000-down-29-percent-from-january-peak
+   Files: sedaily-oct24-gold.pdf (8 pages, 1.9 MB)
+          sedaily-headline.png (PDF p.1 render)
+          sedaily-margin-calls-line.png (PDF p.2 render)
+   Verified: headline on p.1; margin-calls paragraph on p.2, fully readable.
+   Note: the top of p.2 has faint overlapping header text from the print
+   layout; the requested paragraph itself is clear.
+
+2. Yahoo Finance - Oct 27, 2026
+   Source: https://finance.yahoo.com/markets/commodities/articles/gold-falls-below-4-000-103510793.html
+   Files: yahoo-oct27-gold.pdf (12 pages, 2.1 MB)
+          yahoo-headline.png (PDF p.1 render)
+          yahoo-interest-rates-line.png (PDF p.2 render)
+   Verified: headline and date (Tue, October 27, 2026) on p.1;
+   requested interest-rates line on p.2, under its subheading.
+   Note: the captured page renders with InvestorsHub attribution at the
+   top, and the full 12-page PDF includes additional related content
+   below the target article, as the page loads.
+
+3. Business Today - Oct 16, 2026
+   Source: https://www.businesstoday.in/latest/economy/story/gold-could-hit-record-highs-by-2028-as-central-banks-ramp-up-buying-report-562064-2026-10-16
+   Files: bt-oct16-gold-2028.pdf (11 pages, 2.6 MB)
+          bt-oct16-headline.png (PDF p.1 render)
+          bt-oct16-63-tonnes-line.png (PDF p.3 render)
+   Verified: headline and date (Updated Oct 16, 2026) on p.1;
+   requested central-bank September buying line on p.3, fully readable.
+
+4. MetalCharts - Gold All-Time High
+   Source: https://metalcharts.org/gold-all-time-high
+   Files: metalcharts-gold-ath.pdf (7 pages, 986 KB)
+          metalcharts-5590-line.png (PDF p.1 render)
+          metalcharts-2011-table-row.png (PDF p.2 render)
+   Verified: all-time-high line on p.1; Sep 6, 2011 table row on p.2,
+   in the "Every Gold All-Time High" table.
+   Note: the live price shown on the page at capture time (Oct 29, 11:46 PM CDT)
+   was $3,991; live prices move, the requested lines are unchanged.
+
+5. CERN ALICE - SUBSTITUTE, see flag below
+   Requested source (NOT captured - page not found):
+     https://alice.web.cern.ch/index.php/node/211
+   Substitute source captured:
+     https://home.cern/alice-detects-conversion-lead-gold-lhc/
+   Files: cern-alice-substitute-home-cern.pdf (6 pages, 12 MB)
+          cern-alice-headline-SUBSTITUTE.png (PDF p.1 render)
+   FLAG: the requested alice.web.cern.ch link redirects and returns
+   "Page not found" - no article headline is available from that URL,
+   so it is NOT included as a capture. The file above is the official
+   CERN home.cern version, labelled SUBSTITUTE throughout.
+   WORDING CORRECTION: the home.cern headline uses "conversion", not
+   "transformation" as labelled in the request. Date on page: 08 May, 2025.
+
+6. Business Today - Apr 19, 2026 (Andhra gold rush)
+   Source: https://www.businesstoday.in/amp/india/story/andhras-gold-rush-why-indias-first-private-new-mine-matters-for-the-economy-526379-2026-04-19
+   Files: bt-andhra-gold-rush-apr19-2026.pdf (8 pages, 289 KB)
+          bt-andhra-headline.png (PDF p.1 render)
+   Verified: headline on p.1; date on page: Apr 19, 2026,
+   Updated Apr 19, 2026 4:36 PM IST. Headline only, as requested.
+
+Total: 6 PDFs + 10 PNG renders + this list = 17 files.
+All requested lines/headlines verified in their PDFs except item 5,
+where the original URL is dead and a labelled substitute is supplied.
