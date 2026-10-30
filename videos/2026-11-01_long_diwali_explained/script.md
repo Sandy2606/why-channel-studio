@@ -1,6 +1,6 @@
 # DIWALI, EXPLAINED — full video script (Sun Nov 1) · FINAL (≈8.5 min, mid-roll ready)
 The video is the brother's own recording: in the cold open he props up his phone to record the answers for YouTube, which is why both talk to the camera at times.
-Two 2D characters: **ANNA** (older brother, explainer, *your cloned voice*) and **CHELLI** (younger sister, curious, glowing "?" over her head, *female Indian voice*).
+Two 2D characters: **ANNA** (older brother, explainer, *your cloned voice*) and **CHELLI** (younger sister, curious, glowing "?" over her head, *Sowmya clone — EN G2DgDPyZraka83R9s9m6, TE JsnbIwWwNIghQbTVEmpj*).
 Format: speaker · [light mood] · **stress** · ⏸ pause · → visual beat. Target ≈ 9–10 min.
 
 ---
