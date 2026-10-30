@@ -70,7 +70,7 @@ Whenever you get a question that starts with why, just comment it below. We'll d
 📚 Sources: Business Standard (via ICMAI), World Gold Council, Aditya Birla Capital, PSU Connect, Mint. Full links on YouTube. Not financial advice.
 📷 Credits: Pexels: Ravi Gond, Ravi Roshan, manas patra, Dream_ maKkerzz
 
-#gold #india #money #finance #personalfinance #goldinvestment #goldloan #rupee #dollar #fd #savings #investing #moneytips #financetips #indianfamily #dhanteras #diwali #didyouknow #facts #explained #knowledge #reels #educationalreels #learnoninstagram #why #whyeveryquestion #mindblown #economy #rbi #funfacts
+#gold #goldinvestment #personalfinance #moneytips #whyeveryquestion
 
 ---
 
@@ -139,4 +139,4 @@ Gold full story మన YouTube లో ఇప్పుడే వచ్చిం�
 📚 Sources: Business Standard (via ICMAI), World Gold Council, Aditya Birla Capital, PSU Connect, Mint. Full links YouTube లో. ఇది financial advice కాదు.
 📷 Credits: Pexels: Ravi Gond, Ravi Roshan, manas patra, Dream_ maKkerzz
 
-#gold #telugu #bangaram #money #finance #goldinvestment #goldloan #savings #telugureels #telugushorts #telugufacts #personalfinance #rupee #dollar #fd #dhanteras #diwali #didyouknow #facts #explained #knowledge #reels #educationalreels #andhrapradesh #telangana #hyderabad #why #whytelugu #learnoninstagram #funfacts
+#gold #telugu #bangaram #telugufacts #goldinvestment

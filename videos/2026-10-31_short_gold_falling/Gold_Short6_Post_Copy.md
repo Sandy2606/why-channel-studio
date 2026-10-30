@@ -73,7 +73,7 @@ That's a wrap on Gold week. Full video every Sunday + a new Reel the other 6 day
 📚 Sources: MetalCharts, Seoul Economic Daily, Yahoo Finance, Business Today, CERN. Full links on YouTube. Not financial advice.
 📷 Credits: Unsplash: Zbynek Burival, Jakub Żerdzicki, George Pisarevsky · LHC photo: CERN
 
-#gold #goldprice #goldrate #finance #money #investing #personalfinance #economy #stockmarket #interestrates #fed #oil #centralbank #rbi #savings #moneytips #didyouknow #facts #explained #knowledge #reels #educationalreels #learnoninstagram #why #whyeveryquestion #mindblown #olympics #cern #science #funfacts
+#gold #goldprice #personalfinance #economy #whyeveryquestion
 
 ---
 
@@ -144,4 +144,4 @@ Gold week పూర్తి. ప్రతి ఆదివారం full video +
 📚 Sources: MetalCharts, Seoul Economic Daily, Yahoo Finance, Business Today, CERN. Full links YouTube లో. ఇది financial advice కాదు.
 📷 Credits: Unsplash: Zbynek Burival, Jakub Żerdzicki, George Pisarevsky · LHC photo: CERN
 
-#gold #telugu #bangaram #goldprice #goldrate #finance #money #telugureels #telugushorts #telugufacts #personalfinance #investing #economy #savings #interestrates #oil #centralbank #andhrapradesh #telangana #hyderabad #didyouknow #facts #explained #knowledge #reels #educationalreels #why #whytelugu #olympics #cern
+#gold #telugu #bangaram #goldprice #telugufacts
