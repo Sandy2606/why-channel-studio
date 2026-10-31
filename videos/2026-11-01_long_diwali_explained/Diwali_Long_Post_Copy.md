@@ -15,7 +15,7 @@ Why does Diwali come on a different date every year? Why does every home get dee
 My sister had a pile of Diwali questions, so I hit record and we answered them one by one:
 🌙 Diwali follows the moon, not the sun. Twelve moon months make about 354 days, so Diwali comes about 11 days earlier each year until an extra month (adhik maas) pulls it back. It always lands between mid-October and mid-November. Next year: Oct 29, 2027.
 🧹 Deep cleaning is about timing. The monsoon has just ended, the air turns dry, and lime-washing used to fight the fungus. The habit stayed.
-💰 For many workers the Diwali bonus is the law: the Payment of Bonus Act, 1965 sets a minimum of 8.33% (one month out of twelve) and a maximum of 20%.
+💰 For many workers the Diwali bonus is the law: a minimum of 8.33% (one month out of twelve) and a maximum of 20%. (Correction: since 21 Nov 2025 the Payment of Bonus Act, 1965 is part of the Code on Wages, 2019. The rules are unchanged, and ₹21,000 / ₹7,000 were re-notified on 25 Aug 2026. See the pinned comment.)
 🛰️ The rainbow "India on Diwali from space" photo is a 2003 composite by NOAA scientist Chris Elvidge. NASA says the extra Diwali light is too subtle to show from space.
 📈 Muhurat trading: the market opens for about an hour on Diwali (this year Sun Nov 8, 2:20–3:30 PM IST). BSE started it in 1957 and NSE in 1992.
 🌫️ Delhi's air: crackers make it worse, but crop-stubble smoke and still winter air keep it bad for days.
@@ -39,7 +39,8 @@ Whenever you get a question that starts with why, just comment it below. We'll d
 
 **SOURCES**
 - Diwali dates (2025: Oct 20 across most of India, Oct 21 in Maharashtra and Manipur; 2026: Nov 8; 2027: Oct 29). PublicHolidays.in, "Diwali / Deepavali 2026, 2027 and 2028": https://publicholidays.in/diwali-deepavali/
-- Payment of Bonus Act, 1965 (₹21,000 ceiling, 8.33% min, 20% max, ₹7,000 calculation cap, 8 months to pay). ezyLegal, "Understanding the Payment of Bonus Act 1965": https://www.ezylegal.in/blogs/understanding-the-payment-of-bonus-act-1965
+- Code on Wages, 2019 replaced the Payment of Bonus Act, 1965 from 21 Nov 2025; ₹21,000 / ₹7,000 re-notified 25 Aug 2026 (S.O. 4711(E)). SCC Online: https://www.scconline.com/blog/post/2026/08/26/bonus-rules-under-code-on-wages-eligibility-calculation/
+- Payment of Bonus Act, 1965 (as explained in the video; ₹21,000 ceiling, 8.33% min, 20% max, ₹7,000 calculation cap, 8 months to pay). ezyLegal, "Understanding the Payment of Bonus Act 1965": https://www.ezylegal.in/blogs/understanding-the-payment-of-bonus-act-1965
 - Diwali 2025 trade ₹6.05 lakh crore, 50 lakh temporary jobs. Business Today, Oct 21 2025, "Diwali 2025 sales hit Rs 6.05 lakh crore… CAIT report": https://www.businesstoday.in/india/story/diwali-2025-sales-hit-rs-605-lakh-crore-87-of-consumers-chose-indian-made-products-cait-report-499067-2025-10-21
 - The fake Diwali photo, and NASA's "so subtle" line. EarthSky, "Fake image of Diwali still circulating": https://earthsky.org/earth/fake-image-of-india-during-diwali-versus-the-real-thing/
 - Real image. NASA Earth Observatory, "South Asian Night Lights" (Nov 15 2012; data Nov 12 2012): https://science.nasa.gov/earth/earth-observatory/south-asian-night-lights-79682/
@@ -71,7 +72,7 @@ Customs (cleaning, lime-wash, Chopda Pujan) are explained as traditions and the 
 చెల్లి దగ్గర బోలెడు దీపావళి ప్రశ్నలు ఉన్నాయి. అందుకే record చేసి ఒక్కొక్కటిగా సమాధానాలు చెప్పాం:
 🌙 దీపావళి సూర్యుడిని కాదు, చంద్రుడిని అనుసరిస్తుంది. 12 చంద్ర మాసాలు దాదాపు 354 రోజులే. అందుకే ప్రతి ఏడాది దాదాపు 11 రోజులు ముందు వస్తుంది, అధిక మాసం దాన్ని మళ్ళీ సరిచేస్తుంది. వచ్చే ఏడాది: Oct 29, 2027.
 🧹 శుభ్రం చేయడం టైమింగ్ వల్ల: వర్షాకాలం ముగిసి గాలి పొడిగా మారుతుంది. ఒకప్పుడు సున్నం వేసి fungus ని తరిమేవాళ్ళు. ఆ అలవాటు అలాగే ఉంది.
-💰 చాలా మందికి Diwali bonus చట్టం: Payment of Bonus Act, 1965 ప్రకారం కనీసం 8.33% (12 లో ఒక నెల), గరిష్టంగా 20%.
+💰 చాలా మందికి Diwali bonus చట్టం: కనీసం 8.33% (12 లో ఒక నెల), గరిష్టంగా 20%. (Correction: 21 Nov 2025 నుంచి Payment of Bonus Act, 1965, Code on Wages, 2019 లో భాగం. Rules మారలేదు. Pinned comment చూడండి.)
 🛰️ "Space నుంచి దీపావళి India" రంగుల photo అసలు దీపావళి photo కాదు. అది 2003 లో NOAA scientist Chris Elvidge చేసిన composite.
 📈 Muhurat trading: దీపావళి రోజు దాదాపు గంట market open (ఈసారి Sun Nov 8, 2:20–3:30 PM IST). BSE 1957, NSE 1992.
 🌫️ Delhi గాలి: crackers ఎక్కువ చేస్తాయి, కానీ పంట వ్యర్థాల పొగ, కదలని చలి గాలి రోజుల తరబడి ఉంచుతాయి.
