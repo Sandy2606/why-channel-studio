@@ -11,6 +11,14 @@ Includes an on-air correction for the full video (user, Oct 31): it called the P
    → four law cards merge into one "CODE ON WAGES · NOV 21, 2025" card
 4. The core stayed the same. At least **30 days** of work, a company with **20 or more** people, and a bonus of **8.33 to 20 percent**.
    → checklist ticks; 8.33% → 20%
+4b. Let me show you with an example. ⏸ Say Ravi earns **18,000** rupees a month, and the minimum wage for his job is **12,000**.
+   → "RAVI · ₹18,000/month" card, "MIN. WAGE ₹12,000" pill, "EXAMPLE" label
+4c. The law counts his bonus on **12,000**, not 18,000. ⏸ 8.33 percent of that, for twelve months… is about **12,000** rupees. That's the minimum he must get.
+   → ₹12,000 × 12 × 8.33% ≈ ₹12,000 (stamp "MINIMUM")
+4d. If the company had a good year, it can go up to 20 percent… about **28,800** rupees.
+   → ₹12,000 × 12 × 20% = ₹28,800
+4e. And if Ravi earned more than **21,000** a month? ⏸ The law doesn't require a bonus at all. Anything he gets is the company's choice.
+   → "> ₹21,000 · NOT REQUIRED BY LAW"
 5. But **four** things changed. ⏸ One: your bonus now has to go into your **bank account**. The old law said **cash**.
    → cash ✕ → bank app credit ✓
    → mid-video subscribe card (small, quiet)
@@ -32,6 +40,10 @@ Includes an on-air correction for the full video (user, Oct 31): it called the P
 2. ముందు ఒక చిన్న correction. ⏸ మా full video లో, bonus **Payment of Bonus Act, 1965** కింద వస్తుంది అని చెప్పాను. అది నేను miss అయ్యాను, sorry. **November 2025** నుంచి, అది కొత్త చట్టంలో భాగం, అదే **Code on Wages**.
 3. India **నాలుగు** పాత జీతాల చట్టాలను ఈ ఒక్క code లో కలిపింది. జీతాలు, కనీస జీతాలు, సమాన జీతం… ఇంకా **bonus**.
 4. ముఖ్యమైనవి అలాగే ఉన్నాయి. కనీసం **30 రోజులు** పని, **20 లేదా అంతకంటే ఎక్కువ** మంది ఉన్న company, **8.33 నుంచి 20 శాతం** bonus.
+4b. ఒక example తో చెప్తా. ⏸ రవి నెలకు **18,000** రూపాయలు సంపాదిస్తాడు అనుకోండి, అతని పనికి minimum wage **12,000**.
+4c. చట్టం అతని bonus ని 18,000 మీద కాదు, **12,000** మీద లెక్కిస్తుంది. ⏸ దాని మీద 8.33 శాతం, పన్నెండు నెలలకు… దాదాపు **12,000** రూపాయలు. అతనికి కనీసం రావాల్సింది అదే.
+4d. Company కి మంచి సంవత్సరం అయితే, 20 శాతం వరకు… దాదాపు **28,800** రూపాయలు ఇవ్వొచ్చు.
+4e. మరి రవి నెలకు **21,000** కంటే ఎక్కువ సంపాదిస్తే? ⏸ చట్టం ప్రకారం bonus తప్పనిసరి కాదు. ఇస్తే అది company ఇష్టం.
 5. కానీ **నాలుగు** విషయాలు మారాయి. ⏸ ఒకటి: bonus ఇప్పుడు మీ **bank account** లోనే పడాలి. పాత చట్టం **cash** అని చెప్పేది.
 6. రెండు: **21,000 రూపాయల** జీతం limit ఇంతకు ముందు చట్టంలోనే రాసి ఉండేది. ఇప్పుడు దాన్ని **ప్రభుత్వం** నిర్ణయిస్తుంది, **August 2026** లో అదే **21,000** ఉంచింది.
 7. మూడు: ఇంతకు ముందు ప్రతి **factory**, చిన్నదైనా bonus ఇవ్వాల్సి వచ్చేది. ⏸ ఇప్పుడు అందరికీ ఒకటే rule: **20 లేదా అంతకంటే ఎక్కువ** మంది.
@@ -41,7 +53,7 @@ Includes an on-air correction for the full video (user, Oct 31): it called the P
 11. ♻ ఇలాంటి కొత్త విషయాలు నేర్చుకోవడం నచ్చితే, ప్రతి ఆదివారం ఒక full video, మిగతా ఆరు రోజులు రోజుకో Short పెడతాం. ఎప్పుడూ ఏదో ఒక కొత్తది ఉంటుంది.
 12. ♻ Subscribe చేయండి (IG: Follow అవ్వండి), మీకు నచ్చేలా చేస్తాం.
 
-Credits (new lines only): EN ≈ 1,150, TE ≈ 1,250 → **≈ 2,400**.
+Credits (new lines only): EN ≈ 1,650, TE ≈ 1,750 → **≈ 3,400**. Example math: 12,000 × 12 × 8.33% = 11,995 ≈ 12,000; × 20% = 28,800. Calculation base = higher of ₹7,000 or the minimum wage (S.O. of 25 Aug 2026); eligibility ≤ ₹21,000/month (basic + DA).
 
 ## Pinned comment for the full video (post with the upload)
 EN: Correction: at 3:27 we said bonus comes under the Payment of Bonus Act, 1965. Since 21 Nov 2025 that Act is part of the Code on Wages, 2019. The rules in the video (8.33–20%, 30 days, 20+ employees, ₹21,000 limit, ₹7,000 calculation, 8 months) are still correct; the ₹21,000 and ₹7,000 figures were re-notified on 25 Aug 2026. Full details in Monday's Short.
