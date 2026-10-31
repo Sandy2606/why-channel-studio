@@ -44,8 +44,8 @@ Includes an on-air correction for the full video (user, Oct 31): it called the P
 Credits (new lines only): EN ≈ 1,150, TE ≈ 1,250 → **≈ 2,400**.
 
 ## Pinned comment for the full video (post with the upload)
-EN: Correction: at 3:2x we said bonus comes under the Payment of Bonus Act, 1965. Since 21 Nov 2025 that Act is part of the Code on Wages, 2019. The rules in the video (8.33–20%, 30 days, 20+ employees, ₹21,000 limit, ₹7,000 calculation, 8 months) are still correct; the ₹21,000 and ₹7,000 figures were re-notified on 25 Aug 2026. Full details in Monday's Short.
-TE: Correction: video లో bonus Payment of Bonus Act, 1965 కింద వస్తుంది అని చెప్పాం. 21 Nov 2025 నుంచి ఆ Act, Code on Wages, 2019 లో భాగం. Video లో చెప్పిన rules (8.33–20%, 30 రోజులు, 20+ మంది, ₹21,000 limit, ₹7,000 లెక్క, 8 నెలలు) ఇప్పటికీ సరైనవే; ₹21,000, ₹7,000 ని 25 Aug 2026 న మళ్ళీ notify చేశారు. పూర్తి వివరాలు సోమవారం Short లో.
+EN: Correction: at 3:27 we said bonus comes under the Payment of Bonus Act, 1965. Since 21 Nov 2025 that Act is part of the Code on Wages, 2019. The rules in the video (8.33–20%, 30 days, 20+ employees, ₹21,000 limit, ₹7,000 calculation, 8 months) are still correct; the ₹21,000 and ₹7,000 figures were re-notified on 25 Aug 2026. Full details in Monday's Short.
+TE: Correction: 3:53 దగ్గర video లో bonus Payment of Bonus Act, 1965 కింద వస్తుంది అని చెప్పాం. 21 Nov 2025 నుంచి ఆ Act, Code on Wages, 2019 లో భాగం. Video లో చెప్పిన rules (8.33–20%, 30 రోజులు, 20+ మంది, ₹21,000 limit, ₹7,000 లెక్క, 8 నెలలు) ఇప్పటికీ సరైనవే; ₹21,000, ₹7,000 ని 25 Aug 2026 న మళ్ళీ notify చేశారు. పూర్తి వివరాలు సోమవారం Short లో.
 
 ## Sources (checked Oct 31 2026)
 - Code on Wages in force 21 Nov 2025 (S.O. 5322(E)); repeals the Payment of Wages Act 1936, Minimum Wages Act 1948, Payment of Bonus Act 1965 and Equal Remuneration Act 1976. Taxmann: https://www.taxmann.com/post/blog/govt-enforces-key-wage-bonus-minimum-wage-provisions-under-wages-code
