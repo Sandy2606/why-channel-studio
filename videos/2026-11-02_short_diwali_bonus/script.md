@@ -1,64 +1,66 @@
-# DIWALI · 1/6: "Your Diwali bonus isn't a gift. It's the law." (Mon Nov 2) · DRAFT v3 (correction + old → new + example)
+# DIWALI · 1/6: "Your Diwali bonus isn't a gift. It's the law." (Mon Nov 2) · DRAFT v4 (people examples, old vs new)
 Narrator: Sandeep English / Sandeep Telugu clones, eleven_v4, one take, light tags. ♻ = reused from voice_lib (no credits).
-On-air correction for the full video (user, Oct 31). The ₹21,000 and ₹7,000 figures in the full video are still correct (re-notified 25 Aug 2026).
+On-air correction for the full video (user, Oct 31). Every rule is explained through a person, with an OLD LAW / NEW LAW scoreboard on screen.
 
 ## ENGLISH
 1. [conversational] Your Diwali bonus isn't a gift. ⏸ It's the **law**. But that law **changed** last year.
    → "GIFT?" crossed → "LAW" stamp → "CHANGED" pill
-2. Quick correction first. ⏸ In our full video, I said bonus comes under the **Payment of Bonus Act, 1965**. I missed this, sorry. Since **November 2025**, it's part of a new law, the **Code on Wages**.
-   → full-video thumbnail with a "CORRECTION" stamp
-3. I don't think I explained it clearly, so let me do it properly. ⏸ First, how it **used** to be.
-   → "BEFORE · 1965 ACT" header (clipping)
-4. Under the 1965 Act, if you earned up to **21,000** rupees a month and worked at least **30 days**, you got a bonus of **8.33 to 20 percent**. ⏸ It covered every **factory**, even small ones, and other companies with **20 or more** people.
-   → checklist: ₹21,000 · 30 days · 8.33–20% · factories + 20+ companies
-5. That 21,000 limit was written into the **Act itself**. ⏸ And the bonus could be paid in **cash**.
-6. Now, how it is **today**. ⏸ In **November 2025**, India merged **four** old wage laws into one: the **Code on Wages**. Wages, minimum wages, equal pay… and **bonus**.
-   → "NOW · CODE ON WAGES" header; four law cards merge into one (clipping)
-7. The basics didn't change: **30 days** of work, and **8.33 to 20 percent**.
-8. But **four** things did. ⏸ One: your bonus has to go into your **bank account**. No more cash.
-   → cash ✕ → bank app credit ✓
+2. Quick correction first. ⏸ In our full video, I said bonus comes under the **Payment of Bonus Act, 1965**. I missed this, sorry. Since **November 2025**, it's part of a new law called the **Code on Wages**.
+   → full-video thumbnail with a "CORRECTION" stamp; 1965 clipping → Code on Wages clipping
+3. Okay, let me explain it properly. ⏸ I'll take three people, and we'll see what the **old** law gave them… and what the **new** one does.
+   → two-column scoreboard appears: "OLD LAW · 1965" | "NEW LAW · 2025"
+4. First, Ravi. He earns **18,000** a month, so **21,000 or less**. He worked the whole year, at a company with **50** people.
+   → "RAVI · ₹18,000/month · 50-person company" card
+5. Old law? ⏸ Bonus. New law? ⏸ Still a bonus.
+   → OLD ✓ | NEW ✓
+6. So how much? Say the minimum wage for his job is **12,000**. The bonus is counted on that **12,000**, not his full salary.
+   → ₹18,000 crossed → ₹12,000 (note: "₹7,000 or the minimum wage, whichever is higher")
+7. 8.33 percent, for twelve months… that's about **12,000** rupees. ⏸ If the company had a good year, it can go up to **28,800**. Same in both laws.
+   → ₹12,000 → up to ₹28,800 (8.33% → 20%)
+8. But here's one thing that changed for Ravi. ⏸ Earlier, the company could hand it to him in **cash**. Now it has to go into his **bank account**.
+   → OLD: cash 💵 | NEW: bank app credit
    → mid-video subscribe card (small, quiet)
-9. Two: the **21,000** limit isn't written into the law anymore. The **government** sets it by notification, and in **August 2026**, it set it at **21,000** again.
-   → "₹21,000 · IN THE ACT" → "₹21,000 · NOTIFIED AUG 25, 2026" (clipping)
-10. Three: small factories with fewer than **20** workers are out. ⏸ Now it's one rule for everyone: **20 or more** people.
-11. Four: along with fraud, violence and theft, a conviction for **sexual harassment** can now cost you your bonus.
+9. Now Priya. She earns **25,000** a month. That's **more** than 21,000.
+   → "PRIYA · ₹25,000/month" card
+10. Old law or new law… ⏸ no bonus is required for her. If her company still gives one, that's their **choice**.
+    → OLD ✕ | NEW ✕ ("company's choice")
+11. And that 21,000 line? ⏸ It used to be written into the law itself. Now the **government** sets it, and in **August 2026**, it kept it at **21,000**.
+    → "₹21,000 · IN THE ACT" → "₹21,000 · SET BY GOVT, AUG 2026" (clipping)
+12. Now Suresh. He earns **15,000** a month, at a small **factory** with just **12** workers.
+    → "SURESH · ₹15,000/month · 12-worker factory" card
+13. Old law? ⏸ Bonus. Every factory had to pay, even small ones. ⏸ New law? **No**. Now it's only for places with **20 or more** people.
+    → OLD ✓ | NEW ✕
+14. And one more change. ⏸ You could always lose your bonus for fraud, violence or theft at work. Now, a conviction for **sexual harassment** is on that list too.
     → list, new line highlighted
-12. Let me show you with an example. ⏸ Say Ravi earns **18,000** rupees a month, and the minimum wage for his job is **12,000**.
-    → "RAVI · ₹18,000/month" card, "MIN. WAGE ₹12,000", "EXAMPLE" label
-13. The law counts his bonus on **12,000**, not 18,000. ⏸ 8.33 percent of that, for twelve months… is about **12,000** rupees. That's the minimum he must get.
-    → ₹12,000 × 12 × 8.33% ≈ ₹12,000 → "MINIMUM" stamp; small note "counted on ₹7,000 or the minimum wage, whichever is higher"
-14. If the company had a good year, it can go up to 20 percent… about **28,800** rupees.
-15. And if Ravi earned more than **21,000** a month? ⏸ The law doesn't require a bonus at all. Anything he gets is the company's choice.
-16. And the deadline: within **eight months** after the year ends. For a March year-end, that's **November 30th**.
+15. Last thing: the company has **eight months** after the year ends to pay. For most companies, that's by **November 30th**.
     → calendar with NOV 30 circled
-17. Tomorrow: that famous photo of India glowing on Diwali night, from **space**. ⏸ It's not what you think.
+16. Tomorrow: that famous photo of India glowing on Diwali night, from **space**. ⏸ It's not what you think.
     → series slide (1/6 YOU'RE HERE, 2/6 TOMORROW)
-18. ♻ If you like learning things like this, we post a full video every Sunday and a new Short the other six days. So there's always something new.
-19. ♻ Subscribe (IG: Follow), and we'll make it worth it.
+17. ♻ If you like learning things like this, we post a full video every Sunday and a new Short the other six days. So there's always something new.
+18. ♻ Subscribe (IG: Follow), and we'll make it worth it.
 
 ## TELUGU
 1. [conversational] మీ Diwali bonus బహుమతి కాదు. ⏸ అది **చట్టం**. కానీ ఆ చట్టం పోయిన సంవత్సరం **మారింది**.
-2. ముందు ఒక చిన్న correction. ⏸ మా full video లో, bonus **Payment of Bonus Act, 1965** కింద వస్తుంది అని చెప్పాను. అది నేను miss అయ్యాను, sorry. **November 2025** నుంచి, అది కొత్త చట్టంలో భాగం, అదే **Code on Wages**.
-3. నేను సరిగ్గా explain చేయలేదేమో, అందుకే clear గా చెప్తా. ⏸ ముందు, ఇంతకు ముందు **ఎలా ఉండేదో**.
-4. 1965 Act ప్రకారం, నెలకు **21,000 రూపాయల** వరకు జీతం ఉండి, సంవత్సరంలో కనీసం **30 రోజులు** పని చేస్తే, **8.33 నుంచి 20 శాతం** bonus వచ్చేది. ⏸ అది ప్రతి **factory** కి, చిన్నదైనా, ఇంకా **20 లేదా అంతకంటే ఎక్కువ** మంది ఉన్న మిగతా companies కి వర్తించేది.
-5. ఆ 21,000 limit **Act లోనే** రాసి ఉండేది. ⏸ Bonus ని **cash** లో కూడా ఇవ్వొచ్చు.
-6. ఇప్పుడు, ఈ రోజు **ఎలా ఉందో**. ⏸ **November 2025** లో, India **నాలుగు** పాత జీతాల చట్టాలను ఒక్కటిగా కలిపింది: **Code on Wages**. జీతాలు, కనీస జీతాలు, సమాన జీతం… ఇంకా **bonus**.
-7. Basic విషయాలు మారలేదు: **30 రోజులు** పని, **8.33 నుంచి 20 శాతం** bonus.
-8. కానీ **నాలుగు** విషయాలు మారాయి. ⏸ ఒకటి: bonus ఇప్పుడు మీ **bank account** లోనే పడాలి. ఇక cash లేదు.
-9. రెండు: **21,000** limit ఇప్పుడు చట్టంలో రాసి లేదు. **ప్రభుత్వం** notification ద్వారా నిర్ణయిస్తుంది, **August 2026** లో మళ్ళీ **21,000** అనే పెట్టింది.
-10. మూడు: **20** కంటే తక్కువ మంది ఉన్న చిన్న factories ఇప్పుడు ఇందులో లేవు. ⏸ అందరికీ ఒకటే rule: **20 లేదా అంతకంటే ఎక్కువ** మంది.
-11. నాలుగు: fraud, హింస, దొంగతనంతో పాటు, ఇప్పుడు **sexual harassment** కేసులో శిక్ష పడినా bonus పోవచ్చు.
-12. ఒక example తో చెప్తా. ⏸ రవి నెలకు **18,000** రూపాయలు సంపాదిస్తాడు అనుకోండి, అతని పనికి minimum wage **12,000**.
-13. చట్టం అతని bonus ని 18,000 మీద కాదు, **12,000** మీద లెక్కిస్తుంది. ⏸ దాని మీద 8.33 శాతం, పన్నెండు నెలలకు… దాదాపు **12,000** రూపాయలు. అతనికి కనీసం రావాల్సింది అదే.
-14. Company కి మంచి సంవత్సరం అయితే, 20 శాతం వరకు… దాదాపు **28,800** రూపాయలు ఇవ్వొచ్చు.
-15. మరి రవి నెలకు **21,000** కంటే ఎక్కువ సంపాదిస్తే? ⏸ చట్టం ప్రకారం bonus తప్పనిసరి కాదు. ఇస్తే అది company ఇష్టం.
-16. ఇక deadline: సంవత్సరం అయిపోయిన **ఎనిమిది నెలల** లోపు. March తో సంవత్సరం ముగిస్తే, అది **November 30**.
-17. రేపు: Diwali రాత్రి **space** నుంచి India మెరుస్తున్న ఆ famous photo. ⏸ మీరు అనుకునేది కాదు.
-18. ♻ ఇలాంటి కొత్త విషయాలు నేర్చుకోవడం నచ్చితే, ప్రతి ఆదివారం ఒక full video, మిగతా ఆరు రోజులు రోజుకో Short పెడతాం. ఎప్పుడూ ఏదో ఒక కొత్తది ఉంటుంది.
-19. ♻ Subscribe చేయండి (IG: Follow అవ్వండి), మీకు నచ్చేలా చేస్తాం.
+2. ముందు ఒక చిన్న correction. ⏸ మా full video లో, bonus **Payment of Bonus Act, 1965** కింద వస్తుంది అని చెప్పాను. అది నేను miss అయ్యాను, sorry. **November 2025** నుంచి, అది **Code on Wages** అనే కొత్త చట్టంలో భాగం.
+3. సరే, ఇప్పుడు clear గా చెప్తా. ⏸ ముగ్గురిని తీసుకుందాం. **పాత** చట్టం వాళ్ళకి ఏమిచ్చింది… **కొత్త** చట్టం ఏమిస్తుంది… చూద్దాం.
+4. ముందు, రవి. నెలకు **18,000** సంపాదిస్తాడు, అంటే **21,000 లేదా అంతకంటే తక్కువ**. సంవత్సరం మొత్తం పని చేశాడు, **50** మంది ఉన్న company లో.
+5. పాత చట్టం? ⏸ Bonus వస్తుంది. కొత్త చట్టం? ⏸ ఇప్పటికీ వస్తుంది.
+6. మరి ఎంత? అతని పనికి minimum wage **12,000** అనుకోండి. Bonus అతని పూర్తి జీతం మీద కాదు, ఆ **12,000** మీద లెక్కిస్తారు.
+7. 8.33 శాతం, పన్నెండు నెలలకు… దాదాపు **12,000** రూపాయలు. ⏸ Company కి మంచి సంవత్సరం అయితే, **28,800** వరకు ఇవ్వొచ్చు. రెండు చట్టాల్లోనూ ఇదే.
+8. కానీ రవికి ఒక్కటి మారింది. ⏸ ఇంతకు ముందు company **cash** లో ఇవ్వొచ్చు. ఇప్పుడు అతని **bank account** లోనే పడాలి.
+9. ఇప్పుడు ప్రియ. ఆమె నెలకు **25,000** సంపాదిస్తుంది. అది 21,000 కంటే **ఎక్కువ**.
+10. పాత చట్టమైనా, కొత్త చట్టమైనా… ⏸ ఆమెకి bonus తప్పనిసరి కాదు. Company ఇస్తే, అది వాళ్ళ **ఇష్టం**.
+11. మరి ఆ 21,000 limit? ⏸ ఇంతకు ముందు చట్టంలోనే రాసి ఉండేది. ఇప్పుడు దాన్ని **ప్రభుత్వం** నిర్ణయిస్తుంది, **August 2026** లో అదే **21,000** ఉంచింది.
+12. ఇప్పుడు సురేష్. నెలకు **15,000** సంపాదిస్తాడు, కేవలం **12** మంది పనిచేసే చిన్న **factory** లో.
+13. పాత చట్టం? ⏸ Bonus వస్తుంది. ప్రతి factory ఇవ్వాల్సిందే, చిన్నదైనా. ⏸ కొత్త చట్టం? **రాదు**. ఇప్పుడు **20 లేదా అంతకంటే ఎక్కువ** మంది ఉన్న చోట్ల మాత్రమే.
+14. ఇంకో మార్పు. ⏸ పనిలో fraud, హింస, దొంగతనం చేస్తే bonus ఎప్పుడూ పోవచ్చు. ఇప్పుడు ఆ list లో **sexual harassment** కేసులో శిక్ష కూడా చేరింది.
+15. చివరగా: సంవత్సరం అయిపోయాక company కి **ఎనిమిది నెలల** time ఉంటుంది. చాలా companies కి, అది **November 30** లోపు.
+16. రేపు: Diwali రాత్రి **space** నుంచి India మెరుస్తున్న ఆ famous photo. ⏸ మీరు అనుకునేది కాదు.
+17. ♻ ఇలాంటి కొత్త విషయాలు నేర్చుకోవడం నచ్చితే, ప్రతి ఆదివారం ఒక full video, మిగతా ఆరు రోజులు రోజుకో Short పెడతాం. ఎప్పుడూ ఏదో ఒక కొత్తది ఉంటుంది.
+18. ♻ Subscribe చేయండి (IG: Follow అవ్వండి), మీకు నచ్చేలా చేస్తాం.
 
-Credits (new lines only): EN ≈ 2,000, TE ≈ 2,100 → **≈ 4,100**. Runtime ≈ 1:50 (EN), ≈ 2:10 (TE).
-Example math: 12,000 × 12 × 8.33% = 11,995 ≈ 12,000; × 20% = 28,800. Calculation base = higher of ₹7,000 or the minimum wage (notified 25 Aug 2026); eligibility ≤ ₹21,000/month (basic + DA). Old Act: covered every factory (Factories Act definition) plus other establishments with 20+; bonus paid in cash (s.19). New Code: s.41(2) 20+ only, s.39 bank credit, s.29 adds sexual-harassment conviction.
+Credits (new lines only): EN ≈ 1,800, TE ≈ 1,930.0 (numbers spelled out) → **≈ 3,700.0**. Runtime ≈ 1:50 (EN), ≈ 2:10 (TE).
+Checks: Ravi 12,000 × 12 × 8.33% = 11,995 ≈ 12,000; × 20% = 28,800. Calculation base = higher of ₹7,000 or the minimum wage (both laws; re-notified 25 Aug 2026). Eligibility = wages ₹21,000/month or less (basic + DA), both laws. Old Act covered every factory (Factories Act: 10+ workers with power) plus other establishments with 20+; new Code s.41(2) 20+ only. Old Act paid in cash (s.19); new s.39 bank credit. New s.29 adds a sexual-harassment conviction. 8 months after year end (s.39); 30 Nov for a March year-end.
 
 ## Pinned comment for the full video (post with the upload)
 EN (pin on the English video): Correction: at 3:27 we said bonus comes under the Payment of Bonus Act, 1965. Since 21 Nov 2025 that Act is part of the Code on Wages, 2019. The rules in the video (8.33–20%, 30 days, 20+ employees, ₹21,000 limit, ₹7,000 calculation, 8 months) are still correct; the ₹21,000 and ₹7,000 figures were re-notified on 25 Aug 2026. Full details in Monday's Short.
