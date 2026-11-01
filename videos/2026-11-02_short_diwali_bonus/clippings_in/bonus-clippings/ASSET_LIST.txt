@@ -1,0 +1,102 @@
+BONUS CLIPPINGS — 31 October 2026
+
+WHAT THESE FILES ARE — READ FIRST:
+These are NOT screenshots and NOT the sites' own PDFs, and they do
+NOT reproduce the sites' page layout, header images or ads.
+Each PDF is a clean-text render of that article's body, extracted
+from the live page on 31 Oct 2026 and rendered to A4 PDF, with the
+source name and URL printed on page 1. The wording is the article's;
+site chrome, footer boilerplate and (for item 3) prose paragraphs
+that verbatim duplicated its own Key Highlights list were removed
+so the clipping reads cleanly on screen. If you need the exact
+site layout for a frame, screenshot the URLs below directly.
+The PNGs in renders/ are 150 dpi renders of pages from these PDFs
+(A4, 1241 x 1754 px), NOT browser screenshot PNGs.
+
+ARTICLES (articles/)
+1. 01-taxmann-bonus.pdf — 14 pages
+   Taxmann, "[Analysis] Bonus Under the Code on Wages 2019 –
+   Applicability | Allocable Surplus | Set-on and Set-off"
+   Published 1 Sep 2026, updated 25 Sep 2026.
+   Source: https://www.taxmann.com/post/blog/bonus-under-code-on-wages-2019-allocable-surplus-set-on-set-off/
+   Old-vs-new content, verified in the PDF text:
+   - Ch. IV (ss. 26-41) replaces the Payment of Bonus Act, 1965
+     from 21 Nov 2025; applicability now 20+ persons (s. 41(2)),
+     vs every factory + 20+ establishments under the 1965 Act.
+   - 1965 Act: Rs 21,000 sat in the "employee" definition
+     (s. 2(13)), so above it there was no entitlement at all.
+     Code: "employee" (s. 2(k)) has no wage ceiling; s. 26(1)
+     requires 30 days' work, and s. 26(2) computes bonus for a
+     person above the notified amount as if his wage were that
+     amount or the minimum wage, whichever is higher —
+     Taxmann's commentary reading: "Employee will not be
+     deprived of bonus" (p. 4).
+   - Unchanged: minimum 8.33% of wages earned or Rs 100,
+     whichever is higher, even with no allocable surplus;
+     maximum 20%; set-on/set-off to the 4th accounting year
+     (s. 36). New: bank-account credit (s. 39(1), not cash);
+     disqualification now also for conviction for sexual
+     harassment (s. 29).
+   WARNING — DATE LIMIT ON THIS PIECE: it states the law as on
+   20 July 2026 and says (p. 4) the s. 26 ceiling "had not been
+   prescribed" as at that date, and "Do not assume Rs. 21,000".
+   That was true in July. It is superseded on the ceiling by
+   item 3 below (25 Aug 2026 notifications). Do not use item 1
+   alone for the Rs 21,000 figure.
+   Renders: 01-taxmann-bonus-headline-p1-01.png (p. 1),
+   01-taxmann-bonus-keyline-p4-04.png (p. 4, eligibility /
+   wage-ceiling-as-cap section).
+
+2. 02-taxmann-govt-enforces.pdf — 2 pages
+   Taxmann, "Govt. Enforces Key Wage | Bonus | Minimum Wage
+   Provisions Under Wages Code, 2019"
+   Published 22 Nov 2025, updated 1 Sep 2026.
+   Source: https://www.taxmann.com/post/blog/govt-enforces-key-wage-bonus-minimum-wage-provisions-under-wages-code
+   Verified in the PDF text (p. 1):
+   - "Notification No. S.O. 5322(E), Dated 21.11.2025"
+   - "The Ministry of Labour and Employment has notified
+     November 21, 2025, as the date on which the principal
+     provisions of the Code on Wages, 2019, shall come into
+     force."
+   - The Code repeals: Payment of Wages Act 1936, Minimum
+     Wages Act 1948, Payment of Bonus Act 1965, Equal
+     Remuneration Act 1976.
+   Renders: 02-taxmann-govt-headline-p1-1.png (p. 1 — headline
+   + 21 Nov 2025 line on the same page).
+
+3. 03-scc-bonus-rules.pdf — 1 page
+   SCC Online / SCC Times, "Centre notifies Bonus eligibility
+   and Calculation rules under Code on Wages, 2019"
+   Published 26 Aug 2026, updated 1 Sep 2026.
+   Source: https://www.scconline.com/blog/post/2026/08/26/bonus-rules-under-code-on-wages-eligibility-calculation/
+   (URL slug: bonus-rules-under-code-on-wages-eligibility-
+   calculation — this is the Aug 26 item you named.)
+   Verified in the PDF text (whole article is p. 1):
+   - "On 25 August 2026, the Ministry of Labour and Employment
+     issued two notifications under the Code on Wages, 2019"
+   - "employees earning up to Rs 21,000 per month will be
+     eligible for bonus" — s. 26(1). The article body itself
+     does NOT print the S.O. numbers; S.O. 4711(E) (eligibility)
+     and S.O. 4710(E) (calculation) are the Gazette
+     notification numbers for the two 25 Aug 2026 notifications
+     it reports, shown in my banner note on p. 1, not in
+     SCC's own text.
+   - Bonus for wages over Rs 7,000 "will be calculated on
+     Rs 7,000 per month or the Central Government's minimum
+     wage, whichever is higher" — s. 26(2) (S.O. 4710(E)).
+   - "Both notifications are deemed to have come into force
+     retrospectively from 21 November 2025."
+   NOTE ON THE TENSION WITH ITEM 1: item 1 (July law) reads
+   s. 26 as a computation cap, not an eligibility bar, while
+   item 3 phrases Rs 21,000 as eligibility. Both are in the
+   pack as published; do not flatten them into one line on
+   screen without that distinction.
+   Renders: 03-scc-bonus-headline-p1-1.png (p. 1 — the whole
+   article, headline + Rs 21,000 + Rs 7,000 on one page).
+
+RENDERS (renders/) — 150 dpi PNGs from the PDFs above:
+01-taxmann-bonus-headline-p1-01.png,
+01-taxmann-bonus-keyline-p4-04.png,
+02-taxmann-govt-headline-p1-1.png,
+03-scc-bonus-headline-p1-1.png.
+These are renders, not screenshots — say so if you caption them.
