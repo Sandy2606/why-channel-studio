@@ -15,7 +15,13 @@ On-air correction for the full video (user, Oct 31). Every rule is explained thr
    → OLD ✓ | NEW ✓
 6. So how much does he get? ⏸ Here's the part most people miss. For every job, the government fixes a **minimum wage**, the lowest salary anyone in that job can legally be paid.
    → "MINIMUM WAGE = the lowest legal salary for a job" card
-6b. Say for Ravi's job, that's **12,000**. ⏸ He actually earns **18,000**. But his bonus isn't counted on his 18,000. It's counted only on the **12,000** the government fixed.
+6c. And how does the government decide that number? ⏸ Your **state** sets it, based on two things: how **skilled** the job is, and **where** you work. A job in a big city gets a higher minimum than the same job in a village.
+   → skill ladder (unskilled → highly skilled) × map zones (city / town / village)
+6d. The law also lets the Centre set a national **floor**, and no state can go below it. ⏸ States must review their numbers at least every **five years**, and a cost-of-living top-up is added twice a year, in **April** and **October**.
+   → floor line under state bars; calendar APR / OCT ticks
+6e. Earlier, only some jobs had a minimum wage. ⏸ Now, under the new code, **every** job does.
+   → OLD: some jobs | NEW: every job
+6b. Say in Ravi's state, for his job, that's **12,000**. ⏸ He actually earns **18,000**. But his bonus isn't counted on his 18,000. It's counted only on the **12,000** the government fixed.
    → ₹18,000 crossed → ₹12,000 (small note: "₹7,000 or the minimum wage, whichever is higher")
 7. 8.33 percent, for twelve months… that's about **12,000** rupees. ⏸ If the company had a good year, it can go up to **28,800**. Same in both laws.
    → ₹12,000 → up to ₹28,800 (8.33% → 20%)
@@ -48,7 +54,10 @@ On-air correction for the full video (user, Oct 31). Every rule is explained thr
 4. ముందు, రవి. నెలకు **18,000** సంపాదిస్తాడు, అంటే **21,000 లేదా అంతకంటే తక్కువ**. సంవత్సరం మొత్తం పని చేశాడు, **50** మంది ఉన్న company లో.
 5. పాత చట్టం? ⏸ Bonus వస్తుంది. కొత్త చట్టం? ⏸ ఇప్పటికీ వస్తుంది.
 6. మరి అతనికి ఎంత వస్తుంది? ⏸ చాలా మంది miss అయ్యే విషయం ఇదే. ప్రతి పనికి ప్రభుత్వం ఒక **minimum wage** నిర్ణయిస్తుంది, అంటే ఆ పనికి చట్టప్రకారం ఇవ్వాల్సిన అతి తక్కువ జీతం.
-6b. రవి పనికి అది **12,000** అనుకోండి. ⏸ అతను నిజంగా **18,000** సంపాదిస్తాడు. కానీ bonus ని అతని 18,000 మీద కాదు, ప్రభుత్వం నిర్ణయించిన ఆ **12,000** మీదే లెక్కిస్తారు.
+6c. మరి ఆ number ని ప్రభుత్వం ఎలా నిర్ణయిస్తుంది? ⏸ మీ **రాష్ట్రం** నిర్ణయిస్తుంది, రెండు విషయాల మీద: ఆ పనికి ఎంత **skill** కావాలి, ఇంకా మీరు **ఎక్కడ** పని చేస్తారు. పల్లెటూరి కంటే పెద్ద city లో అదే పనికి minimum ఎక్కువ.
+6d. ఏ రాష్ట్రమూ దాని కంటే తక్కువ పెట్టకుండా, Centre ఒక national **floor** కూడా పెట్టొచ్చు. ⏸ రాష్ట్రాలు కనీసం **ఐదేళ్ళ**కి ఒకసారి ఈ numbers ని సమీక్షించాలి, ఇంకా ధరలు పెరిగినట్టు సంవత్సరానికి రెండు సార్లు, **April**, **October** లో, కొంచెం పెంచుతారు.
+6e. ఇంతకు ముందు కొన్ని పనులకే minimum wage ఉండేది. ⏸ ఇప్పుడు కొత్త code లో **ప్రతి** పనికీ ఉంది.
+6b. రవి రాష్ట్రంలో, అతని పనికి అది **12,000** అనుకోండి. ⏸ అతను నిజంగా **18,000** సంపాదిస్తాడు. కానీ bonus ని అతని 18,000 మీద కాదు, ప్రభుత్వం నిర్ణయించిన ఆ **12,000** మీదే లెక్కిస్తారు.
 7. 8.33 శాతం, పన్నెండు నెలలకు… దాదాపు **12,000** రూపాయలు. ⏸ Company కి మంచి సంవత్సరం అయితే, **28,800** వరకు ఇవ్వొచ్చు. రెండు చట్టాల్లోనూ ఇదే.
 8. కానీ రవికి ఒక్కటి మారింది. ⏸ ఇంతకు ముందు company **cash** లో ఇవ్వొచ్చు. ఇప్పుడు అతని **bank account** లోనే పడాలి.
 9. ఇప్పుడు ప్రియ. ఆమె నెలకు **25,000** సంపాదిస్తుంది. అది 21,000 కంటే **ఎక్కువ**.
@@ -62,7 +71,7 @@ On-air correction for the full video (user, Oct 31). Every rule is explained thr
 17. ♻ ఇలాంటి కొత్త విషయాలు నేర్చుకోవడం నచ్చితే, ప్రతి ఆదివారం ఒక full video, మిగతా ఆరు రోజులు రోజుకో Short పెడతాం. ఎప్పుడూ ఏదో ఒక కొత్తది ఉంటుంది.
 18. ♻ Subscribe చేయండి (IG: Follow అవ్వండి), మీకు నచ్చేలా చేస్తాం.
 
-Credits (new lines only): EN ≈ 1,950, TE ≈ 2,100 (numbers spelled out) → **≈ 4,050**. Runtime ≈ 1:50 (EN), ≈ 2:10 (TE).
+Credits (new lines only): EN ≈ 2,400, TE ≈ 2,600 (numbers spelled out) → **≈ 5,000**. Runtime ≈ 2:15 (EN), ≈ 2:40 (TE).
 Checks: Ravi 12,000 × 12 × 8.33% = 11,995 ≈ 12,000; × 20% = 28,800. Calculation base = higher of ₹7,000 or the minimum wage (both laws; re-notified 25 Aug 2026). Eligibility = wages ₹21,000/month or less (basic + DA), both laws. Old Act covered every factory (Factories Act: 10+ workers with power) plus other establishments with 20+; new Code s.41(2) 20+ only. Old Act paid in cash (s.19); new s.39 bank credit. New s.29 adds a sexual-harassment conviction. 8 months after year end (s.39); 30 Nov for a March year-end.
 
 ## Pinned comment for the full video (post with the upload)
@@ -73,4 +82,5 @@ TE (pin on the Telugu video): Correction: 3:53 దగ్గర video లో bonu
 - Code on Wages in force 21 Nov 2025 (S.O. 5322(E)); repeals the Payment of Wages Act 1936, Minimum Wages Act 1948, Payment of Bonus Act 1965 and Equal Remuneration Act 1976. Taxmann: https://www.taxmann.com/post/blog/govt-enforces-key-wage-bonus-minimum-wage-provisions-under-wages-code
 - Old vs new bonus rules (cash → bank s.39; factories of any size → 20+ s.41(2); sexual-harassment conviction added s.29; 8.33–20%; 30 days; 8 months). Taxmann, Sep 2026: https://www.taxmann.com/post/blog/bonus-under-code-on-wages-2019-allocable-surplus-set-on-set-off/
 - ₹21,000 eligibility and ₹7,000/minimum-wage calculation notified 25 Aug 2026 (S.O. 4711(E)), retrospective from 21 Nov 2025. SCC Online: https://www.scconline.com/blog/post/2026/08/26/bonus-rules-under-code-on-wages-eligibility-calculation/ · AscentHR: https://ascent-hr.com/notification/ministry-of-labour-employment-notifies-monthly-wage-threshold-for-bonus-eligibility/
+- Minimum wage: set by states/UTs by skill (unskilled → highly skilled) and area/zone; Centre floor wage (s.9) that states cannot go below; revised at intervals not exceeding five years; VDA revised 1 Apr and 1 Oct; now covers all workers (earlier ~40%). Example ₹12,000/month is realistic for low-wage states (Odisha ₹462/day ≈ ₹12,000). India Briefing, Jun 2026 (mod. Sep 2026): https://india-briefing.com/news/guide-minimum-wage-india-19406.html
 - 30 Nov deadline for a March year-end. Keka: https://www.keka.com/statutory-bonus
