@@ -59,7 +59,7 @@ On-air correction for the full video (user, Oct 31). Every rule is explained thr
 17. ♻ ఇలాంటి కొత్త విషయాలు నేర్చుకోవడం నచ్చితే, ప్రతి ఆదివారం ఒక full video, మిగతా ఆరు రోజులు రోజుకో Short పెడతాం. ఎప్పుడూ ఏదో ఒక కొత్తది ఉంటుంది.
 18. ♻ Subscribe చేయండి (IG: Follow అవ్వండి), మీకు నచ్చేలా చేస్తాం.
 
-Credits (new lines only): EN ≈ 1,800, TE ≈ 1,930.0 (numbers spelled out) → **≈ 3,700.0**. Runtime ≈ 1:50 (EN), ≈ 2:10 (TE).
+Credits (new lines only): EN ≈ 1,800, TE ≈ 1,930 (numbers spelled out) → **≈ 3,700**. Runtime ≈ 1:50 (EN), ≈ 2:10 (TE).
 Checks: Ravi 12,000 × 12 × 8.33% = 11,995 ≈ 12,000; × 20% = 28,800. Calculation base = higher of ₹7,000 or the minimum wage (both laws; re-notified 25 Aug 2026). Eligibility = wages ₹21,000/month or less (basic + DA), both laws. Old Act covered every factory (Factories Act: 10+ workers with power) plus other establishments with 20+; new Code s.41(2) 20+ only. Old Act paid in cash (s.19); new s.39 bank credit. New s.29 adds a sexual-harassment conviction. 8 months after year end (s.39); 30 Nov for a March year-end.
 
 ## Pinned comment for the full video (post with the upload)
