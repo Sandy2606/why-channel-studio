@@ -23,7 +23,6 @@ E = [('woosh_air', 0.02, 0.25), ('sparkle_soft', A['gift'] - 0.1, 0.35), ('stamp
      ('woosh_air', A['test'] - 0.2, 0.25), ('paper_drop', A['boxes'] - 0.1, 0.35), ('ui_pop', A['counts'] - 0.1, 0.3), ('coins_clink', A['r18'], 0.28),
      ('tick', A['less'] - 0.3, 0.5), ('ui_pop', A['d30'] - 0.1, 0.35), ('stamp', A['must'] - 0.1, 0.5), ('tick', A['old5'], 0.4), ('tick', A['old5'] + 0.35, 0.4),
      ('woosh_deep', A['arjun'] - 0.1, 0.3), ('coins_clink', A['a45'], 0.25), ('sub_knock', A['cover'] - 0.1, 0.4), ('paper_slide', A['contract'] - 0.2, 0.4),
-     ('heartbeat_slow', A['surpr'], 0.25), ('sparkle_soft', A['protect'] - 0.2, 0.4),
      ('ui_pop', A['catch'] - 0.2, 0.4), ('sub_knock', A['notfull'] - 0.2, 0.35),
      ('ui_pop', S('9'), 0.3), ('pin_push', A['city'] - 0.1, 0.35), ('pin_push', A['city'] + 0.2, 0.35), ('ui_bell', A['every'] - 0.1, 0.35),
      ('scribble', A['not18'] - 0.3, 0.35), ('impact_big', A['m12'] - 0.15, 0.2), ('paper_slide', A['that12'] + 0.2, 0.35), ('marker', A['that12'] + 0.5, 0.3),
@@ -36,8 +35,8 @@ E = [('woosh_air', 0.02, 0.25), ('sparkle_soft', A['gift'] - 0.1, 0.35), ('stamp
      ('page_turn', S('18'), 0.35), ('scribble', A['nov30'] - 0.2, 0.35), ('stamp', A['didnt'] - 0.1, 0.35),
      ('woosh_tunnel', S('19') - 0.1, 0.3), ('swoosh_slow', S('L'), 0.25)]
 for i in range(4): E.append(('swoosh_slow', S('3') + 0.15 * i, 0.22))
-for i in range(4): E.append(('tick', A['skilled'] - 0.2 + 0.12 * i, 0.3))
-for i in range(6): E.append(('ui_pop', S('19') + 0.55 + 0.15 * i, 0.22))
+E.append(('ui_pop', A['skilled'] - 0.25, 0.35))
+for i in range(6): E.append(('ui_pop', S('19') + 0.35 + 0.1 * i, 0.22))
 for n, t, g in E: put(n, t, g)
 put('riser', A['howmuch'], 0.18, maxlen=1.6); put('riser_synth', A['p20'] - 0.4, 0.18, maxlen=1.8)
 put('machine_hum', S('15'), 0.12, maxlen=3.0, fade=0.8); put('space_drone', S('19'), 0.22, maxlen=4.0, fade=1.0)

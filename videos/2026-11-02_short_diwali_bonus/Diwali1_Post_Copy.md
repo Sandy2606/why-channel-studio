@@ -1,6 +1,6 @@
 # Diwali · Short 1/6 · "Is your Diwali bonus a gift… or the law?": Post Copy
 Tag DIWALI · 1/6 · post Mon Nov 2 · YT Short 8:00 PM IST · IG Reel 7:00 PM IST · next: 2/6 "The India-from-space photo" (Tue)
-Runtime: EN 2:36 · TE 2:47 (both under 3:00). The Short loops: the last line runs into the first.
+Runtime: EN 2:32 · TE 2:43 (both under 3:00). The Short loops: the last line runs into the first.
 
 ---
 

@@ -2,6 +2,7 @@
 import cairo
 from PIL import Image, ImageDraw, ImageFont
 TR = {
+'DECIDES WHICH ONE':'ఏదో ఇదే నిర్ణయిస్తుంది','EXAMPLE JOB':'ఉదాహరణ పని','WAREHOUSE PACKER':'Warehouse packer','MORE SKILL = HIGHER MINIMUM':'ఎక్కువ skill = ఎక్కువ minimum',
 'YOUR DIWALI BONUS:':'మీ Diwali bonus:','GIFT… OR LAW?':'బహుమతా… చట్టమా?','GIFT?':'బహుమతా?','LAW?':'చట్టమా?','COMPANY CHOICE':'company ఇష్టం','FOR MILLIONS':'లక్షల మందికి',
 'A MONTH · DECIDES WHICH ONE':'నెలకు · ఏదో ఇదే నిర్ణయిస్తుంది','OUR FULL VIDEO · SUNDAY':'మా full video · ఆదివారం','CORRECTION':'సవరణ','OUT OF DATE':'అది పాతది',
 'IN FORCE SINCE 21 NOV 2025':'21 Nov 2025 నుంచి అమల్లో','WAGES ACT':'జీతాల చట్టం','MINIMUM WAGES':'కనీస వేతనాల చట్టం','BONUS ACT':'Bonus చట్టం','EQUAL PAY':'సమాన వేతన చట్టం',

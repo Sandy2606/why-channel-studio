@@ -61,7 +61,6 @@ A = {
     'test': AT('4', 'test', 'test'), 'ravi': AT('4', 'Ravi', 'రవి'), 'boxes': AT('4', 'boxes', 'boxes'), 'counts': AT('4', 'counts', 'లెక్కించే'), 'r18': AT('4', '18,000', '18,000'),
     'less': AT('5', 'less', 'తక్కువ'), 'd30': AT('5', '30', '30'), 'must': AT('5', 'must', 'ఇవ్వాల్సిందే'), 'old5': AT('5', 'Old', 'పాత'),
     'arjun': AT('6', 'Arjun', 'అర్జున్'), 'a45': AT('6', '45,000', '45,000'), 'more': AT('6', 'more', 'ఎక్కువ'), 'cover': AT('6', 'cover', 'వర్తించదు'), 'contract': AT('6', 'contract', 'contract'),
-    'surpr': S('7'), 'protect': AT('7', 'protect', 'కాపాడటానికి'),
     'howmuch': S('8'), 'catch': AT('8', 'catch', 'trick'), 'notfull': AT('8', 'not', 'పూర్తి'),
     'minw': S('9'), 'skilled': AT('9', 'skilled', 'skill'), 'where': AT('9', 'where', 'ఎక్కడ'), 'city': AT('9', 'city', 'City'),
     'earlier': S('10'), 'every': AT('10', 'every', 'ప్రతి'),
@@ -305,7 +304,7 @@ def card_img(c, sf, cx, cy, t, t0, rot=-2, a=1.0, border=AMBER):
 # ---------------- extras ----------------
 sys.path.insert(0, '/home/claude/why-channel-studio/pipeline/style_v2')
 import cta_card as CTA
-END_T0 = A['tomorrow'] + 1.2
+END_T0 = A['tomorrow'] + 0.9
 
 SL = {}
 def slide(c, t, t0, scale=1.0, a=1.0):
@@ -313,14 +312,14 @@ def slide(c, t, t0, scale=1.0, a=1.0):
         SL[LANGV] = [(surf_from_pil(Image.open(ROOT + f).convert('RGBA'))[0], cxy) for f, cxy in json.load(open(ROOT + f'slide_{LANGV}.json'))]
     c.save(); c.translate(W / 2, 40); c.scale(scale, scale); c.translate(-W / 2, -40)
     c.push_group()
-    starts = [0.0, 0.25] + [0.6 + 0.15 * i for i in range(6)] + [1.7]
+    starts = [0.0, 0.18] + [0.4 + 0.1 * i for i in range(6)] + [1.2]
     for (sf, (cx, cy)), st in zip(SL[LANGV], starts):
         tt = t - (t0 + st)
         if tt < 0: continue
         u = e_back(prog(tt, 0, 0.35)); al = prog(tt, 0, 0.2)
         c.save(); c.translate(cx, cy + (1 - min(u, 1)) * 60); c.scale(0.85 + 0.15 * min(u, 1.03), 0.85 + 0.15 * min(u, 1.03)); c.translate(-cx, -cy)
         c.set_source_surface(sf, 0, 0); c.paint_with_alpha(al); c.restore()
-    k = prog(t, t0 + 1.5, t0 + 2.3)   # glow dot hops from 1/6 (here) to 2/6 (tomorrow)
+    k = prog(t, t0 + 1.0, t0 + 1.7)   # glow dot hops from 1/6 (here) to 2/6 (tomorrow)
     if 0 < k:
         (sx, sy), (ex, ey) = SL[LANGV][2][1], SL[LANGV][3][1]; sy += 200; ey += 200
         x = sx + (ex - sx) * e_io(k); y = sy + (ey - sy) * e_io(k) - math.sin(k * math.pi) * 120
@@ -342,6 +341,15 @@ def sc_hook(c, t, frozen=False):
     option_card(c, 90, 'GIFT?', gift_icon, tt, max(gl, gi * 0.6), sub=sub_g)
     option_card(c, 560, 'LAW?', lambda c_, x, y, s, a=1.0, glow=0.0: gavel_icon(c_, x, y, s, a, glow, hit=prog(t, A['law1'], A['law1'] + 0.15) if not frozen else 0), tt, ll, sub='FOR MILLIONS' if ll > 0.5 else None)
     c.pop_group_to_source(); c.paint_with_alpha(fo)
+    bk = 1.0 if frozen else 1 - prog(t, A['n21'] - 0.15, A['n21'] + 0.05)
+    if bk > 0:   # the number is on screen from frame 0
+        c.save(); c.translate(W / 2, 795)
+        c.set_source_rgba(0, 0, 0, 0.6 * bk); c.arc(0, 8, 112, 0, 2 * math.pi); c.fill()
+        g_ = agrad(-110, 0, 110, 0); c.set_source(g_); c.arc(0, 0, 108, 0, 2 * math.pi); c.fill()
+        c.set_source_rgba(0, 0, 0, 0.85 * bk); c.set_line_width(6); c.arc(0, 0, 108, 0, 2 * math.pi); c.stroke()
+        font(c, 'head', 44); e = c.text_extents('₹21,000'); c.move_to(-e.width / 2 - e.x_bearing, 16); c.set_source_rgba(*INK, bk); c.show_text('₹21,000')
+        c.restore()
+        mono(c, 'DECIDES WHICH ONE', W / 2, 1095, 30, AMBER, a=bk, kind='monob')
     if not frozen and t >= A['n21'] - 0.05:
         k = e_io(prog(t, A['n21'] - 0.05, A['n21'] + 0.25))
         big_num(c, '₹21,000', W / 2, 800, 200, t, A['n21'] - 0.05)
@@ -351,6 +359,8 @@ def frame(t):
     s = cairo.ImageSurface(cairo.FORMAT_ARGB32, W, H); c = cairo.Context(s)
     board_bg(c, t)
     caps = True
+    zoom_on = (S('8') - 0.05 <= t < S('11') - 0.05) or (S('12') - 0.05 <= t < S('19') - 0.05)
+    if zoom_on: c.save(); c.translate(540, 760); c.scale(1.1, 1.1); c.translate(-540, -760)
     if t < S('2') - 0.05:
         sc_hook(c, t)
     # 2 correction
@@ -368,7 +378,7 @@ def frame(t):
                     c.set_source_rgba(*AMBER, k); c.set_line_width(7); c.move_to(W / 2 - e.width / 2 - 20, 900); c.line_to(W / 2 - e.width / 2 - 20 + (e.width + 40) * f, 900); c.stroke()
                     mono(c, 'OUT OF DATE', W / 2, 990, 28, AMBER, a=k * f, kind='monob')
         else:
-            draw_clip(c, 'c1_taxmann_bonus_repealed', W / 2, 520, 1000, t, t2, rot=-1.0, hl_t0=t2 + 0.35, hl_dur=1.1)
+            draw_clip(c, 'c1_taxmann_bonus_repealed_z', W / 2, 540, 1010, t, t2, rot=-1.0, hl_t0=t2 + 0.35, hl_dur=1.1)
             source_tag(c, 'TAXMANN · SEP 2026 (ARTICLE TEXT)', 90, 380, a=prog(t, t2 + 0.2, t2 + 0.5))
             if t >= A['code2'] - 0.1:
                 big_num(c, 'CODE ON WAGES', W / 2, 860, 96, t, A['code2'] - 0.1)
@@ -393,7 +403,7 @@ def frame(t):
                 glass_dark(c, -400, -130, 800, 260, 36); c.set_source_rgba(*AMBER, 1); c.set_line_width(5); rrect(c, -400, -130, 800, 260, 36); c.stroke()
                 head(c, 'CODE ON WAGES, 2019', 0, -30, 58, AMBER, shadow=False); mono(c, '4 OLD LAWS → 1', 0, 50, 30, CREAM, kind='monob')
                 c.restore()
-            draw_clip(c, 'c2_taxmann_govt_four_acts', W / 2, 1130, 760, t, S('3') + 0.4, rot=1.2, hl_t0=S('3') + 0.8, hl_dur=0.8, t1=A['merge'] - 0.3)
+            draw_clip(c, 'c2_taxmann_govt_four_acts_z', W / 2, 1150, 860, t, S('3') + 0.4, rot=1.2, hl_t0=S('3') + 0.8, hl_dur=0.8, t1=A['merge'] - 0.3)
         else:
             u = e_out(prog(t, A['never'] - 0.1, A['never'] + 0.2))
             mono(c, 'THE LAW NEVER SAYS', W / 2, 360, 30, CREAM, a=u, kind='monob')
@@ -424,7 +434,7 @@ def frame(t):
         LY = 640
         c.set_source_rgba(*AMBER, 0.9); c.set_line_width(5); c.set_dash([18, 12]); c.move_to(60, LY); c.line_to(W - 60, LY); c.stroke(); c.set_dash([])
         pill(c, '₹21,000 / MONTH', 250, LY, 30, AMBER)
-        in6 = t >= S('6') - 0.05; in7 = t >= S('7') - 0.05
+        in6 = t >= S('6') - 0.05; in7 = False
         # Ravi below the line
         rx = 260 if not in6 else 260
         rdim = 0.3 if (in6 and not in7 and A['cover'] - 0.1 <= t < A['contract'] - 0.2) else 1.0
@@ -479,25 +489,24 @@ def frame(t):
         if t < S('10') - 0.05:
             pill(c, 'MINIMUM WAGE', W / 2, 260, 44, AMBER, s=e_back(prog(t, S('9'), S('9') + 0.3)))
             mono(c, 'THE LOWEST PAY THE LAW ALLOWS FOR A JOB', W / 2, 350, 24, CREAM, a=prog(t, S('9') + 0.4, S('9') + 0.7), kind='monob')
-            if t >= A['skilled'] - 0.2:   # skill steps
-                for i, lab in enumerate(('UNSKILLED', 'SEMI-SKILLED', 'SKILLED', 'HIGHLY SKILLED')):
-                    t0 = A['skilled'] - 0.2 + 0.12 * i; u = e_out(prog(t, t0, t0 + 0.3))
-                    if u <= 0: continue
-                    h_ = 90 + 70 * i; x = 130 + i * 215
-                    rrect(c, x, 760 - h_ * u, 170, h_ * u, 14); c.set_source(agrad(x, 0, x + 170, 0)); c.fill()
-                    mono(c, lab, x + 85, 790, 17, CREAM, a=u, kind='monob')
-                mono(c, 'MORE SKILL → HIGHER MINIMUM', W / 2, 860, 22, AMBER, a=prog(t, A['skilled'] + 0.5, A['skilled'] + 0.8), kind='monob')
-            if t >= A['city'] - 0.3:   # one job, two places
-                u = e_out(prog(t, A['city'] - 0.3, A['city']))
-                glass_dark(c, 90, 920, 900, 330, 30, u)
-                mono(c, 'SAME JOB · DIFFERENT PLACE', W / 2, 960, 22, CREAM, a=u, kind='monob')
-                for j, (lab, hh) in enumerate((('CITY', 190), ('VILLAGE', 120))):
-                    x = 250 + j * 420; k = e_out(prog(t, A['city'] - 0.1 + 0.3 * j, A['city'] + 0.3 + 0.3 * j))
-                    c.set_source_rgba(*AMBER, u); c.arc(x, 1060, 22, 0, 2 * math.pi); c.fill(); c.move_to(x - 16, 1072); c.line_to(x, 1100); c.line_to(x + 16, 1072); c.fill()
-                    c.set_source_rgba(*INK, u); c.arc(x, 1060, 8, 0, 2 * math.pi); c.fill()
-                    head(c, lab, x, 1140, 38, CREAM, a=u, shadow=False)
-                    rrect(c, x + 70, 1210 - hh * k, 90, hh * k, 10); c.set_source_rgba(*(AMBER if j == 0 else CREAM), 0.9 * u); c.fill()
-                mono(c, 'CAN DIFFER', W / 2, 1220, 22, AMBER, a=prog(t, A['city'] + 0.6, A['city'] + 0.9), kind='monob')
+            if t >= A['skilled'] - 0.25:   # one job card, skill sets the level
+                u = e_out(prog(t, A['skilled'] - 0.25, A['skilled'] + 0.1))
+                c.save(); c.translate(0, (1 - u) * 40); glass_dark(c, 140, 420, 800, 230, 30, u)
+                c.set_source_rgba(*AMBER, u); c.rectangle(160, 440, 6, 190); c.fill()
+                mono(c, 'EXAMPLE JOB', W / 2, 465, 22, CREAM, a=0.8 * u, kind='monob')
+                head(c, 'WAREHOUSE PACKER', W / 2, 535, 56, CREAM, a=u, shadow=False)
+                mono(c, 'MORE SKILL = HIGHER MINIMUM', W / 2, 605, 24, AMBER, a=u * prog(t, A['skilled'] + 0.2, A['skilled'] + 0.5), kind='monob'); c.restore()
+            if t >= A['where'] - 0.2:   # same job, two places
+                u = e_out(prog(t, A['where'] - 0.2, A['where'] + 0.15))
+                glass_dark(c, 140, 690, 800, 480, 30, u)
+                mono(c, 'SAME JOB · DIFFERENT PLACE', W / 2, 735, 24, CREAM, a=u, kind='monob')
+                for j, (lab, hh) in enumerate((('CITY', 230), ('VILLAGE', 140))):
+                    x = 340 + j * 400; k = e_out(prog(t, A['city'] - 0.1 + 0.4 * j, A['city'] + 0.3 + 0.4 * j))
+                    c.set_source_rgba(*AMBER, u); c.arc(x, 820, 26, 0, 2 * math.pi); c.fill(); c.move_to(x - 19, 834); c.line_to(x, 868); c.line_to(x + 19, 834); c.fill()
+                    c.set_source_rgba(*INK, u); c.arc(x, 820, 9, 0, 2 * math.pi); c.fill()
+                    head(c, lab, x, 905, 44, CREAM, a=u, shadow=False)
+                    rrect(c, x - 60, 1120 - hh * k, 120, hh * k, 12); c.set_source_rgba(*(AMBER if j == 0 else CREAM), 0.9 * u); c.fill()
+                mono(c, 'CAN DIFFER', W / 2, 1140, 26, AMBER, a=prog(t, A['city'] + 0.7, A['city'] + 1.0), kind='monob')
         else:
             pill(c, 'WHO GETS A MINIMUM WAGE?', W / 2, 260, 40, AMBER)
             for j, (lab, n_on) in enumerate((('OLD: LISTED JOBS ONLY', 4), ('NOW: EVERY JOB', 16))):
@@ -521,7 +530,7 @@ def frame(t):
             tick(c, 985, 640, 0.9, prog(t, A['that12'] - 0.2, A['that12'] + 0.2), AMBER)
         if t >= A['that12'] - 0.1:
             mono(c, 'BONUS IS COUNTED ON THIS', W / 2, 770, 26, AMBER, a=prog(t, A['that12'] - 0.1, A['that12'] + 0.2), kind='monob')
-        draw_clip(c, 'c3_scc_7000_minwage', W / 2, 1000, 1000, t, A['that12'] + 0.2, rot=-0.8, hl_t0=A['that12'] + 0.5, hl_dur=1.1)
+        draw_clip(c, 'c3_scc_7000_minwage_z', W / 2, 1010, 1010, t, A['that12'] + 0.2, rot=-0.8, hl_t0=A['that12'] + 0.5, hl_dur=1.1)
         if t >= A['that12'] + 0.4:
             source_tag(c, 'SCC ONLINE · AUG 26, 2026 (ARTICLE TEXT)', 90, 1150, a=prog(t, A['that12'] + 0.4, A['that12'] + 0.7))
             mono(c, 'BASE = YOUR WAGE, CAPPED AT ₹7,000 OR THE MINIMUM WAGE (WHICHEVER IS HIGHER)', W / 2, 1240, 15, CREAM, a=0.8 * prog(t, A['that12'] + 0.6, A['that12'] + 0.9), kind='mono')
@@ -552,7 +561,7 @@ def frame(t):
     # 13–17 what changed
     elif t < S('18') - 0.05:
         n_act = 0 if t < S('14') - 0.05 else 1 if t < S('15') - 0.05 else 2 if t < S('16') - 0.05 else 3 if t < S('17') - 0.05 else 4
-        chips(c, n_act, t, S('13'))
+        c.restore(); chips(c, n_act, t, S('13')); c.save(); c.translate(540, 760); c.scale(1.1, 1.1); c.translate(-540, -760)
         if n_act == 0:
             head(c, 'WHAT CHANGED', W / 2, 520, 92, CREAM, a=prog(t, S('13'), S('13') + 0.2))
             head(c, 'IN THE NEW LAW?', W / 2, 630, 72, AMBER, a=prog(t, S('13') + 0.2, S('13') + 0.4))
@@ -599,8 +608,8 @@ def frame(t):
                 head(c, '₹21,000 · IN THE ACT', W / 2, 650, 54, CREAM, a=u, shadow=False)
             else:
                 draw_clip(c, 'c3_scc_head', W / 2, 600, 860, t, A['notif'] - 0.2, rot=-1.2)
-                draw_clip(c, 'c3_scc_21000', W / 2, 900, 1000, t, A['aug'] - 0.3, rot=0.8, hl_t0=A['aug'], hl_dur=1.0)
-                draw_clip(c, 'c3_scc_retro', W / 2, 1060, 1000, t, A['aug'] + 1.2, rot=-0.6, hl_t0=A['aug'] + 1.5, hl_dur=0.8)
+                draw_clip(c, 'c3_scc_21000_z', W / 2, 900, 1010, t, A['aug'] - 0.3, rot=0.8, hl_t0=A['aug'], hl_dur=1.0)
+                draw_clip(c, 'c3_scc_retro_z', W / 2, 1060, 1010, t, A['aug'] + 1.2, rot=-0.6, hl_t0=A['aug'] + 1.5, hl_dur=0.8)
                 source_tag(c, 'SCC ONLINE · AUG 26, 2026 (ARTICLE TEXT)', 90, 1170, a=prog(t, A['notif'], A['notif'] + 0.3))
                 mono(c, 'CENTRAL NOTIFICATION · STATES NOTIFY FOR THEIR OWN ESTABLISHMENTS', W / 2, 1250, 15, CREAM, a=0.75 * prog(t, A['aug'] + 1.5, A['aug'] + 1.8), kind='mono')
         else:
@@ -650,9 +659,10 @@ def frame(t):
     # loop: fade back to the opening frame
     else:
         caps = True
-        k = e_io(prog(t, S('L') - 0.05, S('L') + 0.9))
+        k = e_io(prog(t, S('L') - 0.05, S('L') + 0.7))
         c.push_group(); slide(c, t, S('19') - 0.05, scale=0.86); CTA.draw(c, t, END_T0, PLAT, LANGV, y=1745); c.pop_group_to_source(); c.paint_with_alpha(1 - k)
         c.push_group(); board_bg(c, 0.0); sc_hook(c, 0.0, frozen=True); tag(c); c.pop_group_to_source(); c.paint_with_alpha(k)
+    if zoom_on: c.restore()
     if caps: (K.captions(c, t, y=1440) if LANGV == 'en' else R3.te_captions(c, t, y=1440))
     if t < S('19') - 0.05: tag(c)
     return s
