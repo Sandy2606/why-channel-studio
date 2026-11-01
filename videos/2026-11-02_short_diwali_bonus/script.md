@@ -13,8 +13,10 @@ On-air correction for the full video (user, Oct 31). Every rule is explained thr
    → "RAVI · ₹18,000/month · 50-person company" card
 5. Old law? ⏸ Bonus. New law? ⏸ Still a bonus.
    → OLD ✓ | NEW ✓
-6. So how much? Say the minimum wage for his job is **12,000**. The bonus is counted on that **12,000**, not his full salary.
-   → ₹18,000 crossed → ₹12,000 (note: "₹7,000 or the minimum wage, whichever is higher")
+6. So how much does he get? ⏸ Here's the part most people miss. For every job, the government fixes a **minimum wage**, the lowest salary anyone in that job can legally be paid.
+   → "MINIMUM WAGE = the lowest legal salary for a job" card
+6b. Say for Ravi's job, that's **12,000**. ⏸ He actually earns **18,000**. But his bonus isn't counted on his 18,000. It's counted only on the **12,000** the government fixed.
+   → ₹18,000 crossed → ₹12,000 (small note: "₹7,000 or the minimum wage, whichever is higher")
 7. 8.33 percent, for twelve months… that's about **12,000** rupees. ⏸ If the company had a good year, it can go up to **28,800**. Same in both laws.
    → ₹12,000 → up to ₹28,800 (8.33% → 20%)
 8. But here's one thing that changed for Ravi. ⏸ Earlier, the company could hand it to him in **cash**. Now it has to go into his **bank account**.
@@ -45,7 +47,8 @@ On-air correction for the full video (user, Oct 31). Every rule is explained thr
 3. సరే, ఇప్పుడు clear గా చెప్తా. ⏸ ముగ్గురిని తీసుకుందాం. **పాత** చట్టం వాళ్ళకి ఏమిచ్చింది… **కొత్త** చట్టం ఏమిస్తుంది… చూద్దాం.
 4. ముందు, రవి. నెలకు **18,000** సంపాదిస్తాడు, అంటే **21,000 లేదా అంతకంటే తక్కువ**. సంవత్సరం మొత్తం పని చేశాడు, **50** మంది ఉన్న company లో.
 5. పాత చట్టం? ⏸ Bonus వస్తుంది. కొత్త చట్టం? ⏸ ఇప్పటికీ వస్తుంది.
-6. మరి ఎంత? అతని పనికి minimum wage **12,000** అనుకోండి. Bonus అతని పూర్తి జీతం మీద కాదు, ఆ **12,000** మీద లెక్కిస్తారు.
+6. మరి అతనికి ఎంత వస్తుంది? ⏸ చాలా మంది miss అయ్యే విషయం ఇదే. ప్రతి పనికి ప్రభుత్వం ఒక **minimum wage** నిర్ణయిస్తుంది, అంటే ఆ పనికి చట్టప్రకారం ఇవ్వాల్సిన అతి తక్కువ జీతం.
+6b. రవి పనికి అది **12,000** అనుకోండి. ⏸ అతను నిజంగా **18,000** సంపాదిస్తాడు. కానీ bonus ని అతని 18,000 మీద కాదు, ప్రభుత్వం నిర్ణయించిన ఆ **12,000** మీదే లెక్కిస్తారు.
 7. 8.33 శాతం, పన్నెండు నెలలకు… దాదాపు **12,000** రూపాయలు. ⏸ Company కి మంచి సంవత్సరం అయితే, **28,800** వరకు ఇవ్వొచ్చు. రెండు చట్టాల్లోనూ ఇదే.
 8. కానీ రవికి ఒక్కటి మారింది. ⏸ ఇంతకు ముందు company **cash** లో ఇవ్వొచ్చు. ఇప్పుడు అతని **bank account** లోనే పడాలి.
 9. ఇప్పుడు ప్రియ. ఆమె నెలకు **25,000** సంపాదిస్తుంది. అది 21,000 కంటే **ఎక్కువ**.
@@ -59,7 +62,7 @@ On-air correction for the full video (user, Oct 31). Every rule is explained thr
 17. ♻ ఇలాంటి కొత్త విషయాలు నేర్చుకోవడం నచ్చితే, ప్రతి ఆదివారం ఒక full video, మిగతా ఆరు రోజులు రోజుకో Short పెడతాం. ఎప్పుడూ ఏదో ఒక కొత్తది ఉంటుంది.
 18. ♻ Subscribe చేయండి (IG: Follow అవ్వండి), మీకు నచ్చేలా చేస్తాం.
 
-Credits (new lines only): EN ≈ 1,800, TE ≈ 1,930 (numbers spelled out) → **≈ 3,700**. Runtime ≈ 1:50 (EN), ≈ 2:10 (TE).
+Credits (new lines only): EN ≈ 1,950, TE ≈ 2,100 (numbers spelled out) → **≈ 4,050**. Runtime ≈ 1:50 (EN), ≈ 2:10 (TE).
 Checks: Ravi 12,000 × 12 × 8.33% = 11,995 ≈ 12,000; × 20% = 28,800. Calculation base = higher of ₹7,000 or the minimum wage (both laws; re-notified 25 Aug 2026). Eligibility = wages ₹21,000/month or less (basic + DA), both laws. Old Act covered every factory (Factories Act: 10+ workers with power) plus other establishments with 20+; new Code s.41(2) 20+ only. Old Act paid in cash (s.19); new s.39 bank credit. New s.29 adds a sexual-harassment conviction. 8 months after year end (s.39); 30 Nov for a March year-end.
 
 ## Pinned comment for the full video (post with the upload)
