@@ -24,8 +24,8 @@ for lang in ('en','te'):
     allx = np.concatenate(list(X.values())); db = proasm.rms_db(allx); thr = np.percentile(db,10)+16; med = np.median(db[db>thr])
     out=[]; marks={}; t=0.0
     for n in ORDER:
-        x = trim(fade(X[n]))
-        proasm.CUTS.clear(); x = proasm.squeeze(x, med-(34 if (lang,n)==('en','8') else 24), maxgap=0.24, keep=0.15)
+        x = fade(X[n]) if (lang,n)==('en','8') else trim(fade(X[n]))
+        proasm.CUTS.clear(); x = proasm.squeeze(x, (np.median(proasm.rms_db(X[n]))-24) if (lang,n)==('en','8') else med-24, maxgap=0.24, keep=0.15)
         x = tempo(x, PACE[lang])
         if n in GAP: out.append(np.zeros(int(GAP[n]*SR),np.float32)); t += GAP[n]
         marks[n] = (round(t,3), round(t+len(x)/SR,3)); out.append(x); t += len(x)/SR

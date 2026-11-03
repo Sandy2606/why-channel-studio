@@ -36,9 +36,26 @@ SP={'12.4':'పన్నెండు పాయింట్ నాలుగు','
 TA.SPOKEN_LEN.update(SP)
 x=load('voice_te.wav'); mk=json.load(open('marks_te.json')); words=[]; sent=[]
 for k,(a,b) in mk.items():
-    us=[u.strip() for u in re.split(r'(?<=[.?:])\s+',clean(TE[k])) if u.strip()]
+    us=[u.strip() for u in re.split(r'(?<=[.?])\s+',clean(TE[k])) if u.strip()]
     seg=x[int(a*SR):int(b*SR)]
-    if len(us)>1: st,en=TA.align(seg,us); ends=st[1:]+[en]
+    if len(us)>1:
+        st,en=TA.align(seg,us); ends=st[1:]+[en]
+        Lu=np.array([max(2,TA.splen(u)) for u in us],float); tot=en-st[0]; exp=Lu/Lu.sum()*tot; dur=np.array(ends)-np.array(st)
+        if len(st)!=len(us) or (dur<0.45*exp).any() or (dur>2.0*exp).any():
+            # fallback: proportional split by spoken length, snapped to the nearest pause
+            hop=480; n=len(seg)//hop; db=20*np.log10(np.sqrt((seg[:n*hop].reshape(n,hop)**2).mean(1))+1e-9); v=db>np.percentile(db,15)+12
+            P=[]; i=0
+            while i<n:
+                if not v[i]:
+                    j=i
+                    while j<n and not v[j]: j+=1
+                    if (j-i)>=5 and i>0 and j<n: P.append((i+j)/200)
+                    i=j
+                else: i+=1
+            cum=st[0]+np.cumsum(exp)[:-1]; st=[st[0]]
+            for b in cum:
+                near=[p for p in P if abs(p-b)<0.45 and p>st[-1]+0.3]; st.append(min(near,key=lambda p:abs(p-b)) if near else b)
+            ends=st[1:]+[en]; print('fallback',k)
     else: st,ends=[0.0],[len(seg)/SR]
     for u,s,e in zip(us,st,ends):
         t0,t1=a+s,a+e; tk=u.split(); Lw=np.array([max(2,TA.splen(w)) for w in tk],float); cum=np.concatenate([[0],np.cumsum(Lw)])/Lw.sum()
