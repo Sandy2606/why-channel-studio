@@ -1,4 +1,4 @@
-# DIWALI · 5/6: "₹7 lakh crore of festive trade: where does it all go?" (Fri Nov 6) · DRAFT v2 (ChatGPT review applied)
+# DIWALI · 5/6: "₹7 lakh crore of festive trade: where does it all go?" (Fri Nov 6) · v3 FINAL
 Shorts style v3 · ONE idea (follow ₹100 of festive shopping) · people example (Lakshmi aunty's kirana shop) · loop ending.
 Target after the standard edit: EN ≈ 1:05, TE ≈ 1:15. Credits ≈ 2,300 (one take each).
 
@@ -6,7 +6,7 @@ Target after the standard edit: EN ≈ 1:05, TE ≈ 1:15. Credits ≈ 2,300 (one
 1. [excited] 7 lakh crore rupees. … That's India's expected festive trade this season, Navratri to Diwali. … Where does it all go?
    → frame 0: a busy market lane at night (lights, stalls, a kirana shop); big "₹7 LAKH CRORE" with a small "FORECAST · CAIT" tag; title "WHERE DOES IT GO?"
 2. So let's follow just 100 rupees of the goods people buy.
-   → a ₹100 note splits into coins that fly into labelled jars
+   → a ₹100 note splits into coins that fly into labelled jars; persistent heading "₹100 OF GOODS SALES · CAIT ESTIMATES" (through line 6)
 3. The biggest slice? … Not gold. … Groceries and FMCG: 12 rupees. Rice, atta, cooking oil, soap.
    → jar 1 fills: "GROCERIES & FMCG ₹12"; gold jar shakes, still lower
 4. Gold, silver and jewellery: 10 rupees. … Electronics: 8.
@@ -21,7 +21,7 @@ Target after the standard edit: EN ≈ 1:05, TE ≈ 1:15. Credits ≈ 2,300 (one
    → coins flow from the jars toward her counter; Lakshmi aunty behind it, queue in front; name card "LAKSHMI AUNTY · EXAMPLE"
 9. Last year, CAIT estimated that 85 percent of festive trade came through mainline retail… especially traditional markets and non-corporate shops.
    → 100 dots; 85 light up amber; label "MAINLINE RETAIL · 2025 · CAIT ESTIMATE"
-10. CAIT also estimates around 50 lakh temporary jobs. Packing, delivery, transport.
+10. Last year, CAIT also estimated around 50 lakh temporary jobs. Packing, delivery, transport.
    → worker icons multiplying; "≈ 50 LAKH TEMPORARY JOBS · CAIT ESTIMATE"
 11. These are traders' estimates, not official figures. … But small shops are a huge part of the story.
    → stamp "TRADERS' ESTIMATES · NOT OFFICIAL"; then "SMALL SHOPS · BIG PART OF THE STORY"
@@ -40,7 +40,7 @@ L. So the next time you hand 100 rupees to the kirana aunty…
 7. ఇందులో services కూడా ఉన్నాయి. Delivery, cabs, catering. … ఈ సంవత్సరం services లో దాదాపు 80,000 కోట్ల రూపాయలు వస్తాయని CAIT అంచనా.
 8. ఇప్పుడు లక్ష్మి ఆంటీని చూడండి. ఆమెది ఒక చిన్న కిరాణా కొట్టు. … ఆమెకు ఈ కొన్ని వారాలే సంవత్సరంలో అత్యంత busy గా ఉండొచ్చు.
 9. పోయిన సంవత్సరం CAIT అంచనా ప్రకారం, పండగ వ్యాపారంలో 85 శాతం mainline retail నుంచే వచ్చింది… ముఖ్యంగా సంప్రదాయ మార్కెట్లు, corporate కాని దుకాణాలు.
-10. దాదాపు 50 లక్షల తాత్కాలిక ఉద్యోగాలు వచ్చాయని కూడా CAIT అంచనా. Packing, delivery, transport.
+10. పోయిన సంవత్సరం దాదాపు 50 లక్షల తాత్కాలిక ఉద్యోగాలు వచ్చాయని కూడా CAIT అంచనా వేసింది. Packing, delivery, transport.
 11. ఇవి వ్యాపారుల అంచనాలు, అధికారిక లెక్కలు కాదు. … కానీ ఈ కథలో చిన్న దుకాణాలది పెద్ద పాత్ర.
 12. రేపు, చివరిది: Diwali సమయంలో Delhi గాలి ఎందుకు అంత దారుణంగా మారుతుంది? … బాణాసంచా అందులో ఒక భాగం మాత్రమే.
 L. కాబట్టి ఈసారి మీరు కిరాణా ఆంటీ చేతికి 100 రూపాయలు ఇచ్చినప్పుడు…
