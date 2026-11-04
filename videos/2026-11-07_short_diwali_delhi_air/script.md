@@ -1,59 +1,59 @@
 # DIWALI · 6/6: "Why does Delhi's air get so bad around Diwali?" (Sat Nov 7) · DRAFT v2
 v2 = ChatGPT's four fixes + your additions: channel note in the middle; a clear PROBLEM → REASONS → EFFECTS → WHAT THE GOVERNMENT IS DOING → HOW FAR → CHINA EXAMPLE → SOLUTION structure.
 Shorts style v3 · loop ending · last of the series. A progress strip runs across the top: PROBLEM · WHY · EFFECTS · ACTION · BEIJING · FIX.
-Length: ~330 words EN. Target after the standard edit: EN ≈ 2:05, TE ≈ 2:20 (under the 3:00 hard limit; longer than our usual 60–100 s, because of the extra sections). Credits ≈ 4,300 (one take each).
+Length: ~400 words EN (trimmed from 480 so Telugu stays under 3:00). Expected after the standard edit (our measured pace ≈ 2.7 words/s): EN ≈ 2:30, TE ≈ 2:50 (under the 3:00 hard limit; longer than our usual 60–100 s because of the extra sections). Credits ≈ 4,600 (one take each).
 Every historical number is labelled with its year on screen (2025 = last Diwali), since Diwali 2026 is the day after release.
 
 ## ENGLISH
 **PROBLEM**
 1. [serious] Every year, right after Diwali, Delhi wakes up inside a grey haze. … Most people blame the crackers. … They're only part of the story.
    → frame 0: Delhi skyline (India Gate silhouette) half-hidden in grey haze at dawn; burnt cracker shells on a balcony rail; title "WHY DELHI CHOKES"
-2. Last Diwali, in the 24 hours after the festival, PM2.5 averaged about 488 micrograms per cubic metre. … More than three times the level just before. And about eight times India's 24-hour limit.
+2. Last Diwali, PM2.5 in the 24 hours after the festival averaged about 488 micrograms per cubic metre. … More than three times the level before, and eight times India's daily limit.
    → bars "BEFORE 156.6" → "AFTER 488 µg/m³", the 60 limit line far below; labels "DIWALI 2025 · CPCB DATA (CLIMATE TRENDS ANALYSIS)"; no "caused by crackers" label on the jump
 
 **WHY: three reasons**
 3. So why does it get this bad? … Three reasons.
-4. One: the spike. Crackers release a burst of smoke in just a few hours.
+4. One: the spike. Crackers release a burst of smoke in a few hours.
    → chip 1 SPIKE; smoke puffs rise over the skyline
-5. Two: the trap. Diwali comes just as Delhi's winter begins. On cold, still nights, warmer air sits above cooler air near the ground. … It's called a temperature inversion. And it works like a lid.
+5. Two: the trap. Diwali comes as winter begins. On cold, still nights, warm air sits above cooler air near the ground. … A temperature inversion. It works like a lid.
    → chip 2 TRAP; cool blue layer at ground, warm orange layer above; glass lid drops; smoke spreads sideways under it (not frozen)
-6. Last Diwali night, the wind was below 1 metre per second. … The smoke had nowhere to go.
+6. Last Diwali night, the wind was below 1 metre per second.
    → wind gauge near zero, "WIND < 1 m/s · DIWALI 2025"
-7. Three: the build-up. Under that lid, everyday pollution keeps adding up. Vehicles. Dust. Industry. Garbage burning. … Farm fires add more on some days.
+7. Three: the build-up. Under that lid, vehicles, dust, industry and garbage burning keep adding more. … Farm fires add more on some days.
    → chip 3 BUILD; icons pile up under the lid
-8. Across three recent Novembers, an IITM model estimated that vehicles contributed about half of Delhi's locally sourced PM2.5.
+8. In recent Novembers, an IITM model estimated that vehicles made up about half of Delhi's locally sourced PM2.5.
    → donut of LOCAL sources, vehicles slice glows; "VEHICLES ≈ 51–53% · MODELED LOCAL PM2.5 ONLY · NOV 10–20, 2023–25 · CSE ANALYSIS OF IITM DSS"
 
 **CHANNEL NOTE (middle)**
-9. Quick note: this is the last Short of our Diwali week. … We post a full video every Sunday, and a new Short the other six days. So there's always something to watch.
+9. Quick note: we post a full video every Sunday, and a new Short the other six days.
    → calendar card SUN = FULL VIDEO, MON–SAT = SHORT; Follow/Subscribe button pulses once
 
 **EFFECTS**
-10. Why does it matter? … A University of Chicago study estimates that Delhi's air takes about 8 years off the average resident's life, compared with meeting the WHO guideline.
+10. Why it matters: a University of Chicago study estimates Delhi's air cuts about 8 years off average life expectancy, compared with WHO-level air.
    → life-years bar with 8.2 years greyed out; "AQLI 2025 · 2023 DATA · vs WHO GUIDELINE"
-11. And on the worst days, the city slows down. Construction stops, older cars are pulled off the road, and young children's classes can move online.
+11. On the worst days, construction stops, older cars are pulled off the roads, and young kids' classes can go online.
    → three icons switch off: crane, old car, school bell → laptop
 
 **WHAT THE GOVERNMENT IS DOING**
-12. That's an emergency plan called GRAP. It gets stricter in stages as the air gets worse.
+12. That's GRAP, an emergency plan that gets stricter in stages.
    → staircase STAGE I → IV with AQI bands 201–300, 301–400, 401–450, >450
-13. And nationally, the Clean Air Programme set a goal: cut PM10 pollution by up to 40 percent by this year, compared with 2017.
+13. Nationally, the Clean Air Programme aims to cut PM10 by up to 40 percent by this year, from 2017 levels.
    → target ring "−40% PM10 by 2025–26 vs 2017–18 · NCAP"
 
 **HOW FAR**
-14. How far has Delhi got? … Its 2025 average was its cleanest in years, outside the lockdown year. … But it was still about 100 micrograms. Two and a half times India's annual limit.
+14. Delhi's 2025 average was its cleanest in years, outside the lockdown year. … But at about 100 micrograms, it's still two and a half times India's annual limit.
    → line of Delhi annual PM2.5 2021–2025 dipping to 100; limit line 40; "DPCC DATA · ECONOMIC SURVEY 2025–26"
-15. An independent review found only 23 cities in the programme hit the 40 percent target. … Delhi wasn't one of them.
+15. An independent review found only 23 cities hit the 40 percent target. … Delhi wasn't one of them.
    → 23 lit dots out of many; Delhi dot unlit; "CREA · TRACING THE HAZY AIR 2026"
 
 **BEIJING**
-16. Can it be fixed? Look at Beijing. … In 2013, its average PM2.5 was about 90. … Last year, 27. A cut of about 70 percent.
+16. Can it be fixed? Look at Beijing. … Its average PM2.5 fell from about 90 in 2013… to 27 last year. Around 70 percent lower.
    → Beijing bar 89.5 (2013) → 27 (2025); Delhi's 100 (2025) placed beside it: taller than Beijing at its worst
-17. How? It shut coal-fired plants and boilers, moved homes from coal to gas and electricity, tightened vehicle rules… and worked with neighbouring provinces, because smog doesn't stop at a city's border. … It took more than a decade.
+17. It shut coal plants and boilers, moved homes from coal to gas and electricity, tightened vehicle rules, and worked with neighbouring provinces. … It took over a decade.
    → four icons tick on: chimney off, gas flame, car with badge, regional map Beijing–Tianjin–Hebei; "2013 → 2025"
 
 **THE FIX**
-18. That's the lesson. … No single villain, and no single fix. Crackers add the spike. Winter weather traps the pollution. And everyday emissions keep adding more. … So the real fix is year-round, and region-wide.
+18. So: no single villain, and no single fix. Crackers add the spike. Winter traps it. Everyday emissions keep adding more. … The real fix is year-round, and region-wide.
    → three stacked cards SPIKE · TRAP · BUILD; then "YEAR-ROUND + REGION-WIDE"
 19. That's the end of Diwali week. … Happy Diwali, and tell us which "why" we should answer next.
    → series slide with all six covers lit + Follow/Subscribe; "COMMENT YOUR WHY"
@@ -62,23 +62,23 @@ L. So when the haze rolls in this year…
 
 ## TELUGU
 1. [serious] ప్రతి సంవత్సరం, Diwali అయిన వెంటనే, Delhi ఒక బూడిద రంగు పొగమంచులో నిద్ర లేస్తుంది. … చాలామంది బాణాసంచాని నిందిస్తారు. … కానీ అది కథలో ఒక భాగం మాత్రమే.
-2. పోయిన Diwali కి, పండగ తర్వాత 24 గంటల్లో, PM2.5 సగటున దాదాపు 488 micrograms per cubic metre ఉంది. … పండగ ముందు కంటే మూడు రెట్లు ఎక్కువ. India 24 గంటల పరిమితి కంటే దాదాపు ఎనిమిది రెట్లు.
-3. మరి ఇంత దారుణంగా ఎందుకు అవుతుంది? … మూడు కారణాలు.
+2. పోయిన Diwali కి, పండగ తర్వాత 24 గంటల్లో PM2.5 సగటున దాదాపు 488 micrograms per cubic metre. … పండగ ముందు కంటే మూడు రెట్లు, India రోజువారీ పరిమితి కంటే ఎనిమిది రెట్లు.
+3. మరి ఇంత దారుణంగా ఎందుకు? … మూడు కారణాలు.
 4. ఒకటి: ఒక్కసారిగా పెరుగుదల. బాణాసంచా కొన్ని గంటల్లోనే చాలా పొగను విడుదల చేస్తుంది.
-5. రెండు: బంధించడం. Delhi లో చలికాలం మొదలయ్యే సమయానికే Diwali వస్తుంది. చల్లని, గాలి లేని రాత్రుల్లో, నేల దగ్గర ఉన్న చల్లని గాలి పైన వెచ్చని గాలి పొర కూర్చుంటుంది. … దీన్ని temperature inversion అంటారు. ఇది ఒక మూతలా పనిచేస్తుంది.
-6. పోయిన Diwali రాత్రి, గాలి వేగం సెకనుకు 1 మీటర్ కంటే తక్కువ. … పొగ ఎక్కడికీ వెళ్ళలేకపోయింది.
-7. మూడు: పేరుకుపోవడం. ఆ మూత కింద, రోజువారీ కాలుష్యం పెరుగుతూనే ఉంటుంది. వాహనాలు. దుమ్ము. పరిశ్రమలు. చెత్త కాల్చడం. … కొన్ని రోజుల్లో పంట వ్యర్థాల మంటలు కూడా తోడవుతాయి.
-8. గత మూడేళ్ల నవంబరులో, Delhi లోని స్థానిక మూలాల వల్ల వచ్చిన PM2.5 లో దాదాపు సగం వాహనాల నుంచే వచ్చిందని IITM నమూనా అంచనా వేసింది.
-9. ఒక చిన్న మాట: ఇది మా Diwali వారంలో చివరి Short. … ప్రతి ఆదివారం ఒక full video, మిగతా ఆరు రోజులు రోజుకో Short. అంటే చూడటానికి ఎప్పుడూ ఏదో ఒకటి ఉంటుంది.
-10. ఇది ఎందుకు ముఖ్యం? … WHO ప్రమాణం పాటిస్తే ఉండే దానితో పోలిస్తే, Delhi గాలి వల్ల సగటు వ్యక్తి జీవితకాలం దాదాపు 8 సంవత్సరాలు తగ్గుతుందని University of Chicago అధ్యయనం అంచనా.
-11. దారుణమైన రోజుల్లో నగరం నెమ్మదిస్తుంది. నిర్మాణాలు ఆగిపోతాయి, పాత కార్లను రోడ్ల మీద నుంచి తీసేస్తారు, చిన్న పిల్లల తరగతులు online కి మారొచ్చు.
-12. అదే GRAP అనే అత్యవసర ప్రణాళిక. గాలి దారుణమయ్యే కొద్దీ, దశల వారీగా కఠినమవుతుంది.
-13. దేశవ్యాప్తంగా, Clean Air Programme ఒక లక్ష్యం పెట్టింది: 2017 తో పోలిస్తే, ఈ సంవత్సరానికల్లా PM10 కాలుష్యాన్ని 40 శాతం వరకు తగ్గించాలి.
-14. మరి Delhi ఎంత దూరం వచ్చింది? … lockdown సంవత్సరం తప్ప, 2025 సగటు కొన్నేళ్లలో అత్యంత శుభ్రమైనది. … అయినా అది దాదాపు 100 micrograms. India సంవత్సర పరిమితికి రెండున్నర రెట్లు.
-15. ఈ programme లో కేవలం 23 నగరాలే 40 శాతం లక్ష్యాన్ని చేరుకున్నాయని ఒక స్వతంత్ర సమీక్ష తేల్చింది. … అందులో Delhi లేదు.
-16. మరి దీన్ని సరిచేయగలమా? Beijing ని చూడండి. … 2013 లో దాని సగటు PM2.5 దాదాపు 90. … పోయిన సంవత్సరం 27. దాదాపు 70 శాతం తగ్గింపు.
-17. ఎలా? బొగ్గుతో నడిచే plants, boilers ని మూసేసింది, ఇళ్లను బొగ్గు నుంచి gas, కరెంటుకి మార్చింది, వాహనాల నియమాలను కఠినం చేసింది… పక్క రాష్ట్రాలతో కలిసి పనిచేసింది, ఎందుకంటే పొగమంచు నగర సరిహద్దు దగ్గర ఆగదు. … దీనికి పదేళ్లకు పైగా పట్టింది.
-18. అదే పాఠం. … ఒక్క విలన్ లేడు, ఒక్క పరిష్కారం లేదు. బాణాసంచా ఒక్కసారిగా పెంచుతుంది. చలికాలం వాతావరణం కాలుష్యాన్ని బంధిస్తుంది. రోజువారీ కాలుష్యం ఇంకా పెంచుతూనే ఉంటుంది. … అసలు పరిష్కారం సంవత్సరం పొడవునా, ప్రాంతం మొత్తం కలిసి చేయాలి.
+5. రెండు: బంధించడం. చలికాలం మొదలయ్యే సమయానికే Diwali వస్తుంది. చల్లని, గాలి లేని రాత్రుల్లో, నేల దగ్గర చల్లని గాలి పైన వెచ్చని గాలి పొర కూర్చుంటుంది. … అదే temperature inversion. ఇది ఒక మూతలా పనిచేస్తుంది.
+6. పోయిన Diwali రాత్రి, గాలి వేగం సెకనుకు 1 మీటర్ కంటే తక్కువ.
+7. మూడు: పేరుకుపోవడం. ఆ మూత కింద, వాహనాలు, దుమ్ము, పరిశ్రమలు, చెత్త కాల్చడం ఇంకా పెంచుతూనే ఉంటాయి. … కొన్ని రోజుల్లో పంట వ్యర్థాల మంటలు కూడా తోడవుతాయి.
+8. ఇటీవలి నవంబర్లలో, Delhi స్థానిక మూలాల PM2.5 లో దాదాపు సగం వాహనాలదేనని IITM నమూనా అంచనా వేసింది.
+9. ఒక చిన్న మాట: ప్రతి ఆదివారం ఒక full video, మిగతా ఆరు రోజులు రోజుకో Short పెడతాం.
+10. ఇది ఎందుకు ముఖ్యం: WHO స్థాయి గాలితో పోలిస్తే, Delhi గాలి సగటు జీవితకాలాన్ని దాదాపు 8 సంవత్సరాలు తగ్గిస్తుందని University of Chicago అధ్యయనం అంచనా.
+11. దారుణమైన రోజుల్లో నిర్మాణాలు ఆగిపోతాయి, పాత కార్లను రోడ్ల మీద నుంచి తీసేస్తారు, చిన్న పిల్లల తరగతులు online కి మారొచ్చు.
+12. అదే GRAP, దశల వారీగా కఠినమయ్యే అత్యవసర ప్రణాళిక.
+13. దేశవ్యాప్తంగా, Clean Air Programme లక్ష్యం: 2017 తో పోలిస్తే, ఈ సంవత్సరానికల్లా PM10 ని 40 శాతం వరకు తగ్గించడం.
+14. lockdown సంవత్సరం తప్ప, Delhi 2025 సగటు కొన్నేళ్లలో అత్యంత శుభ్రమైనది. … కానీ దాదాపు 100 micrograms తో, అది ఇంకా India సంవత్సర పరిమితికి రెండున్నర రెట్లు.
+15. కేవలం 23 నగరాలే 40 శాతం లక్ష్యాన్ని చేరుకున్నాయని ఒక స్వతంత్ర సమీక్ష తేల్చింది. … అందులో Delhi లేదు.
+16. మరి దీన్ని సరిచేయగలమా? Beijing ని చూడండి. … దాని సగటు PM2.5, 2013 లో దాదాపు 90 నుంచి… పోయిన సంవత్సరం 27 కి పడిపోయింది. దాదాపు 70 శాతం తక్కువ.
+17. బొగ్గు plants, boilers ని మూసేసింది, ఇళ్లను బొగ్గు నుంచి gas, కరెంటుకి మార్చింది, వాహనాల నియమాలను కఠినం చేసింది, పక్క రాష్ట్రాలతో కలిసి పనిచేసింది. … దీనికి పదేళ్లకు పైగా పట్టింది.
+18. అంటే: ఒక్క విలన్ లేడు, ఒక్క పరిష్కారం లేదు. బాణాసంచా ఒక్కసారిగా పెంచుతుంది. చలికాలం దాన్ని బంధిస్తుంది. రోజువారీ కాలుష్యం ఇంకా పెంచుతూనే ఉంటుంది. … అసలు పరిష్కారం సంవత్సరం పొడవునా, ప్రాంతం మొత్తం కలిసి చేయాలి.
 19. దీంతో Diwali వారం పూర్తయింది. … Happy Diwali, తర్వాత ఏ "ఎందుకు" కి సమాధానం చెప్పాలో comment చేయండి.
 L. కాబట్టి ఈసారి ఆ పొగమంచు కమ్ముకున్నప్పుడు…
 
