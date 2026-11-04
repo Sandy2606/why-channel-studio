@@ -1,0 +1,30 @@
+# DIWALI · 6/6 "Why does Delhi's air get so bad around Diwali?" · scene sheet (for approval before render)
+Shorts style v3 · runtime EN 2:15 · TE 2:40 (measured, edited voice + lead/tail) · loops into its own opening · Telugu on-screen text in TE versions
+Progress strip across the top from line 2 to line 17: PROBLEM · WHY · EFFECTS · ACTION · BEIJING · FIX (subdued; current section glows amber).
+Every historical number carries its year on screen (2025 = last Diwali). PM2.5 cards are amber, PM10 cards are teal, with a badge on each, so the two never look like the same measurement.
+
+| # | Voice | On screen | SFX |
+|---|---|---|---|
+| 1 | Every year, right after Diwali, Delhi wakes up inside a grey haze… only part of the story. | Frame 0: drawn Delhi skyline (India Gate arch, Qutub-like tower, flats, flyover with tiny headlights) under a thick grey haze at dawn, a pale sun disc; burnt cracker shells on a balcony rail in the foreground. Small "DIWALI · DELHI" above a big "WHY DELHI CHOKES". | wind_ambience (low), swoosh_slow |
+| 2 | Last Diwali, PM2.5… about 488 micrograms per cubic metre… three times… eight times India's daily limit. | Two bars grow: "BEFORE · 156.6" → "AFTER · 488 µg/m³" with "×3"; a thin line at 60 "INDIA'S 24-HR LIMIT" far below, "≈ 8×". Labels "PM2.5 · DIWALI 2025 · CPCB DATA (CLIMATE TRENDS ANALYSIS)". No "caused by crackers" label. Chip **PROBLEM**. | tick run, sub_knock, marker |
+| 3 | So why does it get this bad? Three reasons. | Three empty slots 1 · 2 · 3 slide in. Chip **WHY**. | ui_pop ×3 |
+| 4 | One: the spike. Crackers release a burst of smoke… | Slot 1 fills "SPIKE"; rockets streak up over the skyline and burst; a smoke cloud puffs out. | firework_whistle_echo, boom_distant (low) |
+| 5 | Two: the trap… temperature inversion… like a lid… wind under 1 m/s. | Cross-section: cool blue layer at the ground, warm orange layer above; on "lid" a glass lid drops; smoke rises, hits it and spreads sideways underneath. Labels "COOL AIR", "WARM AIR", "TEMPERATURE INVERSION". Then a wind gauge, needle near zero: "WIND < 1 m/s · DIWALI 2025". Slot 2 "TRAP". | woosh_deep, metal_transform (lid), tick |
+| 6 | Three: the build-up… vehicles, dust, industry, garbage burning… farm fires too, on some days. | Slot 3 "BUILD"; icons pile up under the lid one by one (car, dust cloud, chimney, burning bin, small field fire tagged "SOME DAYS"); the haze thickens. | ui_pop ×5 |
+| 7 | In recent Novembers, an IITM model estimated… about half of Delhi's locally sourced PM2.5. | Donut of LOCAL sources, the vehicles slice glows "≈ 51–53%"; caption "MODELED LOCAL PM2.5 ONLY · NOV 10–20, 2023–25 · CSE ANALYSIS OF IITM DSS". | marker |
+| 8 | Quick note: full video every Sunday. Shorts Monday to Saturday. | Small calendar card (≈ 4 s): SUN = FULL VIDEO, MON–SAT = SHORTS; the haze stays dim behind it. No subscribe animation. | paper_slide (soft) |
+| 9 | Why it matters: University of Chicago researchers… could gain about 8 years… if pollution met WHO guidelines. | A life-years bar with an "+8.2 YEARS · POTENTIAL GAIN" segment glowing; caption "AQLI 2025 · 2023 DATA · IF PM2.5 MET THE WHO GUIDELINE". Chip **EFFECTS**. | heartbeat_slow |
+| 10 | On the worst days, construction stops, some older cars are restricted, primary classes can go hybrid. | Three restriction badges (not shutdowns): crane with a stop sign "CONSTRUCTION PAUSED", an old car with a "RESTRICTED" tag, a school with a "HYBRID" tag. | ui_click ×3 |
+| 11 | That's GRAP, an emergency plan that gets stricter in stages. | Staircase STAGE I → IV with AQI bands 201–300, 301–400, 401–450, >450; "GRAP · CAQM". Chip **ACTION**. | tick ×4 |
+| 12 | And India's Clean Air Programme set a target… PM10… 40 percent by 2025–26. | Target ring, teal PM10 badge: "NCAP · PM10 −40% BY 2025–26 vs 2017–18". | ui_bell |
+| 13 | Delhi's 2025 average PM2.5 was its lowest in years… close to 100… two and a half times India's annual limit. | Amber PM2.5 badge; Delhi bar "2025 · 97 µg/m³" with the 40 annual-limit line, "≈ 2.5×"; caption "CAQM · FULL-YEAR 2025 · LOWEST SINCE 2018 (EXCL. 2020)". | tick run, marker |
+| 14 | And only 23 of 100 cities hit that PM10 target. Delhi wasn't one of them. | 100 dots, 23 light teal; Delhi's dot stays unlit and gets a label; proof card "23 OF 100 NCAP CITIES WITH ENOUGH PM10 DATA · CREA, JAN 2026". | ui_pop, sub_knock |
+| 15 | Can it be fixed? Look at Beijing… about 90 in 2013… 27 last year. About 70 percent lower. | Beijing skyline silhouette; Beijing's own bars only: "2013 · 89.5" → "2025 · 27", "−70%"; caption "BEIJING ECOLOGY BUREAU via CHINA DAILY". No Delhi bar beside it. Chip **BEIJING**. | woosh_air, ui_bell |
+| 16 | It shut coal plants, moved homes to gas and electricity, tightened vehicle rules, worked with neighbouring provinces… over a decade. | Four icons tick on one by one: chimney with a cross, a gas flame + plug, a car with an emission badge, a regional map BEIJING–TIANJIN–HEBEI; a timeline "2013 → 2025". | tick ×4, ui_bell |
+| 17 | So: no single villain, no single fix… The real fix is year-round, and region-wide. | Three stacked cards SPIKE (firecrackers) · TRAP (winter conditions) · BUILD (ongoing emissions); then the skyline slowly clears as "YEAR-ROUND + REGION-WIDE" appears (hopeful, not a claim that Delhi is clean). Chip **FIX**. | sparkle_soft, riser (soft) |
+| 18 | That's the end of Diwali week… Happy Diwali… which "why" next. | Series slide: all six covers lit with a "DONE" check each; "COMMENT YOUR WHY" + Subscribe/Follow button. | woosh_tunnel, ui_pop ×6, UI clicks |
+| L | So when the haze rolls in this year… | The grey haze drifts back over the clear skyline, to exactly the frame-0 density → loops into line 1. | wind_ambience, swoosh_slow |
+
+Evidence: no page captures this time (ThePrint/PTI, Down To Earth and CREA are cited as on-screen source tags; I can try screenshot clippings of the CREA PDF and the ThePrint article if you want a paper flash in scenes 2 and 14).
+Music: "The Quiet Meridian" (calm, serious) · all SFX from sfx/; no extras needed.
+Credits used: ≈ 4,498 (EN ≈ 2,187 · TE ≈ 2,311).
