@@ -210,6 +210,15 @@ The user is in Texas, so IST times are converted to local time.
 - Never `pkill -f` / `pgrep -f` with a pattern that also matches the shell's own command line; it kills the shell (exit 144). Kill by PID from `ps` filtered with `grep -v grep`.
 - Don't run heavy whisper jobs alongside renders unless you have to. Both slow to a crawl on 2 CPUs.
 
+## Story-cinema style (standing rule from Nov 4 2026, every Short from Diwali 6/6 on)
+The user asked for this to be the channel's continuing look so viewers recognise it from Short to Short.
+- **Tell it as a story with characters.** A family or person lives the problem (e.g. Raju at his window). A second character (Meera, the younger sister, voiced by Sowmya's clone) asks the question a normal viewer would ask *before* each section: "What even is PM2.5?", "Why does it get this bad?", "Did it work?". The narrator answers. Put a real-world side character where the topic needs one (e.g. Gurpreet the Punjab farmer, tagged ILLUSTRATIVE EXAMPLE).
+- **Cartoons talk.** Mouths move with their own lines; drive them from the voice envelope (RMS per frame, gated by who owns the line). The narrator's third-person lines (hook and loop) don't move a character's mouth. Characters blink. In map or city shots, the asker appears as a round bust in the corner with a speech bubble that shows their line, and captions hide while the bubble is up.
+- **Watching a film, not slides.** Use one continuous drawn world with a camera (map → city → home → street; log-zoom moves, no hard cuts). Use dark cinematic grades, vignette and bokeh dust for "invisible" scales. Keep it simple and clean: flat shapes, at most two labels on screen.
+- **Body explanations go inside the body.** Use a human example and follow the substance in: start with a macro lens (the particle next to a hair), then an x-ray band that sweeps through the clothes (torso first; keep the face visible), breathing in, particles travelling the airway into the lungs, inflamed red spots, a cough. Cut deeper (air sacs, immune cells, a capillary with blood cells), then pull back to the whole body to show the route to the heart and brain with HEART ATTACK / STROKE tags. Hold the camera steady during the serious health information. Put a source chip on screen (e.g. US EPA · WHO).
+- **Channel schedule** goes on the series slide subtitle ("SUN · FULL VIDEO · MON–SAT · SHORTS"), never mid-video.
+- **Telugu text:** the Telugu font has no µ ³ ≈ ≤ glyphs. te_text.surf now substitutes them (µg/m³ → మైక్రోగ్రాములు, ≈ → దాదాపు). Check Telugu stills for boxes before every render.
+
 ## KEEP / DROP log (update after every review)
 **KEEP (working):**
 - Real sources and proof cards.
