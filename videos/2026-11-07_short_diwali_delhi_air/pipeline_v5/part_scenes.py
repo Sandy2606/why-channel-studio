@@ -32,9 +32,13 @@ A['xr'] = A['lungs'] - 1.2; A['alv'] = A['blood'] - 0.9; A['hb'] = A['heart'] - 
 # ---------------- talking: mouth driven by the voice envelope ----------------
 def _env():
     x = np.frombuffer(subprocess.run(['ffmpeg', '-v', 'error', '-i', VFILE, '-ar', '16000', '-ac', '1', '-f', 'f32le', '-'], capture_output=True).stdout, np.float32)
-    hop = 16000 // FPS; n = len(x) // hop; r = np.sqrt((x[:n * hop].reshape(n, hop) ** 2).mean(1)) + 1e-6
-    db = 20 * np.log10(r); hi = np.percentile(db, 95); v = np.clip((db - (hi - 26)) / 22, 0, 1)
-    return np.maximum(v, np.concatenate([[0], v[:-1]]) * 0.6)
+    hop = 160; n = len(x) // hop; r = np.sqrt((x[:n * hop].reshape(n, hop) ** 2).mean(1)) + 1e-6
+    db = 20 * np.log10(r); hi = np.percentile(db, 97); v = np.clip((db - (hi - 30)) / 30, 0, 1)
+    out = np.zeros_like(v); y = 0.0
+    for i, u in enumerate(v):                       # soft attack, slower release: lips glide, they don't flap
+        y += (u - y) * (0.35 if u > y else 0.12); out[i] = y
+    k = 100 / FPS; idx = (np.arange(int(len(out) / k)) * k).astype(int)
+    return np.clip(out[idx] ** 1.2 * 0.85, 0, 0.75)
 ENV = _env()
 LINES = sorted(MK.items(), key=lambda kv: kv[1][0])
 def speaker(t):
@@ -52,6 +56,28 @@ def blink(t, seed=0.0):
     ph = (t + seed * 1.7) % 3.9
     return 0.15 if ph < 0.12 else 1.0
 
+# ---------------- characters: Anna & Chelli from the long videos (play Raju & Meera) ----------------
+sys.path.insert(0, '/home/claude/dl'); import chars2 as C2
+def blinkv(t, seed=0.0): return 1.0 if ((t + 1.3 + seed * 1.7) % 3.9) < 0.12 else 0.0
+def raju_c(c, x, y, s, t, look=(0, 0), tk=None):
+    tk = talk(t, 'raju') if tk is None else tk
+    C2.anna(c, x, y, s, t=t, talk=tk, blink=blinkv(t), gesture=(0.25 + 0.15 * math.sin(t * 1.3)) if tk > 0.05 else 0.05, look=look, tilt=3 * math.sin(t * 0.7) if tk > 0.05 else 0)
+def meera_c(c, x, y, s, t, look=(0, 0), tk=None, gesture=0.0):
+    tk = talk(t, 'meera') if tk is None else tk
+    C2.chelli(c, x, y, s, t=t, talk=tk, blink=blinkv(t, 1), gesture=gesture, look=look, q=0)
+def gurpreet_c(c, x, y, s, t):
+    """Punjab farmer in the same long-video style: green kurta, orange turban, beard"""
+    old = (C2.KURTA, C2.KURTA_D, C2.PANT, C2.PANT_D)
+    C2.KURTA, C2.KURTA_D, C2.PANT, C2.PANT_D = (0.34, 0.56, 0.38), (0.22, 0.40, 0.26), (0.92, 0.90, 0.84), (0.76, 0.74, 0.68)
+    C2.anna(c, x, y, s, t=t, talk=0.0, blink=blinkv(t, 2), gesture=0.0, look=(0.5, 0))
+    C2.KURTA, C2.KURTA_D, C2.PANT, C2.PANT_D = old
+    c.save(); c.translate(x, y); c.scale(s, s); c.translate(0, -735 + 2 * math.sin(t * 2.0))
+    C2.blob(c, [(-58, 92), (-118, 40), (-150, -10), (-120, 125), (-40, 200), (40, 200), (120, 125), (150, -10), (118, 40), (58, 92), (0, 108)]); C2.paint(c, C2.vgrad(-10, 200, (0.20, 0.13, 0.10), (0.10, 0.06, 0.05)))   # beard
+    c.set_source_rgb(0.55, 0.30, 0.25); c.set_line_width(7); c.new_path(); c.arc(0, 72, 30, 0.2 * math.pi, 0.8 * math.pi); c.stroke()
+    C2.blob(c, [(-162, -40), (-170, -130), (-110, -205), (0, -232), (110, -205), (170, -130), (162, -40), (80, -78), (0, -92), (-80, -78)]); C2.paint(c, C2.vgrad(-232, -40, (1.0, 0.62, 0.20), (0.88, 0.45, 0.10)))   # turban
+    c.set_source_rgba(0.75, 0.35, 0.05, 0.9); c.set_line_width(6)
+    for k in range(3): c.new_path(); c.move_to(-150 + 20 * k, -60 - 30 * k); c.curve_to(-60, -150 - 20 * k, 60, -150 - 20 * k, 150 - 20 * k, -60 - 30 * k); c.stroke()
+    c.restore()
 # ---------------- characters (flat 2D; feet at (x, y)) ----------------
 MEERA_KURTI = (0.88, 0.64, 0.18); RAJU_SHIRT = (0.30, 0.45, 0.70); GRAN_SAREE = (0.55, 0.40, 0.60)
 def char(c, x, y, s, who, t=0.0, tk=0.0, a=1.0, walk=0.0, nod=0.0, look=0.0):
@@ -106,7 +132,7 @@ def avatar(c, who, cx, cy, r, t, tk, a=1.0):
     c.save(); c.push_group()
     c.set_source_rgba(0.10, 0.10, 0.12, 0.92); c.arc(cx, cy, r, 0, 2 * math.pi); c.fill()
     c.arc(cx, cy, r - 4, 0, 2 * math.pi); c.clip()
-    sc_ = r / 105 * 0.95; char(c, cx, cy + 350 * sc_ - 0.05 * r, sc_, who, t=t, tk=tk)
+    sc_ = r / 132 * 0.62; meera_c(c, cx, cy + 660 * sc_ + 0.12 * r, sc_, t, tk=tk)
     c.reset_clip(); c.set_source_rgba(*AMBER, 1); c.set_line_width(5); c.new_path(); c.arc(cx, cy, r, 0, 2 * math.pi); c.stroke()
     c.pop_group_to_source(); c.paint_with_alpha(a); c.restore()
 QTXT = {k: txt for k, spk, txt in json.load(open('/home/claude/dwv/s7_lines.json'))[LANGV] if spk == 'M'}
@@ -232,12 +258,10 @@ def room(c, t, curtain=0.7, haze=1.0, shells=True):
 def home_draw(c, t, curtain=0.7, haze=1.0, people='raju', shells=True, meera_x=None, nod=0.0):
     room(c, t, curtain, haze, shells)
     if people in ('raju', 'two', 'family'):
-        char(c, 230, 1250, 1.0, 'raju', t=t, tk=talk(t, 'raju'), look=1.0 if people != 'raju' else 0.0)
+        raju_c(c, 270, 1290, 0.62, t, look=(0.6, 0) if people != 'raju' else (0.3, -0.2))
     if people in ('two', 'family'):
-        mx = 800 if meera_x is None else meera_x
-        char(c, mx, 1250, 0.86, 'meera', t=t + 1, tk=talk(t, 'meera'), walk=1.0 if (meera_x is not None and meera_x > 805) else 0.0, look=-1.0, nod=nod)
-    if people == 'family':
-        char(c, 540, 1250, 0.80, 'gran', t=t + 2, look=0.0)
+        mx = 790 if meera_x is None else meera_x
+        meera_c(c, mx, 1290, 0.62, t + 1, look=(-0.6, 0), gesture=0.5 * prog(t, S('M1') - 0.2, S('M1') + 0.3) * (1 - prog(t, E('M2'), E('M2') + 0.4)))
     c.set_source_rgba(*HAZE, 0.10 * haze); c.rectangle(60, 260, 960, 1080); c.fill()
 def city_draw(c, t, night=0.0, haze=1.0, lights=1.0):
     c.set_source_rgb(0.40, 0.38, 0.36); c.rectangle(60, 260, 960, 1080); c.fill()
@@ -491,6 +515,107 @@ def alveoli(c, t, k, cross=0.0, immune=0.0):
     c.restore()
     vignette(c, 0.65)
 
+
+# ---------------- NEW v6: real-image body sequence (Unsplash, free licence) ----------------
+RIMG = {}
+def rimg(name):
+    if name not in RIMG:
+        im = Image.open(ROOT + 'real/' + name + '.jpg').convert('RGB')
+        RIMG[name] = (surf_from_pil(im)[0], im.size)
+    return RIMG[name]
+PX, PY, PW, PH = 60, 260, 960, 1080
+def cover(c, name, fx, fy, z=1.0, a=1.0, dx=0.0, dy=0.0):
+    """paint a photo to cover the panel, centred on focal point (fx, fy) in 0..1 image coords; returns mapper img->screen"""
+    sf, (iw, ih) = rimg(name); sc = max(PW / iw, PH / ih) * z
+    ox = PX + PW / 2 - fx * iw * sc + dx; oy = PY + PH / 2 - fy * ih * sc + dy
+    c.save(); c.rectangle(PX, PY, PW, PH); c.clip(); c.translate(ox, oy); c.scale(sc, sc); c.set_source_surface(sf, 0, 0); c.paint_with_alpha(a); c.restore()
+    return lambda u, v: (ox + u * iw * sc, oy + v * ih * sc)
+def grade(c, dark=0.35, tint=None, ta=0.0):
+    c.save(); c.rectangle(PX, PY, PW, PH); c.clip()
+    if tint: c.set_source_rgba(*tint, ta); c.paint()
+    vignette(c, dark); c.restore()
+def hair_curve(c, x0, y0, x1, y1, w, a=1.0):
+    """one real-scale hair lying on the table: thin, slightly wavy, with a soft shadow and a highlight"""
+    def path(dx, dy):
+        c.new_path(); c.move_to(x0 + dx, y0 + dy); c.curve_to(x0 + (x1 - x0) * 0.3 + dx, y0 - 120 + dy, x0 + (x1 - x0) * 0.65 + dx, y1 + 140 + dy, x1 + dx, y1 + dy)
+    c.set_line_cap(cairo.LINE_CAP_ROUND)
+    path(3, 5); c.set_source_rgba(0, 0, 0, 0.35 * a); c.set_line_width(w * 2.2); c.stroke()
+    path(0, 0); c.set_source_rgba(0.09, 0.06, 0.04, a); c.set_line_width(w); c.stroke()
+    path(-w * 0.2, -w * 0.25); c.set_source_rgba(0.75, 0.60, 0.45, 0.55 * a); c.set_line_width(max(1, w * 0.25)); c.stroke()
+def micro_field(c, t, k):
+    """bright-field microscope view: one strand of hair, ~70 µm, next to a 2.5 µm soot particle drawn to true scale"""
+    c.set_source_rgb(0.02, 0.02, 0.03); c.rectangle(PX, PY, PW, PH); c.fill()
+    cx, cy, R = 540, 780, 450
+    c.save(); c.new_path(); c.arc(cx, cy, R, 0, 2 * math.pi); c.clip()
+    g = cairo.RadialGradient(cx - 80, cy - 120, 40, cx, cy, R); g.add_color_stop_rgb(0, 0.93, 0.92, 0.86); g.add_color_stop_rgb(1, 0.62, 0.62, 0.58); c.set_source(g); c.paint()
+    cover(c, 'hair', 0.55, 0.5, z=1.4, a=0.10)             # faint out-of-focus strands behind
+    z = 1 + 0.06 * k
+    c.save(); c.translate(cx, cy); c.scale(z, z); c.rotate(-0.38)
+    Wd = 280                                              # strand width = 70 µm  ->  4 px per µm
+    gg = cairo.LinearGradient(0, -Wd / 2, 0, Wd / 2)
+    for p, col in ((0, (0.16, 0.10, 0.06)), (0.18, (0.42, 0.28, 0.17)), (0.38, (0.66, 0.50, 0.33)), (0.48, (0.80, 0.66, 0.48)), (0.62, (0.55, 0.39, 0.24)), (0.86, (0.30, 0.19, 0.11)), (1, (0.12, 0.07, 0.04))):
+        gg.add_color_stop_rgb(p, *col)
+    c.set_source(gg); c.rectangle(-900, -Wd / 2, 1800, Wd); c.fill()
+    for i, xx in enumerate(range(-900, 900, 46)):             # cuticle scales, overlapping roof tiles
+        c.new_path(); c.move_to(xx, -Wd / 2); c.curve_to(xx + 34, -Wd / 4, xx + 30 + 6 * math.sin(i), Wd / 4, xx + 8, Wd / 2)
+        c.set_source_rgba(0.12, 0.07, 0.04, 0.35); c.set_line_width(3); c.stroke_preserve(); c.set_source_rgba(1, 0.9, 0.75, 0.10); c.set_line_width(1.5); c.stroke()
+    c.restore()
+    # the particle: 2.5 µm -> 10 px at this scale, a fluffy soot aggregate
+    px, py = 760 + 4 * math.sin(t * 0.9), 1030 + 4 * math.cos(t * 0.7)
+    rng = np.random.default_rng(7)
+    for j in range(9):
+        a_ = rng.uniform(0, 2 * math.pi); d = rng.uniform(0, 4); r = rng.uniform(2.0, 3.4)
+        x, y = px + d * math.cos(a_), py + d * math.sin(a_)
+        gq = cairo.RadialGradient(x - r * 0.4, y - r * 0.4, 0, x, y, r); gq.add_color_stop_rgb(0, 0.35, 0.33, 0.30); gq.add_color_stop_rgb(1, 0.05, 0.05, 0.05)
+        c.set_source(gq); c.new_path(); c.arc(x, y, r, 0, 2 * math.pi); c.fill()
+    c.restore()
+    c.set_source_rgba(0.85, 0.85, 0.85, 0.8); c.set_line_width(10); c.new_path(); c.arc(cx, cy, R + 4, 0, 2 * math.pi); c.stroke()   # eyepiece ring
+    u = prog(t, A['hair'] - 0.2, A['hair'] + 0.2)
+    if u > 0:
+        # calipers on the hair and an arrow to the particle
+        c.save(); c.translate(cx, cy); c.rotate(-0.38); c.set_source_rgba(1, 1, 1, 0.95 * u); c.set_line_width(3)
+        c.move_to(-200, -150); c.line_to(-200, 150); c.stroke(); c.move_to(-215, -140); c.line_to(-185, -140); c.stroke(); c.move_to(-215, 140); c.line_to(-185, 140); c.stroke(); c.restore()
+        pill(c, 'ONE HAIR · ≈ 70 µm', 330, 520, 24, CREAM, col=INK, a=u)
+        c.set_source_rgba(*AMBER, u); c.set_line_width(4); c.arc(px, py, 22, 0, 2 * math.pi); c.stroke(); c.move_to(px + 18, py + 18); c.line_to(px + 70, py + 120); c.stroke()
+        pill(c, 'PM2.5 · 2.5 µm', 830, 1170, 24, AMBER, a=u)
+    if t >= A['hair'] + 0.5: pill(c, '≈ 30× SMALLER · DRAWN TO SCALE', 540, 1290, 26, AMBER, s=e_back(prog(t, A['hair'] + 0.5, A['hair'] + 0.8)))
+LUNG_PTS = [(0.30, 0.50), (0.27, 0.68), (0.36, 0.80), (0.40, 0.58), (0.62, 0.52), (0.68, 0.66), (0.60, 0.80), (0.72, 0.78), (0.33, 0.38), (0.66, 0.38)]
+def real_lungs(c, t, k, flow, react):
+    c.set_source_rgb(0.80, 0.66, 0.54); c.rectangle(PX, PY, PW, PH); c.fill()
+    m = cover(c, 'lungs', 0.495, 0.50, z=0.92 + 0.10 * k)
+    grade(c, 0.75, (0.05, 0.02, 0.03), 0.35)
+    for i, (u, v) in enumerate(LUNG_PTS):
+        ph = clamp(flow * 1.5 - i * 0.05, 0, 1)
+        if ph <= 0: continue
+        pts = [(0.495, 0.02), (0.495, 0.33), (0.45 if u < 0.5 else 0.54, 0.40), (u, v)]
+        seg = ph * 3; j = min(int(seg), 2); f = seg - j
+        x, y = m(lerp(pts[j][0], pts[j + 1][0], f), lerp(pts[j][1], pts[j + 1][1], f))
+        pm_dot(c, x, y, 6, t)
+        if ph >= 1 and react > 0:
+            g = cairo.RadialGradient(x, y, 0, x, y, 70); g.add_color_stop_rgba(0, 1, 0.12, 0.08, 0.65 * react); g.add_color_stop_rgba(1, 1, 0.12, 0.08, 0); c.set_source(g); c.new_path(); c.arc(x, y, 70, 0, 2 * math.pi); c.fill()
+    for i in range(16):        # the breath carrying dust in
+        ph = (t * 0.9 + i / 16) % 1.0; x, y = m(0.495 + 0.02 * math.sin(i), lerp(-0.25, 0.30, ph))
+        c.set_source_rgba(0.85, 0.85, 0.82, 0.45 * (1 - ph) * (1 - prog(flow, 0.8, 1))); c.new_path(); c.arc(x, y, 3 + i % 3, 0, 2 * math.pi); c.fill()
+def real_blood(c, t, k, n=1.0):
+    cover(c, 'rbc', lerp(0.35, 0.62, k), 0.5, z=1.15)
+    grade(c, 0.6)
+    for i in range(14):
+        ph = (t * 0.22 + i / 14) % 1.0; x = PX + PW * ph; y = 380 + (i * 97) % 880 + 20 * math.sin(t + i)
+        pm_dot(c, x, y, 5 + (i % 3) * 2, t, a=n)
+def real_heart(c, t, beat):
+    bt = max(0, math.sin(t * 7.5)) ** 3
+    m = cover(c, 'heart', 0.52, 0.42, z=1.9 * (1 + 0.035 * bt))
+    c.save(); c.rectangle(PX, PY, PW, PH); c.clip()
+    g = cairo.RadialGradient(540, 760, 260, 540, 760, 620); g.add_color_stop_rgba(0, 0, 0, 0, 0); g.add_color_stop_rgba(1, 0.02, 0.0, 0.0, 0.92); c.set_source(g); c.paint()
+    g = cairo.RadialGradient(540, 760, 0, 540, 760, 420); g.add_color_stop_rgba(0, 1, 0.1, 0.05, 0.30 * beat * bt); g.add_color_stop_rgba(1, 1, 0.1, 0.05, 0); c.set_source(g); c.paint()
+    c.restore()
+def real_brain(c, t, flash):
+    cover(c, 'brain', 0.55, 0.40, z=1.05)
+    c.save(); c.rectangle(PX, PY, PW, PH); c.clip()
+    fl = flash * (0.5 + 0.5 * math.sin(t * 10))
+    g = cairo.RadialGradient(600, 700, 0, 600, 700, 260); g.add_color_stop_rgba(0, 1, 0.12, 0.08, 0.75 * fl); g.add_color_stop_rgba(1, 1, 0.12, 0.08, 0); c.set_source(g); c.paint()
+    c.restore(); vignette(c, 0.55)
+
 # ---------------- NEW: Gurpreet's field in Punjab ----------------
 def field_draw(c, t, burn=0.0):
     g = cairo.LinearGradient(0, 260, 0, 760); g.add_color_stop_rgb(0, 0.80, 0.70, 0.55); g.add_color_stop_rgb(1, 0.90, 0.78, 0.58); c.set_source(g); c.rectangle(60, 260, 960, 500); c.fill()
@@ -597,51 +722,58 @@ def frame(t):
         layer(c, lambda cc: home_draw(cc, t, curtain=0.95, people='two', meera_x=mx), s=1 + 1.8 * push, cx=540, cy=620)
         for k in ('M1', 'M2'):
             if S(k) - 0.1 <= t <= E(k) + 0.3:
-                qmark(c, mx, 780, t); bubble(c, QTXT[k], 560, 470, 700, t, S(k) - 0.1, tail=(1, 1)); caps = False
+                qmark(c, mx + 30, 700, t); bubble(c, QTXT[k], 560, 470, 700, t, S(k) - 0.1, tail=(1, 1)); caps = False
         loc = 'HOME · DELHI'; sec = 0
-    elif t < A['xr']:                             # 3a the hair and the particle
-        k = prog(t, S('3') - 0.15, A['xr'])
-        macro_hair(c, t, k)
+    elif t < A['hair'] - 0.35:                            # 3a one hair lying on the table, at real size
+        k = prog(t, S('3') - 0.15, A['hair'] - 0.35)
+        m = cover(c, 'table', 0.70, 0.22, z=1.6 + 0.25 * k)
+        c.save(); c.rectangle(PX, PY, PW, PH); c.clip(); c.set_operator(cairo.OPERATOR_SCREEN); c.set_source_rgba(0.45, 0.32, 0.20, 1); c.paint(); c.restore()
+        grade(c, 0.40)
+        c.save(); c.rectangle(PX, PY, PW, PH); c.clip(); hair_curve(c, 40, 640, 1040, 980, 3.2); c.restore()
+        u = e_out(prog(t, S('3') + 0.5, S('3') + 0.9))
+        if u > 0:
+            c.set_source_rgba(1, 1, 1, 0.9 * u); c.set_line_width(4); c.new_path(); c.arc(560, 805, 70 * u + 1, 0, 2 * math.pi); c.stroke()
         a = 1 - prog(t, S('3') - 0.15, S('3') + 0.35)
-        if a > 0: c.set_source_rgba(0.85, 0.85, 0.85, a); c.rectangle(60, 260, 960, 1080); c.fill()   # through the haze
-        loc = 'MAGNIFIED'; sec = 0
-    elif t < A['alv']:                             # 3b x-ray: into the lungs, the body reacts
-        k0 = A['xr']
-        body_xray(c, t, scan=e_io(prog(t, k0, k0 + 0.9)), flow=prog(t, k0 + 0.5, k0 + 2.2), react=prog(t, k0 + 1.6, k0 + 2.4))
-        if t > k0 + 0.6: pill(c, 'LUNGS', 290, 760, 24, CREAM, col=INK, s=e_back(prog(t, k0 + 0.6, k0 + 0.9)))
-        if t > k0 + 1.8: pill(c, 'IRRITATION · INFLAMMATION', 540, 1290, 24, (0.9, 0.3, 0.3), col=CREAM, s=e_back(prog(t, k0 + 1.8, k0 + 2.1)))
-        a = 1 - prog(t, k0, k0 + 0.3)
-        if a > 0: c.set_source_rgba(0, 0, 0, a); c.rectangle(60, 260, 960, 1080); c.fill()
+        if a > 0: c.set_source_rgba(0.85, 0.85, 0.85, a); c.rectangle(60, 260, 960, 1080); c.fill()
+        if t > S('3') + 0.4: pill(c, 'ONE HUMAN HAIR · ACTUAL SIZE', 540, 420, 24, CREAM, col=INK, s=e_back(prog(t, S('3') + 0.4, S('3') + 0.7)))
+        loc = 'ON THE TABLE'; sec = 0
+    elif t < A['xr']:                                      # 3b under the microscope: hair vs particle, true scale
+        k0 = A['hair'] - 0.35; kk = e_io(prog(t, k0, k0 + 0.55))
+        if kk < 1:
+            layer(c, lambda cc: (cover(cc, 'table', 0.70, 0.22, z=1.85), hair_curve(cc, 40, 640, 1040, 980, 3.2)), a=1 - kk, s=1 + 6 * kk, cx=560, cy=820)
+        layer(c, lambda cc: micro_field(cc, t, prog(t, k0, A['xr'])), a=kk, s=0.3 + 0.7 * kk, cx=540, cy=780)
+        loc = 'MICROSCOPE'; sec = 0
+    elif t < A['alv']:                                     # 3c breathed in: deep into the lungs, the tissue reacts
+        k0 = A['xr']; kk = e_io(prog(t, k0, k0 + 0.5))
+        layer(c, lambda cc: micro_field(cc, t, 1), a=1 - kk, s=1 + 0.6 * kk)
+        layer(c, lambda cc: real_lungs(cc, t, prog(t, k0, A['alv']), prog(t, k0 + 0.3, k0 + 2.0), prog(t, k0 + 1.4, k0 + 2.2)), a=kk, s=0.85 + 0.15 * kk)
+        if t > k0 + 0.6: pill(c, 'LUNGS', 540, 330, 24, CREAM, col=INK, s=e_back(prog(t, k0 + 0.6, k0 + 0.9)))
+        if t > k0 + 1.5: pill(c, 'IRRITATION · INFLAMMATION', 540, 1290, 24, (0.9, 0.3, 0.3), col=CREAM, s=e_back(prog(t, k0 + 1.5, k0 + 1.8)))
         loc = 'INSIDE THE BODY'; sec = 0
-    elif t < A['hb']:                             # 3c deep in the lung: into the blood
-        k0 = A['alv']; k = prog(t, k0, A['hb'])
-        if t < k0 + 0.6:
-            kk = e_io(prog(t, k0, k0 + 0.6))
-            layer(c, lambda cc: body_xray(cc, t, scan=1, flow=1, react=1), a=1 - kk, s=1 + 3 * kk, cx=700, cy=1040)
-            layer(c, lambda cc: alveoli(cc, t, k), a=kk, s=0.6 + 0.4 * kk)
+    elif t < A['hb']:                                      # 3d through the air sacs into the bloodstream
+        k0 = A['alv']; kk = e_io(prog(t, k0, k0 + 0.6))
+        layer(c, lambda cc: real_lungs(cc, t, 1, 1, 1), a=1 - kk, s=1 + 2.5 * kk, cx=700, cy=1000)
+        layer(c, lambda cc: real_blood(cc, t, prog(t, k0, A['hb'])), a=kk, s=0.7 + 0.3 * kk)
+        if t > A['blood'] - 0.1: pill(c, 'INTO THE BLOODSTREAM', 540, 1290, 26, (0.9, 0.3, 0.3), col=CREAM, s=e_back(prog(t, A['blood'] - 0.1, A['blood'] + 0.2)))
+        loc = 'BLOODSTREAM'; sec = 0
+    elif t < S('4') - 0.1:                                 # 3e heart, then brain
+        k0 = A['hb']; split = A['strokes'] - 0.35
+        if t < split:
+            kk = e_io(prog(t, k0, k0 + 0.5))
+            layer(c, lambda cc: real_blood(cc, t, 1), a=1 - kk, s=1 + kk)
+            layer(c, lambda cc: real_heart(cc, t, prog(t, A['heart'] - 0.2, A['heart'] + 0.2)), a=kk, s=0.8 + 0.2 * kk)
+            if t > A['heart'] - 0.2: pill(c, 'HEART ATTACK', 540, 1290, 28, (0.9, 0.3, 0.3), col=CREAM, s=e_back(prog(t, A['heart'] - 0.2, A['heart'] + 0.1)))
         else:
-            alveoli(c, t, k, cross=prog(t, A['blood'] - 0.2, A['blood'] + 0.6), immune=prog(t, k0 + 0.3, k0 + 1.5))
-        if t > k0 + 0.6:
-            pill(c, 'ALVEOLI · AIR SACS', 300, 340, 22, CREAM, col=INK, a=prog(t, k0 + 0.6, k0 + 0.9))
-            pill(c, 'IMMUNE CELLS', 760, 560, 20, CREAM, col=INK, a=prog(t, k0 + 1.0, k0 + 1.3))
-        if t > A['blood'] + 0.3: pill(c, 'INTO THE BLOOD', 760, 1110, 24, (0.9, 0.3, 0.3), col=CREAM, s=e_back(prog(t, A['blood'] + 0.3, A['blood'] + 0.6)))
-        loc = 'INSIDE THE LUNG'; sec = 0
-    elif t < S('4') - 0.1:                                 # 3d back out: heart and brain
-        k0 = A['hb']
-        if t < k0 + 0.6:
-            kk = e_io(prog(t, k0, k0 + 0.6))
-            layer(c, lambda cc: alveoli(cc, t, 1, cross=1, immune=1), a=1 - kk, s=1 + kk)
-            layer(c, lambda cc: body_xray(cc, t, scan=1, flow=1, react=1, blood=1), a=kk, s=1.6 - 0.6 * kk, cx=600, cy=1000)
-        else:
-            body_xray(c, t, scan=1, flow=1, react=1, blood=1, heart=prog(t, A['heart'] - 0.2, A['heart'] + 0.3), brain=prog(t, A['strokes'] - 0.3, A['strokes'] + 0.2))
-        if t > A['heart'] - 0.2: pill(c, 'HEART ATTACK', 800, 1010, 24, (0.9, 0.3, 0.3), col=CREAM, s=e_back(prog(t, A['heart'] - 0.2, A['heart'] + 0.1)))
-        if t > A['strokes'] - 0.3: pill(c, 'STROKE', 800, 400, 24, (0.9, 0.3, 0.3), col=CREAM, s=e_back(prog(t, A['strokes'] - 0.3, A['strokes'])))
-        source_tag(c, 'US EPA · WHO', 300, 1300)
+            kk = e_io(prog(t, split, split + 0.45))
+            layer(c, lambda cc: real_heart(cc, t, 1), a=1 - kk, dx=-400 * kk)
+            layer(c, lambda cc: real_brain(cc, t, prog(t, A['strokes'] - 0.2, A['strokes'] + 0.2)), a=kk, dx=400 * (1 - kk))
+            if t > A['strokes'] - 0.2: pill(c, 'STROKE', 540, 1290, 28, (0.9, 0.3, 0.3), col=CREAM, s=e_back(prog(t, A['strokes'] - 0.2, A['strokes'] + 0.1)))
+        source_tag(c, 'US EPA · WHO', 300, 360)
         loc = 'INSIDE THE BODY'; sec = 0
     elif t < S('5') - 0.05:                                # 4 back home: the family, 8 years
         k = e_io(prog(t, S('4') - 0.1, S('4') + 0.7))
-        layer(c, lambda cc: body_xray(cc, t, scan=1, flow=1, react=1, blood=1), a=1 - k, s=1 - 0.4 * k)
-        layer(c, lambda cc: home_draw(cc, t, curtain=0.95, people='family', shells=False), a=k, s=1.3 - 0.3 * k)
+        layer(c, lambda cc: real_brain(cc, t, 1), a=1 - k, s=1 - 0.4 * k)
+        layer(c, lambda cc: home_draw(cc, t, curtain=0.95, people='two', shells=False), a=k, s=1.3 - 0.3 * k)
         if t >= A['eight4'] - 0.5:
             u = e_out(prog(t, A['eight4'] - 0.5, A['eight4'] + 0.4))
             glass_dark(c, 140, 360, 800, 230, 30, u)
@@ -652,7 +784,7 @@ def frame(t):
         loc = 'HOME · DELHI'; sec = 0
     elif t < S('M5') - 0.1:                                # 5 pull up to the city: 488
         k = e_io(prog(t, S('5') - 0.05, S('5') + 1.0))
-        layer(c, lambda cc: home_draw(cc, t, curtain=0.95, people='family', shells=False), a=1 - k, s=0.85 - 0.55 * k)
+        layer(c, lambda cc: home_draw(cc, t, curtain=0.95, people='two', shells=False), a=1 - k, s=0.85 - 0.55 * k)
         layer(c, lambda cc: city_draw(cc, t, haze=1.0), a=k, s=2.2 - 1.2 * k)
         if t > A['b488'] - 0.9: bars2(c, t, A['b488'] - 0.9)
         if t > A['eight5'] - 0.2: pill(c, '≈ 8× THE LIMIT', 700, 470, 26, (0.9, 0.3, 0.3), col=CREAM, s=e_back(prog(t, A['eight5'] - 0.2, A['eight5'] + 0.1)))
@@ -699,7 +831,7 @@ def frame(t):
         else:
             kk = e_out(prog(t, A['gurpreet'] + 0.3, A['gurpreet'] + 0.9))
             layer(c, lambda cc: field_draw(cc, t, burn=prog(t, A['burning'] - 0.2, A['burning'] + 0.6)), s=1.15 - 0.15 * kk)
-            char(c, 250, 1270, 1.15, 'gurpreet', t=t, look=1.0)
+            gurpreet_c(c, 250, 1290, 0.66, t)
             pill(c, 'GURPREET · PADDY FARMER', 300, 1310, 22, CREAM, col=INK, a=kk)
             mono(c, 'ILLUSTRATIVE EXAMPLE', 300, 1350, 16, CREAM, a=0.85 * kk, kind='monob')
             if t >= A['two9'] - 0.4 and t < A['machines'] - 0.2:

@@ -135,3 +135,6 @@ TR.update({
  "STILL ABOVE WHO'S 5 µg/m³": 'ఇంకా WHO పరిమితి 5 కంటే ఎక్కువే',
  'SUN · FULL VIDEO  ·  MON–SAT · SHORTS': 'ఆదివారం · FULL VIDEO  ·  సోమ–శని · SHORTS',
 })
+TR.update({'ONE HUMAN HAIR · ACTUAL SIZE': 'ఒక వెంట్రుక · అసలు సైజు', 'ON THE TABLE': 'టేబుల్ మీద', 'MICROSCOPE': 'మైక్రోస్కోప్',
+ 'ONE HAIR · ≈ 70 µm': 'ఒక వెంట్రుక · దాదాపు 70 మైక్రాన్లు', 'PM2.5 · 2.5 µm': 'PM2.5 · 2.5 మైక్రాన్లు',
+ '≈ 30× SMALLER · DRAWN TO SCALE': 'దాదాపు 30 రెట్లు చిన్నది · అసలు నిష్పత్తిలో', 'INTO THE BLOODSTREAM': 'రక్తప్రవాహంలోకి', 'BLOODSTREAM': 'రక్తప్రవాహం'})

@@ -54,7 +54,7 @@ Whenever you get a question that starts with why, just comment it below. We'll d
 **Tags:**
 delhi air pollution diwali,why delhi air bad after diwali,delhi aqi,diwali pollution,temperature inversion delhi,pm2.5 delhi,grap delhi,ncap india,beijing air pollution,delhi smog,diwali 2026,crackers pollution,why channel,explained
 
-**Altered or synthetic content:** No. Real page captures plus drawn 2D animation.
+**Altered or synthetic content:** No. Real page captures, stock photos and drawn 2D animation.
 
 **Pinned comment (suggested):**
 Gurpreet is an illustrative example; the farm-fire shares are CREA's modelled estimates for November 2025 (7% average, 22% on the peak-contribution day). Satellite fire counts fell sharply in 2025, yet Delhi's post-Diwali air was the worst in five years. This year, Delhi's air was already "very poor" before Diwali. That's the end of Diwali week 🪔 Which "why" should we answer next? 👇
