@@ -1,6 +1,6 @@
 # Diwali · Short 6/6 (finale) · "Why does Delhi's air get so bad around Diwali?": Post Copy
 Tag DIWALI · 6/6 · post Sat Nov 7 · YT Short 8:00 PM IST · IG Reel 7:00 PM IST · series finale (next: Sunday full video)
-Runtime: EN 2:15 · TE 2:40. The Short loops: the last line runs into the first.
+Runtime: EN 2:26 · TE 2:47. The Short loops: the last line runs into the first.
 
 ---
 
@@ -9,18 +9,19 @@ Runtime: EN 2:15 · TE 2:40. The Short loops: the last line runs into the first.
 **Title:** Why Delhi Chokes After Diwali (It's Not Just Crackers) #shorts
 
 **Description:**
-Every year after Diwali, Delhi wakes up inside a grey haze. Crackers get the blame, but they're only part of the story. 🪔🌫️
+Every year after Diwali, Raju opens his window in Delhi and the city has vanished into grey haze. His sister Meera asks the questions we all have. 🪔🌫️
+
+🫁 What is PM2.5? Dust and smoke so tiny that a human hair is about 30 times wider. It can travel deep into your lungs, some particles can even enter the bloodstream, and it's linked to heart attacks and strokes. Delhi residents could live about 8 years longer if the air met WHO guidelines (AQLI).
 
 📈 Last Diwali (2025), 24-hour PM2.5 averaged about 488 µg/m³: 3× the level before, 8× India's daily limit.
 Three reasons:
 1️⃣ SPIKE: crackers release a burst of smoke in a few hours.
 2️⃣ TRAP: Diwali comes as winter begins. A temperature inversion works like a lid; on Diwali night 2025 the wind was under 1 m/s.
-3️⃣ BUILD: under that lid, vehicles, dust, industry and garbage burning keep adding more. Farm fires too, on some days.
-🚗 In recent Novembers, an IITM model estimated vehicles made up about half of Delhi's locally sourced PM2.5.
-❤️ Delhi residents could gain about 8 years of life expectancy if pollution met WHO guidelines (AQLI).
+3️⃣ BUILD: under that lid, vehicles, dust, industry and garbage burning keep adding more. Vehicles are the biggest local share (≈ half of Delhi's locally sourced PM2.5 in recent Novembers, IITM model via CSE).
+🌾 Punjab: farmers like Gurpreet get only about two weeks between the paddy harvest and sowing wheat. Machines cost money; burning is faster and cheaper upfront. In November 2025, CREA estimated farm fires contributed about 7% of Delhi's PM2.5 on average, reaching 22% on their highest-contribution day.
 🏛️ What's being done: GRAP (emergency curbs in stages) and NCAP (target: up to 40% less PM10 by 2025–26).
 📊 How far: Delhi's 2025 average PM2.5 (97) was its lowest in years, still ~2.5× India's annual limit. Only 23 of 100 cities hit the PM10 target; Delhi wasn't one.
-🇨🇳 Beijing: PM2.5 fell from 89.5 (2013) to 27 (2025), about 70% lower, after shutting coal plants, moving homes to gas and electricity, tighter vehicle rules and regional teamwork. It took over a decade.
+🇨🇳 Has any city made progress? Beijing: PM2.5 fell from 89.5 (2013) to 27 (2025), about 70% lower (still above WHO's 5), after shutting coal plants, moving homes to gas and electricity, tighter vehicle rules and regional teamwork. It took over a decade.
 ✅ No single villain, no single fix. The real fix is year-round and region-wide.
 
 That's the end of Diwali week. Happy Diwali! 🪔
@@ -31,6 +32,9 @@ Whenever you get a question that starts with why, just comment it below. We'll d
 - ThePrint (PTI), "Delhi's post-Diwali air quality plunges to 5-year low, CPCB data shows" (21 Oct 2025): https://theprint.in/india/delhis-post-diwali-air-quality-plunges-to-5-year-low-cpcb-data-shows/2767924
 - Down To Earth, "Floods cut farm fires, but Delhi's air still suffocates post Diwali": https://www.downtoearth.org.in/air/floods-cut-farm-fires-but-delhis-air-still-suffocates-post-diwali
 - Down To Earth (CSE analysis of IITM DSS), "Why vehicles remain Delhi's biggest challenge" (22 Dec 2025): https://www.downtoearth.org.in/air/from-episodic-smog-to-structural-pollution-why-vehicles-remain-delhis-biggest-challenge
+- US EPA, Particulate Matter Basics (size vs hair, lungs and bloodstream): https://19january2025snapshot.epa.gov/pm-pollution/particulate-matter-pm-basics
+- CREA, November 2025 monthly air quality snapshot (farm fires 7% average, 22% peak): https://energyandcleanair.org/wp/wp-content/uploads/2025/12/CREA_Press-Release_National_India_November_25_Monthly-AQ-Snapshot.pdf
+- CivilsDaily, why stubble fires keep coming back (harvest-to-sowing window): https://www.civilsdaily.com/news/why-stubble-fires-keep-coming-back/
 - AQLI / EPIC, University of Chicago (28 Aug 2025): https://aqli.epic.uchicago.edu/post/delhi-residents-losing-8-2-years-of-their-lives-to-high-air-pollution-report-en
 - Business Today, GRAP III curbs and stages (11 Nov 2025): https://www.businesstoday.in/india/story/grap-iii-curbs-imposed-in-delhi-as-aqi-crosses-425-bs-iv-diesel-bs-iii-petrol-cars-restricted-under-501600-2025-11-11
 - CREA, "Tracing the Hazy Air 2026: Progress Report on NCAP" (Jan 2026): https://energyandcleanair.org/wp/wp-content/uploads/2026/01/CREA_Tracing-the-Hazy-Air-2026_-Progress-Report-on-National-Clean-Air-Programme-NCAP.pdf
@@ -42,7 +46,7 @@ Whenever you get a question that starts with why, just comment it below. We'll d
 
 **CREDITS**
 - Page captures: ThePrint/PTI, CREA (shown as sources).
-- India map: official outline (svg-maps, MIT), redrawn by WHY?. Delhi, Raju's family, the sky cut-away, the Beijing card and the series slide: made by WHY?
+- India map: official outline (svg-maps, MIT), redrawn by WHY?. Raju, Meera, Gurpreet, the inside-the-body sequence, the sky cut-away, the Beijing card and the series slide: 2D animation made by WHY?
 - Music: "The Quiet Meridian" · Sound effects: Mixkit, Freesound (CC0)
 
 #diwali #delhipollution #airpollution #delhiaqi #shorts
@@ -53,7 +57,7 @@ delhi air pollution diwali,why delhi air bad after diwali,delhi aqi,diwali pollu
 **Altered or synthetic content:** No. Real page captures plus drawn 2D animation.
 
 **Pinned comment (suggested):**
-Farm fires: Punjab + Haryana recorded 175 fires on 1–12 Oct 2025 vs 779 in the same window of 2024 (≈ 77% fewer, Climate Trends / NASA FIRMS), yet Delhi's post-Diwali air was the worst in five years. This year, Delhi's air was already "very poor" before Diwali. That's the end of Diwali week 🪔 Which "why" should we answer next? 👇
+Gurpreet is an illustrative example; the farm-fire shares are CREA's modelled estimates for November 2025 (7% average, 22% on the peak-contribution day). Satellite fire counts fell sharply in 2025, yet Delhi's post-Diwali air was the worst in five years. This year, Delhi's air was already "very poor" before Diwali. That's the end of Diwali week 🪔 Which "why" should we answer next? 👇
 
 ---
 
@@ -61,10 +65,12 @@ Farm fires: Punjab + Haryana recorded 175 fires on 1–12 Oct 2025 vs 779 in the
 
 Why does Delhi choke after Diwali? It's not just crackers. 🪔🌫️👇
 
-📈 Diwali 2025: 24-hr PM2.5 ≈ 488 µg/m³, 3× the day before, 8× India's daily limit
+🫁 PM2.5 = dust so tiny a hair is 30× wider. It goes deep into the lungs, even the blood
+📈 Diwali 2025: 24-hr PM2.5 ≈ 488 µg/m³, 3× the level before, 8× India's daily limit
 1️⃣ SPIKE: crackers
 2️⃣ TRAP: winter inversion, a lid on the city
-3️⃣ BUILD: vehicles, dust, industry, garbage burning (farm fires on some days)
+3️⃣ BUILD: vehicles, dust, industry, garbage burning
+🌾 Punjab farm fires: ≈ 7% of Delhi's PM2.5 on average last November, 22% on the peak day (CREA)
 🏛️ GRAP + NCAP: only 23 of 100 cities hit the PM10 target; Delhi didn't
 🇨🇳 Beijing cut PM2.5 about 70% (2013 → 2025). It took over a decade.
 
@@ -83,18 +89,19 @@ That's the end of Diwali week! Full video every Sunday, Shorts Mon–Sat. Follow
 **Title:** Diwali తర్వాత Delhi ఎందుకు ఉక్కిరిబిక్కిరి అవుతుంది? (బాణాసంచా ఒక్కటే కాదు) | Telugu #shorts
 
 **Description:**
-ప్రతి సంవత్సరం Diwali తర్వాత Delhi బూడిద రంగు పొగమంచులో నిద్ర లేస్తుంది. బాణాసంచాని నిందిస్తారు, కానీ అది కథలో ఒక భాగం మాత్రమే. 🪔🌫️
+ప్రతి సంవత్సరం Diwali తర్వాత Raju కిటికీ తెరిస్తే, Delhi బూడిద రంగు పొగమంచులో మాయమైపోయి ఉంటుంది. అతని చెల్లెలు Meera మనందరి ప్రశ్నలు అడుగుతుంది. 🪔🌫️
+
+🫁 PM2.5 అంటే ఏంటి? మన వెంట్రుక దానికంటే 30 రెట్లు మందం, అంత చిన్న దుమ్ము, పొగ. అది ఊపిరితిత్తుల్లోకి లోతుగా, కొన్ని కణాలు రక్తంలోకి కూడా వెళ్తాయి; గుండెపోటు, స్ట్రోక్‌తో సంబంధం ఉంది. గాలి WHO ప్రమాణాలకు తగ్గితే Delhi ప్రజలు దాదాపు 8 సంవత్సరాలు ఎక్కువ బ్రతకొచ్చు (AQLI).
 
 📈 పోయిన Diwali (2025) తర్వాతి 24 గంటల్లో PM2.5 సగటు దాదాపు 488 µg/m³: పండగ ముందు కంటే 3 రెట్లు, India రోజువారీ పరిమితి కంటే 8 రెట్లు.
 మూడు కారణాలు:
 1️⃣ పెరుగుదల: బాణాసంచా కొన్ని గంటల్లోనే చాలా పొగను విడుదల చేస్తుంది.
 2️⃣ బంధించడం: చలికాలం మొదలయ్యే సమయానికే Diwali. Temperature inversion ఒక మూతలా పనిచేస్తుంది; 2025 Diwali రాత్రి గాలి వేగం సెకనుకు 1 మీటర్ కంటే తక్కువ.
-3️⃣ పేరుకుపోవడం: ఆ మూత కింద వాహనాలు, దుమ్ము, పరిశ్రమలు, చెత్త కాల్చడం. కొన్ని రోజుల్లో పంట వ్యర్థాల మంటలు కూడా.
-🚗 ఇటీవలి నవంబర్లలో Delhi స్థానిక PM2.5 లో దాదాపు సగం వాహనాలదేనని IITM నమూనా అంచనా.
-❤️ కాలుష్యం WHO ప్రమాణాలకు తగ్గితే Delhi ప్రజలు దాదాపు 8 సంవత్సరాల జీవితకాలం పొందవచ్చు (AQLI).
+3️⃣ పేరుకుపోవడం: ఆ మూత కింద వాహనాలు, దుమ్ము, పరిశ్రమలు, చెత్త కాల్చడం. స్థానికంగా అతిపెద్ద వాటా వాహనాలదే (IITM నమూనా ప్రకారం దాదాపు సగం).
+🌾 Punjab: Gurpreet లాంటి రైతులకు వరి కోత, గోధుమ విత్తడం మధ్య దాదాపు రెండు వారాలే. యంత్రాలకు డబ్బులు కావాలి; కాల్చడం వేగం, ముందుగా చౌక. 2025 నవంబరులో Delhi PM2.5 లో పంట మంటల వాటా సగటున 7%, అత్యధిక రోజు 22% అని CREA అంచనా.
 🏛️ ప్రభుత్వం: GRAP (దశల వారీ అత్యవసర ఆంక్షలు), NCAP (2025–26 నాటికి PM10 ని 40% వరకు తగ్గించే లక్ష్యం).
 📊 ఎంతవరకు: Delhi 2025 సగటు PM2.5 (97) కొన్నేళ్లలో అత్యల్పం, అయినా సంవత్సర పరిమితికి దాదాపు 2.5 రెట్లు. 100 నగరాల్లో 23 మాత్రమే PM10 లక్ష్యం చేరుకున్నాయి; అందులో Delhi లేదు.
-🇨🇳 Beijing: PM2.5, 2013 లో 89.5 నుంచి 2025 లో 27 కి, దాదాపు 70% తక్కువ. బొగ్గు plants మూసివేత, ఇళ్లకు gas/కరెంటు, వాహనాల నియమాలు, పక్క రాష్ట్రాలతో కలిసి పని. పదేళ్లకు పైగా పట్టింది.
+🇨🇳 ఏ నగరమైనా తగ్గించగలిగిందా? Beijing: PM2.5, 2013 లో 89.5 నుంచి 2025 లో 27 కి, దాదాపు 70% తక్కువ (ఇంకా WHO 5 కంటే ఎక్కువే). బొగ్గు plants మూసివేత, ఇళ్లకు gas/కరెంటు, వాహనాల నియమాలు, పక్క రాష్ట్రాలతో కలిసి పని. పదేళ్లకు పైగా పట్టింది.
 ✅ ఒక్క విలన్ లేడు, ఒక్క పరిష్కారం లేదు. అసలు పరిష్కారం సంవత్సరం పొడవునా, ప్రాంతం మొత్తం కలిసి.
 
 దీంతో Diwali వారం పూర్తయింది. Happy Diwali! 🪔
@@ -109,7 +116,7 @@ That's the end of Diwali week! Full video every Sunday, Shorts Mon–Sat. Follow
 delhi pollution telugu,diwali pollution telugu,delhi aqi telugu,temperature inversion telugu,pm2.5 telugu,beijing pollution telugu,దీపావళి 2026,why telugu,telugu explainer
 
 **Pinned comment (suggested):**
-పంట మంటలు: 2025 అక్టోబర్ 1–12 మధ్య Punjab + Haryana లో 175 మంటలు, 2024 లో అదే సమయంలో 779 (దాదాపు 77% తక్కువ, Climate Trends / NASA FIRMS). అయినా Delhi Diwali తర్వాతి గాలి ఐదేళ్లలో అత్యంత దారుణం. ఈ సంవత్సరం Diwali ముందే Delhi గాలి "very poor". Diwali వారం పూర్తయింది 🪔 తర్వాత ఏ "ఎందుకు" కి సమాధానం చెప్పాలి? 👇
+Gurpreet ఒక ఉదాహరణ పాత్ర; పంట మంటల వాటా CREA నమూనా అంచనా (2025 నవంబర్: సగటు 7%, అత్యధిక రోజు 22%). 2025 లో మంటలు బాగా తగ్గాయి, అయినా Delhi Diwali తర్వాతి గాలి ఐదేళ్లలో అత్యంత దారుణం. ఈ సంవత్సరం Diwali ముందే Delhi గాలి "very poor". Diwali వారం పూర్తయింది 🪔 తర్వాత ఏ "ఎందుకు" కి సమాధానం చెప్పాలి? 👇
 
 ---
 
