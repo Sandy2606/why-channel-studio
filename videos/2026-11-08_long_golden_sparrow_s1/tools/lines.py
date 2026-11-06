@@ -9,7 +9,7 @@ a('0.1','NAR','HOOK','HOOK · intrigued, low',
   "In **1721**, Britain passed a law banning people from wearing certain **printed cotton** fabrics. ⏸ **Why?**",
   'HOOK · ఆశ్చర్యంగా',
   "**1721**లో బ్రిటన్ ఒక చట్టం చేసింది: కొన్ని రకాల **అచ్చు cotton** గుడ్డలు వేసుకోవడమే నిషేధం. ⏸ **ఎందుకు?**",
-  'C1','S2-hook','Black → loom sound → macro of a painted flower on Met 1982.66 (caption "Coromandel Coast, 18th c. · The Met"); chip "ENACTED 1721 · IN FORCE 25 DEC 1722 · CERTAIN PRINTED, PAINTED, STAINED OR DYED CALICOES · SOME EXCEPTIONS"')
+  'C1','S2-hook','Black → real loom-shuttle sound → macro of a painted flower on Met 1982.66 (caption "Coromandel Coast, 18th c. · The Met"); ONE big chip only: "1721 · BRITAIN BANS PRINTED COTTON" → "WHY?" (exact dates and exceptions are shown at 2.12, not here)')
 a('0.2','NAR','HOOK','fast, pointed',
   "Printed here or abroad, it didn't matter. ⏸ **Indian cotton** was challenging Britain's **wool** and **silk** industries.",
   'వేగంగా',
@@ -71,7 +71,7 @@ a('1.4','NAR','EXP','clear, numbers slower',
   "Now, the big number. ⏸ The economic historian **Angus Maddison** estimated that in 1700, India produced about **24 percent** of the world's output. ⏸ Britain? About **3**. ⏸ By 1950, the Republic of India's share was about **4**.",
   'స్పష్టంగా · అంకెలు నెమ్మదిగా',
   "ఇప్పుడు అసలు లెక్క. ⏸ ఆర్థిక చరిత్రకారుడు **Angus Maddison** అంచనా ప్రకారం, 1700లో ప్రపంచ ఉత్పత్తిలో మన వాటా దాదాపు **24 శాతం**. ⏸ బ్రిటన్? దాదాపు **3 శాతం**. ⏸ 1950 నాటికి, స్వతంత్ర భారతదేశం వాటా దాదాపు **4 శాతం**.",
-  'C8','S1 (from "The economic historian")','Animated bars on the master map: India 24 / Britain 3 → 1950 India 4; source note "MADDISON ESTIMATES (OECD 2001) · 1700 = UNDIVIDED SUBCONTINENT · 1950 = REPUBLIC OF INDIA ONLY (EXCL. PAKISTAN & BANGLADESH) · AREAS DIFFER"')
+  'C8','S1 (from "The economic historian")','Two maps side by side, borders drawn bold: 1700 = whole subcontinent filled, bar 24 % (Britain 3 %); 1950 = Republic of India filled, Pakistan and Bangladesh visibly cut out and greyed, bar 4 %; big label on each map "AREA: UNDIVIDED SUBCONTINENT" / "AREA: REPUBLIC OF INDIA ONLY"; footer "MADDISON ESTIMATES (OECD 2001)"')
 a('1.4e','NAR','EXP','light',
   "China made about **22**. ⏸ Together, India and China made almost **half** of everything on Earth.",
   '', '', 'C8','S1','China bar joins; "≈ HALF" bracket', only='en')
@@ -158,7 +158,7 @@ a('2.12','NAR','EXP','precise, weighty',
   "Then the **1721** Act went further. ⏸ From Christmas **1722**, it banned **wearing** or **using** printed, painted, stained or dyed calicoes, whether printed abroad or in **Britain**, with a few exceptions.",
   'ఖచ్చితంగా · బరువుగా',
   "**1721** చట్టం ఇంకా ముందుకెళ్లింది. ⏸ **1722** క్రిస్మస్ నుంచి, అచ్చు వేసిన, రంగు అద్దిన calico లను **వేసుకోవడం**, **వాడటం** నిషేధం. అచ్చు బయట వేసినా, **బ్రిటన్‌లోనే** వేసినా సరే. కొన్ని మినహాయింపులు మాత్రం ఉండేవి.",
-  'C1','S2','Act title page (7 Geo. I c.7, PD); chip "EXCEPTIONS: MUSLINS, NECKCLOTHS, FUSTIANS, ALL-BLUE CALICO"')
+  'C1','S2','Act title page (7 Geo. I c.7, PD); chip "ENACTED 1721 · IN FORCE 25 DEC 1722 · PRINTED, PAINTED, STAINED OR DYED CALICOES", then "EXCEPTIONS: MUSLINS, NECKCLOTHS, FUSTIANS, ALL-BLUE CALICO"')
 a('2.13','NAR','EXP','plain',
   "It stayed in force until **1774**.",
   'సాదాగా',

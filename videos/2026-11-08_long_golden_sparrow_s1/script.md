@@ -64,7 +64,7 @@ Both versions work at either pace: the title card simply lands later. **The rule
 ### COLD OPEN  ·  starts 00:00.0
 
 **0.1** `00:00.0–00:05.7` [HOOK · intrigued, low] In **1721**, Britain passed a law banning people from wearing certain **printed cotton** fabrics. ⏸ **Why?**  `src C1 · ♻ S2-hook`
-   → Black → loom sound → macro of a painted flower on Met 1982.66 (caption "Coromandel Coast, 18th c. · The Met"); chip "ENACTED 1721 · IN FORCE 25 DEC 1722 · CERTAIN PRINTED, PAINTED, STAINED OR DYED CALICOES · SOME EXCEPTIONS"
+   → Black → real loom-shuttle sound → macro of a painted flower on Met 1982.66 (caption "Coromandel Coast, 18th c. · The Met"); ONE big chip only: "1721 · BRITAIN BANS PRINTED COTTON" → "WHY?" (exact dates and exceptions are shown at 2.12, not here)
 **0.2** `00:06.1–00:12.2` [fast, pointed] Printed here or abroad, it didn't matter. ⏸ **Indian cotton** was challenging Britain's **wool** and **silk** industries.  `src C1,C2,C5`
    → Pull back to the full palampore; wool and silk bolts dim beside it
 **0.3** `00:12.3–00:18.6` [rising, wonder] For centuries, the world sailed to India: for **pepper**, for **diamonds**… and above all, for **cloth**.  `src C30`
@@ -94,7 +94,7 @@ Both versions work at either pace: the title card simply lands later. **The rule
 **1.3** `01:19.8–01:24.1` [steady] People here had been growing and weaving cotton for **thousands of years**.  `src C7`
    → Archaeological cotton evidence (Mehrgarh) or Indus textile impression (licence-confirmed image only)
 **1.4** `01:24.3–01:38.7` [clear, numbers slower] Now, the big number. ⏸ The economic historian **Angus Maddison** estimated that in 1700, India produced about **24 percent** of the world's output. ⏸ Britain? About **3**. ⏸ By 1950, the Republic of India's share was about **4**.  `src C8 · ♻ S1 (from "The economic historian")`
-   → Animated bars on the master map: India 24 / Britain 3 → 1950 India 4; source note "MADDISON ESTIMATES (OECD 2001) · 1700 = UNDIVIDED SUBCONTINENT · 1950 = REPUBLIC OF INDIA ONLY (EXCL. PAKISTAN & BANGLADESH) · AREAS DIFFER"
+   → Two maps side by side, borders drawn bold: 1700 = whole subcontinent filled, bar 24 % (Britain 3 %); 1950 = Republic of India filled, Pakistan and Bangladesh visibly cut out and greyed, bar 4 %; big label on each map "AREA: UNDIVIDED SUBCONTINENT" / "AREA: REPUBLIC OF INDIA ONLY"; footer "MADDISON ESTIMATES (OECD 2001)"
 **1.4e** `01:38.9–01:44.9` [light] China made about **22**. ⏸ Together, India and China made almost **half** of everything on Earth. *(EN only)*  `src C8 · ♻ S1`
    → China bar joins; "≈ HALF" bracket
 **1.5** `01:45.4–01:49.8` [honest, slower] But here's the **catch**. ⏸ That doesn't mean every Indian was **rich**.  `src C9 · ♻ S1`
@@ -131,7 +131,7 @@ Both versions work at either pace: the title card simply lands later. **The rule
 **2.11** `03:45.9–03:56.6` [precise, steady] France banned printed calicoes in **1686**. ⏸ England's **1700** Act stopped printed and painted calicoes from Asia being used at home. They could still be **re-exported**.  `src C2,C3 · ♻ S2`
    → Timeline: our cloth c.1680 → France 1686 → England 1700 (customs warehouse, bales stamped RE-EXPORT)
 **2.12** `03:56.8–04:08.9` [precise, weighty] Then the **1721** Act went further. ⏸ From Christmas **1722**, it banned **wearing** or **using** printed, painted, stained or dyed calicoes, whether printed abroad or in **Britain**, with a few exceptions.  `src C1 · ♻ S2`
-   → Act title page (7 Geo. I c.7, PD); chip "EXCEPTIONS: MUSLINS, NECKCLOTHS, FUSTIANS, ALL-BLUE CALICO"
+   → Act title page (7 Geo. I c.7, PD); chip "ENACTED 1721 · IN FORCE 25 DEC 1722 · PRINTED, PAINTED, STAINED OR DYED CALICOES", then "EXCEPTIONS: MUSLINS, NECKCLOTHS, FUSTIANS, ALL-BLUE CALICO"
 **2.13** `04:09.1–04:12.0` [plain] It stayed in force until **1774**.  `src C4 · ♻ S2`
    → Timeline extends to 1774
 **2.14** `04:12.5–04:19.0` [pointed] These laws protected Britain's **wool** and **silk** weavers. ⏸ And they tell you how good **Indian cotton** was.  `src C1 · ♻ S2`
@@ -409,7 +409,7 @@ Both versions work at either pace: the title card simply lands later. **The rule
 | S1 | 83 s | 1.1 @01:04.3 (7.6s) → 1.3 @01:19.8 (4.3s) → 1.4 @01:24.3 (14.4s) → 1.4e @01:38.9 (6.0s) → 1.5 @01:45.4 (4.4s) → 1.6 @01:51.5 (14.0s) → 1.7 @02:05.7 (12.7s) → 1.8 @02:18.5 (10.1s) → NEW tease (7.3s) |
 | S2 | 128 s | 0.1 @00:00.0 (5.7s) → NEW bridge (5.1s) → 2.2 @02:40.4 (8.4s) → 2.3 @02:48.9 (12.2s) → 2.4 @03:01.6 (2.6s) → 2.5 @03:04.4 (5.0s) → 2.6 @03:09.6 (14.6s) → 2.8 @03:24.4 (9.4s) → 2.9 @03:34.0 (4.8s) → 2.10 @03:39.0 (6.7s) → 2.11 @03:45.9 (10.8s) → 2.12 @03:56.8 (12.1s) → 2.13 @04:09.1 (2.9s) → 2.14 @04:12.5 (6.5s) → 2.15 @04:20.7 (9.4s) → NEW tease (8.6s) |
 | S3 | 89 s | NEW hook (6.7s) → 3.2 @04:52.4 (9.8s) → 3.3 @05:02.4 (15.2s) → 3.5 @05:17.8 (1.7s) → 3.6 @05:19.7 (12.0s) → 3.7 @05:31.9 (15.4s) → 3.8 @05:47.4 (3.2s) → 3.9 @05:51.1 (9.9s) → NEW bridge (5.5s) → NEW tease (7.9s) |
-| S4 | 112 s | NEW hook (8.1s) → 4.2 @06:45.2 (20.0s) → 4.4 @07:05.4 (9.4s) → 4.5 @07:15.0 (4.3s) → 4.6 @07:19.5 (19.1s) → 4.8 @07:38.7 (14.0s) → 4.9 @07:53.2 (6.4s) → 4.10 @07:59.8 (13.0s) → 4.11 @08:14.5 (6.9s) → NEW tease (8.7s) |
+| S4 | 108 s | NEW hook (8.1s) → 4.2 @06:45.2 (20.0s) → 4.4 @07:05.4 (9.4s) → 4.5 @07:15.0 (4.3s) → 4.6 @07:19.5 (19.1s) → 4.8 @07:38.7 (14.0s) → 4.9 @07:53.2 (6.4s) → 4.10 @07:59.8 (13.0s) → 4.11 @08:14.5 (6.9s) → NEW tease (5.1s) |
 | S5 | 87 s | NEW hook (9.2s) → 5.3 @08:39.0 (8.9s) → 5.5 @08:48.0 (10.8s) → 5.6 @08:59.0 (11.9s) → 5.7 @09:11.1 (12.8s) → 5.8 @09:24.5 (9.2s) → 5.9 @09:35.4 (10.3s) → 5.10 @09:46.3 (5.2s) → NEW tease (6.9s) |
 | S6 | 156 s | NEW hook (7.5s) → 6.3 @10:16.7 (25.9s) → 6.8b @11:25.1 (21.4s) → 6.9 @11:46.8 (13.3s) → 6.10 @12:00.2 (18.5s) → 6.12 @12:19.2 (6.1s) → 6.13 @12:27.0 (11.3s) → 7.2 @12:45.7 (6.8s) → 7.3 @12:52.9 (9.5s) → 7.5 @13:04.1 (12.4s) → NEW bridge (11.3s) → 7.9 @13:33.2 (5.7s) → NEW tease (4.2s) |
 
@@ -418,7 +418,7 @@ Both versions work at either pace: the title card simply lands later. **The rule
 | S1 | 85 s | 1.1 @01:13.8 (5.4s) → 1.3 @01:30.4 (4.2s) → 1.4 @01:34.7 (17.8s) → 1.5 @01:53.1 (4.7s) → 1.6 @01:59.5 (16.7s) → 1.7 @02:16.4 (16.8s) → 1.8 @02:33.3 (10.0s) → NEW tease (7.5s) |
 | S2 | 151 s | 0.1 @00:00.0 (8.0s) → NEW bridge (5.2s) → 2.2 @02:56.5 (9.9s) → 2.3 @03:06.6 (14.3s) → 2.4 @03:21.4 (3.0s) → 2.5 @03:24.6 (7.9s) → 2.6 @03:32.7 (13.8s) → 2.7 @03:46.7 (9.1s) → 2.8 @03:55.9 (12.0s) → 2.9 @04:08.1 (5.4s) → 2.10 @04:13.8 (7.7s) → 2.11 @04:21.6 (14.7s) → 2.12 @04:36.5 (16.4s) → 2.13 @04:53.0 (3.2s) → 2.14 @04:56.8 (9.5s) → NEW tease (8.1s) |
 | S3 | 123 s | NEW hook (5.0s) → 3.2 @05:33.2 (12.8s) → 3.3 @05:46.2 (19.3s) → 3.4 @06:05.7 (9.2s) → 3.5 @06:15.1 (0.8s) → 3.6 @06:16.0 (15.7s) → 3.7 @06:31.9 (19.9s) → 3.8 @06:52.0 (5.4s) → 3.9 @06:57.9 (11.4s) → 3.10 @07:10.9 (6.9s) → NEW bridge (5.7s) → NEW tease (8.6s) |
-| S4 | 147 s | NEW hook (8.9s) → 4.2 @08:02.0 (27.4s) → 4.3 @08:29.6 (10.5s) → 4.5 @08:40.2 (5.8s) → 4.6 @08:46.2 (25.0s) → 4.7 @09:11.4 (9.7s) → 4.8 @09:21.3 (14.0s) → 4.9 @09:35.8 (4.4s) → 4.10 @09:40.4 (20.5s) → 4.11 @10:02.5 (9.2s) → NEW tease (9.0s) |
+| S4 | 143 s | NEW hook (8.9s) → 4.2 @08:02.0 (27.4s) → 4.3 @08:29.6 (10.5s) → 4.5 @08:40.2 (5.8s) → 4.6 @08:46.2 (25.0s) → 4.7 @09:11.4 (9.7s) → 4.8 @09:21.3 (14.0s) → 4.9 @09:35.8 (4.4s) → 4.10 @09:40.4 (20.5s) → 4.11 @10:02.5 (9.2s) → NEW tease (5.6s) |
 | S5 | 99 s | NEW hook (4.4s) → 5.3 @10:32.5 (13.4s) → 5.4 @10:46.1 (7.1s) → 5.5 @10:53.3 (10.6s) → 5.6 @11:04.1 (17.5s) → 5.7 @11:21.7 (16.5s) → 5.8 @11:38.7 (11.7s) → 5.10 @11:52.4 (7.9s) → NEW tease (7.8s) |
 | S6 | 169 s | NEW hook (6.0s) → 6.8b @13:36.6 (27.0s) → 6.9 @14:03.8 (17.6s) → 6.10 @14:21.6 (23.9s) → 6.12 @14:52.4 (8.6s) → 6.13 @15:02.7 (16.3s) → 7.2 @15:26.8 (8.4s) → 7.3 @15:35.7 (11.2s) → 7.4 @15:48.6 (8.0s) → 7.5 @15:56.7 (15.8s) → NEW bridge (11.6s) → 7.9 @16:29.1 (6.8s) → NEW tease (5.1s) |
 
@@ -449,8 +449,8 @@ Both versions work at either pace: the title card simply lands later. **The rule
   TE: [ఆప్యాయంగా · వేగంగా] మరి ప్రతి మూటలో ఎవరో ఒకరు **వాటా** తీసుకున్నారు. ⏸ సంపద అసలు ఎవరి చేతిలో? ⏸ తర్వాతి ఎపిసోడ్. పూర్తి సినిమా link లో ఉంది.
 - **S4 hook** EN: [HOOK · punchy] India made almost a quarter of the world's output. ⏸ So why did so many of the people who made it stay **poor**?
   TE: [HOOK] ప్రపంచ ఉత్పత్తిలో దాదాపు నాలుగో వంతు మనదే. ⏸ మరి దాన్ని తయారుచేసినవాళ్లలో ఎంతోమంది ఎందుకు **పేదవాళ్లుగానే** ఉండిపోయారు?
-- **S4 tease** EN: [warm · quick] And the richest trade of all came by **sea**. ⏸ Next: who showed **Vasco da Gama** the way? ⏸ The full film is linked.
-  TE: [ఆప్యాయంగా · వేగంగా] అతి ధనిక వ్యాపారం **సముద్రం** మీదుగా వచ్చేది. ⏸ తర్వాత: వాస్కో డ గామాకి **దారి** చూపించింది ఎవరు? ⏸ పూర్తి సినిమా link లో ఉంది.
+- **S4 tease** EN: [warm · quick] Next: who showed **Vasco da Gama** the way? ⏸ The full film is linked.
+  TE: [ఆప్యాయంగా · వేగంగా] తర్వాత: వాస్కో డ గామాకి **దారి** చూపించింది ఎవరు? ⏸ పూర్తి సినిమా link లో ఉంది.
 - **S5 hook** EN: [HOOK · punchy] Vasco da Gama didn't **discover** India. ⏸ The ocean he sailed into had been busy for **centuries**… and someone had to show him the **way**.
   TE: [HOOK] వాస్కో డ గామా భారత్‌ను **కనిపెట్టలేదు**. ⏸ ఎవరో **దారి** చూపించారు.
 - **S5 tease** EN: [warm · quick] Next: the company that came asking **permission**… and ended up giving **orders**. ⏸ The full film is linked.

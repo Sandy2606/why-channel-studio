@@ -23,8 +23,8 @@ NEW = {
    hook=("India made almost a quarter of the world's output. ⏸ So why did so many of the people who made it stay **poor**?",
          "ప్రపంచ ఉత్పత్తిలో దాదాపు నాలుగో వంతు మనదే. ⏸ మరి దాన్ని తయారుచేసినవాళ్లలో ఎంతోమంది ఎందుకు **పేదవాళ్లుగానే** ఉండిపోయారు?"),
    reuse=['4.2', '4.3', '4.4', '4.5', '4.6', '4.7', '4.8', '4.9', '4.10', '4.11'],
-   tease=("And the richest trade of all came by **sea**. ⏸ Next: who showed **Vasco da Gama** the way? ⏸ The full film is linked.",
-          "అతి ధనిక వ్యాపారం **సముద్రం** మీదుగా వచ్చేది. ⏸ తర్వాత: వాస్కో డ గామాకి **దారి** చూపించింది ఎవరు? ⏸ పూర్తి సినిమా link లో ఉంది.")),
+   tease=("Next: who showed **Vasco da Gama** the way? ⏸ The full film is linked.",
+          "తర్వాత: వాస్కో డ గామాకి **దారి** చూపించింది ఎవరు? ⏸ పూర్తి సినిమా link లో ఉంది.")),   # first sentence trimmed: it repeated 4.11
  'S5': dict(
    hook=("Vasco da Gama didn't **discover** India. ⏸ The ocean he sailed into had been busy for **centuries**… and someone had to show him the **way**.",
          "వాస్కో డ గామా భారత్‌ను **కనిపెట్టలేదు**. ⏸ ఎవరో **దారి** చూపించారు."),

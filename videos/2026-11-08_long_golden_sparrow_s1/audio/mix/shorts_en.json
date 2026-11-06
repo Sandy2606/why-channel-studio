@@ -201,7 +201,7 @@
  {
   "short": "S4",
   "lang": "en",
-  "total": 110.57,
+  "total": 107.53,
   "segments": [
    [
     "S4_hook",
@@ -251,7 +251,7 @@
    [
     "S4_tease",
     101.8,
-    109.47
+    106.43
    ]
   ],
   "speech_to_music_db": 22.5

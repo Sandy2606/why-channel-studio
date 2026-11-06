@@ -90,7 +90,10 @@ def shorts_plan():
     o = ['# Golden Sparrow S1: the six Short cut plans (final, from the recorded audio)', '',
          'Each Short reuses the film\'s recorded lines, with new pickups recorded for its hook, bridge and tease.',
          '- **Picture:** reuse the film shot from "Film tc". For a new pickup, use the visual noted.',
-         '- **Format:** 9:16 reframe. The full-film link goes in the pinned comment and the description.',
+         '- **Format:** 9:16 reframe.',
+         '- **Link to the film:** links in a Short\'s description or comments are not clickable. Publish the full film first, then set each Short\'s **Related Video** in YouTube Studio to the film in the same language. That puts a clickable link under the channel handle, and it is what "The full film is linked" refers to.',
+         '- **Subtitles:** the Text column is the complete approved line. Build captions from the recorded script text (`tools/jobs.json` / `script.md`), never from summaries.',
+         '- **S4:** the tease starts at "Next: who showed Vasco da Gama the way?". Its first sentence repeated 4.11 and has been trimmed from the audio, with no re-recording.',
          '- **Ending:** the music tail ends 1.1 s after the last word, and there are no long music-only tails.', '']
     for k in NEW:
         for lang in ('en', 'te'):
@@ -102,7 +105,6 @@ def shorts_plan():
                 src = 'film reuse' if film else ('NEW pickup · bridge' if i.startswith('B') else ('NEW pickup · hook' if i.endswith('_hook') else 'NEW pickup · tease'))
                 ftc = f"{tc(film[0])}–{tc(film[1])}" if film else '—'
                 txt = re.sub(r'\*\*', '', text_of(lang, i)).replace('⏸', '·').replace('|', '/')
-                if len(txt) > 140: txt = txt[:137] + '…'
                 o.append(f"| {n} | {tc(a)}–{tc(b)} | {i} | {src} | {ftc} | {txt} |")
             o.append('')
     o += ['### Visuals for the new pickups',
@@ -160,7 +162,13 @@ def visual_plan():
          '- **One shared visual master:** EN and TE use the same shots. TE simply holds each shot longer, with Telugu labels on the maps and cards.',
          '- **Asset classes:**']
     o += [f'  - **{k}** = {v}' for k, v in LBL.items()]
-    o += ['', '## Style bible (applies to every in-house illustration)',
+    o += ['', '## Two edits of one visual system',
+          'Characters, style, map assets and master illustrations are shared. EN and TE are **separate timelines**, so each picture matches its own narration:',
+          '- **EN only:** 1.4e (China bar, "≈ half"), 2.15 (route lines plus the calico/chintz word cards), 4.4 (land-survey miniature), 5.9 (spice route dims, Cape route lights), and the Madras/Bombay footholds in 7.5.',
+          '- **TE only:** 2.7 (Kalamkari map: Srikalahasti, Machilipatnam, Pedana), 3.4 (Malkibharama, the Qutb Shahi tombs and a Telugu manuscript), 3.10 (Mughal colour floods Golconda), 4.3 (Hampi and the "దేశ భాషలందు తెలుగు లెస్స" verse), 4.7 (Madanna and Akkanna), 5.4 (Roman coin, Telugu-region pin), 6.11 (coastal Andhra French blue, 1753) and 7.4 (Machilipatnam 1759).',
+          '- **Different prop:** F2.1/F2.2 shows a Mughal silver rupee in EN and a Golconda gold pagoda (hun) in TE, so the coin macro is two separate assets.',
+          '- **Map labels:** all on-screen text is Telugu in the TE edit.',
+          '', '## Style bible (applies to every in-house illustration)',
           '- **Look:** painterly, warm, documentary realism. Late-17th-century Coromandel coast.',
           '- **Light and palette:** lamp-light interiors; madder-red, indigo and turmeric accents on black-soil earth tones.',
           '- **Recurring cast:** Anna (about 12, kurta) and Chelli (about 8, langa voni). Keep the same faces every time; generate a character sheet first.',
@@ -184,8 +192,15 @@ def visual_plan():
     o += ['', '## Totals (approximate)', '']
     o += [f"- **{LBL[k]}:** about {v} {'shots' if k in ('ILLUS', 'BROLL') else 'scenes'}" for k, v in tot.items()]
     o += ['', '## Still to clear before the render', ''] + todo
+    o += ['', '## Release blockers (not visual)',
+          '- **Music Content ID:** every Short is over 1:00, and a Short of 1–3 min with an active Content ID claim can be blocked worldwide. Before release:',
+          '  - Have proof of permission on file for all four tracks.',
+          '  - Upload private test renders and check YouTube Studio\'s copyright check.',
+          '  - Swap any claimed track.',
+          '- **Listening QA:** a native-speaker listening pass on the TE film and Shorts, plus an EN pass, before publishing.',
+          '- **Rights:** none of the ⏳ items above enter the final edit until the permission is documented; otherwise replace them with a PD alternative or an original illustration.']
     o += ['', '## Sounds to add (please upload to `sfx/` if you have them)',
-          '- **Loom shuttle / pit-loom clack:** the season\'s signature sound. Used for the cold open and 2.3. Optional, and production won\'t wait for it.',
+          '- **Loom shuttle / pit-loom clack (PRIORITY):** the season\'s signature motif, for the cold open (0.1), 2.3 and the end card. A real recording is needed.',
           '- **Harbour ambience** (gulls, rigging, surf): 3.3 and 4.11.',
           '- **Ship creak and sail flap:** 5.2 and 5.5.',
           '- **Quill on paper:** 2.8, 3.11 and 4.8. Until then, the library `scribble` stands in.',

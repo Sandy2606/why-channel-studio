@@ -11,6 +11,13 @@ Timecodes are measured from the recorded narration.
   - **LICENSED** = Licensed photo or image (rights must be confirmed before use)
   - **BROLL** = Atmos b-roll (Pexels or in-house AI)
 
+## Two edits of one visual system
+Characters, style, map assets and master illustrations are shared. EN and TE are **separate timelines**, so each picture matches its own narration:
+- **EN only:** 1.4e (China bar, "≈ half"), 2.15 (route lines plus the calico/chintz word cards), 4.4 (land-survey miniature), 5.9 (spice route dims, Cape route lights), and the Madras/Bombay footholds in 7.5.
+- **TE only:** 2.7 (Kalamkari map: Srikalahasti, Machilipatnam, Pedana), 3.4 (Malkibharama, the Qutb Shahi tombs and a Telugu manuscript), 3.10 (Mughal colour floods Golconda), 4.3 (Hampi and the "దేశ భాషలందు తెలుగు లెస్స" verse), 4.7 (Madanna and Akkanna), 5.4 (Roman coin, Telugu-region pin), 6.11 (coastal Andhra French blue, 1753) and 7.4 (Machilipatnam 1759).
+- **Different prop:** F2.1/F2.2 shows a Mughal silver rupee in EN and a Golconda gold pagoda (hun) in TE, so the coin macro is two separate assets.
+- **Map labels:** all on-screen text is Telugu in the TE edit.
+
 ## Style bible (applies to every in-house illustration)
 - **Look:** painterly, warm, documentary realism. Late-17th-century Coromandel coast.
 - **Light and palette:** lamp-light interiors; madder-red, indigo and turmeric accents on black-soil earth tones.
@@ -23,7 +30,7 @@ Timecodes are measured from the recorded narration.
 
 | ID | EN tc (dur) | TE tc (dur) | Shots | Visual | Class | Rights / status | Short |
 |---|---|---|---|---|---|---|---|
-| 0.1 | 00:01.2 (7.1s) | 00:01.2 (8.7s) | 2 | Black → loom sound → macro of a painted flower on Met 1982.66 (caption "Coromandel Coast, 18th c. · The Met"); chip "ENACTED 1721 · IN FORCE 25 DEC 1722 · CERTAIN PRINTED, PAINTED, STAINED OR DYED CALICOES · SOME EXCEPTIONS" | GFX + ARCHIVE | ✅ Met OA, public domain | S2 |
+| 0.1 | 00:01.2 (7.1s) | 00:01.2 (8.7s) | 2 | Black → real loom-shuttle sound → macro of a painted flower on Met 1982.66 (caption "Coromandel Coast, 18th c. · The Met"); ONE big chip only: "1721 · BRITAIN BANS PRINTED COTTON" → "WHY?" (exact dates and exceptions are shown at 2.12, not here) | GFX + ARCHIVE | ✅ Met OA, public domain | S2 |
 | 0.2 | 00:08.9 (6.6s) | 00:10.4 (8.3s) | 2 | Pull back to the full palampore; wool and silk bolts dim beside it | BROLL | in-house |  |
 | 0.3 | 00:15.9 (6.8s) | 00:19.1 (10.1s) | 2 | 1 s cuts: Indus beads (Met) → monsoon sea → Calicut coast → Golconda fort → Tavernier diamond plate → ship under sail | ARCHIVE | in-house |  |
 | 0.4 | 00:23.1 (5.5s) | 00:29.6 (6.5s) | 2 | World map, India glows; chip "≈24% OF WORLD GDP · c.1700 · MADDISON EST." | MAP + GFX | in-house |  |
@@ -45,7 +52,7 @@ Timecodes are measured from the recorded narration.
 | 1.1 | 01:09.2 (6.2s) | 01:19.9 (5.6s) | 2 | Golden sparrow motif dissolves into dawn light over a field | BROLL | in-house | S1 |
 | 1.2 | 01:15.8 (7.6s) | 01:25.9 (10.5s) | 2 | [DRAM] AI still: family picking cotton, black soil, ox; chip "OUR CLOTH · c.1680" | ILLUS + GFX | in-house |  |
 | 1.3 | 01:23.5 (4.1s) | 01:36.6 (3.9s) | 1 | Archaeological cotton evidence (Mehrgarh) or Indus textile impression (licence-confirmed image only) | LICENSED | ⏳ confirm licence | S1 |
-| 1.4 | 01:27.8 (16.5s) | 01:40.7 (18.9s) | 4 | Animated bars on the master map: India 24 / Britain 3 → 1950 India 4; source note "MADDISON ESTIMATES (OECD 2001) · 1700 = UNDIVIDED SUBCONTINENT · 1950 = REPUBLIC OF INDIA ONLY (EXCL. PAKISTAN & BANGLADESH) · AREAS DIFFER" | MAP + GFX | in-house | S1 |
+| 1.4 | 01:27.8 (16.5s) | 01:40.7 (18.9s) | 4 | Two maps side by side, borders drawn bold: 1700 = whole subcontinent filled, bar 24 % (Britain 3 %); 1950 = Republic of India filled, Pakistan and Bangladesh visibly cut out and greyed, bar 4 %; big label on each map "AREA: UNDIVIDED SUBCONTINENT" / "AREA: REPUBLIC OF INDIA ONLY"; footer "MADDISON ESTIMATES (OECD 2001)" | MAP | in-house | S1 |
 | 1.4e | 01:44.5 (6.4s) | — (EN only) | 2 | China bar joins; "≈ HALF" bracket | BROLL | in-house | S1 |
 | 1.5 | 01:51.3 (3.8s) | 02:00.2 (5.5s) | 1 | Bars freeze; one gold coin among many plain ones | BROLL | in-house | S1 |
 | 1.6 | 01:56.8 (12.8s) | 02:07.3 (16.9s) | 4 | Population dots fill the India shape; per-person bar sits near the world line, below W. Europe; chip "ESTIMATES" | GFX | in-house | S1 |
@@ -68,7 +75,7 @@ Timecodes are measured from the recorded narration.
 | 2.9 | 03:37.8 (5.4s) | 04:20.4 (5.6s) | 2 | Muslin held to light (V&A/Met, licence-confirmed) | LICENSED | ⏳ confirm licence | S2 |
 | 2.10 | 03:43.3 (7.6s) | 04:26.2 (8.4s) | 2 | 18th-c. fashion plate in chintz (PD); stamp "BANNED" | GFX + ARCHIVE | ✅ PD, log the source URL | S2 |
 | 2.11 | 03:51.1 (11.6s) | 04:34.8 (15.3s) | 3 | Timeline: our cloth c.1680 → France 1686 → England 1700 (customs warehouse, bales stamped RE-EXPORT) | GFX | in-house | S2 |
-| 2.12 | 04:02.9 (13.6s) | 04:50.2 (16.4s) | 3 | Act title page (7 Geo. I c.7, PD); chip "EXCEPTIONS: MUSLINS, NECKCLOTHS, FUSTIANS, ALL-BLUE CALICO" | GFX + ARCHIVE | in-house | S2 |
+| 2.12 | 04:02.9 (13.6s) | 04:50.2 (16.4s) | 3 | Act title page (7 Geo. I c.7, PD); chip "ENACTED 1721 · IN FORCE 25 DEC 1722 · PRINTED, PAINTED, STAINED OR DYED CALICOES", then "EXCEPTIONS: MUSLINS, NECKCLOTHS, FUSTIANS, ALL-BLUE CALICO" | GFX + ARCHIVE | in-house | S2 |
 | 2.13 | 04:16.6 (2.9s) | 05:06.8 (4.2s) | 1 | Timeline extends to 1774 | GFX | in-house | S2 |
 | 2.14 | 04:20.0 (6.0s) | 05:11.5 (9.6s) | 2 | Wool and silk weavers' petition print (PD) beside the chintz | ARCHIVE | ✅ PD, log the source URL | S2 |
 | 2.15 | 04:27.7 (9.9s) | — (EN only) | 2 | Cloth-route lines across the master map; word cards CALICO ← Calicut, CHINTZ ← chheent | MAP + GFX | in-house | S2 |
@@ -165,7 +172,7 @@ Timecodes are measured from the recorded narration.
 
 - **Original illustration (in-house AI, our style bible):** about 61 shots
 - **Master map animation (in-house):** about 19 scenes
-- **Motion graphics / on-screen text:** about 33 scenes
+- **Motion graphics / on-screen text:** about 32 scenes
 - **Public-domain / open-access archive image:** about 19 scenes
 - **Licensed photo or image (rights must be confirmed before use):** about 6 scenes
 - **Atmos b-roll (Pexels or in-house AI):** about 44 shots
@@ -184,8 +191,16 @@ Timecodes are measured from the recorded narration.
 - **6.5:** confirm date. (Master map: Machilipatnam → Madras pins (TE zoom 2); Fort St George early view (PD print, …)
 - **6.8b:** fine amount stays off screen until Keay p.372 is checked. (Mughal fleet blockading Bombay (period print or AI); chip "ANGLO-MUGHAL WAR 1686–90 · MUGH…)
 
+## Release blockers (not visual)
+- **Music Content ID:** every Short is over 1:00, and a Short of 1–3 min with an active Content ID claim can be blocked worldwide. Before release:
+  - Have proof of permission on file for all four tracks.
+  - Upload private test renders and check YouTube Studio's copyright check.
+  - Swap any claimed track.
+- **Listening QA:** a native-speaker listening pass on the TE film and Shorts, plus an EN pass, before publishing.
+- **Rights:** none of the ⏳ items above enter the final edit until the permission is documented; otherwise replace them with a PD alternative or an original illustration.
+
 ## Sounds to add (please upload to `sfx/` if you have them)
-- **Loom shuttle / pit-loom clack:** the season's signature sound. Used for the cold open and 2.3. Optional, and production won't wait for it.
+- **Loom shuttle / pit-loom clack (PRIORITY):** the season's signature motif, for the cold open (0.1), 2.3 and the end card. A real recording is needed.
 - **Harbour ambience** (gulls, rigging, surf): 3.3 and 4.11.
 - **Ship creak and sail flap:** 5.2 and 5.5.
 - **Quill on paper:** 2.8, 3.11 and 4.8. Until then, the library `scribble` stands in.

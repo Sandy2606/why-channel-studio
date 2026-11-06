@@ -30,8 +30,14 @@ def fade(x, a=0.01, b=0.03):
     x = x.copy(); fa = int(a * SR); fb = int(b * SR); x[:fa] *= np.linspace(0, 1, fa); x[-fb:] *= np.linspace(1, 0, fb); return x
 
 
+# S4 tease: drop its first sentence ("And the richest trade of all came by sea"), which repeats film line 4.11 right before it
+TRIM_START = {('en', 'S4_tease'): 3.01, ('te', 'S4_tease'): 3.29}
+
+
 def take(lang, i):
-    return fade(trim(load(f'{TAKE}/{lang}_{i}.mp3')))
+    x = load(f'{TAKE}/{lang}_{i}.mp3')
+    if (lang, i) in TRIM_START: x = x[int(TRIM_START[(lang, i)] * SR):]
+    return fade(trim(x))
 
 
 def db(g): return 10 ** (g / 20)
