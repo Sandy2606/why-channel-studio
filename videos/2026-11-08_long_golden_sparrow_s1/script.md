@@ -395,25 +395,32 @@
 | Short | Length | Cut list (film timecodes, EN) |
 |---|---|---|
 | S1 | 82 s | 1.1 @01:04.0 (7.6s) → 1.3 @01:19.5 (4.3s) → 1.4 @01:23.9 (14.1s) → 1.4e @01:38.2 (6.0s) → 1.5 @01:44.7 (4.4s) → 1.6 @01:50.8 (14.0s) → 1.7 @02:04.9 (12.7s) → 1.8 @02:17.8 (10.1s) → NEW tease (7.3s) |
-| S2 | 90 s | 0.1 @00:00.0 (5.7s) → 2.3 @02:48.2 (12.2s) → 2.4 @03:00.9 (2.6s) → 2.5 @03:03.7 (5.0s) → 2.6 @03:08.9 (14.6s) → 2.10 @03:38.2 (6.7s) → 2.11 @03:45.2 (10.8s) → 2.12 @03:56.1 (12.1s) → 2.13 @04:08.4 (2.9s) → 2.14 @04:11.8 (6.5s) → NEW tease (8.6s) |
+| S2 | 123 s | 0.1 @00:00.0 (5.7s) → 2.2 @02:39.7 (8.4s) → 2.3 @02:48.2 (12.2s) → 2.4 @03:00.9 (2.6s) → 2.5 @03:03.7 (5.0s) → 2.6 @03:08.9 (14.6s) → 2.8 @03:23.7 (9.4s) → 2.9 @03:33.3 (4.8s) → 2.10 @03:38.2 (6.7s) → 2.11 @03:45.2 (10.8s) → 2.12 @03:56.1 (12.1s) → 2.13 @04:08.4 (2.9s) → 2.14 @04:11.8 (6.5s) → 2.15 @04:20.0 (9.4s) → NEW tease (8.6s) |
 | S3 | 88 s | NEW hook (6.7s) → 3.2 @04:51.7 (9.8s) → 3.3 @05:01.7 (15.2s) → 3.5 @05:17.1 (1.7s) → 3.6 @05:19.0 (12.0s) → 3.7 @05:31.2 (13.9s) → 3.8 @05:45.3 (3.2s) → 3.9 @05:48.9 (9.9s) → NEW bridge (5.5s) → NEW tease (7.9s) |
-| S4 | 95 s | NEW hook (8.1s) → 4.2 @06:43.1 (20.0s) → 4.5 @07:12.8 (4.3s) → 4.6 @07:17.3 (19.1s) → 4.8 @07:36.5 (14.0s) → 4.9 @07:51.1 (6.4s) → 4.10 @07:57.6 (13.0s) → NEW tease (8.7s) |
+| S4 | 112 s | NEW hook (8.1s) → 4.2 @06:43.1 (20.0s) → 4.4 @07:03.3 (9.4s) → 4.5 @07:12.8 (4.3s) → 4.6 @07:17.3 (19.1s) → 4.8 @07:36.5 (14.0s) → 4.9 @07:51.1 (6.4s) → 4.10 @07:57.6 (13.0s) → 4.11 @08:12.3 (6.9s) → NEW tease (8.7s) |
 | S5 | 87 s | NEW hook (9.2s) → 5.3 @08:36.8 (8.9s) → 5.5 @08:45.9 (10.8s) → 5.6 @08:56.9 (11.9s) → 5.7 @09:09.0 (12.8s) → 5.8 @09:22.3 (9.2s) → 5.9 @09:33.3 (10.3s) → 5.10 @09:44.1 (5.2s) → NEW tease (6.9s) |
-| S6 | 119 s | NEW hook (7.5s) → 6.3 @10:14.5 (25.9s) → 6.8b @11:23.0 (15.2s) → 6.10 @11:51.8 (18.5s) → 6.13 @12:18.6 (11.3s) → 7.2 @12:37.3 (6.8s) → 7.3 @12:44.6 (9.5s) → 7.5 @12:55.7 (12.4s) → 7.9 @13:24.4 (5.7s) → NEW tease (4.2s) |
+| S6 | 148 s | NEW hook (7.5s) → 6.3 @10:14.5 (25.9s) → 6.5 @10:43.3 (15.6s) → 6.6 @10:59.1 (6.8s) → 6.8b @11:23.0 (15.2s) → 6.10 @11:51.8 (18.5s) → 6.12 @12:10.8 (6.1s) → 6.13 @12:18.6 (11.3s) → 7.2 @12:37.3 (6.8s) → 7.3 @12:44.6 (9.5s) → 7.5 @12:55.7 (12.4s) → 7.9 @13:24.4 (5.7s) → NEW tease (4.2s) |
 
 | Short | Length | Cut list (film timecodes, TE) |
 |---|---|---|
 | S1 | 85 s | 1.1 @01:10.7 (5.4s) → 1.3 @01:27.4 (4.2s) → 1.4 @01:31.7 (17.8s) → 1.5 @01:50.0 (4.7s) → 1.6 @01:56.4 (16.7s) → 1.7 @02:13.2 (16.8s) → 1.8 @02:30.2 (10.0s) → NEW tease (7.5s) |
-| S2 | 117 s | 0.1 @00:00.0 (8.0s) → 2.3 @03:03.5 (14.3s) → 2.4 @03:18.3 (3.0s) → 2.5 @03:21.5 (7.9s) → 2.6 @03:29.6 (13.8s) → 2.7 @03:43.6 (9.1s) → 2.10 @04:10.7 (7.7s) → 2.11 @04:18.5 (14.7s) → 2.12 @04:33.4 (16.4s) → 2.13 @04:49.9 (3.2s) → 2.14 @04:53.7 (8.5s) → NEW tease (8.1s) |
-| S3 | 115 s | NEW hook (5.0s) → 3.2 @05:29.2 (12.8s) → 3.3 @05:42.1 (19.3s) → 3.4 @06:01.6 (9.2s) → 3.5 @06:11.0 (0.8s) → 3.6 @06:12.0 (15.7s) → 3.7 @06:27.8 (19.3s) → 3.8 @06:47.3 (5.4s) → 3.9 @06:53.2 (11.4s) → NEW bridge (5.7s) → NEW tease (8.6s) |
-| S4 | 117 s | NEW hook (8.9s) → 4.2 @07:57.3 (27.4s) → 4.5 @08:35.5 (5.8s) → 4.6 @08:41.5 (25.0s) → 4.8 @09:16.0 (14.0s) → 4.9 @09:30.5 (4.4s) → 4.10 @09:35.1 (20.5s) → NEW tease (9.0s) |
+| S2 | 145 s | 0.1 @00:00.0 (8.0s) → 2.2 @02:53.4 (9.9s) → 2.3 @03:03.5 (14.3s) → 2.4 @03:18.3 (3.0s) → 2.5 @03:21.5 (7.9s) → 2.6 @03:29.6 (13.8s) → 2.7 @03:43.6 (9.1s) → 2.8 @03:52.8 (12.0s) → 2.9 @04:05.0 (5.4s) → 2.10 @04:10.7 (7.7s) → 2.11 @04:18.5 (14.7s) → 2.12 @04:33.4 (16.4s) → 2.13 @04:49.9 (3.2s) → 2.14 @04:53.7 (8.5s) → NEW tease (8.1s) |
+| S3 | 122 s | NEW hook (5.0s) → 3.2 @05:29.2 (12.8s) → 3.3 @05:42.1 (19.3s) → 3.4 @06:01.6 (9.2s) → 3.5 @06:11.0 (0.8s) → 3.6 @06:12.0 (15.7s) → 3.7 @06:27.8 (19.3s) → 3.8 @06:47.3 (5.4s) → 3.9 @06:53.2 (11.4s) → 3.10 @07:06.2 (6.9s) → NEW bridge (5.7s) → NEW tease (8.6s) |
+| S4 | 146 s | NEW hook (8.9s) → 4.2 @07:57.3 (27.4s) → 4.3 @08:24.9 (10.5s) → 4.5 @08:35.5 (5.8s) → 4.6 @08:41.5 (25.0s) → 4.7 @09:06.7 (9.0s) → 4.8 @09:16.0 (14.0s) → 4.9 @09:30.5 (4.4s) → 4.10 @09:35.1 (20.5s) → 4.11 @09:57.2 (9.2s) → NEW tease (9.0s) |
 | S5 | 99 s | NEW hook (4.4s) → 5.3 @10:27.2 (13.4s) → 5.4 @10:40.8 (7.1s) → 5.5 @10:48.0 (10.6s) → 5.6 @10:58.8 (17.5s) → 5.7 @11:16.4 (16.5s) → 5.8 @11:33.4 (11.7s) → 5.10 @11:47.1 (7.9s) → NEW tease (7.8s) |
-| S6 | 135 s | NEW hook (6.0s) → 6.3 @12:20.8 (21.5s) → 6.8b @13:31.3 (17.8s) → 6.10 @14:07.0 (23.9s) → 6.13 @14:48.6 (16.3s) → 7.2 @15:12.7 (8.4s) → 7.3 @15:21.6 (11.2s) → 7.5 @15:42.7 (15.8s) → 7.9 @16:14.3 (6.8s) → NEW tease (5.1s) |
+| S6 | 165 s | NEW hook (6.0s) → 6.5 @12:46.0 (18.1s) → 6.6 @13:04.3 (9.2s) → 6.8b @13:31.3 (17.8s) → 6.10 @14:07.0 (23.9s) → 6.11 @14:31.1 (6.8s) → 6.12 @14:38.4 (8.6s) → 6.13 @14:48.6 (16.3s) → 7.2 @15:12.7 (8.4s) → 7.3 @15:21.6 (11.2s) → 7.4 @15:34.5 (8.0s) → 7.5 @15:42.7 (15.8s) → 7.9 @16:14.3 (6.8s) → NEW tease (5.1s) |
+
+**Runtime rule (updated Nov 6):** the story decides the runtime, up to 3:00 maximum.
+- Long Shorts aim to finish by about 2:45–2:55, leaving a technical buffer.
+- Simple ones stay short.
+- English and Telugu may differ in length.
 
 **Notes on the Shorts:**
-- S1, S3 and S5 (EN) land at 82–88 s, just under the 90 s start point; I'd keep them tight rather than pad.
-- **TE S6 is 135 s:** the Plassey payoff needs it (it stays under 3:00).
-- Lines that mention "our cloth" are kept out of the Shorts, so each one stands alone.
+- **S2, S4 and S6 now keep the context that had been cut:** the spinner, Coeurdoux, muslin, the Telugu regional beats, the Madras grant, silver and the 1759 Machilipatnam beat.
+- **S1, S3 and S5 stay at about 1:25–1:45:** their stories are complete, and stretching them would hurt retention.
+- **Telugu S6** leaves out the Surat permission steps and tells the story along the coast: Machilipatnam → Madras → French → Plassey → 1759.
+- **Lines left out of the Shorts:** any line that mentions "our cloth", so each Short stands alone.
+- **Content ID:** Shorts over 1:00 with an active Content ID claim can be blocked, so the music, SFX and art in the Shorts must be cleared (our own recordings, Public Domain or CC0 only).
 
 ### Pick-up lines to record (11 per language)
 - **S1 tease** EN: [warm · quick] The answer: a cloth so good that Britain **banned** it. ⏸ That's the next episode. The full film is linked.

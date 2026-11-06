@@ -10,19 +10,19 @@ NEW = {
           "దానికి జవాబు: బ్రిటన్ **నిషేధించేంత** గొప్ప గుడ్డ. ⏸ అది తర్వాతి ఎపిసోడ్‌లో. పూర్తి సినిమా link లో ఉంది.")),
  'S2': dict(
    hook=('REUSE:0.1', 'REUSE:0.1'),
-   reuse=['2.3', '2.4', '2.5', '2.6', '2.7', '2.10', '2.11', '2.12', '2.13', '2.14'],
+   reuse=['2.2', '2.3', '2.4', '2.5', '2.6', '2.7', '2.8', '2.9', '2.10', '2.11', '2.12', '2.13', '2.14', '2.15'],
    tease=("Where did the world come to **buy** this cloth? ⏸ A port on India's east coast. ⏸ Next episode. The full film is linked.",
           "ఈ గుడ్డ కొనడానికి ప్రపంచం ఎక్కడికి వచ్చేది? ⏸ మన **మచిలీపట్నం**. ⏸ తర్వాతి ఎపిసోడ్. పూర్తి సినిమా link లో ఉంది.")),
  'S3': dict(
    hook=("One Indian kingdom supplied many of the world's most **famous diamonds**. ⏸ But its biggest business was something **else**.",
          "ప్రపంచ ప్రసిద్ధ వజ్రాలు ఎన్నో **గోల్కొండ** నుంచే. ⏸ కానీ అసలు సంపద **వేరే**."),
-   reuse=['3.2', '3.3', '3.4', '3.5', '3.6', '3.7', '3.8', '3.9', 'B3'],
+   reuse=['3.2', '3.3', '3.4', '3.5', '3.6', '3.7', '3.8', '3.9', '3.10', 'B3'],
    tease=("And with every bale, someone took a **cut**. ⏸ Who really controlled the wealth? ⏸ Next episode. The full film is linked.",
           "మరి ప్రతి మూటలో ఎవరో ఒకరు **వాటా** తీసుకున్నారు. ⏸ సంపద అసలు ఎవరి చేతిలో? ⏸ తర్వాతి ఎపిసోడ్. పూర్తి సినిమా link లో ఉంది.")),
  'S4': dict(
    hook=("India made almost a quarter of the world's output. ⏸ So why did so many of the people who made it stay **poor**?",
          "ప్రపంచ ఉత్పత్తిలో దాదాపు నాలుగో వంతు మనదే. ⏸ మరి దాన్ని తయారుచేసినవాళ్లలో ఎంతోమంది ఎందుకు **పేదవాళ్లుగానే** ఉండిపోయారు?"),
-   reuse=['4.2', '4.5', '4.6', '4.8', '4.9', '4.10'],
+   reuse=['4.2', '4.3', '4.4', '4.5', '4.6', '4.7', '4.8', '4.9', '4.10', '4.11'],
    tease=("And the richest trade of all came by **sea**. ⏸ Next: who showed **Vasco da Gama** the way? ⏸ The full film is linked.",
           "అతి ధనిక వ్యాపారం **సముద్రం** మీదుగా వచ్చేది. ⏸ తర్వాత: వాస్కో డ గామాకి **దారి** చూపించింది ఎవరు? ⏸ పూర్తి సినిమా link లో ఉంది.")),
  'S5': dict(
@@ -34,7 +34,7 @@ NEW = {
  'S6': dict(
    hook=("It came to India asking **permission**. ⏸ A hundred and fifty years later, it helped put a **Nawab** on Bengal's throne.",
          "**అనుమతి** అడిగి వచ్చిన కంపెనీ… నూట యాభై ఏళ్ల తర్వాత బెంగాల్ **నవాబునే** మార్చేసింది."),
-   reuse=['6.3', '6.8b', '6.10', '6.13', '7.2', '7.3', '7.5', '7.9'],
+   reuse=['6.3:en', '6.5', '6.6', '6.8b', '6.10', '6.11', '6.12', '6.13', '7.2', '7.3', '7.4', '7.5', '7.9'],
    tease=("That's where **Season 2** begins. ⏸ The full film is linked.",
           "అక్కడి నుంచే **సీజన్ 2** మొదలవుతుంది. ⏸ పూర్తి సినిమా link లో ఉంది.")),
 }
@@ -55,6 +55,9 @@ def short_plan(lang):
         else:
             segs.append(('new-hook', h, None, spoken(h, lang, 'HOOK')))
         for rid in p['reuse']:
+            if ':' in rid:
+                rid, only = rid.split(':')
+                if only != lang: continue
             if rid in BRIDGE:
                 bt = BRIDGE[rid][i]; segs.append(('new-bridge', bt, None, spoken(bt, lang, 'PUNCH'))); continue
             if rid in d: segs.append(('reuse', rid, d[rid]['start'], d[rid]['dur']))

@@ -28,7 +28,13 @@ Script v1 in this folder is superseded and NOT to be recorded.
 - Anna and Chelli frame the film, used sparingly.
 - Period people appear as "DRAMATIZED RECONSTRUCTION".
 
-**Shorts:** 90–120 s each (never over 3:00). Each stands alone, has no recap, and ends with a teaser for the next episode plus "full film linked".
+**Shorts (updated Nov 6):**
+- The story decides the runtime, up to **3:00 max**. Long ones aim to finish around 2:45–2:55; simple ones stay short.
+- EN and TE may differ in length.
+- Never trim needed context, and never stretch a short story.
+- Each Short stands alone, has no recap, and ends with a teaser for the next episode plus "full film linked".
+- Content ID: Shorts over 1:00 with an active claim can be blocked, so music, SFX and art must be cleared.
+- Judge them by retention and average % viewed.
 1. Was India really that rich? (the Maddison ~24% estimate, and what it does and doesn't mean)
 2. The cloth the world wanted (muslin, chintz; the 1700/1721 laws described precisely, covering specific fabrics and uses, not all Indian textiles)
 3. Golconda & Machilipatnam (cloth first, diamonds second)

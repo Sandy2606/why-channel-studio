@@ -128,10 +128,17 @@ md = f"""# THE GOLDEN SPARROW · SEASON 1: FINAL RECORDING SCRIPTS (EN + TE) · 
 
 {shorts_md('te')}
 
+**Runtime rule (updated Nov 6):** the story decides the runtime, up to 3:00 maximum.
+- Long Shorts aim to finish by about 2:45–2:55, leaving a technical buffer.
+- Simple ones stay short.
+- English and Telugu may differ in length.
+
 **Notes on the Shorts:**
-- S1, S3 and S5 (EN) land at 82–88 s, just under the 90 s start point; I'd keep them tight rather than pad.
-- **TE S6 is 135 s:** the Plassey payoff needs it (it stays under 3:00).
-- Lines that mention "our cloth" are kept out of the Shorts, so each one stands alone.
+- **S2, S4 and S6 now keep the context that had been cut:** the spinner, Coeurdoux, muslin, the Telugu regional beats, the Madras grant, silver and the 1759 Machilipatnam beat.
+- **S1, S3 and S5 stay at about 1:25–1:45:** their stories are complete, and stretching them would hurt retention.
+- **Telugu S6** leaves out the Surat permission steps and tells the story along the coast: Machilipatnam → Madras → French → Plassey → 1759.
+- **Lines left out of the Shorts:** any line that mentions "our cloth", so each Short stands alone.
+- **Content ID:** Shorts over 1:00 with an active Content ID claim can be blocked, so the music, SFX and art in the Shorts must be cleared (our own recordings, Public Domain or CC0 only).
 
 ### Pick-up lines to record ({npk} per language)
 {pickups()}
