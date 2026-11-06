@@ -1,381 +1,268 @@
-# THE GOLDEN SPARROW · SEASON 1 — MASTER STORY (v1, for approval)
-*Nothing recorded, no assets generated, no credits spent. Recording scripts come after approval.*
+# THE GOLDEN SPARROW · SEASON 1: MASTER STORY v2
+*Approved base: v1 story, the 1680 setting, six chapters, EN/TE perspectives and Sunday-first release. Nothing has been recorded, no assets generated and no credits spent. Claim-by-claim sources are in `sources_verification.md`.*
 
 **Central question:** How did a land that drew merchants from across the world end up under the growing power of a foreign trading company?
-**Target runtime:** ~16:45 (EN and TE within ±30 s).
+**Target runtime:** ~16:45. Natural pacing matters more than the number.
 
 ---
 
-## 0. Ground rules
+## Change log (v1 → v2)
 
-### Claim labels (used on every beat)
-| Tag | Meaning | On-screen treatment |
-|---|---|---|
-| **[DOC]** | Documented in primary records or settled scholarship | No label needed |
-| **[EST]** | Scholarly estimate | "estimate" or "about" spoken, plus a small source chip (e.g. "Maddison est.") |
-| **[DISP]** | Historians disagree | Spoken as debated: "some historians say…" |
-| **[DRAM]** | Dramatized reconstruction (people, faces, dialogue) | Corner tag "DRAMATIZED RECONSTRUCTION" |
+| # | Change |
+|---|---|
+| 1 | **Cloth continuity fixed.** The trunk holds Ammamma's own **kalamkari cloth painted with a Ramayana scene** (a 20th-c. family piece). It prompts Anna to tell the story of **a cloth like it, made around 1680**. That 1680 cloth is openly fictional and representative ("DRAMATIZED RECONSTRUCTION · based on surviving museum chintz"). Museum pieces are captioned with their real dates (e.g. Met 1982.66 = 18th c.) and are never presented as "our" cloth. |
+| 2 | **Diamonds corrected.** India was the world's *major* commercial source before Brazil (1720s), with a few from Borneo. The Short 3 hook is rewritten. |
+| 3 | **Vijayanagara corrected.** The capital was sacked after Talikota (1565), but the **Aravidu dynasty ruled on** from Penukonda, Chandragiri and Vellore into the 17th c. This now pays off in Ch6: the 1639 Madras grant came under the Aravidu king Venkata III. |
+| 4 | **Kollur relabelled.** The historic mine is on the Krishna's south bank near **Pulichintala**, not Kollur town in the former Guntur district (now Bapatla). The map reads "Kollur mines, near Pulichintala, Krishna river". The present-day district (likely **Palnadu**) stays off screen until the mandal is confirmed. |
+| 5 | **English ending corrected.** The "Britain learning to make cloth" line is removed, because British printing already existed (London calico printing from the 1670s–90s). |
+| 6 | **One shared ending.** Both versions end on **silver → Bengal revenue** (Plassey 1757 → Diwani 1765) with the same final question. TE adds 1759 Machilipatnam as a short regional beat; EN shows the Company's expanding footholds. |
+| 7 | **Epics acknowledged** as living traditions. Ammamma's cloth shows a Ramayana scene, plus one line in the trunk scene. No dates are given; the full treatment is saved for the Season 4 prequel. |
+| 8 | **Trunk scene cut** from 50 s to 30 s. **Ch1 decluttered:** the Kerala mathematics beat moves to Season 4. **+45 s for Ch6**, on the Company's turn to politics: sepoy armies, the Carnatic wars and installing nawabs, the 1756 crisis. |
+| 9 | **Absolute "firsts" removed.** Plassey now reads "the Company helped put Mir Jafar on Bengal's throne". The French had already backed rival nawabs in the Carnatic and Hyderabad from 1749. |
+| 10 | **Year chips on screen** throughout (c. 1680 · 1498 · 1608–13 · 1700/1721 · 1717 · 1757 · 1765), so the timeline stays visibly clear. |
+| 11 | **New file `sources_verification.md`:** each important claim matched to a primary record, scholarly work or museum source, with its status (✅ verified / 🔶 page to confirm / ❓ open). |
 
-### Two perspectives, one film
-- **Shared by both versions:**
-  - the facts, chronology, central question and chapter order;
-  - one shared visual master plan (§9).
-- **What changes between versions:**
-  - narration, on-screen text and map labels;
-  - one or two examples per chapter;
-  - which hooks lead, and where the emotion sits.
-- **English lens (India-centric, world-wide):** India's place in world trade, why the world came, and how Indian goods shaped global fashion, money and empires.
-  - *Target feeling:* "I never knew India played such a role in world history."
-- **Telugu lens (regional-first, never regional-only):** Golconda, Machilipatnam, the Coromandel coast, the Deccan, Telugu rulers, poets and villages, always placed inside the larger Indian and world story.
-  - *Target feeling:* "This is our history."
-- **Each scene below carries the two lenses as:**
-  - **EN ▸** what the English version does differently;
-  - **TE ▸** what the Telugu version does differently.
-  - A scene with neither tag is identical in both, translated naturally (not word for word).
-  - Regional references are **never forced** into every TE scene.
+**Labels:**
+- **[DOC]** documented
+- **[EST]** estimate (spoken as "about"/"by one estimate")
+- **[DISP]** disputed (spoken as "historians debate")
+- **[DRAM]** dramatized reconstruction (corner tag)
 
-### The through-line object
-- **The cloth:** one painted-and-dyed cotton chintz from the Coromandel coast, around 1680 **[DRAM]**.
-- **Why this cloth:**
-  - its real cousins sit in the Met and the V&A;
-  - it was made in the villages around Machilipatnam (regional for TE);
-  - it was the most-wanted cloth in Europe (global for EN).
-  - So one object serves both lenses.
-- **Its journey:** cotton field → spinner → weaver → dyer → broker → Golconda's port of Machilipatnam → ship → East India Company warehouse in London.
-- The journey takes months, while the history around it spans 250 years.
-- Chapters 5–6 step back in time from the ship, and the final 60 s step forward to 1757.
+**Lenses:**
+- **EN ▸** India-centric with a world view.
+- **TE ▸** regional-first, inside the wider story.
 
-### The frame
-- **Anna and Chelli** open Ammamma's old trunk: inside are a cloth, a coin and a folded map.
-- They appear only four times: the open (after the hook), between Ch3 and Ch4, before the finale, and at the final close.
-- No character recaps.
+Both versions share the same facts, order, visuals and ending.
 
 ---
 
-## 1. Runtime map
-| # | Section | Time | Cloth stage | Short |
-|---|---|---|---|---|
-| 0 | Cold open (first 30 s) | 0:00–0:30 | the finished cloth | — |
-| F1 | The trunk | 0:30–1:20 | cloth unfolded | — |
-| 1 | Was India really that rich? | 1:20–3:30 | **field** | **S1** |
-| 2 | The cloth the world wanted | 3:30–6:15 | **spinner → weaver → dyer** | **S2** |
-| 3 | Golconda & Machilipatnam | 6:15–8:40 | **broker → market → port** | **S3** |
-| F2 | Trunk beat (the coin) | 8:40–9:00 | — | — |
-| 4 | Who controlled the wealth? | 9:00–11:15 | **the tax on every step** | **S4** |
-| 5 | Europe didn't discover India | 11:15–13:15 | **the ship** | **S5** |
-| 6 | The company that came to trade | 13:15–15:45 | **the warehouse** | **S6** |
-| 7 | Final 60 s (Plassey to the Season 2 hook) | 15:45–16:45 | cloth sold; trunk closes | S6 tail |
+## Runtime map
 
----
-
-## 2. Cold open (0:00–0:30)
-*Goal: a fact strange enough to stop the scroll in 6 s, a world-scale hook by 18 s, and the central question by 28 s.*
-
-| Time | Visual | EN narration | TE narration |
-|---|---|---|---|
-| 0:00–0:06 | Black, then the sound of a loom. Extreme macro of red and indigo thread as a painted flower emerges (Met palampore, slow push-in). | "In 1721, Britain passed a law making it illegal for most people to wear cloth like this." | "ఈ గుడ్డను చూడండి. దాదాపు మూడు వందల ఏళ్ల క్రితం, బ్రిటన్‌లో ఇలాంటి గుడ్డ వేసుకోవడమే చట్టవిరుద్ధం." |
-| 0:06–0:10 | Pull back to the full palampore. | "Not a weapon. Not a drug. Printed cotton, from India." | "ఎందుకంటే అది మన దేశంలో తయారైంది. ఇలాంటి గుడ్డలు చాలావరకు మన మచిలీపట్నం తీరం గ్రామాల్లోనే." |
-| 0:10–0:18 | Fast montage (1 s each): Indus carnelian beads → monsoon sea → Calicut → Golconda fort → Tavernier diamond plate → Surat ships. | "For four thousand years the world sailed to India: for beads, pepper, diamonds, and above all, cloth." | "వేల ఏళ్లుగా ప్రపంచం మన దగ్గరికి వచ్చేది: మిరియాల కోసం, గోల్కొండ వజ్రాల కోసం, అన్నిటికంటే ఎక్కువగా మన గుడ్డ కోసం." |
-| 0:18–0:23 | World map, India glowing; "≈24%" chip (Maddison est.). | "By one estimate, around 1700 India produced almost a quarter of everything the world made." | "ఒక అంచనా ప్రకారం, 1700 ప్రాంతంలో ప్రపంచంలో తయారయ్యే మొత్తంలో దాదాపు నాలుగో వంతు భారతదేశంలోనే." |
-| 0:23–0:28 | A Company ship sail fills the frame, then dark. | "So how did a land the whole world came to… fall under the power of a company that came only to trade?" | "మరి ప్రపంచమంతా వెతుక్కుంటూ వచ్చిన ఈ నేల… వ్యాపారం కోసమే వచ్చిన ఒక కంపెనీ అధికారంలోకి ఎలా వెళ్లిపోయింది?" |
-| 0:28–0:30 | Title card: THE GOLDEN SPARROW · SEASON 1, with the loom sound cut on the beat. | (title sting) | TE card: **బంగారు పిచ్చుక · సీజన్ 1** (English brand line below it) |
-
-**Facts behind the cold open:**
-- **1721 law [DOC]:** the 1721 Calico Act (in force from 25 Dec 1722) banned the *use and wearing* of printed, painted or dyed calico in Britain. It had exceptions: muslins, neckcloths, fustians and all-blue calico. The phrase "most people" covers those exceptions.
-- **"Four thousand years" [DOC]:** Indus carnelian beads have been found in Mesopotamian sites, c. 2500–2000 BCE. This is the cold-open nod to the deep past. The epics are kept out of the cold open because their dates are disputed; they go to the Season 4 prequel.
-- **"Almost a quarter" [EST]:** Maddison's estimate is ~24.4% of world GDP in 1700. Ch1 explains what this means.
-
----
-
-## F1. The trunk (0:30–1:20)
-- **Visual [DRAM]:** Anna and Chelli in Ammamma's room. The lid creaks open and dust catches the light. Inside are a folded chintz, a worn silver coin and a hand-drawn map with a coastline.
-- **Narration:**
-  - Chelli asks why Ammamma kept "an old bedsheet."
-  - Anna turns it over to show a faded merchant's stamp in the corner.
-  - Narrator: "Every thread in this cloth was touched by a different pair of hands. Let's follow them: from a cotton field to a warehouse on the other side of the world. On the way, we'll find the answer."
-- **Emotional purpose:** intimacy and ownership. The cloth makes it *our* story before it becomes *the world's*.
-- **EN ▸** Anna: "This cloth went further than any of us ever have."
-- **TE ▸** Ammamma's trunk, Telugu household detail. Anna: "ఇది మన తీరం నుంచి లండన్ దాకా వెళ్లింది."
-- **Transition:** map unfolds, match cut to a real cotton field.
-
----
-
-## CHAPTER 1 — Was India really that rich? (1:20–3:30) · Short S1
-- **Opening question:** "Was India really 'the golden sparrow', or is that just a story we tell ourselves?"
-- **Cloth stage:** a cotton field in the Deccan black soil, around 1680 **[DRAM]**.
-
-| Beat | Time | Narration outline | Label | Visual |
-|---|---|---|---|---|
-| 1.1 | 1:20–1:45 | A farmer's family picks cotton at dawn. Cotton has grown on the subcontinent for thousands of years; Indus sites have some of the earliest cotton textile evidence in the world. | DOC / DRAM | AI reconstruction: field, family, ox; then real Mehrgarh/Indus cotton evidence image (fact-check) |
-| 1.2 | 1:45–2:20 | **The number.** Economist Angus Maddison estimated India's share of world output: ~24% in 1700. Britain: ~3%. By 1950: ~4%. | EST | Animated bar or map, sourced chip |
-| 1.3 | 2:20–2:55 | **The revelation (the honest twist):** this does *not* mean every Indian was rich. India held roughly a fifth to a quarter of the world's people. The share was large because India was huge and it *made things*. Average income per person was close to the world average and below parts of Western Europe. | EST | Same map: population dots appear over the output bar |
-| 1.4 | 2:55–3:15 | **Everyday India:** most people were farmers; villages kept records through village accountants; learning lived in pathshalas, madrasas and temple schools, mostly for the few. Kerala astronomers (the Madhava school, Yuktibhasa c. 1530) worked out infinite series centuries before Europe. Literacy was limited, and caste fixed many people's work from birth. | DOC | Real manuscript image (Yuktibhasa / palm leaf, fact-check), village AI scene |
-| 1.5 | 3:15–3:30 | **Transition:** "So what made this land so productive? Here's a clue. The world didn't want India's gold. It wanted something much humbler… and this field is where it starts." The farmer's hand closes on a cotton boll. | — | Cotton boll macro, then a spinning wheel |
-
-- **Emotional purpose:** pride corrected by honesty, which builds trust in everything that follows.
-- **EN ▸** Comparison rows: China ~22%, India ~24%, Western Europe total ~22% in 1700 (Maddison). Asia as the world's workshop.
-- **TE ▸** The cotton fields are shown as Deccan black soil, with a line that cotton from these regions fed the Coromandel looms (coastal Andhra). The Kerala-school beat is kept short, and one line is added: the Telugu village **karanam** kept the land records.
-- **Fact-check flags:**
-  - Maddison numbers: re-verify against the Maddison Project table.
-  - India's population share in 1700 (~23–27%): verify a range from two sources and say "about a quarter".
-  - Indus cotton (Mehrgarh, c. 5000 BCE, cotton seeds and fibres): verify the wording.
-
----
-
-## CHAPTER 2 — The cloth the world wanted (3:30–6:15) · Short S2
-- **Opening question:** "Why would a country *ban* a fabric?"
-- **Cloth stage:** spinner → weaver → dyer.
-
-| Beat | Time | Narration outline | Label | Visual |
-|---|---|---|---|---|
-| 2.1 | 3:30–3:55 | **Spinner.** A woman spins at home. Spinning was mostly women's work, done between other chores. It takes many spinners to keep one loom busy. | DOC (general) / DRAM | AI: courtyard charkha at oil-lamp light |
-| 2.2 | 3:55–4:25 | **Weaver.** Pit looms, a whole family working. Weavers often worked on *advances* from brokers, who set the price. The skill was world-class, but the weaver often had little say over the price. | DOC | AI: pit loom; real 19th-c. photo of weavers (BL/Wellcome, fact-check licence) |
-| 2.3 | 4:25–5:00 | **Dyer, the real secret.** Europe could dye cloth; India could make colours that *didn't wash out*. A kalam (pen) draws with mordants, then come chay root reds, indigo vats and wax resist, over weeks of steps. Europeans spent decades trying to copy it; a French Jesuit's letters from India (Coeurdoux, 1740s) were among the first to explain it. | DOC | Met palampore detail; AI dyer at river; diagram of mordant steps |
-| 2.4 | 5:00–5:25 | **Muslin aside:** in Bengal, Dhaka muslin was so fine it was called "woven air". Cloth was famously said to pass through a ring, from a cotton that grew only along the Meghna. | DOC / "said to" for the ring | V&A or Met muslin item; portrait of a muslin-clad sitter |
-| 2.5 | 5:25–6:00 | **The ban (precise):** Indian cotton became Europe's craze. **France** banned printed calicoes in **1686**. **England's 1700 Act** banned *imports* of printed or painted calicoes for use at home (re-export still allowed). The **1721 Act** banned *wearing or using* them, with exceptions. Repeal came in **1774**. These laws protected wool and silk weavers, and they show how good Indian cloth was. | DOC | Engraving of the 1719 Spitalfields calico riots (fact-check); the Act's title page |
-| 2.6 | 6:00–6:15 | **Transition:** "Our cloth is finished. Now it needs a buyer. And on the coast of the Deccan there was a port where the whole world came shopping." Cloth folded into a bundle, a broker's stamp pressed on it. | — | Stamp macro, then the sea |
-
-- **Emotional purpose:** wonder at the skill, then the injustice of the weaver's share, then astonishment that a country banned it.
-- **EN ▸** The global spread: Indian cloth bought Indonesian spices, was traded into West Africa, and clothed Southeast Asia. In Europe "chintz" and "calico" (from Calicut) entered the language. A world map of cloth routes.
-- **TE ▸** The dyer beat is set openly on the **Coromandel coast: Machilipatnam and Palakollu** villages. The word **kalamkari** is used here and connected to today's Pedana / Machilipatnam block-printing and the Srikalahasti pen style. Muslin is kept as a 10-second aside.
-- **Fact-check flags:**
-  - Whether the 1700 Act's import ban covered "dyed" cloth: verify against the Act's text.
-  - Spitalfields 1719–20 riots: verify the dates.
-  - "Calico" from Calicut: the standard etymology, keep.
-  - Pedana and Srikalahasti today: present-day crafts, labelled "today".
-
----
-
-## CHAPTER 3 — Golconda & Machilipatnam (6:15–8:40) · Short S3
-- **Opening question:** "Golconda is famous for diamonds. So why did merchants from Persia to the Netherlands really crowd its port?"
-- **Cloth stage:** broker → market → port.
-
-| Beat | Time | Narration outline | Label | Visual |
-|---|---|---|---|---|
-| 3.1 | 6:15–6:45 | **The kingdom.** The Qutb Shahi kingdom of Golconda (1518–1687) ruled much of today's Telangana and Andhra. Its port was **Machilipatnam** (Masulipatnam) on the Krishna delta. | DOC | Real Golconda fort photo; 17th-c. Dutch map of Masulipatnam (Rijksmuseum, fact-check) |
-| 3.2 | 6:45–7:25 | **The port.** Ships from Persia, Arabia, Burma and the Malay world. The **Dutch arrived in 1605–06, the English in 1611.** Brokers and interpreters (dubashes) between foreigners and weaving villages. Persian merchants in the court. | DOC | AI reconstruction of the harbour; real Dutch engraving |
-| 3.3 | 7:25–8:00 | **The diamonds (second, not first).** The mines near **Kollur** on the Krishna (today's Guntur district). Until Brazil's discoveries in the 1720s, India was the world's only known source of diamonds. Tavernier, a French jeweller, visited from **1638** and wrote of huge crowds of workers; one account says 60,000 at Kollur. Many of the world's famous diamonds are linked to Golconda; the **Kohinoor's exact origin is debated**. | DOC / EST (60k) / DISP (Kohinoor) | Tavernier's engraved diamond plates (public domain); mine reconstruction |
-| 3.4 | 8:00–8:25 | **The revelation:** diamonds made legends, but **cloth paid the bills**. What filled the ships at Machilipatnam year after year was cotton cloth. A diamond fits in a fist; the cloth trade filled whole fleets. | EST (scholarly consensus on trade volume) | Split screen: one diamond vs a ship's hold of bales |
-| 3.5 | 8:25–8:40 | **Transition:** our cloth is taxed at the port gate. A clerk writes it down. "And every time it changed hands, someone took a share. Who?" | — | Clerk's ledger macro |
-
-- **Emotional purpose:** recognition and wonder: a familiar place turns out to be a world hub.
-- **EN ▸** The chapter is framed as "the Coromandel coast, one of the busiest textile coasts on Earth". Golconda diamonds are tied to world jewels (the Hope diamond's ancestor, the Tavernier Blue, is widely traced to India; flag). It runs about 20 s shorter, and that time goes to Ch5.
-- **TE ▸** The full regional treatment. Kollur is "today in Guntur district". Machilipatnam is named as "our" port. The Qutb Shahis are shown as patrons of Telugu: Ibrahim Qutb Shah was honoured by Telugu poets as "Malki Bharama". One line on how the town declined after the 1687 Mughal conquest and as trade moved to Madras.
-- **Fact-check flags:**
-  - The Dutch first-factory date at Masulipatnam (1605 or 1606).
-  - The Tavernier "60,000" figure and its exact page.
-  - The Tavernier Blue → Hope link.
-  - "Malki Bharama".
-  - "Cloth over diamonds by value": find one scholarly citation (e.g. Arasaratnam, *Merchants, Companies and Commerce on the Coromandel Coast*).
-
----
-
-## F2. Trunk beat: the coin (8:40–9:00)
-- Chelli picks up the coin: "Whose face is this?" Anna: "There's no face, just writing. Kings put their names on money. But names on coins don't tell you who *really* held the wealth."
-- **Purpose:** a breath between halves; it sets up Ch4 without a recap.
-- **TE ▸** The coin is a Golconda-era **pagoda/hun** (gold) or a silver rupee.
-- **EN ▸** The coin is a Mughal silver rupee.
-- Shared visual, with a swapped coin close-up (two stills).
-
----
-
-## CHAPTER 4 — Who controlled the wealth? (9:00–11:15) · Short S4
-- **Opening question:** "If India made so much, why were the people who made it often so poor?"
-- **Cloth stage:** the tax on every step.
-
-| Beat | Time | Narration outline | Label | Visual |
-|---|---|---|---|---|
-| 4.1 | 9:00–9:30 | **Not one India.** There was no single country: kingdoms rose and fell. Show a changing map: **Vijayanagara** in the south (to 1565, Talikota), the **Deccan Sultanates** (Golconda, Bijapur…), and the **Mughal Empire** expanding south. | DOC | Animated changing map (the season's master map) |
-| 4.2 | 9:30–10:05 | **The system, not the kings.** Follow the money: (1) the farmer pays **land revenue**, often a third or more of the harvest [EST, Habib]; (2) collectors, **zamindars** and **jagirdars** take their cut; (3) the state funds armies and courts; (4) **bankers and moneylenders** finance everyone; (5) foreign merchants need a **farman** (royal permission) to trade. | EST / DOC | Flow diagram of a coin's path from field to court |
-| 4.3 | 10:05–10:35 | **The bankers.** Surat's **Virji Vora**, whom English records called the richest merchant of his time, lent the English company money again and again. Merchants were powerful, but they lived by the ruler's permission. | DOC (EIC records) / EST (wealth) | BL factory-record page (fact-check); AI Surat counting-house |
-| 4.4 | 10:35–11:00 | **The limitation (unflinching):** in **1630–32** famine struck the Deccan and Gujarat. An English traveller, Peter Mundy, wrote of roads blocked with the dead; estimates run to millions. Gujarat's weavers died or fled. Wealth at the top did not protect the people at the bottom. | DOC (Mundy) / EST (toll) | Somber still; Mundy's journal page; no graphic imagery |
-| 4.5 | 11:00–11:15 | **Transition:** "One thing every ruler wanted was trade, because trade meant taxes. And the richest trade arrived by sea." Our cloth is loaded onto a ship. | — | Bale hoisted aboard |
-
-- **Emotional purpose:** complexity and sobriety. This is the chapter that earns the film's credibility.
-- **EN ▸** The Mughals framed as one of the largest, richest states in the world. Akbar's revenue survey under **Todar Mal** (the *zabt* system) is the example.
-- **TE ▸** **Krishnadevaraya** (1509–29) writing in Telugu in *Amuktamalyada*, with the line "దేశ భాషలందు తెలుగు లెస్స". Golconda's Telugu ministers **Madanna and Akkanna**, who ran revenue under Abul Hasan Tana Shah (1674–86). The village **karanam**. The 1630–32 famine noted as reaching the Deccan.
-- **Fact-check flags:**
-  - The Habib land-revenue share wording: say "often a third to a half" only if sourced.
-  - The "దేశ భాషలందు తెలుగు లెస్స" attribution (Amuktamalyada): verify.
-  - The 1630–32 famine toll range: cite Mundy for Gujarat and say "millions" [EST]. Keep the Shah Jahan blame claim out, because it needs a citation.
-
----
-
-## CHAPTER 5 — Europe didn't discover India (11:15–13:15) · Short S5
-- **Opening question:** "In 1498 Vasco da Gama reached India. So who showed him the way?"
-- **Cloth stage:** the ship, as the story steps back in time.
-
-| Beat | Time | Narration outline | Label | Visual |
-|---|---|---|---|---|
-| 5.1 | 11:15–11:40 | **The ocean was already busy.** Before Europeans, Indian, Arab, Persian, African, Chinese and Malay sailors traded across the Indian Ocean. Gujarati merchants were a major presence in Malacca. Our cloth's ship sails on a network centuries old. | DOC | Animated master map: routes light up |
-| 5.2 | 11:40–12:05 | **The secret was the wind.** The **monsoon** blows one way for half the year and back the other way for the rest. Sailors timed whole voyages to it. | DOC | Wind animation over the map |
-| 5.3 | 12:05–12:40 | **Da Gama's guide.** At **Malindi** (East Africa) da Gama took on an experienced local pilot who guided him to **Calicut** (**20 May 1498**). Who the pilot was is **debated**: an Arab navigator (Ibn Majid, in older accounts) or a Gujarati pilot. | DOC / DISP | Portuguese map (Cantino 1502, public domain); AI dhow |
-| 5.4 | 12:40–13:00 | **The famous exchange.** A ship's journal records two merchants from Tunis greeting the first Portuguese ashore: "What brought you here?" The answer: **"Christians and spices."** The Zamorin of Calicut was **unimpressed** by da Gama's gifts. | DOC (*Roteiro*) | AI reconstruction of the Calicut court [DRAM]; Roteiro page |
-| 5.5 | 13:00–13:15 | **Transition:** "The Portuguese came with cannons. A century later, another set of Europeans arrived, this time asking politely." | — | Portuguese cannon, then a Company flag |
-
-- **Emotional purpose:** a reversal of the textbook. India is not "discovered"; Europe joins *India's* world.
-- **EN ▸** The full global frame. Europe wanted to get around the Venetian and Middle-Eastern middlemen who controlled the spice route to Europe. Adds the Indus–Mesopotamia line from the cold open as a callback.
-- **TE ▸** A short (≈10 s) regional echo: long before 1498, ports on our own coast traded overseas. Roman coins have been found in Andhra, and Buddhist sites like Amaravati sat on the trade routes. Da Gama is kept but slightly compressed.
-- **Fact-check flags:**
-  - The exact Roteiro wording and the merchants' origin (Tunis).
-  - The Malindi pilot scholarship: keep it as [DISP].
-  - Roman coins in Andhra: verify the find sites.
-
----
-
-## CHAPTER 6 — The company that came to trade (13:15–15:45) · Short S6
-- **Opening question:** "The East India Company came to India begging for permission. How did it end up giving the orders?"
-- **Cloth stage:** the warehouse.
-
-| Beat | Time | Narration outline | Label | Visual |
-|---|---|---|---|---|
-| 6.1 | 13:15–13:40 | **A company, not a country.** Merchants in London received a royal charter on **31 Dec 1600**. The Dutch company (VOC) followed in 1602. These were businesses with shareholders. | DOC | Charter image; London AI street |
-| 6.2 | 13:40–14:20 | **Asking permission.** **William Hawkins** reached **Surat in 1608** and went to **Jahangir's** court. In **1612** Thomas Best's ships beat a Portuguese fleet at **Swally**, which impressed Mughal officials. In **January 1613** the emperor ratified English trade at Surat. Sir **Thomas Roe**, ambassador of King James I, spent **1615–19** at the court. Steps, not one event. | DOC | Bichitr's painting of Jahangir, with James I as a minor figure (Freer, open access); Swally engraving |
-| 6.3 | 14:20–14:50 | **Along the coasts.** The English opened at **Machilipatnam (1611)**. In **1639** a local Nayaka granted them a strip of coast where they built **Fort St George, the beginning of Madras.** The Company paid **silver** for cloth: Europe had little India wanted. | DOC | Madras 17th-c. view (BL, fact-check); silver bars |
-| 6.4 | 14:50–15:20 | **The golden ticket.** In **1717** Emperor **Farrukhsiyar** granted a **farman**: duty-free trade in Bengal for a fixed **Rs 3,000 a year**, plus *dastak* passes. Company servants soon misused those passes, and Bengal's rulers grew angry. | DOC | Farman image (fact-check); a dastak pass |
-| 6.5 | 15:20–15:45 | **Our cloth arrives.** The ship docks in London. Bales are opened in the Company warehouse; our cloth is stamped, lotted and sold at the Company's sale. | DRAM / DOC (sales) | AI warehouse; real East India House print (public domain) |
-
-- **Emotional purpose:** creeping unease. The guests are becoming powerful, one permission at a time.
-- **EN ▸** Global framing: the Company is one of the world's first great corporations. Indian cloth fills Company sales in London. Surat is the main stage.
-- **TE ▸** **Machilipatnam 1611** and **Madras 1639** lead. The Madras grant came from **Damarla Venkatadri Nayaka**, a Telugu Nayaka under the declining Vijayanagara rulers. Surat is kept short.
-- **Fact-check flags:**
-  - Hawkins arriving Surat in 1608 (voyage left in 1607): reconcile with the season plan's "1607 contact", since the plan's date refers to the voyage.
-  - **"Permissions 1612 per British Library":** the evidence shows a treaty with the Surat governor in Oct 1612, ratified by Jahangir's letter on 6 Jan 1613. Wording to use: "1612–13".
-  - Damarla Venkatadri Nayaka and the 1639 grant.
-  - The 1717 farman terms (Banglapedia).
-  - The image licence for the Freer painting.
-
----
-
-## 7. Final 60 seconds (15:45–16:45)
-*Goal: the payoff of the cloth's journey, the turning point, an emotional return to the trunk and a Season 2 question that can't be ignored.*
-
-| Time | Visual | EN narration | TE narration |
-|---|---|---|---|
-| 15:45–15:55 | The cloth is lifted into lamplight in London; the auction gavel falls. | "Our cloth's journey ends here, half a world from the field where it began. For 150 years, this is how it worked: the Company asked, paid in silver, and traded." | "మన గుడ్డ ప్రయాణం ఇక్కడ ముగిసింది: పుట్టిన పొలానికి సగం ప్రపంచం దూరంలో. నూట యాభై ఏళ్లు కంపెనీ అనుమతి అడిగింది, వెండి ఇచ్చింది, వ్యాపారం చేసింది." |
-| 15:55–16:10 | Hard cut: mist over a mango grove; the Hayman painting of Clive and Mir Jafar. | "Then, on 23 June 1757, at Plassey in Bengal, about three thousand Company troops faced an army of around fifty thousand." | "1757 జూన్ 23. బెంగాల్‌లో ప్లాసీ అనే చోట ఒక మామిడి తోట. కంపెనీ వైపు దాదాపు మూడు వేల మంది. ఎదురుగా దాదాపు యాభై వేల సైన్యం." |
-| 16:10–16:20 | Battle lines; much of the Nawab's army stands still. | "Much of that army never fought. Its commander, Mir Jafar, had already made a secret deal." | "కానీ ఆ సైన్యంలో చాలామంది అసలు యుద్ధమే చేయలేదు. వాళ్ల సేనాని మీర్ జాఫర్ ముందే రహస్య ఒప్పందం చేసుకున్నాడు." |
-| 16:20–16:28 | Master map: only Bengal changes colour. | "Plassey did not conquer India. But for the first time, a trading company chose a kingdom's ruler." | "ప్లాసీతో భారతదేశం మొత్తం చేతికి రాలేదు. కానీ మొదటిసారి ఒక వ్యాపార కంపెనీ ఒక రాజ్యానికి రాజును ఎంచుకుంది." |
-| 16:28–16:34 | **EN:** a Manchester mill silhouette over the cloth. **TE:** the master map zooms to Machilipatnam, cannon smoke. | **EN:** "And on the other side of the world, the country that had banned India's cloth was learning to make its own." | **TE:** "రెండేళ్లకే, 1759లో, ఆ కంపెనీ తుపాకులు మన మచిలీపట్నం వైపు తిరిగాయి." |
-| 16:34–16:44 | Back to the trunk: Chelli holding the cloth, Anna holding the coin. | Chelli: "So the traders became kings?" Anna: "Not yet. But the question changed. For 150 years they paid for India's cloth with silver. What happens when they can collect India's taxes… and buy India's cloth with India's own money?" | చెల్లి: "అంటే వ్యాపారులు రాజులైపోయారా అన్నా?" అన్న: "ఇంకా కాదు. కానీ ప్రశ్న మారిపోయింది. ఇన్నాళ్లూ మన గుడ్డకు వాళ్లు వెండి ఇచ్చారు. మన పన్నులే వాళ్ల చేతికి వస్తే… మన గుడ్డను మన డబ్బుతోనే కొంటే?" |
-| 16:44–16:45+ | Trunk lid closes; title card: **SEASON 2: HOW A COMPANY BECAME AN EMPIRE**; channel end card. | (sting) | **బంగారు పిచ్చుక · సీజన్ 2: ఒక కంపెనీ సామ్రాజ్యం ఎలా అయింది** |
-
-**Facts behind the final 60 seconds:**
-- **Plassey [DOC/EST]:** the date is 23 June 1757. Troop numbers are "about" (≈3,000 vs ≈50,000). Mir Jafar's secret deal and his troops' non-participation are documented.
-- **EN line on Britain making its own cloth [DOC]:** phrased as a teaser for Season 2/3, with no causal claim.
-- **TE line on 1759 [DOC]:** in 1759 Col. Francis Forde captured Masulipatnam from the French. Fact-check: the date (April 1759) and that it was "taken from the French". Narration says "turned toward", not "conquered".
-- **Silver → taxes [DOC]:** the Company exported bullion to buy Indian goods, and Bengal revenue was used after the 1765 Diwani. This is Season 2's opening.
-
----
-
-## 8. Six Shorts: reuse plan (90–120 s each, each standalone)
-**Rules for every Short:**
-- Its own hook is recorded separately.
-- No recap.
-- It needs one line of context so it works when watched alone.
-- It ends with a tease of the next episode plus "full film linked".
-
-| Short | Unique hook (EN / TE) | Reused film beats | New narration needed | Teaser line | Est. |
+| # | Section | Time | Cloth stage | Year chip | Short |
 |---|---|---|---|---|---|
-| **S1** Was India really that rich? | EN: "By one estimate India made a quarter of the world's goods. Here's the catch." / TE: "ప్రపంచ ఉత్పత్తిలో నాలుగో వంతు మనదే. కానీ అసలు విషయం ఇది." | 1.2, 1.3, 1.4 | Hook + 1 context line + teaser | "Next: the cloth Britain made illegal." | ~100 s |
-| **S2** The cloth the world wanted | EN: "In 1721 Britain made it illegal to wear this." / TE: "మన తీరంలో తయారైన గుడ్డను బ్రిటన్ నిషేధించింది. ఎందుకు?" | 2.2, 2.3, 2.5 (+2.4 EN) | Hook + teaser | "Next: the port where the world came shopping." | ~110 s |
-| **S3** Golconda & Machilipatnam | EN: "The world's only diamonds came from one Indian kingdom, yet diamonds weren't its biggest business." / TE: "గోల్కొండ అంటే వజ్రాలు అనుకుంటాం. కానీ అసలు సంపద వేరే." | 3.1–3.4 | Hook + teaser | "Next: who actually kept all that money?" | ~115 s |
-| **S4** Who controlled the wealth? | EN: "India was rich. So why did its weavers starve?" / TE: "ఇంత సంపద ఉన్నా, నేసేవాళ్లు ఎందుకు పేదవాళ్లు?" | 4.1–4.4 | Hook + teaser | "Next: the man who showed Vasco da Gama the way." | ~110 s |
-| **S5** Europe didn't discover India | EN: "Vasco da Gama didn't find India. Someone led him there." / TE: "వాస్కో డ గామా భారత్‌ను కనిపెట్టలేదు. ఎవరో దారి చూపించారు." | 5.1–5.4 | Hook + teaser | "Next: the company that came asking permission." | ~100 s |
-| **S6** The company that came to trade | EN: "It came to India asking permission. 150 years later it chose a king." / TE: "అనుమతి అడిగి వచ్చిన కంపెనీ… రాజునే ఎంచుకుంది." | 6.1–6.4 + Final 60 s (Plassey) | Hook + Season 2 tease | "Season 2 is coming. The full film is linked." | ~120 s |
-
-**Recording plan:**
-- One film recording per language.
-- Plus six short hook/teaser pick-ups per language (12 lines).
-- So the Shorts cost almost no extra credits.
+| 0 | Cold open | 0:00–0:30 | museum chintz | 1721 | — |
+| F1 | The trunk | 0:30–1:00 | Ammamma's kalamkari | today | — |
+| 1 | Was India really that rich? | 1:00–2:50 | field | c. 1680 / 1700 | S1 |
+| 2 | The cloth the world wanted | 2:50–5:35 | spinner → weaver → dyer | c. 1680 → 1686/1700/1721 | S2 |
+| 3 | Golconda & Machilipatnam | 5:35–8:00 | broker → port | c. 1680 | S3 |
+| F2 | The coin | 8:00–8:15 | — | — | — |
+| 4 | Who controlled the wealth? | 8:15–10:30 | tax at every step | 1500s–1680s | S4 |
+| 5 | Europe didn't discover India | 10:30–12:30 | the ship (story steps back in time) | 1498 | S5 |
+| 6 | The company that came to trade | 12:30–15:45 | warehouse | 1600 → 1757 | S6 |
+| 7 | Final 60 s | 15:45–16:45 | trunk closes | 1757 → 1765 | S6 tail |
 
 ---
 
-## 9. Shared visual master plan
-**One asset list for both languages.** Only text overlays, map labels, three map zooms and two coin stills differ.
+## 0. Cold open (0:00–0:30)
 
-### A. Real artwork and archive (fact-check the licence and caption on each)
-| Use | Item | Source / licence | Flag |
+| Time | Visual | EN | TE |
 |---|---|---|---|
-| Cold open, Ch2, final | Coromandel chintz palampore (bed cover) | Met Open Access (e.g. 1982.66; also 448178, to confirm) | Confirm object, date and region on the Met page |
-| Ch2 | Dhaka muslin dress or textile | V&A / Met | Confirm open licence |
-| Ch2 | Spitalfields 1719 riots print / 1721 Act text | BL / Wikimedia (PD) | Confirm the date |
-| Ch3 | 17th-c. map or view of Masulipatnam | Rijksmuseum (CC0) | Confirm the item |
-| Ch3 | Tavernier's diamond engravings (*Six Voyages*, 1676) | PD | — |
-| Ch3 | Golconda fort / Qutb Shahi tombs | Unsplash/Wikimedia photo | Credit the photographer |
-| Ch1 | Palm-leaf manuscript (Kerala) | Wikimedia | Caption as "example manuscript" unless it really is the Yuktibhasa |
-| Ch5 | Cantino planisphere 1502 | PD | — |
-| Ch6 | Bichitr's *Jahangir Preferring a Sufi Shaikh to Kings* (James I in the corner) | Freer/Sackler open access | Confirm licence |
-| Ch6 | East India House print; Fort St George view | PD prints | Confirm the dates |
-| Final | Francis Hayman, *Robert Clive and Mir Jafar after Plassey* (c. 1760) | National Portrait Gallery London | **Licence check required**; fall back to a reconstruction |
+| 0:00–0:06 | Black. Loom sound. Macro of a painted flower on Met chintz (caption: "Coromandel coast, 18th c. · The Met"). | "In 1721, Britain made it illegal for most people to wear printed cotton like this." | "దాదాపు మూడు వందల ఏళ్ల క్రితం, బ్రిటన్‌లో చాలామందికి ఇలాంటి రంగుల అచ్చు గుడ్డ వేసుకోవడమే నేరం." |
+| 0:06–0:10 | Pull back to the full piece. Chip: "printed, painted & dyed calicoes · exceptions applied". | "Not a weapon. Not a drug. Cotton cloth, from India." | "ఎందుకంటే అది మన దేశం గుడ్డ. ఇలాంటివి ఎన్నో మన మచిలీపట్నం తీరం గ్రామాల్లోనే తయారయ్యేవి." |
+| 0:10–0:18 | Montage (1 s each): Indus beads → monsoon sea → Calicut → Golconda → Tavernier plate → Surat ships. | "For thousands of years the world sailed to India: for pepper, for diamonds, and above all for cloth." | "వేల ఏళ్లుగా ప్రపంచం మన దగ్గరికి వచ్చేది: మిరియాల కోసం, గోల్కొండ వజ్రాల కోసం, అన్నిటికంటే ఎక్కువగా మన గుడ్డ కోసం." |
+| 0:18–0:23 | World map, India glowing, "≈24% · Maddison est." | "By one estimate, around 1700 India produced almost a quarter of the world's output." | "ఒక అంచనా ప్రకారం, 1700 ప్రాంతంలో ప్రపంచ ఉత్పత్తిలో దాదాపు నాలుగో వంతు భారతదేశానిదే." |
+| 0:23–0:28 | A Company sail fills the frame. | "So how did a land the whole world came to… fall under the power of a company that came only to trade?" | "మరి ప్రపంచమంతా వెతుక్కుంటూ వచ్చిన ఈ నేల… వ్యాపారం కోసమే వచ్చిన ఒక కంపెనీ అధికారంలోకి ఎలా వెళ్లిపోయింది?" |
+| 0:28–0:30 | Title card. | THE GOLDEN SPARROW · SEASON 1 | బంగారు పిచ్చుక · సీజన్ 1 (English line below) |
 
-### B. Season master map (one animated map, reused everywhere)
-- **Layers:** Indus beads (cold open), cotton belts (Ch1), cloth routes (Ch2), Coromandel ports (Ch3), shifting kingdoms 1500–1700 (Ch4), monsoon winds and Indian Ocean routes (Ch5), Company factories 1608–1717 (Ch6), Bengal 1757 (finale).
-- **EN:** wider world frame.
-- **TE:** three zooms to the Coromandel coast and Golconda, with Telugu labels.
+---
 
-### C. AI reconstructions (the user's ChatGPT images, all tagged [DRAM])
-About 18 stills:
-1. trunk interior
-2. cotton field and family
-3. village / pathshala
-4. spinner
-5. pit loom
-6. dyer at the river
-7. broker's stamp
-8. Machilipatnam harbour
-9. Kollur mine
-10. port clerk
-11. Surat counting-house
-12. famine (restrained)
-13. dhow under monsoon sail
-14. Calicut court, 1498
-15. London charter street
-16. Madras sea-gate, 1640s
-17. Company warehouse, London
-18. Plassey mist
+## F1. The trunk (0:30–1:00) [DRAM]
 
-**Each image needs:**
-- period-correct clothing;
-- no invented insignia;
-- the "DRAMATIZED RECONSTRUCTION" corner tag.
+| Time | Beat |
+|---|---|
+| 0:30–0:42 | Anna and Chelli open Ammamma's trunk. On top is her kalamkari cloth: Rama, Sita and Lakshmana painted in reds and indigo. Chelli: "Ammamma's Ramayana cloth!" |
+| 0:42–0:52 | Anna: "Stories like the Ramayana and Mahabharata are still told, sung and painted on cloth like this. Three hundred years ago, the same kind of hands made a cloth that travelled all the way to London." |
+| 0:52–1:00 | Narrator: "That cloth is our reconstruction, but every step of its journey is real. Let's follow it." On-screen tag: DRAMATIZED RECONSTRUCTION · based on surviving museum chintz. Match cut from the painted cotton plant on Ammamma's cloth to a real field. |
 
-### D. Characters and look
-- Anna and Chelli: 6/6 renderer, smoothed talk, four appearances only.
-- Look: film grade, slow push-ins, the 6/6 standard.
+- **EN ▸** Anna's second line ends: "…all the way to London, and the world went crazy for it."
+- **TE ▸** "…మన తీరం నుంచి లండన్ దాకా."
+- **Purpose:** ownership; the epics shown as living culture; the continuity problem solved in one line.
 
-### E. Sound
-- Loom, sea, wind and auction gavel, all from `sfx/` if available.
-- To request from the user for `sfx/`:
+---
+
+## CHAPTER 1: Was India really that rich? (1:00–2:50) · S1
+**Question:** "Was India really 'the golden sparrow', or is that just a story we like?"
+
+| Beat | Time | Outline | Label | Visual |
+|---|---|---|---|---|
+| 1.1 | 1:00–1:20 | c. 1680. A farming family picks cotton at dawn. Cotton has been grown and woven in the subcontinent for thousands of years. | DOC / DRAM | AI field scene; Mehrgarh cotton-thread evidence (photo, licence check) |
+| 1.2 | 1:20–1:55 | **The number:** Maddison's estimate is ~24% of world output in 1700. Britain ~3%. By 1950, India ~4%. | EST | Animated bar on the master map |
+| 1.3 | 1:55–2:30 | **The honest twist:** India held about a quarter of the world's people. Output was large because India was vast and *made things*. Income per person was near the world average and below Western Europe's. | EST | Population dots over the bar |
+| 1.4 | 2:30–2:45 | **Who got what:** most people farmed. The harvest was shared, unequally, between farmer, landlord and state. Caste fixed many people's work from birth, and schooling reached only a few. | DOC | Village AI scene |
+| 1.5 | 2:45–2:50 | **Transition:** "The world didn't come for India's gold. It came for something humbler, and it starts here." A hand closes on a cotton boll. | — | Macro boll |
+
+- **EN ▸** One comparison line for 1700: China ~22%, India ~24%; Asia was the world's workshop.
+- **TE ▸** Deccan black-soil fields feeding the Coromandel looms; the village **karanam** keeps the land records.
+
+---
+
+## CHAPTER 2: The cloth the world wanted (2:50–5:35) · S2
+**Question:** "Why would a country *ban* a fabric?"
+
+| Beat | Time | Outline | Label |
+|---|---|---|---|
+| 2.1 | 2:50–3:15 | **Spinner:** mostly women, at home, between other chores. Many spinners feed one loom. | DOC (general) / DRAM |
+| 2.2 | 3:15–3:45 | **Weaver:** pit loom, the whole family. Often paid in **advance by brokers**, who largely set the price. World-class skill, little bargaining power. | DOC |
+| 2.3 | 3:45–4:20 | **Dyer, the real secret:** colours that *did not wash out*. A kalam draws the design in mordants; chay-root reds, indigo and wax resist follow over weeks. Europe struggled to copy this; a French Jesuit, Coeurdoux, sent home detailed descriptions in the 1740s. | DOC |
+| 2.4 | 4:20–4:40 | **Muslin aside:** Bengal's muslin, so fine it was called "woven air", from a cotton grown along the Meghna. | DOC |
+| 2.5 | 4:40–5:20 | **The bans:** **1686** France bans printed calicoes. **1700** England bans *importing* printed or painted calicoes for home use; re-export is still allowed. **1721** bans *wearing and using* printed, painted or dyed calico, with exceptions (muslins, neckcloths, fustians, all-blue calico). Repealed **1774**. The bans protected wool and silk weavers, and show how good Indian cloth was. | DOC |
+| 2.6 | 5:20–5:35 | **Transition:** "Our cloth is finished. Now it needs a buyer, and on the Deccan coast there was a port where the whole world came shopping." Broker's stamp on the bundle. | — |
+
+- **Timeline chip:** "our cloth c. 1680 → France 1686 → England 1700 & 1721".
+- **EN ▸**
+  - Global spread: Indian cloth was traded for spices in Southeast Asia and into West Africa.
+  - "Calico" (from Calicut) and "chintz" entered English.
+  - Map of cloth routes.
+- **TE ▸**
+  - The dyer is set on the **Coromandel coast (Machilipatnam, Palakollu)**.
+  - The word **kalamkari** is tied to the two styles today: Srikalahasti pen style and Machilipatnam/Pedana block printing (labelled "today").
+  - The muslin aside is cut to 10 s.
+
+---
+
+## CHAPTER 3: Golconda & Machilipatnam (5:35–8:00) · S3
+**Question:** "Golconda is famous for diamonds. So why did merchants from Persia to the Netherlands really crowd its port?"
+
+| Beat | Time | Outline | Label |
+|---|---|---|---|
+| 3.1 | 5:35–6:00 | The **Qutb Shahi kingdom of Golconda (1518–1687)** ruled much of today's Telangana and Andhra. Its sea gate was **Machilipatnam** on the Krishna delta. | DOC |
+| 3.2 | 6:00–6:40 | **The port:** ships to and from Persia, Arabia, Burma and the Malay world. **Dutch from 1605–06, English from 1611.** Brokers and interpreters link foreign buyers to weaving villages. | DOC |
+| 3.3 | 6:40–7:20 | **The diamonds (second, not first):** the **Kollur mines near Pulichintala on the Krishna**. Until Brazil's finds in the 1720s, India was the world's major diamond source; a few came from Borneo. English and Dutch visitors in the early 1620s counted 20–30,000 workers; later accounts say far more. Tavernier bought stones here in the mid-1600s, including the blue later re-cut as the Hope diamond. Where the Kohinoor was mined is **debated**. | DOC / EST / DISP |
+| 3.4 | 7:20–7:45 | **Revelation:** diamonds made the legends, but **cloth filled the ships**. A diamond fits in a fist; cloth filled whole fleets. | DOC (scholarly consensus) |
+| 3.5 | 7:45–8:00 | **Transition:** a clerk at the port gate writes down our cloth's duty. "Every time it changed hands, someone took a share. Who?" | — |
+
+- **EN ▸** Framed as "the Coromandel coast, one of the world's great textile coasts". Kept ~20 s shorter.
+- **TE ▸**
+  - Full regional depth: "మన మచిలీపట్నం".
+  - Telugu poets honoured **Ibrahim Qutb Shah as "Malki Bharama"**.
+  - One line on decline after the 1687 Mughal conquest, as trade shifted toward Madras.
+
+---
+
+## F2. The coin (8:00–8:15)
+- Chelli: "Whose face is on this coin?"
+- Anna: "No face, just a king's name. But a name on a coin doesn't tell you who really held the wealth."
+- **EN ▸** Mughal silver rupee.
+- **TE ▸** Golconda gold pagoda (*hun*).
+
+---
+
+## CHAPTER 4: Who controlled the wealth? (8:15–10:30) · S4
+**Question:** "If India made so much, why were the people who made it often so poor?"
+
+| Beat | Time | Outline | Label |
+|---|---|---|---|
+| 4.1 | 8:15–8:45 | **Not one India.** A changing map: **Vijayanagara**, whose capital was sacked after **Talikota (1565)** but which **continued under the Aravidu kings** from Penukonda, Chandragiri and Vellore; the **Deccan Sultanates**; the **Mughals** pushing south. | DOC |
+| 4.2 | 8:45–9:20 | **The system, not the kings:** (1) the farmer pays **land revenue**, by historians' estimates often a third to a half of the crop; (2) zamindars and jagirdars take their cut; (3) the state pays for armies and courts; (4) **bankers** lend to everyone; (5) foreign merchants need a **farman**, a royal permission. | EST / DOC |
+| 4.3 | 9:20–9:50 | **The bankers:** Surat's **Virji Vora**, whom English Company records called the richest merchant of his time, lent the Company money again and again. Merchants were powerful, but they lived by the ruler's permission. | DOC |
+| 4.4 | 9:50–10:15 | **The limitation:** in the **1630–32 famine** in Gujarat and the Deccan, the English traveller Peter Mundy wrote of roads lined with the dead; estimates run into the millions. Weavers died or fled. Wealth at the top did not protect the bottom. | DOC / EST |
+| 4.5 | 10:15–10:30 | **Transition:** "Every ruler wanted trade, because trade meant taxes. And the richest trade came by sea." Our cloth is hoisted aboard. | — |
+
+- **EN ▸** The Mughals as one of the world's largest states; Akbar and **Todar Mal's** revenue survey.
+- **TE ▸**
+  - **Krishnadevaraya** writing in Telugu (*Amuktamalyada*: "దేశ భాషలందు తెలుగు లెస్స").
+  - The Aravidu continuation.
+  - Golconda's Telugu ministers **Madanna and Akkanna** running revenue under Abul Hasan (to 1686).
+
+---
+
+## CHAPTER 5: Europe didn't discover India (10:30–12:30) · S5
+**Question:** "In 1498 Vasco da Gama reached India. So who showed him the way?"
+*Year chip: "Our cloth's ship sails on a sea already busy for centuries: 1498".*
+
+| Beat | Time | Outline | Label |
+|---|---|---|---|
+| 5.1 | 10:30–10:55 | Indian, Arab, Persian, African, Chinese and Malay traders already crossed the Indian Ocean. Gujarati merchants were a major presence at Malacca. | DOC |
+| 5.2 | 10:55–11:20 | **The monsoon:** winds that reverse each half-year, and voyages timed around them. | DOC |
+| 5.3 | 11:20–11:55 | At **Malindi**, da Gama took on a local pilot who guided him to **Calicut** (arriving 20 May 1498). The pilot's identity is **debated**: older stories name Ibn Majid, while many historians think he was a Gujarati pilot. | DOC / DISP |
+| 5.4 | 11:55–12:15 | The ship's journal records two merchants from Tunis asking the first Portuguese ashore what brought them; the reply was **"Christians and spices."** The Zamorin was unimpressed by da Gama's gifts. | DOC |
+| 5.5 | 12:15–12:30 | **Transition:** "The Portuguese came with cannons. A century later, the English came asking politely." | — |
+
+- **EN ▸** Europe wanted to get past the middlemen on the spice routes. Callback to the Indus beads.
+- **TE ▸** A ~10 s echo: Roman coins found in Andhra show our coast traded overseas long before 1498.
+
+---
+
+## CHAPTER 6: The company that came to trade (12:30–15:45) · S6 (+45 s)
+**Question:** "The East India Company arrived asking permission. How did it end up giving orders?"
+
+| Beat | Time | Outline | Label |
+|---|---|---|---|
+| 6.1 | 12:30–12:50 | **A company, not a country.** Royal charter, **31 Dec 1600**; the Dutch VOC follows in 1602. Shareholders, not soldiers. | DOC |
+| 6.2 | 12:50–13:30 | **Permission, step by step.** **Hawkins** reaches Surat in **1608** and goes to **Jahangir**. In **1612** Best's ships beat a Portuguese fleet at **Swally**; a deal with Surat's governor is ratified by the emperor in **January 1613**. **Thomas Roe**, King James's ambassador, stays at the court **1615–19**. | DOC |
+| 6.3 | 13:30–13:55 | **Along the coasts.** Machilipatnam **1611**. In **1639** a coastal strip is granted under the Aravidu king of Vijayanagara, through a local Nayaka; it becomes **Madras**. The Company pays mostly in **silver**, because Europe made little that India wanted. | DOC |
+| 6.4 | 13:55–14:20 | **The golden ticket, 1717.** Farrukhsiyar's **farman** grants duty-free Bengal trade for **Rs 3,000 a year**, plus *dastak* passes. Company men soon misuse the passes for private trade. | DOC |
+| 6.5 | 14:20–15:05 | **NEW: the traders arm themselves.** In the 1740s–50s, French and English companies fight in South India. They train Indian **sepoys** in European drill and **back rival claimants** to the thrones of the Carnatic and Hyderabad, the French first, from 1749. Trading companies have learned that **choosing rulers pays**. | DOC |
+| 6.6 | 15:05–15:30 | **NEW: the crisis.** Bengal's young Nawab **Siraj-ud-Daulah** is angered by Company fortification and pass abuse. He takes Calcutta in **1756**, and the Company sends an army from Madras. | DOC |
+| 6.7 | 15:30–15:45 | **Our cloth arrives.** A London dock, the warehouse, bales cut open; our cloth is stamped and sold at the Company's sale. | DRAM / DOC |
+
+- **EN ▸** The Company as one of the world's first great corporations; Surat and Bengal lead; Anglo-French rivalry as a world war fought partly in India.
+- **TE ▸**
+  - Machilipatnam 1611 and the 1639 Madras grant (**Damarla Venkatadri Nayaka**) lead.
+  - 6.5 is told regionally: the Hyderabad succession, and the French gaining the **Northern Circars** (coastal Andhra, including Machilipatnam) in **1753**.
+  - That sets up 1759.
+
+---
+
+## 7. Final 60 seconds (15:45–16:45): the same ending in both languages
+
+| Time | Visual | EN | TE |
+|---|---|---|---|
+| 15:45–15:55 | Gavel falls; our cloth in lamplight. | "Our cloth's journey ends here, half a world from its field. For 150 years the Company asked permission, paid in silver, and traded." | "మన గుడ్డ ప్రయాణం ఇక్కడ ముగిసింది. నూట యాభై ఏళ్లు కంపెనీ అనుమతి అడిగింది, వెండి ఇచ్చింది, వ్యాపారం చేసింది." |
+| 15:55–16:08 | Mist over a mango grove; Plassey reconstruction (Hayman painting if licence clears). | "Then, on 23 June 1757, at Plassey in Bengal, about three thousand Company troops faced an army of around fifty thousand." | "1757 జూన్ 23, బెంగాల్‌లో ప్లాసీ. కంపెనీ వైపు దాదాపు మూడు వేల మంది. ఎదురుగా దాదాపు యాభై వేల సైన్యం." |
+| 16:08–16:18 | Much of the Nawab's line stands still. | "Much of that army never fought. Its commander, Mir Jafar, had made a secret deal, and the Company helped put him on Bengal's throne." | "కానీ ఆ సైన్యంలో చాలామంది యుద్ధమే చేయలేదు. సేనాని మీర్ జాఫర్ ముందే రహస్య ఒప్పందం చేసుకున్నాడు. కంపెనీ అతన్నే బెంగాల్ నవాబుగా కూర్చోబెట్టింది." |
+| 16:18–16:28 | **EN:** master map with Bengal, Madras and Bombay footholds lighting up. **TE:** zoom to Machilipatnam. | **EN:** "Plassey did not conquer India. But in 1765 the Mughal emperor granted the Company the right to collect Bengal's revenue." | **TE:** "1759లో కంపెనీ సైన్యం ఫ్రెంచ్ వాళ్ల నుంచి మన మచిలీపట్నాన్ని స్వాధీనం చేసుకుంది. 1765లో బెంగాల్ పన్నులు వసూలు చేసే హక్కు కంపెనీకి వచ్చింది." |
+| 16:28–16:40 | Trunk: Chelli holds Ammamma's cloth, Anna holds the coin. | Anna: "For 150 years, they brought silver from across the world to buy India's cloth. Now they could pay for it with taxes collected in India itself." | అన్న: "నూట యాభై ఏళ్లు సముద్రాల అవతల నుంచి వెండి తెచ్చి మన గుడ్డ కొన్నారు. ఇప్పుడు ఇక్కడే వసూలు చేసిన పన్నులతోనే కొనగలరు." |
+| 16:40–16:45 | Lid closes; Season 2 card. | "What happens when a company that once needed permission to trade… begins collecting the taxes? THE GOLDEN SPARROW · SEASON 2." | "ఒకప్పుడు వ్యాపారానికి అనుమతి అడిగిన కంపెనీ… పన్నులే వసూలు చేయడం మొదలుపెడితే ఏమవుతుంది? బంగారు పిచ్చుక · సీజన్ 2." |
+
+---
+
+## 8. Shorts reuse (90–120 s each, standalone, no recap)
+
+| Short | Hook EN / TE | Reuses | Tease | Est. |
+|---|---|---|---|---|
+| S1 | "By one estimate India made a quarter of the world's output. Here's the catch." / "ప్రపంచ ఉత్పత్తిలో నాలుగో వంతు మనదే. కానీ అసలు విషయం ఇది." | 1.2–1.4 | "Next: the cloth Britain banned." | ~95 s |
+| S2 | "In 1721 Britain made it illegal for most people to wear this." / "మన తీరంలో తయారైన గుడ్డను బ్రిటన్ ఎందుకు నిషేధించింది?" | 2.2–2.5 | "Next: the port the world came shopping at." | ~110 s |
+| S3 | **"One Indian kingdom supplied many of the world's most famous diamonds, but its biggest business was something else."** / **"ప్రపంచ ప్రసిద్ధ వజ్రాలు ఎన్నో గోల్కొండ నుంచే. కానీ అసలు సంపద వేరే."** | 3.1–3.4 | "Next: who really kept the money?" | ~115 s |
+| S4 | "India was rich. So why did its weavers starve?" / "ఇంత సంపద ఉన్నా నేసేవాళ్లు ఎందుకు పేదవాళ్లు?" | 4.1–4.4 | "Next: who guided Vasco da Gama?" | ~110 s |
+| S5 | "Vasco da Gama didn't find India. Someone led him there." / "వాస్కో డ గామా భారత్‌ను కనిపెట్టలేదు. ఎవరో దారి చూపించారు." | 5.1–5.4 | "Next: the company that came asking permission." | ~100 s |
+| S6 | "It came asking permission. 150 years later it helped put a Nawab on Bengal's throne." / "అనుమతి అడిగి వచ్చిన కంపెనీ… బెంగాల్ నవాబునే మార్చేసింది." | 6.2, 6.4–6.6 + Plassey | "Season 2 is coming. The full film is linked." | ~120 s |
+
+**Recording pick-ups:** 12 hook/tease lines in all (6 per language).
+
+---
+
+## 9. Shared visual master plan (unchanged from v1 except as noted)
+- **Real artwork:**
+  - Met chintz/palampores, captioned with their real dates.
+  - V&A/Met muslin.
+  - Tavernier plates.
+  - Cantino map (1502).
+  - Rijksmuseum Masulipatnam view.
+  - Bichitr's *Jahangir Preferring a Sufi Shaikh to Kings* (Freer).
+  - East India House and Fort St George prints.
+  - Hayman's Clive & Mir Jafar (NPG: **licence check**; fall back to a reconstruction).
+- **New:**
+  - Ammamma's Ramayana kalamkari (an AI still or a real photo you supply; **preferred: a real family or market kalamkari photo**).
+  - Sepoy drill (period print or AI).
+  - Calcutta 1756 (period print).
+- **Master map:** EN keeps the world frame; TE gets three Coromandel/Golconda zooms with Telugu labels. The Kollur label reads "near Pulichintala, Krishna river".
+- **AI reconstructions:** ~19 stills, the v1 list plus a sepoy drill scene. Each is tagged [DRAM].
+- **Sound requests for `sfx/`:**
   - loom shuttle;
-  - wooden ship creak;
-  - crowd market (Indian);
-  - auction gavel;
-  - distant musket volley (Plassey).
+  - ship creak;
+  - Indian market crowd;
+  - gavel;
+  - distant musket volley.
 
 ---
 
-## 10. Sources (to be re-verified line by line at the script stage)
-- Maddison, *The World Economy: A Millennial Perspective* (OECD 2001) / Maddison Project Database: 1700 shares.
-- Calico Acts: [Britannica](https://www.britannica.com/event/Calico-Acts); [Wikipedia](https://en.wikipedia.org/wiki/Calico_Acts).
-- Chintz technique and Coeurdoux: [LiveHistoryIndia, Chintz](https://www.livehistoryindia.com); Met chintz essays; V&A.
-- Dhaka muslin: [Wikipedia](https://en.wikipedia.org/wiki/Dhaka_muslin).
-- Golconda / Kollur / Tavernier: [The Federal](https://thefederal.com); Tavernier, *Les Six Voyages* (1676).
-- Machilipatnam: [LiveHistoryIndia](https://www.livehistoryindia.com); S. Arasaratnam, *Merchants, Companies and Commerce on the Coromandel Coast 1650–1740*.
-- Vijayanagara: [Wikipedia, Medieval city of Vijayanagara](https://en.wikipedia.org/wiki/Medieval_city_of_Vijayanagara) (Paes).
-- Deccan famine 1630–32: [Wikipedia](https://en.wikipedia.org/wiki/Deccan_famine_of_1630%E2%80%931632) (Peter Mundy).
-- Virji Vora: [Wikipedia](https://en.wikipedia.org/wiki/Virji_Vora) (EIC Factory Records).
-- Hawkins / Swally / 1613 ratification: [Battle of Swally](https://en.wikipedia.org/wiki/Battle_of_Swally); [William Hawkins](https://en.wikipedia.org/wiki/William_Hawkins_(fl._c._1600)); [Hawkins' journal fragment, QDL](https://www.qdl.qa/en/archive/81055/vdc_100000001273.0x0001a7).
-- Vasco da Gama / *Roteiro*: [LiveHistoryIndia](https://www.livehistoryindia.com).
-- Kerala school: [Yuktibhāṣā](https://en.wikipedia.org/wiki/Yuktibh%C4%81%E1%B9%A3%C4%81).
-- 1717 farman: [Banglapedia, Farrukh Siyar's Farman](https://en.banglapedia.org).
-- Plassey: [Wikipedia](https://en.wikipedia.org/wiki/Battle_of_Plassey); [National Army Museum](https://www.nam.ac.uk).
-- Met palampores: [1982.66](https://www.metmuseum.org/toah/works-of-art/1982.66); [448178](https://www.metmuseum.org/art/collection/search/448178).
-- Still to source at the script stage: Habib (*Agrarian System of Mughal India*) for revenue share; Madanna/Akkanna; Damarla Venkatadri Nayaka grant; Forde's 1759 Masulipatnam siege; "Malki Bharama"; Roman coins in Andhra.
-
----
-
-## 11. Decisions needed from you
-1. **The cloth's year (~1680):** set before the 1687 fall of Golconda, so the TE story keeps a living Qutb Shahi port. OK?
-2. **Release date:** the plan says Sun Nov 8. The film is ~16:45 bilingual with ~18 reconstruction stills, which is tight but possible if approved today or tomorrow. ChatGPT earlier suggested Nov 15. Please confirm.
-3. **Different final-60 s lines** (EN: Britain begins making its own cloth; TE: 1759 Machilipatnam). OK?
+## 10. Remaining unresolved facts (they do not block approval; all close before recording)
+1. **Kollur mine's present-day mandal and district** (likely Palnadu, near Pulichintala). Kept off screen until confirmed.
+2. **Methwold's Kollur visit: 1621 or 1622,** and the exact worker figure. The Hakluyt edition of Methwold's *Relations of Golconda* gives the page.
+3. **Exact text of the 1700 Act:** whether "dyed" calicoes were covered, or only "painted, dyed, printed or stained". Check 11 & 12 Will. III c.10.
+4. **Hayman painting licence** (NPG).
+5. **Whether "దేశ భాషలందు తెలుగు లెస్స" is from *Amuktamalyada*,** with verse number.
+6. **The "Malki Bharama" title** and its source poet.
+7. **Roman coin finds in Andhra:** which sites to name.
+8. **Page numbers for the scholarly works** in `sources_verification.md`. I won't invent pages; each is marked 🔶 until checked.
