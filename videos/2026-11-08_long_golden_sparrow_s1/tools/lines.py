@@ -68,10 +68,10 @@ a('1.3','NAR','EXP','steady',
   "ఈ నేలపై **వేల ఏళ్లుగా** పత్తి పండిస్తున్నారు, నేస్తున్నారు.",
   'C7','','Archaeological cotton evidence (Mehrgarh) or Indus textile impression (licence-confirmed image only)')
 a('1.4','NAR','EXP','clear, numbers slower',
-  "Now, the big number. ⏸ The economic historian **Angus Maddison** estimated that in 1700, India produced about **24 percent** of the world's output. ⏸ Britain? About **3**. ⏸ By 1950, India's share had fallen to about **4**.",
+  "Now, the big number. ⏸ The economic historian **Angus Maddison** estimated that in 1700, India produced about **24 percent** of the world's output. ⏸ Britain? About **3**. ⏸ By 1950, the Republic of India's share was about **4**.",
   'స్పష్టంగా · అంకెలు నెమ్మదిగా',
-  "ఇప్పుడు అసలు లెక్క. ⏸ ఆర్థిక చరిత్రకారుడు **Angus Maddison** అంచనా ప్రకారం, 1700లో ప్రపంచ ఉత్పత్తిలో మన వాటా దాదాపు **24 శాతం**. ⏸ బ్రిటన్? దాదాపు **3 శాతం**. ⏸ 1950 నాటికి మన వాటా దాదాపు **4 శాతానికి** పడిపోయింది.",
-  'C8','S1 (from "The economic historian")','Animated bars on the master map: India 24 / Britain 3 → 1950 India 4; chip "MADDISON (OECD 2001) · ESTIMATES"')
+  "ఇప్పుడు అసలు లెక్క. ⏸ ఆర్థిక చరిత్రకారుడు **Angus Maddison** అంచనా ప్రకారం, 1700లో ప్రపంచ ఉత్పత్తిలో మన వాటా దాదాపు **24 శాతం**. ⏸ బ్రిటన్? దాదాపు **3 శాతం**. ⏸ 1950 నాటికి, స్వతంత్ర భారతదేశం వాటా దాదాపు **4 శాతం**.",
+  'C8','S1 (from "The economic historian")','Animated bars on the master map: India 24 / Britain 3 → 1950 India 4; source note "MADDISON ESTIMATES (OECD 2001) · 1700 = UNDIVIDED SUBCONTINENT · 1950 = REPUBLIC OF INDIA ONLY (EXCL. PAKISTAN & BANGLADESH) · AREAS DIFFER"')
 a('1.4e','NAR','EXP','light',
   "China made about **22**. ⏸ Together, India and China made almost **half** of everything on Earth.",
   '', '', 'C8','S1','China bar joins; "≈ HALF" bracket', only='en')
@@ -212,10 +212,10 @@ a('3.6','NAR','EXP','explaining',
   "కృష్ణా నది ఒడ్డున, ఇప్పటి **పులిచింతల** దగ్గర, **కొల్లూరు** గనులు ఉండేవి. ⏸ **1720లలో** బ్రెజిల్‌లో వజ్రాలు దొరికే వరకు, ప్రపంచానికి వజ్రాలు **ప్రధానంగా** భారతదేశం నుంచే వచ్చేవి. **బోర్నియో** నుంచి కొన్ని మాత్రమే.",
   'C16,C19','S3','Map: Kollur pin "KOLLUR MINES · NEAR PULICHINTALA, KRISHNA RIVER" (no district label); inset world: India large, Borneo small, Brazil "1720s"')
 a('3.7','NAR','EXP','vivid',
-  "Visitors in the early 1620s counted **tens of thousands** of workers here: men, women and children. ⏸ Later, the French jeweller **Tavernier** bought a great **blue** diamond from Golconda's mines. Re-cut, it became the **Hope diamond**.",
+  "Visitors in the early 1620s counted **tens of thousands** of workers here: men, women and children. ⏸ Later, the French jeweller **Tavernier** acquired a remarkable **blue** diamond in India, possibly from the Golconda region. It eventually became the **Hope diamond**.",
   'వర్ణిస్తూ',
-  "1620ల మొదట్లో ఇక్కడికి వచ్చిన విదేశీయులు, **పదుల వేల** మంది కూలీలను చూశారు: మగవాళ్లు, ఆడవాళ్లు, పిల్లలు కూడా. ⏸ తర్వాత ఫ్రెంచ్ నగల వ్యాపారి **Tavernier**, గోల్కొండ గనుల నుంచి ఒక పెద్ద **నీలి** వజ్రం కొన్నాడు. దాన్ని మళ్లీ సానబెడితే, అదే ఈరోజు ప్రసిద్ధ **Hope diamond**.",
-  'C17,C18','S3','[DRAM] Mine pits with crowds; Tavernier\'s engraved diamond plate (PD, 1676)')
+  "1620ల మొదట్లో ఇక్కడికి వచ్చిన విదేశీయులు, **పదుల వేల** మంది కూలీలను చూశారు: మగవాళ్లు, ఆడవాళ్లు, పిల్లలు కూడా. ⏸ తర్వాత ఫ్రెంచ్ నగల వ్యాపారి **Tavernier**, భారతదేశంలో ఒక అరుదైన **నీలి** వజ్రం కొన్నాడు, బహుశా గోల్కొండ ప్రాంతం నుంచి. చివరికి అదే ప్రసిద్ధ **Hope diamond** అయింది.",
+  'C17,C18','S3','[DRAM] Mine pits with crowds; Tavernier\'s engraved diamond plate (PD, 1676); chip "EXACT MINE UNKNOWN"')
 a('3.8','NAR','EXP','careful',
   "Where the **Kohinoor** was mined… historians still **debate**.",
   'జాగ్రత్తగా',
@@ -406,10 +406,10 @@ a('6.8','NAR','EXP','turn',
   "మన గుడ్డ ప్రయాణం అక్కడితో ముగిసింది. ⏸ కానీ **కంపెనీ** కథ ఆగలేదు.",
   '','','Year chip spins c.1680 → 1717')
 a('6.8b','NAR','EXP','storytelling, a little wry',
-  "And the Company had already tried **force** once. ⏸ In **1686**, it went to war against the Mughal emperor **Aurangzeb**. ⏸ It **lost**. ⏸ To be allowed to trade again, it had to apologise and pay a fine of **150,000 rupees**.",
+  "And the Company had already tried **force** once. ⏸ In **1686**, it went to war against the Mughal emperor **Aurangzeb**… and **lost**. ⏸ Its envoys had to beg the emperor's **pardon**, pay a heavy **fine**, and promise to behave. ⏸ Only then could it trade again. And in **1690**, it set up a new base in Bengal: **Calcutta**.",
   'కథ చెప్తూ',
-  "నిజానికి కంపెనీ ఒకసారి **బలప్రయోగానికి** ప్రయత్నించింది. ⏸ **1686**లో మొఘల్ చక్రవర్తి **ఔరంగజేబుతో** యుద్ధానికి దిగింది. ⏸ **ఓడిపోయింది**. ⏸ మళ్లీ వ్యాపారం చేయనివ్వమని క్షమాపణ చెప్పి, **లక్షన్నర రూపాయల** జరిమానా కట్టాల్సి వచ్చింది.",
-  'C51','S6','Mughal fleet blockading Bombay (period print or AI); chip "ANGLO-MUGHAL WAR 1686–90"')
+  "నిజానికి కంపెనీ ఒకసారి **బలప్రయోగానికి** ప్రయత్నించింది. ⏸ **1686**లో మొఘల్ చక్రవర్తి **ఔరంగజేబుతో** యుద్ధానికి దిగి… **ఓడిపోయింది**. ⏸ దాని దూతలు చక్రవర్తిని **క్షమాపణ** వేడుకున్నారు, భారీ **జరిమానా** కట్టారు, ఇక బుద్ధిగా ఉంటామని మాటిచ్చారు. ⏸ అప్పుడే మళ్లీ వ్యాపారానికి అనుమతి దొరికింది. **1690**లో బెంగాల్‌లో కొత్త స్థావరం పెట్టింది: **కలకత్తా**.",
+  'C51','S6','Mughal fleet blockading Bombay (period print or AI); chip "ANGLO-MUGHAL WAR 1686–90 · MUGHAL VICTORY" (fine amount shown only if verified in Keay, India: A History, p. 372)')
 a('6.9','NAR','EXP','precise',
   "In **1717**, Emperor **Farrukhsiyar** granted it a farman: duty-free trade in **Bengal**, for a fixed **3,000 rupees** a year, with passes called **dastaks**. ⏸ Company men soon **misused** those passes for their own private trade.",
   'ఖచ్చితంగా',
@@ -461,9 +461,9 @@ a('7.5','NAR','EXP','building',
   "ప్లాసీ భారతదేశాన్ని **జయించలేదు**. ⏸ కానీ **1764**లో **బక్సర్‌లో** కంపెనీ మళ్లీ గెలిచింది. ⏸ **1765**లో బెంగాల్, బీహార్, ఒరిస్సాల **ఆదాయం** వసూలు చేసే హక్కు, మొఘల్ చక్రవర్తి నుంచి కంపెనీకి వచ్చింది.",
   'C45,C47','S6','Map: Bengal only changes colour; Buxar marker 1764; diwani scroll 1765 (EN also shows Madras/Bombay footholds)')
 a('7.6','ANNA','DLG','quiet, heavy',
-  "Think about our cloth. ⏸ For a hundred and fifty years, they brought **silver** from across the world to buy cloth like it. ⏸ Now… they could pay with **taxes** collected in India itself.",
+  "Think about our cloth. ⏸ For a hundred and fifty years, they brought **silver** from across the world to buy cloth like it. ⏸ Now… they could increasingly pay with **taxes** collected in India itself.",
   'నెమ్మదిగా · బరువుగా',
-  "మన గుడ్డ గురించి ఆలోచించు. ⏸ నూట యాభై ఏళ్లు, సముద్రాల అవతల నుంచి **వెండి** తెచ్చి ఇలాంటి గుడ్డ కొన్నారు. ⏸ ఇప్పుడు… ఇక్కడే వసూలు చేసిన **పన్నులతోనే** కొనగలరు.",
+  "మన గుడ్డ గురించి ఆలోచించు. ⏸ నూట యాభై ఏళ్లు, సముద్రాల అవతల నుంచి **వెండి** తెచ్చి ఇలాంటి గుడ్డ కొన్నారు. ⏸ ఇప్పుడు… ఇక్కడే వసూలు చేసిన **పన్నులతోనే** ఎక్కువగా కొనగలరు.",
   'C48','S6','[DRAM] Trunk: Chelli holds Ammamma\'s cloth, Anna holds the coin')
 a('7.7','CHELLI','DLG','small, uneasy',
   "So the traders became **kings**?",

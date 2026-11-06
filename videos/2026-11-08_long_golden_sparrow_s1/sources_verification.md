@@ -21,7 +21,7 @@ Wikipedia is used only as a locator; it is never the cited authority.
 | C5 | Britain had textile and calico printing before 1757 (London from c. 1670s–90s) | DOC | Riello 2013; V&A, *Chintz: Indian Textiles for the West* (R. Crill, 2008) | 🔶 |
 | C6 | Indus–Mesopotamia bead trade, c. 2500–2000 BCE | DOC | J.M. Kenoyer, *Ancient Cities of the Indus Valley Civilization* (OUP 1998); Met, *Art of the First Cities* (2003) | 🔶 |
 | C7 | Early cotton evidence at Mehrgarh | DOC | C. Moulherat et al., "First Evidence of Cotton at Neolithic Mehrgarh", *Journal of Archaeological Science* 29 (2002) | 🔶 |
-| C8 | India ~24% of world GDP in 1700; Britain ~3%; India ~4% in 1950; China ~22% | EST | A. Maddison, *The World Economy: A Millennial Perspective* (OECD 2001), Table B-18 | 🔶 table numbers |
+| C8 | India ~24% of world GDP in 1700; Britain ~3%; China ~22%; the Republic of India ~4% in 1950. **Areas differ:** 1700 = undivided subcontinent, 1950 = Republic of India only (shown in the on-screen note) | EST | A. Maddison, *The World Economy: A Millennial Perspective* (OECD 2001); 1700 GDP levels India 90,750 / world 371,369 (= 24.4%) | ✅ 1700 / 🔶 1950 table |
 | C9 | India ~a quarter of world population in 1700; GDP per head near the world average, below Western Europe | EST | Maddison 2001, Tables B-10 and B-21 (1990 int. $) | 🔶 |
 | C10 | Weavers worked on broker advances; brokers set the terms | DOC | S. Arasaratnam, *Merchants, Companies and Commerce on the Coromandel Coast 1650–1740* (OUP 1986); O. Prakash, *European Commercial Enterprise in Pre-Colonial India* (CUP 1998) | 🔶 |
 | C11 | Mordant dyeing: kalam, chay root, indigo, wax resist; colourfast | DOC | Crill 2008 (V&A); A. Peck (ed.), *Interwoven Globe* (Met 2013) | 🔶 |
@@ -31,7 +31,7 @@ Wikipedia is used only as a locator; it is never the cited authority.
 | C15 | Dutch at Masulipatnam 1605/06; English 1611 (the *Globe*) | DOC | W.H. Moreland (ed.), *Peter Floris: His Voyage to the East Indies in the Globe 1611–1615* (Hakluyt Society 1934); Arasaratnam 1986 | 🔶 Dutch year |
 | C16 | Kollur mines: Krishna south bank near Pulichintala; distinct from Kollur in former Guntur (now Bapatla) district | DOC | 1960s survey coordinates (16°43′N 80°02′E) via the Kollur Mine summary | ✅ location / ❓ present mandal and district (kept off screen) |
 | C17 | "Tens of thousands" of workers in the early 1620s | DOC (contemporary estimate) | Methwold, *Relations of the Kingdome of Golchonda* (Purchas, 1626); Moreland ed. (Hakluyt 1931). Methwold visited in 1621; the 20–30,000 figure is credited to Methwold and Soury | ✅ visit year / 🔶 page |
-| C18 | Tavernier bought a great blue diamond from Golconda's mines; re-cut, it became the Hope (narration says "Golconda's mines", not Kollur) | DOC | Tavernier, *Travels in India*, tr. V. Ball (1889); Smithsonian NMNH, Hope Diamond history | 🔶 |
+| C18 | Tavernier acquired a large blue diamond in India (purchase recorded 1666), **possibly from the Golconda region**; exact mine unknown; it later became the Hope | DOC / DISP (mine) | Smithsonian NMNH, Hope Diamond history; Tavernier, *Travels in India*, tr. Ball (1889) | ✅ wording |
 | C19 | India was the major source before Brazil (1720s), with a few from Borneo | DOC | Jack Ogden, Gem-A article (2023); Ogden, *Diamonds: An Early History of the King of Gems* (Yale 2018) | ✅ article / 🔶 book page |
 | C20 | Kohinoor's mine of origin is debated | DISP | W. Dalrymple & A. Anand, *Koh-i-Noor* (Bloomsbury 2017) | 🔶 |
 | C21 | Cloth, not diamonds, was the bulk of the Coromandel export trade | DOC (consensus) | Arasaratnam 1986; K.N. Chaudhuri, *The Trading World of Asia and the English East India Company 1660–1760* (CUP 1978) | 🔶 |
@@ -64,7 +64,7 @@ Wikipedia is used only as a locator; it is never the cited authority.
 | C48 | After Plassey and 1765, silver imports to Bengal fell sharply and Company purchases were increasingly financed from revenues | DOC (consensus) | Marshall 1987; Chaudhuri 1978; O. Prakash 1998 | 🔶 |
 | C49 | The 1680 cloth and its makers, the family, broker, clerk and London sale | DRAM | Representative of documented processes (C10–C13, C15) | — |
 | C50 | Ammamma's Ramayana kalamkari | DRAM | Srikalahasti kalamkari depicting the epics (documented craft tradition; Crill 2008) | — |
-| C51 | Anglo-Mughal war 1686–90: the Company attacked and lost; the Mughals besieged Bombay; the Company apologised and paid Rs 1,50,000 to resume trade | DOC | J. Keay, *The Honourable Company* (1993); W. Dalrymple, *The Anarchy* (2019), ch. 1; Historic UK summary | 🔶 |
+| C51 | Anglo-Mughal war 1686–90: a Mughal victory; Bombay besieged; the Company's envoys sought pardon, paid a fine and promised better conduct; trading privileges restored; Calcutta base set up in 1690. The ₹1,50,000 figure is **not in the voice** until checked | DOC / 🔶 amount | J. Keay, *India: A History*, p. 372; A. Kohli, *Imperialism and the Developing World* (2020), pp. 42–44; E. Erikson, *Between Monopoly and Free Trade* (2016), p. 193; LiveHistoryIndia | 🔶 amount |
 | C52 | Dutch trading presence at Palakollu (TE 2.5) | DOC | Arasaratnam 1986 | 🔶 (fall back to "villages around Machilipatnam") |
 
 ## Museum images

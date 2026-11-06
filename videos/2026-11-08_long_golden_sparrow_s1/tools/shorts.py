@@ -10,7 +10,7 @@ NEW = {
           "దానికి జవాబు: బ్రిటన్ **నిషేధించేంత** గొప్ప గుడ్డ. ⏸ అది తర్వాతి ఎపిసోడ్‌లో. పూర్తి సినిమా link లో ఉంది.")),
  'S2': dict(
    hook=('REUSE:0.1', 'REUSE:0.1'),
-   reuse=['2.2', '2.3', '2.4', '2.5', '2.6', '2.7', '2.8', '2.9', '2.10', '2.11', '2.12', '2.13', '2.14', '2.15'],
+   reuse=['B2', '2.2', '2.3', '2.4', '2.5', '2.6', '2.7', '2.8', '2.9', '2.10', '2.11', '2.12', '2.13', '2.14', '2.15'],
    tease=("Where did the world come to **buy** this cloth? ⏸ A port on India's east coast. ⏸ Next episode. The full film is linked.",
           "ఈ గుడ్డ కొనడానికి ప్రపంచం ఎక్కడికి వచ్చేది? ⏸ మన **మచిలీపట్నం**. ⏸ తర్వాతి ఎపిసోడ్. పూర్తి సినిమా link లో ఉంది.")),
  'S3': dict(
@@ -34,12 +34,16 @@ NEW = {
  'S6': dict(
    hook=("It came to India asking **permission**. ⏸ A hundred and fifty years later, it helped put a **Nawab** on Bengal's throne.",
          "**అనుమతి** అడిగి వచ్చిన కంపెనీ… నూట యాభై ఏళ్ల తర్వాత బెంగాల్ **నవాబునే** మార్చేసింది."),
-   reuse=['6.3:en', '6.5', '6.6', '6.8b', '6.10', '6.11', '6.12', '6.13', '7.2', '7.3', '7.4', '7.5', '7.9'],
+   reuse=['6.3:en', '6.8b', '6.9', '6.10', '6.12', '6.13', '7.2', '7.3', '7.4', '7.5', 'B6', '7.9'],
    tease=("That's where **Season 2** begins. ⏸ The full film is linked.",
           "అక్కడి నుంచే **సీజన్ 2** మొదలవుతుంది. ⏸ పూర్తి సినిమా link లో ఉంది.")),
 }
 
-BRIDGE = {'B3': ("Golconda's real wealth wasn't buried in its **mines**. ⏸ It was woven in its **villages**.",
+BRIDGE = {'B2': ("The answer starts in India's **weaving villages**, with the hands that made the cloth.",
+                 "దానికి జవాబు మన **నేత గ్రామాల్లోనే** ఉంది… ఆ గుడ్డ తయారుచేసిన చేతుల్లో."),
+          'B6': ("For a century and a half, the Company had shipped **silver** to India to pay for its cloth. ⏸ After 1765, it could increasingly pay with **revenue** collected in India itself.",
+                 "నూట యాభై ఏళ్లు కంపెనీ సముద్రాల అవతల నుంచి **వెండి** తెచ్చి మన గుడ్డ కొన్నది. ⏸ 1765 తర్వాత, ఇక్కడే వసూలు చేసిన **పన్నులతోనే** ఎక్కువగా కొనగలిగింది."),
+          'B3': ("Golconda's real wealth wasn't buried in its **mines**. ⏸ It was woven in its **villages**.",
                  "గోల్కొండ అసలు సంపద గనుల్లో దాగి లేదు. ⏸ అది ఊళ్లలోని **మగ్గాల** మీద నేయబడింది.")}
 
 def short_plan(lang):

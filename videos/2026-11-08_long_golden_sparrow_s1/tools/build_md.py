@@ -59,43 +59,55 @@ den = {x['id']: x for x in tl_en}; dte = {x['id']: x for x in tl_te}
 wc = sum(len(clean(r['en']).replace('⏸', '').split()) for r in L if r['only'] in (None, 'en') and r['en'])
 npk = sum((0 if p['hook'][0].startswith('REUSE') else 1) + 1 + sum(1 for x in p['reuse'] if x in BRIDGE) for p in NEW.values())
 
-md = f"""# THE GOLDEN SPARROW · SEASON 1: FINAL RECORDING SCRIPTS (EN + TE) · v2 · for approval
-*Do not record until approved. Built on the creatively approved Master Story v2 (`master_story.md`); claim sources are in `sources_verification.md` (C-numbers below).*
+md = f"""# THE GOLDEN SPARROW · SEASON 1: RECORDING-READY SCRIPTS (EN + TE) · v3 · awaiting "approved"
+*Nothing will be recorded until you say "approved". Built on the creatively approved Master Story v2 (`master_story.md`); claim sources are in `sources_verification.md` (C-numbers below).*
 
-## Round-3 corrections (from your review)
-1. **Cloth chronology:** the London sale is now beat **6.7** ("c.1680" chip), before 1686, 1717, the 1740s and 1756. The finale only calls back to it visually (7.1).
-2. **1721 hook made precise:** enacted 1721, in force from 25 Dec 1722, covering *certain* printed, painted, stained or dyed calicoes, printed abroad **or in Britain**, with exceptions (spoken in 0.1–0.2 and 2.12; full terms in the on-screen chip). Telugu explains the **competition with wool and silk** (0.2, 2.14), not "banned because Indian".
-3. **Buxar 1764** added before the **1765** diwani (7.5).
-4. **1639 Madras grant:** the sources name different individuals (Damarla Venkatadri, Damarla Venkatappa and his brother Ayyappa), and the overlord is described as both the Vijayanagara king Venkata III and the "Raja of Chandragiri". The narration therefore says only what all sources agree on: "**the Damarla Nayakas**, local rulers of this coast under the Vijayanagara king" (6.5). Individual names stay off until checked in Foster, *English Factories in India 1637–41*, pp. 153–156.
-5. **Spoken-word timing pass done** (method below), with a timestamp on every line.
-6. **Shorts recalculated** from exact film timecodes; the new pick-up lines needed are counted below.
-7. **Claims rechecked.** Changes:
-   - The Zamorin "unimpressed" claim is corrected: the *Roteiro* says the **king's officials laughed** at the gifts.
-   - The Tavernier blue is now "from Golconda's mines", not Kollur specifically.
-   - Methwold's worker count is now "tens of thousands, early 1620s".
-   - The Kollur district label is removed.
-8. **Artwork:**
-   - The Hayman/NPG Plassey painting is **dropped** (commercial licence); Plassey is now an AI reconstruction plus the map.
-   - Bichitr's Jahangir (Freer) is **dropped** ("usage conditions apply"); a Met Open Access Mughal court image will replace it.
-   - Met 1982.66 is **confirmed Public Domain** (18th c., captioned as such).
-9. **One addition (+13 s, easy to drop):** the **Anglo-Mughal war of 1686–90** (6.8b). The Company tried force, lost, apologised and paid ₹1.5 lakh. It strengthens the turn toward politics: "Fighting the Mughals had failed. But choosing rulers… paid."
+## Final changes (round 4, from your review)
+1. **Short 6 payoff:**
+   - Now includes the **1717 farman** (6.9) and a new Short-only line (B6) on the shift from **imported silver to revenue collected in India**, after the 1765 diwani.
+   - Wording is "increasingly pay with revenue", not an absolute switch.
+   - The film's Anna line (7.6) uses the same "increasingly".
+2. **Tavernier (3.7):**
+   - Now reads: "acquired a remarkable blue diamond in India, **possibly from the Golconda region**. It eventually became the Hope diamond."
+   - On-screen chip: "EXACT MINE UNKNOWN".
+3. **Anglo-Mughal war (6.8b):**
+   - **No rupee figure in the voice.** The ₹1,50,000 figure traces to Keay, Kohli and Erikson via a secondary source, and I could not read it directly.
+   - The narration now gives the documented outcome without oversimplifying: the envoys begged the emperor's pardon, paid a heavy fine and promised to behave. Only then could the Company trade again, and in 1690 it set up a new base in Bengal, Calcutta.
+   - The amount can go on screen once it is checked in Keay, *India: A History*, p. 372.
+4. **GDP (1.4):**
+   - The voice now says "the **Republic of India's** share was about 4" for 1950.
+   - Source note on screen: "MADDISON ESTIMATES · 1700 = UNDIVIDED SUBCONTINENT · 1950 = REPUBLIC OF INDIA ONLY (EXCL. PAKISTAN & BANGLADESH) · AREAS DIFFER".
+5. **Short 2 bridge (B2)** after the 1721 hook: "The answer starts in India's weaving villages, with the hands that made the cloth."
+6. **Pacing:**
+   - **Every timecode below is a planning estimate.**
+   - Edit timecodes will come from the recorded audio (the pipeline measures every line).
+   - **Delivery is never sped up to match these numbers.** See the pacing check below.
+7. **Shorts:**
+   - No minimum or target length; each one runs as long as its story needs, up to 3:00.
+   - Telugu S6 leaves out the Madras grant (it stays in the film) so it can keep the 1717 farman, the wars and the silver-to-revenue line.
 
-## Timing (measured, not guessed)
-- **Method:** speaking rates are measured from **509 past ElevenLabs takes** in voice_lib (EN 2.63 words/s, TE 10.82 chars/s raw), with the long-form Pace Model tempo (×1.06) and its gaps applied: chapter 1.3 s, '?' 0.45 s, punch 0.5 s, ⏸ 0.25–0.45 s. Cinematic holds are added after chapter cards (+2 s) and big reveals (+1.5 s).
+*Earlier rounds, all kept: the cloth is sold c.1680 before the later history; precise 1721 hook; Buxar 1764; "the Damarla Nayakas"; the Roteiro says it was the king's officials who laughed; Hayman and Freer images dropped; Met 1982.66 public domain.*
+
+## Timing (planning estimate, from measured voice rates)
+- **Method:**
+  - Rates measured from **509 past ElevenLabs takes** (EN 2.63 words/s, TE 10.82 chars/s raw).
+  - Pace Model tempo ×1.06 and its gaps applied.
+  - Holds added after chapter cards (+2 s) and big reveals (+1.5 s).
 
 | | English | Telugu |
 |---|---|---|
 | **Film length** | **{fmt(ten)}** (~{wc} words) | **{fmt(tte)}** |
-| First 30 s | hook ends {fmt(den['0.4']['end'])}; central question {fmt(den['0.5']['start'])}–{fmt(den['0.5']['end'])}; title card at {fmt(den['0.5']['end'])} | hook ends {fmt(dte['0.4']['end'])}; question {fmt(dte['0.5']['start'])}–{fmt(dte['0.5']['end'])}; title card at {fmt(dte['0.5']['end'])} |
-| Final section (from 7.1 to the end card) | {fmt(den['7.1']['start'])} → {fmt(ten)} = {ten-den['7.1']['start']:.0f} s | {fmt(dte['7.1']['start'])} → {fmt(tte)} = {tte-dte['7.1']['start']:.0f} s |
+| First section | central question {fmt(den['0.5']['start'])}–{fmt(den['0.5']['end'])}; title card at {fmt(den['0.5']['end'])} | question {fmt(dte['0.5']['start'])}–{fmt(dte['0.5']['end'])}; title card at {fmt(dte['0.5']['end'])} |
+| Final section (7.1 → end card) | {fmt(den['7.1']['start'])} → {fmt(ten)} = {ten-den['7.1']['start']:.0f} s | {fmt(dte['7.1']['start'])} → {fmt(tte)} = {tte-dte['7.1']['start']:.0f} s |
 
-- **Telugu** is longer and is **not rushed**: its first section runs ~38 s and its ending ~80 s, because of the extra regional beat (7.4) and longer word forms.
-- **English runtime:** at our approved pace, English comes out ≈ **13.5 min**, not 16:45. I have not padded it.
-- **If you want it longer,** the strongest real additions are:
-  - (a) a Machilipatnam bazaar and everyday-life scene (+40 s);
-  - (b) the 1695 *Ganj-i-Sawai* seizure by an English pirate and Aurangzeb's punishment of the Company (+35 s).
-  - Both would be sourced first.
-- Final timings will be re-measured from the actual recordings (Pace Model report).
+### Pacing check: the opening and the final question
+At a slower documentary pace (EN ≈ 147 wpm, TE −8%):
+- **EN cold open:** about **31 s → 35 s**. The central question (0.5) runs 7.1 → 8.1 s, and the final question (7.9) runs 5.7 → 6.5 s.
+- **TE cold open:** about **39 s → 42 s**.
+
+Both versions work at either pace: the title card simply lands later. **The rule is to let the line breathe.** If the hook feels long when we listen back, we cut words, not speed.
+
+**First step after your approval** (only then): record **0.1–0.5 and 7.9** in both languages as a listening test (≈ 12 lines, small credit cost). Sign off the pace, then record the rest.
 
 ## Recording rules
 - Format as per the playbook: **[MOOD · delivery]**, **bold** = stress, ⏸ = 1–2 s stop (a cut point).
@@ -134,9 +146,9 @@ md = f"""# THE GOLDEN SPARROW · SEASON 1: FINAL RECORDING SCRIPTS (EN + TE) · 
 - English and Telugu may differ in length.
 
 **Notes on the Shorts:**
-- **S2, S4 and S6 now keep the context that had been cut:** the spinner, Coeurdoux, muslin, the Telugu regional beats, the Madras grant, silver and the 1759 Machilipatnam beat.
-- **S1, S3 and S5 stay at about 1:25–1:45:** their stories are complete, and stretching them would hurt retention.
-- **Telugu S6** leaves out the Surat permission steps and tells the story along the coast: Machilipatnam → Madras → French → Plassey → 1759.
+- **S2, S4 and S6 keep their full context.** S2 has a bridge (B2) after the hook. S6 has the 1717 farman plus the silver-to-revenue payoff (B6).
+- **S1, S3 and S5 run at their natural length.** There is no minimum or target length.
+- **Telugu S6** leaves out the Surat permission steps and the Madras grant (both stay in the film) to keep the 1717 farman, the wars and the silver-to-revenue line.
 - **Lines left out of the Shorts:** any line that mentions "our cloth", so each Short stands alone.
 - **Content ID:** Shorts over 1:00 with an active Content ID claim can be blocked, so the music, SFX and art in the Shorts must be cleared (our own recordings, Public Domain or CC0 only).
 
