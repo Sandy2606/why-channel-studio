@@ -11,9 +11,9 @@ a('0.1','NAR','HOOK','HOOK · intrigued, low',
   "**1721**లో బ్రిటన్ ఒక చట్టం చేసింది: కొన్ని రకాల **అచ్చు cotton** గుడ్డలు వేసుకోవడమే నిషేధం. ⏸ **ఎందుకు?**",
   'C1','S2-hook','Black → loom sound → macro of a painted flower on Met 1982.66 (caption "Coromandel Coast, 18th c. · The Met"); chip "ENACTED 1721 · IN FORCE 25 DEC 1722 · CERTAIN PRINTED, PAINTED, STAINED OR DYED CALICOES · SOME EXCEPTIONS"')
 a('0.2','NAR','HOOK','fast, pointed',
-  "Printed here or abroad, it didn't matter. ⏸ **Indian cotton** was beating Britain's **wool** and **silk**.",
+  "Printed here or abroad, it didn't matter. ⏸ **Indian cotton** was challenging Britain's **wool** and **silk** industries.",
   'వేగంగా',
-  "అచ్చు ఎక్కడ వేసినా నిషేధమే. ⏸ మన **cotton** తో బ్రిటన్ **ఉన్ని**, **పట్టు** పోటీ పడలేకపోయాయి.",
+  "అచ్చు ఎక్కడ వేసినా నిషేధమే. ⏸ మన **పత్తి గుడ్డల** వల్ల బ్రిటన్‌లోని **ఉన్ని**, **పట్టు** వస్త్రాల వ్యాపారాలకు **గట్టి పోటీ** ఎదురైంది.",
   'C1,C2,C5','','Pull back to the full palampore; wool and silk bolts dim beside it')
 a('0.3','NAR','HOOK','rising, wonder',
   "For centuries, the world sailed to India: for **pepper**, for **diamonds**… and above all, for **cloth**.",
@@ -167,7 +167,7 @@ a('2.13','NAR','EXP','plain',
 a('2.14','NAR','PUNCH','pointed',
   "These laws protected Britain's **wool** and **silk** weavers. ⏸ And they tell you how good **Indian cotton** was.",
   'సూటిగా',
-  "ఎందుకంటే మన cotton తో, బ్రిటన్ **ఉన్ని**, **పట్టు** నేతగాళ్లు పోటీ పడలేకపోయారు. ⏸ ఆ చట్టాలే చెప్తాయి, మన గుడ్డ **ఎంత గొప్పదో**.",
+  "ఎందుకంటే మన పత్తి గుడ్డల వల్ల బ్రిటన్ **ఉన్ని**, **పట్టు** నేతగాళ్లకు **గట్టి పోటీ** ఎదురైంది. ⏸ ఆ చట్టాలే చెప్తాయి, మన గుడ్డ **ఎంత గొప్పదో**.",
   'C1','S2','Wool and silk weavers\' petition print (PD) beside the chintz')
 a('2.15','NAR','EXP','worldly',
   "Indian cloth also bought **spices** in Southeast Asia and travelled into **West Africa**. ⏸ Even the English words **calico**, from Calicut, and **chintz** came from India.",
@@ -286,7 +286,7 @@ a('4.6','NAR','LIST','brisk list',
   'C25','S4','Flow diagram: field → collector/zamindar → treasury → army & court; banker arrows to all; farman scroll')
 a('4.7','NAR','EXP','storytelling',
   "", 'కథ చెప్తూ',
-  "గోల్కొండలో, **మాదన్న**, **అక్కన్న** అనే తెలుగు సోదరులు, అబుల్ హసన్ కుతుబ్ షా దగ్గర మంత్రులుగా రాజ్య పాలన, ఆదాయ వ్యవహారాలు నడిపారు.",
+  "గోల్కొండలో, హనుమకొండలో పుట్టిన **మాదన్న**, **అక్కన్న** సోదరులు, అబుల్ హసన్ కుతుబ్ షా దగ్గర **పన్నులు**, **ఖజానా** వ్యవహారాలు చూసే మంత్రులయ్యారు.",
   'C27','S4','[DRAM] Two ministers over revenue ledgers', only='te')
 a('4.8','NAR','EXP','impressed',
   "Bankers could be enormously powerful. ⏸ In Surat, **Virji Vora** lent money to the English company again and again. Its own records called him the **richest merchant** of his time. ⏸ But even he lived by the ruler's **permission**.",
@@ -422,7 +422,7 @@ a('6.10','NAR','EXP','darker',
   'C42','S6','[DRAM] Sepoy drill; map: rival claimants with French/English flags (Arcot, Hyderabad)')
 a('6.11','NAR','EXP','regional',
   "", 'కథ చెప్తూ',
-  "1750లలో, మచిలీపట్నంతో సహా మన **తీర ప్రాంతాలపై** ఫ్రెంచ్ వాళ్లకు పట్టు దొరికింది.",
+  "**1753**లో, మచిలీపట్నంతో సహా మన **తీర జిల్లాలు** ఫ్రెంచ్ వాళ్ల చేతికి వచ్చాయి.",
   'C43','','Map: coastal Andhra shaded French blue (TE zoom 3)', only='te')
 a('6.12','NAR','PUNCH','ominous, slow',
   "The traders had learned something **dangerous**. ⏸ Fighting the Mughals had failed. But choosing rulers… **paid**.",

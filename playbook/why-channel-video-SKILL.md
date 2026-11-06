@@ -262,6 +262,7 @@ The user asked for this to be the channel's continuing look so viewers recognise
 - Shorts-style pause squeezing on long videos (204 wpm, "sounds like reading").
 
 **Score history:**
+- Golden Sparrow S1 film + 6 Shorts, narration recorded (Nov 6, picture not yet built): film EN 13:51 / TE 16:54. Shorts EN 1:22–2:39, TE 1:29–2:47, every one under 3:00. Recorded at natural pace (no atempo, no squeeze). Planning model was within 1–2% (EN est 13:42, TE 16:40). KEEP: a listening test (cold open + final question, both languages) before the full recording; a source-verification pass with cautious wording before any credits are spent; per-line takes reused for the Shorts, with only hook/bridge/tease pickups recorded new; narration measured ≥ 20 dB above the music in speech regions (duck 65%, bed 0.20); a darker ending (track −2 semitones, lowpass 2.6 k) under the cliffhanger; Shorts end 1.1 s after the last word; Whisper QC on every EN take; TE take-length vs model QC. DROP: urlencoding ElevenLabs signed URLs (403); calling Madanna/Akkanna "Telugu brothers" (origin debated); rupee figures in the voice that we cannot read in the source.
 - Ravana Short (Oct 23): not scored.
 - Saturday Short (Oct 24): v2 6.5, v3 about 7.5. The gaps were in the script: a question-first hook, and 75 s long.
 - Sunday Short "Why burn Ravana" (Oct 25): v1 8.0, v2 8.4. Remaining: an 8 s static end grid, estimated Telugu caption timing, and a 6 s AI image hold.
