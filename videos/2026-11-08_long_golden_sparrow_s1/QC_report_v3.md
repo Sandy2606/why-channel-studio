@@ -21,3 +21,17 @@ Known imperfections:
 - Telugu: the "BANNED · 1721" stamp is visible only briefly before "ఎందుకు?" because of Telugu word order.
 - Telugu speech-recognition check not completed; per-second speech/background measurement used instead. A human headphone listen is still needed.
 - Farman (6.4): public domain on Commons (PD-Art-100); the museum's own rights claim on its scan is noted, not cleared.
+
+
+# v4 (Nov 7, 12:20 CT): 2D historical scene pass
+| | English | Telugu |
+|---|---|---|
+| Runtime | 13:51 (831.03 s) | 16:54 (1014.27 s) |
+| Master size | 481 MB | 569 MB |
+| Frames | 24,931 / 24,931 | 30,428 / 30,428 |
+| Chunk joins | 16 continuous | 20 continuous |
+| Black / frozen / silent | none (dark spans = title/timeline cards) | none (same) |
+| Loudness / true peak | −14.0 LUFS / −1.3 dBTP | −14.0 LUFS / −1.3 dBTP |
+| Decode errors | 0 | 0 |
+v3 masters kept in film3/out/v3_fallback.
+Known imperfections: flat cutout figures are deliberately simple (rigid silhouettes); London sits near the top-left corner of the world maps; the end card sits close to the small "Season 1 / subscribe" line; Telugu speech-recognition check still not done.
