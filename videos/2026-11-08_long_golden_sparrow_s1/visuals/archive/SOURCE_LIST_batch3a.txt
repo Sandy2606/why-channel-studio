@@ -1,0 +1,71 @@
+Archive images - batch 3a (items 14-21)
+All files are originals, unedited. Check licence and credit line on each page before use in the film.
+
+14 - PD09 - Peter Mundy, Travels Vol. II (Hakluyt Society, 1914), the famine page - TWO pages included, both from the same scan
+  File: 14_PD09_Mundy_famine_p236.jpg - 1926 x 3223, JPEG
+  Page: https://archive.org/details/travelsofpetermu02mund (scan page n349, printed p. 236)
+  Text: 7 March 1632/3, grain carried to Gujarat "to releive their necessetie with it in tyme of that great dearth"
+  File: 14b_PD09_Mundy_Appendix_A_Famine_1630-32.jpg - 1926 x 3223, JPEG
+  Page: https://archive.org/details/travelsofpetermu02mund (scan page n460, Appendix A opening)
+  Text: "APPENDIX A. THE FAMINE OF 1630-1632" - the dedicated famine section, including the Masulipatam dearth extract of 2 Nov 1630.
+  Licence: Public domain (1914 Hakluyt Society volume, Internet Archive scan)
+  Note: the list said "the famine page" without a page number, so both the in-narrative famine passage (p. 236) and the Appendix A famine opening are included.
+
+15 - PD03 - Title page / heading page of the 1721 Act, 7 Geo. I c. 7, Calico Act
+  File: 15_PD03_Calico_Act_Cap_VII.jpg - 2550 x 3301, JPEG
+  Page: https://archive.org/details/dli.bengal.10689.22525 (Pickering, The Statutes at Large, Vol. 14, scan page n344, printed p. 318)
+  Text: "Anno septimo GEORGII I. stat. 1. c. 7. [1721] CAP. VII. An act to preserve and encourage the woollen and silk manufactures of this kingdom, and for more effectual employing the poor, by prohibiting the use and wear of all printed, painted, stained or dyed callicoes in apparel, household stuff, furniture, or otherwise, after the twenty fifth day of December one thousand seven hundred and twenty two (except as therein is excepted)."
+  Licence: Public domain (1765 Pickering volume, Internet Archive / Digital Library of India scan)
+  Note: this is the Act's heading page in the printed Statutes at Large, not a separate standalone title page - the Acts in this volume start with a CAP. heading, there is no separate title page per Act.
+
+16 - PD06 - 17th-century view of Masulipatnam
+  File: 16_PD06_Masulipatnam_Rijksmuseum.jpg - 5668 x 4176, JPEG
+  Page: https://commons.wikimedia.org/wiki/File:Gezicht_op_Machilipatnam_(Masulipatnam)_Masulipatam_(titel_op_object),_RP-P-1908-2308.jpg
+  Commons licence field: CC0 (Rijksmuseum, RP-P-1908-2308)
+
+17 - PD01 - Harappan carnelian beads
+  File: 17_PD01_Harappan_carnelian_beads_Mohenjo-daro.jpg - 4707 x 3468, JPEG
+  Page: https://commons.wikimedia.org/wiki/File:Harappan_carnelian_and_terracotta_beads_-_Mohenjo-daro.jpg
+  Commons licence field: CC BY-SA 4.0
+  FLAG: not a Met photo - this is a museum-case photo (red carnelian beads at the bottom, labelled 5, terracotta beads above, labelled 6), with the case numbers visible. The Met's own API returned no result for this search, so no Met carnelian-bead image was found.
+  Alternative included:
+  File: 17alt_Indus_carnelian_bead_Nippur.jpg - 4000 x 3000, JPEG
+  Page: https://commons.wikimedia.org/wiki/File:Indus_Civilisation_Carnelian_bead_with_white_design,_ca._2900%E2%80%932350_BC._Found_in_Nippur,_Mesopotamia.jpg
+  Commons licence field: CC0 - single etched carnelian bead with white design, found at Nippur.
+
+18 - PD04 - 18th-century dress made of Indian chintz
+  File: 18_PD04_Dress_chintz_robe_a_langlaise.jpg - 2657 x 3543, JPEG
+  Page: https://commons.wikimedia.org/wiki/File:Dress_(robe_%C3%A0_l%27anglaise)_and_skirts_in_chintz,_ca._1770-1790,_shawl_(fichu)_in_embroidered_batiste,_1770-1800.jpg
+  Commons licence field: CC BY-SA 3.0 - clean studio shot, floral chintz robe a l'anglaise, ca. 1770-1790.
+  Alternative included:
+  File: 18alt_Wentke_jas_chintz_Rijksmuseum.jpg - 3182 x 4000, JPEG
+  Page: https://commons.wikimedia.org/wiki/File:Wentke_Jas_of_wentke_van_sits,_beschilderd_met_blauwe_bloemranken_en_zilveren_hoogsels_op_een_wit_fond_en_afgezet_met_langettenband_katoenen_voering.,_BK-NM-4515.jpg
+  Commons licence field: CC0 (Rijksmuseum BK-NM-4515) - a chintz jacket (wentke), blue floral on white.
+
+19 - PD13 - Jahangir court painting, NOT the Freer one
+  File: 19_PD13_Jahangir_Darbar_David_Collection.jpg - 2327 x 3286, JPEG
+  Page: https://commons.wikimedia.org/wiki/File:Jahangir%27s-Darbar,_ca._1620,_The_David_Collection,_Kopenhagen.jpg
+  Commons licence field: Public domain - Jahangir in darbar, ca. 1620, The David Collection, Copenhagen. NOT the Freer painting.
+  Alternative included:
+  File: 19alt_Darbar_of_Jahangir_St_Petersburg_Album.jpg - 1200 x 1836, JPEG
+  Page: https://commons.wikimedia.org/wiki/File:Darbar_of_Jahangir,_folio_from_the_St._Petersburg_Album_(Russian_Academy_of_Sciences_E-14_f.22r).jpg
+  Commons licence field: Public domain - Darbar of Jahangir, folio from the St. Petersburg Album.
+
+20 - PD08 - Mughal painting of land measurement / Akbar's administration (optional)
+  File: 20_PD08_Abul_Fazl_presenting_Akbarnama.jpg - 2459 x 4220, JPEG
+  Page: https://commons.wikimedia.org/wiki/File:AbulFazlPresentingAkbarnama.jpg
+  Commons licence field: Public domain
+  FLAG: no land-measurement folio was found on Commons under "land measuring / zabt / Akbar revenue". This is the closest verified Akbarnama administration image: Abu'l Fazl presenting the Akbarnama to Akbar. It is administration, NOT a land-measurement scene - label it as such if used.
+
+21 - PD20 - Met chintz detail images, Coromandel chintz (3 images)
+  File: 21a_PD20_Chintz_wall_panel_MET.jpg - 4000 x 3000, JPEG
+  Page: https://commons.wikimedia.org/wiki/File:Chintz_wall_panel_MET_DP364556.jpg
+  Commons licence field: CC0 (Met, DP364556)
+  File: 21b_PD20_Textile_panel_chintz_MET.jpg - 816 x 1096, JPEG
+  Page: https://commons.wikimedia.org/wiki/File:Textile_Panel_of_Chintz_MET_wb-36.90.121.jpeg
+  Commons licence field: CC0 (Met, 36.90.121)
+  File: 21c_PD20_Chintz_palampore_India_18c.jpg - 1536 x 1024, JPEG
+  Page: https://commons.wikimedia.org/wiki/File:Chintz_palampore_India_18th_century.jpg
+  Commons licence field: CC BY-SA 4.0 - Coromandel chintz palampore, 18th century.
+
+No British Museum images, no NC/ND items included.

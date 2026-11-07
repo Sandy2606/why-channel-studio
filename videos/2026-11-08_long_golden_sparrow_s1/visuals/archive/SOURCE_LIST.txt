@@ -1,0 +1,54 @@
+Archive images - batch 1 (items 1-8 from archive_download_list.md)
+All files are the original files downloaded from Wikimedia Commons, unedited, under their original filenames (prefixed with list number).
+Check licence and credit line on each page before use in the film.
+
+1 - PD10 - Cantino planisphere (1502), whole map
+  File: 01_PD10_Cantino_planisphere_(1502).jpg - 10643 x 4998, JPEG, 36 MB
+  Page: https://commons.wikimedia.org/wiki/File:Cantino_planisphere_(1502).jpg
+  Commons licence field: Public domain
+
+2 - PD17 - Benjamin West, Shah Alam conveying the grant of the Diwani to Lord Clive
+  File: 02_PD17_Shah_Alam_conveying_the_grant_of_the_Diwani_to_Lord_Clive.jpg - 1999 x 1412, JPEG
+  Page: https://commons.wikimedia.org/wiki/File:Shah_%27Alam_conveying_the_grant_of_the_Diwani_to_Lord_Clive.jpg
+  Commons licence field: Public domain
+
+3 - PD12 - East India Company coat of arms
+  File: 03_PD12_Coat_of_arms_of_the_East_India_Company.svg - 1481 x 1488, SVG (vector)
+  Page: https://commons.wikimedia.org/wiki/File:Coat_of_arms_of_the_East_India_Company.svg
+  Commons licence field: Public domain
+
+4 - PD02 - Tavernier's diamond plate (Les Six Voyages)
+  File: 04_PD02_Diamonds_and_precious_stones_-_Tavernier_Jean_Baptiste_-_1703.jpg - 1500 x 1066, JPEG
+  Page: https://commons.wikimedia.org/wiki/File:Diamonds_and_precious_stones_-_Tavernier_Jean_Baptiste_-_1703.jpg
+  Commons licence field: Public domain
+  Note: plate is from the 1703 edition, captioned "Representation de vingt des plus beaux DIAMENS" / "II. Partie. fol. 374" - the diamond plate, not the 1676 title page.
+
+5 - PD16 - A View of Fort William, Calcutta (Jan Van Ryne, 1754)
+  File: 05_PD16_A_Perspective_View_of_Fort_William_by_Jan_Van_Ryne_1754.jpg - 1629 x 1009, JPEG
+  Page: https://commons.wikimedia.org/wiki/File:%22A_Perspective_View_of_Fort_William%22_by_Jan_Van_Ryne,_1754.jpg
+  Commons licence field: Public domain
+
+6 - PD14 - Fort St George, Madras, earliest print (Jan van Ryne, 18th c.)
+  File: 06_PD14_Fort_of_St.George_on_the_Coromandel_Coast_by_Jan_van_Ryne.jpg - 768 x 516, JPEG
+  Page: https://commons.wikimedia.org/wiki/File:Fort_of_St.George_on_the_Coromandel_Coast,_Madras,_belonging_to_the_East_India_Company_of_England,_a_line_engraving_by_Jan_van_Ryne_(1712-1760).jpg
+  Commons licence field: Public domain
+  FLAG: the scan itself carries a red vertical "BRITISH LIBRARY" stamp on the right edge. It is in the image, not added by me. Check whether that rules it out for the film.
+  Alternative included:
+  File: 06alt_PD14_Fort_George_Madras_steel_engraving_1850s.jpg - 588 x 445, JPEG, clean, no stamp
+  Page: https://commons.wikimedia.org/wiki/File:Fort_George,_Madras,_a_steel_engraving_from_the_1850%27s.jpg
+  Commons licence field: Public domain
+  Note: this alternative is 1850s, not 18th century, and lower resolution.
+
+7 - PD15 - East India House, Leadenhall Street, London (print, published 24 July 1800)
+  File: 07_PD15_A_Front_View_of_the_East_India_House_in_Leadenhall_Street.jpg - 1920 x 1301, JPEG
+  Page: https://commons.wikimedia.org/wiki/File:Anonymous_-_A_Front_View_of_the_East_India_House_in_Leadenhall_Street_-_B1977.14.17465_-_Yale_Center_for_British_Art.jpg
+  Commons licence field: CC0 (Yale Center for British Art)
+
+8 - NEW - A real Mughal farman with its seal, to replace G17
+  File: 08_NEW_Farman_of_Aurangzeb_National_Museum_New_Delhi_62.5.jpg - 815 x 1800, JPEG
+  Page: https://commons.wikimedia.org/wiki/File:Farman_of_Aurangzeb_(National_Museum,_New_Delhi,_62.5).jpg
+  Commons licence field: Public domain
+  Note: chosen because the seals are clearest - a large black circular seal top right, a smaller seal below it, and a third seal mid-right. The image footer carries a "National Museum, New-Delhi / Copyright, All rights reserved" credit block, as on all the National Museum farman scans on Commons - check that against the Commons licence field before logging it.
+  Other Aurangzeb farmans from the same National Museum set were checked (67.137, 86.151, 86.152, 96.420-5) - same footer, seals less clear or document more damaged.
+
+No British Museum images, no NC/ND items, no Freer Jahangir, no NPG Hayman Clive and Mir Jafar included.

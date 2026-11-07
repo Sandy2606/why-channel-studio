@@ -1,0 +1,38 @@
+Sounds for sfx/ - 4 of 5 delivered (2026-11-06)
+All files downloaded straight from their source pages, unedited, no re-encode.
+Durations verified with ffprobe.
+
+1 - Loom shuttle (most valuable) - EXACT MATCH
+  File: 01_loom_shuttle_navette-de-metier-a-tisser.mp3 - 0:58, MP3, 1.1 MB
+  Source page: https://pixabay.com/sound-effects/film-special-effects-navette-de-m%C3%A9tier-%C3%A0-tisser-65454/
+  Licence: Pixabay Content License - free for commercial / monetized YouTube and Instagram, no attribution required
+  Note: Pixabay mirror of the Freesound CC0 original "navette de métier à tisser.wav" by Naïma, Freesound 510266, WAV 0:58, 44.1 kHz/16-bit stereo.
+  Original: https://freesound.org/people/Na%C3%AFma/sounds/510266/
+  Pixabay description: "Authentic sound effect of a weaving loom shuttle passing back and forth"
+
+2 - Harbour ambience - EXACT MATCH, waves only
+  File: 02_harbour_ambience_small-waves-harbor-rocks.wav - 1:17 (77.9s), WAV, 20 MB
+  Source page: https://mixkit.co/free-sound-effects/discover/harbour/
+  Licence: Mixkit License - free for commercial use
+  Note: water lapping on rocks in a harbor only - no gulls or boats are described on its page. A closer match, Pixabay "Venitian Medieval-Harbour-crowd-sails-seaguls-TemplarSounds" (4:47, https://pixabay.com/sound-effects/nature-venitian-medieval-harbour-crowd-sails-seaguls-templarsounds-565620/), was identified but its download stalled behind a Cloudflare check and was abandoned per the speed instruction.
+
+3 - Ship creaks - EXACT MATCH
+  File: 03_ship_creaks_ship-creaking-24b.mp3 - 0:20, MP3, 626 KB
+  Source page: https://pixabay.com/sound-effects/city-ship-creaking-24b-30119/
+  Licence: Pixabay Content License - free for commercial / monetized use, no attribution required
+  Note: "A realistic sound effect of an old wooden ship creaking, groaning, and swaying on the water."
+  The longer Freesound CC0 file "R28-03-Large Wood Ship Creaking.wav" by craigsmith, 1:12, https://freesound.org/people/craigsmith/sounds/483355/, is still behind the Freesound login.
+
+4 - Quill on paper - EXACT MATCH
+  File: 04_quill_on_paper_quill-pen-writing-on-hard-paper.mp3 - 1:38 (98.2s), MP3, 1.9 MB
+  Source page: https://pixabay.com/sound-effects/search/quill%20pen%20writing/ (Pixabay mirror)
+  Licence: Pixabay Content License - free for commercial / monetized use, no attribution required
+  Note: real quill recording, "Quill pen writing on hard paper various speed.wav" by marcoman89, Freesound 194905, WAV 1:38, 48 kHz/16-bit stereo.
+  Original: https://freesound.org/people/marcoman89/sounds/194905/
+
+5 - Distant cannon - MISSING, not substituted
+  Verified genuine file: "S20-12 Distant cannon fire.wav" by craigsmith, Freesound 675613, WAV 0:35.7, 4.9 MB, 48 kHz/24-bit mono, CC0
+  Page: https://freesound.org/people/craigsmith/sounds/675613/
+  Why missing: Freesound requires a login to download originals, and the saved login for whysandeep26@gmail.com was rejected twice by Freesound ("Please enter a correct username/email and password. Note that passwords are case-sensitive."). No account was created or changed.
+  No substitute was downloaded: Mixkit's only cannon result is a 1-second laser-cannon shot, and Pixabay's top result is "Distant Cannon Fire (simulated)" (0:03, made by simulating a cannon with a basketball recording).
+  To finish: correct the Freesound login in Secure Vault, then the cannon WAV - and the original Freesound WAVs of the other four - can be downloaded in one quick retry.

@@ -1,0 +1,41 @@
+Archive images - batch 2 (items 9-13 from archive_download_list.md)
+All files are the original files downloaded from Wikimedia Commons, unedited.
+Check licence and credit line on each page before use in the film.
+Items 14 (Peter Mundy famine page) and 15 (1721 Calico Act title page) are NOT in this zip - they need a page extracted from a book scan, coming next.
+
+9 - PD11 - Roteiro of da Gama's first voyage, a manuscript page
+  File: 09_PD11_Roteiro_da_primeira_viagem_de_Vasco_da_Gama.jpg - 2335 x 3184, JPEG
+  Page: https://commons.wikimedia.org/wiki/File:Roteiro_da_primeira_viagem_de_Vasco_da_Gama.jpg
+  Commons licence field: Public domain
+  Note: first page of the manuscript, dated 1497 in the text, with the red library stamp at right.
+
+10 - PD18a - Mughal silver rupee (EN coin), Aurangzeb, Surat mint, AH 1109
+  File: 10_PD18a_Silver_Rupee_Aurangzeb_Surat_AH1109.jpg - 3456 x 3456, JPEG
+  Page: https://commons.wikimedia.org/wiki/File:Silver_Rupee_minted_in_Surat_during_the_reign_of_Aurangzeb_(known_as_Alamgir_I,_or_Muhi_al-Din_Muhammad),_AH_1109,_photographed_from_a_personal_collection,_December_24,_2023.jpg
+  Commons licence field: CC0
+  FLAG: this is a real coin, but photographed in its holder with handwritten labels ("INDIAN MUGHAL EMPRE / AURANGZEB ALAMGIR", "MINT: SURAT", "AH 1068-1118 / AD 1658-1707") around it - not a clean studio shot, and not a CNG photo as the list suggested. Check if the holder/labels rule it out for film use.
+
+11 - PD18b - Golconda gold pagoda (hun) (TE coin)
+  File: 11_PD18b_Pagoda_or_Varaha_coins_of_Southern_India_Pl_II.jpg - 2173 x 3246, JPEG
+  Page: https://commons.wikimedia.org/wiki/File:Pagoda_or_Varaha_coins_of_Southern_India_01.jpg
+  Commons licence field: Public domain
+  FLAG: no single Golconda hun photo was found on Commons under "Golconda pagoda" / "Qutb Shahi hun". This is the closest verified file: an 1883 Journal of the Asiatic Society of Bengal plate, "Pagoda or Varaha Coins of Southern India", Pl. II, including a large coin No. 24 lettered "PAGODA". It is a plate of many coins, not a single Golconda hun photo.
+
+12 - PD19 - Roman gold coin (aureus), Nerva
+  File: 12_PD19_Gold_Aureus_of_Nerva_MANTIS.jpg - 1747 x 1762, JPEG
+  Page: https://commons.wikimedia.org/wiki/File:Gold_Aureus_of_Nerva_(MANTIS).jpg
+  Commons licence field: CC0
+  Note: clean obverse portrait, legend IMP NERVA CAES AVG P M TR P COS II.
+
+13 - PD07 - Telugu palm-leaf manuscript
+  File: 13_PD07_Vedanta_manuscript_Telugu_script.jpg - 2616 x 724, JPEG
+  Page: https://commons.wikimedia.org/wiki/File:18th-century_Vedanta_manuscript,_Sanskrit,_Telugu_script,_Andhra_Pradesh.jpg
+  Commons licence field: CC BY-SA 4.0
+  Note: clean flat manuscript page in Telugu script (Sanskrit text, 18th century). Included as primary because it reads clearly on screen.
+  Alternative included:
+  File: 13alt_PD07_Andhra_Mahabhagavatham_Talapatralu.jpg - 4160 x 3120, JPEG
+  Page: https://commons.wikimedia.org/wiki/File:Andhra_Mahabhagavatham_Talapatralu.jpg
+  Commons licence field: CC BY-SA 4.0
+  Note: actual palm-leaf bundle (talapatralu) of the Andhra Mahabhagavatham, with Telugu title label - but photographed as a museum display with a red cloth and printed labels, so less clean than the Vedanta page.
+
+No British Museum images, no NC/ND items included.
