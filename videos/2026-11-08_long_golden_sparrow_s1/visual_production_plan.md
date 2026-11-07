@@ -1375,11 +1375,20 @@ New pickup lines need these visuals (otherwise every segment reuses its film sce
 
 | Kind | What it means | Count |
 |---|---|---|
-| EXIST | Already made and approved | 10 |
+| EXIST | Production stills already made and approved (T1–T8) | 8 |
 | GEN | New illustration, generated free by you in ChatGPT from the prompt pack (no ElevenLabs credits) | 30 |
-| PD | Public-domain / open-access museum or archive image; I download it and log the URL | 20 |
+| PD | Public-domain / open-access museum or archive image (incl. Met 1982.66); ready only once logged in archive_asset_log.md | 21 |
 | CC | Creative Commons or Pexels photo; credited at the end | 6 |
 | BUILD | Made in the motion-graphics pipeline; no outside rights | 12 |
+| **Production assets total** | | **77** |
+| REF | Reference material only, never on screen (character sheet, cloth reference R1) | 2 |
+
+### Reference material (not on screen)
+
+| ID | Asset | Source | Status | Used in |
+|---|---|---|---|---|
+| CHAR | Character + prop reference sheet v1 (reference only, not on screen) | ElevenLabs (paid, done) | have it | — |
+| R1 | Master cloth reference: our 1680 chintz + bale mark (reference only) | ChatGPT (free, Sandeep) · pack v2 | to generate first | — |
 
 ### Have
 
@@ -1393,9 +1402,8 @@ New pickup lines need these visuals (otherwise every segment reuses its film sce
 | T6 | Pit-loom weaver paid by a broker (true pit loom) | ChatGPT (own generation) | have it | 1.6, 2.1, 2.3, 2.16 |
 | T7 | Evening: Anna holds the coin, Chelli the cloth | ChatGPT (own generation) | have it | 7.1, 7.6, 7.7, 7.8 |
 | T8 | Night: the children's hands close the trunk lid | ChatGPT (own generation) | have it | 7.9 |
-| CHAR | Character + prop reference sheet v1 | ElevenLabs (paid, done) | have it | — |
 
-### To generate (free, ChatGPT; ★ = attach the character sheet)
+### To generate (free, ChatGPT; ★ = character sheet + T3; references per image in image_prompt_pack_v2.md)
 
 | ID | Asset | Source | Status | Used in |
 |---|---|---|---|---|
@@ -1434,38 +1442,38 @@ New pickup lines need these visuals (otherwise every segment reuses its film sce
 
 | ID | Asset | Source | Status | Used in |
 |---|---|---|---|---|
-| MET1 | Palampore, Coromandel Coast, 18th c. (Met 1982.66) | The Met Open Access | ✅ downloaded, public domain | 0.1, 0.2, 0.3, F1.3, 2.14 |
-| PD01 | Indus carnelian beads (Met Open Access, to select) | The Met OA | to select | — |
-| PD02 | Tavernier's diamond plate, Les Six Voyages (1676) | Wikimedia Commons (PD) | to download | 0.3, 3.7 |
-| PD03 | Act 7 Geo. I c.7 (1721) title page | Wellcome Collection / Google Books scan (PD) | to locate | 2.12 |
-| PD04 | 18th-c. dress or fashion plate in Indian chintz | The Met / Rijksmuseum OA | to select | 2.10 |
-| PD05 | Period print on the calico controversy / weavers' protest (1719–21) | British Museum? (check licence) / Wikimedia | to locate; fallback: BUILD a document card | 2.14 |
-| PD06 | Rijksmuseum CC0 view of Masulipatnam (17th c.) | Rijksmuseum (CC0) | to locate; fallback: G09 | 3.3 |
-| PD07 | Telugu palm-leaf or paper manuscript (TE 3.4) | Wikimedia Commons (PD) | to locate | 3.4 |
-| PD08 | Mughal miniature: land measurement / revenue survey (EN 4.4) | The Met / Wikimedia (PD) | to select | 4.4 |
-| PD09 | Peter Mundy's Travels page (Hakluyt edition, PD) | Internet Archive / Wikimedia | to locate | 4.10 |
-| PD10 | Cantino planisphere, 1502 | Wikimedia Commons (PD) | to download | 5.1 |
-| PD11 | Roteiro of da Gama's first voyage, page facsimile | Wikimedia / BNP (PD) | to locate; fallback: BUILD a quote card | 5.7 |
-| PD12 | East India Company coat of arms | Wikimedia Commons (PD) | to download | 6.1 |
-| PD13 | Jahangir court painting (Met Open Access; NOT the Freer Bichitr) | The Met OA | to select | 6.3 |
-| PD14 | Fort St George, Madras, early print (date to confirm) | Wikimedia / BL (PD) | to locate | 6.5 |
-| PD15 | East India House, London, print | Wikimedia (PD) | to download | 6.7 |
-| PD16 | Calcutta / Fort William 1750s print | Wikimedia (PD) | to locate | 6.13 |
-| PD17 | Benjamin West, Shah Alam conveying the grant of the Diwani (1818) | British Library via Wikimedia (PD) | to download | 7.5 |
-| PD18 | Coins: Mughal silver rupee (EN F2.1) and Golconda gold pagoda (TE F2.1) | Wikimedia (CNG photos, CC BY-SA) | to download, credit CNG | F2.2 |
-| PD19 | Roman gold coin (aureus) for TE 5.4 | Wikimedia (CC BY-SA / PD) | to download | 5.4 |
-| PD20 | Met chintz details for the dye-process diagram (2.6) and the faded/bright split (2.5) | The Met OA | to select | 2.5, 2.6 |
+| MET1 | Palampore, Coromandel Coast, 18th c. (Met 1982.66) | The Met Open Access | ✅ verified (see archive log) | 0.1, 0.2, 0.3, F1.3, 2.14 |
+| PD01 | Indus carnelian beads (Met Open Access, to select) | The Met OA | not yet verified (see archive log) | — |
+| PD02 | Tavernier's diamond plate, Les Six Voyages (1676) | Wikimedia Commons (PD) | not yet verified (see archive log) | 0.3, 3.7 |
+| PD03 | Act 7 Geo. I c.7 (1721) title page | Wellcome Collection / Google Books scan (PD) | not yet verified (see archive log) | 2.12 |
+| PD04 | 18th-c. dress or fashion plate in Indian chintz | The Met / Rijksmuseum OA | not yet verified (see archive log) | 2.10 |
+| PD05 | Period print on the calico controversy / weavers' protest (1719–21) | British Museum? (check licence) / Wikimedia | not yet verified (see archive log) | 2.14 |
+| PD06 | Rijksmuseum CC0 view of Masulipatnam (17th c.) | Rijksmuseum (CC0) | not yet verified (see archive log) | 3.3 |
+| PD07 | Telugu palm-leaf or paper manuscript (TE 3.4) | Wikimedia Commons (PD) | not yet verified (see archive log) | 3.4 |
+| PD08 | Mughal miniature: land measurement / revenue survey (EN 4.4) | The Met / Wikimedia (PD) | not yet verified (see archive log) | 4.4 |
+| PD09 | Peter Mundy's Travels page (Hakluyt edition, PD) | Internet Archive / Wikimedia | not yet verified (see archive log) | 4.10 |
+| PD10 | Cantino planisphere, 1502 | Wikimedia Commons (PD) | not yet verified (see archive log) | 5.1 |
+| PD11 | Roteiro of da Gama's first voyage, page facsimile | Wikimedia / BNP (PD) | not yet verified (see archive log) | 5.7 |
+| PD12 | East India Company coat of arms | Wikimedia Commons (PD) | not yet verified (see archive log) | 6.1 |
+| PD13 | Jahangir court painting (Met Open Access; NOT the Freer Bichitr) | The Met OA | not yet verified (see archive log) | 6.3 |
+| PD14 | Fort St George, Madras, early print (date to confirm) | Wikimedia / BL (PD) | not yet verified (see archive log) | 6.5 |
+| PD15 | East India House, London, print | Wikimedia (PD) | not yet verified (see archive log) | 6.7 |
+| PD16 | Calcutta / Fort William 1750s print | Wikimedia (PD) | not yet verified (see archive log) | 6.13 |
+| PD17 | Benjamin West, Shah Alam conveying the grant of the Diwani (1818) | British Library via Wikimedia (PD) | not yet verified (see archive log) | 7.5 |
+| PD18 | Coins: Mughal silver rupee (EN F2.1) and Golconda gold pagoda (TE F2.1) | Wikimedia (CNG photos, CC BY-SA) | not yet verified (see archive log) | F2.2 |
+| PD19 | Roman gold coin (aureus) for TE 5.4 | Wikimedia (CC BY-SA / PD) | not yet verified (see archive log) | 5.4 |
+| PD20 | Met chintz details for the dye-process diagram (2.6) and the faded/bright split (2.5) | The Met OA | not yet verified (see archive log) | 2.5, 2.6 |
 
 ### Creative Commons / Pexels
 
 | ID | Asset | Source | Status | Used in |
 |---|---|---|---|---|
-| CC01 | Golconda fort at dusk | Wikimedia Commons (CC BY-SA, attribution) | to select and check licence | 3.1 |
-| CC02 | Qutb Shahi tombs, Hyderabad | Wikimedia Commons (CC BY-SA) | to select and check licence | 3.4 |
-| CC03 | Hampi ruins (Vittala temple / Virupaksha) | Wikimedia Commons (CC BY-SA) | to select and check licence | 4.3 |
-| CC04 | Cracked dry earth (drought) | Pexels (free licence) | to select and check licence | 4.9 |
-| CC05 | Monsoon sea / rain over ocean (b-roll) | Pexels (free licence) | to select and check licence | — |
-| CC06 | Kalamkari artisans at work today, Srikalahasti / Pedana (TE 2.7) | Wikimedia (CC BY-SA) or Pexels | to select and check licence | 2.7 |
+| CC01 | Golconda fort at dusk | Wikimedia Commons (CC BY-SA, attribution) | not yet verified (see archive log) | 3.1 |
+| CC02 | Qutb Shahi tombs, Hyderabad | Wikimedia Commons (CC BY-SA) | not yet verified (see archive log) | 3.4 |
+| CC03 | Hampi ruins (Vittala temple / Virupaksha) | Wikimedia Commons (CC BY-SA) | not yet verified (see archive log) | 4.3 |
+| CC04 | Cracked dry earth (drought) | Pexels (free licence) | not yet verified (see archive log) | 4.9 |
+| CC05 | Monsoon sea / rain over ocean (b-roll) | Pexels (free licence) | not yet verified (see archive log) | — |
+| CC06 | Kalamkari artisans at work today, Srikalahasti / Pedana (TE 2.7) | Wikimedia (CC BY-SA) or Pexels | not yet verified (see archive log) | 2.7 |
 
 ### In-house builds
 

@@ -1,0 +1,133 @@
+<title>Golden Sparrow Image Pack 2</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya:wght@500;700&family=Source+Sans+3:wght@400;600&family=IBM+Plex+Mono:wght@400&display=swap">
+<style>
+/* Layout: phone-first single column; a filter (Test batch / All) above the shot cards; each card copies one prompt. Palette from kalamkari dyes. */
+:root{
+  --bg:#f3f1f6; --surface:#ffffff; --ink:#1d1a2b; --muted:#5d5873; --line:#dcd7e6;
+  --madder:#a3271f; --indigo:#2b2f6b; --done:#2f7a4f; --chip:#ebe7f3; --test:#8a5a00;
+  --display:"Alegreya",Georgia,serif; --body:"Source Sans 3",system-ui,sans-serif; --mono:"IBM Plex Mono",ui-monospace,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#14131d; --surface:#1d1c29; --ink:#ece9f5; --muted:#a6a1bb; --line:#33314a;
+  --madder:#e0645a; --indigo:#a9b0ff; --done:#6cc893; --chip:#272538; --test:#e8b84f; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#14131d; --surface:#1d1c29; --ink:#ece9f5; --muted:#a6a1bb; --line:#33314a;
+  --madder:#e0645a; --indigo:#a9b0ff; --done:#6cc893; --chip:#272538; --test:#e8b84f; color-scheme:dark}
+body{background:var(--bg);color:var(--ink);font:16px/1.55 var(--body)}
+.wrap{max-width:700px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:20px 48px;display:flex;flex-direction:column;gap:26px}
+h1{font:700 1.9rem/1.15 var(--display);margin:0;text-wrap:balance;color:var(--indigo)}
+h2{font:700 1.25rem/1.2 var(--display);margin:0;text-wrap:balance}
+p{margin:0}
+.eyebrow{font:600 .75rem/1 var(--body);letter-spacing:.08em;text-transform:uppercase;color:var(--madder)}
+.lede,.small{color:var(--muted)} .small{font-size:.875rem}
+ol.steps{margin:0;padding-left:1.3em;display:flex;flex-direction:column;gap:10px}
+ol.steps li::marker{color:var(--madder);font-weight:600}
+.refs{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.refs figure{margin:0;display:flex;flex-direction:column;gap:6px;min-width:0}
+.refs img{border-radius:6px;border:1px solid var(--line)}
+@media (max-width:520px){.refs{grid-template-columns:1fr}}
+.bar{display:flex;gap:8px;align-items:center;flex-wrap:wrap;justify-content:space-between}
+.seg{display:flex;border:1px solid var(--indigo);border-radius:8px;overflow:hidden}
+.seg button{border:0;border-radius:0;background:transparent;color:var(--indigo);padding:8px 14px;font:600 .95rem var(--body);cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--indigo);color:var(--surface)}
+.progress{font:600 .9rem var(--body);color:var(--muted)}
+.shots{display:flex;flex-direction:column;gap:14px}
+.shot{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:14px;display:flex;flex-direction:column;gap:10px}
+.shot.is-done{border-color:var(--done)}
+.head{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.id{font:700 1rem var(--mono);color:var(--madder)}
+.tags{display:flex;gap:6px;flex-wrap:wrap}
+.tag{background:var(--chip);color:var(--muted);font-size:.78rem;padding:2px 8px;border-radius:99px}
+.tag.ref{color:var(--indigo);font-weight:600}
+.tag.test{color:var(--test);font-weight:700}
+details{font-size:.9rem;color:var(--muted)} details summary{cursor:pointer;color:var(--indigo);font-weight:600}
+details p{margin-top:6px}
+pre{margin:0;white-space:pre-wrap;word-break:break-word;font:.8rem/1.5 var(--mono);background:var(--chip);border-radius:6px;padding:10px;max-height:9em;overflow:auto}
+.row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.copy{font:600 .95rem var(--body);border-radius:6px;padding:10px 14px;border:1px solid var(--indigo);background:var(--indigo);color:var(--surface);cursor:pointer}
+button:focus-visible,input:focus-visible,summary:focus-visible{outline:3px solid var(--madder);outline-offset:2px}
+label.done{display:flex;gap:8px;align-items:center;font-size:.95rem;color:var(--muted)}
+input[type=checkbox]{width:20px;height:20px;accent-color:var(--done)}
+.note{border-left:3px solid var(--madder);padding-left:12px;display:flex;flex-direction:column;gap:6px}
+</style>
+
+<div class="wrap">
+  <header style="display:flex;flex-direction:column;gap:8px">
+    <span class="eyebrow">The Golden Sparrow · Season 1 · pack 2</span>
+    <h1>Image pack: 30 scenes + the cloth</h1>
+    <p class="lede">Start with the 7 test shots only. After we approve them, switch the filter to "All" and make the rest.</p>
+  </header>
+
+  <section style="display:flex;flex-direction:column;gap:12px">
+    <h2>How to do it</h2>
+    <ol class="steps">
+      <li>Open the <b>same ChatGPT chat</b> that made T1–T8. It remembers the approved style.</li>
+      <li>Make <b>R1 first</b>, the cloth reference. Save it, because eight later shots attach it.</li>
+      <li>For each shot, attach the references shown on its card, then tap <b>Copy prompt</b> and paste.</li>
+      <li>One image per prompt. If something is off, reply in the same chat with one short fix.</li>
+      <li>Download at full size, then tick <b>Done</b>.</li>
+      <li>Send the images here with their IDs in the same order, for example <i>"R1, G01, G02"</i>.</li>
+    </ol>
+    <div class="note"><p class="small">Only G15 needs the character sheet, together with T3, so the room and trunk match. Every shot that shows "our cloth" needs R1. Ammamma's kalamkari stays exactly as on the character sheet; it is a different cloth.</p></div>
+  </section>
+
+  <section class="refs" aria-label="References">
+    <figure><img src="data:image/jpeg;base64,__SHEET__" alt="Character sheet: Anna, Chelli, the trunk and Ammamma's kalamkari"><figcaption class="small">Character sheet (for G15)</figcaption></figure>
+    <figure><img src="data:image/jpeg;base64,__T3__" alt="T3: Anna and Chelli open the trunk in Ammamma's room"><figcaption class="small">T3: Ammamma's room (for G15)</figcaption></figure>
+  </section>
+
+  <section style="display:flex;flex-direction:column;gap:12px">
+    <div class="bar">
+      <div class="seg" role="group" aria-label="Show">
+        <button type="button" id="f-test" aria-pressed="true">Test batch (7)</button>
+        <button type="button" id="f-all" aria-pressed="false">All (31)</button>
+      </div>
+      <span class="progress" id="progress"></span>
+    </div>
+    <div class="shots" id="shots"></div>
+  </section>
+</div>
+
+<script>
+const SHOTS = __DATA__;
+const KEY = 'gs-pack2-done', FKEY = 'gs-pack2-filter';
+let done = {}, filter = 'test';
+try { done = JSON.parse(localStorage.getItem(KEY) || '{}') || {}; filter = localStorage.getItem(FKEY) || 'test'; } catch (e) {}
+function save(){ try { localStorage.setItem(KEY, JSON.stringify(done)); localStorage.setItem(FKEY, filter); } catch (e) {} }
+const REFN = {R1: 'Attach R1 (cloth)', CHAR: 'Attach character sheet', T3: 'Attach T3'};
+const box = document.getElementById('shots');
+function esc(s){ return s.replace(/[&<>]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;'}[c])); }
+function render(){
+  box.innerHTML = '';
+  const list = SHOTS.filter(s => filter === 'all' || s.batch === 1);
+  list.forEach(s => {
+    const el = document.createElement('article'); el.className = 'shot' + (done[s.id] ? ' is-done' : '');
+    const refs = s.refs.length ? s.refs.map(r => `<span class="tag ref">${REFN[r]}</span>`).join('') : '<span class="tag">No reference needed</span>';
+    el.innerHTML = `<div class="head"><span class="id">${s.id}</span><h2 style="font-size:1.08rem">${esc(s.title)}</h2></div>
+      <div class="tags">${s.batch === 1 ? '<span class="tag test">TEST BATCH</span>' : ''}<span class="tag">Scene ${esc(s.scene)}</span>${refs}</div>
+      <details><summary>Why this shot</summary><p>${esc(s.purpose)}</p>${s.history ? `<p><b>History:</b> ${esc(s.history)}</p>` : ''}<p><b>Framing:</b> ${esc(s.comp)}</p></details>
+      <pre></pre>
+      <div class="row"><button type="button" class="copy">Copy prompt</button><label class="done"><input type="checkbox" id="d-${s.id}"> Done</label></div>`;
+    box.appendChild(el);
+    el.querySelector('pre').textContent = s.full;
+    const btn = el.querySelector('.copy'), cb = el.querySelector('input'); cb.checked = !!done[s.id];
+    btn.addEventListener('click', () => {
+      const ok = () => { btn.textContent = 'Copied'; setTimeout(() => btn.textContent = 'Copy prompt', 1600); };
+      const fb = () => { const r = document.createRange(); r.selectNodeContents(el.querySelector('pre')); const sel = getSelection(); sel.removeAllRanges(); sel.addRange(r); btn.textContent = 'Selected: tap Copy'; };
+      try { navigator.clipboard.writeText(s.full).then(ok, fb); } catch (e) { fb(); }
+    });
+    cb.addEventListener('change', () => { done[s.id] = cb.checked; el.classList.toggle('is-done', cb.checked); save(); progress(); });
+  });
+  progress();
+}
+function progress(){
+  const list = SHOTS.filter(s => filter === 'all' || s.batch === 1);
+  document.getElementById('progress').textContent = list.filter(s => done[s.id]).length + ' of ' + list.length + ' done';
+}
+function setF(f){ filter = f; document.getElementById('f-test').setAttribute('aria-pressed', f === 'test'); document.getElementById('f-all').setAttribute('aria-pressed', f === 'all'); save(); render(); }
+document.getElementById('f-test').addEventListener('click', () => setF('test'));
+document.getElementById('f-all').addEventListener('click', () => setF('all'));
+setF(filter === 'all' ? 'all' : 'test');
+</script>

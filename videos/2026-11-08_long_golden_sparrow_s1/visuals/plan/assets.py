@@ -16,7 +16,8 @@ a('T6', 'EXIST', 'Pit-loom weaver paid by a broker (true pit loom)', 'ChatGPT (o
 a('T7', 'EXIST', 'Evening: Anna holds the coin, Chelli the cloth', 'ChatGPT (own generation)', 'have it')
 a('T8', 'EXIST', 'Night: the children\'s hands close the trunk lid', 'ChatGPT (own generation)', 'have it')
 a('MET1', 'PD', 'Palampore, Coromandel Coast, 18th c. (Met 1982.66)', 'The Met Open Access', '✅ downloaded, public domain')
-a('CHAR', 'EXIST', 'Character + prop reference sheet v1', 'ElevenLabs (paid, done)', 'have it')
+a('CHAR', 'REF', 'Character + prop reference sheet v1 (reference only, not on screen)', 'ElevenLabs (paid, done)', 'have it')
+a('R1', 'REF', 'Master cloth reference: our 1680 chintz + bale mark (reference only)', 'ChatGPT (free, Sandeep) · pack v2', 'to generate first')
 
 # ---- new illustrations to generate (free, ChatGPT, prompt pack v2). ref=True: attach the character sheet
 G = [

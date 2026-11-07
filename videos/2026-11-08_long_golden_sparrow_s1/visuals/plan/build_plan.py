@@ -139,13 +139,15 @@ w('')
 w('| Kind | What it means | Count |')
 w('|---|---|---|')
 kc = collections.Counter(a['kind'] for a in A.values())
-w(f"| EXIST | Already made and approved | {kc['EXIST'] + 1} |")
+w(f"| EXIST | Production stills already made and approved (T1–T8) | {kc['EXIST']} |")
 w(f"| GEN | New illustration, generated free by you in ChatGPT from the prompt pack (no ElevenLabs credits) | {kc['GEN']} |")
-w(f"| PD | Public-domain / open-access museum or archive image; I download it and log the URL | {kc['PD'] - 1} |")
+w(f"| PD | Public-domain / open-access museum or archive image (incl. Met 1982.66); ready only once logged in archive_asset_log.md | {kc['PD']} |")
 w(f"| CC | Creative Commons or Pexels photo; credited at the end | {kc['CC']} |")
 w(f"| BUILD | Made in the motion-graphics pipeline; no outside rights | {kc['BUILD']} |")
+w(f"| **Production assets total** | | **{sum(v for k, v in kc.items() if k != 'REF')}** |")
+w(f"| REF | Reference material only, never on screen (character sheet, cloth reference R1) | {kc['REF']} |")
 w('')
-for kind, title in (('EXIST', 'Have'), ('GEN', 'To generate (free, ChatGPT; ★ = attach the character sheet)'), ('PD', 'Public domain / open access'), ('CC', 'Creative Commons / Pexels'), ('BUILD', 'In-house builds')):
+for kind, title in (('REF', 'Reference material (not on screen)'), ('EXIST', 'Have'), ('GEN', 'To generate (free, ChatGPT; ★ = character sheet + T3; references per image in image_prompt_pack_v2.md)'), ('PD', 'Public domain / open access'), ('CC', 'Creative Commons / Pexels'), ('BUILD', 'In-house builds')):
     w(f"### {title}")
     w('')
     w('| ID | Asset | Source | Status | Used in |')
@@ -153,6 +155,7 @@ for kind, title in (('EXIST', 'Have'), ('GEN', 'To generate (free, ChatGPT; ★ 
     for a in A.values():
         if a['kind'] != kind: continue
         star = ' ★' if a['ref'] else ''
+        if kind == 'PD' or kind == 'CC': a = dict(a, status=('✅ verified (see archive log)' if a['id'] == 'MET1' else 'not yet verified (see archive log)'))
         w(f"| {a['id']}{star} | {a['desc']} | {a['source']} | {a['status']} | {', '.join(use.get(a['id'], [])) or '—'} |")
     w('')
 w('**Credits:** none. Every new picture is generated free in ChatGPT. Everything else is public domain, Creative Commons, or built in-house.')
