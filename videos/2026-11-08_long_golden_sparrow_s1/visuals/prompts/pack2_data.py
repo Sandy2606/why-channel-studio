@@ -1,5 +1,5 @@
 # Prompt pack v2: G01-G30 + R1 (master cloth reference). One complete, self-contained prompt per image.
-STYLE = ("STYLE (same as the approved T1-T8 images): painterly documentary realism, like a museum-quality oil painting with soft visible brushwork; "
+STYLE = ("STYLE (same as the approved T1-T8 images): never add Anna, Chelli or Ammamma's trunk unless the prompt asks for them; painterly documentary realism, like a museum-quality oil painting with soft visible brushwork; "
          "warm natural light and deep soft shadows; colour accents of madder red, indigo and turmeric over earthy black-soil tones; historically accurate clothing, tools and architecture; "
          "no text, letters, captions, logos or watermarks; no modern objects.")
 LAYERS = ("COMPOSITION FOR ANIMATION: landscape 16:9 at the highest resolution. Build the picture in three clear depth layers (a distinct foreground element, the subject in the middle ground, "
@@ -29,7 +29,7 @@ p('G01', 'Cotton field at dawn', '1.0, 1.1, F1.3 match cut', 'Opens Chapter 1; t
   [], 'Deccan black cotton soil (regur); hand-cultivated plots; neem and palmyra are native to the region.', 'Calm, golden, quiet; the "establishing shot" of the season.',
   'Foreground bolls / mid field / background trees and sun give clean parallax; horizon in the upper third; the hut near centre for the 9:16 crop.', batch=1)
 p('G02', 'Family picking cotton', '1.2', '"Around 1680, somewhere in the Deccan, a family is picking cotton at dawn."',
-  'Same field and dawn light as G01. A farming family picks cotton: the mother and grandmother in plain cotton saris tucked for work, the father in a dhoti and head cloth, '
+  'Same field and dawn light as G01. A farming family picks cotton: the mother and grandmother in plain, faded unbleached-cotton saris worn without stitched blouses or festive borders (simple everyday 17th-century village dress, not a langa-voni or half-saree, and NOT the colours of Chelli\'s outfit), the father in a dhoti and head cloth, '
   'cloth bags slung at the hip filling with cotton; a white ox stands at the field edge. Bare feet, simple brass bangles, no shoes. ',
   [], 'Late-17th c. rural Deccan dress: unstitched cotton (sari, dhoti), head cloths; hand picking into slung bags.', 'Dignified, unhurried work; faces lit by the low sun.',
   'Foreground cotton plants, family in the middle ground, ox and trees behind; mother and grandmother close to the centre for the 9:16 crop.', batch=1)
@@ -60,8 +60,8 @@ p('G08', 'London customs warehouse', '2.11', 'England 1700: Asian calicoes stopp
   [], 'Late-Stuart London: coats, cravats, periwigs; customs officers recorded goods for re-export under the 1700 Act.', 'Bureaucratic, cooler palette than India scenes.',
   'Bales foreground, clerk middle, windows behind; clerk centred.')
 p('G09', 'Machilipatnam harbour, c.1680', '3.3, 4.11 (alt)', 'The Golconda port where the world came to buy cloth.',
-  'Wide view of Machilipatnam harbour at the Krishna delta, c.1680: large ocean-going ships (Dutch and English East Indiamen and Persian/Arab vessels) at anchor offshore, small masula surf boats ferrying bales to the shore, '
-  'warehouses with tiled roofs and a wooden jetty, palm-lined beach, morning haze. ',
+  'Wide view of Machilipatnam harbour at the Krishna delta, c.1680: large ocean-going ships (Dutch and English East Indiamen and Persian/Arab vessels) at anchor offshore, small masula surf boats ferrying bales (wrapped in sacking, rope tied in a cross, stamped with the fish-and-7 mark) to the shore, '
+  'warehouses with tiled roofs and a wooden jetty, palm-lined beach, morning haze. Only 17th-century people: do NOT include Anna, Chelli, any present-day children or Ammamma\'s trunk. ',
   [], 'Masulipatnam: Golconda\'s main port; Dutch (from 1605/06) and English (1611) factories; masula boats carried cargo through the surf.',
   'Grand, busy, international.', 'Jetty and boats foreground, beach and warehouses middle, ships at anchor behind; a central ship for the 9:16 crop.', batch=1)
 p('G10', 'Waterfront cloth market', '3.3', 'Brokers and interpreters connect foreign buyers with weaving villages.',
@@ -123,13 +123,13 @@ p('G27', 'Boats past the toll post', '6.9', 'Company men misused their passes fo
   'A riverside toll post in Bengal, 1720s-50s: a Company budgerow boat glides past, its men holding up a pass, while the Nawab\'s toll officer looks on, frustrated; other boats wait to pay. ',
   [], 'Dastaks exempted Company goods from duties; private abuse angered Bengal\'s rulers.', 'Quiet tension.', 'Toll officer foreground, boats middle, river bank behind.')
 p('G28', 'Sepoys drilling', '6.10', 'The companies trained Indian soldiers in European drill.',
-  'South India, 1750s: a line of Indian sepoys drilling with muskets in European formation under a European officer; red coats over Indian dress, turbans, dust; a fort wall behind. ',
+  'South India, 1750s: a line of Indian sepoys drilling with muskets in European formation under a European officer (any flag: the striped Company ensign or the French white flag, never the modern Union Jack); red coats over Indian dress, turbans, dust; a fort wall behind. ',
   [], 'Early sepoy units (French and English) wore European-style coats with Indian turbans and dress.', 'Disciplined, ominous.', 'Officer foreground, line middle, fort behind.')
 p('G29', 'Mango grove at Plassey', '7.1', 'The calm before Plassey.',
   'A mango grove near Plassey before dawn, June 1757: heavy humid mist between dark mango trees, distant camp fires, a river bend glimpsed; no people close. ',
   [], 'The Company army camped in the Lakshabag mango grove by the Bhagirathi.', 'Still, heavy, foreboding.', 'Trees foreground, mist middle, fires behind.')
 p('G30', 'Plassey, 23 June 1757', '7.2, 7.3', 'Two armies; much of one never fought.',
-  'Very wide view across rain-wet fields, 23 June 1757: a small Company army in a line near the mango grove; facing it, a far larger army with elephants and cavalry, much of one flank standing still; heavy grey sky, distant smoke. '
+  'Very wide view across rain-wet fields, 23 June 1757: a small Company army in a line near the mango grove - mostly Indian sepoys in turbans and red coats, with a smaller group of European soldiers in tricorne hats and a few field guns; if any flag is shown it must be the red-and-white striped East India Company ensign (NOT the modern Union Jack, which did not exist until 1801); facing it, a far larger army with elephants and cavalry, much of one flank standing still; heavy grey sky, distant smoke. '
   'No close combat, no blood. ',
   [], 'Roughly 3,000 Company troops faced about 50,000; a heavy rain fell that afternoon; Mir Jafar\'s troops stood aside.', 'Restrained, documentary, no heroics.',
   'Company line foreground-left, open field middle, large army behind; the still flank near the centre.', batch=1)
