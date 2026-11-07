@@ -35,6 +35,6 @@ json.dump(P, open(f'{V}/visuals/prompts/pack2_prompts.json', 'w'), ensure_ascii=
 # ---------- phone page
 b64 = lambda p: base64.b64encode(open(p, 'rb').read()).decode()
 tpl = open('/home/claude/gs/pack2/template2.html').read()
-page = tpl.replace('__DATA__', json.dumps(P, ensure_ascii=False)).replace('__SHEET__', b64('/home/claude/gs/pack2/sheet.jpg')).replace('__T3__', b64('/home/claude/gs/pack2/t3.jpg'))
+page = tpl.replace('__DATA__', json.dumps(P, ensure_ascii=False)).replace('__SHEET__', b64('/home/claude/gs/pack2/sheet.jpg')).replace('__T3__', b64('/home/claude/gs/pack2/t3.jpg')).replace('__BATCH__', open('/home/claude/gs/pack2/batches.json').read())
 open('/home/claude/gs/pack2/golden_sparrow_image_pack_v2.html', 'w').write(page)
 print('ok', len(P), sum(1 for x in P if x['batch'] == 1))

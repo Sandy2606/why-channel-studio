@@ -46,6 +46,7 @@ details{font-size:.9rem;color:var(--muted)} details summary{cursor:pointer;color
 details p{margin-top:6px}
 pre{margin:0;white-space:pre-wrap;word-break:break-word;font:.8rem/1.5 var(--mono);background:var(--chip);border-radius:6px;padding:10px;max-height:9em;overflow:auto}
 .row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.copy.ghost{background:transparent;color:var(--indigo)}
 .copy{font:600 .95rem var(--body);border-radius:6px;padding:10px 14px;border:1px solid var(--indigo);background:var(--indigo);color:var(--surface);cursor:pointer}
 button:focus-visible,input:focus-visible,summary:focus-visible{outline:3px solid var(--madder);outline-offset:2px}
 label.done{display:flex;gap:8px;align-items:center;font-size:.95rem;color:var(--muted)}
@@ -73,6 +74,18 @@ input[type=checkbox]{width:20px;height:20px;accent-color:var(--done)}
     <div class="note"><p class="small">Only G15 needs the character sheet, together with T3, so the room and trunk match. Every shot that shows "our cloth" needs R1. Ammamma's kalamkari stays exactly as on the character sheet; it is a different cloth.</p></div>
   </section>
 
+  <section style="display:flex;flex-direction:column;gap:12px">
+    <h2>Paste a whole batch at once</h2>
+    <p class="small">One copy, one paste. ChatGPT makes the images one after another and labels each with its ID. If it stops, type <b>next</b>.</p>
+    <div class="row">
+      <button type="button" class="copy" data-b="test">Copy TEST batch (7)</button>
+      <button type="button" class="copy ghost" data-b="b2">Batch 2 (8)</button>
+      <button type="button" class="copy ghost" data-b="b3">Batch 3 (8) · attach sheet + T3</button>
+      <button type="button" class="copy ghost" data-b="b4">Batch 4 (8)</button>
+    </div>
+    <p class="small">Batches 2–4 come after we approve the test images.</p>
+  </section>
+
   <section class="refs" aria-label="References">
     <figure><img src="data:image/jpeg;base64,__SHEET__" alt="Character sheet: Anna, Chelli, the trunk and Ammamma's kalamkari"><figcaption class="small">Character sheet (for G15)</figcaption></figure>
     <figure><img src="data:image/jpeg;base64,__T3__" alt="T3: Anna and Chelli open the trunk in Ammamma's room"><figcaption class="small">T3: Ammamma's room (for G15)</figcaption></figure>
@@ -92,6 +105,13 @@ input[type=checkbox]{width:20px;height:20px;accent-color:var(--done)}
 
 <script>
 const SHOTS = __DATA__;
+const BATCH = __BATCH__;
+document.querySelectorAll('button[data-b]').forEach(btn => btn.addEventListener('click', () => {
+  const txt = BATCH[btn.dataset.b], old = btn.textContent;
+  const ok = () => { btn.textContent = 'Copied'; setTimeout(() => btn.textContent = old, 1600); };
+  const fb = () => { const ta = document.createElement('textarea'); ta.value = txt; ta.style.position = 'fixed'; ta.style.opacity = '0'; document.body.appendChild(ta); ta.select(); try { document.execCommand('copy'); ok(); } catch (e) { btn.textContent = 'Copy failed: use the file'; } ta.remove(); };
+  try { navigator.clipboard.writeText(txt).then(ok, fb); } catch (e) { fb(); }
+}));
 const KEY = 'gs-pack2-done', FKEY = 'gs-pack2-filter';
 let done = {}, filter = 'test';
 try { done = JSON.parse(localStorage.getItem(KEY) || '{}') || {}; filter = localStorage.getItem(FKEY) || 'test'; } catch (e) {}
