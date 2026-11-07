@@ -1,6 +1,7 @@
 # The Golden Sparrow · Season 1: post copy (full film, Sunday Nov 8)
 
 ## How to upload (in this order)
+0. **Rejoin the master first** (the two `.part0` / `.part1` files per language, one command, see the chat). Upload that single file, not the review parts. Thumbnails: `thumb_golden_sparrow_film_EN.jpg` / `_TE.jpg`.
 1. **Upload the film privately first.** Open YouTube Studio → **Copyright** and wait for the check to finish; this covers the Gemini music. Then set the film to **Public** at your publish time.
 2. **Altered or synthetic content: No.**
    - The reconstructions are painterly illustrations, not photorealistic.
@@ -26,18 +27,19 @@ We follow one painted cotton cloth from a Deccan field in c.1680, through a pit 
 ⚓ Machilipatnam, Golconda's sea gate, drew ships from Persia, Arabia, Burma and Southeast Asia. The Dutch and the English set up trade there too.
 💎 Golconda's diamonds made the legends, but cloth filled the ships.
 🌊 Vasco da Gama didn't discover India. He joined an ocean that had been busy for centuries.
+🌶️ Spices brought Europeans east. Indian cloth became the big prize.
 🏴 The East India Company asked permission for 150 years. Then came Plassey (1757), Buxar (1764) and the right to collect Bengal's revenue (1765).
 
 What happens when a company that once needed permission to trade starts collecting the taxes? That's Season 2.
 
 CHAPTERS
 0:00 Why Britain banned a cloth
-1:03 Ch 1 · Was India really that rich?
+1:02 Ch 1 · Was India really that rich?
 2:32 Ch 2 · The cloth the world wanted
-4:46 Ch 3 · Golconda and Machilipatnam
+4:45 Ch 3 · Golconda and Machilipatnam
 6:39 Ch 4 · Who controlled the wealth?
-8:27 Ch 5 · Europe didn't discover India
-10:00 Ch 6 · The company that came to trade
+8:26 Ch 5 · Europe didn't discover India
+9:59 Ch 6 · The company that came to trade
 12:44 Plassey, and the question for Season 2
 
 A new Short every day this week (Mon–Sat), each digging into one chapter.
@@ -73,7 +75,8 @@ CREDITS
 - Storm clouds over the sea, cracked earth: Pexels
 - Illustrations of 17th–18th-century scenes and of Anna & Chelli: AI illustrations made for this film (dramatized reconstructions)
 - Maps and graphics: made by WHY?. India's outline follows the official map (svg-maps, MIT)
-- Music: original tracks generated for WHY?. Sound effects: Freesound, Pixabay, Mixkit (free licences)
+- Music: original tracks generated for WHY?. Sound effects: Freesound, Pixabay, Mixkit (free licences); ambience from Pixabay (Content License): Indian Village Ambience (ranjit_foley), birds & cowbells, hall ambience, stone footsteps, Horse running HQ (tanweraman), Army Marching Steps (alex_jauk), Distant War (armed_unit, excerpts), Ancient War Drums (dragon-studio), market bazaar, ship bell, elephant trumpet
+- Animated maps, 2D scenes and diagrams: made by WHY? (illustrative)
 
 #GoldenSparrow #IndianHistory #EastIndiaCompany #Machilipatnam #WhyEveryQuestionHasAStory
 
@@ -94,22 +97,23 @@ golden sparrow india, india golden sparrow history, sone ki chidiya, india share
 
 🌾 Angus Maddison అంచనా ప్రకారం, 1700లో ప్రపంచ ఉత్పత్తిలో మన వాటా దాదాపు 24 శాతం. దానికి కారణం మన జనాభా, మన తయారీ. అందరూ ధనికులని కాదు.
 🧵 మన రంగులు ఉతికినా పోయేవి కావు. యూరప్ దశాబ్దాల పాటు కాపీ చేయాలని ప్రయత్నించింది.
-🚫 1686లో ఫ్రాన్స్, 1721 చట్టంతో బ్రిటన్ మన గుడ్డను నిషేధించాయి. ఆ నిషేధం 1774 వరకు అమల్లో ఉంది.
+🚫 1686లో ఫ్రాన్స్ అచ్చు గుడ్డలను నిషేధించింది. 1721 చట్టంతో బ్రిటన్ 1722 డిసెంబర్ నుంచి అచ్చు calico వేసుకోవడాన్ని నిషేధించింది. ఆ నిషేధం 1774 వరకు అమల్లో ఉంది.
 ⚓ మచిలీపట్నం గోల్కొండ రాజ్యానికి సముద్ర ద్వారం. పర్షియా, అరేబియా, బర్మా, ఆగ్నేయాసియా నుంచి ఓడలు వచ్చేవి.
 💎 గోల్కొండ వజ్రాలు కథలు సృష్టించాయి. ఓడలు నింపింది మాత్రం మన గుడ్డే.
 🌊 వాస్కో డ గామా భారత్‌ను కనిపెట్టలేదు. ఎవరో దారి చూపించారు.
+🌶️ సుగంధ ద్రవ్యాలు యూరోపియన్లను తూర్పుకు తెచ్చాయి. మన గుడ్డే పెద్ద బహుమతి అయింది.
 🏴 నూట యాభై ఏళ్లు అనుమతి అడిగిన కంపెనీ: ప్లాసీ 1757, బక్సర్ 1764, దివానీ 1765.
 
 అనుమతి అడిగిన కంపెనీ పన్నులే వసూలు చేయడం మొదలుపెడితే ఏమవుతుంది? అది సీజన్ 2.
 
 CHAPTERS
 0:00 బ్రిటన్ ఒక గుడ్డను ఎందుకు నిషేధించింది?
-1:13 అధ్యాయం 1 · భారతదేశం నిజంగా అంత ధనికమా?
-2:53 అధ్యాయం 2 · ప్రపంచం కోరుకున్న గుడ్డ
+1:12 అధ్యాయం 1 · భారతదేశం నిజంగా అంత ధనికమా?
+2:52 అధ్యాయం 2 · ప్రపంచం కోరుకున్న గుడ్డ
 5:32 అధ్యాయం 3 · గోల్కొండ, మచిలీపట్నం
 8:06 అధ్యాయం 4 · సంపద ఎవరి చేతిలో?
-10:27 అధ్యాయం 5 · యూరప్ భారత్‌ను కనిపెట్టలేదు
-12:15 అధ్యాయం 6 · వ్యాపారం కోసం వచ్చిన కంపెనీ
+10:26 అధ్యాయం 5 · యూరప్ భారత్‌ను కనిపెట్టలేదు
+12:14 అధ్యాయం 6 · వ్యాపారం కోసం వచ్చిన కంపెనీ
 15:30 ప్లాసీ, సీజన్ 2 ప్రశ్న
 
 ఈ వారం రోజూ ఒక Short (సోమ–శని), ఒక్కో అధ్యాయం లోతుగా.
