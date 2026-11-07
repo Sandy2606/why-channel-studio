@@ -83,22 +83,24 @@ def events(film, seqs):
     return ev + ambience(film) + card_events(film)
 # ---- v5 sound world: ambience beds (sfx/amb/*) + sound bridges; files are skipped until they exist
 AMB = {  # line ids -> (file, gain dB)
-    'amb/village.mp3': (['1.1', '1.2', '1.3', '1.8', '2.2'], -24), 'amb/birds_cattle.mp3': (['1.1', '1.2', '1.3', '1.8'], -27),
-    'amb/charkha.mp3': (['2.2'], -22), 'amb/court.mp3': (['4.3', '4.4', '4.5', '6.3', '6.4', '6.8'], -25),
-    'amb/bazaar.mp3': (['3.4', '4.7', '4.8', '5.7', '5.8'], -26), 'amb/dock.mp3': (['3.2', '3.3', '4.11', '5.2', '6.7'], -26),
-    'amb/march.mp3': (['6.10', '7.2'], -24), 'amb/drums.mp3': (['7.2'], -28), 'amb/battle.mp3': (['4.2', '6.10', '7.3', '7.5'], -27),
-    'amb/horses.mp3': (['6.13', '7.5'], -24)}
+    'amb/village.mp3': (['1.1', '1.2', '1.3', '1.8', '2.2'], -13), 'amb/birds_cattle.mp3': (['1.1', '1.2', '1.3', '1.8'], -16),
+'amb/court.mp3': (['4.3', '4.4', '4.5', '6.3', '6.4', '6.8'], -14),
+    'amb/bazaar.mp3': (['3.4', '4.7', '4.8', '5.7', '5.8'], -15), 'amb/dock.wav': (['3.2', '3.3', '4.11', '5.2', '6.7'], -15),
+    'amb/march.mp3': (['6.10', '7.2'], -13), 'amb/drums.mp3': (['7.2'], -17), 'amb/battle.mp3': (['4.2', '6.10', '7.3'], -17),
+    'amb/horses.mp3': (['6.13'], -15)}
 def ambience(film):
     M = film.M; cue = film.cue; ev = []
     for f, (ids, g) in AMB.items():
         for k, i in enumerate(ids):
             if i not in M: continue
-            a, b = M[i]; ev.append((f, a - 0.3, g, (k * 17.3) % 40, b - a + 0.8, 0.8, -10))
+            a, b = M[i]; ev.append((f, a - 0.3, g, (k * 17.3) % 40, b - a + 0.8, 0.8, -14))
     br = []                                                        # sound bridges: the next place is heard just before it is seen
-    if '3.2' in M: br.append(('amb/ship_bell.mp3', cue('3.2', 'seagate', 'సముద్ర') - 0.8, -16, 0, 3.0, 0.2, -6))
+    if '3.2' in M: br.append(('amb/ship_bell.mp3', cue('3.2', 'seagate', 'సముద్ర') - 0.8, -18, 0, 3.0, 0.2, -6))
     if '6.8b' in M: br.append(('amb/horses.mp3', cue('6.8b', 'Aurangzeb', 'ఔరంగజేబుతో') - 0.8, -18, 5, 3.5, 0.5, -8))
     if '7.2' in M: br.append(('amb/horses.mp3', M['7.2'][0] - 0.9, -18, 12, 3.0, 0.5, -8))
-    if '7.3' in M: br.append(('amb/elephant.mp3', M['7.3'][0] + 0.4, -20, 0, 3.0, 0.2, -8))
+    if '7.3' in M: br.append(('amb/elephant.mp3', M['7.3'][0] + 0.4, -22, 0, 2.0, 0.1, -8))
+    if '7.5' in M: br.append(('amb/horses.mp3', cue('7.5', 'Buxar', 'బక్సర్‌లో') - 0.6, -20, 2, 2.5, 0.4, -8))
+    if '4.2' in M: br.append(('amb/horses.mp3', cue('4.2', 'Thalikota', 'తళ్లికోట') - 0.6, -22, 6, 2.5, 0.4, -8))
     if '6.10' in M: br.append(('amb/march.mp3', cue('6.10', 'They', 'సిపాయిలు') - 0.7, -18, 0, 3.5, 0.4, -8))
     if '2.3' in M: br.append(('loom_shuttle.mp3', M['2.3'][0] - 0.7, -14, 7.2, 1.0, 0.2, -6))
     if '6.8b' in M: br.append(('amb/scroll.mp3', cue('6.8b', 'promise', 'బుద్ధిగా') - 0.1, -14, 0, 1.6, 0.1, -4))
@@ -110,7 +112,7 @@ def card_events(film):
         i = f'{n}.0'
         if i not in M: continue
         a = [s for s in film.SHOTLIST if s[3] == i][0][0]
-        s = fx4.L(*fx4.CARDS[n][1]); ev.append(('paper_slide.wav', a, -16, 0, None, 0.05, -4)); ev.append(('typing_run.wav', a + 0.45, -22, 0, fx4.type_dur(s, 34), 0.05, -4))
+        s = fx4.L(*fx4.CARDS[n][1]); ev.append(('paper_slide.wav', a, -16, 0, None, 0.05, -4)); ev.append(('typing_run.wav', a + 0.45, -22, 0, fx4.type_dur(s, 24 if film.TE else 34), 0.05, -4))
     return ev
 def fx2_sub(t0):
     import fx2; return fx2.subscribe_events(t0)

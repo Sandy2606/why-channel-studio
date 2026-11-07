@@ -36,3 +36,17 @@ Durations verified with ffprobe.
   Why missing: Freesound requires a login to download originals, and the saved login for whysandeep26@gmail.com was rejected twice by Freesound ("Please enter a correct username/email and password. Note that passwords are case-sensitive."). No account was created or changed.
   No substitute was downloaded: Mixkit's only cannon result is a 1-second laser-cannon shot, and Pixabay's top result is "Distant Cannon Fire (simulated)" (0:03, made by simulating a cannon with a basketball recording).
   To finish: correct the Freesound login in Secure Vault, then the cannon WAV - and the original Freesound WAVs of the other four - can be downloaded in one quick retry.
+
+Batch 2 (Pixabay Content License, free for commercial use; originals in sfx/pixabay_gs/, see SOURCE_LIST.txt):
+- amb/village.mp3 <- Indian Village Ambience (ranjit_foley) https://pixabay.com/sound-effects/nature-indian-village-ambience-219221/
+- amb/birds_cattle.mp3 <- amb-birds-cowbells_saranda https://pixabay.com/sound-effects/film-special-effects-amb-birds-cowbells-saranda-23682/
+- amb/court.mp3 <- hall_ambience (high-passed 250 Hz to remove hum) https://pixabay.com/sound-effects/city-hall-ambience-17513/
+- amb/footsteps_stone.mp3 <- Footsteps_Stone https://pixabay.com/sound-effects/film-special-effects-footsteps-stone-68257/
+- amb/horses.mp3 <- Horse running HQ https://pixabay.com/sound-effects/nature-horse-running-hq-247600/
+- amb/march.mp3 <- Army Marching Steps https://pixabay.com/sound-effects/film-special-effects-army-marching-steps-ambience-noise-442715/
+- amb/battle.mp3 <- Distant War, only 70-80 s and 180-190 s (rumble without rapid automatic fire), low-passed https://pixabay.com/sound-effects/film-special-effects-distant-war-377958/
+- amb/drums.mp3 <- Ancient War Drums https://pixabay.com/sound-effects/musical-ancient-war-drums-463214/
+- amb/bazaar.mp3 <- market bazaar, first 33 s only (later part has intelligible modern speech) https://pixabay.com/sound-effects/people-market-bazaar-22400/
+- amb/ship_bell.mp3 <- Ship Bell Two Chimes https://pixabay.com/sound-effects/film-special-effects-ship-bell-two-chimes-102730/
+- amb/elephant.mp3 <- Trumpet sound of an Elephant https://pixabay.com/sound-effects/nature-trumpet-sound-of-an-elephant-154720/
+Not used: Wooden Water Wheel (water sound, not a charkha); Dockside Soundscape (sustained ~330 Hz engine hum; harbour_waves.wav used for dock beds instead).

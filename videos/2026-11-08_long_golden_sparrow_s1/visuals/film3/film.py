@@ -93,7 +93,7 @@ for i in ORDER:
         a = M[i][0] + 0.5; b = max(M[i][1] - 0.1, a + 3.0)
         OVER.append(('chip', a, b, s))
 p01 = phrases('0.1')
-OVER.append(('chip', M['0.1'][0] + 0.6, p01[-1] - 0.1, '1721 · BRITAIN BANS PRINTED COTTON' if not TE else '1721 · అచ్చు గుడ్డలపై బ్రిటన్ నిషేధం'))
+OVER.append(('chip', M['0.1'][0] + 0.6, p01[-1] - 0.1, '1721 ACT · BRITAIN BANS WEARING PRINTED CALICOES (FROM 1722)' if not TE else '1721 చట్టం · అచ్చు calico వేసుకోవడంపై బ్రిటన్ నిషేధం (1722 నుంచి)'))
 OVER.append(('why', p01[-1] - 0.05, M['0.2'][0] + 0.3, 'WHY?' if not TE else 'ఎందుకు?'))
 
 # DRAMATIZED tag: first appearance of an own illustration in each section
@@ -448,8 +448,6 @@ def frame(t):
         fx4.opening_lines(fr, t, M['0.2'][0] + 0.4, [_L('TODAY · MASS-PRODUCED FABRIC', 'ఈరోజు · యంత్రాలతో భారీగా తయారయ్యే గుడ్డ'), _L('1700 · WEEKS OF SKILLED HANDWORK', '1700 · వారాల తరబడి నైపుణ్యమైన చేతిపని')])
     if '0.3' in M and cue('0.3', 'cloth', 'గుడ్డ') <= t <= M['0.4'][0] + 3.2:
         fx4.opening_lines(fr, t, cue('0.3', 'cloth', 'గుడ్డ'), [_L('SPICES BROUGHT THEM EAST.', 'సుగంధ ద్రవ్యాలు వాళ్లను తూర్పుకు తెచ్చాయి.'), _L('INDIAN CLOTH BECAME THE BIG PRIZE.', 'భారత గుడ్డే పెద్ద బహుమతి అయింది.')], x=90, y=150)
-    if '0.5' in M and cue('0.5', 'company', 'కంపెనీ') + 0.4 <= t <= M['0.5'][1]:
-        fx4.typed(fr, _L('HOW DID TRADE TURN INTO RULE?', 'వ్యాపారం పాలనగా ఎలా మారింది?'), W / 2, H - 150, t, cue('0.5', 'company', 'కంపెనీ') + 0.4, cps=34, size=48, col=GOLD, maxw=1600, anchor='ct', bg=True)
     for t0_ in SUB_CORNERS: fr = fx3.sub_corner(fr, t, t0_, 'te' if TE else 'en')
     fr = _sub_end(fr, t)
     chrono_overlay(fr, t)

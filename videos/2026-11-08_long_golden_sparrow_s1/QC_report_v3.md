@@ -35,3 +35,17 @@ Known imperfections:
 | Decode errors | 0 | 0 |
 v3 masters kept in film3/out/v3_fallback.
 Known imperfections: flat cutout figures are deliberately simple (rigid silhouettes); London sits near the top-left corner of the world maps; the end card sits close to the small "Season 1 / subscribe" line; Telugu speech-recognition check still not done.
+
+# v5 (Nov 7, 15:25 CT): THE THREAD + sound world
+| | English | Telugu |
+|---|---|---|
+| Runtime | 13:51 (831.03 s) | 16:54 (1014.27 s) |
+| Master size | 480 MB | 566 MB |
+| Frames | 24,931 / 24,931 | 30,428 / 30,428 |
+| Chunk joins (incl. reused v4 chunks) | 16 continuous | 20 continuous |
+| Black / frozen / silent | none (dark spans = title/timeline cards) | none |
+| Loudness / true peak | −14.0 LUFS / −1.3 dBTP | −14.0 LUFS / −0.7 dBTP |
+| Speech band vs everything else (95% of seconds) | ≥ 19 dB | ≥ 18 dB |
+| Decode | clean start to end | clean start to end |
+New: varied thread chapter cards (doc / photo / pair / map), opening setup lines, Ch4→5 "who controlled the routes?", 1721 wording corrected (wearing printed calicoes, from 1722), payoff knots 1613→1765, Pixabay ambience beds + sound bridges (sources in sfx/golden_sparrow_sfx_sources.txt). Not used: Distant War rapid-fire parts, bazaar after 33 s, dockside (engine hum), water wheel.
+v3 and v4 masters kept in film3/out/v3_fallback and v4_fallback.

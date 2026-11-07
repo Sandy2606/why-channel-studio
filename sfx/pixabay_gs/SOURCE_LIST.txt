@@ -1,0 +1,85 @@
+Pixabay sound effects — batch 2 (13 sounds for the film)
+All files: original MP3s downloaded from Pixabay, no re-encode, no editing.
+Licence for every file: Pixabay Content License — free for commercial use, no attribution required.
+Licence summary: https://pixabay.com/service/license-summary/
+Durations below were verified locally with ffprobe on the downloaded files.
+Page links are kept so each file can be credited from its Pixabay page.
+
+1. Indian village / countryside ambience with indistinct people
+   File: ranjit_foley-indian-village-ambience-219221.mp3
+   Duration: 4:53 (293.4s)
+   Page: https://pixabay.com/sound-effects/nature-indian-village-ambience-219221/
+   Note: full fit — distant voices, chirping birds, rural life.
+
+2. Birds + cattle bells, morning
+   File: freesound_community-amb-birds-cowbells_saranda-23682.mp3
+   Duration: 1:51 (111.3s)
+   Page: https://pixabay.com/sound-effects/film-special-effects-amb-birds-cowbells-saranda-23682/
+   Note: full fit — birds chirping + gentle clinking of distant cowbells.
+
+3. Spinning wheel (charkha) or a wooden wheel turning
+   File: alex_jauk-wooden-water-wheel-196741.mp3
+   Duration: 0:15 (14.7s)
+   Page: https://pixabay.com/sound-effects/film-special-effects-wooden-water-wheel-196741/
+   Note: SUBSTITUTE — a wooden water wheel creaking/splashing, NOT a charkha/spinning wheel.
+   On-site search: "charkha" returned no matches; "spinning wheel" returned roulette, bicycle and fidget wheels only.
+
+4. Palace hall / indoor crowd murmur
+   File: freesound_community-hall_ambience-17513.mp3
+   Duration: 3:42 (222.1s)
+   Page: https://pixabay.com/sound-effects/city-hall-ambience-17513/
+   Note: crowd murmur verified — distant footsteps, murmuring voices, natural reverberation.
+
+5. Footsteps on stone + paper/scroll handling
+   File: freesound_community-footsteps_stone-68257.mp3
+   Duration: 0:19 (19.1s)
+   Page: https://pixabay.com/sound-effects/film-special-effects-footsteps-stone-68257/
+   Note: PARTIAL — stone footsteps only; no paper/scroll handling in the file.
+
+6. Horses galloping (cavalry)
+   File: tanweraman-horse-running-hq-247600.mp3
+   Duration: 0:15 (14.6s)
+   Page: https://pixabay.com/sound-effects/nature-horse-running-hq-247600/
+   Note: galloping hooves. Chosen over the 0:08 "Horse Galloping SFX" (https://pixabay.com/sound-effects/nature-horse-galloping-sfx-339726/) for length.
+
+7. Army marching
+   File: alex_jauk-army-marching-steps-ambience-noise-442715.mp3
+   Duration: 0:39 (38.6s)
+   Page: https://pixabay.com/sound-effects/film-special-effects-army-marching-steps-ambience-noise-442715/
+   Note: found by on-site search for "soldiers marching". First download stalled, retried at the end and downloaded successfully.
+
+8. Distant battle: muskets, battle cries
+   File: armed_unit-distant-war-377958.mp3
+   Duration: 3:54 (234.4s)
+   Page: https://pixabay.com/sound-effects/film-special-effects-distant-war-377958/
+   Note: PARTIAL — tagged War/Shooting/Fire; musket fire and battle cries are NOT confirmed in its description, and only distant bursts were heard in the opening seconds. The alternative "Distant Gunshots" is gunfire only and was not used.
+
+9. War drums (ceremonial)
+   File: dragon-studio-ancient-war-drums-463214.mp3
+   Duration: 0:08 (7.6s)
+   Page: https://pixabay.com/sound-effects/musical-ancient-war-drums-463214/
+   Note: "powerful sequence of ancient war drum beats … perfect for battle scenes, historical videos."
+
+10. Busy market / bazaar crowd
+    File: freesound_community-market-bazaar-22400.mp3
+    Duration: 1:20 (80.2s)
+    Page: https://pixabay.com/sound-effects/people-market-bazaar-22400/
+    Note: full fit — bustling market bazaar, people chattering.
+
+11. Ropes, rigging and wooden cargo on a dock
+    File: freesound_community-dockside-soudscape-19369.mp3
+    Duration: 7:56 (475.9s)
+    Page: https://pixabay.com/sound-effects/city-dockside-soudscape-19369/
+    Note: PARTIAL — dockside ambience: gentle water lap, creaking wood, distant seagulls. No ropes/rigging or wooden-cargo handling is described. On-site "rigging" / "dock" / "harbour" searches found no file covering ropes + rigging + cargo together; the closest rigging file was "Shroud-wind-wistles" (rigging/harbour, 0:20) and the closest rope file was "Mooring Rope" (rope/dock, 1:09) — neither was used, to keep one file per item.
+
+12. Ship's bell
+    File: freesound_community-ship-bell-two-chimes-102730.mp3
+    Duration: 0:03 (3.0s)
+    Page: https://pixabay.com/sound-effects/film-special-effects-ship-bell-two-chimes-102730/
+    Note: crisp double chime, as described.
+
+13. Elephant trumpet (Plassey)
+    File: u_7bikmggkv2-trumpet-sound-of-an-elephant-154720.mp3
+    Duration: 0:02 (1.9s)
+    Page: https://pixabay.com/sound-effects/nature-trumpet-sound-of-an-elephant-154720/
+    Note: realistic elephant trumpet.

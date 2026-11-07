@@ -6,7 +6,7 @@ CARVE = set()
 import os
 def exists(f): return os.path.exists(SFX + f)
 def load(p, ss=None, t=None):
-    a = ['ffmpeg', '-v', 'error'] + (['-ss', str(ss)] if ss else []) + ['-i', p] + (['-t', str(t)] if t else []) + ['-f', 'f32le', '-ac', '2', '-ar', str(SR), '-']
+    a = ['ffmpeg', '-v', 'error'] + (['-stream_loop', '-1'] if '/amb/' in p else []) + (['-ss', str(ss)] if ss else []) + ['-i', p] + (['-t', str(t)] if t else []) + ['-f', 'f32le', '-ac', '2', '-ar', str(SR), '-']
     return np.frombuffer(subprocess.run(a, capture_output=True, check=True).stdout, np.float32).reshape(-1, 2).copy()
 def mix(base, voice, ev, t0=0.0):
     """base, voice: arrays starting at film time t0."""
@@ -18,7 +18,11 @@ def mix(base, voice, ev, t0=0.0):
         if not exists(f): continue
         key = (f, off, dur)
         if key not in _cache: _cache[key] = load(SFX + f, off if off else None, dur)
-        s = _cache[key] * 10 ** (g / 20); i0 = int((t - t0) * SR)
+        raw = _cache[key]
+        if f.startswith('amb/'):                                       # level-match every bed: RMS -> -20 dBFS before the gain
+            live = raw[np.abs(raw).mean(1) > 1e-4]; r = np.sqrt(np.mean(live ** 2)) if len(live) else 1.0
+            raw = raw * (0.1 / max(r, 1e-4))
+        s = raw * 10 ** (g / 20); i0 = int((t - t0) * SR)
         if f.startswith('amb/') or f in CARVE:                      # ambience beds: carve the speech band so words stay clear
             from scipy.signal import butter, sosfiltfilt
             sos = butter(2, [1000, 4000], 'bandpass', fs=SR, output='sos'); s = (s - 0.7 * sosfiltfilt(sos, s.astype(np.float64), axis=0)).astype(np.float32)
@@ -27,5 +31,6 @@ def mix(base, voice, ev, t0=0.0):
         if fl > 1 and len(s) > 2 * fl: s[:fl] *= np.linspace(0, 1, fl)[:, None]; s[-fl:] *= np.linspace(1, 0, fl)[:, None]
         a = max(0, i0); b = min(n, i0 + len(s)); seg = s[a - i0:b - i0]
         gd = 1 - (1 - 10 ** (duck / 20)) * act[a:b]
-        out[a:b] += seg * gd[:, None]
+        try: out[a:b] += seg * gd[:, None]
+        except ValueError: print("SKIP", f, t, off, dur, seg.shape, gd.shape); raise
     return out

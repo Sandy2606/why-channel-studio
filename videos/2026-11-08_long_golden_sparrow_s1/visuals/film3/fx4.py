@@ -56,39 +56,57 @@ def typed(fr, s, x, y, t, c0, cps=30, size=30, col=PAPER, maxw=560, anchor='lt',
 def type_dur(s, cps=30): return len(s) / cps
 
 # ------------------------------------------------------------------ chapter cards: what we learned -> thread -> the next question
-CARDS = {1: (('PD03', .45, .17, 2.2), ('1721 · BRITAIN BANS INDIAN PRINTED COTTON', '1721 · భారత అచ్చు cotton పై బ్రిటన్ నిషేధం')),
-         2: (('G01', .5, .55, 1.4), ('c.1700 · ABOUT A QUARTER OF WORLD OUTPUT · ONE ESTIMATE', 'సుమారు 1700 · ప్రపంచ ఉత్పత్తిలో దాదాపు నాలుగో వంతు · ఒక అంచనా')),
-         3: (('MET1', .47, .40, 2.6), ('WEEKS OF SKILLED HANDWORK · BANNED IN BRITAIN', 'వారాల తరబడి నైపుణ్యమైన చేతిపని · బ్రిటన్‌లో నిషేధం')),
-         4: (('G09', .07, .75, 4.0), ('VILLAGE → BROKER → PORT → SHIP', 'గ్రామం → దళారి → రేవు → ఓడ')),
-         5: (('G16', .30, .48, 1.8), ('WEALTH AT THE TOP · HUNGER AT THE BOTTOM', 'పైన సంపద · కింద ఆకలి')),
-         6: (('T1', .5, .55, 1.3), ('SPICES BROUGHT THEM EAST · INDIAN CLOTH BECAME THE BIG PRIZE', 'సుగంధ ద్రవ్యాలు వాళ్లను తూర్పుకు తెచ్చాయి · భారత గుడ్డే పెద్ద బహుమతి అయింది'))}
+CARDS = {1: (('PD03', .45, .17, 2.2), ('1721 ACT · WEARING PRINTED CALICOES BANNED IN BRITAIN, FROM 1722', '1721 చట్టం · బ్రిటన్‌లో అచ్చు calico వేసుకోవడంపై నిషేధం, 1722 నుంచి'), 'doc'),
+         2: (('G01', .5, .55, 1.4), ('c.1700 · ABOUT A QUARTER OF WORLD OUTPUT · ONE ESTIMATE', 'సుమారు 1700 · ప్రపంచ ఉత్పత్తిలో దాదాపు నాలుగో వంతు · ఒక అంచనా'), 'photo'),
+         3: (('MET1', .47, .40, 2.6), ('WEEKS OF SKILLED HANDWORK · SO POPULAR THAT BRITAIN RESTRICTED IT', 'వారాల నైపుణ్యమైన చేతిపని · ఎంత ఆదరణ అంటే బ్రిటన్ ఆంక్షలు పెట్టింది'), 'pair'),
+         4: (('G09', .07, .75, 4.0), ('VILLAGE → BROKER → PORT → SHIP', 'గ్రామం → దళారి → రేవు → ఓడ'), 'photo'),
+         5: (('G21', .45, .40, 1.6), ('THE WEALTH CAME FROM LAND AND TRADE · BUT WHO CONTROLLED THE ROUTES?', 'సంపద భూమి నుంచి, వ్యాపారం నుంచి వచ్చింది · కానీ సముద్ర మార్గాలు ఎవరి చేతిలో?'), 'map'),
+         6: (('T1', .5, .55, 1.3), ('SPICES BROUGHT THEM EAST · INDIAN CLOTH BECAME THE BIG PRIZE', 'సుగంధ ద్రవ్యాలు వాళ్లను తూర్పుకు తెచ్చాయి · భారత గుడ్డే పెద్ద బహుమతి అయింది'), 'photo')}
 def chapter_card(t, a, b, n, base_card):
+    """same identity, different reveal: doc (thread pulls the Act into view), photo, pair (two photos tied), map (thread leaves the port)."""
     fr = X['paper']().convert('RGBA'); d = ImageDraw.Draw(fr)
-    (key, fxx, fyy, z), txt = CARDS[n]; s = L(*txt)
-    kp = eo((t - a - 0.05) / 0.45)
-    ph = photo(key, fxx, fyy, z, 400, 266, -3)
-    put(fr, ph, 400, 440 - 30 * (1 - kp), kp, 'cc')
-    typed(fr, s, 200, 620, t, a + 0.45, cps=34, size=30, col=PAPER, maxw=460)
-    # the next question (the narrated chapter title), right half
+    (key, fxx, fyy, z), txt, kind = CARDS[n]; s = L(*txt)
     from film import SC, CH_NUM
     ttl = SC[f'{n}.0']['te' if X['TE'] else 'en'].split(' · '); title = ttl[1] if len(ttl) > 1 else ''
-    k1 = eo((t - a - 0.2) / 0.6); k2 = eo((t - a - 0.5) / 0.7); cx = 1300
+    cx = 1300; k1 = eo((t - a - 0.2) / 0.6); k2 = eo((t - a - 0.5) / 0.7)
+    tend = (cx - 160, 385)
+    if kind == 'doc':                       # the thread pulls the document in from the left edge
+        pull = sm((t - a) / 1.1); ph = photo(key, fxx, fyy, z, 400, 266, -2)
+        x = lerp(-260, 400, pull); put(fr, ph, x, 440, 1.0, 'cc')
+        thread(d, bez((x + 210, 400), (x + 400, 250), (cx - 380, 260), tend), 1.0 if pull > 0.95 else 0.0)
+        thread(d, [(-20, 440), (x - 210, 440)], 1.0 if pull < 0.95 else 0.0)
+    elif kind == 'pair':                    # two photos tied by the thread: the cloth and the port it is heading to
+        kp = eo((t - a - 0.05) / 0.45); put(fr, photo(key, fxx, fyy, z, 330, 220, -3), 300, 420, kp, 'cc')
+        kq = eo((t - a - 0.9) / 0.45); put(fr, photo('G09', .55, .45, 1.2, 300, 200, 3), 640, 560, kq, 'cc')
+        thread(d, bez((470, 420), (560, 360), (520, 480), (600, 470)), sm((t - a - 0.6) / 0.6))
+        thread(d, bez((800, 520), (900, 300), (cx - 380, 260), tend), sm((t - a - 1.5) / 1.0))
+    elif kind == 'map':                     # the thread leaves Machilipatnam across the Indian Ocean
+        mp = FL.render_map(None, t, dict(box0=(40, 100, -12, 30), box1=(40, 100, -12, 30), pins=[], autoships=False), a, b)
+        m = np.array(mp.resize((640, 360))).astype(np.float32); m[..., :3] *= 0.85
+        tile = Image.fromarray(m.astype(np.uint8)).convert('RGBA'); put(fr, tile, 70, 290, eo((t - a) / 0.4))
+        V = lambda lo, la: (70 + (lo - 40) / 60 * 640, 290 + (30 - la) / 42 * 360)
+        route = [V(81.1, 16.2), V(84, 10), V(80, 3), V(65, 5), V(55, 12), V(45, 13)]
+        thread(d, route, sm((t - a - 0.4) / 1.4), w=3); d.ellipse((route[0][0] - 6, route[0][1] - 6, route[0][0] + 6, route[0][1] + 6), fill=GOLD + (255,))
+        thread(d, bez((710, 400), (820, 250), (cx - 380, 260), tend), sm((t - a - 1.6) / 0.9))
+    else:
+        kp = eo((t - a - 0.05) / 0.45); put(fr, photo(key, fxx, fyy, z, 400, 266, -3), 400, 440 - 30 * (1 - kp), kp, 'cc')
+        thread(d, bez((610, 400), (760, 250), (cx - 380, 260), tend), sm((t - a - 1.0) / 1.2))
+    typed(fr, s, 200, 680 if kind in ('pair', 'map') else 620, t, a + 0.45, cps=34 if not X['TE'] else 24, size=30, col=PAPER, maxw=620 if kind == 'map' else 520)
     put(fr, text(CH_NUM[n][1 if X['TE'] else 0], 'label', 34, GOLD), cx, 400, k1, 'cb', (1 - k1) * 12)
     wl = int(140 * k1); d.rectangle((cx - wl, 418, cx + wl, 421), fill=GOLD + (255,))
     put(fr, text(title, 'disp', 70 if not X['TE'] else 62, PAPER, glow=True, maxw=880), cx, 450, k2, 'ct', (1 - k2) * 18)
-    pts = bez((610, 400), (760, 250), (cx - 380, 260), (cx - 160, 385))
-    thread(d, pts, sm((t - a - 1.0) / 1.2))
     for j in range(6):
-        x = W / 2 - 75 + j * 30; on = j < n
-        d.ellipse((x - 6, H - 120 - 6, x + 6, H - 120 + 6), fill=(GOLD if on else (70, 66, 80)) + (int(255 * k1),))
+        x_ = W / 2 - 75 + j * 30; on = j < n
+        d.ellipse((x_ - 6, H - 120 - 6, x_ + 6, H - 120 + 6), fill=(GOLD if on else (70, 66, 80)) + (int(255 * k1),))
     return fr
 
 # ------------------------------------------------------------------ opening setup lines
 def opening_lines(fr, t, c0, lines, x=90, y=150, size=42):
+    cps = 34 if not X['TE'] else 24
     for j, s in enumerate(lines):
-        cj = c0 + sum(type_dur(q, 34) + 0.35 for q in lines[:j])
+        cj = c0 + sum(type_dur(q, cps) + 0.35 for q in lines[:j])
         if t >= cj:
-            typed(fr, s, x, y + j * 74, t, cj, cps=34, size=size, col=PAPER if j < len(lines) - 1 else GOLD, maxw=1500, bg=True)
+            typed(fr, s, x, y + j * 74, t, cj, cps=cps, size=size, col=PAPER if j < len(lines) - 1 else GOLD, maxw=1500, bg=True)
 
 # ------------------------------------------------------------------ ending payoff: the thread, knot by knot
 KNOTS = [('PERMISSION', 'అనుమతి', '1613'), ('WAR', 'యుద్ధం', '1686–90'), ('CHOOSING RULERS', 'రాజుల ఎంపిక', '1750s'), ('PLASSEY', 'ప్లాసీ', '1757'), ('REVENUE', 'ఆదాయం', '1765')]
