@@ -34,8 +34,8 @@ S = {  # en, te
  'head': ('SHARE OF WORLD OUTPUT', 'ప్రపంచ ఉత్పత్తిలో వాటా'),
  'src1': ('ANGUS MADDISON · ECONOMIC HISTORIAN', 'అంగస్ మాడిసన్ · ఆర్థిక చరిత్రకారుడు'),
  'src2': ('The World Economy (OECD 2001) · estimates', 'The World Economy (OECD 2001) · అంచనాలు'),
- 'a1700': ('AREA: UNDIVIDED SUBCONTINENT', 'ప్రాంతం: విభజనకు ముందు ఉపఖండం'),
- 'a1950': ('AREA: REPUBLIC OF INDIA ONLY', 'ప్రాంతం: భారత గణతంత్రం మాత్రమే'),
+ 'a1700': ('INDIAN SUBCONTINENT · c.1700', 'భారత ఉపఖండం · సుమారు 1700'), 'pak': ('PAKISTAN', 'పాకిస్తాన్'), 'bgd': ('BANGLADESH', 'బంగ్లాదేశ్'),
+ 'a1950': ('INDIA · 1950 (DIFFERENT TERRITORY)', 'భారతదేశం · 1950 (వేరే భూభాగం)'),
  'grid': ('100 SQUARES = ALL WORLD OUTPUT', '100 చతురస్రాలు = ప్రపంచ ఉత్పత్తి మొత్తం'),
  'india': ('INDIA', 'భారతదేశం'), 'brit': ('BRITAIN', 'బ్రిటన్'), 'china': ('CHINA', 'చైనా'),
  'half': ('INDIA + CHINA: ALMOST HALF', ''), 'in1700': ('BACK IN 1700', ''),
@@ -46,7 +46,7 @@ S = {  # en, te
  'dram': ('DRAMATIZED RECONSTRUCTION · c.1680', 'నాటకీయ పునఃసృష్టి · సుమారు 1680'),
  'inc': ('INCOME PER PERSON · c.1700', 'ఒక్కొక్కరి సగటు ఆదాయం · సుమారు 1700'),
  'wavg': ('WORLD AVERAGE', 'ప్రపంచ సగటు'), 'weu': ('WESTERN EUROPE', 'పశ్చిమ యూరప్'),
- 'incsrc': ('ESTIMATES · MADDISON 2001 · GDP PER HEAD (1990 INT. $)', 'అంచనాలు · మాడిసన్ 2001 · తలసరి GDP (1990 INT. $)'),
+ 'incsrc': ('ESTIMATES · MADDISON 2001 · GDP PER HEAD (1990 INT. $)', 'అంచనాలు · మాడిసన్ 2001 · తలసరి ఆదాయం (1990 అంతర్జాతీయ డాలర్లు)'),
  'harv': ('WHO TOOK THE HARVEST', 'పంట ఎవరికి'),
  'farmer': ('FARMER', 'రైతు'), 'landlord': ('LANDLORD', 'భూస్వామి'), 'state': ('STATE', 'రాజ్యం'),
  'unequal': ('RARELY EQUAL', 'సమానంగా కాదు'),
@@ -302,11 +302,11 @@ def scene_map(fr, t):
     a1700 = win(t, E['india'] + 0.6, E['y1950'] + 0.3) + (win(t, E['china'] + 0.2, 1e9) if not TE else 0)
     a1950 = win(t, E['y1950'] + 0.8, (E['china'] - 0.3) if not TE else 1e9)
     x, y = at(80, 5)
-    put(fr, txt(T('a1700'), 'label', 24 if LAND else 28, GOLD, 0.06), x, y, a1700, 'ct')
-    put(fr, txt(T('a1950'), 'label', 24 if LAND else 28, GOLD, 0.06), x, y, a1950, 'ct')
+    put(fr, txt(T('a1700'), 'label', 30 if LAND else 42, GOLD, 0.06), x, y, a1700, 'ct')
+    put(fr, txt(T('a1950'), 'label', 30 if LAND else 42, GOLD, 0.06), x, y, a1950, 'ct')
     if a1950 > 0:
         for k_, lo, la in (('pak', 68.5, 28.0), ('bgd', 90.3, 23.6)):
-            px, py = at(lo, la); put(fr, txt(T(k_) if k_ in S else '', 'small', 20 if LAND else 24, (205, 200, 215)), px, py, a1950, 'cc')
+            px, py = at(lo, la); put(fr, txt(T(k_), 'label', 24 if LAND else 32, (215, 210, 225)), px, py, a1950, 'cc')
     if E['britain'] - 0.1 < t < E['y1950'] + 0.3 or (not TE and t > E['china']):
         x, y = at(-2, 54.5); a = win(t, E['britain'], E['y1950'] + 0.3) + (win(t, E['china'], 1e9) if not TE else 0)
         d = ImageDraw.Draw(fr); g = eo((t - E['britain']) / 1.0); r = 16 + 46 * g
