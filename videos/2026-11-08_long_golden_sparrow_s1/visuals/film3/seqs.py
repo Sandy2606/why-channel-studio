@@ -105,7 +105,7 @@ def flag_marker(fr, t, c, x, y, label):
     bg.alpha_composite(im, (15, 8)); put(fr, bg, x, y + 124, k, 'ct')
 def s33(t, a, b, shipsmap, netmap):
     c_g09 = cue('3.3', 'The', '1600ల') - 0.1; c_mkt = cue('3.3', 'Local', 'దళారులు') - 0.1
-    c_buy = cue('3.3', 'foreign', 'విదేశీ') - 0.1; c_net = cue('3.3', 'buyers', 'కొనుగోలుదారులను') - 0.1
+    c_buy = cue('3.3', 'Local', 'దళారులు') + 1.0; c_net = cue('3.3', 'buyers', 'కొనుగోలుదారులను') - 0.1
     c_du = cue('3.3', 'Dutch', 'డచ్'); c_en = cue('3.3', 'English', 'ఇంగ్లీష్')
     def harbour(tt, s, e):
         u = (tt - s) / max(0.1, e - s)
@@ -120,8 +120,8 @@ def s33(t, a, b, shipsmap, netmap):
         x, y = P_(2290, 470); flag_marker(fr, tt, c_du, x, y, L('DUTCH · EARLY 1600s', 'డచ్ · 1600ల మొదట్లో'))
         x, y = P_(1890, 450); flag_marker(fr, tt, c_en, x, y, L('ENGLISH · 1611', 'ఇంగ్లీష్ · 1611'))
         return fr
-    return cuts(t, [(a, shipsmap), (c_g09, harbour), (c_mkt, still('G10', (.36, .48), (.38, .48), 1.55, 1.62)),
-                    (c_buy, still('G10', (.60, .42), (.60, .43), 1.6, 1.68)), (c_net, netmap)])
+    import fx3
+    return cuts(t, [(a, shipsmap), (c_g09, harbour), (c_mkt, still('G10', (.36, .48), (.38, .48), 1.55, 1.62)), (c_buy, lambda tt, s_, e_: fx3.chain(tt, s_, b))])
 
 # ------------------------------------------------------------------ 0.5  the land the world came to... a company that came to trade
 def s05(t, a, b):

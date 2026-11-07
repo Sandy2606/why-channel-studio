@@ -162,6 +162,8 @@ def flow2(t, a, b, cue, L):
         if kk <= 0: continue
         x, y = FLOW_POS[k_]
         put(fr, med[k_], x, y, kk, 'cc'); put(fr, text(labs[k_], 'label', 28, PAPER, maxw=330), x, y + 115, kk, 'ct')
+        role = {'farmer': L('PAYS', 'కడతాడు'), 'coll': L('COLLECTS · KEEPS A CUT', 'వసూలు · వాటా'), 'state': L('RECEIVES', 'అందుకుంటుంది'), 'army': L('IS PAID', 'ఖర్చు')}[k_]
+        put(fr, text(role, 'label', 24, GOLD, maxw=330), x, y + 190, eo((t - cs[k_] - 0.3) / 0.4), 'ct')
         if i > 0:
             x0 = FLOW_POS[order[i - 1]][0] + 110; x1 = x - 112
             d.line((x0, y, x1, y), fill=GOLD + (int(220 * kk),), width=4); d.polygon([(x1, y - 10), (x1 + 18, y), (x1, y + 10)], fill=GOLD + (int(220 * kk),))
@@ -169,6 +171,11 @@ def flow2(t, a, b, cue, L):
                 f = ((t - cs[k_]) * 0.5 + c / 4) % 1; cx = x0 + (x1 - x0) * f
                 if k_ == 'state' and t > cs['cut'] and c % 2 == 1: continue          # the collectors keep their cut
                 d.ellipse((cx - 9, y - 9 - 0, cx + 9, y + 9), fill=(232, 190, 90, int(230 * kk)), outline=(140, 100, 30, int(230 * kk)))
+    if t > cs['coll'] + 0.5:                                    # porters carry the share to the collectors
+        import sprites as SP
+        for j in range(2):
+            f = ((t - cs['coll']) * 0.35 + j * 0.5) % 1; px = lerp(FLOW_POS['farmer'][0] + 120, FLOW_POS['coll'][0] - 120, f)
+            SP.man(d, px, 640, 70, (200, 186, 160), min(1, f / 0.1, (1 - f) / 0.1), musket=False); d.rounded_rectangle((px - 14, 640 - 86, px + 14, 640 - 62), 5, fill=(214, 186, 120, int(255 * min(1, f / 0.1, (1 - f) / 0.1))))
     if t > cs['cut']:                                           # coins dropping into the collectors' pile
         kc = eo((t - cs['cut']) / 0.6); x, y = FLOW_POS['coll']
         for j in range(5): d.ellipse((x - 60 + j * 26, y + 82 - (j % 2) * 6, x - 42 + j * 26, y + 96 - (j % 2) * 6), fill=(232, 190, 90, int(230 * kc)))
@@ -176,6 +183,7 @@ def flow2(t, a, b, cue, L):
         kk = eo((t - cs[k_]) / 0.5)
         if kk <= 0: continue
         x, y = FLOW_POS[k_]; put(fr, med[k_], x, y, kk, 'cc'); put(fr, text(labs[k_], 'label', 26, PAPER, maxw=330), x, y + 102, kk, 'ct')
+        if k_ == 'bank': put(fr, text(L('LEND TO EVERYONE', 'అందరికీ అప్పు'), 'label', 22, GOLD), x, y + 138, eo((t - cs[k_] - 0.3) / 0.4), 'ct')
         if k_ == 'bank':
             for tx in ('farmer', 'coll', 'state', 'army', 'merch'):
                 px, py = FLOW_POS[tx]; d.line((x, y - 90, px, py + 95 if tx != 'merch' else py), fill=(120, 140, 178, int(150 * kk)), width=2)
@@ -276,6 +284,9 @@ def armies(fr, t, c_co, c_nb, c_never, L):
     if t > c_never:
         put(fr, text(L('MUCH OF IT NEVER FOUGHT', 'చాలామంది యుద్ధమే చేయలేదు'), 'label', 34, (200, 200, 210)), 1250, 860, eo((t - c_never - 0.4) / 0.5), 'ct')
 def s72(t, a, b, cue, L):
+    c_co = cue('7.2', 'three', 'మూడు') if C_TE() else cue('7.2', '3', 'మూడు')
+    if t < c_co - 0.5:
+        return to_rgba(cam(FL.img('G30'), (t - a) / max(0.1, c_co - a), (.5, .55), (.48, .55), 1.02, 1.08))
     fr = Image.fromarray(fx.blurred('G30', 0.38)).convert('RGBA')
     armies(fr, t, cue('7.2', 'three', 'మూడు') if C_TE() else cue('7.2', '3', 'మూడు'), cue('7.2', 'fifty', 'యాభై') if C_TE() else cue('7.2', '50', 'యాభై'), 1e9, L); return fr
 def s73(t, a, b, cue, L):

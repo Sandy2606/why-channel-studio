@@ -258,6 +258,16 @@ def render_map(fr, t, spec, t0, t1):
                 f = (L - acc) / sg; draw.append((vp[i][0] + (vp[i + 1][0] - vp[i][0]) * f, vp[i][1] + (vp[i + 1][1] - vp[i][1]) * f)); break
         d.line(draw, fill=tuple(col) + (230,), width=5, joint='curve')
         hx, hy = draw[-1]; d.ellipse((hx - 7, hy - 7, hx + 7, hy + 7), fill=tuple(col) + (255,))
+        land = len(rt) > 3 and rt[3] == 'land'
+        if spec.get('autoships', True) and k >= 1:              # anything that goes by sea gets a ship on it
+            import sprites as SP
+            f = ((t - cue - 1.6) / 5.5) % 1.0; Lt = sum(segs); Lh = Lt * f; acc = 0; px, py = vp[0]
+            for i, sg in enumerate(segs):
+                if acc + sg >= Lh: q = (Lh - acc) / sg; px, py = vp[i][0] + (vp[i + 1][0] - vp[i][0]) * q, vp[i][1] + (vp[i + 1][1] - vp[i][1]) * q; break
+                acc += sg
+            fa = min(1.0, f / 0.08, (1 - f) / 0.08)
+            if land: SP.man(d, px, py + 8, 34, (240, 230, 210), fa, hat='turban', musket=False)
+            else: SP.ship(d, px, py + 6, 42, a=fa, flagcol=spec.get('shipflag'), cargo=spec.get('cargo'))
     for pn in spec.get('pins', []):
         name, lon, lat, cue = pn[:4]; side = pn[4] if len(pn) > 4 else 'r'
         k = eo((t - cue) / 0.5)
@@ -311,6 +321,7 @@ def render_map(fr, t, spec, t0, t1):
         p0, p1 = V(lo0, la0), V(lo1, la1); d.line([p0, p1], fill=(200, 220, 240, int(200 * k)), width=6)
         ang = math.atan2(p1[1] - p0[1], p1[0] - p0[0])
         for sgn in (1, -1): d.line([p1, (p1[0] - 26 * math.cos(ang + sgn * 0.5), p1[1] - 26 * math.sin(ang + sgn * 0.5))], fill=(200, 220, 240, int(200 * k)), width=6)
+    if spec.get('draw'): spec['draw'](out, ImageDraw.Draw(out), V, t)
     return out
 
 # ---------------------------------------------------------------- finishing

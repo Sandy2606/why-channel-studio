@@ -58,4 +58,26 @@ def events(film, seqs):
     if '7.5' in M:
         add('stamp.wav', cue('7.5', '1765', '1765'), -10); add('coins_clink.wav', cue('7.5', '1765', '1765') + 1.0, -14)
     if '7.6' in M: add('coins_clink.wav', cue('7.6', 'taxes', 'పన్నులతో'), -14)
+    # ---- v4 scenes
+    if '6.8b' in M:
+        add('ship_creak.mp3', cue('6.8b', '1686', '1686'), -16, off=3, dur=2.4, fade=0.4, duck=-8)
+        add('boom_distant.wav', cue('6.8b', 'Aurangzeb', 'ఔరంగజేబుతో'), -20)
+        add('coins_clink.wav', cue('6.8b', 'fine', 'జరిమానా'), -12); add('stamp.wav', cue('6.8b', 'promise', 'బుద్ధిగా'), -12)
+    if '6.10' in M:
+        add('boom_distant.wav', cue('6.10', 'fought', 'పోరాడాయి') + 1.2, -22)
+        for j in range(6): add('footsteps_soft_indoor.wav', cue('6.10', 'They', 'సిపాయిలు') + j * 0.5, -22, dur=0.4)
+    if '6.12' in M: add('coins_clink.wav', cue('6.12', 'paid', 'లాభం') + 0.8, -12)
+    if '6.13' in M:
+        add('stamp.wav', cue('6.13', '1756', '1756') + 1.5, -14); add('ship_creak.mp3', cue('6.13', 'sent', 'మద్రాసు'), -16, off=8, dur=2.6, fade=0.4, duck=-8)
+    if '7.3' in M:
+        add('page_turn.wav', cue('7.3', 'secret', 'రహస్య') - 0.2, -14); add('stamp.wav', cue('7.3', 'throne', 'నవాబుగా') + 0.4, -12)
+    if '7.5' in M: add('sub_knock.wav', cue('7.5', 'Buxar', 'బక్సర్‌లో'), -14)
+    if '3.3' in M:
+        c = cue('3.3', 'Local', 'దళారులు') + 1.0; add('harbour_waves.wav', c, -14, off=30, dur=4.2, fade=0.4, duck=-10)
+    for t0 in film.SUB_CORNERS:
+        for nm, tt, g in fx2_sub(t0 + 0.3): add(nm + '.wav', tt, 20 * _m.log10(g) - 14, duck=-4)
+    if '7.9' in M:
+        for nm, tt, g in fx2_sub(M['7.9'][1] + 0.3 + 0.3): add(nm + '.wav', tt, 20 * _m.log10(g) - 6, duck=-2)
     return ev
+def fx2_sub(t0):
+    import fx2; return fx2.subscribe_events(t0)

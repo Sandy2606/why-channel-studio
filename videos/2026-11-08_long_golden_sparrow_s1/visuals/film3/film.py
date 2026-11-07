@@ -21,7 +21,12 @@ _argv = sys.argv; sys.argv = ['poc', LANG, 'land']; import poc; sys.argv = _argv
 # ---------------------------------------------------------------- phrase starts per line (pauses in the take)
 SR = 48000
 PH_CACHE = f'/home/claude/gs/film/cache/phrases_{LANG}.json'
-PH = json.load(open(PH_CACHE)) if os.path.exists(PH_CACHE) else {}
+def _load_ph():
+    for _ in range(20):
+        try: return json.load(open(PH_CACHE)) if os.path.exists(PH_CACHE) else {}
+        except Exception: import time; time.sleep(0.3)
+    return {}
+PH = _load_ph()
 def phrases(i):
     if i in PH: return PH[i]
     x = np.frombuffer(subprocess.run(['ffmpeg', '-v', 'error', '-i', f'/home/claude/gs/rec/take/{LANG}_{i}.mp3', '-ar', str(SR), '-ac', '1', '-f', 'f32le', '-'], capture_output=True).stdout, np.float32)
@@ -67,12 +72,12 @@ def build():
         for k, s_ in enumerate(sp): shots.append((cuts[k], cuts[k + 1], s_, i))
     return shots
 SHOTLIST = build()
-json.dump(PH, open(PH_CACHE, 'w'))
+_tmp = PH_CACHE + f'.{os.getpid()}'; json.dump(PH, open(_tmp, 'w')); os.replace(_tmp, PH_CACHE)
 
 # ---------------------------------------------------------------- overlays (on-screen text per line)
 def scene_text(i):
     s = SC[i]['te' if TE else 'en'] if i in SC else ''
-    if i in ('0.2', '4.6', '4.10', '7.3'): return ''
+    if i in ('0.2', '4.6', '4.10', '7.3', '6.8b', '6.10', '6.13', '7.5', '5.10', '6.3', '6.5'): return ''
     if i == '4.4': return "AKBAR'S COURT · AKBARNAMA"
     if i == '6.4': return ('A MUGHAL FARMAN · AURANGZEB (r. 1658–1707) · NATIONAL MUSEUM, NEW DELHI' if not TE else 'ఒక మొఘల్ ఫర్మానా · ఔరంగజేబు (1658–1707) · నేషనల్ మ్యూజియం, న్యూఢిల్లీ')
     if i == '2.12': return ('IN FORCE FROM 25 DEC 1722 · EXCEPTIONS: MUSLINS, NECKCLOTHS, FUSTIANS, ALL-BLUE CALICO' if not TE else '25 డిసెంబర్ 1722 నుంచి అమలు · మినహాయింపులు: మస్లిన్, మెడగుడ్డలు, ఫస్టియన్, పూర్తి నీలం calico')
@@ -264,7 +269,7 @@ def shipsmap(i):
     spec = dict(box0=base['box0'], box1=base['box1'], pins=[('Machilipatnam',) + PL_P['Machilipatnam'] + (M[i][0] - 0.3,)],
                 glows=[g[:5] + (cs[k] - 0.1,) for k, g in enumerate(base['glows'])],
                 routes=[(r[0], cs[k] - 0.2, (120, 112, 96)) for k, r in enumerate(base['routes'])],
-                ships=[(list(reversed(r[0])), cs[k], 3.4) for k, r in enumerate(base['routes'])])
+                ships=[(list(reversed(r[0])), cs[k], 3.4) for k, r in enumerate(base['routes'])], autoships=False)
     return lambda t, a, b: FL.render_map(None, t, spec, a, b)
 VILLAGES = [(80.55, 16.05), (80.8, 16.2), (81.0, 16.42), (80.85, 16.65), (81.3, 16.62), (81.55, 16.72), (81.8, 16.8), (82.0, 16.98)]
 def netmap(i):
@@ -281,18 +286,72 @@ def worldships(i):
     c0 = cue(i, 'sailed', 'ప్రపంచం') - 0.6
     spec = dict(box0=(-25, 150, -40, 60), box1=(20, 130, -22, 44), routes=[(r, c0 + k * 0.15, (110, 104, 92)) for k, r in enumerate(WORLD_ROUTES)],
                 ships=[(r, c0 + k * 0.15, 3.0) for k, r in enumerate(WORLD_ROUTES)],
-                glows=[('', 79, 21, 9, (220, 170, 60), c0)])
+                glows=[('', 79, 21, 9, (220, 170, 60), c0)], autoships=False)
     return lambda t, a, b: FL.render_map(None, t, spec, a, b)
 def diwani_map():
     return mapshot('diwani')
 OVER.append(('chip', M['0.2'][0] + 0.4, cue('0.2', 'Indian', 'పత్తి') - 0.3, 'Palampore · Coromandel Coast, 18th c. · The Met' if not TE else 'పలంపోర్ · కోరమాండల్ తీరం, 18వ శతాబ్దం · The Met'))
 SUB_T = cue('3.12', 'subscribe', 'subscribe') if '3.12' in M else 0
+import fx3
+fx3.init(cue=cue, TE=TE, P=PL_P)
+def mapshot2(name, draw_factory, extra=None):
+    def f(t, a, b):
+        spec = dict(MAPS[name]); d_ = b - a; res = lambda c: a + c * d_
+        spec['pins'] = [(p[0], p[1], p[2], res(p[3])) + tuple(p[4:]) for p in spec.get('pins', [])]
+        spec['routes'] = [(r[0], res(r[1])) + tuple(r[2:]) for r in spec.get('routes', [])]
+        spec['glows'] = [g[:5] + (res(g[5]),) for g in spec.get('glows', [])]
+        spec['arrows'] = [r[:4] + (res(r[4]), res(r[5])) for r in spec.get('arrows', [])]
+        if extra: spec.update(extra)
+        if draw_factory: spec['draw'] = draw_factory(spec)
+        return FL.render_map(None, t, spec, a, b)
+    return f
+def london_draw(lab_cue=None, lab_txt=''):
+    def fac(spec):
+        def draw(out, d, V, tt):
+            x, y = V(*PL_P['London']); fx3.glow(out, x, y, 80, (210, 210, 230), 1.0)
+            if lab_cue and tt > lab_cue: fx3.lab(out, lab_txt, x, y - 70, eo((tt - lab_cue) / 0.4), 26, PAPER, 'cb')
+        return draw
+    return fac
+def cutseq(parts):
+    return lambda t, a, b: seqs.cuts(t, [(p(a, b) if callable(p) else p, fn) for p, fn in parts])
+PR2 = dict(MAPS['port_routes']); PR2 = dict(PR2, box0=(-22, 125, -40, 40), box1=(-22, 125, -40, 40),
+           routes=PR2['routes'] + [([PL_P['Machilipatnam'], (80, 5), (73, -8), (40, -36), (18, -36), (8, -20), (5, -2), (2, 5)], .7)],
+           glows=PR2['glows'] + [('West Africa' if not TE else 'పశ్చిమ ఆఫ్రికా', 2, 9, 5, (120, 140, 178), .7)])
+MAPS['port_routes_wa'] = PR2
+def _sub_end(fr, t):
+    if '7.9' not in M: return fr
+    t0 = M['7.9'][1] + 0.3
+    if t < t0: return fr
+    import cairo, sys as _s; _s.path.insert(0, '/home/claude/why-channel-studio/pipeline/style_v2'); import cta_card
+    sf = cairo.ImageSurface(cairo.FORMAT_ARGB32, W, H); c = cairo.Context(sf); c.translate((W - 1080 * 1.25) / 2, 0); c.scale(1.25, 1.25)
+    cta_card.draw(c, t, t0, 'yt', 'te' if TE else 'en', y=H / 2 / 1.25)
+    buf = np.ndarray((H, W, 4), np.uint8, sf.get_data()); fr.alpha_composite(Image.fromarray(buf[..., [2, 1, 0, 3]].copy(), 'RGBA')); return fr
+SUB_CORNERS = [M[i][0] + 0.4 for i in ('1.2', '2.9', '3.6', '4.4', '5.3', '6.6') if i in M]
 SEQ = {'0.1': lambda t, a, b: fx2.s01(t, a, b, cue, _L), '0.2': lambda t, a, b: fx2.s02(t, a, b, cue, _L),
        '0.3': lambda t, a, b: fx2.s03(t, a, b, cue, _L, worldships('0.3')), '0.5': seqs.s05,
        '3.12': lambda t, a, b: fx2.subscribe(t, a, b, SUB_T, 'te' if TE else 'en'),
        '4.6': lambda t, a, b: fx2.flow2(t, a, b, cue, _L), '4.9': lambda t, a, b: fx2.s49(t, a, b, cue, _L), '4.10': lambda t, a, b: fx2.s410(t, a, b, cue, _L),
-       '7.1': seqs.s71, '7.2': lambda t, a, b: fx2.s72(t, a, b, cue, _L), '7.3': lambda t, a, b: fx2.s73(t, a, b, cue, _L),
-       '7.5': lambda t, a, b: fx2.s75(t, a, b, cue, _L, diwani_map()), '7.6': lambda t, a, b: fx2.s76(t, a, b, cue, _L),
+       '7.1': seqs.s71, '7.2': fx3.s72, '7.3': fx3.s73,
+       '7.5': fx3.s75, '7.6': fx3.s76,
+       '6.8b': fx3.s68b, '6.10': fx3.s610, '6.12': fx3.s612, '6.13': fx3.s613, '7.4': fx3.s74,
+       '4.2': mapshot2('deccan', lambda sp: fx3.deccan_draw(cue('4.2', 'Thalikota', 'తళ్లికోట'), cue('4.2', 'Aravidu', 'ఆరవీడు'), cue('4.2', 'Deccan', 'గోల్కొండ'), cue('4.2', 'Mughal', 'మొఘల్'))),
+       '6.3': lambda t, a, b: seqs.cuts(t, [(a, mapshot2('surat', lambda sp: fx3.surat_draw(cue('6.3', '1608', '1608'), cue('6.3', 'Jahangir', 'జహంగీర్'), cue('6.3', '1612', '1612'), cue('6.3', '1613', '1613'), 0), dict(autoships=False, box0=(62, 86, 16, 33), box1=(63, 85, 16.5, 32.5)))),
+                                              ((cue('6.3', '1615', 'ఆమోదించాడు') - 0.3) if not TE else b - 2.4, seqs.still('PD13', (.5, .4), (.5, .42), 1.0, 1.12))]),
+       '6.5': lambda t, a, b: seqs.cuts(t, [(a, mapshot2('madras', lambda sp: fx3.madras_draw(cue('6.5', '1611', '1611'), cue('6.5', '1639', '1639'), cue('6.5', 'Madras', 'మద్రాసు')))),
+                                              (min(b - 1.6, cue('6.5', 'Madras', 'మద్రాసు') + 1.6), seqs.still('PD14', (.5, .5), (.5, .5), 1.0, 1.1))]),
+       '6.7': lambda t, a, b: seqs.cuts(t, [(a, seqs.still('G26', (.45, .55), (.47, .55), 1.0, 1.08)),
+                                              (cue('6.7', 'carried', 'లండన్‌కి') - 0.6, mapshot2('london_route', london_draw(cue('6.7', 'Thames', 'థేమ్స్'), _L('LONDON · THAMES WAREHOUSE', 'లండన్ · థేమ్స్ గోదాము')), dict(cargo='bale', shipflag=(200, 56, 48)))),
+                                              (cue('6.7', 'open', 'విప్పారు') + 0.3, seqs.still('PD15', (.5, .5), (.5, .5), 1.0, 1.1))]),
+       'F1.2': lambda t, a, b: seqs.cuts(t, [(a, seqs.still('T4', (.46, .5), (.46, .5), 1.0, 1.12)),
+                                               (cue('F1.2', 'More', 'మూడు') - 0.2, mapshot2('london_route', london_draw(cue('F1.2', 'London', 'లండన్'), _L('LONDON', 'లండన్')), dict(cargo='bale')))]),
+       '2.15': mapshot2('port_routes_wa', None, dict(cargo='bale')),
+       '5.5': lambda t, a, b: seqs.cuts(t, [(a, mapshot2('monsoon', lambda sp: fx3.monsoon_draw(sp['arrows']))), (a + (b - a) * 0.72, seqs.still('CC05', (.5, .5), (.5, .5), 1.0, 1.08))]),
+       '5.6': mapshot2('malindi', lambda sp: fx3.malindi_draw(cue('5.6', 'pilot', 'దారిచూపే'), cue('5.6', 'debate', 'చర్చిస్తున్నారు'))),
+       '5.7': lambda t, a, b: seqs.cuts(t, [(a, seqs.still('PD11', (.5, .3), (.5, .4), 1.1, 1.25)),
+                                              (cue('5.7', 'Two', 'ట్యూనిస్') - 0.2, lambda tt, s_, e_: fx3.encounter(tt, s_, e_, cue('5.7', 'What', 'ఎందుకొచ్చారు') - 0.3, cue('5.7', 'Christians', 'క్రైస్తవుల') - 0.3))]),
+       '5.8': lambda t, a, b: seqs.cuts(t, [(a, seqs.still('G23', (.45, .5), (.47, .5), 1.0, 1.1)),
+                                              (cue('5.8', 'Hats', 'టోపీలు') - 0.3, lambda tt, s_, e_: fx3.gifts(tt, s_, e_, [cue('5.8', w, tw) for w, tw in (('Hats', 'టోపీలు'), ('coral', 'పగడాలు'), ('sugar', 'చక్కెర'), ('honey', 'తేనె'))], cue('5.8', 'laughed', 'నవ్వారు')))]),
+       '5.10': lambda t, a, b: fx3.cannons_vs_permission(t, a, b, cue('5.10', 'cannons', 'ఫిరంగులతో'), cue('5.10', 'politely', 'మర్యాదగా')),
        '2.1': seqs.s21, '2.2': seqs.s22, '2.3': seqs.s23, '2.4': seqs.s24, '2.6': seqs.s26,
        '3.2': lambda t, a, b: seqs.s32(t, a, b, mapshot('golconda')),
        '3.3': lambda t, a, b: seqs.s33(t, a, b, shipsmap('3.3'), netmap('3.3'))}
@@ -382,6 +441,8 @@ def frame(t):
         shade(fr, (60, 30, W - 60, 140), 150, 25); ban_timeline(fr, t, 80, 160, W - 160, mini=True)
     if '0.4' in M and M['0.4'][0] <= t <= M['0.4'][1] + 0.4:
         fx2.ring_overlay(fr, t, cue('0.4', 'quarter', 'నాలుగో'), 0.24, 1560, 470, 150, '~1/4', _L('OF WORLD OUTPUT, 1700 · ONE ESTIMATE', 'ప్రపంచ ఉత్పత్తిలో, 1700 · ఒక అంచనా'))
+    for t0_ in SUB_CORNERS: fr = fx3.sub_corner(fr, t, t0_, 'te' if TE else 'en')
+    fr = _sub_end(fr, t)
     chrono_overlay(fr, t)
     for o in OVER:
         kind, a, b, s = o
