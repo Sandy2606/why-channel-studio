@@ -67,7 +67,7 @@ def water(a, key, t, amp=3.0):
     h, w = a.shape[:2]; X, Y = grids(h, w); m = water_mask(key)
     dx = (amp * np.sin(0.045 * Y + 2.3 * t) + 1.2 * np.sin(0.11 * Y - 0.02 * X + 3.7 * t)) * m
     dy = (0.8 * amp * np.sin(0.035 * X + 0.05 * Y + 1.9 * t)) * m
-    out = cv2.remap(a, X + dx, Y + dy, cv2.INTER_LINEAR, borderMode=cv2.BORDER_REFLECT).astype(np.float32)
+    out = cv2.remap(a, (X + dx).astype(np.float32), (Y + dy).astype(np.float32), cv2.INTER_LINEAR, borderMode=cv2.BORDER_REFLECT).astype(np.float32)
     glint = (np.sin(0.09 * X + 0.21 * Y + 4.1 * t) * np.sin(0.13 * X - 0.17 * Y - 2.9 * t)).clip(0.82, 1) - 0.82
     out += (glint * 140 * m)[..., None]
     return np.clip(out, 0, 255).astype(np.uint8)
@@ -88,7 +88,7 @@ def ripple(a, t, c, ax, amp=4.0):
     nx, ny = (X - c[0]) / ax[0], (Y - c[1]) / ax[1]; r = np.sqrt(nx ** 2 + ny ** 2)
     m = np.clip(1 - r, 0, 1) ** 0.5
     d = amp * np.sin(r * 38 - 5.5 * t) * m
-    return cv2.remap(a, X + d * nx, Y + d * ny * 0.6, cv2.INTER_LINEAR, borderMode=cv2.BORDER_REFLECT)
+    return cv2.remap(a, (X + d * nx).astype(np.float32), (Y + d * ny * 0.6).astype(np.float32), cv2.INTER_LINEAR, borderMode=cv2.BORDER_REFLECT)
 
 # ------------------------------------------------------------------ backgrounds
 def dark():
@@ -135,7 +135,7 @@ def shuttle_img():
     d.line((10, 35, 290, 35), fill=(150, 100, 60, 120), width=2)
     return s
 SHUTTLE = None
-def weave(t, a, b, t_first, pass_dur=0.62, period=0.86, push=(1.0, 1.08)):
+def weave(t, a, b, t_first, pass_dur=0.62, period=0.86, push=(1.0, 1.08), labels=None):
     """cloth forming: the shuttle crosses the open shed, the reed beats the new pick into the fell."""
     global SHUTTLE
     if SHUTTLE is None: SHUTTLE = shuttle_img()
@@ -171,7 +171,17 @@ def weave(t, a, b, t_first, pass_dur=0.62, period=0.86, push=(1.0, 1.08)):
     arr = arr.astype(np.float32); Yv = np.linspace(-1, 1, H)[:, None, None]; Xv = np.linspace(-1, 1, W)[None, :, None]
     arr *= (1.08 - 0.22 * ((Xv + 0.5) ** 2 * 0.4 + (Yv + 0.3) ** 2 * 0.6))          # warm key light from the upper left
     arr *= np.array([1.06, 0.98, 0.86]); arr += np.random.default_rng(int(t * 30)).normal(0, 3.0, (H, W, 1))
-    return to_rgba(np.clip(arr, 0, 255).astype(np.uint8))
+    fr = to_rgba(np.clip(arr, 0, 255).astype(np.uint8))
+    if labels:
+        k = eo((t - a - 0.2) / 0.5); dd = ImageDraw.Draw(fr)
+        def tag(x, y, s, tx, ty):
+            dd.line((x, y, tx, ty), fill=PAPER + (int(220 * k),), width=3); dd.ellipse((tx - 6, ty - 6, tx + 6, ty + 6), fill=PAPER + (int(255 * k),))
+            im_ = text(s, 'label', 32, PAPER); bg = Image.new('RGBA', (im_.width + 28, im_.height + 14), (14, 12, 18, int(200 * k))); bg.alpha_composite(im_, (14, 7)); put(fr, bg, x, y, 1.0, 'cc')
+        tag(300, 120, labels[0], 420, max(60, fell - 260))                       # warp
+        tag(W - 360, H - 120, labels[1], W - 520, min(H - 40, fell + 60))         # weft
+        if 0 <= ph < pass_dur: tag(W / 2, fell - 200, labels[2], W / 2, fell - 50)   # shuttle
+    return fr
+LABELS = []
 def weave_hits(t_first, t_end, pass_dur=0.62, period=0.86):
     out = []; tt = t_first
     while tt + pass_dur < t_end: out.append(tt + pass_dur); tt += period
@@ -284,7 +294,7 @@ def kal_layers():
     order_draw = np.clip(0.75 * (0.6 * X + 0.4 * Y) + 0.25 * noise, 0, 1)        # pen sweep order
     order_soak = np.clip(noise, 0, 1)                                              # dye soaking order
     return dict(final=crop, base=base, ink=ink, outline=outline, red=red, blue=blue, od=order_draw, os=order_soak)
-def kalam(t, a, b, c_draw, c_red, c_blue, c_wax, c_out, label=''):
+def kalam(t, a, b, c_draw, c_red, c_blue, c_wax, c_out, label='', tag=''):
     L = kal_layers(); f = L['final']
     p_draw = sm((t - c_draw) / 4.2); p_red = sm((t - c_red) / 1.4); p_blue = sm((t - c_blue) / 1.3); p_wax = sm((t - c_wax) / 0.8)
     p_rest = sm((t - c_wax - 0.9) / 1.3)
@@ -310,8 +320,11 @@ def kalam(t, a, b, c_draw, c_red, c_blue, c_wax, c_out, label=''):
     u = (t - a) / max(0.1, b - a)
     # camera: slow push on the detail; after c_out pull back to the whole palampore
     if t < c_out:
-        out = cam(img, u * 0.5, (.5, .5), (.52, .5), 1.0, 1.06)
-        return to_rgba(out)
+        out = to_rgba(cam(img, u * 0.5, (.5, .5), (.52, .5), 1.0, 1.06))
+        if tag:
+            im_ = text(tag, 'label', 26, PAPER); bg = Image.new('RGBA', (im_.width + 30, im_.height + 16), (14, 12, 18, 190)); bg.alpha_composite(im_, (15, 8))
+            put(out, bg, 50, 50, eo((t - a) / 0.5) * (1 - eo((t - c_out + 0.3) / 0.3)), 'lt')
+        return out
     k = sm((t - c_out) / 2.6)
     full = FL.img('MET1'); fh, fw = full.shape[:2]
     x, y, w, h = KAL

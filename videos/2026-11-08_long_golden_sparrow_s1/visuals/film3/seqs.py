@@ -63,7 +63,8 @@ def s23(t, a, b):
     cues = dict(weaver=c_brk + 0.15, broker=min(brk, adv - 0.3), beam=c_brk + 0.15, advance=adv,
                 price=cue('2.3', 'price', 'ధర'), power=cue('2.3', 'bargaining', 'బేరమాడే'))
     lab = LAB23['te' if C['TE'] else 'en']
-    weave1 = lambda tt, s, e: fx.weave(tt, s, e, s + 0.2)
+    wl = (L('WARP', 'పడుగు'), L('WEFT', 'పేక'), L('SHUTTLE', 'నాడె'))
+    weave1 = lambda tt, s, e: fx.weave(tt, s, e, s + 0.2, labels=wl)
     weave2 = lambda tt, s, e: fx.weave(tt, s, e, s + 0.1, push=(1.35, 1.45))
     fam = still('T6', (.62, .55), (.55, .55), 1.06, 1.14)
     diag = lambda tt, s, e: fx.broker(tt, s, e, cues, lab)
@@ -74,7 +75,7 @@ def s23_hits(a, b):
 
 # ------------------------------------------------------------------ 2.4  the dyer
 def s24(t, a, b):
-    c = cue('2.4', 'dyer', 'రంగులు') - 0.1
+    c = cue('2.4', 'dire', 'రంగులు') - 0.1
     rip = lambda arr, tt: fx.ripple(arr, tt, (560, 1400), (520, 130))
     return cuts(t, [(a, still('G06', (.50, .45), (.47, .47), 1.02, 1.08, alive=rip)), (c, still('G06', (.16, .80), (.17, .82), 2.0, 2.15, alive=rip))])
 
@@ -82,14 +83,15 @@ def s24(t, a, b):
 def s26(t, a, b):
     c_draw = cue('2.6', 'drew', 'design'); c_out = cue('2.6', 'weeks', 'వారాల') - 0.9
     lab = L('PALAMPORE · COROMANDEL COAST, 18TH C. · THE MET', 'పలంపోర్ · కోరమాండల్ తీరం, 18వ శతాబ్దం · The Met')
-    anim = lambda tt, s, e: fx.kalam(tt, s, e, c_draw, cue('2.6', 'reds', 'ఎరుపు'), cue('2.6', 'blue', 'నీలం'), cue('2.6', 'wax', 'మైనం'), c_out, lab)
+    anim = lambda tt, s, e: fx.kalam(tt, s, e, c_draw, cue('2.6', 'reds', 'ఎరుపు'), cue('2.6', 'blue', 'నీలం'), cue('2.6', 'wax', 'మైనం'), c_out, lab, L('ILLUSTRATIVE RECONSTRUCTION OF THE TECHNIQUE', 'పద్ధతికి ఉదాహరణ పునఃసృష్టి'))
     return cuts(t, [(a, still('G05', (.63, .42), (.64, .44), 1.45, 1.6)), (c_draw - 0.15, anim)])
 
 # ------------------------------------------------------------------ 3.2  Golconda -> the sea gate
 def s32(t, a, b, mapfn):
     c = cue('3.2', 'seagate', 'సముద్ర') - 0.1
     sw = lambda arr, tt: fx.water(fx.swing(arr, tt, (1140, 80), fx.G21_BALE), 'G21', tt)
-    return cuts(t, [(a, mapfn), (c, still('G21', (.45, .40), (.50, .42), 1.0, 1.08, alive=sw))])
+    bale = still('G09', (.07, .76), (.08, .75), 3.2, 3.0, alive=lambda arr, tt: fx.water(arr, 'G09', tt))
+    return cuts(t, [(a, mapfn), (c, bale), (c + 1.0, still('G21', (.45, .40), (.50, .42), 1.0, 1.08, alive=sw))])
 
 # ------------------------------------------------------------------ 3.3  ships from four seas; Dutch and English; brokers to weaving villages
 def flag_marker(fr, t, c, x, y, label):
@@ -120,3 +122,13 @@ def s33(t, a, b, shipsmap, netmap):
         return fr
     return cuts(t, [(a, shipsmap), (c_g09, harbour), (c_mkt, still('G10', (.36, .48), (.38, .48), 1.55, 1.62)),
                     (c_buy, still('G10', (.60, .42), (.60, .43), 1.6, 1.68)), (c_net, netmap)])
+
+# ------------------------------------------------------------------ 0.5  the land the world came to... a company that came to trade
+def s05(t, a, b):
+    c = cue('0.5', 'company', 'కంపెనీ') - 0.1
+    return cuts(t, [(a, still('T2', (.45, .55), (.45, .50), 1.02, 1.1)), (c, still('T2', (.60, .10), (.60, .12), 2.6, 2.8))])
+# ------------------------------------------------------------------ 7.1  permission, silver... then Plassey
+def s71(t, a, b):
+    c_s = cue('7.1', 'silver', 'వెండి') - 0.15; c_p = cue('7.1', 'Then', 'తర్వాత') - 0.1
+    return cuts(t, [(a, still('G24', (.45, .5), (.47, .5), 1.05, 1.12)), (c_s, still('G19', (.30, .72), (.32, .70), 1.7, 1.8)),
+                    (c_p, still('G29', (.5, .55), (.52, .55), 1.02, 1.1))])

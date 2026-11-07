@@ -106,6 +106,7 @@ def still(key, u, z0, z1, fx0, fy0, fx1, fy1, par=0.0, fit=False):
     hw, hh = W / 2 / s, H / 2 / s
     cx = fx * w if w * s < W else min(max(fx * w, hw), w - hw)
     cy = fy * h if h * s < H else min(max(fy * h, hh), h - hh)
+    par = 0.0   # v3: no depth warp anywhere (it bent painted faces)
     if par > 0 and key in ILLUS:
         d = depth(key)
         sx = cx + (GX - W / 2) / s; sy = cy + (GY - H / 2) / s
@@ -297,6 +298,9 @@ def render_map(fr, t, spec, t0, t1):
             d.line((hx, hy, ex_, ey_), fill=GOLD + (int(200 * k),), width=3)
             r_ = 7 + 10 * (1 - eo((t - cue - j * 0.12 - 0.45) / 0.5)) if k >= 1 else 0
             d.ellipse((vx - 7, vy - 7, vx + 7, vy + 7), fill=PAPER + (int(255 * k),))
+            if k >= 1:
+                f = ((t - cue) * 0.7 + j * 0.17) % 1; px, py = vx + (hx - vx) * f, vy + (hy - vy) * f
+                d.rounded_rectangle((px - 7, py - 6, px + 7, py + 6), 3, fill=(214, 186, 120, 240))
             if r_ > 7: d.ellipse((vx - r_, vy - r_, vx + r_, vy + r_), outline=PAPER + (int(150 * k),), width=2)
         if lab:
             cxs = sum(V(*q)[0] for q in vil) / len(vil); cys = min(V(*q)[1] for q in vil)

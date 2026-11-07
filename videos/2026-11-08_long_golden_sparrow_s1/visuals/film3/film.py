@@ -72,7 +72,7 @@ json.dump(PH, open(PH_CACHE, 'w'))
 # ---------------------------------------------------------------- overlays (on-screen text per line)
 def scene_text(i):
     s = SC[i]['te' if TE else 'en'] if i in SC else ''
-    if i == '0.2': return 'Palampore · Coromandel Coast, 18th c. · The Met' if not TE else 'పలంపోర్ · కోరమాండల్ తీరం, 18వ శతాబ్దం · The Met'
+    if i in ('0.2', '4.6', '4.10', '7.3'): return ''
     if i == '4.4': return "AKBAR'S COURT · AKBARNAMA"
     if i == '6.4': return ('A MUGHAL FARMAN · AURANGZEB (r. 1658–1707) · NATIONAL MUSEUM, NEW DELHI' if not TE else 'ఒక మొఘల్ ఫర్మానా · ఔరంగజేబు (1658–1707) · నేషనల్ మ్యూజియం, న్యూఢిల్లీ')
     if i == '2.12': return ('IN FORCE FROM 25 DEC 1722 · EXCEPTIONS: MUSLINS, NECKCLOTHS, FUSTIANS, ALL-BLUE CALICO' if not TE else '25 డిసెంబర్ 1722 నుంచి అమలు · మినహాయింపులు: మస్లిన్, మెడగుడ్డలు, ఫస్టియన్, పూర్తి నీలం calico')
@@ -90,7 +90,7 @@ for i in ORDER:
 p01 = phrases('0.1')
 OVER.append(('chip', M['0.1'][0] + 0.6, p01[-1] - 0.1, '1721 · BRITAIN BANS PRINTED COTTON' if not TE else '1721 · అచ్చు గుడ్డలపై బ్రిటన్ నిషేధం'))
 OVER.append(('why', p01[-1] - 0.05, M['0.2'][0] + 0.3, 'WHY?' if not TE else 'ఎందుకు?'))
-OVER.append(('sub', M['3.12'][0] + 0.3, M['3.12'][1], 'SUBSCRIBE'))
+
 # DRAMATIZED tag: first appearance of an own illustration in each section
 seen = set()
 for (a, b, sp, i) in SHOTLIST:
@@ -167,12 +167,13 @@ def flow(t, a, b):
 
 # ---------------------------------------------------------------- cue times (EN: word timestamps; TE: phrase + character position)
 WORDS = json.load(open('/home/claude/gs/film/words_en_all.json')) if not TE else {}
+CUE_MISS = set()
 def cue(i, en, te=None, nth=0):
     if i not in M: return None
     if not TE:
         hits = [a for w, a, b in WORDS.get(i, []) if w.lower().strip('.,?!;:\'"').startswith(en.lower())]
         if len(hits) > nth: return hits[nth]
-        return M[i][0]
+        CUE_MISS.add((i, en)); return M[i][0]
     txt = re.sub(r'\*\*', '', ROWS[i]['te']); parts = txt.split('⏸'); ph = phrases(i) + [M[i][1]]
     tok = te or en; pos = 0
     for k, p in enumerate(parts):
@@ -180,7 +181,7 @@ def cue(i, en, te=None, nth=0):
         if j >= 0:
             a = ph[k]; b = ph[k + 1] - 0.35 if k + 1 < len(ph) else M[i][1]
             return a + (b - a) * j / max(1, len(p.strip()))
-    return M[i][0]
+    CUE_MISS.add((i, tok)); return M[i][0]
 
 # --- dyeing steps (2.6)
 DYE = [('MORDANT', 'మోర్డెంట్', (70, 64, 60), 'mordants', 'పదార్థాలతో'), ('RED · CHAY ROOT', 'ఎరుపు · చిరివేరు', (170, 50, 40), 'reds', 'ఎరుపు'),
@@ -267,11 +268,32 @@ def shipsmap(i):
     return lambda t, a, b: FL.render_map(None, t, spec, a, b)
 VILLAGES = [(80.55, 16.05), (80.8, 16.2), (81.0, 16.42), (80.85, 16.65), (81.3, 16.62), (81.55, 16.72), (81.8, 16.8), (82.0, 16.98)]
 def netmap(i):
-    cw = cue(i, 'with', 'నేత') - 0.1
+    cw = cue(i, 'buyers', 'కొనుగోలుదారులను') + 0.3
     spec = dict(box0=(79.3, 83.4, 14.7, 18.3), box1=(79.6, 83.1, 15.0, 18.0), pins=[('Machilipatnam',) + PL_P['Machilipatnam'] + (cw - 0.6, 'd')],
                 net=(PL_P['Machilipatnam'], VILLAGES, cw, 'WEAVING VILLAGES' if not TE else 'నేత గ్రామాలు'))
     return lambda t, a, b: FL.render_map(None, t, spec, a, b)
-SEQ = {'2.1': seqs.s21, '2.2': seqs.s22, '2.3': seqs.s23, '2.4': seqs.s24, '2.6': seqs.s26,
+import fx2
+_L = lambda en, te: te if TE else en
+WORLD_ROUTES = [[(-8, 45), (-20, 15), (0, -5), (18, -35), (45, -28), (58, 0), (72, 10), (75.8, 11.25)], [(43, 13), (55, 13), (68, 17), (72.8, 21.2)],
+                [(56.3, 27), (62, 23), (72.8, 21.2)], [(39.7, -3.2), (55, 2), (75.8, 11.25)], [(101, 3), (92, 8), (85, 13), (81.14, 16.17)],
+                [(114, 22), (106, 10), (95, 6), (85, 12), (81.14, 16.17)]]
+def worldships(i):
+    c0 = cue(i, 'sailed', 'ప్రపంచం') - 0.6
+    spec = dict(box0=(-25, 150, -40, 60), box1=(20, 130, -22, 44), routes=[(r, c0 + k * 0.15, (110, 104, 92)) for k, r in enumerate(WORLD_ROUTES)],
+                ships=[(r, c0 + k * 0.15, 3.0) for k, r in enumerate(WORLD_ROUTES)],
+                glows=[('', 79, 21, 9, (220, 170, 60), c0)])
+    return lambda t, a, b: FL.render_map(None, t, spec, a, b)
+def diwani_map():
+    return mapshot('diwani')
+OVER.append(('chip', M['0.2'][0] + 0.4, cue('0.2', 'Indian', 'పత్తి') - 0.3, 'Palampore · Coromandel Coast, 18th c. · The Met' if not TE else 'పలంపోర్ · కోరమాండల్ తీరం, 18వ శతాబ్దం · The Met'))
+SUB_T = cue('3.12', 'subscribe', 'subscribe') if '3.12' in M else 0
+SEQ = {'0.1': lambda t, a, b: fx2.s01(t, a, b, cue, _L), '0.2': lambda t, a, b: fx2.s02(t, a, b, cue, _L),
+       '0.3': lambda t, a, b: fx2.s03(t, a, b, cue, _L, worldships('0.3')), '0.5': seqs.s05,
+       '3.12': lambda t, a, b: fx2.subscribe(t, a, b, SUB_T, 'te' if TE else 'en'),
+       '4.6': lambda t, a, b: fx2.flow2(t, a, b, cue, _L), '4.9': lambda t, a, b: fx2.s49(t, a, b, cue, _L), '4.10': lambda t, a, b: fx2.s410(t, a, b, cue, _L),
+       '7.1': seqs.s71, '7.2': lambda t, a, b: fx2.s72(t, a, b, cue, _L), '7.3': lambda t, a, b: fx2.s73(t, a, b, cue, _L),
+       '7.5': lambda t, a, b: fx2.s75(t, a, b, cue, _L, diwani_map()), '7.6': lambda t, a, b: fx2.s76(t, a, b, cue, _L),
+       '2.1': seqs.s21, '2.2': seqs.s22, '2.3': seqs.s23, '2.4': seqs.s24, '2.6': seqs.s26,
        '3.2': lambda t, a, b: seqs.s32(t, a, b, mapshot('golconda')),
        '3.3': lambda t, a, b: seqs.s33(t, a, b, shipsmap('3.3'), netmap('3.3'))}
 CH_A = M['6.2'][0] - 0.2 if '6.2' in M else 1e9
@@ -358,6 +380,8 @@ def frame(t):
     if '2.6' in M and M['2.6'][0] <= t <= M['2.6'][1] + 0.6: dye_overlay(fr, t, M['2.6'][0], M['2.6'][1] + 0.6)
     if '2.12' in M and M['2.12'][0] - 0.25 <= t <= M['2.13'][0] - 0.25:
         shade(fr, (60, 30, W - 60, 140), 150, 25); ban_timeline(fr, t, 80, 160, W - 160, mini=True)
+    if '0.4' in M and M['0.4'][0] <= t <= M['0.4'][1] + 0.4:
+        fx2.ring_overlay(fr, t, cue('0.4', 'quarter', 'నాలుగో'), 0.24, 1560, 470, 150, '~1/4', _L('OF WORLD OUTPUT, 1700 · ONE ESTIMATE', 'ప్రపంచ ఉత్పత్తిలో, 1700 · ఒక అంచనా'))
     chrono_overlay(fr, t)
     for o in OVER:
         kind, a, b, s = o
