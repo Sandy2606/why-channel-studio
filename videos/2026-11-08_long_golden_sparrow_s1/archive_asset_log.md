@@ -47,3 +47,9 @@ Until then it is a candidate, and the graphic or illustration fallback named in 
   - NPG Hayman *Clive and Mir Jafar* (needs a commercial licence).
   - British Museum images under CC BY-NC-SA (non-commercial only).
 - **Wikimedia rate limit:** the API rate-limits bulk checks (HTTP 429), so each item is checked one at a time with pauses.
+
+## Correction log (2026-11-07)
+
+| ID | Item | File | Source URL | Creator / institution | Licence | Credit line | Status |
+|---|---|---|---|---|---|---|---|
+| FARMAN | Farman of Aurangzeb (Alamgir) on suppressing dacoity; ink on paper, 69 × 23.4 cm; three seals. **Not the 1717 Farrukhsiyar farman.** | visuals/archive/08_NEW_Farman_of_Aurangzeb_National_Museum_New_Delhi_62.5.jpg (cropped to 815×1390, the museum footer removed) | https://commons.wikimedia.org/wiki/File:Farman_of_Aurangzeb_(National_Museum,_New_Delhi,_62.5).jpg (source: museumsofindia.gov.in record nat_del-62-5-3216) | National Museum, New Delhi, acc. 62.5 | Public domain: {{PD-Art-100}} on Commons | Farman of Aurangzeb, National Museum, New Delhi (62.5), via Wikimedia Commons, public domain | ✅ READY: used only at 6.4 with the on-screen caption "A MUGHAL FARMAN · AURANGZEB (r. 1658–1707) · NATIONAL MUSEUM, NEW DELHI"; removed from 6.9 (the 1717 grant now uses illustration G27) |
