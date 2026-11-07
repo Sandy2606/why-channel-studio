@@ -87,10 +87,10 @@ p('G15', 'Chelli lifts the coin', 'F2.1', 'Frame story: "Anna, whose face is on 
   CHARS + ' Late afternoon in Ammamma\'s room, the trunk open. Chelli kneels and lifts a small old coin up to the window light, curious; Anna leans in beside her. The kalamkari cloth lies folded in the trunk. ',
   ['CHAR', 'T3'], '', 'Warm, curious; consistent with T3/T4.', 'Trunk foreground, children middle, window behind; Chelli and the coin near the centre.')
 p('G16', 'Empty bowl beside the chintz', '4.1, S4 hook', '"Why were the people who made it often so poor?"',
-  'Still life on an earthen floor: a weaver\'s empty, dented brass bowl beside a finished, folded bale of OUR CLOTH, bright and beautiful; a shaft of light falls on the cloth, the bowl in shadow. ' + CLOTH + ' ',
+  'Still life on an earthen floor, both objects fully inside the frame: on the left, a weaver\'s empty, dented brass bowl (completely visible, not cut off); on the right, a neatly folded stack of OUR CLOTH, bright and beautiful, its pattern exactly as R1 (large madder-red peony-like blossoms, indigo leaves, small yellow buds, red-and-indigo vine border). A shaft of light falls on the cloth; the bowl stays in shadow. ' + CLOTH + ' ',
   ['R1'], '', 'Quiet contrast, no people.', 'Bowl foreground, cloth middle, dim wall behind; both objects within the centre third.')
 p('G17', 'Farman scroll', '4.6, 6.9', 'Royal permission to trade.',
-  'A Mughal farman scroll partly unrolled on a low wooden desk, red-brown paper with gold-flecked margins, a large round seal impression at the top, lines of Persian calligraphy rendered as illegible decorative strokes, an inkpot and reed pen. ',
+  'A Mughal farman scroll partly unrolled on a low wooden desk, cream paper with gold-flecked floral margins. Shallow depth of field: only the large round red seal impression at the top is sharp; the lines of writing below are soft and out of focus so no letters can be read (if any script shows, it must look like right-to-left Persian nastaliq, never Latin letters). An inkpot and a reed pen beside it. ',
   [], 'Farmans carried the imperial seal (tughra) and were written in Persian. Do not render readable text.', 'Formal, archival.', 'Scroll diagonal through the centre; desk edge foreground.')
 p('G18', 'Golconda revenue office', '4.7 (TE)', 'Madanna and Akkanna oversaw revenue and the treasury.',
   'Interior of a Golconda revenue office, c.1680: two ministers in white jamas and turbans seen from behind and three-quarter, studying account books with a scribe; arched niche windows, stacked ledgers. No portrait likeness. ',
@@ -99,7 +99,7 @@ p('G19', 'Surat counting-house', '4.8', 'Virji Vora, the merchant-banker the Eng
   'A Surat merchant-banker\'s counting-house, c.1620s: a wealthy Gujarati merchant in a white angarkha seated on a cushion, scales weighing silver coins, ledgers, clerks; through the window, river ships on the Tapti. ',
   [], 'Surat was the Mughal empire\'s chief port; Virji Vora lent to the English Company. No portrait of him survives, so make him generic.', 'Wealth, calm power.', 'Scales foreground, merchant middle, window behind.')
 p('G20', 'Empty pit loom', '4.10', 'Famine: many weavers died or fled. Restrained.',
-  'An empty pit loom in a dark mud hut, no people; the loom frame and an unfinished white cloth, a broken thread hanging; dust in a single shaft of light from the doorway. ',
+  'The same kind of pit loom as the approved weaving image T6 (the weaver sits on the floor edge with his legs in a pit; the loom frame is at floor level in front of the pit) - but now empty, no people: the pit is visible in the mud floor, the treadles still in the pit, an unfinished white cloth on the beam, one broken thread hanging. Dark thatched mud hut, dust in a single shaft of light from the doorway. Not a standing frame loom. ',
   [], '1630-32 Deccan famine. No bodies, no suffering imagery.', 'Silent, mournful, very restrained.', 'Loom centre, doorway light behind.')
 p('G21', 'Our bale goes aboard', '4.11', '"And the richest trade… came by sea."',
   'At Machilipatnam, a bale of OUR CLOTH is hoisted by rope and wooden pulley from a masula boat up the side of a large ship; sailors hauling, the sea glittering. ' + CLOTH + ' ',
