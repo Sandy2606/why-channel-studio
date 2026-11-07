@@ -16,7 +16,7 @@ def rms_db(x): return 20 * np.log10(np.sqrt(np.mean(x ** 2)) + 1e-9)
 SRC = {k: load(SFX + f) for k, f in [('loom', 'loom_shuttle.mp3'), ('harbour', 'harbour_waves.wav'), ('ship', 'ship_creak.mp3'),
                                      ('quill', 'quill_writing.mp3'), ('cannon', 'cannon_distant.wav')]}
 # level: RMS target in dBFS before voice ducking
-LEVEL = {'loom': -24, 'harbour': -25, 'ship': -26, 'quill': -25, 'cannon': -21}
+LEVEL = {'loom': -31, 'harbour': -31, 'ship': -29, 'quill': -34, 'cannon': -21}
 bed = np.zeros_like(mix); log = []
 def place(k, a, b, off=0.0, fade=0.8):
     s = SRC[k]; a_ = int(a * SR); b_ = min(n, int(b * SR)); m = b_ - a_
@@ -49,17 +49,28 @@ for i in ('2.8', '3.11', '4.8', '6.2'):
     if line(i): place('quill', line(i)[0], min(line(i)[1], line(i)[0] + 3.5), off=12 + float(i.split('.')[1]), fade=0.4)
 # distant cannon: once at 5.10, and TE 7.4 (Masulipatnam 1759); never under Plassey 7.2 or the famine
 for i in ('5.10',) + (('7.4',) if L == 'te' else ()):
-    if line(i): place('cannon', line(i)[0] - 0.4, line(i)[0] + 4.2, off=2.8, fade=0.3)
+    if line(i): place('cannon', line(i)[0] - 1.4, line(i)[0] + 3.0, off=2.8, fade=0.3)
 # silence everything in the famine (4.9-4.10) and keep Plassey (7.2) clean
 for i in ('4.9', '4.10', '7.2'):
     if line(i): a_, b_ = int((line(i)[0] - 1) * SR), int((line(i)[1] + 1) * SR); bed[a_:b_] = 0
 # duck under the voice: -9 dB while narration is active (300 ms attack/release smoothing)
-lv = np.abs(voice).mean(1); w = int(0.3 * SR); env = np.convolve(lv, np.ones(w) / w, 'same')
+D = 480; m_ = n // D * D
+lv = np.abs(voice[:m_]).mean(1).reshape(-1, D).mean(1); del voice
+env = np.convolve(lv, np.ones(30) / 30, 'same')
 act = np.clip(env / (np.percentile(env[env > 1e-4], 50) * 0.35), 0, 1)
-bed *= (1 - (1 - 10 ** (-10 / 20)) * act)[:, None]
-out = mix + bed
+gain = (1 - (1 - 10 ** (-14 / 20)) * act).astype(np.float32)
+gain = np.concatenate([np.repeat(gain, D), np.full(n - m_, gain[-1], np.float32)])
+bed *= gain[:, None]; del gain
+# carve the speech band (1-4 kHz) out of the effects so they never sit on top of the words (about -9 dB in band)
+from scipy.signal import butter, sosfiltfilt
+sos = butter(2, [1000, 4000], 'bandpass', fs=SR, output='sos')
+for a_, b_, *_ in []: pass
+for k_, a_, b_ in log:
+    x0, x1 = max(0, int((a_ - 1) * SR)), min(n, int((b_ + 1) * SR))
+    bed[x0:x1] -= (0.65 * sosfiltfilt(sos, bed[x0:x1].astype(np.float64), axis=0)).astype(np.float32)
+mix += bed; out = mix; del bed
 open(f'/home/claude/gs/sfxpass/{L}_cues.json', 'w').write(json.dumps(log, indent=0))
 tmp = f'/home/claude/gs/sfxpass/{L}_pre.wav'
 subprocess.run(['ffmpeg', '-v', 'error', '-y', '-f', 'f32le', '-ar', str(SR), '-ac', '2', '-i', '-', tmp], input=out.astype(np.float32).tobytes(), check=True)
 subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', tmp, '-af', 'loudnorm=I=-14:TP=-1.0:LRA=11', '-ar', '48000', O + f'GS_S1_film_{U}_sfx.wav'], check=True)
-print(L, 'cues', len(log), 'bed rms', round(rms_db(bed[np.abs(bed).sum(1) > 0]), 1))
+print(L, 'cues', len(log))
