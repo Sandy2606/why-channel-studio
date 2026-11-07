@@ -59,16 +59,18 @@ EQ = 'equalizer=f=2200:t=q:w=1:g=-5,highshelf=f=6000:g=-5,lowpass=f=10000'
 TRACK = {
     'open': ('beneath_the_rising_current', 8, ''),
     'A': ('where_the_river_bends', 0, ''),          # ch1-3: villages, cloth, port
-    'B': ('before_the_world_wakes', 0, ''),         # ch4-5: wealth, ocean
+    'B': ('before_the_world_wakes', 0, ''),         # ch4: wealth
+    'SEA': ('beneath_the_heavy_swell', 0, ''),      # ch5: the ocean (user's Gemini track, Nov 6)
     'C': ('beneath_the_rising_current', 40, ''),    # ch6: the Company
     # Season 2 ending: darker + more suspenseful, less melodic: down 2 semitones, top end rolled off
-    'end': ('the_quiet_meridian', 20, ',asetrate=48000*0.8909,aresample=48000,lowpass=f=2600,equalizer=f=900:t=q:w=1.2:g=-4,bass=g=3:f=90'),
+    # Season 2 ending: the user's dark suspense track, builds into the cliffhanger; top end softened so it stays under the voice
+    'end': ('the_last_threshold', 15, ',lowpass=f=4500,bass=g=2:f=90'),
 }
 
 
 def music_src(key):
     tr, off, extra = TRACK[key]
-    return load(f'{ST}/music/{tr}.mp3', 2, f'atrim=start={off},asetpts=PTS-STARTPTS,' + EQ + extra)
+    return load((f'{ST}/music/{tr}.mp3' if os.path.exists(f'{ST}/music/{tr}.mp3') else f'{ST}/music/{tr}.m4a'), 2, f'atrim=start={off},asetpts=PTS-STARTPTS,' + EQ + extra)
 
 
 def lay_loop(buf, m, a, b, fin=1.5, fout=2.0):
@@ -130,7 +132,8 @@ def film(lang):
     # music sections
     lay_loop(music, music_src('open'), 0, title + 3.0, fin=0.6, fout=1.2)
     lay_loop(music, music_src('A'), chap['1'] - 1.0, chap['4'] + 0.4, fin=2.0, fout=1.6)
-    lay_loop(music, music_src('B'), chap['4'] - 0.2, chap['6'] + 0.4, fin=1.5, fout=1.6)
+    lay_loop(music, music_src('B'), chap['4'] - 0.2, chap['5'] + 0.4, fin=1.5, fout=1.6)
+    lay_loop(music, music_src('SEA'), chap['5'] - 0.2, chap['6'] + 0.4, fin=1.5, fout=1.6)
     lay_loop(music, music_src('C'), chap['6'] - 0.2, marks['7.1'][0] + 0.3, fin=1.5, fout=1.8)
     lay_loop(music, music_src('end'), marks['7.1'][0] - 0.8, total, fin=2.0, fout=3.2)
     mg = np.full(N, 0.20, np.float32)
@@ -167,7 +170,7 @@ def film(lang):
 
 
 # ---------------------------------------------------------------- shorts
-SHORT_MUSIC = {'S1': 'A', 'S2': 'A', 'S3': 'A', 'S4': 'B', 'S5': 'B', 'S6': 'end'}
+SHORT_MUSIC = {'S1': 'A', 'S2': 'A', 'S3': 'A', 'S4': 'B', 'S5': 'SEA', 'S6': 'end'}
 
 
 def short(lang, k):

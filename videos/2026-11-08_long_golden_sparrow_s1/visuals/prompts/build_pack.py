@@ -1,0 +1,29 @@
+import json
+STYLE = ("Style: painterly documentary realism, like a museum-quality oil painting with soft visible brushwork; warm light, deep soft shadows; "
+         "colour accents of madder red, indigo and turmeric over earthy black-soil tones. Cinematic 16:9 landscape, the main subject kept in the centre third "
+         "of the frame (it will also be cropped to vertical 9:16). Highest resolution. No text, no letters, no logos, no watermark, no modern objects unless stated.")
+REF = "Use the attached reference sheet: keep Anna's and Chelli's faces, hair, clothes and proportions exactly as in it, and the trunk and the kalamkari cloth exactly as drawn there. "
+P = [
+ dict(id='T1', scene='0.3', title='Trading ship on the monsoon sea', ref=False,
+      p="A wooden Indian Ocean trading ship under full sail on a dark monsoon sea off the Coromandel coast, c.1680. Low rain clouds, a band of golden light on the horizon, spray at the bow, a few seabirds. Seen from water level, slightly below the ship, so it feels big and important. "),
+ dict(id='T2', scene='0.5', title='The Company sail', ref=False,
+      p="Close, low-angle view of the huge canvas mainsail of an English East India Company merchant ship, c.1700, filling almost the whole frame. A small red-and-white striped Company ensign flies at the top edge. Dusk, the sail lit from behind by a dying orange sun, the sea dark below. The mood is quiet and ominous. "),
+ dict(id='T3', scene='F1.1', title='Opening Ammamma’s trunk', ref=True,
+      p="Present day, a grandmother's room in an old tiled-roof house in coastal Andhra. Afternoon light falls through a wooden window with iron bars. Anna (12) and his little sister Chelli (8) kneel on a red-oxide floor and lift the lid of Ammamma's old wooden trunk with brass corners. On top, folded, lies the hand-painted kalamkari cloth with Rama, Sita and Lakshmana. Underneath, partly visible, are an old coin and a folded hand-drawn map. Chelli is delighted, Anna curious. Wide shot, both children and the trunk fully in frame. "),
+ dict(id='T4', scene='F1.2', title='Tracing the painted border', ref=True,
+      p="Close-up in the same room and the same afternoon light. Anna's finger gently traces the painted floral border of the kalamkari cloth spread across the open trunk; Chelli leans in beside him, eyes wide, her braid with jasmine falling forward. Shallow depth of field: the painted figures of Rama and Sita sharp, the background soft. "),
+ dict(id='T5', scene='2.2', title='Spinning by oil lamp', ref=False,
+      p="Night, c.1680, a mud-walled courtyard in a coastal Andhra weaving village. A woman in a plain cotton saree sits on the ground spinning cotton thread on a wooden charkha, lit by a single clay oil lamp. A basket of raw cotton beside her, a sleeping child on a mat behind. Warm lamp glow, deep blue night around. Respectful, quiet, documentary. "),
+ dict(id='T6', scene='2.3', title='Weaver at the pit loom', ref=False,
+      p="Daytime, c.1680, inside a thatched weaver's hut in coastal Andhra. A weaver sits at a traditional pit loom (his legs in the pit, the loom frame in front of him), white cotton cloth growing on the beam. A cloth broker in a white turban and angarkha stands beside him counting a few silver coins into the weaver's open palm. Light from the open doorway, dust in the air. The contrast between the broker's ease and the weaver's tired face should be subtle. "),
+ dict(id='T7', scene='7.6', title='The cloth and the coin', ref=True,
+      p="The same grandmother's room, now evening; one brass oil lamp lights the scene. Chelli holds Ammamma's kalamkari cloth in both hands; Anna holds the small old coin up to the lamp, thoughtful and serious. The open trunk between them. The mood has turned reflective and a little darker than before. Medium shot. "),
+ dict(id='T8', scene='7.9', title='The lid closes', ref=True,
+      p="Night, the same room, almost dark. Anna's and Chelli's hands slowly lower the lid of Ammamma's trunk; the last warm lamp glow escapes from the narrowing gap and falls on the folded kalamkari cloth inside. Everything else in deep shadow. Suspenseful, a cliffhanger feeling. Close shot on the trunk and the hands. "),
+]
+for x in P: x['full'] = (REF if x['ref'] else '') + x['p'] + STYLE
+b64 = open('/tmp/claude-0/sheet.b64').read()
+html = open('/home/claude/gs/pack/template.html').read().replace('__DATA__', json.dumps(P, ensure_ascii=False)).replace('__SHEET__', b64)
+open('/home/claude/gs/pack/golden_sparrow_image_pack.html', 'w').write(html)
+json.dump(P, open('/home/claude/gs/pack/test_batch_prompts.json', 'w'), indent=1, ensure_ascii=False)
+print(len(html))

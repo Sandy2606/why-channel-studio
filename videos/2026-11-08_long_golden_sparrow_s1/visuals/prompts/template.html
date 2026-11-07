@@ -1,0 +1,115 @@
+<title>Golden Sparrow Image Pack</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya:wght@500;700&family=Source+Sans+3:wght@400;600&family=IBM+Plex+Mono:wght@400&display=swap">
+<style>
+/* Layout: one narrow phone-first column; each shot is a block with a copy button. Palette from kalamkari dyes: indigo ground, madder accent. */
+:root{
+  --bg:#f3f1f6; --surface:#ffffff; --ink:#1d1a2b; --muted:#5d5873; --line:#dcd7e6;
+  --madder:#a3271f; --indigo:#2b2f6b; --done:#2f7a4f; --chip:#ebe7f3;
+  --display:"Alegreya",Georgia,serif; --body:"Source Sans 3",system-ui,sans-serif; --mono:"IBM Plex Mono",ui-monospace,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#14131d; --surface:#1d1c29; --ink:#ece9f5; --muted:#a6a1bb; --line:#33314a;
+  --madder:#e0645a; --indigo:#a9b0ff; --done:#6cc893; --chip:#272538; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#14131d; --surface:#1d1c29; --ink:#ece9f5; --muted:#a6a1bb; --line:#33314a;
+  --madder:#e0645a; --indigo:#a9b0ff; --done:#6cc893; --chip:#272538; color-scheme:dark}
+body{background:var(--bg);color:var(--ink);font:16px/1.55 var(--body)}
+.wrap{max-width:680px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:20px 48px;display:flex;flex-direction:column;gap:28px}
+h1{font:700 1.9rem/1.15 var(--display);margin:0;text-wrap:balance;color:var(--indigo)}
+h2{font:700 1.25rem/1.2 var(--display);margin:0;text-wrap:balance}
+.eyebrow{font:600 .75rem/1 var(--body);letter-spacing:.08em;text-transform:uppercase;color:var(--madder)}
+p{margin:0}
+.lede{color:var(--muted)}
+ol.steps{margin:0;padding-left:1.3em;display:flex;flex-direction:column;gap:10px}
+ol.steps li::marker{color:var(--madder);font-weight:600}
+.sheet{display:flex;flex-direction:column;gap:8px}
+.sheet img{border-radius:6px;border:1px solid var(--line)}
+.small{font-size:.875rem;color:var(--muted)}
+.progress{font:600 .9rem var(--body);color:var(--muted)}
+.shots{display:flex;flex-direction:column;gap:14px}
+.shot{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:14px;display:flex;flex-direction:column;gap:10px}
+.shot.is-done{border-color:var(--done)}
+.head{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.id{font:700 1rem var(--mono);color:var(--madder)}
+.tags{display:flex;gap:6px;flex-wrap:wrap}
+.tag{background:var(--chip);color:var(--muted);font-size:.78rem;padding:2px 8px;border-radius:99px}
+.tag.ref{color:var(--indigo);font-weight:600}
+pre{margin:0;white-space:pre-wrap;word-break:break-word;font:.82rem/1.5 var(--mono);background:var(--chip);border-radius:6px;padding:10px;max-height:9.5em;overflow:auto}
+.row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+button{font:600 .95rem var(--body);border-radius:6px;padding:10px 14px;border:1px solid var(--indigo);background:var(--indigo);color:var(--surface);cursor:pointer}
+button.ghost{background:transparent;color:var(--indigo)}
+button:focus-visible,input:focus-visible{outline:3px solid var(--madder);outline-offset:2px}
+label.done{display:flex;gap:8px;align-items:center;font-size:.95rem;color:var(--muted)}
+input[type=checkbox]{width:20px;height:20px;accent-color:var(--done)}
+.note{border-left:3px solid var(--madder);padding-left:12px;display:flex;flex-direction:column;gap:6px}
+@media (prefers-reduced-motion:no-preference){button{transition:transform .08s}button:active{transform:scale(.97)}}
+</style>
+
+<div class="wrap">
+  <header style="display:flex;flex-direction:column;gap:8px">
+    <span class="eyebrow">The Golden Sparrow · Season 1 · test batch</span>
+    <h1>Image pack for Gemini</h1>
+    <p class="lede">Eight test shots. Make them on your phone in the Gemini app, then send them back here in the Claude chat. Once these look right, the rest of the film follows in the same way.</p>
+  </header>
+
+  <section style="display:flex;flex-direction:column;gap:12px">
+    <h2>How to do it</h2>
+    <ol class="steps">
+      <li><b>Save the character sheet</b> below to your phone. Press and hold the image, then tap Save.</li>
+      <li>In the Gemini app, start a <b>new chat for each shot</b>. Use the image model with the best quality you have (Nano Banana Pro / "Thinking", if it is offered).</li>
+      <li>For shots marked <b>Attach sheet</b>, tap + and attach the character sheet first. Then tap <b>Copy prompt</b> here and paste it into Gemini.</li>
+      <li>If something is wrong, reply in the same chat with one short fix, for example <i>"keep Chelli's two braids"</i> or <i>"no shoes, bare feet"</i>. Keep going until one image is right.</li>
+      <li>Download it at <b>full size</b>: open the image, then tap Download.</li>
+      <li>Tick <b>Done</b> here so you know where you are.</li>
+      <li>Back in the Claude chat, attach the images and type their IDs in the same order, for example <i>"T1, T2, T3"</i>.</li>
+    </ol>
+    <div class="note">
+      <p class="small">Leave Gemini's small corner mark as it is. I'll crop it out when I frame the shot.</p>
+      <p class="small">If Gemini hits its daily limit, you can do shots without the sheet (T1, T2, T5, T6) in ChatGPT with the same prompt. Keep all the shots with Anna and Chelli in Gemini, so the faces match.</p>
+    </div>
+  </section>
+
+  <section class="sheet">
+    <h2>Character sheet</h2>
+    <img src="data:image/jpeg;base64,__SHEET__" alt="Reference sheet: Anna, Chelli, Ammamma's trunk, the kalamkari cloth, the coin and the folded map">
+    <p class="small">Attach this to every shot marked "Attach sheet".</p>
+  </section>
+
+  <section style="display:flex;flex-direction:column;gap:12px">
+    <div class="row" style="justify-content:space-between">
+      <h2>Shots</h2><span class="progress" id="progress"></span>
+    </div>
+    <div class="shots" id="shots"></div>
+  </section>
+</div>
+
+<script>
+const SHOTS = __DATA__;
+const KEY = 'gs-pack-done';
+let done = {};
+try { done = JSON.parse(localStorage.getItem(KEY) || '{}') || {}; } catch (e) { done = {}; }
+function save(){ try { localStorage.setItem(KEY, JSON.stringify(done)); } catch (e) {} }
+const box = document.getElementById('shots');
+function progress(){ const n = SHOTS.filter(s => done[s.id]).length; document.getElementById('progress').textContent = n + ' of ' + SHOTS.length + ' done'; }
+SHOTS.forEach(s => {
+  const el = document.createElement('article'); el.className = 'shot' + (done[s.id] ? ' is-done' : '');
+  el.innerHTML = `<div class="head"><span class="id">${s.id}</span><h2 style="font-size:1.08rem">${s.title}</h2></div>
+    <div class="tags"><span class="tag">Scene ${s.scene}</span>${s.ref ? '<span class="tag ref">Attach sheet</span>' : '<span class="tag">No sheet needed</span>'}</div>
+    <pre id="p-${s.id}"></pre>
+    <div class="row"><button type="button" id="c-${s.id}">Copy prompt</button>
+    <label class="done"><input type="checkbox" id="d-${s.id}"> Done</label></div>`;
+  box.appendChild(el);
+  el.querySelector('pre').textContent = s.full;
+  const btn = el.querySelector('button'); const cb = el.querySelector('input');
+  cb.checked = !!done[s.id];
+  btn.addEventListener('click', () => {
+    const ok = () => { btn.textContent = 'Copied'; setTimeout(() => btn.textContent = 'Copy prompt', 1600); };
+    const fallback = () => { const r = document.createRange(); r.selectNodeContents(el.querySelector('pre')); const sel = getSelection(); sel.removeAllRanges(); sel.addRange(r); btn.textContent = 'Selected: tap Copy'; };
+    try { navigator.clipboard.writeText(s.full).then(ok, fallback); } catch (e) { fallback(); }
+  });
+  cb.addEventListener('change', () => { done[s.id] = cb.checked; el.classList.toggle('is-done', cb.checked); save(); progress(); });
+});
+progress();
+</script>

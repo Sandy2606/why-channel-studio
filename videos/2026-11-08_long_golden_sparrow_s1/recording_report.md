@@ -39,11 +39,12 @@ Every Short is under 3:00, and the story sets the length. The music tail after t
 - **Music map:**
   - Cold open: *Beneath the Rising Current*.
   - Ch 1–3: *Where the River Bends*.
-  - Ch 4–5: *Before the World Wakes*.
+  - Ch 4: *Before the World Wakes*.
+  - Ch 5 (the ocean): *Beneath the Heavy Swell*.
   - Ch 6: *Beneath the Rising Current*, from a later section.
-  - Ending: *The Quiet Meridian*.
+  - Ending: *The Last Threshold*, which builds into the cliffhanger.
 - **Season 2 ending, darker and more suspenseful:**
-  - *The Quiet Meridian* is pitched down 2 semitones, with the top end rolled off above 2.6 kHz, the mids scooped and the low end lifted.
+  - It uses *The Last Threshold* (a dark track the user made in Gemini), starting 15 s in so its loudest stretch lands on the final question. The top end is softened above 4.5 kHz to keep it under the voice.
   - A distant boom and a slow heartbeat sit under the question.
   - A synth riser runs into the impact on the card.
 - **Structural SFX (real library files only):**
