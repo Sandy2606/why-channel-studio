@@ -34,7 +34,7 @@ p('G02', 'Family picking cotton', '1.2', '"Around 1680, somewhere in the Deccan,
   [], 'Late-17th c. rural Deccan dress: unstitched cotton (sari, dhoti), head cloths; hand picking into slung bags.', 'Dignified, unhurried work; faces lit by the low sun.',
   'Foreground cotton plants, family in the middle ground, ox and trees behind; mother and grandmother close to the centre for the 9:16 crop.', batch=1)
 p('G03', 'Karanam and the pathshala', '1.7', 'The village system: who writes the records, who gets schooling.',
-  'A village under a large banyan tree, c.1680. In the middle ground, the village accountant (karanam) sits cross-legged writing with a stylus on palm-leaf strips, a bundle of palm-leaf records beside him; '
+  'A village under a large banyan tree, c.1680. In the middle ground, the village accountant (karanam) - plain forehead with no religious or caste marks, no sacred thread - sits cross-legged writing with a stylus on palm-leaf strips, a bundle of palm-leaf records beside him; '
   'behind him, a small open-air pathshala where a teacher sits with only four boys writing on sand; the rest of the village goes about its work further back. ',
   [], 'Telugu villages kept land records with the karanam on palm leaf; schooling was limited to a few. Show no caste markers or ranking of people.',
   'Neutral, observational; nobody is shamed or ranked.', 'Banyan roots in the foreground, karanam middle, pathshala behind; karanam in the centre third.')
@@ -47,12 +47,12 @@ p('G05', 'The kalam on cloth', '2.1, 2.6', 'The painter draws the design in mord
   ['R1'], 'Kalamkari of the Coromandel coast: kalam drawing, mordants (alum/iron), chay-root red, indigo, wax resist.', 'Craft, concentration, beauty.',
   'Pot in the foreground, hand and cloth mid, workshop wall behind; the pen tip near the centre.', batch=1)
 p('G06', 'Dyers at the river', '2.4', '"Then came the real secret: the dyer."',
-  'A riverbank dye works, c.1680: large clay vats of madder red and deep indigo, dyers with dyed forearms lifting a long cloth from a vat, rows of cloths drying on bamboo poles in the sun, '
-  'some of them OUR CLOTH in progress. River and palms behind. ' + CLOTH + ' ',
+  'A riverbank dye works, c.1680, showing the real chintz process: dyers lift a cloth from a madder-red dye bath - the cloth shows only black outlines of OUR CLOTH\'s flowering tree with the red just appearing where the mordant was painted (no blue or yellow yet); '
+  'other dyers rinse cloths in the river; long plain cream cloths and partly coloured cloths dry on bamboo poles; an indigo vat stands to one side. River and palms behind. ' + CLOTH + ' ',
   ['R1'], 'Washing and dyeing near running water was typical of Coromandel dye centres.', 'Colour and energy, still documentary.',
   'Vats foreground, dyers and poles middle, river behind; one dyer near the centre.')
 p('G07', 'Muslin held to the light', '2.9', '"…so fine, people called it woven air."',
-  'A Bengal weaver\'s hands hold up a length of very fine white muslin against the morning sun in a doorway; the light passes through the cloth, showing the faint grid of the weave. Interior dark, doorway bright. ',
+  'A Bengal weaver\'s hands hold up a length of very fine white muslin against the morning sun in a doorway; the cloth is smooth, soft and translucent like mist, the light glowing through it - no visible holes or coarse grid, it must not look like gauze or netting. Interior dark, doorway bright. ',
   [], 'Dhaka muslin, early 18th c.; plain, translucent.', 'Luminous, delicate.', 'Hands lower foreground, cloth in the centre, doorway light behind.')
 p('G08', 'London customs warehouse', '2.11', 'England 1700: Asian calicoes stopped for home use, re-export allowed.',
   'Interior of a London customs warehouse, c.1700: timber beams, high windows, bales of Indian calico stacked high, a customs clerk in a long coat and wig writing in a ledger, '
