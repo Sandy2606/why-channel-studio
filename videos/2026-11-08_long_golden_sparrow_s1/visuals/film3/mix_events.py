@@ -2,6 +2,9 @@
 import subprocess, numpy as np
 SR = 48000; SFX = '/home/claude/why-channel-studio/sfx/'
 _cache = {}
+CARVE = set()
+import os
+def exists(f): return os.path.exists(SFX + f)
 def load(p, ss=None, t=None):
     a = ['ffmpeg', '-v', 'error'] + (['-ss', str(ss)] if ss else []) + ['-i', p] + (['-t', str(t)] if t else []) + ['-f', 'f32le', '-ac', '2', '-ar', str(SR), '-']
     return np.frombuffer(subprocess.run(a, capture_output=True, check=True).stdout, np.float32).reshape(-1, 2).copy()
@@ -12,9 +15,13 @@ def mix(base, voice, ev, t0=0.0):
     env = np.convolve(lv, np.ones(30) / 30, 'same'); act = np.clip(env / (np.percentile(env[env > 1e-4], 50) * 0.35 + 1e-9), 0, 1)
     act = np.concatenate([np.repeat(act, D), np.full(n - m_, act[-1] if len(act) else 0)])
     for f, t, g, off, dur, fade, duck in ev:
+        if not exists(f): continue
         key = (f, off, dur)
         if key not in _cache: _cache[key] = load(SFX + f, off if off else None, dur)
         s = _cache[key] * 10 ** (g / 20); i0 = int((t - t0) * SR)
+        if f.startswith('amb/') or f in CARVE:                      # ambience beds: carve the speech band so words stay clear
+            from scipy.signal import butter, sosfiltfilt
+            sos = butter(2, [1000, 4000], 'bandpass', fs=SR, output='sos'); s = (s - 0.7 * sosfiltfilt(sos, s.astype(np.float64), axis=0)).astype(np.float32)
         if i0 >= n or i0 + len(s) <= 0: continue
         s = s.copy(); fl = int(fade * SR)
         if fl > 1 and len(s) > 2 * fl: s[:fl] *= np.linspace(0, 1, fl)[:, None]; s[-fl:] *= np.linspace(1, 0, fl)[:, None]

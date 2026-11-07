@@ -324,9 +324,11 @@ def _sub_end(fr, t):
     if t < t0: return fr
     import cairo, sys as _s; _s.path.insert(0, '/home/claude/why-channel-studio/pipeline/style_v2'); import cta_card
     sf = cairo.ImageSurface(cairo.FORMAT_ARGB32, W, H); c = cairo.Context(sf); c.translate((W - 1080 * 1.25) / 2, 0); c.scale(1.25, 1.25)
-    cta_card.draw(c, t, t0, 'yt', 'te' if TE else 'en', y=H / 2 / 1.25)
+    cta_card.draw(c, t, t0, 'yt', 'te' if TE else 'en', y=H * 0.72 / 1.25)
     buf = np.ndarray((H, W, 4), np.uint8, sf.get_data()); fr.alpha_composite(Image.fromarray(buf[..., [2, 1, 0, 3]].copy(), 'RGBA')); return fr
 SUB_CORNERS = [M[i][0] + 0.4 for i in ('1.2', '2.9', '3.6', '4.4', '5.3', '6.6') if i in M]
+import fx4
+fx4.init(TE=TE, paper=paper)
 SEQ = {'0.1': lambda t, a, b: fx2.s01(t, a, b, cue, _L), '0.2': lambda t, a, b: fx2.s02(t, a, b, cue, _L),
        '0.3': lambda t, a, b: fx2.s03(t, a, b, cue, _L, worldships('0.3')), '0.5': seqs.s05,
        '3.12': lambda t, a, b: fx2.subscribe(t, a, b, SUB_T, 'te' if TE else 'en'),
@@ -352,6 +354,7 @@ SEQ = {'0.1': lambda t, a, b: fx2.s01(t, a, b, cue, _L), '0.2': lambda t, a, b: 
        '5.8': lambda t, a, b: seqs.cuts(t, [(a, seqs.still('G23', (.45, .5), (.47, .5), 1.0, 1.1)),
                                               (cue('5.8', 'Hats', 'టోపీలు') - 0.3, lambda tt, s_, e_: fx3.gifts(tt, s_, e_, [cue('5.8', w, tw) for w, tw in (('Hats', 'టోపీలు'), ('coral', 'పగడాలు'), ('sugar', 'చక్కెర'), ('honey', 'తేనె'))], cue('5.8', 'laughed', 'నవ్వారు')))]),
        '5.10': lambda t, a, b: fx3.cannons_vs_permission(t, a, b, cue('5.10', 'cannons', 'ఫిరంగులతో'), cue('5.10', 'politely', 'మర్యాదగా')),
+       '7.9': lambda t, a, b: fx4.payoff(t, a, b, cue('7.9', 'permission', 'అనుమతి'), cue('7.9', 'taxes', 'పన్నులే')),
        '2.1': seqs.s21, '2.2': seqs.s22, '2.3': seqs.s23, '2.4': seqs.s24, '2.6': seqs.s26,
        '3.2': lambda t, a, b: seqs.s32(t, a, b, mapshot('golconda')),
        '3.3': lambda t, a, b: seqs.s33(t, a, b, shipsmap('3.3'), netmap('3.3'))}
@@ -406,7 +409,7 @@ def render_shot(sh, t):
         spec['glows'] = [g[:5] + (res(g[5]),) for g in spec.get('glows', [])]
         spec['arrows'] = [r[:4] + (res(r[4]), res(r[5])) for r in spec.get('arrows', [])]
         return FL.render_map(None, t, spec, a, b)
-    if k == 'card': return card(t, a, b, sp[1])
+    if k == 'card': return fx4.chapter_card(t, a, b, sp[1], card)
     if k == 'title': return title(t, a, b, sp[1])
     if k == 'text': return textcard(t, a, b, sp[1], sp[2])
     if k == 'flow': return flow(t, a, b)
@@ -441,6 +444,12 @@ def frame(t):
         shade(fr, (60, 30, W - 60, 140), 150, 25); ban_timeline(fr, t, 80, 160, W - 160, mini=True)
     if '0.4' in M and M['0.4'][0] <= t <= M['0.4'][1] + 0.4:
         fx2.ring_overlay(fr, t, cue('0.4', 'quarter', 'నాలుగో'), 0.24, 1560, 470, 150, '~1/4', _L('OF WORLD OUTPUT, 1700 · ONE ESTIMATE', 'ప్రపంచ ఉత్పత్తిలో, 1700 · ఒక అంచనా'))
+    if '0.2' in M and M['0.2'][0] + 0.3 <= t <= cue('0.2', 'Indian', 'పత్తి') - 0.2:
+        fx4.opening_lines(fr, t, M['0.2'][0] + 0.4, [_L('TODAY · MASS-PRODUCED FABRIC', 'ఈరోజు · యంత్రాలతో భారీగా తయారయ్యే గుడ్డ'), _L('1700 · WEEKS OF SKILLED HANDWORK', '1700 · వారాల తరబడి నైపుణ్యమైన చేతిపని')])
+    if '0.3' in M and cue('0.3', 'cloth', 'గుడ్డ') <= t <= M['0.4'][0] + 3.2:
+        fx4.opening_lines(fr, t, cue('0.3', 'cloth', 'గుడ్డ'), [_L('SPICES BROUGHT THEM EAST.', 'సుగంధ ద్రవ్యాలు వాళ్లను తూర్పుకు తెచ్చాయి.'), _L('INDIAN CLOTH BECAME THE BIG PRIZE.', 'భారత గుడ్డే పెద్ద బహుమతి అయింది.')], x=90, y=150)
+    if '0.5' in M and cue('0.5', 'company', 'కంపెనీ') + 0.4 <= t <= M['0.5'][1]:
+        fx4.typed(fr, _L('HOW DID TRADE TURN INTO RULE?', 'వ్యాపారం పాలనగా ఎలా మారింది?'), W / 2, H - 150, t, cue('0.5', 'company', 'కంపెనీ') + 0.4, cps=34, size=48, col=GOLD, maxw=1600, anchor='ct', bg=True)
     for t0_ in SUB_CORNERS: fr = fx3.sub_corner(fr, t, t0_, 'te' if TE else 'en')
     fr = _sub_end(fr, t)
     chrono_overlay(fr, t)

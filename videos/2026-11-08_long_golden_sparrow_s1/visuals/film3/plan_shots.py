@@ -25,7 +25,7 @@ OCEAN = (25, 125, -20, 38)
 # map specs: cues are FRACTIONS of the shot (resolved to seconds in film.py)
 MAPS = {
  'india_glow': dict(box0=(-20, 150, -25, 62), box1=(40, 115, -5, 45), gold=True, pins=[]),
- 'london_route': dict(box0=(-15, 100, -38, 58), box1=(-15, 100, -38, 58), pins=[pin('Machilipatnam', .1, 'r'), pin('London', .55, 'u')],
+ 'london_route': dict(box0=(-40, 130, -38, 62), box1=(-40, 130, -38, 62), pins=[pin('Machilipatnam', .1, 'r'), pin('London', .55, 'u')],
                       routes=[([P['Machilipatnam'], (80, 5), (73, -8), (40, -36), (18, -36), (-5, -10), (-18, 15), (-12, 40), (-5, 49), P['London']], .2)]),
  'mehrgarh': dict(box0=SA, box1=(62, 82, 20, 35), pins=[pin('Mehrgarh', .25)]),
  'golconda': dict(box0=(70, 92, 8, 26), box1=COAST, pins=[pin('Golconda', .1, 'l'), pin('Machilipatnam', .55)],
@@ -163,5 +163,5 @@ SHOTS = {
  '7.6': [('seq', '7.6')],
  '7.7': [CLOSE('T7', .7, .4, 1.3, 1.4)],
  '7.8': [CLOSE('T7', .3, .4, 1.3, 1.4)],
- '7.9': [IN('T8', .5, .5, 1.12)],
+ '7.9': [('seq', '7.9')],
 }
