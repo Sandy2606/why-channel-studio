@@ -333,13 +333,13 @@
   "title": "London charter, 1600",
   "scene": "6.2",
   "purpose": "A group of London merchants receives a royal charter.",
-  "prompt": "A panelled London hall, 31 December 1600: merchants in Elizabethan ruffs and doublets gather round a table where a large parchment charter with a hanging wax seal is unrolled; candlelight. ",
+  "prompt": "A panelled London hall, 31 December 1600: merchants in Elizabethan ruffs and doublets gather round a table where a large parchment charter with a hanging wax seal is unrolled; candlelight. Only the merchants: no queen, no royalty in the room. ",
   "refs": [],
   "history": "Elizabethan dress; royal charter with Great Seal.",
   "art": "Ambition, a \"business\" beginning.",
   "comp": "Charter centre, merchants around, panelling behind.",
   "batch": 2,
-  "full": "A panelled London hall, 31 December 1600: merchants in Elizabethan ruffs and doublets gather round a table where a large parchment charter with a hanging wax seal is unrolled; candlelight. STYLE (same as the approved T1-T8 images): never add Anna, Chelli or Ammamma's trunk unless the prompt asks for them; painterly documentary realism, like a museum-quality oil painting with soft visible brushwork; warm natural light and deep soft shadows; colour accents of madder red, indigo and turmeric over earthy black-soil tones; historically accurate clothing, tools and architecture; no text, letters, captions, logos or watermarks; no modern objects. COMPOSITION FOR ANIMATION: landscape 16:9 at the highest resolution. Build the picture in three clear depth layers (a distinct foreground element, the subject in the middle ground, a separate background) so it can be animated with parallax. Keep the main subject inside the central third, so a vertical 9:16 crop from the centre still contains it. Leave about 10% breathing room on every side for camera movement, and avoid important details touching the frame edges."
+  "full": "A panelled London hall, 31 December 1600: merchants in Elizabethan ruffs and doublets gather round a table where a large parchment charter with a hanging wax seal is unrolled; candlelight. Only the merchants: no queen, no royalty in the room. STYLE (same as the approved T1-T8 images): never add Anna, Chelli or Ammamma's trunk unless the prompt asks for them; painterly documentary realism, like a museum-quality oil painting with soft visible brushwork; warm natural light and deep soft shadows; colour accents of madder red, indigo and turmeric over earthy black-soil tones; historically accurate clothing, tools and architecture; no text, letters, captions, logos or watermarks; no modern objects. COMPOSITION FOR ANIMATION: landscape 16:9 at the highest resolution. Build the picture in three clear depth layers (a distinct foreground element, the subject in the middle ground, a separate background) so it can be animated with parallax. Keep the main subject inside the central third, so a vertical 9:16 crop from the centre still contains it. Leave about 10% breathing room on every side for camera movement, and avoid important details touching the frame edges."
  },
  {
   "id": "G25",

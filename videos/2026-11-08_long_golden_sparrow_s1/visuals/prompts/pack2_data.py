@@ -111,7 +111,7 @@ p('G23', 'Da Gama\'s gifts', '5.8', 'The king\'s officials laughed at the gifts.
   'Inside a hall of the Zamorin\'s palace, 1498: on a mat lie da Gama\'s gifts - striped cloth, a few hats, strings of coral, basins of sugar, jars of honey; courtiers in white with gold ornaments look on, amused. ',
   [], 'The Roteiro lists hats, coral, sugar, honey, wash basins and cloth; officials (not the Zamorin) laughed.', 'Gentle irony.', 'Gifts foreground, courtiers middle, carved pillars behind.')
 p('G24', 'London charter, 1600', '6.2', 'A group of London merchants receives a royal charter.',
-  'A panelled London hall, 31 December 1600: merchants in Elizabethan ruffs and doublets gather round a table where a large parchment charter with a hanging wax seal is unrolled; candlelight. ',
+  'A panelled London hall, 31 December 1600: merchants in Elizabethan ruffs and doublets gather round a table where a large parchment charter with a hanging wax seal is unrolled; candlelight. Only the merchants: no queen, no royalty in the room. ',
   [], 'Elizabethan dress; royal charter with Great Seal.', 'Ambition, a "business" beginning.', 'Charter centre, merchants around, panelling behind.')
 p('G25', 'Silver at the dock', '6.6, S6 B6', 'Europe paid mostly in silver.',
   'At an Indian dock, c.1680: wooden chests of silver coins and bars being unloaded from a boat, one chest open and gleaming, an English factor checking a list, Indian porters carrying. ',
