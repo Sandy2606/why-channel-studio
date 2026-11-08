@@ -7,3 +7,4 @@
 5. After every delivery, update the playbook (KEEP/DROP + score history), commit, and push to `main`.
 6. Animation styles: `pipeline/styles/README.md` lists nine ready styles (Isometric, Paper-Cut, 3D Data Chart, Synthwave, 3D Explainer, Maths Diagram, Cartoon Explainer, Domino Reveal, Glow Atom). Consider them whenever writing a scene sheet and use whichever fits the explanation.
 7. Order of work: follow "Current order of work" in the playbook. Scripts go through versions until the user approves the final script. Every scene sheet names the animation style for every line or chapter, and rendering waits until the user has agreed those styles.
+8. Remotion effects: `pipeline/remotion_effects/README.md` lists 30 more clip effects (silent MP4s for the Python editors), in English and Telugu, for 9:16 and 16:9. Offer them in scene sheets alongside the nine Python styles. Their factual fields need sources unless shown as DEMO. Keep the two collections separate.

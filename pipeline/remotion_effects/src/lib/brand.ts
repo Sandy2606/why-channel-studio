@@ -1,0 +1,10 @@
+import React from 'react';
+export type Palette = {ink: string; cream: string; amber: string};
+export const BRAND: Palette = {ink: '#0A0A0A', cream: '#F4F1EA', amber: '#FFB224'};
+export const GREY = '#96928A';
+export const Pal = React.createContext<Palette>(BRAND);
+export const usePalette = () => React.useContext(Pal);
+export const TELUGU = /[ఀ-౿]/;
+export const HEAD = "'Archivo Black', 'Noto Sans Telugu', sans-serif";
+export const MONO = "'Space Mono', 'Noto Sans Telugu', monospace";
+export const TE = "'Noto Sans Telugu', sans-serif";

@@ -1,0 +1,426 @@
+{
+ "collection": "Why? Remotion effects",
+ "note": "Silent MP4 clips for the Python/ffmpeg editors. Separate from the nine styles in pipeline/styles.",
+ "effects": [
+  {
+   "number": 1,
+   "slug": "map-route",
+   "name": "Map Route",
+   "group": "3D Scenes",
+   "frames": 90,
+   "brief": "prompts/ultra-skills-inspired/effects/01-map-route.md",
+   "status": "implemented",
+   "sfx_suggested": [
+    "map_unfold",
+    "pin_push"
+   ],
+   "notes": "Schematic city only, as briefed. There is no real-geography mode yet."
+  },
+  {
+   "number": 2,
+   "slug": "teardown",
+   "name": "Teardown",
+   "group": "3D Scenes",
+   "frames": 90,
+   "brief": "prompts/ultra-skills-inspired/effects/02-teardown.md",
+   "status": "implemented",
+   "sfx_suggested": [
+    "metal_transform",
+    "sub_knock"
+   ],
+   "notes": "Parts are built from disc, gear and box shapes; imported models are not supported yet."
+  },
+  {
+   "number": 3,
+   "slug": "git-city",
+   "name": "Git City",
+   "group": "3D Scenes",
+   "frames": 90,
+   "brief": "prompts/ultra-skills-inspired/effects/03-git-city.md",
+   "status": "implemented",
+   "sfx_suggested": [
+    "ticker_run",
+    "sub_knock"
+   ],
+   "notes": ""
+  },
+  {
+   "number": 4,
+   "slug": "globe-arcs",
+   "name": "Globe Arcs",
+   "group": "3D Scenes",
+   "frames": 60,
+   "brief": "prompts/ultra-skills-inspired/effects/04-globe-arcs.md",
+   "status": "implemented",
+   "sfx_suggested": [
+    "swoosh_slow",
+    "pin_push"
+   ],
+   "notes": "Own great-circle maths instead of d3-geo. Land is one mass from pipeline/lib/countries.geojson with no borders."
+  },
+  {
+   "number": 5,
+   "slug": "hologram",
+   "name": "Hologram",
+   "group": "3D Scenes",
+   "frames": 60,
+   "brief": "prompts/ultra-skills-inspired/effects/05-hologram.md",
+   "status": "implemented",
+   "sfx_suggested": [
+    "machine_hum",
+    "tick"
+   ],
+   "notes": "No postprocessing pass; glow comes from edge lines and translucent fills. Uses a preset satellite model; custom 3D assets are not supported yet."
+  },
+  {
+   "number": 6,
+   "slug": "deep-time",
+   "name": "Deep Time",
+   "group": "3D Scenes",
+   "frames": 60,
+   "brief": "prompts/ultra-skills-inspired/effects/06-deep-time.md",
+   "status": "implemented",
+   "sfx_suggested": [
+    "space_drone",
+    "riser"
+   ],
+   "notes": "Stylised illustration, not a physics simulation."
+  },
+  {
+   "number": 7,
+   "slug": "contour-map",
+   "name": "Contour Map",
+   "group": "3D Scenes",
+   "frames": 60,
+   "brief": "prompts/ultra-skills-inspired/effects/07-contour-map.md",
+   "status": "implemented",
+   "sfx_suggested": [
+    "map_unfold",
+    "swoosh_slow"
+   ],
+   "notes": ""
+  },
+  {
+   "number": 8,
+   "slug": "neon-silhouette",
+   "name": "Neon Silhouette",
+   "group": "3D Scenes",
+   "frames": 60,
+   "brief": "prompts/ultra-skills-inspired/effects/08-neon-silhouette.md",
+   "status": "implemented",
+   "sfx_suggested": [
+    "tick",
+    "ticker_run"
+   ],
+   "notes": "Built with SVG and CSS 3D instead of a Three.js foreground; the flip clock uses a real hinge."
+  },
+  {
+   "number": 9,
+   "slug": "laptop-reveal",
+   "name": "Laptop Reveal",
+   "group": "3D Scenes",
+   "frames": 60,
+   "brief": "prompts/ultra-skills-inspired/effects/09-laptop-reveal.md",
+   "status": "implemented",
+   "sfx_suggested": [
+    "key_press",
+    "mouse_click"
+   ],
+   "notes": ""
+  },
+  {
+   "number": 10,
+   "slug": "isometric-flow",
+   "name": "Isometric Flow",
+   "group": "3D Scenes",
+   "frames": 60,
+   "brief": "prompts/ultra-skills-inspired/effects/10-isometric-flow.md",
+   "status": "implemented",
+   "sfx_suggested": [
+    "tick",
+    "pin_push"
+   ],
+   "notes": ""
+  },
+  {
+   "number": 11,
+   "slug": "turntable",
+   "name": "Turntable",
+   "group": "3D Scenes",
+   "frames": 60,
+   "brief": "prompts/ultra-skills-inspired/effects/11-turntable.md",
+   "status": "implemented",
+   "sfx_suggested": [
+    "tick",
+    "paper_slide"
+   ],
+   "notes": "Vessel model is a preset; other objects need new geometry."
+  },
+  {
+   "number": 12,
+   "slug": "money-stack",
+   "name": "Money Stack",
+   "group": "3D Scenes",
+   "frames": 60,
+   "brief": "prompts/ultra-skills-inspired/effects/12-money-stack.md",
+   "status": "implemented",
+   "sfx_suggested": [
+    "coins_clink",
+    "sub_knock"
+   ],
+   "notes": ""
+  },
+  {
+   "number": 13,
+   "slug": "receipt",
+   "name": "Receipt",
+   "group": "3D Scenes",
+   "frames": 60,
+   "brief": "prompts/ultra-skills-inspired/effects/13-receipt.md",
+   "status": "implemented",
+   "sfx_suggested": [
+    "ticker_run",
+    "paper_drop"
+   ],
+   "notes": "Built with DOM and CSS, not a Three.js texture, for sharper figures."
+  },
+  {
+   "number": 14,
+   "slug": "iceberg",
+   "name": "Iceberg",
+   "group": "3D Scenes",
+   "frames": 60,
+   "brief": "prompts/ultra-skills-inspired/effects/14-iceberg.md",
+   "status": "implemented",
+   "sfx_suggested": [
+    "swoosh_slow",
+    "sub_knock"
+   ],
+   "notes": "Proportions are illustrative and labelled."
+  },
+  {
+   "number": 15,
+   "slug": "headline",
+   "name": "Headline",
+   "group": "Ink & Paper",
+   "frames": 90,
+   "brief": "prompts/ultra-skills-inspired/effects/15-headline.md",
+   "status": "implemented",
+   "sfx_suggested": [
+    "page_turn",
+    "marker"
+   ],
+   "notes": ""
+  },
+  {
+   "number": 16,
+   "slug": "swiss-grid",
+   "name": "Swiss Grid",
+   "group": "Ink & Paper",
+   "frames": 60,
+   "brief": "prompts/ultra-skills-inspired/effects/16-swiss-grid.md",
+   "status": "implemented",
+   "sfx_suggested": [
+    "paper_slide",
+    "sub_knock"
+   ],
+   "notes": ""
+  },
+  {
+   "number": 17,
+   "slug": "blueprint-draw",
+   "name": "Blueprint Draw",
+   "group": "Ink & Paper",
+   "frames": 60,
+   "brief": "prompts/ultra-skills-inspired/effects/17-blueprint-draw.md",
+   "status": "implemented",
+   "sfx_suggested": [
+    "scribble",
+    "tick"
+   ],
+   "notes": ""
+  },
+  {
+   "number": 18,
+   "slug": "paper-desk",
+   "name": "Paper Desk",
+   "group": "Ink & Paper",
+   "frames": 60,
+   "brief": "prompts/ultra-skills-inspired/effects/18-paper-desk.md",
+   "status": "implemented",
+   "sfx_suggested": [
+    "paper_slide",
+    "marker"
+   ],
+   "notes": ""
+  },
+  {
+   "number": 19,
+   "slug": "ink-doodle",
+   "name": "Ink Doodle",
+   "group": "Ink & Paper",
+   "frames": 60,
+   "brief": "prompts/ultra-skills-inspired/effects/19-ink-doodle.md",
+   "status": "implemented",
+   "sfx_suggested": [
+    "scribble",
+    "paper_drop"
+   ],
+   "notes": "Uses a seeded hand-drawn stroke helper instead of RoughJS."
+  },
+  {
+   "number": 20,
+   "slug": "ink-wash",
+   "name": "Ink Wash",
+   "group": "Ink & Paper",
+   "frames": 60,
+   "brief": "prompts/ultra-skills-inspired/effects/20-ink-wash.md",
+   "status": "implemented",
+   "sfx_suggested": [
+    "page_turn",
+    "swoosh_slow"
+   ],
+   "notes": ""
+  },
+  {
+   "number": 21,
+   "slug": "creator-life-doodle",
+   "name": "Creator Life, Drawn Badly",
+   "group": "Ink & Paper",
+   "frames": 60,
+   "brief": "prompts/ultra-skills-inspired/effects/21-creator-life-doodle.md",
+   "status": "implemented",
+   "sfx_suggested": [
+    "scribble",
+    "paper_drop"
+   ],
+   "notes": "Uses a seeded hand-drawn stroke helper instead of RoughJS."
+  },
+  {
+   "number": 22,
+   "slug": "stat-chart",
+   "name": "Stat Chart",
+   "group": "Data & Counters",
+   "frames": 90,
+   "brief": "prompts/ultra-skills-inspired/effects/22-stat-chart.md",
+   "status": "implemented",
+   "sfx_suggested": [
+    "ticker_run",
+    "sub_knock"
+   ],
+   "notes": ""
+  },
+  {
+   "number": 23,
+   "slug": "agent-swarm",
+   "name": "Agent Swarm",
+   "group": "Data & Counters",
+   "frames": 60,
+   "brief": "prompts/ultra-skills-inspired/effects/23-agent-swarm.md",
+   "status": "implemented",
+   "sfx_suggested": [
+    "tick",
+    "ui_click"
+   ],
+   "notes": ""
+  },
+  {
+   "number": 24,
+   "slug": "day-counter",
+   "name": "Day Counter",
+   "group": "Data & Counters",
+   "frames": 60,
+   "brief": "prompts/ultra-skills-inspired/effects/24-day-counter.md",
+   "status": "implemented",
+   "sfx_suggested": [
+    "page_turn",
+    "stamp"
+   ],
+   "notes": ""
+  },
+  {
+   "number": 25,
+   "slug": "split-flap",
+   "name": "Split-Flap",
+   "group": "UI & Type",
+   "frames": 90,
+   "brief": "prompts/ultra-skills-inspired/effects/25-split-flap.md",
+   "status": "implemented",
+   "sfx_suggested": [
+    "ticker_run",
+    "tick"
+   ],
+   "notes": ""
+  },
+  {
+   "number": 26,
+   "slug": "before-after",
+   "name": "Before & After",
+   "group": "UI & Type",
+   "frames": 60,
+   "brief": "prompts/ultra-skills-inspired/effects/26-before-after.md",
+   "status": "implemented",
+   "sfx_suggested": [
+    "swoosh_slow",
+    "ui_click"
+   ],
+   "notes": ""
+  },
+  {
+   "number": 27,
+   "slug": "lock-screen-notifications",
+   "name": "Lock-Screen Notifications",
+   "group": "UI & Type",
+   "frames": 60,
+   "brief": "prompts/ultra-skills-inspired/effects/27-lock-screen-notifications.md",
+   "status": "implemented",
+   "sfx_suggested": [
+    "phone_typing",
+    "ui_pop"
+   ],
+   "notes": ""
+  },
+  {
+   "number": 28,
+   "slug": "type-slam",
+   "name": "Type Slam",
+   "group": "UI & Type",
+   "frames": 60,
+   "brief": "prompts/ultra-skills-inspired/effects/28-type-slam.md",
+   "status": "implemented",
+   "sfx_suggested": [
+    "sub_knock",
+    "impact_big"
+   ],
+   "notes": ""
+  },
+  {
+   "number": 29,
+   "slug": "particle-word",
+   "name": "Particle Word",
+   "group": "UI & Type",
+   "frames": 60,
+   "brief": "prompts/ultra-skills-inspired/effects/29-particle-word.md",
+   "status": "implemented",
+   "sfx_suggested": [
+    "swoosh_slow",
+    "riser"
+   ],
+   "notes": "Canvas 2D, not Three.js Points. density prop is the low-spec fallback."
+  },
+  {
+   "number": 30,
+   "slug": "terminal-bloom",
+   "name": "Terminal Bloom",
+   "group": "UI & Type",
+   "frames": 60,
+   "brief": "prompts/ultra-skills-inspired/effects/30-terminal-bloom.md",
+   "status": "implemented",
+   "sfx_suggested": [
+    "typing_run",
+    "key_press"
+   ],
+   "notes": ""
+  }
+ ]
+}
