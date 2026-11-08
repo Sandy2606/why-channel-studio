@@ -9,6 +9,7 @@ Claude clones this repo at the start of every video session, runs `bash setup.sh
 | `playbook/` | The production playbook (same as the `why-channel-video` skill): quality system, pacing model, sound design, script format, KEEP/DROP log |
 | `pipeline/long/` | 16:9 long-video renderer: `render_long.py`, 2D animations `anim_long.py`, captions/anchors `caps_long.py`, Pace Model `pacing.py` + `make_voice_v2.py`, voice chain `proasm.py`, synth fallback SFX `sfx.py` |
 | `pipeline/shorts/` | 9:16 Shorts renderer (Sunday Short version) |
+| `pipeline/styles/` | Library of 9 code-drawn animation styles for 9:16 and 16:9 (see its README) |
 | `pipeline/lib/` | Shared drawing helpers (`epic.py`, `modern.py`) + borderless world map data |
 | `sfx/` | **Real** sound library + `catalog.json` (role, hit point). Add new sounds by drag & drop on GitHub |
 | `music/` | Approved calm music beds |

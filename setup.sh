@@ -2,7 +2,7 @@
 # Rebuild the Why? production workspace in a fresh session.  Usage: bash setup.sh
 set -e
 R=$(cd "$(dirname "$0")" && pwd)
-pip install --break-system-packages -q faster-whisper pedalboard noisereduce scipy pillow numpy >/dev/null 2>&1 || true
+pip install --break-system-packages -q faster-whisper pedalboard noisereduce scipy pillow numpy pycairo >/dev/null 2>&1 || true
 mkdir -p /home/claude/elnino/geo /home/claude/fonts /home/claude/long/sounds /home/claude/long/music
 ln -sf $R/pipeline/lib/epic.py /home/claude/elnino/epic.py
 ln -sf $R/pipeline/lib/modern.py /home/claude/elnino/modern.py

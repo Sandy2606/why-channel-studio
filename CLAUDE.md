@@ -5,3 +5,4 @@
 3. Per video, create `videos/<YYYY-MM-DD>_<slug>/` and keep cues, phrase anchors, take lists, script, post copy and thumbnails there.
 4. Sounds: use only the real recordings in `sfx/` (see `sfx/catalog.json` for role and hit point). Ask the user for topic-specific extras in the visuals list; they upload them to `sfx/`.
 5. After every delivery, update the playbook (KEEP/DROP + score history), commit, and push to `main`.
+6. Animation styles: `pipeline/styles/README.md` lists nine ready styles (Isometric, Paper-Cut, 3D Data Chart, Synthwave, 3D Explainer, Maths Diagram, Cartoon Explainer, Domino Reveal, Glow Atom). Consider them whenever writing a scene sheet and use whichever fits the explanation.
