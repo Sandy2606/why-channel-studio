@@ -51,3 +51,10 @@
 10. [REVEAL · slower] ప్రపంచం మన **బంగారం** కోసం రాలేదు. ఇంకా **సాధారణమైన** దాని కోసం వచ్చింది… అది ఇక్కడే, ఈ **పొలంలోనే** ఉంది. *(reuse 1.8, second part only)*
 11. [TEASE · fast] దానికి జవాబు: బ్రిటన్ **నిషేధించేంత** గొప్ప గుడ్డ. ⏸ అది తర్వాతి ఎపిసోడ్‌లో. పూర్తి సినిమా link లో ఉంది. *(reuse S1_tease)*
 12. [LOOP · regular] కాబట్టి ఈసారి ఆ **పాత పేరు** విన్నప్పుడు… *(NEW)*
+
+## Sources (verified for the film; same wording reused)
+- **24% / Britain ~3% / India 1950 ~4% / China ~22% / population ~quarter / per-person income:** Angus Maddison, *The World Economy: A Millennial Perspective* (OECD, 2001), Tables B-18, B-10, B-21. 1700 per-capita (1990 int. $): India 550 · world 615 · W. Europe 998. All figures are shown on screen as ESTIMATE.
+- **Harvest split (farmer / landlord / state):** I. Habib, *The Agrarian System of Mughal India* (1999).
+- **Caste and work; schooling for few:** C.A. Bayly, *Indian Society and the Making of the British Empire* (1988); Habib (1999).
+- **Karanam (TE only):** village accountant in the Telugu country (Eaton, *A Social History of the Deccan*, 2005).
+- **Banned cloth (tease):** Calico Act 1721 (7 Geo. I st.1 c.7): https://archive.org/details/dli.bengal.10689.22525
