@@ -146,6 +146,23 @@ The user is in Texas, so IST times are converted to local time.
   - same room and mic distance every session;
   - read each chapter once silently first.
 
+## Current order of work (user-confirmed Nov 8 2026; overrides older workflow notes)
+1. Agree the topic.
+2. Research and verify every fact against current sources.
+3. Write the full English and Telugu scripts with sources, a visual beat under each line and estimated ElevenLabs credits.
+4. **Script versions:** the user asks for changes to humanize it and we go through versions until the user approves the final script. Nothing below starts before that.
+5. Generate both voices in ElevenLabs, one take each, reusing saved lines from the voice library.
+6. Edit the voice: silences, pacing, mix.
+7. Send one message with the scene sheet (what is on screen for each line, **and the animation style for every line or chapter**) and the resource list (pictures, stock clips, screenshots with source links, music, SFX, Gemini image prompts).
+8. The user gives changes until the scene sheet and its animation styles are agreed.
+9. The user sends the assets. Never render before they arrive.
+10. Send stills only if the style is changing; otherwise go straight to rendering.
+11. Render the final videos: English and Telugu, with separate YouTube (Subscribe) and Instagram (Follow) versions for Shorts.
+12. Run the QA checks.
+13. Deliver the videos, thumbnail or cover and post copy.
+14. Give one short honest report: score (8.5 minimum), mistakes, credits used, credits left.
+15. Update the playbook, commit and push.
+
 ## Workflow (phased; do not skip ahead)
 1. **Research.** Verify every claim and record the outlet, date and URL. Word legends as "tradition says". Re-check numbers, and cut factual slips from the audio.
 2. **Script.** Write English and natural spoken Telugu.
@@ -336,6 +353,7 @@ The user asked for this to be the channel's continuing look so viewers recognise
 **KEEP:** two-character 2D format; per-line voice clips (re-timing, reuse in Shorts); scene list keyed by script line numbers.
 - **Research rule (user, Oct 31 — after the Diwali bonus miss):** before ANY script goes to the user, verify every law, rule, rate, date and number against a source dated within the last few months (search "current", "2026", "amended", "repealed", "replaced by"). Never rely on memory for laws or regulations — the Diwali long cited the Payment of Bonus Act 1965 a year after it was repealed by the Code on Wages (21 Nov 2025). Put the check date next to each source in the script.
 - **Scene sheet before render (user, Oct 31):** after the script is locked: generate voices, then send ONE message with (a) the scene sheet — every line/beat with a 1-line description of what is on screen (layout, graphic, clipping, character/photo, SFX) and timing, (b) the resource list (screenshots/PDFs, photos, clips, SFX). The user reviews and asks for changes; render only after the scene sheet is agreed. Re-renders are the most expensive step.
+- **Animation style in the scene sheet (user, Nov 8 2026):** the scene sheet must name the animation style planned for every line or chapter (a library style from `pipeline/styles/README.md`, or the channel's other treatment such as real footage or evidence cards), so the user can agree or change it before anything renders.
 - **Telugu on-screen text (user, Oct 31):** the TE version must show Telugu text on screen (titles, labels, cards), not English. Use pipeline te_text.py pattern: an EN→TE dictionary; head/mono/pill/big_num/stamp route through PIL+RAQM when LANGV=te. Keep law names, months and numbers as the voice says them. Replace → with - in Telugu.
 - **Runtime check method:** always measure runtime AFTER the standard Shorts edit (proasm.squeeze maxgap 0.24/keep 0.15, tempo EN 1.08 / TE 1.10, 0.22–0.35 s line gaps). Raw-take totals overstate runtime by ~20%.
 - **SHORTS STYLE v3 = DEFAULT from Nov 1 2026 (user: "let's try this from now on"). Reference build: videos/2026-11-02_short_diwali_bonus/pipeline (render_b1.py, te_text.py).**
