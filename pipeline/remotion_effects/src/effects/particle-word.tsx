@@ -1,0 +1,20 @@
+import React from 'react';
+import {AbsoluteFill, interpolate} from 'remotion';
+import {z} from 'zod';
+import {defineEffect, S} from '../lib/define';
+import {Backdrop, baseProps, circlePts, clamp, Ease, fit, graphemes, Ink, lerp, linePts, Para, Pill, seeded, SourceLine, Text, textWidth, famOf, weightOf, useBeats, useStage, wobble, Beats} from '../lib/kit';
+import {GREY, HEAD, TE, TELUGU, usePalette} from '../lib/brand';
+import {useLayoutEffect, useMemo, useRef} from 'react';
+const schema = z.object({...baseProps, word: z.string().refine((w) => graphemes(w).length <= 8, 'word must be 8 characters or fewer'), density: z.number().int().min(800).max(14000).default(9500), background: z.string().optional()});
+type P = z.output<typeof schema>;
+const beats: Beats = {dust: [0, 15], compress: [16, 34], form: [35, 47], hold: [48, 59]};
+const Component: React.FC<P> = (p) => {
+  const s = useStage(p.captionSafe); const pal = usePalette(); const {beat, frame} = useBeats(beats, p); const ref = useRef<HTMLCanvasElement>(null);
+  const co = beat('compress', Ease.io), fo = beat('form', Ease.io), ho = beat('hold');
+  const pts = useMemo(() => { const c = document.createElement('canvas'); c.width = s.W; c.height = s.H; const g = c.getContext('2d', {willReadFrequently: true})!; const kind = 'head'; const size = fit(p.word, kind, s.portrait ? 360 : 460, s.sw - 20, 60); g.font = `${weightOf(p.word, kind)} ${size}px ${famOf(p.word, kind)}`; g.textAlign = 'center'; g.textBaseline = 'middle'; g.fillStyle = '#fff'; g.fillText(p.word, s.cx, s.cy); const d = g.getImageData(0, 0, s.W, s.H).data; const cand: number[] = []; const st = 2; for (let y = 0; y < s.H; y += st) for (let x = 0; x < s.W; x += st) if (d[(y * s.W + x) * 4 + 3] > 128) cand.push(x, y);
+    const r = seeded('pw'); const n = p.density, nc = cand.length / 2; return Array.from({length: n}, (_, i) => { const tgt = Math.floor(r(`t${i}`) * nc); const extra = i % 14 === 0; return {tx: cand[tgt * 2], ty: cand[tgt * 2 + 1], a: r(`a${i}`) * 6.283, R: 120 + Math.sqrt(r(`d${i}`)) * Math.max(s.W, s.H) * .55, sp: .012 + r(`s${i}`) * .03, sz: 2.2 + r(`z${i}`) * 1.8, ph: r(`p${i}`) * 6.28, extra}; }); }, [s.W, s.H, p.word, p.density]);
+  useLayoutEffect(() => { const g = ref.current!.getContext('2d')!; g.clearRect(0, 0, s.W, s.H); const am = [255, 178, 36]; const cr = [244, 241, 234];
+    for (const q of pts) { const a = q.a + frame * q.sp * (1 + co * 1.6); const R = q.R * lerp(1, .22, co); const ox = s.cx + Math.cos(a) * R, oy = s.cy + Math.sin(a) * R * .75; const f = q.extra ? 0 : fo; const shim = 1 + Math.sin(frame * .3 + q.ph) * .22 * ho; const x = lerp(ox, q.tx, f), y = lerp(oy, q.ty, f); const c = f > .5 ? am : cr; g.fillStyle = `rgba(${c[0]},${c[1]},${c[2]},${q.extra ? .55 : .92})`; g.fillRect(x, y, q.sz * shim, q.sz * shim); } }, [frame, pts, s.W, s.H, s.cx, s.cy, co, fo, ho]);
+  return <AbsoluteFill style={{background: p.background ?? pal.ink}}><canvas ref={ref} width={s.W} height={s.H} style={{position: 'absolute'}} /></AbsoluteFill>;
+};
+export default defineEffect({number: 29, slug: 'particle-word', name: 'Particle Word', group: 'UI & Typography', frames: 60, beats, schema, Component, samples: S('particle-word'), facts: () => []});

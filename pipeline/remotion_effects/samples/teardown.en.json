@@ -1,0 +1,1 @@
+{"demo": true, "object": "INSIDE A PRINTING PRESS", "parts": [{"label": "TOP PLATE", "shape": "disc", "r": 2.2, "h": 0.4}, {"label": "DRIVE GEAR", "shape": "gear", "r": 1.9, "h": 0.45}, {"label": "INK DRUM", "shape": "disc", "r": 1.6, "h": 0.9}, {"label": "BASE", "shape": "box", "r": 1.7, "h": 0.5}]}

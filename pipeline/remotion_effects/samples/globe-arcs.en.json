@@ -1,0 +1,1 @@
+{"demo": true, "metric": "SAMPLE CONNECTIONS", "origin": {"name": "MUMBAI", "lat": 19.08, "lon": 72.88}, "destinations": [{"name": "MUSCAT", "lat": 23.59, "lon": 58.41}, {"name": "SINGAPORE", "lat": 1.35, "lon": 103.82}, {"name": "NAIROBI", "lat": -1.29, "lon": 36.82}], "dataSource": "DEMO ROUTES ONLY"}

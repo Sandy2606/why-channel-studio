@@ -15,4 +15,6 @@ for f in $R/sfx/*.wav; do ln -sf $f /home/claude/long/sounds/$(basename $f); don
 for a in fire crowd drums; do ffmpeg -v error -y -i $R/sfx/amb_$a.mp3 -ar 48000 -ac 2 /home/claude/long/sounds/$a.wav; done
 # music beds as 48 kHz wav
 for f in $R/music/*.mp3; do ffmpeg -v error -y -i $f -ar 48000 -ac 2 /home/claude/long/music/$(basename ${f%.mp3}).wav; done
+# Remotion effect clips (free, local)
+(cd $R/pipeline/remotion_effects && npm ci --no-audit --no-fund >/dev/null 2>&1) || echo "Remotion effects: npm ci failed"
 echo "Workspace ready. Telugu ASR model: download kavithajohn/whisper-telugu-medium-ct2 to /home/claude/models/te_med if needed."

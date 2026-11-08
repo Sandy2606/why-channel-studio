@@ -1,0 +1,31 @@
+{
+  "name": "why-remotion-effects",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Reusable Remotion effect clips for the Why? channels. Output is a silent MP4 consumed by the existing Python/ffmpeg editors.",
+  "scripts": {
+    "fonts": "node cli/sync-fonts.mjs",
+    "typecheck": "tsc --noEmit",
+    "validate": "node cli/validate.mjs",
+    "studio": "npm run fonts && remotion studio src/index.ts"
+  },
+  "dependencies": {
+    "@react-three/fiber": "8.18.0",
+    "@remotion/bundler": "4.0.541",
+    "@remotion/cli": "4.0.541",
+    "@remotion/paths": "4.0.541",
+    "@remotion/renderer": "4.0.541",
+    "@remotion/three": "4.0.541",
+    "@remotion/zod-types": "4.0.541",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "remotion": "4.0.541",
+    "three": "0.170.0",
+    "zod": "3.22.3"
+  },
+  "devDependencies": {
+    "@types/react": "18.3.12",
+    "@types/three": "0.170.0",
+    "typescript": "5.6.3"
+  }
+}

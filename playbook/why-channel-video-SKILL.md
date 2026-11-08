@@ -103,6 +103,7 @@ The user is in Texas, so IST times are converted to local time.
   - a villain → power table.
   - Use them for the explaining parts. They can't do character animation; those beats stay on AI images with camera moves.
 - **Animation style library (Nov 8 2026):** `pipeline/styles/` has Isometric, Paper-Cut, 3D Data Chart, Synthwave, 3D Explainer, Maths Diagram, Cartoon Explainer (Anna + Chelli), Domino Reveal and Glow Atom, for Shorts and long videos, English and Telugu. Pick from `pipeline/styles/README.md` when writing the scene sheet.
+- **Remotion effect clips (Nov 8 2026):** `pipeline/remotion_effects/` has 30 more effects, rendered as silent MP4s and cut in through ffmpeg or `remotion_clip.py` (Map Route, Headline, Stat Chart, Globe Arcs, Paper Desk, Type Slam and others; full list in its `manifest.json`). English and Telugu, 9:16 and 16:9, voice sync through `cues`. Free and local. Real data needs sources or the clip shows DEMO. Sound is added in the normal mix from `sfx/`. Name them in the scene sheet the same way as the nine Python styles.
 - **Maps:** draw land as ONE mass with NO political borders, so the Kashmir border can never be an issue.
 - **Mid-video ask** (after roughly 45% of the video): a "WAIT." card, then a "HOW OLD?" style tease, then a full-screen SUBSCRIBE button tapped on "I'm hoping you did". The music dips to about 25% during the ask.
 - **Music:** two calm tracks. Track 1 plays up to the ask; track 2 starts as the story resumes.
