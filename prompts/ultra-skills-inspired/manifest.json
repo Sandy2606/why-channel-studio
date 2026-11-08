@@ -1,0 +1,247 @@
+{
+  "source": "https://www.ultra-skills.com/resources/claude-code-animation-prompts-six-effects",
+  "target_repository": "https://github.com/Sandy2606/why-channel-studio",
+  "count": 30,
+  "prompts": [
+    {
+      "number": 1,
+      "slug": "map-route",
+      "name": "Map Route",
+      "group": "3D Scenes",
+      "frames": 90,
+      "file": "effects/01-map-route.md"
+    },
+    {
+      "number": 2,
+      "slug": "teardown",
+      "name": "Teardown",
+      "group": "3D Scenes",
+      "frames": 90,
+      "file": "effects/02-teardown.md"
+    },
+    {
+      "number": 3,
+      "slug": "git-city",
+      "name": "Git City",
+      "group": "3D Scenes",
+      "frames": 90,
+      "file": "effects/03-git-city.md"
+    },
+    {
+      "number": 4,
+      "slug": "globe-arcs",
+      "name": "Globe Arcs",
+      "group": "3D Scenes",
+      "frames": 60,
+      "file": "effects/04-globe-arcs.md"
+    },
+    {
+      "number": 5,
+      "slug": "hologram",
+      "name": "Hologram",
+      "group": "3D Scenes",
+      "frames": 60,
+      "file": "effects/05-hologram.md"
+    },
+    {
+      "number": 6,
+      "slug": "deep-time",
+      "name": "Deep Time",
+      "group": "3D Scenes",
+      "frames": 60,
+      "file": "effects/06-deep-time.md"
+    },
+    {
+      "number": 7,
+      "slug": "contour-map",
+      "name": "Contour Map",
+      "group": "3D Scenes",
+      "frames": 60,
+      "file": "effects/07-contour-map.md"
+    },
+    {
+      "number": 8,
+      "slug": "neon-silhouette",
+      "name": "Neon Silhouette",
+      "group": "3D Scenes",
+      "frames": 60,
+      "file": "effects/08-neon-silhouette.md"
+    },
+    {
+      "number": 9,
+      "slug": "laptop-reveal",
+      "name": "Laptop Reveal",
+      "group": "3D Scenes",
+      "frames": 60,
+      "file": "effects/09-laptop-reveal.md"
+    },
+    {
+      "number": 10,
+      "slug": "isometric-flow",
+      "name": "Isometric Flow",
+      "group": "3D Scenes",
+      "frames": 60,
+      "file": "effects/10-isometric-flow.md"
+    },
+    {
+      "number": 11,
+      "slug": "turntable",
+      "name": "Turntable",
+      "group": "3D Scenes",
+      "frames": 60,
+      "file": "effects/11-turntable.md"
+    },
+    {
+      "number": 12,
+      "slug": "money-stack",
+      "name": "Money Stack",
+      "group": "3D Scenes",
+      "frames": 60,
+      "file": "effects/12-money-stack.md"
+    },
+    {
+      "number": 13,
+      "slug": "receipt",
+      "name": "Receipt",
+      "group": "3D Scenes",
+      "frames": 60,
+      "file": "effects/13-receipt.md"
+    },
+    {
+      "number": 14,
+      "slug": "iceberg",
+      "name": "Iceberg",
+      "group": "3D Scenes",
+      "frames": 60,
+      "file": "effects/14-iceberg.md"
+    },
+    {
+      "number": 15,
+      "slug": "headline",
+      "name": "Headline",
+      "group": "Ink & Paper",
+      "frames": 90,
+      "file": "effects/15-headline.md"
+    },
+    {
+      "number": 16,
+      "slug": "swiss-grid",
+      "name": "Swiss Grid",
+      "group": "Ink & Paper",
+      "frames": 60,
+      "file": "effects/16-swiss-grid.md"
+    },
+    {
+      "number": 17,
+      "slug": "blueprint-draw",
+      "name": "Blueprint Draw",
+      "group": "Ink & Paper",
+      "frames": 60,
+      "file": "effects/17-blueprint-draw.md"
+    },
+    {
+      "number": 18,
+      "slug": "paper-desk",
+      "name": "Paper Desk",
+      "group": "Ink & Paper",
+      "frames": 60,
+      "file": "effects/18-paper-desk.md"
+    },
+    {
+      "number": 19,
+      "slug": "ink-doodle",
+      "name": "Ink Doodle",
+      "group": "Ink & Paper",
+      "frames": 60,
+      "file": "effects/19-ink-doodle.md"
+    },
+    {
+      "number": 20,
+      "slug": "ink-wash",
+      "name": "Ink Wash",
+      "group": "Ink & Paper",
+      "frames": 60,
+      "file": "effects/20-ink-wash.md"
+    },
+    {
+      "number": 21,
+      "slug": "creator-life-doodle",
+      "name": "Creator Life, Drawn Badly",
+      "group": "Ink & Paper",
+      "frames": 60,
+      "file": "effects/21-creator-life-doodle.md"
+    },
+    {
+      "number": 22,
+      "slug": "stat-chart",
+      "name": "Stat Chart",
+      "group": "Data & Counters",
+      "frames": 90,
+      "file": "effects/22-stat-chart.md"
+    },
+    {
+      "number": 23,
+      "slug": "agent-swarm",
+      "name": "Agent Swarm",
+      "group": "Data & Counters",
+      "frames": 60,
+      "file": "effects/23-agent-swarm.md"
+    },
+    {
+      "number": 24,
+      "slug": "day-counter",
+      "name": "Day Counter",
+      "group": "Data & Counters",
+      "frames": 60,
+      "file": "effects/24-day-counter.md"
+    },
+    {
+      "number": 25,
+      "slug": "split-flap",
+      "name": "Split-Flap",
+      "group": "UI & Type",
+      "frames": 90,
+      "file": "effects/25-split-flap.md"
+    },
+    {
+      "number": 26,
+      "slug": "before-after",
+      "name": "Before & After",
+      "group": "UI & Type",
+      "frames": 60,
+      "file": "effects/26-before-after.md"
+    },
+    {
+      "number": 27,
+      "slug": "lock-screen-notifications",
+      "name": "Lock-Screen Notifications",
+      "group": "UI & Type",
+      "frames": 60,
+      "file": "effects/27-lock-screen-notifications.md"
+    },
+    {
+      "number": 28,
+      "slug": "type-slam",
+      "name": "Type Slam",
+      "group": "UI & Type",
+      "frames": 60,
+      "file": "effects/28-type-slam.md"
+    },
+    {
+      "number": 29,
+      "slug": "particle-word",
+      "name": "Particle Word",
+      "group": "UI & Type",
+      "frames": 60,
+      "file": "effects/29-particle-word.md"
+    },
+    {
+      "number": 30,
+      "slug": "terminal-bloom",
+      "name": "Terminal Bloom",
+      "group": "UI & Type",
+      "frames": 60,
+      "file": "effects/30-terminal-bloom.md"
+    }
+  ]
+}
