@@ -2,7 +2,7 @@
 
 30 reusable animation clips for Shorts and long videos. Each one renders to a **silent MP4** that the existing Python/ffmpeg editors use like any other clip. This collection is separate from the nine Python styles in `pipeline/styles/`, which are unchanged.
 
-Briefs: `prompts/ultra-skills-inspired/`. Status and suggested sounds for each effect: `manifest.json`.
+Previews of every final frame: `previews/`. Briefs: `prompts/ultra-skills-inspired/`. Status and suggested sounds for each effect: `manifest.json`.
 
 ## Cost
 Everything runs locally for free: Remotion, three.js and the Chromium already on the machine. No generation services or paid assets are used.
