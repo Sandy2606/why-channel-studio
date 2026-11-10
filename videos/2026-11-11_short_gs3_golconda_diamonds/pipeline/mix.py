@@ -32,7 +32,6 @@ E += [('page_turn', SCs['tavernier'], 0.3), ('typing_run', SCs['kohinoor'] + 0.1
 # payoff
 c_cloth = AT('3.9', 'Cloth', 'ఓడలు') - 0.12; c_fist = AT('3.9', 'A', 'ఒక') - 0.1; c_fleet = AT('3.9', 'Cloth', 'గుడ్డ', n=2 if not TE else 1) - 0.12
 E += [('sparkle_soft', AT('3.9', 'Diamonds', 'వజ్రాలు') - 0.1, 0.25), ('sub_knock', c_cloth, 0.55), ('paper_slide', c_cloth + min(1.15, (c_fist - c_cloth) * 0.42), 0.28), ('tick', c_fist + 0.1, 0.3)]
-put('ship_bell', c_fleet - 0.45, 0.30, path=LIB + 'amb/ship_bell.mp3', maxlen=3.0)
 amb('dock.wav', c_fleet - 0.3, SCs['cartoon3'] + 0.3, 0.5)
 # ships + port (ship bell leads the harbour)
 E += [('map_unfold', SCs['ships'] + 0.05, 0.28)]
@@ -43,7 +42,11 @@ E += [('ui_pop', AT('3.3', 'Dutch', 'డచ్') - 0.1, 0.18), ('ui_pop', AT('3.
 amb('bazaar.mp3', AT('3.3', 'Local', 'మన') - 0.3, AT('3.3', 'weaving', 'నేత') - 0.7, 0.45)
 amb('dock.wav', AT('3.3', 'weaving', 'నేత') - 0.9, SCs['b3'] + 0.3, 0.5)
 E += [('sub_knock', AT('3.3', 'weaving', 'నేత') - 0.9, 0.35)]
-E += [('coins_clink', SCs['tease'] + 0.8, 0.3)]
+E += [('coins_clink', SCs['tease'] + 0.5, 0.3), ('coins_clink', SCs['tease'] + 1.6, 0.25), ('sub_knock', AT('T', 'Who', 'సంపద') - 0.1, 0.4)]
+E += [('map_unfold', SCs['kollur'] + 0.05, 0.25), ('pin_push', AT('3.6', 'Kollur', 'కొల్లూరు') - 0.1, 0.3), ('pin_push', AT('3.6', "Brazil's", 'బ్రెజిల్‌లో') - 0.1, 0.25), ('pin_push', AT('3.6', 'Borneo', 'బోర్నియో') - 0.1, 0.2)]
+E += [('sub_knock', AT('3.7', 'tens', 'పదుల') - 0.1, 0.35), ('marker', AT('3.7', 'blue', 'నీలి') - 0.1, 0.3), ('ui_pop', AT('3.7', 'Hope', 'Hope') - 0.1, 0.18)]
+E += [('map_unfold', AT('3.2', 'Their', 'వాళ్ల') - 0.9, 0.25), ('pin_push', AT('3.2', 'Machilipatnam', 'మచిలీపట్నం') - 0.1, 0.3), ('paper_slide', AT('B3', 'woven', 'అది') - 0.15, 0.28)]
+amb('village.mp3', AT('B3', 'woven', 'అది') - 0.3, SCs['tease'] + 0.2, 0.45)
 for n_, t_, g_ in CTA.events(SCs['slide'] + 0.9, PLAT):
     if n_ != 'woosh_air': put(n_, t_, g_ * 0.8)
 put('swoosh_slow', SCs['loop'] + 0.05, 0.18)
