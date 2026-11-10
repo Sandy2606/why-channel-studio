@@ -1,0 +1,30 @@
+{
+ "file": "GoldenSparrow4_TE_YT.mp4",
+ "duration": 135.68,
+ "black": [],
+ "freeze": [],
+ "loudness_I": "-14.7",
+ "true_peak": "-1.8",
+ "decode_errors": 0,
+ "loop_seam_diff": 0.55,
+ "frame1_mean": 143.4,
+ "sharpness": {
+  "hook": 864.4,
+  "cartoon1": 578.0,
+  "chain": 272.7,
+  "farman": 713.2,
+  "madanna": 190.9,
+  "virji": 715.4,
+  "needeach": 607.7,
+  "cartoon2": 475.2,
+  "kingdoms": 238.5,
+  "system": 418.5,
+  "cartoon3": 418.2,
+  "rains": 225.6,
+  "famine": 941.7,
+  "turn": 1997.8,
+  "tease": 1119.2,
+  "slide": 1298.7,
+  "loop": 1013.9
+ }
+}

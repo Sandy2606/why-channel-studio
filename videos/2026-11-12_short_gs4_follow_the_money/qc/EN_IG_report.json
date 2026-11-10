@@ -1,0 +1,30 @@
+{
+ "file": "GoldenSparrow4_EN_IG.mp4",
+ "duration": 109.19,
+ "black": [],
+ "freeze": [],
+ "loudness_I": "-14.8",
+ "true_peak": "-1.8",
+ "decode_errors": 0,
+ "loop_seam_diff": 0.61,
+ "frame1_mean": 142.2,
+ "sharpness": {
+  "hook": 1075.2,
+  "cartoon1": 579.0,
+  "chain": 540.0,
+  "farman": 458.7,
+  "virji": 820.7,
+  "needeach": 588.5,
+  "cartoon2": 506.6,
+  "kingdoms": 272.1,
+  "akbar": 1225.9,
+  "system": 587.3,
+  "cartoon3": 505.6,
+  "rains": 296.2,
+  "famine": 2556.7,
+  "turn": 1827.0,
+  "tease": 1172.0,
+  "slide": 1579.7,
+  "loop": 1069.7
+ }
+}

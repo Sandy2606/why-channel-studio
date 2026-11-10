@@ -109,6 +109,7 @@ def overlays(img, t, scn):
     if scn in ('slide',): return
     a = 1.0
     if scn == 'loop': a = 1.0
+    if not scn.startswith('cartoon'): img.paste(SCRIM(), (0, 0), SCRIM())   # constant caption-lane fade (same on frame 1 and the loop)
     LY.badge(img, TAG, 'left', 'tag')
     if scn not in ('hook', 'loop', 'tease'):
         cur = None
@@ -134,7 +135,6 @@ def captions(img, t, scn):
     px = 54 if not TE else 50; y = CAP_LANE
     s = ' '.join(w[2] for w in ch); f, px = fit(s, 'head', px, ST.sw - 40)
     widths = [pick(w[2], 'head', px).getlength(w[2]) for w in ch]; sp = f.getlength(' '); tot = sum(widths) + sp * (len(ch) - 1); x = W / 2 - tot / 2
-    img.paste(SCRIM(), (0, 0), SCRIM())     # soft dark fade (no box) so the text reads on any picture
     _ib = f.getbbox(s, anchor='lm'); LY.reg('caption', (x + _ib[0] - 12, y + _ib[1] - 10, x + tot + 12, y + _ib[3] + 10), (x + _ib[0], y + _ib[1], x + tot, y + _ib[3]), owner=s)
     for w, wd in zip(ch, widths):
         on = w[0] - 0.05 <= t
