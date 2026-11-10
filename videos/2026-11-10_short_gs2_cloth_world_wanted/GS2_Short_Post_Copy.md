@@ -154,7 +154,7 @@ EN: Full film on YouTube, link in bio 🎬 Tomorrow, 3/6: the port where the wor
 TE: పూర్తి సినిమా YouTube లో, link in bio 🎬 రేపు 3/6: ఈ గుడ్డ కొనడానికి ప్రపంచం వచ్చిన రేవు.
 
 ## Counted limits (script-checked)
-- English Instagram caption: 1381 characters (1391 UTF-16 units; limit 2,200), 0 hashtags (limit 5)
-- Telugu Instagram caption: 1298 characters (1306 UTF-16 units; limit 2,200), 0 hashtags (limit 5)
+- English Instagram caption: 1381 characters (1391 UTF-16 units; limit 2,200), 5 hashtags (limit 5)
+- Telugu Instagram caption: 1298 characters (1306 UTF-16 units; limit 2,200), 5 hashtags (limit 5)
 - English YouTube: title 73 characters (limit 100), tags 409 characters (limit 500)
 - Telugu YouTube: title 92 characters (limit 100), tags 357 characters (limit 500)
