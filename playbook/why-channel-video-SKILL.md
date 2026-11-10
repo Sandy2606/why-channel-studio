@@ -258,6 +258,15 @@ The user asked for this to be the channel's continuing look so viewers recognise
 - NASA SVS animations (public domain, credit Goddard/CI Lab) for space events; for 16:9 clips with moving subjects, use a wide feathered band over a starfield instead of a tight 9:16 crop (the subjects leave a tight crop).
 - Clips sent as original MP4s straight from Pexels/NASA (never through Descript: free-plan watermark).
 
+- **Golden Sparrow 1/6 build (Nov 8 2026, approved): reuse the week's film audio for Shorts.** Narrator lines come from the approved film/Short audio (0 credits; split only at sentence pauses), and only Chelli's questions, a re-voiced tease and the loop line are new. Total: 523 credits for both languages. Reference build: `videos/2026-11-09_short_gs1_golden_sparrow/pipeline` (render.py, cues.py, mix.py, build_voice.py, words.py). Library styles used: Cartoon Explainer (Anna & Chelli, mouths from the voice envelope), 3D Data Chart (per-bar `t0`, optional `novalues`), Maths-Diagram look (percent ring, people dots), Paper-Cut background with drawn figures.
+- **Two-territory numbers (Nov 8):** when comparing figures across different borders (1700 undivided subcontinent vs 1950 Republic of India), show them in separate panels, each with its own map icon, plus a "DIFFERENT BORDERS · NOT LIKE-FOR-LIKE" note. Cite the exact table and page (Maddison 2001, Table B-20, p. 263).
+- **Legal teasers (Nov 8):** narration stays short ("banned wearing certain kinds of it"). The exact scope (certain printed calicoes, in force 25 Dec 1722, exceptions, repealed 1774) goes on screen, not in the voice.
+- **Phone-readable end slide (Nov 8):** only 3 items (YOU'RE HERE n/6, NEXT n+1/6, full-film pointer) plus the Subscribe/Follow button. Hold it about 5 s (during the reused "next episode / full film linked" line), not 2 s. YT says "FULL FILM · RELATED VIDEO"; IG says "FULL FILM ON YOUTUBE · LINK IN BIO". After upload, set each Short's Related video to the same-language film.
+- **Telugu checks (Nov 8):** verify every generated or reused Telugu line with the te_med model (generic Whisper gives garbage on Telugu). Mixed-script captions: measure each word with its own font, or Latin words overlap Telugu ones.
+- **Static-hold QA (Nov 8):** run freezedetect (n=0.003, d=1.5) on every render. Graphic scenes get a slow 4–5% push-in so nothing sits frozen. The loop hold zooms frame 0 back to 1.0 so the last frame still equals the first.
+- **Render speed (Nov 8):** render the shared body once per language and only the slide + loop tail per platform, then concat with stream copy (2-CPU box: four 1.5-min versions in about 12 min).
+- **Post copy limits, check before sending (user, Nov 10):** Instagram caption 2,200 characters or less **and 5 hashtags or less** (Instagram's cap since Dec 2025; the GS 1/6 copy wrongly shipped 30 and had to be redone). YouTube tags 500 characters or less. Count with a script and state the counts in the copy file.
+
 **DROP (failed; never repeat):**
 - Epic/cinematic style.
 - Visuals in bands or boxes.
@@ -318,6 +327,7 @@ The user asked for this to be the channel's continuing look so viewers recognise
 
 **Score history:**
 - Ravana new-style test (Oct 27): v1 ~8.0 (red + mascot rejected), v2 approved style.
+- **Golden Sparrow 1/6 "Was India really the golden sparrow?" (Nov 8): EN 1:33 / TE 1:43, approved, honest 8.5.** Strengths: two-territory GDP panels, Anna–Chelli question structure, cotton reveal, loop. Holding back: simple Paper-Cut figures and a nearly static paper background, end slide static for about 1.5 s after the click, chart opens near-empty for 0.5 s, IG captions shipped with 30 hashtags (limit 5). Credits 523.
 - Gold Short 3 "Why is gold yellow?" (Oct 28): EN/TE ~8.0. Holding back: soft BBC screenshot text, music not the gold-week bed, TE 69 s, TE captions sentence-level timing, no cover delivered.
 - **Covers (Oct 28):** hero image from ChatGPT (Claude gives the prompt; user generates) + Claude's layer: large taped real photo, real clipping with highlight, amber thread + glow dot linking them (user: "organic, stylish"), headline in the dark lower third (cream + amber gradient word), WHY? logo top-left, amber-outlined series pill "GOLD · 3/6" under the headline (TE: "గోల్డ్ · 3/6").
 - **Voice line library (Oct 28):** `voice_lib/` (see its README). Check every script line against `index.json` before generating; reuse exact sentence/phrase matches only (no single-word splicing); generate the rest per line, one take; save each new line + index entry. Write a week's Shorts lines word-for-word from the long-video script where possible to maximise reuse.

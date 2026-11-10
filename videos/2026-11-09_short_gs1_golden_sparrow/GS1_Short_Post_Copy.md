@@ -4,7 +4,8 @@
 1. **Files:** `GoldenSparrow1_EN_YT.mp4` / `_TE_YT.mp4` go to YouTube; `_EN_IG.mp4` / `_TE_IG.mp4` go to Instagram. Covers: `cover_GS1_{EN,TE}_{YT,IG}.jpg`.
 2. **Related video (YouTube Studio, after upload):** set each Short's **Related video** to the full film in the same language (EN Short → EN film, TE Short → TE film). The end slide's "FULL FILM · RELATED VIDEO" depends on this.
 3. **Altered or synthetic content: Yes (recommended for this Short).** The cotton-field and cotton-boll shots are AI illustrations. They look photoreal and, unlike the film, carry no on-screen "reconstruction" label. Ticking Yes adds YouTube's small label and avoids any dispute.
-4. **Instagram:** put the full film's YouTube link in your bio before posting. The Reel and its caption both say "link in bio".
+4. **Instagram limits:** caption 2,200 characters or less and **5 hashtags or less** (Instagram's cap since Dec 2025). Both captions below are checked against these.
+5. **Instagram:** put the full film's YouTube link in your bio before posting. The Reel and its caption both say "link in bio".
 
 ---
 
@@ -112,7 +113,7 @@ Whenever you get a question that starts with why, just comment it below. We'll d
 
 Sources: Maddison, The World Economy: A Millennial Perspective (OECD 2001), Table B-20; Habib (1999); Bayly (1988); Calico Act 1721. Full links on YouTube. Dress photo: Hugo Maertens, CC BY-SA 3.0. Field and cotton scenes are AI illustrations.
 
-#goldensparrow #indianhistory #history #historyfacts #india #incredibleindia #indianeconomy #economics #economichistory #mughalindia #sonekichidiya #cotton #indiancotton #textilehistory #calico #chintz #britishempire #eastindiacompany #indiabeforebritish #historyreels #educationalreels #learnoninstagram #didyouknow #facts #explained #whychannel #whyeveryquestionhasastory #reels #reelsindia #explore
+#goldensparrow #indianhistory #indianeconomy #historyreels #whyeveryquestionhasastory
 
 ---
 
@@ -141,7 +142,7 @@ Sources: Maddison, The World Economy: A Millennial Perspective (OECD 2001), Tabl
 
 Sources: Maddison (OECD 2001), Table B-20; Habib (1999); Bayly (1988); C.P. Brown, Telugu–English Dictionary (1852); Calico Act 1721. పూర్తి links YouTube లో. Dress photo: Hugo Maertens, CC BY-SA 3.0. పొలం, పత్తి, కరణం దృశ్యాలు AI చిత్రాలు.
 
-#బంగారుపిచ్చుక #తెలుగుచరిత్ర #తెలుగు #goldensparrow #indianhistory #teluguhistory #telugureels #telugu #history #historyfacts #india #indianeconomy #economichistory #sonekichidiya #cotton #indiancotton #calico #karanam #andhrapradesh #telangana #eastindiacompany #indiabeforebritish #historyreels #telugufacts #didyouknow #explained #whytelugu #whyeveryquestionhasastory #reels #explore
+#బంగారుపిచ్చుక #తెలుగుచరిత్ర #goldensparrow #teluguhistory #whyeveryquestionhasastory
 
 **Pinned comment (Instagram)**
 EN: Full film on YouTube, link in bio 🎬 Tomorrow, 2/6: the cloth the world wanted.
