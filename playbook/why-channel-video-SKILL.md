@@ -274,6 +274,8 @@ The user asked for this to be the channel's continuing look so viewers recognise
 - **Motion previews before a full render (Nov 10):** for an upgraded edit, render 10–20 s previews of the key sequences in both languages with sound (`prev.sh` in `videos/2026-11-11_short_gs3_golconda_diamonds/pipeline`). Approval of the previews then covers the full render without another sample round.
 - **Golden Sparrow 3/6 "Diamonds made the legends, cloth filled the ships" (Nov 10): EN 1:44 / TE 2:02, visuals approved.** Diamond-first order, brighter frame 1 (82/255), real-geography maps (Krishna journey, ship routes, thread network), Tavernier evidence card, illustrative fleet reveal. Holding back: mine and evidence sections less dynamic than the payoff, simple ship cutouts on maps, short 1–1.7 s still moments. Credits 368.
 
+- **Sharp pictures only (user, Nov 10, after GS 3/6):** blurry frames damage the channel's reputation. Never zoom a source image beyond its native resolution: the crop shown must keep at least ~1 source pixel per output pixel (for a 2688×1512 still in a 1080×1920 frame, cover-zoom 1.0–1.25 at most; GS 3/6's 2.4–3.2× pushes into the bale and hold were too soft). For close-ups, use a sharper or larger source, or show it smaller on a designed background. Draw maps and graphics at the final output size; never zoom a rendered map afterwards. QC: measure sharpness (Laplacian variance) per scene on the final file and fix any soft scene before delivery.
+
 **DROP (failed; never repeat):**
 - Epic/cinematic style.
 - Visuals in bands or boxes.
