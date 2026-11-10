@@ -130,12 +130,19 @@ def captions(img, t, scn):
     ch = next(c for c in chunks if cur[-1] in c)
     if t > ch[-1][1] + 0.25: return
     if scn == 'loop' and t > DUR - 0.6: return
-    px = 58 if not TE else 54; y = 1400
+    # reserved caption lane: just above the platform UI, below every picture, card, label and credit
+    px = 54 if not TE else 50; y = CAP_LANE
     s = ' '.join(w[2] for w in ch); f, px = fit(s, 'head', px, ST.sw - 40)
     widths = [pick(w[2], 'head', px).getlength(w[2]) for w in ch]; sp = f.getlength(' '); tot = sum(widths) + sp * (len(ch) - 1); x = W / 2 - tot / 2
-    lay = Image.new('RGBA', (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(lay); d.rounded_rectangle((W / 2 - tot / 2 - 30, y - px * .85, W / 2 + tot / 2 + 30, y + px * .85), 26, fill=(8, 8, 8, 170)); img.paste(lay, (0, 0), lay)
-    _ib = f.getbbox(s, anchor='lm'); LY.reg('caption', (W / 2 - tot / 2 - 30, y - px * .85, W / 2 + tot / 2 + 30, y + px * .85), (x + _ib[0], y + _ib[1], x + tot, y + _ib[3]), owner=s)
+    img.paste(SCRIM(), (0, 0), SCRIM())     # soft dark fade (no box) so the text reads on any picture
+    _ib = f.getbbox(s, anchor='lm'); LY.reg('caption', (x + _ib[0] - 12, y + _ib[1] - 10, x + tot + 12, y + _ib[3] + 10), (x + _ib[0], y + _ib[1], x + tot, y + _ib[3]), owner=s)
     for w, wd in zip(ch, widths):
         on = w[0] - 0.05 <= t
-        text(img, w[2], x, y, px, AMBER if (on and t <= w[1] + 0.12) else CREAM, 'lm', 'head', 1.0 if on else 0.55)
+        text(img, w[2], x, y, px, AMBER if (on and t <= w[1] + 0.12) else CREAM, 'lm', 'head', 1.0 if on else 0.62, None, (0, 0, 0))
         x += wd + sp
+
+CAP_LANE = 1446
+@functools.lru_cache(1)
+def SCRIM():
+    yy = np.arange(H, dtype=np.float32); prof = np.clip((yy - 1230) / 260, 0, 1) ** 1.4 * .74   # bottom fade, not a band
+    a = np.repeat(prof[:, None], W, 1); lay = Image.new('RGBA', (W, H), (8, 8, 8, 0)); lay.putalpha(Image.fromarray((a * 255).astype(np.uint8))); return lay

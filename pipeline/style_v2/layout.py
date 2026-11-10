@@ -67,9 +67,13 @@ def check(W=1080, H=1920, edge=40, min_pad=8):
     out = []
     for e in LAYOUT:
         b = e['box']
-        if b[0] < edge or b[2] > W - edge or b[1] < edge or b[3] > H - edge: out.append(f"{e['kind']} '{e['owner']}' closer than {edge}px to a frame edge {tuple(int(v) for v in b)}")
+        if e['kind'] != 'image' and (b[0] < edge or b[2] > W - edge or b[1] < edge or b[3] > H - edge): out.append(f"{e['kind']} '{e['owner']}' closer than {edge}px to a frame edge {tuple(int(v) for v in b)}")
         if e['ink'] and not _inside(e['ink'], b, min_pad): out.append(f"{e['kind']} '{e['owner']}' text not inside its box with {min_pad}px padding")
     tops = [e for e in LAYOUT if e['kind'] in ('badge', 'caption', 'credit', 'card', 'label')]
+    caps = [e for e in LAYOUT if e['kind'] == 'caption']
+    for c in caps:   # captions must never sit on a picture panel or any on-screen text
+        for e in LAYOUT:
+            if e['kind'] in ('image',) and _overlap(c['box'], e['box']): out.append(f"caption '{c['owner']}' on image '{e['owner']}'")
     for i in range(len(tops)):
         for j in range(i + 1, len(tops)):
             a, b = tops[i], tops[j]

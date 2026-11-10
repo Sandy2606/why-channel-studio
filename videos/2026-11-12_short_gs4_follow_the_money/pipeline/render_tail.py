@@ -37,7 +37,7 @@ def frame0():
 
 def s_loop(t, s0, s1):
     """slide fades out into frame 0 so the last frame matches the first"""
-    k = e_io(prog(t, s0, s0 + 0.4)); b = zoom(frame0(), 1 + 0.06 * (1 - e_io(prog(t, s0, DUR - 1 / FPS))))
+    k = e_io(prog(t, s0, s0 + 0.4)); b = frame0().copy()   # no zoom on rendered graphics (sharp-pictures rule)
     if k >= 1: return b
     a = s_slide(t, SC_START['slide'], s0); return Image.blend(a, b, k)
 
