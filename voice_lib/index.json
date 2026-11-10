@@ -6417,5 +6417,93 @@
   "speaker": "ANNA",
   "line": "L",
   "delivery": "narration"
+ },
+ {
+  "lang": "en",
+  "text": "Wait… where did those diamonds come from?",
+  "file": "voice_lib/en/240a6b2c593f.mp3",
+  "voice": "Sowmya English (G2DgDPyZraka83R9s9m6)",
+  "model": "eleven_v4",
+  "source": "Golden Sparrow Short 3/6, Nov 10 2026",
+  "tag": "gs_s3",
+  "speaker": "CHELLI",
+  "line": "Q1"
+ },
+ {
+  "lang": "en",
+  "text": "So diamonds made Golconda rich?",
+  "file": "voice_lib/en/3c1a9b55a426.mp3",
+  "voice": "Sowmya English (G2DgDPyZraka83R9s9m6)",
+  "model": "eleven_v4",
+  "source": "Golden Sparrow Short 3/6, Nov 10 2026",
+  "tag": "gs_s3",
+  "speaker": "CHELLI",
+  "line": "Q2"
+ },
+ {
+  "lang": "en",
+  "text": "Then where did all that cloth sail from?",
+  "file": "voice_lib/en/fbb62d766565.mp3",
+  "voice": "Sowmya English (G2DgDPyZraka83R9s9m6)",
+  "model": "eleven_v4",
+  "source": "Golden Sparrow Short 3/6, Nov 10 2026",
+  "tag": "gs_s3",
+  "speaker": "CHELLI",
+  "line": "Q3"
+ },
+ {
+  "lang": "en",
+  "text": "So next time you see a famous diamond…",
+  "file": "voice_lib/en/a6053806f2b9.mp3",
+  "voice": "Sandeep English (grcC6bYJfJbBq5S549Id)",
+  "model": "eleven_v4",
+  "source": "Golden Sparrow Short 3/6, Nov 10 2026",
+  "tag": "gs_s3",
+  "speaker": "ANNA",
+  "line": "L"
+ },
+ {
+  "lang": "te",
+  "text": "ఆగు అన్నా… ఆ వజ్రాలు ఎక్కడ దొరికేవి?",
+  "file": "voice_lib/te/af1f9a4ae85e.mp3",
+  "voice": "Sowmya Telugu (JsnbIwWwNIghQbTVEmpj)",
+  "model": "eleven_v4",
+  "source": "Golden Sparrow Short 3/6, Nov 10 2026",
+  "tag": "gs_s3",
+  "speaker": "CHELLI",
+  "line": "Q1"
+ },
+ {
+  "lang": "te",
+  "text": "అంటే గోల్కొండ సంపద అంతా వజ్రాలేనా?",
+  "file": "voice_lib/te/622cc79713ec.mp3",
+  "voice": "Sowmya Telugu (JsnbIwWwNIghQbTVEmpj)",
+  "model": "eleven_v4",
+  "source": "Golden Sparrow Short 3/6, Nov 10 2026",
+  "tag": "gs_s3",
+  "speaker": "CHELLI",
+  "line": "Q2"
+ },
+ {
+  "lang": "te",
+  "text": "మరి ఆ గుడ్డంతా ఎక్కడి నుంచి వెళ్లేది?",
+  "file": "voice_lib/te/703a74c3ac46.mp3",
+  "voice": "Sowmya Telugu (JsnbIwWwNIghQbTVEmpj)",
+  "model": "eleven_v4",
+  "source": "Golden Sparrow Short 3/6, Nov 10 2026",
+  "tag": "gs_s3",
+  "speaker": "CHELLI",
+  "line": "Q3"
+ },
+ {
+  "lang": "te",
+  "text": "కాబట్టి ఈసారి ఏదైనా ప్రసిద్ధ వజ్రం చూసినప్పుడు…",
+  "file": "voice_lib/te/cdb678bf6fc5.mp3",
+  "voice": "Sandeep Telugu (YudnU7tnCElqOrj11puE)",
+  "model": "eleven_v4",
+  "source": "Golden Sparrow Short 3/6, Nov 10 2026",
+  "tag": "gs_s3",
+  "speaker": "ANNA",
+  "line": "L"
  }
 ]
