@@ -267,6 +267,9 @@ The user asked for this to be the channel's continuing look so viewers recognise
 - **Render speed (Nov 8):** render the shared body once per language and only the slide + loop tail per platform, then concat with stream copy (2-CPU box: four 1.5-min versions in about 12 min).
 - **Post copy limits, check before sending (user, Nov 10):** Instagram caption 2,200 characters or less **and 5 hashtags or less** (Instagram's cap since Dec 2025; the GS 1/6 copy wrongly shipped 30 and had to be redone). YouTube tags 500 characters or less. Count with a script and state the counts in the copy file.
 
+- **Process steps must be shown happening, as precisely as in the film (user, Nov 10, after GS 2/6):** when narration names steps that change an object (red from the chay root, blue from indigo, wax…), show each change happening on the object itself at the word, as the film's `fx.kalam` does: lines drawn, then red soaking in, then blue, then wax. Chips listed over a still are not enough. Shorts get the same level of visual detail as the film. A 9:16 port of the kalam animation (`kalam9`, with step chips and a one-line explanation per step) is saved in `videos/2026-11-10_short_gs2_cloth_world_wanted/pipeline/render_scenes_kalam9_future.py`.
+- **Golden Sparrow 2/6 "The cloth the world wanted" (Nov 10): EN 2:27 / TE 2:51, approved.** Thread chain SPINNER→PORT, sequential broker callouts, legal timeline, globe-arcs. Holding back: the kalam step shown as chips over a still (fixed for the future, see above), a static end slide, the 1686 entry tight under the chain. Credits 395.
+
 **DROP (failed; never repeat):**
 - Epic/cinematic style.
 - Visuals in bands or boxes.
