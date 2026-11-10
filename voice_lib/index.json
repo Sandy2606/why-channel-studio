@@ -6505,5 +6505,170 @@
   "tag": "gs_s3",
   "speaker": "ANNA",
   "line": "L"
+ },
+ {
+  "lang": "en",
+  "text": "Wait… so where did all that money go?",
+  "file": "voice_lib/en/b1a40da83f51.mp3",
+  "voice": "Sowmya English (G2DgDPyZraka83R9s9m6)",
+  "model": "eleven_v4",
+  "source": "Golden Sparrow Short 4/6, Nov 10 2026",
+  "tag": "gs_s4",
+  "speaker": "CHELLI",
+  "line": "Q1"
+ },
+ {
+  "lang": "en",
+  "text": "So who was really in charge?",
+  "file": "voice_lib/en/653d0b0478ae.mp3",
+  "voice": "Sowmya English (G2DgDPyZraka83R9s9m6)",
+  "model": "eleven_v4",
+  "source": "Golden Sparrow Short 4/6, Nov 10 2026",
+  "tag": "gs_s4",
+  "speaker": "CHELLI",
+  "line": "Q2"
+ },
+ {
+  "lang": "en",
+  "text": "And when things went wrong?",
+  "file": "voice_lib/en/c2d5e428f5da.mp3",
+  "voice": "Sowmya English (G2DgDPyZraka83R9s9m6)",
+  "model": "eleven_v4",
+  "source": "Golden Sparrow Short 4/6, Nov 10 2026",
+  "tag": "gs_s4",
+  "speaker": "CHELLI",
+  "line": "Q3"
+ },
+ {
+  "lang": "en",
+  "text": "So next time someone says India was rich…",
+  "file": "voice_lib/en/699a7decd66f.mp3",
+  "voice": "Sandeep English (grcC6bYJfJbBq5S549Id)",
+  "model": "eleven_v4",
+  "source": "Golden Sparrow Short 4/6, Nov 10 2026",
+  "tag": "gs_s4",
+  "speaker": "ANNA",
+  "line": "L"
+ },
+ {
+  "lang": "en",
+  "text": "Foreign trading companies also sought royal permissions, called farmans, for trading rights and privileges.",
+  "file": "voice_lib/en/80fc5920b896.mp3",
+  "voice": "Sandeep English (grcC6bYJfJbBq5S549Id)",
+  "model": "eleven_v4",
+  "source": "Golden Sparrow Short 4/6, Nov 10 2026",
+  "tag": "gs_s4",
+  "speaker": "ANNA",
+  "line": "FARMAN"
+ },
+ {
+  "lang": "en",
+  "text": "But merchants and rulers needed each other.",
+  "file": "voice_lib/en/3d620dbe42a5.mp3",
+  "voice": "Sandeep English (grcC6bYJfJbBq5S549Id)",
+  "model": "eleven_v4",
+  "source": "Golden Sparrow Short 4/6, Nov 10 2026",
+  "tag": "gs_s4",
+  "speaker": "ANNA",
+  "line": "VIRJI"
+ },
+ {
+  "lang": "en",
+  "text": "Land brought rulers revenue. But India's ports connected them to something bigger: trade across the seas.",
+  "file": "voice_lib/en/3a5a7e3ac2df.mp3",
+  "voice": "Sandeep English (grcC6bYJfJbBq5S549Id)",
+  "model": "eleven_v4",
+  "source": "Golden Sparrow Short 4/6, Nov 10 2026",
+  "tag": "gs_s4",
+  "speaker": "ANNA",
+  "line": "TURN"
+ },
+ {
+  "lang": "te",
+  "text": "ఆగు అన్నా… మరి ఆ డబ్బంతా ఎక్కడికి వెళ్లింది?",
+  "file": "voice_lib/te/3b28b0916272.mp3",
+  "voice": "Sowmya Telugu (JsnbIwWwNIghQbTVEmpj)",
+  "model": "eleven_v4",
+  "source": "Golden Sparrow Short 4/6, Nov 10 2026",
+  "tag": "gs_s4",
+  "speaker": "CHELLI",
+  "line": "Q1"
+ },
+ {
+  "lang": "te",
+  "text": "అంటే అసలు అధికారం ఎవరి చేతిలో?",
+  "file": "voice_lib/te/a42b0d9b99c9.mp3",
+  "voice": "Sowmya Telugu (JsnbIwWwNIghQbTVEmpj)",
+  "model": "eleven_v4",
+  "source": "Golden Sparrow Short 4/6, Nov 10 2026",
+  "tag": "gs_s4",
+  "speaker": "CHELLI",
+  "line": "Q2"
+ },
+ {
+  "lang": "te",
+  "text": "మరి ఏదైనా కష్టం వస్తే?",
+  "file": "voice_lib/te/269683be692c.mp3",
+  "voice": "Sowmya Telugu (JsnbIwWwNIghQbTVEmpj)",
+  "model": "eleven_v4",
+  "source": "Golden Sparrow Short 4/6, Nov 10 2026",
+  "tag": "gs_s4",
+  "speaker": "CHELLI",
+  "line": "Q3"
+ },
+ {
+  "lang": "te",
+  "text": "కాబట్టి ఈసారి ఎవరైనా భారత్ ధనిక దేశం అని చెప్పినప్పుడు…",
+  "file": "voice_lib/te/cc220a3b73aa.mp3",
+  "voice": "Sandeep Telugu (YudnU7tnCElqOrj11puE)",
+  "model": "eleven_v4",
+  "source": "Golden Sparrow Short 4/6, Nov 10 2026",
+  "tag": "gs_s4",
+  "speaker": "ANNA",
+  "line": "L"
+ },
+ {
+  "lang": "te",
+  "text": "విదేశీ వ్యాపార కంపెనీలు వ్యాపార హక్కులు, ప్రత్యేక అనుమతుల కోసం ఫర్మానాలు పొందడానికి ప్రయత్నించేవి.",
+  "file": "voice_lib/te/5b6dc2a6d029.mp3",
+  "voice": "Sandeep Telugu (YudnU7tnCElqOrj11puE)",
+  "model": "eleven_v4",
+  "source": "Golden Sparrow Short 4/6, Nov 10 2026",
+  "tag": "gs_s4",
+  "speaker": "ANNA",
+  "line": "FARMAN"
+ },
+ {
+  "lang": "te",
+  "text": "కానీ వ్యాపారులకీ, పాలకులకీ ఒకరితో ఒకరికి అవసరం ఉండేది.",
+  "file": "voice_lib/te/26554ace0f43.mp3",
+  "voice": "Sandeep Telugu (YudnU7tnCElqOrj11puE)",
+  "model": "eleven_v4",
+  "source": "Golden Sparrow Short 4/6, Nov 10 2026",
+  "tag": "gs_s4",
+  "speaker": "ANNA",
+  "line": "VIRJI"
+ },
+ {
+  "lang": "te",
+  "text": "భూమి నుంచి రాజ్యాలకు ఆదాయం వచ్చేది. కానీ మన రేవులు వాళ్లను సముద్రాల అవతల ప్రపంచ వ్యాపారంతో కలిపాయి.",
+  "file": "voice_lib/te/c8f8be8131f6.mp3",
+  "voice": "Sandeep Telugu (YudnU7tnCElqOrj11puE)",
+  "model": "eleven_v4",
+  "source": "Golden Sparrow Short 4/6, Nov 10 2026",
+  "tag": "gs_s4",
+  "speaker": "ANNA",
+  "line": "TURN"
+ },
+ {
+  "lang": "te",
+  "text": "హనుమకొండకు చెందిన మాదన్న, అక్కన్న సోదరులు గోల్కొండలో అబుల్ హసన్ కుతుబ్ షా పాలనలో కీలక స్థానాలకు ఎదిగారు. మాదన్న ప్రధానమంత్రిగా ఆదాయ వ్యవహారాలు పర్యవేక్షిస్తే, అక్కన్న సైన్యాధిపతి అయ్యాడు.",
+  "file": "voice_lib/te/4b5f28a24fb3.mp3",
+  "voice": "Sandeep Telugu (YudnU7tnCElqOrj11puE)",
+  "model": "eleven_v4",
+  "source": "Golden Sparrow Short 4/6, Nov 10 2026",
+  "tag": "gs_s4",
+  "speaker": "ANNA",
+  "line": "MADANNA"
  }
 ]
