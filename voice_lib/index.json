@@ -6321,5 +6321,101 @@
   "line": "L",
   "delivery": "narration",
   "dur": 3.08
+ },
+ {
+  "lang": "en",
+  "text": "Wait… they banned a cloth? Who even made it?",
+  "file": "voice_lib/en/f79a271d1965.mp3",
+  "voice": "Sowmya English (G2DgDPyZraka83R9s9m6)",
+  "model": "eleven_v4",
+  "source": "Golden Sparrow Short 2/6, Nov 10 2026",
+  "tag": "gs_s2",
+  "speaker": "CHELLI",
+  "line": "Q1",
+  "delivery": "surprised"
+ },
+ {
+  "lang": "en",
+  "text": "But what made those colours so special?",
+  "file": "voice_lib/en/19c1fd172ebf.mp3",
+  "voice": "Sowmya English (G2DgDPyZraka83R9s9m6)",
+  "model": "eleven_v4",
+  "source": "Golden Sparrow Short 2/6, Nov 10 2026",
+  "tag": "gs_s2",
+  "speaker": "CHELLI",
+  "line": "Q2",
+  "delivery": "curious"
+ },
+ {
+  "lang": "en",
+  "text": "Bans? Who banned it?",
+  "file": "voice_lib/en/100bc45b481a.mp3",
+  "voice": "Sowmya English (G2DgDPyZraka83R9s9m6)",
+  "model": "eleven_v4",
+  "source": "Golden Sparrow Short 2/6, Nov 10 2026",
+  "tag": "gs_s2",
+  "speaker": "CHELLI",
+  "line": "Q3",
+  "delivery": "surprised"
+ },
+ {
+  "lang": "en",
+  "text": "So next time you wear printed cotton…",
+  "file": "voice_lib/en/eba66746f7a1.mp3",
+  "voice": "Sandeep English (grcC6bYJfJbBq5S549Id)",
+  "model": "eleven_v4",
+  "source": "Golden Sparrow Short 2/6, Nov 10 2026",
+  "tag": "gs_s2",
+  "speaker": "ANNA",
+  "line": "L",
+  "delivery": "narration"
+ },
+ {
+  "lang": "te",
+  "text": "ఆగు అన్నా… ఒక గుడ్డను నిషేధించారా? అసలు దాన్ని ఎవరు తయారుచేసేవారు?",
+  "file": "voice_lib/te/e4574bfe5726.mp3",
+  "voice": "Sowmya Telugu (JsnbIwWwNIghQbTVEmpj)",
+  "model": "eleven_v4",
+  "source": "Golden Sparrow Short 2/6, Nov 10 2026",
+  "tag": "gs_s2",
+  "speaker": "CHELLI",
+  "line": "Q1",
+  "delivery": "surprised"
+ },
+ {
+  "lang": "te",
+  "text": "మరి మన గుడ్డ రంగుల్లో అంత ప్రత్యేకత ఏంటి?",
+  "file": "voice_lib/te/351b5eb1e5cf.mp3",
+  "voice": "Sowmya Telugu (JsnbIwWwNIghQbTVEmpj)",
+  "model": "eleven_v4",
+  "source": "Golden Sparrow Short 2/6, Nov 10 2026",
+  "tag": "gs_s2",
+  "speaker": "CHELLI",
+  "line": "Q2",
+  "delivery": "curious"
+ },
+ {
+  "lang": "te",
+  "text": "నిషేధాలా? ఎవరు నిషేధించారు?",
+  "file": "voice_lib/te/354a023e4911.mp3",
+  "voice": "Sowmya Telugu (JsnbIwWwNIghQbTVEmpj)",
+  "model": "eleven_v4",
+  "source": "Golden Sparrow Short 2/6, Nov 10 2026",
+  "tag": "gs_s2",
+  "speaker": "CHELLI",
+  "line": "Q3",
+  "delivery": "surprised"
+ },
+ {
+  "lang": "te",
+  "text": "కాబట్టి ఈసారి మీరు అచ్చు cotton బట్ట వేసుకున్నప్పుడు…",
+  "file": "voice_lib/te/7787a5fa488c.mp3",
+  "voice": "Sandeep Telugu (YudnU7tnCElqOrj11puE)",
+  "model": "eleven_v4",
+  "source": "Golden Sparrow Short 2/6, Nov 10 2026",
+  "tag": "gs_s2",
+  "speaker": "ANNA",
+  "line": "L",
+  "delivery": "narration"
  }
 ]
