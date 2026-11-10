@@ -1,0 +1,502 @@
+# ------------------------------------------------------------------ GS 4/6 scenes  ("Follow the money")
+# Sharp-pictures rule: every source image is shown at <= 1.0 source px per output px (NAT/cover_nat assert it);
+# diagrams, maps and the isometric chain are drawn at output size.
+import cv2
+from core import shade
+ARC = '/home/claude/why-channel-studio/videos/2026-11-08_long_golden_sparrow_s1/visuals/archive/'
+PK2 = '/home/claude/why-channel-studio/videos/2026-11-08_long_golden_sparrow_s1/visuals/pack2/'
+SRC = {'FARMAN': (ARC + '08_NEW_Farman_of_Aurangzeb_National_Museum_New_Delhi_62.5.jpg', (0, 0, 815, 1390)),
+       'MUNDY': (ARC + '14_PD09_Mundy_famine_p236.jpg', None), 'CRACK': (ARC + '26_CC04_Cracked_dry_earth_Pexels_9692860.jpg', None),
+       'MASU': (ARC + '16_PD06_Masulipatnam_Rijksmuseum.jpg', None), 'CANTINO': (ARC + '01_PD10_Cantino_planisphere_(1502).jpg', (5220, 0, 8030, 4998)),
+       'G20': (PK2 + 'G20_v1.png', None), 'G16': (PK2 + 'G16_v1.png', None), 'G18': (PK2 + 'G18_v1.png', None), 'G19': (PK2 + 'G19_v1.png', None)}
+DUSK = (16, 16, 15); TILE = (26, 25, 23); TILE2 = (21, 20, 19); ROAD = (70, 64, 52); BODY = (112, 106, 96)
+FIELD = (104, 128, 72); RED = (168, 62, 50); TEAL = (66, 132, 120); MUTED = (170, 164, 150); STAMP = (196, 54, 40)
+def sm_(x): x = clamp(x); return x * x * (3 - 2 * x)
+
+@functools.lru_cache(12)
+def NAT(key, prescale=1.0):
+    """original pixels, graded like the film; optional pre-reduction (never enlargement)"""
+    p, cr = SRC[key]; im = Image.open(p).convert('RGB')
+    if cr: im = im.crop(cr)
+    if prescale < 1: im = im.resize((int(im.width * prescale), int(im.height * prescale)), Image.LANCZOS)
+    return Image.fromarray(FL.grade(np.asarray(im)))
+
+def cover_nat(key, u, c0, c1, z0, z1, prescale=1.0, k=0.95):
+    """full-screen camera move that never enlarges the source (scale <= 1.0)"""
+    im = NAT(key, prescale); w, h = im.size; base = max(W / w, H / h)
+    zz = lerp(z0, z1, e_io(clamp(u))); sc = min(base * zz, 1.0); assert base <= 1.0001, (key, base)
+    fx, fy = lerp(c0[0], c1[0], e_io(clamp(u))), lerp(c0[1], c1[1], e_io(clamp(u))); hw, hh = W / 2 / sc, H / 2 / sc
+    cx = min(max(fx * w, hw), w - hw); cy = min(max(fy * h, hh), h - hh)
+    return grade(im.resize((W, H), Image.LANCZOS, box=(cx - hw, cy - hh, cx + hw, cy + hh)), k)
+
+def panel_nat(img, key, box, u, f0, f1, sc=1.0, radius=26, a=1.0, border=None):
+    """native-pixel window: shows a box-sized region of the source at scale sc (<=1), panning f0->f1 (fractions)"""
+    assert sc <= 1.0001
+    im = NAT(key); x0, y0, x1, y1 = [int(v) for v in box]; bw, bh = x1 - x0, y1 - y0; sw, sh = bw / sc, bh / sc
+    k = e_io(clamp(u)); fx, fy = lerp(f0[0], f1[0], k), lerp(f0[1], f1[1], k)
+    cx = min(max(fx * im.width, sw / 2), im.width - sw / 2); cy = min(max(fy * im.height, sh / 2), im.height - sh / 2)
+    crop = im.resize((bw, bh), Image.LANCZOS, box=(cx - sw / 2, cy - sh / 2, cx + sw / 2, cy + sh / 2))
+    m = Image.new('L', (bw, bh), 0); ImageDraw.Draw(m).rounded_rectangle((0, 0, bw - 1, bh - 1), radius, fill=int(255 * a))
+    if border:
+        lay = Image.new('RGBA', (W, H), (0, 0, 0, 0)); ImageDraw.Draw(lay).rounded_rectangle((x0 - 4, y0 - 4, x1 + 4, y1 + 4), radius + 4, fill=border + (int(255 * a),)); img.paste(lay, (0, 0), lay)
+    img.paste(crop, (x0, y0), m)
+
+def small(img, s, x, y, px=24, col=MUTED, anchor='mm', a=1.0, maxw=None):
+    text(img, s, x, y, px, col, anchor, 'monob', a, maxw or ST.sw, None)
+
+def credit(img, s, y=1560, a=1.0):
+    ls = s.split('\n'); w = min(ST.sw, max(pick(x, 'monob', 22).getlength(x) for x in ls) + 30); hh = 22 + 15 * (len(ls) - 1)
+    lay = Image.new('RGBA', (W, H), (0, 0, 0, 0)); ImageDraw.Draw(lay).rounded_rectangle((W / 2 - w / 2, y - hh, W / 2 + w / 2, y + hh), 14, fill=(8, 8, 8, int(170 * a)))
+    img.paste(lay, (0, 0), lay)
+    for i, x in enumerate(ls): text(img, x, W / 2, y - 15 * (len(ls) - 1) + 30 * i, 22, (200, 194, 180), 'mm', 'monob', a, ST.sw - 20, None)
+    LY.reg('credit', (W / 2 - w / 2, y - hh, W / 2 + w / 2, y + hh), owner=ls[0][:30])
+
+def dramatized(img, a=1.0):
+    s = L('DRAMATIZED · ILLUSTRATION', 'నాటకీకరణ · చిత్రణ'); chip(img, s, W - 70 - pick(s, 'head', 22).getlength(s) / 2 - 18, 262, 22, (40, 38, 34), CREAM, a=a)
+
+def coin(d, x, y, r, frac=1.0, a=255, ss=1):
+    """gold coin; frac < 1 draws it with a wedge missing (the cut taken)"""
+    x, y, r = x * ss, y * ss, r * ss
+    d.ellipse((x - r * 1.04, y - r * .9, x + r * 1.04, y + r * 1.2), fill=(0, 0, 0, int(a * .45)))
+    if frac >= .999:
+        d.ellipse((x - r, y - r, x + r, y + r), fill=(232, 168, 48, a), outline=(140, 92, 16, a), width=int(3 * ss))
+        d.ellipse((x - r * .68, y - r * .68, x + r * .68, y + r * .68), outline=(255, 214, 120, a), width=int(3 * ss))
+    else:
+        st = -90 + 360 * (1 - frac); d.pieslice((x - r, y - r, x + r, y + r), st, 270, fill=(232, 168, 48, a), outline=(140, 92, 16, a), width=int(3 * ss))
+
+# ------------------------------------------------------------------ the isometric money chain (drawn at 2x, output size)
+import isometric as ISO
+def P_iso(U, ox, oy): return lambda x, y, z=0: ISO._iso(ST, U, ox, oy, x, y, z)
+def floor(d, p, Wd, Hd, lit=1.0):
+    for i in range(-16, 16):
+        for j in range(-16, 16):
+            q = [p(i, j), p(i + 1, j), p(i + 1, j + 1), p(i, j + 1)]
+            if max(x for x, _ in q) < 0 or min(x for x, _ in q) > Wd or max(y for _, y in q) < 0 or min(y for _, y in q) > Hd: continue
+            d.polygon(q, fill=shade(TILE if (i + j) % 2 == 0 else TILE2, lit))
+def road(d, p, a, b, k, col=ROAD):
+    e = (lerp(a[0], b[0], k), lerp(a[1], b[1], k)); hw = .22
+    d.polygon([p(a[0] + hw, a[1] - hw), p(e[0] + hw, e[1] - hw), p(e[0] - hw, e[1] + hw), p(a[0] - hw, a[1] + hw)], fill=col)
+def field(d, p, x, y, k, lit=1.0):
+    w = 2.6 * k
+    if w < .05: return
+    ISO._box(d, p, x, y, w, .12, shade(FIELD, lit))
+    for r in range(6):   # crop rows on the field
+        f = -w / 2 + (r + .5) * w / 6; d.line([p(x + f, y - w / 2 + .1, .12), p(x + f, y + w / 2 - .1, .12)], fill=shade((70, 96, 46), lit), width=4)
+    ISO._box(d, p, x - .6, y - .7, .7 * k, .55 * k, shade((150, 120, 80), lit))   # the farmer's hut
+def building(kind, d, p, x, y, k, lit=1.0):
+    if k <= .01: return
+    if kind == 'farmer': field(d, p, x, y, k, lit)
+    elif kind == 'coll': ISO._box(d, p, x, y, 1.6, 1.3 * k, shade(BODY, lit), win=True, dark=shade((60, 56, 50), lit))
+    elif kind == 'state': ISO._box(d, p, x, y, 2.0, 2.2 * k, shade(AMBER, lit), win=True, dark=shade((150, 96, 14), lit))
+    elif kind == 'army':
+        ISO._box(d, p, x - .55, y + .55, .9, .8 * k, shade(RED, lit)); ISO._box(d, p, x + .6, y - .5, 1.3, 1.5 * k, shade((150, 130, 104), lit), win=True)
+    elif kind == 'bank': ISO._box(d, p, x, y, 1.5, 1.1 * k, shade(TEAL, lit), win=True, dark=shade((30, 70, 64), lit))
+    elif kind == 'weaver': ISO._box(d, p, x, y, 1.3, .8 * k, shade((176, 146, 104), lit), win=False)
+
+KINDS = ['farmer', 'coll', 'state', 'army', 'bank']
+NAMES = {'farmer': L('FARMER', 'రైతు'), 'coll': L('COLLECTORS · LOCAL LORDS', 'వసూలుదారులు · స్థానిక పెద్దలు'), 'state': L('STATE TREASURY', 'రాజ్య ఖజానా'),
+         'army': L('ARMIES · COURTS', 'సైన్యాలు · దర్బార్లు'), 'bank': L('BANKERS', 'వడ్డీ వ్యాపారులు'), 'weaver': L('WEAVERS', 'నేతగాళ్లు')}
+ROLES = {'farmer': L('PAYS LAND REVENUE', 'భూమి శిస్తు కడతాడు'), 'coll': L('KEEP A CUT', 'తమ వాటా'), 'state': L('RECEIVES', 'అందుకుంటుంది'),
+         'army': L('SPENDS', 'ఖర్చు'), 'bank': L('LEND TO EVERYONE', 'అందరికీ అప్పు')}
+GAP = 6.0
+
+@functools.lru_cache(1)
+def CHAIN_CUES():
+    a = S('MONEY')
+    c = dict(drop=a + .05, farmer=AT('4.6a', 'farmer', 'రైతు') - .1, third=AT('4.6a', 'third', 'మూడో') - .1, coll=AT('4.6a', 'Collectors', 'వసూలు') - .15,
+             cut=AT('4.6a', 'cut.', 'వాటా') - .1, state=AT('4.6a', 'state', 'రాజ్యం') - .15, army=AT('4.6a', 'armies', 'సైన్యాలకు,') - .15,
+             bank=AT('4.6a', 'Bankers', 'వడ్డీ') - .15, every=AT('4.6a', 'everyone.', 'అందరికీ') - .1)
+    c['farmer'] = max(c['farmer'], c['drop'] + 1.0); return c
+
+def focus_at(t, c):
+    """camera focus index (float) along the chain, and the zoom-out k at the end"""
+    pts = [(c['drop'], 0.0), (c['coll'], 0.0), (c['coll'] + .9, 1.0), (c['state'], 1.0), (c['state'] + .9, 2.0), (c['army'], 2.0), (c['army'] + .9, 3.0),
+           (c['bank'], 3.0), (c['bank'] + .9, 4.0)]
+    f = 0.0
+    for (t0, f0), (t1, f1) in zip(pts, pts[1:]):
+        if t >= t0: f = f0 + (f1 - f0) * e_io(prog(t, t0, t1))
+    return f, e_io(prog(t, c['every'] - .2, c['every'] + 1.1))
+
+def coin_pos(t, c):
+    """index position of the coin along the chain (it leads the camera slightly)"""
+    pts = [(c['coll'] - .05, 0.0), (c['coll'] + .75, 1.0), (c['state'] - .05, 1.0), (c['state'] + .75, 2.0), (c['army'] - .05, 2.0), (c['army'] + .75, 3.0)]
+    f = 0.0
+    for (t0, f0), (t1, f1) in zip(pts, pts[1:]):
+        if t >= t0: f = f0 + (f1 - f0) * e_io(prog(t, t0, t1))
+    return f
+
+def chain_frame(t, c, lit_override=None, show_labels=True, zoom_k=None, upto=None):
+    """draws the chain; returns (img, screen-point function)"""
+    f, zk = focus_at(t, c)
+    if zoom_k is not None: zk = zoom_k
+    SS = 2; Wd, Hd = W * SS, H * SS
+    U = lerp(112, 40, zk) * SS; fc = lerp(f, 2.0, zk); Yc = lerp(930, 800, zk) * SS
+    ox = Wd / 2; oy = Yc - fc * GAP * U
+    p = P_iso(U, ox, oy); im = Image.new('RGBA', (Wd, Hd), DUSK + (255,)); d = ImageDraw.Draw(im)
+    floor(d, p, Wd, Hd)
+    born = [c['farmer'] - .4, c['coll'] - .2, c['state'] - .2, c['army'] - .2, c['bank'] - .2]
+    n = 5 if upto is None else upto
+    for i in range(1, n):
+        k = e_io(prog(t, born[i] - .1, born[i] + .7)); road(d, p, ((i - 1) * GAP, (i - 1) * GAP), (i * GAP, i * GAP), k)
+    for i in range(n):
+        k = e_back(prog(t, born[i], born[i] + .55)); lit = 1.0 if lit_override is None else lit_override.get(KINDS[i], 1.0)
+        building(KINDS[i], d, p, i * GAP, i * GAP, k, lit)
+    out = im.resize((W, H), Image.LANCZOS)
+    fade = Image.new('RGBA', (W, H), (0, 0, 0, 0)); fd = ImageDraw.Draw(fade)
+    for yy in range(0, 460, 4): fd.rectangle((0, yy, W, yy + 4), fill=DUSK + (int(255 * clamp(1.15 - yy / 460) * (1 - zk)),))
+    out.paste(fade, (0, 0), fade)
+    scr = lambda i, z=0: tuple(v / SS for v in p(i * GAP, i * GAP, z))
+    if show_labels:
+        for i in range(n):
+            if t < born[i] + .2: continue
+            x, y = scr(i); y += 175 * lerp(1, .45, zk)
+            near = abs(i - fc) < .6 and zk < .5; a = e_out(prog(t, born[i] + .2, born[i] + .6))
+            if zk > .5:
+                text(out, NAMES[KINDS[i]], x + 110, y - 85, 30, CREAM, 'lm', 'head', a * e_out(prog(zk, .5, 1)), W - 90 - (x + 110), (0, 0, 0))
+            elif near:
+                text(out, NAMES[KINDS[i]], x, y, 46, CREAM, 'mm', 'head', a, ST.sw, (0, 0, 0))
+                text(out, ROLES[KINDS[i]], x, y + 58, 30, AMBER, 'mm', 'head', a, ST.sw, (0, 0, 0))
+            else:
+                text(out, NAMES[KINDS[i]], x, y, 30, (150, 146, 136), 'mm', 'head', a * .8, ST.sw, None)
+    return out, scr, f, zk
+
+def s_chain(t, s0, s1):
+    c = CHAIN_CUES(); img, scr, f, zk = chain_frame(t, c)
+    lay = Image.new('RGBA', (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(lay)
+    # the one coin: drops from the top onto the field, then rides the chain
+    if t < c['coll'] - .05:
+        x, y = scr(0, 1.2); k = e_out(prog(t, c['drop'], c['drop'] + .7)); y = lerp(-80, y, k); bounce = math.sin(prog(t, c['drop'] + .7, c['drop'] + 1.1) * math.pi) * 18
+        coin(d, x, y - bounce, 40, 1.0)
+    else:
+        q = coin_pos(t, c); i0 = int(q); fr = q - i0; a = scr(i0, 1.2); b = scr(min(4, i0 + 1), 1.2)
+        x, y = lerp(a[0], b[0], fr), lerp(a[1], b[1], fr) - math.sin(fr * math.pi) * 60
+        frac = 1.0 if t < c['cut'] else lerp(1.0, .67, e_io(prog(t, c['cut'], c['cut'] + .5)))
+        if t >= c['every'] - .2: frac = .67
+        r = 40 * lerp(1, .6, zk)
+        if q >= 2.999 and t >= c['army'] + .75:   # spent: the coin settles on the armies/courts tile
+            pass
+        coin(d, x, y, r, frac)
+        if t >= c['cut']:   # the wedge stays with the collectors
+            cx_, cy_ = scr(1, 1.25); k = e_out(prog(t, c['cut'], c['cut'] + .5)); r2 = 40 * lerp(1, .6, zk)
+            d.pieslice((cx_ - r2 + 30 * k, cy_ - r2 - 10 * k, cx_ + r2 + 30 * k, cy_ + r2 - 10 * k), -90, -90 + 360 * .33, fill=(232, 168, 48, 255), outline=(140, 92, 16, 255), width=3)
+    img.paste(lay, (0, 0), lay)
+    # the revenue share: small, careful, beside the field
+    if c['third'] <= t < c['coll'] + .4:
+        a = e_out(prog(t, c['third'], c['third'] + .4)) * (1 - prog(t, c['coll'], c['coll'] + .4)); x0, y0 = 300, 560
+        lay = Image.new('RGBA', (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(lay); d.rounded_rectangle((x0 - 30, y0 - 70, x0 + 510, y0 + 130), 22, fill=(10, 10, 10, int(200 * a)))
+        k1 = e_io(prog(t, c['third'] + .1, c['third'] + .7)); k2 = e_io(prog(t, c['third'] + .9, c['third'] + 1.6))
+        d.rounded_rectangle((x0, y0, x0 + 450, y0 + 30), 15, fill=(60, 58, 52, int(255 * a)))
+        d.rounded_rectangle((x0, y0, x0 + 450 * lerp(0, 1 / 3, k1) + 1, y0 + 30), 15, fill=(232, 168, 48, int(255 * a)))
+        if k2 > 0: d.rectangle((x0 + 150, y0 + 4, x0 + 150 + 75 * k2, y0 + 26), fill=(232, 168, 48, int(140 * a)))
+        img.paste(lay, (0, 0), lay)
+        text(img, L('1/3 – 1/2 OF THE CROP', 'పంటలో 1/3 – 1/2'), x0, y0 - 34, 36, AMBER, 'lm', 'head', a, 480, None)
+        small(img, L('ASSESSED DEMAND · VARIED · OFTEN PAID IN CASH', 'అంచనా శిస్తు · చోటును బట్టి మారేది · తరచుగా నగదులో'), x0, y0 + 70, 21, MUTED, 'lm', a, 480)
+        small(img, L("HISTORIANS' ESTIMATE", 'చరిత్రకారుల అంచనా'), x0, y0 + 102, 21, MUTED, 'lm', a, 480)
+    # bankers lend to everyone: thin dotted arcs on the zoomed-out view
+    if t >= c['every'] - .1:
+        k = e_out(prog(t, c['every'], c['every'] + 1.2)); lay = Image.new('RGBA', (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(lay); bx, by = scr(4, 1.0)
+        for i in range(4):
+            tx_, ty_ = scr(i, .6); kk = clamp(k * 1.6 - i * .18)
+            if kk <= 0: continue
+            mx = max(bx, tx_) + 170
+            for s_ in range(0, int(26 * kk)):
+                u = s_ / 26; x = (1 - u) ** 2 * bx + 2 * (1 - u) * u * mx + u * u * tx_; y = (1 - u) ** 2 * by + 2 * (1 - u) * u * ((by + ty_) / 2) + u * u * ty_
+                d.ellipse((x - 4, y - 4, x + 4, y + 4), fill=TEAL + (230,))
+        img.paste(lay, (0, 0), lay)
+    # header + accuracy chip
+    kh = e_out(prog(t, s0, s0 + .4)) * (1 - zk)
+    text(img, L('FOLLOW THE MONEY', 'డబ్బు వెనకే'), W / 2, 300, 54, CREAM, 'mm', 'head', kh, ST.sw, (0, 0, 0))
+    small(img, L('ILLUSTRATIVE · NOT EVERY PAYMENT TOOK THIS PATH', 'ఉదాహరణ మాత్రమే · ప్రతి చెల్లింపు ఇలానే కాదు'), W / 2, 352, 21, MUTED, 'mm', e_out(prog(t, c['farmer'], c['farmer'] + .5)) * (1 - zk))
+    small(img, L('ILLUSTRATIVE', 'ఉదాహరణ మాత్రమే'), W / 2, 262, 21, MUTED, 'mm', zk)
+    return img
+
+# ------------------------------------------------------------------ farman: the meaning, not just the document
+@functools.lru_cache(1)
+def ARMS():
+    im = Image.fromarray(FL.img('PD12')).convert('RGB'); im.thumbnail((300, 300), Image.LANCZOS); return im
+def stamp(img, s, cx, cy, k, rot, px=58):
+    if k <= .01: return
+    f = pick(s, 'head', px); w = int(f.getlength(s)) + 60; h = int(px * 1.6)
+    lay = Image.new('RGBA', (w + 20, h + 20), (0, 0, 0, 0)); d = ImageDraw.Draw(lay)
+    d.rounded_rectangle((10, 10, w + 10, h + 10), 12, outline=STAMP + (235,), width=7); d.rounded_rectangle((20, 20, w, h), 8, outline=STAMP + (150,), width=2)
+    text(lay, s, (w + 20) / 2, (h + 20) / 2, px, STAMP, 'mm', 'head', .95, None, None)
+    sc = lerp(1.7, 1.0, e_out(clamp(k * 1.3))); lay = lay.rotate(rot, expand=True, resample=Image.BICUBIC)
+    paste_c(img, lay, cx, cy, min(1, k * 2.2), sc)
+
+def s_farman(t, s0, s1):
+    img = radial_bg(W, H, (40, 34, 24), (10, 10, 10), cy=.45, reach=.85).copy()
+    c_doc = S('FARMAN') + .5; c_f = AT('FARMAN', 'farmans,', 'ఫర్మానాలు') - .1
+    c_r = AT('FARMAN', 'trading', 'హక్కులు,', n=2 if not TE else 1) - .1; c_p = AT('FARMAN', 'privileges.', 'ప్రత్యేక') - .1
+    # who: foreign trading companies (Company arms as the example)
+    ka = e_out(prog(t, s0, s0 + .5)); arm = ARMS(); sc = lerp(1.0, .55, e_io(prog(t, c_doc, c_doc + .7)))
+    sc = lerp(1.0, .42, e_io(prog(t, c_doc, c_doc + .7))); ax, ay = lerp(W / 2, 835, e_io(prog(t, c_doc, c_doc + .7))), lerp(640, 360, e_io(prog(t, c_doc, c_doc + .7)))
+    lay = Image.new('RGBA', (arm.width + 8, arm.height + 8), (196, 160, 92, 255)); lay.paste(arm, (4, 4)); paste_c(img, lay, ax, ay, ka, sc)
+    kt = 1 - e_io(prog(t, c_doc - .15, c_doc + .2))
+    text(img, L('FOREIGN TRADING COMPANIES', 'విదేశీ వ్యాపార కంపెనీలు'), W / 2, 880, 56, CREAM, 'mm', 'head', ka * kt, ST.sw, (0, 0, 0))
+    small(img, L('e.g. THE ENGLISH EAST INDIA COMPANY', 'ఉదా: ఇంగ్లీష్ ఈస్ట్ ఇండియా కంపెనీ'), W / 2, 950, 24, MUTED, 'mm', ka * kt)
+    # the real document (downscaled only), left; museum-style annotations, right
+    kd = e_out(prog(t, c_doc, c_doc + .8))
+    if kd > .01:
+        doc = NAT('FARMAN'); s = .70; dw, dh = int(doc.width * s), int(doc.height * s); x0 = 56; y0 = int(lerp(H, 330, kd))
+        sh = Image.new('RGBA', (W, H), (0, 0, 0, 0)); ImageDraw.Draw(sh).rectangle((x0 + 12, y0 + 18, x0 + dw + 12, y0 + dh + 18), fill=(0, 0, 0, 150)); sh = sh.filter(ImageFilter.GaussianBlur(14)); img.paste(sh, (0, 0), sh)
+        img.paste(doc.resize((dw, dh), Image.LANCZOS), (x0, y0))
+        P_ = lambda x, y: (x0 + x * s, y0 + y * s)
+        lay = Image.new('RGBA', (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(lay)
+        kf = e_out(prog(t, c_f, c_f + .5))
+        if kf > 0:   # the royal seal, ringed
+            cx, cy = P_(515, 255); r = 92 * s * lerp(1.35, 1.0, kf); d.ellipse((cx - r, cy - r, cx + r, cy + r), outline=(255, 200, 80, int(255 * kf)), width=5)
+        for c_, yy in ((c_r, 650), (c_p, 1080)):   # soft highlighter across the relevant lines
+            kk = e_io(prog(t, c_ + .05, c_ + .6))
+            if kk > 0:
+                a_, b_ = P_(80, yy - 6), P_(80 + 650 * kk, yy + 52); d.rounded_rectangle((a_[0], a_[1], b_[0], b_[1]), 8, fill=(255, 204, 90, 70))
+        img.paste(lay, (0, 0), lay)
+        def note(c_, yy, kicker, title, anchor_pt):
+            k = e_out(prog(t, c_ + .25, c_ + .8))
+            if k <= .01: return
+            cx0 = 648; cx1 = W - LY.EDGE; cy = yy; ax_, ay_ = anchor_pt; inner = cx1 - cx0 - 30 - 24     # fixed geometry: fade only
+            px = 38 if not TE else 36; f = pick(title, 'head', px)
+            lines = [title] if f.getlength(title) <= inner else wrap(title, 'head', px, inner)
+            hh = 78 if len(lines) == 1 else 96
+            lay = Image.new('RGBA', (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(lay)
+            kl = e_io(prog(t, c_ + .15, c_ + .55)); ex = lerp(ax_, cx0, kl)
+            d.line((ax_, ay_, ex, lerp(ay_, cy, kl)), fill=(255, 200, 80, 230), width=3); d.ellipse((ax_ - 7, ay_ - 7, ax_ + 7, ay_ + 7), fill=(255, 200, 80, 255))
+            d.rounded_rectangle((cx0, cy - hh, cx1, cy + hh), 16, fill=(14, 13, 12, int(225 * k)), outline=(120, 96, 50, int(255 * k)), width=2)
+            d.rectangle((cx0 + 2, cy - hh + 18, cx0 + 8, cy + hh - 18), fill=(255, 200, 80, int(255 * k)))
+            img.paste(lay, (0, 0), lay)
+            ty0 = cy - hh + 40; small(img, kicker, cx0 + 30, ty0, 22 if not TE else 27, AMBER, 'lm', k, inner)
+            ink = None
+            for i, ln in enumerate(lines):
+                yy_ = ty0 + 54 + i * (px + 8); text(img, ln, cx0 + 30, yy_, px, CREAM, 'lm', 'head', k, None, None)
+                bb = f.getbbox(ln, anchor='lm'); r = (cx0 + 30 + bb[0], yy_ + bb[1], cx0 + 30 + bb[2], yy_ + bb[3])
+                ink = r if ink is None else (min(ink[0], r[0]), min(ink[1], r[1]), max(ink[2], r[2]), max(ink[3], r[3]))
+            LY.reg('card', (cx0, cy - hh, cx1, cy + hh), ink, owner=title)
+        note(c_f, P_(0, 255)[1], L('A ROYAL ORDER', 'రాజాజ్ఞ'), L('FARMAN', 'ఫర్మానా'), P_(515 + 92, 255))
+        note(c_r, P_(0, 676)[1], L('SOUGHT FOR', 'దేని కోసం'), L('TRADING RIGHTS', 'వ్యాపార హక్కులు'), P_(730, 676))
+        note(c_p, P_(0, 1106)[1], L('AND', 'ఇంకా'), L('PRIVILEGES', 'ప్రత్యేక అనుమతులు'), P_(730, 1106))
+        credit(img, L('A MUGHAL FARMAN (AURANGZEB) · NATIONAL MUSEUM, NEW DELHI\nEXAMPLE OF THE DOCUMENT TYPE', 'మొఘల్ ఫర్మానా (ఔరంగజేబు) · నేషనల్ మ్యూజియం, న్యూఢిల్లీ\nఈ రకం పత్రానికి ఉదాహరణ'), 1560, kd)
+    return img
+
+# ------------------------------------------------------------------ 4.9 the rains fail (restrained; no collector in this section)
+def rain(img, t, k):
+    if k <= .01: return
+    lay = Image.new('RGBA', (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(lay); rng = np.random.default_rng(11)
+    for i in range(220):
+        x = rng.uniform(-100, W + 100); sp = rng.uniform(900, 1400); y = (rng.uniform(0, H) + t * sp) % (H + 200) - 100
+        d.line((x, y, x - 14, y + 46), fill=(200, 210, 220, int(110 * k)), width=2)
+    img.paste(lay, (0, 0), lay)
+
+def s_rains(t, s0, s1):
+    c_fail = AT('4.9', 'failed…', 'పడకపోతే…') + .1; c_top = AT('4.9', 'wealth', 'పైనున్న') - .2; c_bot = AT('4.9', 'bottom.', 'కాపాడలేదు.') - .2
+    if t < c_top + .5:
+        u = (t - s0) / max(.1, c_top + .5 - s0)
+        im = cover_nat('CRACK', u, (.45, .5), (.55, .5), 1.0, 1.08, prescale=.62, k=lerp(.75, .95, e_io(prog(t, c_fail - .5, c_fail + .8))))
+        dry = e_io(prog(t, c_fail - .4, c_fail + .9)); im = Image.blend(im.convert('L').convert('RGB'), im, .45 + .55 * dry)
+        rain(im, t, 1 - dry)
+        kr = e_out(prog(t, c_fail, c_fail + .5)) * (1 - prog(t, c_top - .3, c_top))
+        text(im, L('THE RAINS FAIL', 'వానలు పడవు'), W / 2, 330, 54, CREAM, 'mm', 'head', kr, ST.sw, (0, 0, 0))
+        small(im, L('FAILED RAINS · SCARCITY', 'వర్షాభావం · కొరత'), W / 2, 392, 24, (220, 210, 190), 'mm', e_out(prog(t, c_fail + .3, c_fail + .8)) * (1 - prog(t, c_top - .3, c_top)))
+        if t < c_top: return im
+        base = im
+    else: base = None
+    # split: the treasury at the top stays lit; farmers and weavers at the bottom go grey
+    SS = 2; Wd, Hd = W * SS, H * SS; U = 92 * SS; img = Image.new('RGBA', (Wd, Hd), DUSK + (255,)); d = ImageDraw.Draw(img)
+    p_top = P_iso(U, Wd / 2, 720 * SS); p_bot = P_iso(U, Wd / 2, 1100 * SS)
+    floor(d, P_iso(U, Wd / 2, 900 * SS), Wd, Hd, .9)
+    grey = e_io(prog(t, c_bot, c_bot + 1.0))
+    building('state', d, p_top, 0, 0, e_back(prog(t, c_top, c_top + .5)))
+    lit = lerp(1.0, .42, grey)
+    building('farmer', d, p_bot, -1.4, 1.4, e_back(prog(t, c_top + .3, c_top + .8)), lit); building('weaver', d, p_bot, 1.6, -1.6, e_back(prog(t, c_top + .4, c_top + .9)), lit)
+    out = img.resize((W, H), Image.LANCZOS)
+    if grey > 0:
+        a = np.asarray(out).astype(np.float32); g = a.mean(2, keepdims=True); m = np.zeros((H, W, 1), np.float32); m[1000:] = grey; a = a * (1 - m * .8) + g * .7 * m * .8
+        out = Image.fromarray(np.clip(a, 0, 255).astype(np.uint8))
+    lay = Image.new('RGBA', (W, H), (0, 0, 0, 0)); ImageDraw.Draw(lay).line((120, 930, W - 120, 930), fill=(120, 116, 106, 160), width=3); out.paste(lay, (0, 0), lay)
+    ka = e_out(prog(t, c_top, c_top + .5))
+    text(out, L('WEALTH AT THE TOP', 'పైన సంపద'), W / 2, 330, 46, AMBER, 'mm', 'head', ka, ST.sw, (0, 0, 0))
+    text(out, L('FARMERS · WEAVERS', 'రైతులు · నేతగాళ్లు'), W / 2, 1250, 42, CREAM, 'mm', 'head', e_out(prog(t, c_top + .4, c_top + .9)) * lerp(1, .7, grey), ST.sw, (0, 0, 0))
+    if base is not None: out = Image.blend(base, out.convert('RGB'), e_io(prog(t, c_top, c_top + .5)))
+    return out
+
+# ------------------------------------------------------------------ 4.10 famine 1630–32: map -> Mundy's page -> estimates -> the empty loom
+class AMap:
+    def __init__(self, lon0, lon1, latc):
+        self.s = W / ((lon1 - lon0) * gsmap.AX); self.x0 = gsmap.to_svg(lon0, 0)[0]; self.yc = gsmap.to_svg(0, latc)[1]; self.base = self._render()
+    def P(self, lon, lat):
+        x, y = gsmap.to_svg(lon, lat); return ((x - self.x0) * self.s, H / 2 + (y - self.yc) * self.s)
+    def _tr(self, q): return [((x - self.x0) * self.s, H / 2 + (y - self.yc) * self.s) for x, y in q]
+    def _render(self):
+        SS = 2; im = Image.new('RGB', (W * SS, H * SS), (150, 160, 156)); d = ImageDraw.Draw(im)
+        for f in gsmap.GEO['features']:
+            n = f['properties']['name']
+            if n == 'India': continue
+            for q in gsmap.polys(n):
+                if len(q) > 2: d.polygon([(x * SS, y * SS) for x, y in self._tr(q)], fill=(176, 164, 136), outline=(120, 108, 84))
+        for q in list(gsmap.india_polys()) + [q for n in ('Pakistan', 'Bangladesh') for q in gsmap.polys(n)]:
+            if len(q) > 2: d.polygon([(x * SS, y * SS) for x, y in self._tr([tuple(z) for z in q])], fill=(190, 174, 138), outline=(190, 174, 138), width=5)
+        im = im.resize((W, H), Image.LANCZOS); a = np.asarray(im).astype(np.float32) * VIG() * .85
+        return Image.fromarray(np.clip(a, 0, 255).astype(np.uint8))
+@functools.lru_cache(2)
+def FMAP(): return AMap(62.0, 92.0, 21.0)
+FAMINE = [(L('GUJARAT', 'గుజరాత్'), 72.0, 22.6, 150), (L('DECCAN', 'దక్కన్'), 76.5, 18.6, 190)]
+
+def s_famine(t, s0, s1):
+    c_yr = AT('4.10', '1630', '1630') - .1; c_m = AT('4.10', 'Peter', 'Peter') - .25; c_e = AT('4.10', 'Estimates', 'చనిపోయినవాళ్లు') - .2; c_w = AT('4.10', 'Many', 'ఎంతోమంది') - .2
+    if t < c_m:
+        m = FMAP(); img = m.base.copy(); lay = Image.new('RGBA', (W, H), (0, 0, 0, 0))
+        for k_, (n, lo, la, r) in enumerate(FAMINE):
+            kk = e_io(prog(t, c_yr + .2 + k_ * .7, c_yr + 1.6 + k_ * .7))
+            if kk <= 0: continue
+            x, y = m.P(lo, la); g = Image.new('RGBA', (W, H), (0, 0, 0, 0)); ImageDraw.Draw(g).ellipse((x - r, y - r * .9, x + r, y + r * .9), fill=(120, 24, 20, int(170 * kk)))
+            lay.alpha_composite(g.filter(ImageFilter.GaussianBlur(40)))
+        img.paste(lay, (0, 0), lay)
+        for k_, (n, lo, la, r) in enumerate(FAMINE):
+            kk = e_out(prog(t, c_yr + .5 + k_ * .7, c_yr + 1.0 + k_ * .7)); x, y = m.P(lo, la); text(img, n, x, y, 40, CREAM, 'mm', 'head', kk, 400, (0, 0, 0))
+        text(img, '1630 – 1632', W / 2, 330, 70, CREAM, 'mm', 'head', e_out(prog(t, c_yr, c_yr + .5)), ST.sw, (0, 0, 0))
+        small(img, L('FAMINE · APPROXIMATE REGIONS', 'కరువు · సుమారు ప్రాంతాలు'), W / 2, 398, 24, (220, 210, 190), 'mm', e_out(prog(t, c_yr + .3, c_yr + .8)))
+        return img
+    if t < c_e:
+        # Peter Mundy's own page, never enlarged: fit-width (0.56x) -> push towards the passage (0.9x)
+        u = prog(t, c_m, c_e); doc = NAT('MUNDY'); s = lerp(max(W / doc.width, H / doc.height), .9, e_io(prog(t, c_m + .6, c_e - .2))); sw, sh = W / s, H / s
+        cx = lerp(doc.width / 2, 520, e_io(prog(t, c_m + .6, c_e - .2))); cy = lerp(doc.height * .42, 1030, e_io(prog(t, c_m + .6, c_e - .2)))
+        cx = min(max(cx, sw / 2), doc.width - sw / 2); cy = min(max(cy, sh / 2), doc.height - sh / 2)
+        img = grade(doc.resize((W, H), Image.LANCZOS, box=(cx - sw / 2, cy - sh / 2, cx + sw / 2, cy + sh / 2)), .92)
+        k = e_io(prog(t, c_m + 1.6, c_m + 2.4))
+        if k > 0:   # underline "great dearth" in the page's own coordinates
+            X = lambda x: (x - (cx - sw / 2)) * s; Y = lambda y: (y - (cy - sh / 2)) * s
+            lay = Image.new('RGBA', (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(lay); d.rectangle((X(232), Y(1003), X(232 + (602 - 232) * k), Y(1062)), fill=(255, 196, 60, 80))
+            d.line((X(232), Y(1066), X(232 + (602 - 232) * k), Y(1066)), fill=(190, 60, 40, 230), width=6); img.paste(lay, (0, 0), lay)
+        credit(img, L("PETER MUNDY · TRAVELS, VOL. II, p.236 (HAKLUYT, 1914)\n'THAT GREAT DEARTH'", "పీటర్ మండీ · TRAVELS, VOL. II, p.236\n'THAT GREAT DEARTH' · 'ఆ మహా కరువు'"), 1560, e_out(prog(t, c_m, c_m + .5)))
+        chip(img, L('EYEWITNESS · 1630s', 'ప్రత్యక్ష సాక్షి · 1630లు'), W / 2, 330, 40, INK, CREAM, a=e_out(prog(t, c_m + .2, c_m + .7)))
+        return img
+    if t < c_w:
+        img = radial_bg(W, H, (30, 26, 22), (8, 8, 8), cy=.42, reach=.8).copy(); k = e_out(prog(t, c_e, c_e + .6))
+        small(img, L('DEATHS · FAMINE OF 1630–32', 'మరణాలు · 1630–32 కరువు'), W / 2, 700, 28, MUTED, 'mm', k)
+        text(img, L('ESTIMATES RUN INTO THE MILLIONS', 'పదుల లక్షల్లో · అంచనా'), W / 2, 820, 76, CREAM, 'mm', 'head', k, ST.sw - 40, None)
+        kc = e_out(prog(t, c_e + .6, c_e + 1.1)); s = L('HISTORICAL ESTIMATES · UNCERTAIN', 'చారిత్రక అంచనాలు · కచ్చితం కాదు')
+        chip(img, s, W / 2, 960, 30, (58, 54, 48), CREAM, a=kc)
+        return img
+    # the empty loom, at native pixels (1.0), slow pan; dust in the light
+    img = Image.new('RGB', (W, H), (8, 8, 8)); u = prog(t, c_w, s1 + 2.5)
+    panel_nat(img, 'G20', (0, 380, W, 1460), u, (.40, .52), (.58, .50), sc=1.0, radius=0, a=e_out(prog(t, c_w, c_w + .6)))
+    a = np.asarray(img).astype(np.float32)
+    rng = np.random.default_rng(4)
+    for i in range(50):
+        x = (rng.uniform(300, 900) + t * rng.uniform(-6, 6)) % W; y = (rng.uniform(400, 1400) - t * rng.uniform(4, 14)) % H
+        cv2.circle(a, (int(x), int(y)), int(rng.uniform(1, 3)), (230, 220, 190), -1)
+    img = Image.fromarray(np.clip(a, 0, 255).astype(np.uint8))
+    text(img, L('WEAVERS DIED… OR FLED', 'నేతగాళ్లు చనిపోయారు… లేదా వెళ్లిపోయారు'), W / 2, 320, 44 if not TE else 40, CREAM, 'mm', 'head', e_out(prog(t, c_w + .4, c_w + 1.0)), ST.sw, (0, 0, 0))
+    s_ = L('DRAMATIZED · ILLUSTRATION', 'నాటకీకరణ · చిత్రణ'); chip(img, s_, W - 70 - pick(s_, 'head', 22).getlength(s_) / 2 - 18, 1500, 22, (40, 38, 34), CREAM, a=e_out(prog(t, c_w, c_w + .6)))
+    return img
+
+# ------------------------------------------------------------------ TURN: the thread lifts from the loom -> land revenue -> the port -> sea routes
+def thread_line(img, pts, k, col=AMBER, w=7):
+    if k <= 0 or len(pts) < 2: return
+    seg = [math.dist(a, b) for a, b in zip(pts, pts[1:])]; tot = sum(seg) * k; out = [pts[0]]
+    for (a, b), s in zip(zip(pts, pts[1:]), seg):
+        if tot <= 0: break
+        f = min(1, tot / s); out.append((lerp(a[0], b[0], f), lerp(a[1], b[1], f))); tot -= s
+    lay = Image.new('RGBA', (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(lay); d.line(out, fill=col + (255,), width=w, joint='curve')
+    glw = lay.filter(ImageFilter.GaussianBlur(8)); img.paste(glw, (0, 0), glw); img.paste(lay, (0, 0), lay)
+
+def clip_frame(name, t0, t):
+    """frame of a silent Remotion clip (rendered at 1080x1920)"""
+    i = max(0, int((t - t0) * FPS)); p = ROOT + f'rem/{name}_{LANGV}.mp4'
+    cache = ROOT + f'rem/{name}_{LANGV}_frames/'
+    if not os.path.isdir(cache):
+        os.makedirs(cache, exist_ok=True); subprocess.run(['ffmpeg', '-v', 'error', '-i', p, cache + '%04d.png'], check=True)
+    n = len(os.listdir(cache)); return Image.open(cache + f'{min(n, i + 1):04d}.png').convert('RGB')
+
+def s_turn(t, s0, s1):
+    c_but = AT('TURN', 'But', 'కానీ') - .15; c_tr = AT('TURN', 'trade', 'సముద్రాల') - .25
+    if t < c_but:   # land -> treasury, once more, quickly; the thread rises from the loom
+        kx = e_io(prog(t, s0, s0 + .6))
+        if kx < 1:
+            img = Image.new('RGB', (W, H), (8, 8, 8)); panel_nat(img, 'G20', (0, 380, W, 1460), 1.0, (.58, .50), (.58, .50), sc=1.0, radius=0, a=1 - kx)
+            thread_line(img, [(540, 1100), (560, 800), (540, 400), (540, -40)], e_io(prog(t, s0 - .2, s0 + .6)))
+            return img
+        c = dict(drop=s0, farmer=s0 + .2, third=1e9, coll=1e9, cut=1e9, state=s0 + .6, army=1e9, bank=1e9, every=1e9)
+        SS = 2; Wd, Hd = W * SS, H * SS; U = 92 * SS; im = Image.new('RGBA', (Wd, Hd), DUSK + (255,)); d = ImageDraw.Draw(im)
+        p = P_iso(U, Wd / 2, 600 * SS); floor(d, p, Wd, Hd)
+        road(d, p, (0, 0), (GAP, GAP), e_io(prog(t, s0 + .4, s0 + 1.0))); building('farmer', d, p, 0, 0, 1.0); building('state', d, p, GAP, GAP, e_back(prog(t, s0 + .6, s0 + 1.1)))
+        img = im.resize((W, H), Image.LANCZOS); lay = Image.new('RGBA', (W, H), (0, 0, 0, 0)); dd = ImageDraw.Draw(lay)
+        a_ = [v / SS for v in p(0, 0, 1.2)]; b_ = [v / SS for v in p(GAP, GAP, 2.6)]; k = e_io(prog(t, s0 + .7, s0 + 1.6))
+        coin(dd, lerp(a_[0], b_[0], k), lerp(a_[1], b_[1], k) - math.sin(k * math.pi) * 60, 36); img.paste(lay, (0, 0), lay)
+        text(img, L('LAND → REVENUE', 'భూమి నుంచి ఆదాయం'), W / 2, 330, 52, CREAM, 'mm', 'head', e_out(prog(t, s0 + .3, s0 + .8)), ST.sw, (0, 0, 0))
+        thread_line(img, [(80, 1740), (300, 1660), (560, 1630), (1000, 1590)], e_io(prog(t, s0 + .6, c_but)))
+        return img
+    if t < c_tr + .5:   # the port: a real engraving, never enlarged
+        u = prog(t, c_but, c_tr + 2.0)
+        img = cover_nat('MASU', u, (.36, .5), (.50, .5), 1.0, 1.0, prescale=.62, k=.98)
+        ka = e_out(prog(t, c_but + .2, c_but + .7))
+        lay = Image.new('RGBA', (W, H), (0, 0, 0, 0)); ImageDraw.Draw(lay).ellipse((540 - 16, 860 - 16, 540 + 16, 860 + 16), fill=AMBER + (int(255 * ka),)); img.paste(lay, (0, 0), lay)
+        text(img, L('MACHILIPATNAM', 'మచిలీపట్నం'), W / 2, 800, 50, INK, 'mm', 'head', ka, ST.sw, None)
+        text(img, L("INDIA'S PORTS", 'మన రేవులు'), W / 2, 330, 54, INK, 'mm', 'head', ka, ST.sw, None)
+        thread_line(img, [(1000, 1900), (760, 1500), (560, 1100), (540, 880)], e_io(prog(t, c_but, c_tr)))
+        credit(img, L('MASULIPATAM · ENGRAVING, c.1750 · RIJKSMUSEUM', 'మచిలీపట్నం · చెక్కడపు చిత్రం, c.1750 · RIJKSMUSEUM'), 1560, ka)
+        if t >= c_tr: img = Image.blend(img, clip_frame('globe', c_tr, t), e_io(prog(t, c_tr, c_tr + .5)))
+        return img
+    return clip_frame('globe', c_tr, t)
+
+# ------------------------------------------------------------------ tease: clearly EARLIER · 1498
+PARCH = (226, 210, 172); GOLD_A = (196, 160, 92)        # restrained parchment / antique gold (with INK, CREAM, AMBER)
+def cantino_bg(t, t0, k=.62):
+    return cover_nat('CANTINO', prog(t, t0, t0 + 7), (.47, .5), (.53, .5), 1.0, 1.0, prescale=.5, k=k)
+def rule_frame(d, box, a):
+    x0, y0, x1, y1 = box; c1 = GOLD_A + (int(230 * a),); c2 = GOLD_A + (int(140 * a),)
+    d.rectangle(box, outline=c1, width=2); d.rectangle((x0 + 9, y0 + 9, x1 - 9, y1 - 9), outline=c2, width=1)
+    for cx, cy in ((x0, y0), (x1, y0), (x0, y1), (x1, y1)):      # small lozenges at the corners
+        d.polygon([(cx, cy - 9), (cx + 9, cy), (cx, cy + 9), (cx - 9, cy)], fill=GOLD_A + (int(255 * a),))
+def s_tease(t, s0, s1):
+    """archival date reveal on the 1502 map: the year rolls back 1632 -> 1498 while the cotton thread rewinds"""
+    c_q = AT('tease2', 'who', 'వాస్కో') - .2; t_roll0, t_roll1 = s0 + .1, c_q + .35
+    img = cantino_bg(t, s0, lerp(.62, .78, e_io(prog(t, c_q, c_q + .6))))
+    a_ = np.asarray(img).astype(np.float32); img = Image.fromarray(np.clip(a_ * np.array([1.0, .97, .90]) + np.array([6, 4, 0]), 0, 255).astype(np.uint8))   # parchment warmth
+    # the thread rewinds across the map towards the Indian coast (thin, no glow)
+    u = e_io(prog(t, t_roll0, t_roll1)); path = [(540, 912), (600, 1060), (720, 1230), (860, 1420), (1000, 1640)]   # winds back into the date
+    thread_line_plain(img, path, 1 - u)
+    # cartouche: ink plate, antique-gold double rule
+    up = e_io(prog(t, c_q + .1, c_q + .8)); cy = lerp(760, 470, up); sc = lerp(1.0, .78, up)
+    bw, bh = 600 * sc, 300 * sc; box = (W / 2 - bw / 2, cy - bh / 2, W / 2 + bw / 2, cy + bh / 2); ka = e_out(prog(t, s0, s0 + .5))
+    lay = Image.new('RGBA', (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(lay); d.rectangle(box, fill=INK + (int(215 * ka),)); rule_frame(d, box, ka); img.paste(lay, (0, 0), lay)
+    LY.reg('card', box, owner='EARLIER 1498')
+    kick = L('EARLIER', 'ఇంకా ముందు'); text(img, kick, W / 2, cy - 92 * sc, int(28 * sc) if not TE else int(34 * sc), AMBER, 'mm', 'monob', ka, None, None, track=0 if TE else int(8 * sc))
+    yr = int(round(lerp(1632, 1498, e_out(prog(t, t_roll0, t_roll1)))))
+    text(img, str(yr), W / 2, cy + 22 * sc, int(132 * sc), CREAM, 'mm', 'head', ka, None, None)
+    kl = e_out(prog(t, t_roll1 - .1, t_roll1 + .4)); lay = Image.new('RGBA', (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(lay)
+    d.line((W / 2 - 150 * sc * kl, cy + 105 * sc, W / 2 + 150 * sc * kl, cy + 105 * sc), fill=GOLD_A + (int(230 * kl),), width=2); img.paste(lay, (0, 0), lay)
+    # the question, on the same ink plate language
+    kq = e_out(prog(t, c_q + .4, c_q + .9))
+    if kq > .01:
+        qb = (90, 1080, W - 90, 1290); lay = Image.new('RGBA', (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(lay); d.rectangle(qb, fill=INK + (int(215 * kq),)); rule_frame(d, qb, kq); img.paste(lay, (0, 0), lay)
+        q = L('WHO SHOWED VASCO DA GAMA THE WAY?', 'వాస్కో డ గామాకి దారి చూపించింది ఎవరు?')
+        ls = wrap(q, 'head', 52, qb[2] - qb[0] - 90)
+        for i, ln in enumerate(ls): text(img, ln, W / 2, (qb[1] + qb[3]) / 2 + (i - (len(ls) - 1) / 2) * 64, 52, CREAM, 'mm', 'head', kq, qb[2] - qb[0] - 90, None)
+        LY.reg('card', qb, owner='question')
+    credit(img, L('CANTINO PLANISPHERE · 1502', 'కాంటినో ప్రపంచ పటం · 1502'), 1560, ka)
+    return img
+def thread_line_plain(img, pts, k, col=AMBER, w=5):
+    if k <= 0: return
+    seg = [math.dist(a, b) for a, b in zip(pts, pts[1:])]; tot = sum(seg) * k; out = [pts[0]]
+    for (a, b), s in zip(zip(pts, pts[1:]), seg):
+        if tot <= 0: break
+        f = min(1, tot / s); out.append((lerp(a[0], b[0], f), lerp(a[1], b[1], f))); tot -= s
+    big = Image.new('RGBA', (W * 2, H * 2), (0, 0, 0, 0)); ImageDraw.Draw(big).line([(x * 2, y * 2) for x, y in out], fill=col + (235,), width=w * 2, joint='curve')
+    lay = big.resize((W, H), Image.LANCZOS); img.paste(lay, (0, 0), lay)
+
+# ------------------------------------------------------------------ remaining scenes (built after preview approval)
+def _todo(name):
+    def f(t, s0, s1):
+        img = radial_bg(W, H, (30, 28, 24), (8, 8, 8)).copy(); small(img, f'[{name}]', W / 2, H / 2, 40, MUTED); return img
+    return f
+for _n in ('hook', 'madanna', 'virji', 'needeach', 'kingdoms', 'akbar', 'system'): globals()['s_' + _n] = _todo(_n)
+ZOOM = set()
+
+def render(t):
+    LY.reset(); scn, s0, s1 = scene_at(t)
+    if scn == 'loop':
+        img = s_loop(t, s0, s1); captions(img, t, 'loop'); return img
+    if scn.startswith('cartoon'):
+        q = {'cartoon1': 'Q1', 'cartoon2': 'Q2', 'cartoon3': 'Q3'}[scn]; img = cartoon(t, s0, [('CHELLI', q)])
+    elif scn == 'slide': img = s_slide(t, s0, s1)
+    else: img = globals()['s_' + scn](t, s0, s1)
+    img = img.convert('RGB'); overlays(img, t, scn); captions(img, t, scn); return img
