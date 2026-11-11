@@ -1,6 +1,6 @@
 # Human review sign-off: <title> (<language> · <platform>)
 
-Record only what a person actually did. A result counts only with a reviewer and a date; generating a contact sheet is not an inspection. Leave a row as NOT DONE until it has been done. `pipeline/qc/qc_summary.py` reads this table and keeps the overall result INCOMPLETE while any row is outstanding (→ QC-04).
+Record only what a person actually did. A result counts only with a reviewer and a date; generating a contact sheet is not an inspection. Leave a row as NOT DONE until it has been done. Use N/A only when a check doesn't apply to this format, with a reviewer, a date and the reason in the notes. Never delete a row. `pipeline/qc/qc_summary.py` reads this table and keeps the overall result INCOMPLETE while any row is outstanding (→ QC-04).
 
 | ID | Human check | Rule | Result (PASS / FAIL / NOT DONE) | Reviewer | Date | Notes / evidence |
 |---|---|---|---|---|---|---|

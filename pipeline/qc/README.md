@@ -17,7 +17,7 @@ Every checker works on any Why? project: 9:16 Shorts (1080×1920) and 16:9 films
 | `check_rules.py` | The playbook Markdown | One owner per rule ID; index ranges complete; citations resolve; no retired wording (`retired_phrases.txt`, with benign hits in `retired_allow.txt`); `history.md` is never loaded; the migration record is complete | Whether a rule is wise. That is the user's approval |
 
 ## Human review and the final summary
-`qc_summary.py QC_DIR --signoff qc_signoff.md` combines every tool report with the human sign-off (`playbook/templates/qc_signoff.md`). An automated NOT PERFORMED item stays NOT PERFORMED unless the matching human row is signed PASS with a reviewer and a date. A row without both does not count. Overall: FAIL, INCOMPLETE, or PASS only when every automated check passed or is covered and every human row is signed. Contact sheets are aids, not inspections.
+`qc_summary.py QC_DIR --type short|long --signoff qc_signoff.md` combines every tool report with the human sign-off (`playbook/templates/qc_signoff.md`). It first checks that every **required** report exists (Short: `qc_video` for EN_YT, EN_IG, TE_YT and TE_IG; two `qc_layout`; `check_exports`, `check_copy`, `check_assets`, `check_sources`. Film: `qc_video` for EN and TE, plus the same others) and that rows H1–H13 are all present. Anything missing keeps the result INCOMPLETE, and a fully signed form never makes up for missing reports. Another production type needs `--manifest` with a written justification. A row may be N/A only with a reviewer, a date and a reason. An automated NOT PERFORMED item stays NOT PERFORMED unless the matching human row is signed PASS with a reviewer and a date. A row without both does not count. Overall: FAIL, INCOMPLETE, or PASS only when every automated check passed or is covered and every human row is signed. Contact sheets are aids, not inspections.
 
 ## Typical use (per video)
 ```
@@ -27,7 +27,7 @@ python3 pipeline/qc/qc_layout.py --render-script pipeline/render.py --start 0 --
 python3 pipeline/qc/check_copy.py GS5_Short_Post_Copy.md
 python3 pipeline/qc/check_assets.py asset_register.md --root .
 python3 pipeline/qc/check_sources.py script_v3.md --brief production_brief.md
-python3 pipeline/qc/qc_summary.py qc --signoff qc_signoff.md --out QC_SUMMARY.md
+python3 pipeline/qc/qc_summary.py qc --type short --signoff qc_signoff.md --out QC_SUMMARY.md
 ```
 Run `qc_layout.py` on previews or stills before the full render (WF-02): that is where it saves the most rework.
 

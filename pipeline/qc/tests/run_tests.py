@@ -165,6 +165,8 @@ Short recap. Question? Comment your why. #WhyEveryQuestionHasAStory #history #in
         open(f'{T}/{name}.md', 'w').write('# Asset register\n\n' + hdr + ''.join(
             f'| S{i} | {x} | test source | test licence |  |  |  |  | scene |\n' for i, x in enumerate(assets)))
     sreg('snd_good', ['knock', 'amb/village.mp3', 'lib/knock.wav', 'sfx/amb/village.mp3'])
+    sreg('real_restricted', ['sfx_cannon_distant', 'amb_fire', 'amb_crowd', 'amb_drums'])
+    sreg('real_approved', ['amb_village', 'amb/court.mp3', 'harbour_waves.wav', 'sfx_quill', 'impact_big', 'riser.wav']); sreg('real_stale', ['lib/riser.wav'])
     sreg('snd_missing_entry', ['amb/nope.mp3']); sreg('snd_missing_file', ['gone']); sreg('snd_uncat', ['amb/extra.mp3']); sreg('snd_unknown', ['amb_fire'])
     # ---- limits come from platform_rules.md: a copy with a 3-hashtag limit must fail a 4-hashtag caption
     pr = open(os.path.join(REPO, 'playbook/platform_rules.md')).read().replace('"ig_hashtags_max":      {"value": 5,', '"ig_hashtags_max":      {"value": 3,')
@@ -217,6 +219,10 @@ Short recap. Question? Comment your why. #WhyEveryQuestionHasAStory #history #in
         ('sounds: catalogued but file missing', check_assets, [f'{T}/snd_missing_file.md', '--catalog', f'{SX}/catalog.json', '--sfx-root', SX], 'FAIL', {'sounds:': 'FAIL'}),
         ('sounds: file present but uncatalogued', check_assets, [f'{T}/snd_uncat.md', '--catalog', f'{SX}/catalog.json', '--sfx-root', SX], 'INCOMPLETE', {'sounds:': 'REVIEW'}),
         ('sounds: provenance UNKNOWN, not cleared', check_assets, [f'{T}/snd_unknown.md', '--catalog', f'{SX}/catalog.json', '--sfx-root', SX], 'FAIL', {'sounds:': 'FAIL'}),
+        ('sounds (real catalog): the 4 restricted sounds cannot be used for new work', check_assets, [f'{T}/real_restricted.md'], 'FAIL', {'sounds:': 'FAIL'}),
+        ('sounds (real catalog): approved and corrected-path sounds resolve', check_assets, [f'{T}/real_approved.md'], 'INCOMPLETE', {'sounds:': 'PASS'}),
+        ('sounds (real catalog): the retired lib/ path form is rejected', check_assets, [f'{T}/real_stale.md'], 'FAIL', {'sounds:': 'FAIL'}),
+        ('catalog integrity (real catalog): every entry has its file, no stale paths', check_assets, [f'{T}/none.md', '--catalog-integrity'], 'INCOMPLETE', {'catalog integrity': 'PASS'}),
         ('sounds: catalog integrity finds the missing file', check_assets, [f'{T}/snd_good.md', '--catalog', f'{SX}/catalog.json', '--sfx-root', SX, '--catalog-integrity'], 'FAIL', {'catalog integrity': 'FAIL'}),
         ('sources: every claim registered', check_sources, [f'{T}/script.md', '--brief', f'{T}/brief_full.md'], 'INCOMPLETE', {'register entry': 'PASS'}),
         ('sources: claim C2 missing from register', check_sources, [f'{T}/script.md', '--brief', f'{T}/brief_gap.md'], 'FAIL', {'register entry': 'FAIL'}),
@@ -225,9 +231,7 @@ Short recap. Question? Comment your why. #WhyEveryQuestionHasAStory #history #in
         ('rules: duplicate rule ID', check_rules, ['--root', R2], 'FAIL', {'one owner': 'FAIL'}),
         ('rules: retired wording reintroduced', check_rules, ['--root', R3], 'FAIL', {'retired wording': 'FAIL'}),
     ]
-    SUMS = [('summary: no human sign-off', None, 'INCOMPLETE'), ('summary: partial sign-off', f'{T}/signoff_partial.md', 'INCOMPLETE'),
-            ('summary: every row signed PASS', f'{T}/signoff_full.md', 'PASS'), ('summary: a human FAIL', f'{T}/signoff_fail.md', 'FAIL'),
-            ('summary: PASS without reviewer/date does not count', f'{T}/signoff_noreviewer.md', 'INCOMPLETE')]
+    SUMS = []   # (name, qc dir, type, sign-off, expected); built below from synthetic reports
     if gs1: cases.append(('copy: GS 1/6 original (shipped 30 hashtags; known defect)', check_copy, [f'{T}/copy_gs1_original.md'], 'FAIL', {'IG hashtags': 'FAIL'}))
     rows, fails = [], 0
     for i, (name, tool, argv, ov, st) in enumerate(cases):
@@ -235,11 +239,45 @@ Short recap. Question? Comment your why. #WhyEveryQuestionHasAStory #history #in
         ok, got_ov, got = expect(res, ov, st)
         fails += not ok
         rows.append(f"| {'ok' if ok else 'MISMATCH'} | {name} | expected {ov or 'any'} | got {got_ov} | " + '; '.join(f'{k}: {v}' for k, v in got.items())[:300].replace('|', '/') + ' |')
-    QD = os.path.join(T, 'summary_qc'); os.makedirs(QD, exist_ok=True)
-    run(check_assets, [f'{T}/assets_good.md'], QD)   # one automated report with a NOT PERFORMED item (licences -> H11)
-    for name, so, exp in SUMS:
+    def fake_set(d, typ, drop=None):
+        """a complete set of automated reports for a production type (all PASS), optionally without one"""
+        vids = ['EN_YT', 'EN_IG', 'TE_YT', 'TE_IG'] if typ == 'short' else ['EN', 'TE']
+        items = [('qc_video', f'X_{v}.mp4') for v in vids] + [('qc_layout', 'layout_en.json'), ('qc_layout', 'layout_te.json'),
+                 ('check_exports', 'X'), ('check_copy', 'X_Post_Copy.md'), ('check_assets', 'asset_register.md'), ('check_sources', 'script.md')]
+        os.makedirs(d, exist_ok=True)
+        for i, (tool, target) in enumerate(items):
+            if drop and target == drop: continue
+            sub = os.path.join(d, f'{i:02d}'); os.makedirs(sub, exist_ok=True)
+            json.dump(dict(tool=tool, target=target, overall='PASS', checks=[dict(check='synthetic', status='PASS', detail='', rule=None)]),
+                      open(os.path.join(sub, f'{tool}.json'), 'w'))
+        return d
+    QS = fake_set(os.path.join(T, 'qs_short'), 'short'); QL = fake_set(os.path.join(T, 'qs_long'), 'long')
+    QM = fake_set(os.path.join(T, 'qs_missing'), 'short', drop='X_EN_IG.mp4'); QE = os.path.join(T, 'qs_empty'); os.makedirs(QE, exist_ok=True)
+    open(f'{T}/signoff_noH7.md', 'w').write('\n'.join(l for l in signed.splitlines() if not l.startswith('| H7 ')) + '\n')
+    open(f'{T}/signoff_na_ok.md', 'w').write(signed.replace('| H6 | Telugu naturalness (voice, captions, on-screen text) | BR-06 | PASS | Sandeep | 2026-11-12 | checked |',
+        '| H6 | Telugu naturalness (voice, captions, on-screen text) | BR-06 | N/A | Sandeep | 2026-11-12 | English-only test video |'))
+    open(f'{T}/signoff_na_noreason.md', 'w').write(signed.replace('| H6 | Telugu naturalness (voice, captions, on-screen text) | BR-06 | PASS | Sandeep | 2026-11-12 | checked |',
+        '| H6 | Telugu naturalness (voice, captions, on-screen text) | BR-06 | N/A | Sandeep | 2026-11-12 | |'))
+    json.dump(dict(required=dict(qc_video=['EN_YT']), justification=''), open(f'{T}/manifest_nojust.json', 'w'))
+    SUMS = [('summary: empty automated QC dir + fully signed form', QE, 'short', f'{T}/signoff_full.md', 'INCOMPLETE'),
+            ('summary: one required automated report missing (EN_IG)', QM, 'short', f'{T}/signoff_full.md', 'INCOMPLETE'),
+            ('summary: one required human row absent (H7)', QS, 'short', f'{T}/signoff_noH7.md', 'INCOMPLETE'),
+            ('summary: complete reports + every row signed (Short)', QS, 'short', f'{T}/signoff_full.md', 'PASS'),
+            ('summary: complete reports + every row signed (16:9 film)', QL, 'long', f'{T}/signoff_full.md', 'PASS'),
+            ('summary: N/A with reviewer, date and reason', QS, 'short', f'{T}/signoff_na_ok.md', 'PASS'),
+            ('summary: N/A without a reason does not count', QS, 'short', f'{T}/signoff_na_noreason.md', 'INCOMPLETE'),
+            ('summary: no production type given', QS, None, f'{T}/signoff_full.md', 'INCOMPLETE'),
+            ('summary: custom manifest without justification', QS, 'manifest', f'{T}/signoff_full.md', 'INCOMPLETE'),
+            ('summary: no human sign-off', QS, 'short', None, 'INCOMPLETE'),
+            ('summary: partial sign-off', QS, 'short', f'{T}/signoff_partial.md', 'INCOMPLETE'),
+            ('summary: a human FAIL', QS, 'short', f'{T}/signoff_fail.md', 'FAIL'),
+            ('summary: PASS without reviewer/date does not count', QS, 'short', f'{T}/signoff_noreviewer.md', 'INCOMPLETE')]
+    for name, qd, typ, so, exp in SUMS:
         outp = os.path.join(T, f'summary_{len(rows)}.md')
-        qc_summary.main([QD, '--out', outp] + (['--signoff', so] if so else []))
+        args = [qd, '--out', outp] + (['--signoff', so] if so else [])
+        if typ == 'manifest': args += ['--manifest', f'{T}/manifest_nojust.json']
+        elif typ: args += ['--type', typ]
+        qc_summary.main(args)
         got = re.search(r'\*\*Overall: (\w+)', open(outp).read()).group(1)
         ok = got == exp; fails += not ok
         rows.append(f"| {'ok' if ok else 'MISMATCH'} | {name} | expected {exp} | got {got} | (qc_summary) |")

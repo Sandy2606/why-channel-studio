@@ -100,3 +100,36 @@ A record, not instructions. All runs used the `pro-system` branch in this worksp
 1. Audio-sync windows could extend into the deliberately different ending (now always inside the body).
 2. A window of exactly 1 s was rejected as "no audio" (off-by-one).
 3. `--catalog-integrity` was skipped when a video had no register (now runs independently).
+
+## 7. Final safeguards (after the user's catalog decision)
+**Self-test: 63 of 63 cases behaved as expected** (`pipeline/qc/tests/LAST_RUN.md`).
+
+**Required-report manifest.** `qc_summary.py` now requires `--type short|long`, or a `--manifest` with a written justification. Before it can report PASS, every required automated report and human rows H1–H13 must be present.
+- **Short:** `qc_video` for EN_YT, EN_IG, TE_YT and TE_IG; two `qc_layout`; `check_exports`, `check_copy`, `check_assets`, `check_sources`.
+- **Film:** `qc_video` for EN and TE, plus the same others.
+- **N/A rows:** a row may be N/A only with a reviewer, a date and a reason.
+
+**New self-test cases:**
+- empty automated QC folder plus a fully signed form → INCOMPLETE;
+- one required report missing (EN_IG) → INCOMPLETE;
+- human row H7 absent → INCOMPLETE;
+- complete Short set plus a fully signed form → PASS;
+- complete film set plus a fully signed form → PASS;
+- N/A with a reason → PASS; N/A without a reason → INCOMPLETE;
+- no production type → INCOMPLETE;
+- a custom manifest without a justification → INCOMPLETE.
+
+**Production sound-loader regression (before committing the catalog):**
+- **GS 4/6 mixer, run unchanged except for the catalog file** (in scratch, with the project untouched):
+  - the sound-effects tracks are byte-identical with the old and new catalog (EN and TE);
+  - the final mixes `mix_en_yt.wav` and `mix_te_yt.wav` are byte-identical to the delivered ones (md5 fe827eacb254… and 0fad4bb1b00b…).
+- **All Shorts mixers (13 `put()` keys across every video folder):** they load `sfx/<key>.wav`; every `hit_at` is identical, and every existing entry is unchanged except its `file` field.
+- **Diwali long mixer (loads the file's basename):** 0 entries change their resolved file.
+- **The GS film's final sound effects (`film3/mix_events.py`)** load `sfx/<filename>` directly and don't use the catalog's file field, so the delivered film is unaffected.
+- **One behaviour change, flagged:** the Nov 6 narration-stage tool `videos/2026-11-08_long_golden_sparrow_s1/tools/assemble.py` loads `sfx/<file>`. With the old catalog only 1 of its 9 structural sounds resolved; its `load()` silently returns empty audio for a missing file. With the corrected catalog, all 9 resolve. Re-running that superseded tool would now include sounds it was silently dropping. The delivered film doesn't come from it.
+
+**Catalog applied on `pro-system`:** `sfx/catalog.json` is the approved proposal (byte-identical to `2026-11-10_sfx_catalog_proposed.json`).
+- 74 entries, every one with an existing file (catalog integrity PASS) and no stale paths.
+- The 4 restricted sounds (`sfx_cannon_distant` PENDING; `amb_fire`, `amb_crowd`, `amb_drums` UNKNOWN) carry `approved_for_new_work: false`, so `check_assets` FAILs them in any new register.
+- The retired `lib/` path form is rejected.
+- No audio file was added, changed, renamed or deleted.

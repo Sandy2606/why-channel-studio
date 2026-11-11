@@ -1,6 +1,6 @@
 # pipeline/qc self-test
 
-51 of 51 cases behaved as expected.
+63 of 63 cases behaved as expected.
 
 | Result | Case | Expected | Got | Check statuses |
 |---|---|---|---|---|
@@ -42,6 +42,10 @@
 | ok | sounds: catalogued but file missing | expected FAIL | got FAIL | source and licence recorded: PASS; image scale <= 1.0 (no enlargement): PASS; AI and composite images labelled: PASS; sounds: catalogued, file present, cleared for new work: FAIL; licences are actually correct: NOT PERFORMED |
 | ok | sounds: file present but uncatalogued | expected INCOMPLETE | got INCOMPLETE | source and licence recorded: PASS; image scale <= 1.0 (no enlargement): PASS; AI and composite images labelled: PASS; sounds: catalogued, file present, cleared for new work: REVIEW; licences are actually correct: NOT PERFORMED |
 | ok | sounds: provenance UNKNOWN, not cleared | expected FAIL | got FAIL | source and licence recorded: PASS; image scale <= 1.0 (no enlargement): PASS; AI and composite images labelled: PASS; sounds: catalogued, file present, cleared for new work: FAIL; licences are actually correct: NOT PERFORMED |
+| ok | sounds (real catalog): the 4 restricted sounds cannot be used for new work | expected FAIL | got FAIL | source and licence recorded: PASS; image scale <= 1.0 (no enlargement): PASS; AI and composite images labelled: PASS; sounds: catalogued, file present, cleared for new work: FAIL; licences are actually correct: NOT PERFORMED |
+| ok | sounds (real catalog): approved and corrected-path sounds resolve | expected INCOMPLETE | got INCOMPLETE | source and licence recorded: PASS; image scale <= 1.0 (no enlargement): PASS; AI and composite images labelled: PASS; sounds: catalogued, file present, cleared for new work: PASS; licences are actually correct: NOT PERFORMED |
+| ok | sounds (real catalog): the retired lib/ path form is rejected | expected FAIL | got FAIL | source and licence recorded: PASS; image scale <= 1.0 (no enlargement): PASS; AI and composite images labelled: PASS; sounds: catalogued, file present, cleared for new work: FAIL; licences are actually correct: NOT PERFORMED |
+| ok | catalog integrity (real catalog): every entry has its file, no stale paths | expected INCOMPLETE | got INCOMPLETE | catalog integrity (every entry has its file): PASS; asset register: NOT PERFORMED |
 | ok | sounds: catalog integrity finds the missing file | expected FAIL | got FAIL | catalog paths match the repository layout: REVIEW; catalog integrity (every entry has its file): FAIL; source and licence recorded: PASS; image scale <= 1.0 (no enlargement): PASS; AI and composite images labelled: PASS; sounds: catalogued, file present, cleared for new work: PASS; licences are actu |
 | ok | sources: every claim registered | expected INCOMPLETE | got INCOMPLETE | every marked claim has a register entry: PASS; entries have a source and a check date: PASS; sources actually support the claims: NOT PERFORMED |
 | ok | sources: claim C2 missing from register | expected FAIL | got FAIL | every marked claim has a register entry: FAIL; entries have a source and a check date: PASS; sources actually support the claims: NOT PERFORMED |
@@ -50,8 +54,16 @@
 | ok | rules: duplicate rule ID | expected FAIL | got FAIL | one owner per rule; index complete: FAIL; citations resolve: PASS; no retired wording outside the record files: PASS; history never loaded; templates hold no rules: PASS; migration record complete: PASS; machine-readable platform limits parse and cite existing rules: PASS |
 | ok | rules: retired wording reintroduced | expected FAIL | got FAIL | one owner per rule; index complete: PASS; citations resolve: PASS; no retired wording outside the record files: FAIL; history never loaded; templates hold no rules: PASS; migration record complete: PASS; machine-readable platform limits parse and cite existing rules: PASS |
 | ok | copy: GS 1/6 original (shipped 30 hashtags; known defect) | expected FAIL | got FAIL | English YT title length: PASS; English YT tags: REVIEW; English YT description has sources and credits: PASS; English YT brand hashtag: PASS; Telugu YT title length: PASS; Telugu YT tags: REVIEW; Telugu YT description has sources and credits: PASS; Telugu YT brand hashtag: REVIEW; English IG caption |
+| ok | summary: empty automated QC dir + fully signed form | expected INCOMPLETE | got INCOMPLETE | (qc_summary) |
+| ok | summary: one required automated report missing (EN_IG) | expected INCOMPLETE | got INCOMPLETE | (qc_summary) |
+| ok | summary: one required human row absent (H7) | expected INCOMPLETE | got INCOMPLETE | (qc_summary) |
+| ok | summary: complete reports + every row signed (Short) | expected PASS | got PASS | (qc_summary) |
+| ok | summary: complete reports + every row signed (16:9 film) | expected PASS | got PASS | (qc_summary) |
+| ok | summary: N/A with reviewer, date and reason | expected PASS | got PASS | (qc_summary) |
+| ok | summary: N/A without a reason does not count | expected INCOMPLETE | got INCOMPLETE | (qc_summary) |
+| ok | summary: no production type given | expected INCOMPLETE | got INCOMPLETE | (qc_summary) |
+| ok | summary: custom manifest without justification | expected INCOMPLETE | got INCOMPLETE | (qc_summary) |
 | ok | summary: no human sign-off | expected INCOMPLETE | got INCOMPLETE | (qc_summary) |
 | ok | summary: partial sign-off | expected INCOMPLETE | got INCOMPLETE | (qc_summary) |
-| ok | summary: every row signed PASS | expected PASS | got PASS | (qc_summary) |
 | ok | summary: a human FAIL | expected FAIL | got FAIL | (qc_summary) |
 | ok | summary: PASS without reviewer/date does not count | expected INCOMPLETE | got INCOMPLETE | (qc_summary) |

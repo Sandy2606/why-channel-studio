@@ -1,6 +1,6 @@
 {
  "impact_big": {
-  "file": "lib/impact_big.wav",
+  "file": "impact_big.wav",
   "source": "Big cinematic impact",
   "dur": 7.93,
   "use": "chapter changes, big reveals",
@@ -8,7 +8,7 @@
   "hit_at": 2.17
  },
  "impact_trailer": {
-  "file": "lib/impact_trailer.wav",
+  "file": "impact_trailer.wav",
   "source": "Movie trailer epic impact",
   "dur": 4.87,
   "use": "the single biggest reveal of a video (use once)",
@@ -16,21 +16,21 @@
   "hit_at": 0.93
  },
  "sub_knock": {
-  "file": "lib/sub_knock.wav",
+  "file": "sub_knock.wav",
   "source": "Knocking sub bass",
   "dur": 0.62,
   "use": "numbers/stats landing, list beats (felt, not heard)",
   "note": ""
  },
  "heartbeat": {
-  "file": "lib/heartbeat.wav",
+  "file": "heartbeat.wav",
   "source": "Human single heart beat",
   "dur": 1.1,
   "use": "tension 1–2 s before a reveal (repeat 2–3x)",
   "note": ""
  },
  "riser": {
-  "file": "lib/riser.wav",
+  "file": "riser.wav",
   "source": "Cinematic trailer riser",
   "dur": 2.58,
   "use": "build into a reveal; ends at the hit",
@@ -38,42 +38,42 @@
   "hit_at": 2.53
  },
  "woosh_deep": {
-  "file": "lib/woosh_deep.wav",
+  "file": "woosh_deep.wav",
   "source": "Deep air woosh",
   "dur": 2.98,
   "use": "transitions, maps/cards moving fast",
   "note": ""
  },
  "swoosh_slow": {
-  "file": "lib/swoosh_slow.wav",
+  "file": "swoosh_slow.wav",
   "source": "Slow sweeping swoosh",
   "dur": 5.5,
   "use": "slow camera moves, timeline travel",
   "note": ""
  },
  "page_turn": {
-  "file": "lib/page_turn.wav",
+  "file": "page_turn.wav",
   "source": "Page turn single",
   "dur": 0.45,
   "use": "new chapter / next story",
   "note": ""
  },
  "paper_slide": {
-  "file": "lib/paper_slide.wav",
+  "file": "paper_slide.wav",
   "source": "Paper slide",
   "dur": 1.09,
   "use": "cards, labels, photos sliding in",
   "note": ""
  },
  "tick": {
-  "file": "lib/tick.wav",
+  "file": "tick.wav",
   "source": "Clock ticker single",
   "dur": 0.07,
   "use": "one timeline step / counter tick",
   "note": ""
  },
  "ticker_run": {
-  "file": "lib/ticker_run.wav",
+  "file": "ticker_run.wav",
   "source": "Clock ticker single",
   "dur": 0.85,
   "use": "years rolling on a timeline",
@@ -84,7 +84,7 @@
   "sub drop: using sub_knock"
  ],
  "typing_run": {
-  "file": "lib/typing_run.wav",
+  "file": "typing_run.wav",
   "source": "Mixkit keyboard typing 1386",
   "license": "Mixkit Free Licence",
   "dur": 26.31,
@@ -93,7 +93,7 @@
   "hit_at": 14.87
  },
  "key_press": {
-  "file": "lib/key_press.wav",
+  "file": "key_press.wav",
   "source": "Mixkit single key 2533",
   "license": "Mixkit Free Licence",
   "dur": 0.35,
@@ -102,7 +102,7 @@
   "hit_at": 0.0
  },
  "mouse_click": {
-  "file": "lib/mouse_click.wav",
+  "file": "mouse_click.wav",
   "source": "Mixkit mouse click close 1113",
   "license": "Mixkit Free Licence",
   "dur": 0.35,
@@ -111,7 +111,7 @@
   "hit_at": 0.01
  },
  "paper_drop": {
-  "file": "lib/paper_drop.wav",
+  "file": "paper_drop.wav",
   "source": "Mixkit newspaper falling 386",
   "license": "Mixkit Free Licence",
   "dur": 0.61,
@@ -120,7 +120,7 @@
   "hit_at": 0.21
  },
  "marker": {
-  "file": "lib/marker.wav",
+  "file": "marker.wav",
   "source": "Mixkit pen marker line 2998",
   "license": "Mixkit Free Licence",
   "dur": 1.24,
@@ -129,7 +129,7 @@
   "hit_at": 0.04
  },
  "scribble": {
-  "file": "lib/scribble.wav",
+  "file": "scribble.wav",
   "source": "Mixkit writing scribble 2369",
   "license": "Mixkit Free Licence",
   "dur": 1.19,
@@ -138,7 +138,7 @@
   "hit_at": 0.17
  },
  "shutter": {
-  "file": "lib/shutter.wav",
+  "file": "shutter.wav",
   "source": "Mixkit Nikon shutter 1434",
   "license": "Mixkit Free Licence",
   "dur": 0.4,
@@ -147,7 +147,7 @@
   "hit_at": 0.04
  },
  "boom_impact": {
-  "file": "lib/boom_impact.wav",
+  "file": "boom_impact.wav",
   "source": "Mixkit movie impact intro 2902",
   "license": "Mixkit Free Licence",
   "dur": 5.99,
@@ -156,7 +156,7 @@
   "hit_at": 1.3
  },
  "boom_distant": {
-  "file": "lib/boom_distant.wav",
+  "file": "boom_distant.wav",
   "source": "Mixkit distant explosion 1690",
   "license": "Mixkit Free Licence",
   "dur": 5.51,
@@ -165,7 +165,7 @@
   "hit_at": 0.44
  },
  "riser_synth": {
-  "file": "lib/riser_synth.wav",
+  "file": "riser_synth.wav",
   "source": "Mixkit cinematic synth riser 645",
   "license": "Mixkit Free Licence",
   "dur": 9.34,
@@ -174,7 +174,7 @@
   "hit_at": 3.87
  },
  "woosh_tunnel": {
-  "file": "lib/woosh_tunnel.wav",
+  "file": "woosh_tunnel.wav",
   "source": "Mixkit tunnel reverb woosh 1486",
   "license": "Mixkit Free Licence",
   "dur": 6.75,
@@ -183,7 +183,7 @@
   "hit_at": 0.62
  },
  "woosh_air": {
-  "file": "lib/woosh_air.wav",
+  "file": "woosh_air.wav",
   "source": "Mixkit air woosh 1489",
   "license": "Mixkit Free Licence",
   "dur": 2.32,
@@ -192,7 +192,7 @@
   "hit_at": 0.71
  },
  "heartbeat_slow": {
-  "file": "lib/heartbeat_slow.wav",
+  "file": "heartbeat_slow.wav",
   "source": "Mixkit slow heartbeat 494",
   "license": "Mixkit Free Licence",
   "dur": 4.0,
@@ -201,7 +201,7 @@
   "hit_at": 0.45
  },
  "stamp": {
-  "file": "lib/stamp.wav",
+  "file": "stamp.wav",
   "source": "Freesound 514486 \"Office stamp\" by whammy",
   "license": "CC0",
   "dur": 1.03,
@@ -210,7 +210,7 @@
   "hit_at": 0.02
  },
  "pin_push": {
-  "file": "lib/pin_push.wav",
+  "file": "pin_push.wav",
   "source": "Freesound 446634 \"ThumbTack\" by Nicolas4677",
   "license": "CC0",
   "dur": 0.5,
@@ -219,7 +219,7 @@
   "hit_at": 0.27
  },
  "map_unfold": {
-  "file": "lib/map_unfold.wav",
+  "file": "map_unfold.wav",
   "source": "Freesound 447931 \"Unfold a map\" by Breviceps",
   "license": "CC0",
   "dur": 1.42,
@@ -228,7 +228,7 @@
   "hit_at": 0.6
  },
  "polaroid": {
-  "file": "lib/polaroid.wav",
+  "file": "polaroid.wav",
   "source": "Freesound 444682 \"taking a Polaroid photo\" by larspriebe",
   "license": "CC0",
   "dur": 3.41,
@@ -454,5 +454,190 @@
   "note": "LOUD sustained 0.5-4.5 s, not soft: lowpass ~2 kHz + -14 dB for distance",
   "hit_at": 0.65,
   "source": "Mixkit (free licence, no attribution), Diwali pack Oct 30 2026"
+ },
+ "amb_village": {
+  "file": "amb/village.mp3",
+  "source": "Pixabay 219221 \"Indian Village Ambience\" (ranjit_foley)",
+  "dur": 293.4,
+  "use": "village bed: distant voices, birds, rural life",
+  "note": "",
+  "license": "Pixabay Content License",
+  "provenance": "verified 2026-11-10: audio envelope matches sfx/pixabay_gs/ranjit_foley-indian-village-ambience-219221.mp3 (r=1.0, offset 0.0 s); source and licence recorded in sfx/golden_sparrow_sfx_sources.txt"
+ },
+ "amb_birds_cattle": {
+  "file": "amb/birds_cattle.mp3",
+  "source": "Pixabay 23682 \"amb-birds-cowbells_saranda\"",
+  "dur": 111.31,
+  "use": "morning countryside: birds, distant cowbells",
+  "note": "",
+  "license": "Pixabay Content License",
+  "provenance": "verified 2026-11-10: audio envelope matches sfx/pixabay_gs/freesound_community-amb-birds-cowbells_saranda-23682.mp3 (r=1.0, offset 0.0 s); source and licence recorded in sfx/golden_sparrow_sfx_sources.txt"
+ },
+ "amb_court": {
+  "file": "amb/court.mp3",
+  "source": "Pixabay 17513 \"hall_ambience\" (high-passed 250 Hz)",
+  "dur": 222.14,
+  "use": "court or palace hall murmur",
+  "note": "high-passed copy (lower correlation expected)",
+  "license": "Pixabay Content License",
+  "provenance": "verified 2026-11-10: audio envelope matches sfx/pixabay_gs/freesound_community-hall_ambience-17513.mp3 (r=0.895, offset 0.0 s); source and licence recorded in sfx/golden_sparrow_sfx_sources.txt"
+ },
+ "amb_bazaar": {
+  "file": "amb/bazaar.mp3",
+  "source": "Pixabay 22400 \"market bazaar\" (first 33 s)",
+  "dur": 33.0,
+  "use": "market crowd",
+  "note": "later part had intelligible modern speech, cut",
+  "license": "Pixabay Content License",
+  "provenance": "verified 2026-11-10: audio envelope matches sfx/pixabay_gs/freesound_community-market-bazaar-22400.mp3 (r=0.976, offset 0.0 s); source and licence recorded in sfx/golden_sparrow_sfx_sources.txt"
+ },
+ "amb_battle": {
+  "file": "amb/battle.mp3",
+  "source": "Pixabay 377958 \"Distant War\" (70–80 s + 180–190 s, low-passed)",
+  "dur": 18.0,
+  "use": "distant battle rumble; restrained use (GS-01)",
+  "note": "",
+  "license": "Pixabay Content License",
+  "provenance": "verified 2026-11-10: halves match the original at 70.0 s (r=0.986) and 181.0 s (r=0.897); source in golden_sparrow_sfx_sources.txt"
+ },
+ "amb_march": {
+  "file": "amb/march.mp3",
+  "source": "Pixabay 442715 \"Army Marching Steps\"",
+  "dur": 38.57,
+  "use": "army marching steps",
+  "note": "",
+  "license": "Pixabay Content License",
+  "provenance": "verified 2026-11-10: audio envelope matches sfx/pixabay_gs/alex_jauk-army-marching-steps-ambience-noise-442715.mp3 (r=1.0, offset 0.0 s); source and licence recorded in sfx/golden_sparrow_sfx_sources.txt"
+ },
+ "sfx_horses": {
+  "file": "amb/horses.mp3",
+  "source": "Pixabay 247600 \"Horse running HQ\"",
+  "dur": 14.63,
+  "use": "cavalry pass",
+  "note": "",
+  "license": "Pixabay Content License",
+  "provenance": "verified 2026-11-10: audio envelope matches sfx/pixabay_gs/tanweraman-horse-running-hq-247600.mp3 (r=1.0, offset 0.0 s); source and licence recorded in sfx/golden_sparrow_sfx_sources.txt",
+  "hit_at": 3.8
+ },
+ "sfx_war_drums": {
+  "file": "amb/drums.mp3",
+  "source": "Pixabay 463214 \"Ancient War Drums\"",
+  "dur": 7.58,
+  "use": "ceremonial war drums",
+  "note": "",
+  "license": "Pixabay Content License",
+  "provenance": "verified 2026-11-10: audio envelope matches sfx/pixabay_gs/dragon-studio-ancient-war-drums-463214.mp3 (r=1.0, offset 0.0 s); source and licence recorded in sfx/golden_sparrow_sfx_sources.txt",
+  "hit_at": 5.85
+ },
+ "sfx_elephant": {
+  "file": "amb/elephant.mp3",
+  "source": "Pixabay 154720 \"Trumpet sound of an Elephant\"",
+  "dur": 1.94,
+  "use": "elephant trumpet, only when an elephant is on screen (SD-02)",
+  "note": "",
+  "license": "Pixabay Content License",
+  "provenance": "verified 2026-11-10: audio envelope matches sfx/pixabay_gs/u_7bikmggkv2-trumpet-sound-of-an-elephant-154720.mp3 (r=1.0, offset 0.0 s); source and licence recorded in sfx/golden_sparrow_sfx_sources.txt",
+  "hit_at": 0.5
+ },
+ "sfx_footsteps_stone": {
+  "file": "amb/footsteps_stone.mp3",
+  "source": "Pixabay 68257 \"Footsteps_Stone\"",
+  "dur": 19.06,
+  "use": "footsteps on stone",
+  "note": "long silent gaps between steps",
+  "license": "Pixabay Content License",
+  "provenance": "verified 2026-11-10: audio envelope matches sfx/pixabay_gs/freesound_community-footsteps_stone-68257.mp3 (r=1.0, offset 0.0 s); source and licence recorded in sfx/golden_sparrow_sfx_sources.txt",
+  "hit_at": 0.5
+ },
+ "sfx_ship_bell": {
+  "file": "amb/ship_bell.mp3",
+  "source": "Pixabay 102730 \"Ship Bell Two Chimes\"",
+  "dur": 2.95,
+  "use": "ship bell, two chimes (ports)",
+  "note": "",
+  "license": "Pixabay Content License",
+  "provenance": "verified 2026-11-10: audio envelope matches sfx/pixabay_gs/freesound_community-ship-bell-two-chimes-102730.mp3 (r=1.0, offset 0.0 s); source and licence recorded in sfx/golden_sparrow_sfx_sources.txt",
+  "hit_at": 0.4
+ },
+ "amb_harbour": {
+  "file": "harbour_waves.wav",
+  "source": "Mixkit \"small waves harbor rocks\"",
+  "dur": 77.86,
+  "use": "harbour water lapping (dock beds)",
+  "note": "sfx/amb/dock.wav is a byte-identical copy, kept (not deleted) because existing projects may refer to it",
+  "license": "Mixkit License",
+  "provenance": "duration 77.86 s matches the recorded 77.9 s source (golden_sparrow_sfx_sources.txt, item 2); original download not kept separately"
+ },
+ "sfx_loom_shuttle": {
+  "file": "loom_shuttle.mp3",
+  "source": "Pixabay mirror of Freesound 510266 \"navette de métier à tisser\" (Naïma, CC0)",
+  "dur": 58.1,
+  "use": "weaving-loom shuttle",
+  "note": "",
+  "license": "Pixabay Content License",
+  "provenance": "duration 58.1 s matches the recorded 0:58 source (item 1); original download not kept separately"
+ },
+ "sfx_quill": {
+  "file": "quill_writing.mp3",
+  "source": "Pixabay mirror of Freesound 194905 (marcoman89)",
+  "dur": 98.23,
+  "use": "quill pen on hard paper",
+  "note": "",
+  "license": "Pixabay Content License",
+  "provenance": "duration 98.23 s matches the recorded 98.2 s source (item 4); original download not kept separately"
+ },
+ "amb_ship_creak": {
+  "file": "ship_creak.mp3",
+  "source": "Pixabay 30119 \"ship creaking 24b\"",
+  "dur": 20.02,
+  "use": "wooden ship creaking at sea",
+  "note": "",
+  "license": "Pixabay Content License",
+  "provenance": "duration 20.02 s matches the recorded 0:20 source (item 3); original download not kept separately"
+ },
+ "sfx_cannon_distant": {
+  "file": "cannon_distant.wav",
+  "source": "Freesound 675613 \"S20-12 Distant cannon fire\" (craigsmith)",
+  "dur": 35.71,
+  "use": "distant cannon fire (several shots)",
+  "note": "",
+  "license": "CC0 (as listed by Freesound)",
+  "provenance": "PENDING: metadata matches the documented original (WAV, 48 kHz, 24-bit, mono, 35.705 s, 4.9 MB); audio not compared because the original needs a Freesound login; golden_sparrow_sfx_sources.txt still says MISSING",
+  "hit_at": 3.6,
+  "licence_status": "PENDING VERIFICATION",
+  "approved_for_new_work": false
+ },
+ "amb_fire": {
+  "file": "amb_fire.mp3",
+  "source": "unknown (user-supplied pack, 2026-10-26)",
+  "dur": 8.5,
+  "use": "fire crackle bed",
+  "note": "existing productions unchanged; not cleared for new work",
+  "license": "UNKNOWN",
+  "provenance": "UNKNOWN: from the sound pack the user sent on 2026-10-26 (Dussehra long video), cut into tracks; the source site and licence were never recorded",
+  "licence_status": "UNKNOWN",
+  "approved_for_new_work": false
+ },
+ "amb_crowd": {
+  "file": "amb_crowd.mp3",
+  "source": "unknown (user-supplied pack, 2026-10-26)",
+  "dur": 9.4,
+  "use": "procession crowd bed",
+  "note": "existing productions unchanged; not cleared for new work",
+  "license": "UNKNOWN",
+  "provenance": "UNKNOWN: from the sound pack the user sent on 2026-10-26 (Dussehra long video), cut into tracks; the source site and licence were never recorded",
+  "licence_status": "UNKNOWN",
+  "approved_for_new_work": false
+ },
+ "amb_drums": {
+  "file": "amb_drums.mp3",
+  "source": "unknown (user-supplied pack, 2026-10-26)",
+  "dur": 9.1,
+  "use": "festival drums bed",
+  "note": "existing productions unchanged; not cleared for new work",
+  "license": "UNKNOWN",
+  "provenance": "UNKNOWN: from the sound pack the user sent on 2026-10-26 (Dussehra long video), cut into tracks; the source site and licence were never recorded",
+  "licence_status": "UNKNOWN",
+  "approved_for_new_work": false
  }
 }
