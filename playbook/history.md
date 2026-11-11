@@ -193,6 +193,47 @@ Each entry: the replaced version (verbatim), the replacement, the reason and dat
 - **[SD-05]** (C, playbook) Ambience is only faint real ambience under real event footage, never in the explaining parts. Reject recordings with modern gunfire, intelligible modern speech or engine hum.
 ```
 
+### PUB-06 v1 · SUPERSEDED by PUB-06 v2 (2026-11-11)
+- Reason: User Nov 11 chose the standard Telugu CTA (Option A, the wording used in all Golden Sparrow copy). Older Telugu wording used in earlier weeks (Diwali, Gold), kept here as a record: "మీకు 'ఎందుకు' అని మొదలయ్యే ఏ ప్రశ్న వచ్చినా కింద కామెంట్ చేయండి. మేము రీసెర్చ్ చేసి ఆన్సర్ చెప్తాం." (sometimes followed by a follow line).
+- Scope: channel-wide.
+- Old text:
+
+```text
+- **[PUB-06]** (P, user Oct 2026) The fixed CTA: "Whenever you get a question that starts with why, just comment it below. We'll do the research and get you the answer." Use the channel's Telugu CTA in the Telugu copy.
+```
+
+### PUB-01 v2 · SUPERSEDED by PUB-01 v3 (2026-11-11)
+- Reason: User Nov 11 (account-skills audit, decision D1): "Long-film YouTube chapter timestamps and relevant end-screen planning. Derive timestamps from the final render." (from the older `why-channel-video` skill, which the user kept).
+- Scope: channel-wide, long films.
+- Old text:
+
+```text
+- **[PUB-01]** (P, v2 user Nov 10; v1 user Oct 2026) Write one block per language (English, then Telugu) and per platform. Platform limits are ceilings, not targets: never add text just to fill an allowance. Prioritise readability and relevance.
+  - **YouTube:**
+    - an accurate, compelling title, keyword-led where natural (#shorts for Shorts; Telugu titles may mix in English keywords);
+    - a description that opens with the hook question, gives the key takeaways and the ending, then the fixed CTA (→ PUB-06), SOURCES (outlet, date, headline, full URL; legends noted as beliefs), CREDITS (CC photos with author and licence, stock, AI illustrations labelled) and hashtags;
+    - a short list of genuinely relevant tags. YouTube says the title, thumbnail and description matter more, and tags help mainly with commonly misspelled terms (→ PLT-04).
+  - **Instagram:** a concise, platform-native caption: a short recap, an engagement question, the CTA, a sources line ("full links on YouTube") and the credits.
+```
+
+### AN-01 v1 · SUPERSEDED by AN-01 v2 (2026-11-11)
+- Reason: User Nov 11 (decision D4): "Use available verified information when vidIQ credits or transcripts are unavailable. Never invent analytics or pretend inaccessible data was checked."
+- Scope: channel-wide.
+- Old text:
+
+```text
+- **[AN-01]** (P, user Nov 10) Don't treat performance as diagnosed until the actual retention and viewed-versus-swiped-away figures are in. Make no performance claims without data. Analytics access (vidIQ, Metricool) is not yet verified.
+```
+
+### AN-03 v1 · SUPERSEDED by AN-03 v2 (2026-11-11)
+- Reason: User Nov 11 (decision D5): "Perform an initial retention review around 48 hours after publishing when actual analytics are accessible. Keep the existing weekly review. Early findings are provisional."
+- Scope: channel-wide.
+- Old text:
+
+```text
+- **[AN-03]** (C, user Nov 1) After posting, watch the replay rate on loops and any dips at correction or legal-flash beats.
+```
+
 ### LAY-01 v1 · SUPERSEDED by LAY-01 v2 (2026-11-11)
 - Reason: User Nov 11 (GS 6/6 composition correction, approved after before/after frames): "Please treat the entire 1080×1920 frame as a professional director's canvas… Do not enforce a fixed rectangular working area that leaves the lower part unused… Distribute visual information naturally across the top, centre and lower portions… Intentional negative space is fine when it improves the story, but unused space should be a deliberate directorial choice—not a fixed layout limitation."
 - Scope: channel-wide (the user's wording is general; recorded as channel-wide pending his confirmation in the PR #2 report).

@@ -34,6 +34,8 @@ Method notes, not rules: they record how we currently do things and are updated 
      - Telugu: the script line per piece, with word times spread over that piece's voiced frames.
    - **Scene timing:** anchor scenes to spoken phrases, not fixed times, so re-records re-time everything automatically.
 
+   - **Pace Model role anchoring (user Nov 11):** anchor each role on the approved piece texts themselves (independent of the timeline), never on a re-transcription of a different voice build.
+
 ## Runtime planning [PB:388, 395]
 - **Runtime check method:** always measure runtime AFTER the standard Shorts edit (proasm.squeeze maxgap 0.24/keep 0.15, tempo EN 1.08 / TE 1.10, 0.22–0.35 s line gaps). Raw-take totals overstate runtime by ~20%.
 - Budget the script by real speech rate before voicing (Sandeep EN ≈ 2.4 words/s; Telugu runs ≈ 15% longer than EN), never by a guess. Diwali 1/6 was scripted as "≈2:30 / ≈3:00" but recorded 3:12 / 3:41. Keep an internal safety margin under 3:00 (→ FMT-01).
@@ -58,6 +60,7 @@ Method notes, not rules: they record how we currently do things and are updated 
 - GS 4/6 (Nov 10): 15 new lines, 1,037 credits (EN 418, TE 619).
 
 ## Gotchas [PB:228–230, 342, 382]
+- Never run two muxes (or any two writes) to the same output file at once; a second mux started while QC or another mux reads the file corrupts or replaces it mid-check (seen again in GS 5/6). Wait for the first, or QC a copy. (user Nov 11)
 - Never `pkill -f` / `pgrep -f` with a pattern that also matches the shell's own command line; it kills the shell (exit 144). Kill by PID from `ps` filtered with `grep -v grep`.
 - Don't run heavy whisper jobs alongside renders unless you have to. Both slow to a crawl on 2 CPUs.
 - **Gotcha:** pill/scale(0) → cairo singular matrix → "out of memory" crash mid-render; guard s<=0.01.

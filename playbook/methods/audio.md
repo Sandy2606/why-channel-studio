@@ -26,5 +26,6 @@ Method notes, not rules: they record how we currently do things and are updated 
 - Design animations that the sounds can follow: typewriter text for quotes and dates, a marker circling the key word (amber or ink, never red; → BR-01), a highlighter sweep, polaroid photo drops, page-turn chapters. [PB:132, red marker superseded]
 - SFX events come from the scene list and the animation arguments; use library files aligned on their catalog hit points. [PB:219]
 - Speech-band SNR check per second against the no-SFX mix (GS film). [PB:318]
+- **Unfamiliar or problematic SFX packs (user Nov 11, method):** when a new pack is unfamiliar or sounds wrong, analyse it before use (stereo correlation, spectral centroid, spectrogram): AI-generated packs have arrived as broadband hiss or pure tones, and some files arrive joined end to end, so split them at the silences. Not required for every sound.
 
 
