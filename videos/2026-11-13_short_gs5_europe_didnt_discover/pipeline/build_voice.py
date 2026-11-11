@@ -37,6 +37,6 @@ if __name__=='__main__':
                 a=np.concatenate(parts[:-1])
                 g=0.25 if nxt in ('Q1','Q2','Q3') else (0.20 if k=='tease' else 0.30)
             marks[k]=[round(t,3),round(t+len(a)/SR,3)]; out+=[a,np.zeros(int(g*SR),np.float32)]; t+=len(a)/SR+g
-        v=np.clip(np.concatenate(out),-1,1); wf.write(f'voice_{l}.wav',SR,(v*32767).astype(np.int16)); json.dump(marks,open(f'marks_{l}.json','w'),indent=0)
+        v=np.clip(np.concatenate(out),-1,1); wf.write(f'/home/claude/gs5/voice_{l}.wav',SR,(v*32767).astype(np.int16)); json.dump(marks,open(f'marks_{l}.json','w'),indent=0)
         rep[l]=dict(total=round(t,2),new_take_level_vs_film_dB=lv); print(l,round(t,2),'=',f'{int(t//60)}:{t%60:04.1f}','raw level of new takes vs film (dB):',lv)
     json.dump(rep,open('voice_report.json','w'),indent=1)
