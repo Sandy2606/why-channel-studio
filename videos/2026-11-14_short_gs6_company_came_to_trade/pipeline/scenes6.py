@@ -15,6 +15,7 @@ def rail_strip(img, upto, a=1.0, y=300, k_last=1.0):
     if a <= .01: return
     x0, x1 = 110, W - 110; xs = [lerp(x0, x1, i / (len(RAIL) - 1)) for i in range(len(RAIL))]
     lay = Image.new('RGBA', (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(lay)
+    d.rounded_rectangle((40, y - 62, W - 40, y + 56), 16, fill=(14, 13, 11, int(190 * a)))
     d.line((x0, y, x1, y), fill=(110, 100, 80, int(220 * a)), width=4)
     xf = lerp(xs[max(0, upto - 1)], xs[upto], k_last) if upto > 0 else xs[0]
     d.line((x0, y, xf, y), fill=GOLD_A + (int(255 * a),), width=6)
@@ -24,8 +25,8 @@ def rail_strip(img, upto, a=1.0, y=300, k_last=1.0):
     img.paste(lay, (0, 0), lay)
     for i, (yr, lab) in enumerate(RAIL):
         on = i < upto or (i == upto and k_last > .5)
-        small(img, yr, xs[i], y + 32, 25, PARCH if on else (120, 112, 98), 'mm', a)
-    i = upto; yr, lab = RAIL[i]; small(img, lab, min(max(xs[i], 160), W - 160), y - 36, 32 if not TE else 30, AMBER if i == len(RAIL) - 1 else CREAM, 'mm', a * clamp(k_last * 2))
+        small(img, yr, xs[i], y + 32, 27, PARCH if on else (120, 112, 98), 'mm', a)
+    i = upto; yr, lab = RAIL[i]; small(img, lab, min(max(xs[i], 160), W - 160), y - 36, 34 if not TE else 30, AMBER if i == len(RAIL) - 1 else CREAM, 'mm', a * clamp(k_last * 2))
     LY.reg('card', (x0 - 20, y - 52, x1 + 20, y + 48), owner='season line')
 
 # ---- 9-11 · Plassey as a counted diagram (1 dot ~ 500 men) on a battlefield that fills the frame; the cavalry separates; then Hayman
@@ -37,6 +38,7 @@ def nawab_dots():
 def dots_layer(img, pts):
     lay = Image.new('RGBA', (W * 2, H * 2), (0, 0, 0, 0)); d = ImageDraw.Draw(lay)
     for x, y, r, col, a in pts:
+        if 1392 < y < 1500: a *= .55     # under the caption line: softer, so captions stay clear
         if a > .01 and r > .5: d.ellipse(((x - r) * 2, (y - r) * 2, (x + r) * 2, (y + r) * 2), fill=col + (int(255 * a),), outline=(20, 16, 12, int(255 * a)), width=3)
     lay = lay.resize((W, H), Image.LANCZOS); img.paste(lay, (0, 0), lay)
 def field_ground(img, t, k, y0=790, vp=(540, 520)):
@@ -61,7 +63,7 @@ def s_plassey(t, s0, s1):
     img = radial_bg(W, H, (34, 30, 22), (9, 9, 9), cy=.45, reach=.9).copy(); k = e_out(prog(t, s0, s0 + .4))
     field_ground(img, t, e_io(prog(t, s0 + .2, s0 + 2.5)))
     plate_text(img, (150, 280, W - 150, 420), L('23 JUNE 1757 · BENGAL', '1757 జూన్ 23 · బెంగాల్'), L('PLASSEY', 'ప్లాసీ'), k, 62, owner='plassey')
-    small(img, L('1 DOT ≈ 500 MEN · NATIONAL ARMY MUSEUM ESTIMATES', '1 చుక్క = దాదాపు 500 మంది'), W / 2, 452, 27, MUTED, 'mm', k)
+    small(img, L('1 DOT ≈ 500 MEN · ESTIMATES: NATIONAL ARMY MUSEUM', '1 చుక్క = దాదాపు 500 మంది'), W / 2, 454, 30, PARCH, 'mm', k)
     # the two sides are named first (no numbers until the narration gives them)
     ksC = e_out(prog(t, s0 + 1.0, s0 + 1.6)) * (1 - e_out(prog(t, c3 + .2, c3 + .5))); ksN = e_out(prog(t, s0 + 1.6, s0 + 2.2)) * (1 - e_out(prog(t, c50 + .3, c50 + .6)))
     for kk_, lab, yb in ((ksC, L("THE COMPANY'S ARMY", 'కంపెనీ సైన్యం'), 528), (ksN, L("THE NAWAB OF BENGAL'S ARMY", 'బెంగాల్ నవాబు సైన్యం'), 822)):
@@ -74,7 +76,7 @@ def s_plassey(t, s0, s1):
     for i, (x, y, cav) in enumerate(nawab_dots()):
         r_, c_ = divmod(i, 10); kk = e_out(clamp((kn * 1.4 - (9 - r_) / 14 - c_ / 60) * 2.2))
         col = tuple(int(lerp(a_, b_, aside)) for a_, b_ in zip(CAV, DIM)) if cav else NAWAB
-        dx = -110 * aside if cav else 0; dy = (1 - kk) * 420 + (34 * aside if cav else 0)
+        dx = -110 * aside if cav else 46 * aside; dy = (1 - kk) * 420 + (34 * aside if cav else 0)
         pts.append((x + dx, y + dy, 26, col, kk if kk > .01 else 0))
     dots_layer(img, pts)
     small(img, L("THE NAWAB'S ARMY ≈ 50,000", 'నవాబు సైన్యం: దాదాపు 50,000'), W / 2, 822, 38 if not TE else 34, CREAM, 'mm', e_out(prog(t, c50 + .4, c50 + .9)))
@@ -126,7 +128,7 @@ def stream(img, t, p0, p1, rate, col, k, size=9, seed=1, spread=26, shape='dot')
     rng = np.random.default_rng(seed); n = int(28 * rate) + 1; lay = Image.new('RGBA', (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(lay)
     off = rng.uniform(-spread, spread, 60); ph = rng.uniform(0, 1, 60)
     for i in range(n):
-        f = (t * .5 + ph[i]) % 1.0; x = lerp(p0[0], p1[0], f) + off[i]; y = lerp(p0[1], p1[1], f); al = math.sin(math.pi * f) * k
+        f = (t * .5 + ph[i]) % 1.0; x = lerp(p0[0], p1[0], f) + off[i]; y = lerp(p0[1], p1[1], f); al = math.sin(math.pi * f) * k * (.3 if 1392 < y < 1500 else 1)
         if shape == 'bar': d.rounded_rectangle((x - size * 1.6, y - size * .7, x + size * 1.6, y + size * .7), 3, fill=col + (int(240 * al),), outline=(40, 40, 44, int(200 * al)), width=2)
         else: d.ellipse((x - size, y - size, x + size, y + size), fill=col + (int(240 * al),), outline=(40, 30, 10, int(200 * al)), width=2)
     img.paste(lay, (0, 0), lay)
@@ -174,9 +176,9 @@ def s_payoff(t, s0, s1):
     if kr > .01:
         panel_nat(img, 'RUPEE', (96, 1232, 246, 1382), 0, (.5, .5), (.5, .5), sc=150 / 1314, radius=75, a=kr, tint=(330, 330, 330))
         small(img, L('BENGAL REVENUE (TAXES)', 'బెంగాల్ పన్నుల ఆదాయం'), 272, 1262, 34 if not TE else 30, AMBER, 'lm', kr, 420)
-        small(img, L('AFTER 1765', '1765 తర్వాత'), 272, 1302, 26, PARCH, 'lm', kr, 420)
-        small(img, L('COIN: ILLUSTRATIVE SILVER RUPEE', 'నాణెం ఉదాహరణ: వెండి రూపాయి'), 272, 1338, 22, MUTED, 'lm', kr, 420)
-        small(img, L('MINTED IN INDIA (SURAT)', 'భారత్‌లో (సూరత్) ముద్రించినది'), 272, 1366, 22, MUTED, 'lm', kr, 420)
+        small(img, L('AFTER 1765', '1765 తర్వాత'), 272, 1302, 28, CREAM, 'lm', kr, 420)
+        small(img, L('COIN: ILLUSTRATIVE RUPEE', 'నాణెం: ఉదాహరణ మాత్రమే'), 272, 1340, 26, PARCH, 'lm', kr, 440)
+        small(img, L('MINTED IN SURAT, INDIA', 'సూరత్‌లో ముద్రించినది'), 272, 1374, 26, PARCH, 'lm', kr, 440)
     return img
 
 # ---- 14 · the completed season line and the question
@@ -202,13 +204,3 @@ def s_question(t, s0, s1):
     plate_text(img, (70, 270, W - 70, 480), L('1608 → 1765', '1608 - 1765'), L('WHAT HAPPENS WHEN A TRADING COMPANY COLLECTS THE TAXES?', 'వ్యాపార కంపెనీ పన్నులు వసూలు చేస్తే ఏమవుతుంది?'), e_out(prog(t, s0 + .1, s0 + .6)), 42 if not TE else 40, owner='question')
     return img
 
-def s_todo(t, s0, s1, name):
-    img = radial_bg(W, H, (30, 26, 20), (9, 9, 9)).copy(); text(img, f'[{name}]', W / 2, H / 2, 40, MUTED, 'mm', 'head'); return img
-FUNCS = {'plassey': s_plassey, 'payoff': s_payoff, 'question': s_question}
-def render(t):
-    LY.reset(); name, s0, s1 = scene_at(t)
-    if name.startswith('cartoon'): img = cartoon(t, s0, [('CHELLI', 'Q1')])
-    elif name == 'plassey' and S('Q2') - .15 <= t < E('Q2') + .2: img = cartoon(t, S('Q2') - .15, [('CHELLI', 'Q2')]); name = 'cartoon2'
-    elif name in FUNCS: img = FUNCS[name](t, s0, s1)
-    else: img = s_todo(t, s0, s1, name)
-    overlays(img, t, name); captions(img, t, name); return img

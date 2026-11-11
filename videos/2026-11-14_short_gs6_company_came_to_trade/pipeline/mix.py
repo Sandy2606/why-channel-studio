@@ -45,6 +45,50 @@ put('paper_slide', c_end + .05, .14)
 for i in range(7): put('tick', SCs['question'] + .1 + i * 1.3 / 6, .06)
 put('paper_slide', SCs['question'] + .85, .12)
 
+# ---- hook: a quiet court; the years run; Fort William arrives with a page turn
+c150 = AT('A', 'hundred', 'నూట') - .15; chelp = AT('A', 'helped', 'బెంగాల్') - .15
+bed(LIB + 'amb/court.mp3', 0.0, c150 + .3, .30, fade=.3); put('ticker_run', c150 + .05, .10, maxlen=chelp - c150, fade=.15); put('page_turn', chelp + .02, .18)
+if not TE:
+    # ---- permission (EN): the map opens; Surat and Agra pinned; the road drawn; Swally at sea (one distant cannon, owner-cleared, provenance unverified); 1613; Roe at court
+    s0p = SCs['perm']; ch_ = AT('A', 'Hawkins', '') - .15; cj_ = AT('A', 'Jahangir.', ''); c12 = AT('A', '1612,', '') - .15; csw = AT('A', 'Swally,', '') - .2
+    cdl = AT('A', 'deal', '') - .15; ccf = AT('A', 'confirmed', '') - .15; c15 = AT('A', '1615', '') - .2
+    put('map_unfold', s0p + .05, .14); put('pin_push', ch_ + .05, .16); put('scribble', AT('A', 'travelled', ''), .06, maxlen=1.4, fade=.3); put('pin_push', cj_ - .25, .16)
+    bed(LIB + 'harbour_waves.wav', c12, cdl + .4, .30, fade=.6); bed(LIB + 'ship_creak.mp3', c12 + .3, cdl, .22, fade=.6)
+    put('cannon_distant', csw + .1, .14)
+    put('paper_slide', cdl + .05, .14); put('marker', ccf + .2, .10)
+    put('page_turn', c15 + .05, .18); bed(LIB + 'amb/court.mp3', c15, SCs['war'], .22, fade=.6)
+# ---- 1686: the war (one low knock on LOST), the three terms, Calcutta
+s0w = SCs['war']; c86 = AT('A', '1686,', '1686లో') - .15; cwar = AT('A', 'war', 'యుద్ధానికి') - .1; clost = AT('A', 'lost.', 'ఓడిపోయింది.') - .15
+put('map_unfold', s0w + .05, .12)
+if TE: put('pin_push', s0w + .15, .14); put('pin_push', s0w + 1.25, .16)
+put('swoosh_slow', cwar, .14); put('sub_knock', clost + .05, .16)
+for en, te in (('pardon,', 'క్షమాపణ'), ('fine,', 'జరిమానా'), ('promise', 'ఉంటామని')): put('paper_slide', AT('A', en, te) - .15, .12)
+put('pin_push', AT('A', '1690,', '1690లో') - .1, .18)
+# ---- 1717: the farman (quill), one paper per term; the river with the passes
+s0f = SCs['farman']; cco = AT('A', 'men', 'కంపెనీ', n=1 if not TE else 3) - (.5 if not TE else .15)
+put('page_turn', s0f + .05, .16); put('quill_writing.mp3', AT('A', 'farman:', 'ఫర్మానా') - .1, .12, maxlen=1.6, fade=.3, path=LIB + 'quill_writing.mp3')
+for en, te in (('duty-free', 'సుంకం'), ('3,000', '3,000'), ('passes', 'దస్తక్')): put('paper_drop', AT('A', en, te) - .15, .10)
+bed(LIB + 'harbour_waves.wav', cco, SCs['cartoon1'] + .2, .28, fade=.6); put('marker', AT('A', 'misused', 'దుర్వినియోగం') - .1, .10)
+# ---- the wars in the south: pins, the clash, sepoys drilling (soft footsteps and very low drums), the thrones
+s0s = SCs['wars']; csp = AT('B', 'sepoys,', 'సిపాయిలు') - .2; cba = AT('B', 'backed', 'కర్ణాటక,') - .3
+put('map_unfold', s0s + .05, .12); put('pin_push', AT('B', 'French', 'ఫ్రెంచ్,') - .1, .14); put('pin_push', AT('B', 'English', 'ఇంగ్లీష్') - .1, .14)
+bed(LIB + 'amb/footsteps_stone.mp3', csp, cba, .22, fade=.5); bed(LIB + 'amb/drums.mp3', csp, cba + .3, .10, fade=.6)
+put('paper_drop', AT('B', 'Carnatic', 'కర్ణాటక,') - .1, .12); put('paper_drop', AT('B', 'Hyderabad.', 'హైదరాబాద్') - .1, .12)
+put('paper_slide', AT('B', 'French', 'మొదట', n=2 if not TE else 1) - .1, .12)
+# ---- the lesson: a low knock on FAILED, a soft lift on PAID
+put('page_turn', SCs['lesson'] + .05, .14); put('sub_knock', AT('B', 'failed.', 'ఓడిపోయింది.') - .1, .12); put('sparkle_soft', AT('B', 'paid.', 'లాభం.') - .1, .10)
+# ---- Siraj-ud-Daulah: the fort, the labels, Calcutta taken, the army sails from Madras
+s0j = SCs['siraj']; put('page_turn', s0j + .05, .14); bed(LIB + 'harbour_waves.wav', s0j, SCs['plassey'], .22, fade=.8)
+put('marker', AT('B', 'fortifications', 'కోటలు') - .1, .10); put('marker', AT('B', 'passes.', 'పాసులను') - .1, .10)
+put('pin_push', AT('B', 'seized', 'కలకత్తాను') - .1, .18); put('swoosh_slow', AT('B', 'army', 'సైన్యాన్ని') - .2, .14); bed(LIB + 'ship_creak.mp3', AT('B', 'army', 'సైన్యాన్ని'), SCs['plassey'], .20, fade=.5)
+# ---- Buxar and the diwani: pins, the hatched grant, the painting
+s0b = SCs['buxar']; put('map_unfold', s0b + .05, .12); put('pin_push', AT(KC, 'Buxar', 'బక్సర్‌లో') - .1, .16)
+put('quill_writing.mp3', AT(KC, 'right', 'బెంగాల్,') - .1, .12, maxlen=1.6, fade=.3, path=LIB + 'quill_writing.mp3'); put('page_turn', AT(KC, 'emperor', 'మొఘల్') - .15, .14)
+# ---- tease and the Season 1 slide (real click/bell)
+put('swoosh_slow', SCs['tease'] + .05, .16)
+for n_, t_, g_ in CTA.events(SCs['slide'] + 0.9, PLAT):
+    if n_ != 'woosh_air': put(n_, t_, g_ * 0.8)
+
 def run(tag):
     os.chdir(ROOT); wf.write(f'sfx_{tag}.wav', SR, SFX)
     subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', f'voice_{LANGV}.wav', '-af', f'adelay={int(LEAD*1000)}|{int(LEAD*1000)},apad', '-ac', '2', '-ar', '48000', '-t', str(DUR), f'vlead_{tag}.wav'], check=True)

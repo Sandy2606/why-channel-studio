@@ -7,26 +7,31 @@ def s_slide(t, s0, s1, plat=None):
     plat = plat or PLAT; v = t - s0
     img = radial_bg(W, H, (34, 28, 18), (8, 8, 9), cy=.4, reach=.8).copy()
     tx(img, L('THE GOLDEN SPARROW · SEASON 1', 'బంగారు పిచ్చుక · సీజన్ 1'), W / 2, 250, 40, AMBER, kind='head', maxw=ST.sw)
-    rows = [(L('5/6', '5/6'), L("Europe didn't discover India", 'యూరప్ భారత్‌ను కనిపెట్టలేదు'), L("YOU'RE HERE", 'మీరు ఇక్కడ'), True),
-            (L('NEXT · 6/6 · FINALE', 'తర్వాత · 6/6 · ముగింపు'), L('The company that came to trade', 'వ్యాపారానికి వచ్చిన కంపెనీ'), L('TOMORROW', 'రేపు'), False)]
-    for i, (num, title, tag, here) in enumerate(rows):
-        k = e_back(prog(v, .05 + .12 * i, .45 + .12 * i)); y = 350 + i * 180
+    kc = e_back(prog(v, .05, .4)); chip(img, L('SEASON 1 COMPLETE', 'సీజన్ 1 పూర్తి'), W / 2, 318, 34, AMBER, INK, a=min(1, kc), scale=max(.01, min(1, kc)))
+    eps = [('1/6', L('Was India really rich?', 'మనం నిజంగా ధనికులమా?')), ('2/6', L('The cloth the world wanted', 'ప్రపంచం కోరుకున్న గుడ్డ')),
+           ('3/6', L('Diamonds vs cloth', 'వజ్రాలా, గుడ్డా?')), ('4/6', L('Follow the money', 'డబ్బు వెనకే')),
+           ('5/6', L("Europe didn't discover India", 'యూరప్ భారత్‌ను కనిపెట్టలేదు')), ('6/6', L('The company that came to trade', 'వ్యాపారానికి వచ్చిన కంపెనీ'))]
+    for i, (num, title) in enumerate(eps):
+        k = e_back(prog(v, .1 + .08 * i, .45 + .08 * i)); y = 380 + i * 92; here = i == 5
         if k <= .01: continue
         x0 = 90 + (1 - min(1, k)) * 60
-        dark_panel(img, (x0, y, x0 + 900, y + 160), 30, 230, AMBER + (255,) if here else (90, 90, 96, 255))
-        text(img, num, x0 + 40, y + 50, 38, AMBER if here else CREAM, 'lm', 'monob')
-        text(img, title, x0 + 40, y + 112, 46, CREAM, 'lm', 'head', maxw=560)
-        chip(img, tag, x0 + 900 - 40 - pick(tag, 'head', 30).getlength(tag) / 2 - 22, y + 50, 30, AMBER if here else CREAM, INK)
+        dark_panel(img, (x0, y, x0 + 900, y + 80), 22, 230, AMBER + (255,) if here else (90, 90, 96, 255))
+        text(img, num, x0 + 30, y + 40, 32, AMBER if here else CREAM, 'lm', 'monob')
+        text(img, title, x0 + 130, y + 40, 36 if not TE else 34, CREAM, 'lm', 'head', maxw=640)
+        kk = e_out(prog(v, .5 + .1 * i, .7 + .1 * i))       # tick mark, drawn (no font glyph)
+        if kk > .01:
+            lay = Image.new('RGBA', (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(lay); cx, cy = x0 + 860, y + 40
+            d.line([(cx - 18, cy), (cx - 6, cy + 13), (cx + 18, cy - 15)], fill=(AMBER if here else CREAM) + (int(255 * kk),), width=7, joint='curve'); img.paste(lay, (0, 0), lay)
     # full film pointer with the film thumbnail
-    k = e_out(prog(v, .35, .75)); y = 735
+    k = e_out(prog(v, .6, 1.0)); y = 930
     if k > .01:
-        th = FILM_THUMB(); tw = 760; thh = int(tw * th.height / th.width); thi = th.resize((tw, thh), Image.LANCZOS)
-        m = Image.new('L', thi.size, 0); ImageDraw.Draw(m).rounded_rectangle((0, 0, tw - 1, thh - 1), 26, fill=int(255 * k)); img.paste(thi, (160, y), m)
+        th = FILM_THUMB(); tw = 520; thh = int(tw * th.height / th.width); thi = th.resize((tw, thh), Image.LANCZOS)
+        m = Image.new('L', thi.size, 0); ImageDraw.Draw(m).rounded_rectangle((0, 0, tw - 1, thh - 1), 26, fill=int(255 * k)); img.paste(thi, (int(W / 2 - tw / 2), y), m)
         lab = L('FULL FILM · RELATED VIDEO', 'పూర్తి సినిమా · RELATED VIDEO') if plat == 'yt' else L('FULL FILM ON YOUTUBE · LINK IN BIO', 'పూర్తి సినిమా YouTube లో · LINK IN BIO')
         chip(img, lab, W / 2, y + thh + 45, 38, AMBER, INK, a=k, scale=k)
     # subscribe / follow card
     surf = cairo.ImageSurface(cairo.FORMAT_ARGB32, W, H); c = cairo.Context(surf)
-    CTA.draw(c, t, s0 + 0.9, plat, LANGV, y=1360, t_out=None); surf.flush()
+    CTA.draw(c, t, s0 + 0.9, plat, LANGV, y=1420, t_out=None); surf.flush()
     a = np.frombuffer(surf.get_data(), np.uint8).reshape(H, W, 4); rgba = Image.fromarray(a[..., [2, 1, 0, 3]].copy(), 'RGBA')
     img.paste(rgba, (0, 0), rgba)
     return img

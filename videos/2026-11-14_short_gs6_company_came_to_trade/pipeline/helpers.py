@@ -18,6 +18,7 @@ def panel_nat(img, key, box, u, f0, f1, sc=1.0, radius=18, a=1.0, border=None, t
     """native-pixel window: a box-sized region of the source at scale sc (<= 1), panning f0 -> f1"""
     assert sc <= 1.0001, (key, sc)
     im = NAT(key); x0, y0, x1, y1 = [int(v) for v in box]; bw, bh = x1 - x0, y1 - y0; sw, sh = bw / sc, bh / sc
+    sw, sh = min(sw, im.width), min(sh, im.height)    # rounding guard (never more than the source)
     k = e_io(clamp(u)); fx, fy = lerp(f0[0], f1[0], k), lerp(f0[1], f1[1], k)
     cx = min(max(fx * im.width, sw / 2), im.width - sw / 2); cy = min(max(fy * im.height, sh / 2), im.height - sh / 2)
     crop = im.resize((bw, bh), Image.LANCZOS, box=(cx - sw / 2, cy - sh / 2, cx + sw / 2, cy + sh / 2))
@@ -57,7 +58,7 @@ def plate_text(img, box, kicker, title, a=1.0, px=44, owner=None, sub=None, tcol
     if _tel(title): px = int(px * 1.08)
     plate(img, box, a); x0, y0, x1, y1 = box; inner = x1 - x0 - 70; cx = (x0 + x1) / 2
     lines = wrap(title, 'head', px, inner); f = pick(title, 'head', px); lh = px + 12
-    kpx = 28 if not _tel(kicker) else 34; spx = 24 if not _tel(sub) else 29
+    kpx = 31 if not _tel(kicker) else 34; spx = 24 if not _tel(sub) else 29
     block = (kpx + 16 if kicker else 0) + len(lines) * lh + (spx + 18 if sub else 0); y = (y0 + y1) / 2 - block / 2
     if kicker: small(img, kicker, cx, y + kpx / 2, kpx, kcol, 'mm', a, inner); y += kpx + 16
     ink = None
