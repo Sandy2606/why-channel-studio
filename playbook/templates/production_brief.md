@@ -20,8 +20,9 @@ Owner of this video's plan (precedence level 2). Cite rules by ID; never copy ru
 |---|---|---|---|
 
 ## Source register (→ RS-01 – RS-06)
-| Claim | Source (outlet, title, URL) | Date checked | Wording note |
-|---|---|---|---|
+Mark each claim in the script as [C1], [C2]… so `pipeline/qc/check_sources.py` can match it here.
+| ID | Claim | Source (outlet, title, URL) | Date checked | Wording note |
+|---|---|---|---|---|
 
 ## Script (→ ST-07)
 English and Telugu, numbered lines with [MOOD · delivery], bold stress, ⏸, a visual beat under each line.

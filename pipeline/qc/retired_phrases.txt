@@ -1,0 +1,31 @@
+# Wording retired by superseded rules (one regex per line). check_rules.py fails if any appears
+# outside history.md, MIGRATION.md, playbook/reports/ and videos/. Add a line whenever a rule is superseded.
+45–60 s
+45-60 s
+every 2 min
+every 2–3 min
+red pill
+@whyeveryquestion\b(?!hasastory)
+#whyeveryquestion(?!hasastory)
+2:45
+2:50
+NO political borders
+soft bottom fade
+Punch-in of about 7%
+at least 8/10
+sfxlib
+three AI panels
+2 niche \+ 2 searchable
+red for strikes
+8\.5 minimum
+Shocking fact first
+Open with the shocking fact
+Subscribe for a new why every day
+The user keeps the pack and attaches it
+use the full limit
+full ~500
+within the last few months
+never in the explaining parts
+only when AI images look photoreal
+every 30–45 s
+[Rr]e-hook every

@@ -63,5 +63,7 @@
 | Research / trust | 10% | → RS-01 – RS-06 |
 | CTA / growth | 5% | → FMT-04 – FMT-09 |
 
+**Tools:** `pipeline/qc/` (see its README for what each script can and cannot verify).
+
 **Failure conditions:** any open BLOCKER; an unperformed check reported as passed.
 **Handoff:** the QC report goes with the delivery; defects and lessons go to `history.md` (→ WF-05).
