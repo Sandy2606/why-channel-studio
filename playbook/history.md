@@ -4,6 +4,47 @@
 
 Entry statuses: **SUPERSEDED** (replaced by a newer approved rule), **DROP** (tried and failed; never repeat), **EVIDENCE** (scores, measurements, lessons), **TEST** (a lesson awaiting approval or a second confirmation), **EXCEPTION (closed)**, **PROPOSAL (not adopted)**.
 
+## Rule revisions after the reorganisation
+
+Each entry: the replaced version (verbatim), the replacement, the reason and date. Scope: channel-wide.
+
+### RS-01 v1 · SUPERSEDED by RS-01 v2 (2026-11-10)
+- Reason: User Nov 10: recency applies to time-sensitive facts only; historical claims rest on primary records and scholarship.
+- Old text:
+
+```text
+- **[RS-01]** (P, user Oct 31) Before any script goes to the user, verify every law, rule, rate, date and number against a source dated within the last few months; search "current", "2026", "amended", "repealed", "replaced by". Never rely on memory for laws or regulations. Put the check date next to each source.
+```
+
+### PUB-01 v1 · SUPERSEDED by PUB-01 v2 (2026-11-10)
+- Reason: User Nov 10: limits are ceilings, not targets; no filler to use the full tag or caption allowance.
+- Old text:
+
+```text
+- **[PUB-01]** (P, user Oct 2026) Write one block per language (English, then Telugu) and per platform.
+  - **YouTube:**
+    - a hooky, keyword-led title (#shorts for Shorts; Telugu titles mix in English keywords);
+    - a description that opens with the hook question, gives a one-line takeaway per point and the ending, then the fixed CTA (→ PUB-06), SOURCES (outlet, date, headline, full URL; legends noted as beliefs), CREDITS (CC photos with author and licence, stock, AI illustrations labelled) and hashtags;
+    - tags that use the full limit, mixing broad, specific and regional terms.
+  - **Instagram:** use the full caption limit, with a short recap, an engagement question, the CTA, a sources line ("full links on YouTube") and the credits.
+```
+
+### PUB-05 v1 · SUPERSEDED by PUB-05 v2 (2026-11-10)
+- Reason: User Nov 10: follow YouTube's official disclosure policy (PLT-09), not a photorealism-only rule.
+- Old text:
+
+```text
+- **[PUB-05]** (P, playbook) Mark YouTube "Altered or synthetic content" only when AI images look photoreal; otherwise say no and give the reason.
+```
+
+### SD-05 v1 · SUPERSEDED by SD-05 v2 (2026-11-10)
+- Reason: User Nov 10: restrained real ambience is allowed under explanations and reconstructions where it supports the scene (the approved Golden Sparrow sound worlds).
+- Old text:
+
+```text
+- **[SD-05]** (C, playbook) Ambience is only faint real ambience under real event footage, never in the explaining parts. Reject recordings with modern gunfire, intelligible modern speech or engine hum.
+```
+
 ## Superseded rules
 
 Each entry: old text (verbatim, with old playbook line numbers), replaced by, reason and date, scope. Unless noted, the scope is channel-wide and the reorganisation date is 2026-11-10.
@@ -313,6 +354,21 @@ Channel: "Why?" (YouTube @WhyEveryQuestionHasaStory, Instagram @whyeveryquestion
 - **Shorts HARD LIMIT (user, Oct 31): every Short/Reel must be under 3:00, both languages. Target ≤ 2:45 EN and ≤ 2:50 TE including the end card.** Budget the script by real speech rate BEFORE recording (Sandeep EN ≈ 2.4 words/s; Telugu runs ≈ 15% longer than EN), never by a guess. Diwali 1/6 was scripted as "≈2:30 / ≈3:00" but recorded 3:12 / 3:41. If a draft is over budget, cut at script stage, not after voicing.
 ```
 
+### PB:134 · SUPERSEDED by SD-05
+- Reason: v2, user Nov 10: restrained ambience allowed under explanations and reconstructions
+- Old text:
+
+```text
+- **Ambience:** only faint real ambience under real event footage (fire under burnings, crowd/drums under processions), and never in the explaining parts.
+```
+
+### PB:225 · SUPERSEDED by PUB-05
+- Reason: v2, user Nov 10: official YouTube policy (PLT-09)
+- Old text:
+
+```text
+- Flag YouTube "Altered or synthetic content" only when AI images look photoreal.
+```
 ### Partly superseded lines (the rest of each line is CURRENT, see MIGRATION.md)
 
 - PB:284: its "soft bottom fade" part → SUPERSEDED by LAY-01 (user Nov 10); the lane itself is LAY-02.
@@ -351,9 +407,16 @@ Channel: "Why?" (YouTube @WhyEveryQuestionHasaStory, Instagram @whyeveryquestion
   - **Shorts visual rules (from ChatGPT storyboard review, Oct 31, agreed):** say the promise on screen in the first second; corrections ≤ 5 s; clippings are evidence flashes (zoom to one sentence, highlight 4–8 words, blur the rest, ~1.5 s); people get a simple avatar and move physically (above/below a line); reveal calculations in stages; show progress (1/3, 2/3…) for lists; no mid-video subscribe card in Shorts (the every-2-min card is for long videos only); visual reset every 8–12 s.
   ```
 
+- PB:384: its "source dated within the last few months" for every date and number → SUPERSEDED by RS-01 v2 (user Nov 10): recency applies to time-sensitive facts; historical claims rest on primary records and scholarship.
+
+  ```text
+  - **Research rule (user, Oct 31 — after the Diwali bonus miss):** before ANY script goes to the user, verify every law, rule, rate, date and number against a source dated within the last few months (search "current", "2026", "amended", "repealed", "replaced by"). Never rely on memory for laws or regulations — the Diwali long cited the Payment of Bonus Act 1965 a year after it was repealed by the Code on Wages (21 Nov 2025). Put the check date next to each source in the script.
+  ```
+
 ### Saved notes and account-skill variants · SUPERSEDED
 - "CTA card in long videos once every 2–3 minutes" (a saved-notes variant of PB:365) → SUPERSEDED by FMT-05 (user Nov 10: story breaks, no fixed interval).
 - Account skill `why-channel-post-copy`: "Use at most 30 hashtags" (older text) and "2 niche + 2 searchable + #whyeveryquestionhasastory" → SUPERSEDED by PUB-03 and PLT-02 (user Nov 10). The skill itself changes only in Phase 2B.
+- Saved instruction (Oct 2026) and the old `why-channel-post-copy` skill: "use the full limits when writing post copy (YouTube tags up to 500 characters; Instagram captions up to 2,200)" → SUPERSEDED by PUB-01 v2 (user Nov 10: limits are ceilings, not targets).
 - Account skill `why-channel-video` (266-line older copy) → SUPERSEDED as a rule source by the repository files (CLAUDE.md rule 2); pointer update in Phase 2B.
 
 ## Proposals not adopted

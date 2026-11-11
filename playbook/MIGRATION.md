@@ -2,6 +2,10 @@
 
 Maps every line of `playbook/why-channel-video-SKILL.md` as it stood at tag `pre-pro-system` (commit fb25e59, 396 lines) to its new home. The full original is in git: `git show pre-pro-system:playbook/why-channel-video-SKILL.md`. This file is a record, not instructions.
 
+## Rollback point (verified)
+- The pre-reorganisation state is commit **fb25e5933dc52d27c7b7be6c05c1d19258a52616** (`fb25e59`, "Playbook: GS 4/6 KEEP + score 8.7, archival styling rule"). It is the tip of `main` on GitHub, verified with `git ls-remote origin refs/heads/main` on 2026-11-10.
+- A local tag `pre-pro-system` points at the same commit. This session's GitHub connection refused to push tags (HTTP 403), so the tag isn't on GitHub yet. Before any merge, either add the tag on GitHub (Releases → "Draft a new release" → tag `pre-pro-system`, target commit fb25e59) or use the commit hash above. After a merge, restore by reverting the merge commit (`git revert -m 1 <merge-commit>`). The reorganisation only touched Markdown, so a revert never affects renders or assets.
+
 Status: **CURRENT** (the content lives on in the named rule), **METHOD** (a technical note in `playbook/methods/`), **DATA** (in `platform_rules.md`, marked for re-check), **SUPERSEDED** (replaced; old text in `history.md`), **DROP** (failed approach; kept in `history.md`, enforced by the named rule), **EVIDENCE** (score history and lessons in `history.md`), **STRUCT** (heading, blank line or frontmatter).
 
 | Line | Status | New home | Note | Original (start) |
@@ -139,7 +143,7 @@ Status: **CURRENT** (the content lives on in the named rule), **METHOD** (a tech
 | 131 | METHOD | methods/audio.md | ″ | - heartbeat/riser + music drop + impact → the big reveal. |
 | 132 | SUPERSEDED | BR-01 | "red marker" conflicts with no-red rule (user Nov 10); rest kept in methods/audio.md | - **Design new animations for these sounds:** typewriter text for quot… |
 | 133 | CURRENT | SD-03 |  | - **Don't sound every movement.** Key actions and transitions only; va… |
-| 134 | CURRENT | SD-05 |  | - **Ambience:** only faint real ambience under real event footage (fir… |
+| 134 | SUPERSEDED | SD-05 | v2 (user Nov 10): ambience allowed under explanations and reconstructions where it supports the scene | - **Ambience:** only faint real ambience under real event footage (fir… |
 | 135 | METHOD | methods/audio.md |  | - **Mix:** voice on top (-14 LUFS); SFX clearly audible but under the … |
 | 136 | METHOD | methods/audio.md | ″ | - **Script carries SFX cues** next to the mood and pause marks, e.g. `… |
 | 137 | STRUCT |  |  |  |
@@ -230,7 +234,7 @@ Status: **CURRENT** (the content lives on in the named rule), **METHOD** (a tech
 | 222 | STRUCT |  |  |  |
 | 223 | STRUCT |  | ″ | ## Copyright |
 | 224 | CURRENT | RS-07 |  | - Monetization-safe only: Pexels, CC BY/BY-SA with attribution, own AI… |
-| 225 | CURRENT | PUB-05 |  | - Flag YouTube "Altered or synthetic content" only when AI images look… |
+| 225 | SUPERSEDED | PUB-05 | v2 (user Nov 10): follow the official YouTube policy (PLT-09) | - Flag YouTube "Altered or synthetic content" only when AI images look… |
 | 226 | CURRENT | BR-08 |  | - Avoid graphic blood in thumbnails. |
 | 227 | STRUCT |  |  |  |
 | 228 | STRUCT |  | ″ | ## Environment gotchas |
@@ -389,7 +393,7 @@ Status: **CURRENT** (the content lives on in the named rule), **METHOD** (a tech
 | 381 | EVIDENCE | history |  | - Diwali long "DIWALI, EXPLAINED" (Nov 1, first 2D two-character video… |
 | 382 | METHOD | methods/editing.md |  | - **Gotchas (Oct 30):** cairo `paint_with_alpha` ignores a rectangle p… |
 | 383 | EVIDENCE | history | KEEP → ST-06, ED-05 | **KEEP:** two-character 2D format; per-line voice clips (re-timing, re… |
-| 384 | CURRENT | RS-01 |  | - **Research rule (user, Oct 31 — after the Diwali bonus miss):** befo… |
+| 384 | CURRENT | RS-01 | recency now applies to time-sensitive facts only (v2, user Nov 10) | - **Research rule (user, Oct 31 — after the Diwali bonus miss):** befo… |
 | 385 | CURRENT | WF-01 |  | - **Scene sheet before render (user, Oct 31):** after the script is lo… |
 | 386 | CURRENT | DIR-01 |  | - **Animation style in the scene sheet (user, Nov 8 2026):** the scene… |
 | 387 | CURRENT | BR-06 |  | - **Telugu on-screen text (user, Oct 31):** the TE version must show T… |

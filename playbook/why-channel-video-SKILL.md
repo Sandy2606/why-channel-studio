@@ -35,7 +35,7 @@ Channel: "Why?" and "Why? Telugu" (handles → BR-07). Faceless explainers and s
 | Audio edit, pacing, loudness, Telugu and caption checks, phrase timing | ED-01 – ED-05 | `roles/editor.md` |
 | Delivery gate, severity, score, reporting, layout checks, technical checks | QC-01 – QC-06 | `roles/qc.md` |
 | Post copy, counts, hashtags, after upload, disclosure, CTA text, claims | PUB-01 – PUB-07 | `roles/publishing.md` |
-| Platform limits and recommendations (dated, sourced) | PLT-01 – PLT-08 | `platform_rules.md` |
+| Platform limits, disclosure policy and recommendations (dated, sourced) | PLT-01 – PLT-09 | `platform_rules.md` |
 | Data before diagnosis, weekly review, post-launch watch | AN-01 – AN-03 | `roles/analytics.md` |
 | Golden Sparrow series | GS-01 – GS-06 | `plans/golden_sparrow.md` |
 

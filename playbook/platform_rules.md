@@ -12,9 +12,15 @@ Before each publishing pass, re-verify any limit the copy depends on and record 
 - **[PLT-01]** (P) **YouTube Shorts:** a square or vertical video up to 3 minutes is a Short (uploads from Oct 15, 2024). Status: CONFIRMED, YouTube Help "Understand three-minute YouTube Shorts" (support.google.com/youtube/answer/15424877), checked 2026-11-10. The channel's own limit is FMT-01.
 - **[PLT-02]** (P) **Instagram hashtags:** at most 5 per post or Reel caption. Status: CONFIRMED as an Instagram announcement (Instagram's @creators account on Threads, reported by Social Media Today on 2025-12-18; rolled out gradually), checked 2026-11-10. No official Help Center page was found in this check.
 - **[PLT-03]** (P) **Instagram caption:** 2,200 characters or fewer. Status: SECONDARY (third-party guides, 2026), checked 2026-11-10; the user's rule since Nov 10 (→ PUB-02).
-- **[PLT-04]** (P) **YouTube tags:** 500 characters or fewer in total. Status: SECONDARY, checked 2026-11-10.
+- **[PLT-04]** (P) **YouTube tags:** 500 characters or fewer in total (Status: SECONDARY). Role in discovery (Status: CONFIRMED, YouTube Help "Add tags to videos", support.google.com/youtube/answer/146402, checked 2026-11-10): the title, thumbnail and description matter more; tags "play a minimal role" except for commonly misspelled content; excessive tags in a description break spam policy.
 - **[PLT-05]** (P) **YouTube title:** 100 characters or fewer. Status: SECONDARY, checked 2026-11-10.
 - **[PLT-06]** (P) **Instagram Reels length:** the channel posts the same full video as on YouTube, under 3:00 (→ FMT-01, FMT-09). Re-check Instagram's current Reel length limit before relying on anything over 3:00. Status: NEEDS RE-CHECK.
+
+- **[PLT-09]** (P) **YouTube altered or synthetic content.**
+  - **Disclose:** making a real person appear to say or do something they didn't; altering footage of a real event or place; generating a realistic scene that didn't actually occur; AI-generated music that is the main focus of the video.
+  - **No disclosure needed:** clearly unrealistic content (e.g. an AI-generated animation in a fully animated video); minor aesthetic edits (beauty, colour and lighting filters, audio repair); production assistance (e.g. a generated outline); cloning your own voice for voice-overs or dubs.
+  - **Not addressed by the page:** historical reenactments, and cloned voices of other consenting people.
+  - Status: CONFIRMED, YouTube Help "Disclosing use of altered or synthetic content" (support.google.com/youtube/answer/14328491), checked 2026-11-10. The page shows no last-updated date, so re-check before each publishing pass. How we apply it: PUB-05.
 
 ## Scheduling data
 - **[PLT-07]** (C) **Posting times** (set Oct 26 for an India audience; the user is in Texas). Status: NEEDS RE-CHECK against real audience data.

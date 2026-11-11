@@ -5,7 +5,9 @@
 **Outputs:** the source register in the production brief (claim, source, date checked); cautious wording notes for the story editor.
 
 ## Rules
-- **[RS-01]** (P, user Oct 31) Before any script goes to the user, verify every law, rule, rate, date and number against a source dated within the last few months; search "current", "2026", "amended", "repealed", "replaced by". Never rely on memory for laws or regulations. Put the check date next to each source.
+- **[RS-01]** (P, v2 user Nov 10; v1 user Oct 31) Before any script goes to the user, verify every claim against a source, and put the check date next to each source.
+  - **Time-sensitive facts** (laws, regulations, rates, prices, policies, platform rules, office-holders, anything that can change): verify against a current source, searching "current", "2026", "amended", "repealed", "replaced by". Never rely on memory for these.
+  - **Historical claims** (dates, figures, events, people): prioritise primary records, reputable scholarship and original source material, whatever their publication date. Publication recency is not a measure of historical accuracy. Where scholars disagree, say so (→ RS-06).
 - **[RS-02]** (P, playbook) Record the outlet, date and URL for every claim. Word legends as tradition or belief ("tradition says").
 - **[RS-03]** (P, playbook Oct 29) Every on-screen number and formula matches the script's maths and the source.
 - **[RS-04]** (P, approved video Nov 6) Label every estimate with its year and who estimated it ("2025 · CAIT ESTIMATE"). In the voice, attribute each number in the same sentence.
@@ -16,7 +18,7 @@
 
 ## Checklist
 1. Every claim in the script has a register entry with a source and a check date.
-2. Laws and rates were re-checked for amendments or repeal (→ RS-01).
+2. Time-sensitive facts were re-checked against current sources; historical claims rest on primary records or reputable scholarship (→ RS-01).
 3. Numbers match the source exactly; estimates are labelled (→ RS-03, RS-04).
 4. Disputed points are worded as disputed, and the payoff states what *is* known.
 5. No image or label implies something the sources don't support, such as an invented portrait (→ ART-02).
