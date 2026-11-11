@@ -14,7 +14,7 @@
 ## Checklist
 1. Runtime is measured after the standard edit, with margin, under 3:00 (→ FMT-01).
 2. Pauses follow ED-01 and ED-02.
-3. Captions are exact and in their lane (→ LAY-02).
+3. Captions are exact and readable, and cover no essential information (→ LAY-02).
 4. Loudness and peak meet ED-03.
 5. Telugu has been verified (→ ED-04).
 6. Four exports, same body (→ FMT-09).

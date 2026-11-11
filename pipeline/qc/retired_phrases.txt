@@ -29,3 +29,5 @@ never in the explaining parts
 only when AI images look photoreal
 every 30–45 s
 [Rr]e-hook every
+Content stays above ~1360
+Captions have their own lane

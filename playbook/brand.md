@@ -14,10 +14,16 @@ Channel-wide look. Role guides link here and never restate these values. Rule fo
 - **[BR-09]** (P, user Oct 29) **CTA card:** a realistic animated subscribe/follow card (`pipeline/style_v2/cta_card.py`). YT: profile picture, channel name and handle, Subscribe → "Subscribed", then the bell → "All". IG: profile picture, handle, Follow → "Following" with a check mark. Real click, bell and tick sounds.
 
 ## Layout
-- **[LAY-01]** (P, user Oct 2026 and Nov 10) **Use the whole frame.** Full-screen pictures, maps and graphics fill the frame to every edge: no dark band, bottom fade, masked area or heavy dim, and no visuals shrunk into bands or boxes. Compose so the caption lane falls on a calm part of the picture.
-- **[LAY-02]** (P, user Nov 10) **Captions have their own lane** and never sit on a picture, document, map label, card or credit.
-  - 9:16: the lane is centred at y≈1446, above the YouTube/Instagram overlay (roughly the bottom 400 px). Content stays above ~1360, and credits sit at y≈1330 with the picture they describe. If a scene needs the lane, move the caption to the next free space instead of over the content.
-  - Captions stay readable with a text shadow or outline, with no caption box, band or fade.
+- **[LAY-01]** (P, v2 user Nov 11; earlier Oct 2026 and Nov 10) **Use the whole frame as the storytelling canvas.**
+  - Use the full frame whenever the story benefits; never a fixed working area that leaves the lower part of the frame unused, and no large, permanently dark or empty regions just because captions appear near the bottom.
+  - Distribute information across the top, centre and lower parts of the frame, and vary the composition from scene to scene instead of repeating one arrangement.
+  - Let animation move through the frame: maps, connecting lines, ships, arrows, formations and flows may extend into the lower screen and behind the platform overlays when they are not essential text.
+  - Full-screen pictures, maps and graphics fill the frame to every edge: no dark band, bottom fade, masked area or heavy dim, and no visuals shrunk into bands or boxes.
+  - Intentional negative space is allowed when it serves the story; unused space must be a directorial choice, not a layout limitation. The goal is not to make objects bigger or fill every pixel. No decorative clutter or unnecessary effects (→ BR-05).
+- **[LAY-02]** (P, v3 user Nov 11; earlier Nov 10) **Captions are always readable and never hide essential information.**
+  - 9:16: captions sit at y≈1446 by default, above the YouTube/Instagram overlay.
+  - Captions may sit over maps, diagrams, moving graphics and full-frame pictures, with an outline, a shadow or a subtle local gradient behind the words (never a full-width band or box). They must never become unreadable.
+  - Captions never cover essential information: an inset picture or document panel, a card, a label, a count or a credit. Moving elements (coins, formations, map lines, figures) are softened or routed around the caption line so they don't compete with it.
   - Captions are word by word, synced, with the active word in amber, spelled exactly as the script.
 - **[LAY-03]** (P, playbook) **Safe zones.**
   - 9:16: key text between y = 250 and 1550; nothing important in the bottom ~370 px or the right ~140 px.

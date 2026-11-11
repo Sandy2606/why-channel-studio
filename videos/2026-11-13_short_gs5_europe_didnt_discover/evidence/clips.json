@@ -1,0 +1,105 @@
+{
+ "A1_christian_pilot": {
+  "box": {
+   "x": 43,
+   "y": 617.6875,
+   "w": 344,
+   "h": 164.328125
+  },
+  "rects": [
+   {
+    "x": 282.4875,
+    "y": 288.78749999999997,
+    "w": 370.72499999999997,
+    "h": 40.8
+   }
+  ],
+  "text": "On the following Sunday, the 22nd of April, the king’s zavra brought on board one of his confidential servants, and as two days had passed without any visitors, the captain-major had this man seized, and sent word to the king that he required the pilots whom he had promised. The king, when he received this message, sent a Christian pilot,132 and the captain-major allowed the gentleman, whom he had retained in his vessel, to go away."
+ },
+ "A2_calecut_christians": {
+  "box": {
+   "x": 43,
+   "y": 600.03125,
+   "w": 344,
+   "h": 200.328125
+  },
+  "rects": [
+   {
+    "x": 489.97499999999997,
+    "y": 24,
+    "w": 369.22499999999997,
+    "h": 40.8
+   },
+   {
+    "x": 33.6,
+    "y": 67.2,
+    "w": 397.34999999999997,
+    "h": 40.8
+   }
+  ],
+  "text": "[A description of Calecut.] The city of Calecut is inhabited by Christians. They are of a tawny complexion. Some of them have big beards and long hair, whilst others clip their hair short or shave the head, merely allowing a tuft to remain on the crown as a sign that they are Christians. They also wear moustaches. They pierce the ears and wear much gold in them. They go naked down to the waist, covering their lower extremities with very fine cotton stuffs. But it is only the most respectable who do this, for the others manage as best they are able.148"
+ },
+ "B1_fn132_gujarat": {
+  "box": {
+   "x": 77.390625,
+   "y": 649.453125,
+   "w": 275.21875,
+   "h": 102
+  },
+  "rects": [
+   {
+    "x": 33.6,
+    "y": 24,
+    "w": 473.54999999999995,
+    "h": 38.4
+   }
+  ],
+  "text": "[132] This pilot was a native of Gujarat, whom Goes (c. 38), Barros (Dec. I, liv. 4, c. 6), and Faria y Sousa call Malema Cana, or Canaqua. Malema is a corruption of Mallim, master or teacher, whilst Canaqua (Kanaka), is the name of his caste. It is also used for sailing master."
+ },
+ "W1_tunis": {
+  "box": {
+   "x": 43,
+   "y": 480.890625,
+   "w": 344,
+   "h": 438.984375
+  },
+  "rects": [
+   {
+    "x": 487.2,
+    "y": 159.1875,
+    "w": 372,
+    "h": 40.8
+   },
+   {
+    "x": 33.6,
+    "y": 207.975,
+    "w": 628.65,
+    "h": 40.8
+   }
+  ],
+  "text": "On the following day [May 21] these same boats came again alongside, when the captain-major sent one of the convicts145 to Calecut, and those with whom he went took him to two Moors from Tunis, who could speak Castilian and Genoese.146 The first greeting that he received was in these words: “May the Devil take thee! What brought you hither?” They asked what he sought so far away from home, and he told them that we came in search of Christians and of spices. They said: “Why does not the 49King of Castile, the King of France, or the Signoria of Venice send hither?” He said that the King of Portugal would not consent to their doing so, and they said he did the right thing. After this conversation they took him to their lodgings and gave him wheaten bread and honey. When he had eaten he returned to the ships, accompanied by one of the Moors, who was, no sooner on board, than he said these words: “A lucky venture, a lucky venture! Plenty of rubies, plenty of emeralds! You owe great thanks to God, for having brought you to a country holding such riches!” We were greatly astonished to hear his talk, for we never expected to hear our language spoken so far away from Portugal.147"
+ },
+ "W2_gifts": {
+  "box": {
+   "x": 43,
+   "y": 444.078125,
+   "w": 344,
+   "h": 510.984375
+  },
+  "rects": [
+   {
+    "x": 105.1875,
+    "y": 504.78749999999997,
+    "w": 754.0124999999999,
+    "h": 40.8
+   },
+   {
+    "x": 33.6,
+    "y": 547.9875,
+    "w": 399.97499999999997,
+    "h": 40.8
+   }
+  ],
+  "text": "[Presents for the King.] On Tuesday [May 29] the captain got ready the following things to be sent to the king, viz., twelve pieces of lambel,174 four scarlet hoods, six hats, four strings of coral, a case containing six wash-hand basins, a case of sugar, two casks of oil, and two of honey. And as it is the custom not to send anything to the king without the knowledge of the Moor, his factor, and of the bale, the captain informed them of his intention. They came, and when they saw the present they laughed at it, saying that it was not a thing to offer to a king, that the poorest merchant from Mecca, or any other part of India, gave more, and that if he wanted to make a present it should be in gold, as the king would not accept such things. When the captain heard this he grew sad, and said that he had brought no gold, that, moreover, he was no merchant, but an ambassador; that he gave of that which he had, which 61was his own [private gift] and not the king’s;175 that if the King of Portugal ordered him to return he would intrust him with far richer presents; and that if King Camolim176 would not accept these things he would send them back to the ships. Upon this they declared that they would not forward his presents, nor consent to his forwarding them himself. When they had gone there came certain Moorish merchants, and they all depreciated the present which the captain desired to be sent to the king."
+ }
+}

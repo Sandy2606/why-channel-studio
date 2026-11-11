@@ -42,6 +42,9 @@ class SoundCatalog:
         e = self.entries[key]
         if self.physical(key) is None: return 'fail', f'catalog entry {key} points at a missing file {e["file"]}'
         if e.get('approved_for_new_work') is False: return 'fail', f'{key}: provenance {e.get("licence_status", "UNKNOWN")}, not cleared for new work'
+        if e.get('owner_approval') and str(e.get('third_party_rights', '')).upper().startswith('UNVERIFIED'):
+            # cleared by the channel owner, but owner approval is not proof of third-party rights: usable, always surfaced for review
+            return 'review', f'{key}: {e.get("licence_status", "owner-approved")} (owner approval {e["owner_approval"].get("date", "?")}; third-party rights unverified)'
         return 'ok', key
 
 

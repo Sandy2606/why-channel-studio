@@ -31,4 +31,4 @@ python3 pipeline/qc/qc_summary.py qc --type short --signoff qc_signoff.md --out 
 ```
 Run `qc_layout.py` on previews or stills before the full render (WF-02): that is where it saves the most rework.
 
-Self-test: `python3 pipeline/qc/tests/run_tests.py [--report pipeline/qc/tests/LAST_RUN.md]` (32 synthetic good and deliberately failing fixtures; temporary files are deleted afterwards).
+Self-test: `python3 pipeline/qc/tests/run_tests.py [--report pipeline/qc/tests/LAST_RUN.md]` (64 synthetic good and deliberately failing fixtures; temporary files are deleted afterwards).

@@ -157,17 +157,19 @@ Short recap. Question? Comment your why. #WhyEveryQuestionHasAStory #history #in
     enc(f'{B}/U_EN_IG.mp4', body + endB, '[1:a]adelay=200|200,atrim=0:8,asetpts=PTS-STARTPTS[d];[0:v][d][2:v][3:a]concat=n=2:v=1:a=1[v][a]')
     # ---- sound catalog fixtures
     SX = os.path.join(T, 'sfx'); os.makedirs(f'{SX}/amb', exist_ok=True)
-    for n in ('knock.wav', 'amb/village.mp3', 'amb/extra.mp3', 'amb_fire.mp3'):
+    for n in ('knock.wav', 'amb/village.mp3', 'amb/extra.mp3', 'amb/village2.mp3', 'amb_fire.mp3'):
         ff('-f', 'lavfi', '-i', 'sine=f=300:d=0.5', f'{SX}/{n}')
     json.dump({'knock': {'file': 'lib/knock.wav'}, 'amb_village': {'file': 'amb/village.mp3'}, 'gone': {'file': 'amb/gone.mp3'},
-               'amb_fire': {'file': 'amb_fire.mp3', 'licence_status': 'UNKNOWN', 'approved_for_new_work': False}}, open(f'{SX}/catalog.json', 'w'))
+               'amb_fire': {'file': 'amb_fire.mp3', 'licence_status': 'UNKNOWN', 'approved_for_new_work': False},
+               'amb_owner': {'file': 'amb/extra.mp3', 'licence_status': 'APPROVED BY OWNER, SOURCE NOT RECORDED', 'approved_for_new_work': True,
+                             'owner_approval': {'date': '2026-11-10'}, 'third_party_rights': 'UNVERIFIED: source never recorded'}}, open(f'{SX}/catalog.json', 'w'))
     def sreg(name, assets):
         open(f'{T}/{name}.md', 'w').write('# Asset register\n\n' + hdr + ''.join(
             f'| S{i} | {x} | test source | test licence |  |  |  |  | scene |\n' for i, x in enumerate(assets)))
     sreg('snd_good', ['knock', 'amb/village.mp3', 'lib/knock.wav', 'sfx/amb/village.mp3'])
     sreg('real_restricted', ['sfx_cannon_distant', 'amb_fire', 'amb_crowd', 'amb_drums'])
     sreg('real_approved', ['amb_village', 'amb/court.mp3', 'harbour_waves.wav', 'sfx_quill', 'impact_big', 'riser.wav']); sreg('real_stale', ['lib/riser.wav'])
-    sreg('snd_missing_entry', ['amb/nope.mp3']); sreg('snd_missing_file', ['gone']); sreg('snd_uncat', ['amb/extra.mp3']); sreg('snd_unknown', ['amb_fire'])
+    sreg('snd_missing_entry', ['amb/nope.mp3']); sreg('snd_missing_file', ['gone']); sreg('snd_uncat', ['amb/village2.mp3']); sreg('snd_owner', ['amb_owner']); sreg('snd_unknown', ['amb_fire'])
     # ---- limits come from platform_rules.md: a copy with a 3-hashtag limit must fail a 4-hashtag caption
     pr = open(os.path.join(REPO, 'playbook/platform_rules.md')).read().replace('"ig_hashtags_max":      {"value": 5,', '"ig_hashtags_max":      {"value": 3,')
     open(f'{T}/platform_rules_3tags.md', 'w').write(pr)
@@ -219,7 +221,8 @@ Short recap. Question? Comment your why. #WhyEveryQuestionHasAStory #history #in
         ('sounds: catalogued but file missing', check_assets, [f'{T}/snd_missing_file.md', '--catalog', f'{SX}/catalog.json', '--sfx-root', SX], 'FAIL', {'sounds:': 'FAIL'}),
         ('sounds: file present but uncatalogued', check_assets, [f'{T}/snd_uncat.md', '--catalog', f'{SX}/catalog.json', '--sfx-root', SX], 'INCOMPLETE', {'sounds:': 'REVIEW'}),
         ('sounds: provenance UNKNOWN, not cleared', check_assets, [f'{T}/snd_unknown.md', '--catalog', f'{SX}/catalog.json', '--sfx-root', SX], 'FAIL', {'sounds:': 'FAIL'}),
-        ('sounds (real catalog): the 4 restricted sounds cannot be used for new work', check_assets, [f'{T}/real_restricted.md'], 'FAIL', {'sounds:': 'FAIL'}),
+        ('sounds: owner-approved, source not recorded -> usable but flagged for review', check_assets, [f'{T}/snd_owner.md', '--catalog', f'{SX}/catalog.json', '--sfx-root', SX], 'INCOMPLETE', {'sounds:': 'REVIEW'}),
+        ('sounds (real catalog): the 4 owner-approved sounds resolve, flagged for review (provenance unverified)', check_assets, [f'{T}/real_restricted.md'], 'INCOMPLETE', {'sounds:': 'REVIEW'}),
         ('sounds (real catalog): approved and corrected-path sounds resolve', check_assets, [f'{T}/real_approved.md'], 'INCOMPLETE', {'sounds:': 'PASS'}),
         ('sounds (real catalog): the retired lib/ path form is rejected', check_assets, [f'{T}/real_stale.md'], 'FAIL', {'sounds:': 'FAIL'}),
         ('catalog integrity (real catalog): every entry has its file, no stale paths', check_assets, [f'{T}/none.md', '--catalog-integrity'], 'INCOMPLETE', {'catalog integrity': 'PASS'}),

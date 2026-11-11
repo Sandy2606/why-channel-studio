@@ -1,0 +1,27 @@
+{
+ "file": "GoldenSparrow6_EN_YT.mp4",
+ "duration": 171.87,
+ "black": [],
+ "freeze": [],
+ "loudness_I": "-14.7",
+ "true_peak": "-2.3",
+ "decode_errors": 0,
+ "loop_seam_diff": 92.02,
+ "frame1_mean": 110.2,
+ "sharpness": {
+  "hook": 327.8,
+  "perm": 639.3,
+  "war": 486.9,
+  "farman": 1373.1,
+  "cartoon1": 908.2,
+  "wars": 745.5,
+  "lesson": 642.0,
+  "siraj": 1637.4,
+  "plassey": 601.3,
+  "buxar": 398.7,
+  "payoff": 878.8,
+  "question": 1377.9,
+  "tease": 1674.8,
+  "slide": 2093.3
+ }
+}

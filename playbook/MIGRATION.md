@@ -406,3 +406,17 @@ Status: **CURRENT** (the content lives on in the named rule), **METHOD** (a tech
 | 394 | CURRENT | AN-03 |  | - Watch after posting: replay rate (loop) and any dip at the correctio… |
 | 395 | SUPERSEDED | FMT-01 | hard limit kept; 2:45/2:50 targets removed (user Nov 10, decision 1); budgeting → methods/editing.md | - **Shorts HARD LIMIT (user, Oct 31): every Short/Reel must be under 3… |
 | 396 | CURRENT | DIR-09 | its "every-2-min card for long videos" part SUPERSEDED by FMT-05 | - **Shorts visual rules (from ChatGPT storyboard review, Oct 31, agree… |
+
+## Merge addendum (2026-11-11): lines added to the old playbook on `main` after the reorganisation
+While `pro-system` waited for review, `main` kept the old single-file playbook and added Golden Sparrow 5/6 and 6/6 entries to it. Bringing `pro-system` up to date with `main` keeps the reorganised master playbook and moves each added line here:
+
+| Added on main | Status | New home | Note |
+|---|---|---|---|
+| GS 5/6 score and strengths/holding back | EVIDENCE | `history.md` [GS5 · EVIDENCE] | |
+| GS 5/6 evidence-exhibit KEEP/DROP | TEST | `history.md` [GS5 · TEST] | awaiting approval as a rule |
+| GS 5/6 Telugu cue timing KEEP | TEST | `history.md` [GS5 · TEST] | |
+| GS 6/6 score and strengths/holding back | EVIDENCE | `history.md` [GS6 · EVIDENCE] | |
+| "Full-frame composition (user, Nov 11)": whole frame as canvas, varied composition, no fixed working area | CURRENT | LAY-01 v2 | the user's Nov 11 instruction; v1 is SUPERSEDED in `history.md` |
+| "Full-frame composition": captions over moving graphics with a local shadow; moving elements kept off the caption line; essential text out of the overlays | CURRENT | LAY-02 v3, LAY-03 | v2 ("content stays above ~1360") is SUPERSEDED in `history.md` |
+| "Full-frame composition": blurred backdrop / full-height native crop; Telugu ≈ → glyphs and label sizes; window re-render | TEST | `history.md` [GS6 · TEST] | |
+| GS 6/6 score-history line | EVIDENCE | `history.md` [GS6 · EVIDENCE] | |

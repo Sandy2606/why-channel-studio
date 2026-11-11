@@ -193,6 +193,27 @@ Each entry: the replaced version (verbatim), the replacement, the reason and dat
 - **[SD-05]** (C, playbook) Ambience is only faint real ambience under real event footage, never in the explaining parts. Reject recordings with modern gunfire, intelligible modern speech or engine hum.
 ```
 
+### LAY-01 v1 · SUPERSEDED by LAY-01 v2 (2026-11-11)
+- Reason: User Nov 11 (GS 6/6 composition correction, approved after before/after frames): "Please treat the entire 1080×1920 frame as a professional director's canvas… Do not enforce a fixed rectangular working area that leaves the lower part unused… Distribute visual information naturally across the top, centre and lower portions… Intentional negative space is fine when it improves the story, but unused space should be a deliberate directorial choice—not a fixed layout limitation."
+- Scope: channel-wide (the user's wording is general; recorded as channel-wide pending his confirmation in the PR #2 report).
+- Old text:
+
+```text
+- **[LAY-01]** (P, user Oct 2026 and Nov 10) **Use the whole frame.** Full-screen pictures, maps and graphics fill the frame to every edge: no dark band, bottom fade, masked area or heavy dim, and no visuals shrunk into bands or boxes. Compose so the caption lane falls on a calm part of the picture.
+```
+
+### LAY-02 v2 · SUPERSEDED by LAY-02 v3 (2026-11-11)
+- Reason: User Nov 11 (GS 6/6): "Do not leave large, permanently dark or empty regions simply because captions appear near the bottom. Captions may sit over moving visuals with appropriate contrast, outlines, shadows or subtle local gradients. They should never become unreadable." and "Make sure moving coins, military formations, maps and graphic lines do not obscure subtitles or critical information." The v2 limit "content stays above ~1360" and "captions never sit on a picture" conflicted with this.
+- Scope: channel-wide (as LAY-01 v2).
+- Old text:
+
+```text
+- **[LAY-02]** (P, user Nov 10) **Captions have their own lane** and never sit on a picture, document, map label, card or credit.
+  - 9:16: the lane is centred at y≈1446, above the YouTube/Instagram overlay (roughly the bottom 400 px). Content stays above ~1360, and credits sit at y≈1330 with the picture they describe. If a scene needs the lane, move the caption to the next free space instead of over the content.
+  - Captions stay readable with a text shadow or outline, with no caption box, band or fade.
+  - Captions are word by word, synced, with the active word in amber, spelled exactly as the script.
+```
+
 ## Superseded rules
 
 Each entry: old text (verbatim, with old playbook line numbers), replaced by, reason and date, scope. Unless noted, the scope is channel-wide and the reorganisation date is 2026-11-10.
@@ -681,7 +702,17 @@ Channel: "Why?" (YouTube @WhyEveryQuestionHasaStory, Instagram @whyeveryquestion
 - [PB:381 · EVIDENCE] Diwali long "DIWALI, EXPLAINED" (Nov 1, first 2D two-character video): EN 7:46 / TE 8:48, both -14 LUFS, frame 1 bright (mean 91). EN/TE ~8.3. Strong: cast + room set with lip-sync and REC framing, cold-open question cards → evidence-board title, 6 chapter cards + progress bar (6 dots + 3 locks), one graphic per idea (moon strip, drift band, adhik maas, watch, Sankranti vs Eid, Amavasya diyas, humidity gauge, lime wash, checklist, 12+1 tiles, ₹ formula, counter, jobs grid, NOT DIWALI stamp + legend, NASA panel, ticker board, chopda, trade tap, map, lid, Mumbai vs Delhi, IIT graph), real PDF clippings with highlights in every chapter, subscribe card every 2 min, series slide + end card. Holding back: some graphics go static after their animation for 6–8 s (lime wash, then/now split) → add slow camera pushes on gfx scenes; characters have one standing pose (no walk/sit), Anna's gesture is a single arm; IIT graph is illustrative (labelled); TE captions spread by length (no ASR); no sound auditioned by ear.
 - [PB:383 · EVIDENCE] **KEEP:** two-character 2D format; per-line voice clips (re-timing, reuse in Shorts); scene list keyed by script line numbers.
 
+- [GS5 · EVIDENCE] **Golden Sparrow 5/6 "Europe didn't discover India" (Nov 11): EN 2:17 / TE 2:46, approved.** Strengths: one map with one line of light (the busy Indian Ocean built people by people, a Roman-coins-to-1498 time rail, da Gama's route plugging into the old network); big wind arrows at the monsoon reversal; the pilot as an evidence trail with one exhibit at a time (the crew's journal manuscript alone, then the separate 1898 translation; 'CHRISTIAN'; Barros 1552 → MALEMO CANAQUA → a title, not a name; IBN MAJID? → unlikely; a hedged Gujarat verdict); a diplomacy-and-force ledger for both powers. Holding back: six script/review rounds; Telugu voice 14 s over estimate; held cards in the first Telugu render caught by freezedetect. Credits 2,072.
+- [GS6 · EVIDENCE] **Golden Sparrow 6/6 "The company that came to trade" (season finale, Nov 11): EN 2:51.9 / TE 2:52.6, approved ("perfect").** Strong: one season line (1608 ASKED → 1613 APPROVED → 1686 WAR LOST → 1717 FARMAN → 1740s WARS → 1757 PLASSEY → 1765 TAXES) through every scene, completed at the end; Plassey as counted dots (1 dot ≈ 500 men, National Army Museum figures) with Mir Jafar's cavalry leaving a visible gap; the payoff as a top-to-bottom chain (imported silver bullion → Indian cloth → Bengal's fields rising as revenue after 1765). Holding back: two composition rounds (the 60–70 % working area was rejected → LAY-01 v2, LAY-02 v3); four windows re-rendered after QC (sepoys over the caption line, two Telugu holds, label-edge and overlap defects). Credits 257.
+- [GS6 · EVIDENCE] Golden Sparrow Season 1 complete (Nov 11): film + six Shorts approved.
+
 ## TEST (lessons awaiting approval)
 
-- None yet. New lessons from each delivery are added here (→ WF-05, AN-02).
+- [GS5 · TEST] Evidence exhibits: one primary document at a time with clean cuts; a large key term (≈90 px) first, then the document, then a small source line (≥24 px); a manuscript shown alone and labelled before any translated quote, never a translation over the manuscript; web clippings captured narrow (≈430 CSS px at 2.4×) and cropped on whole lines; a stand-in object labelled "illustrative example, not the excavated original".
+- [GS5 · TEST] DROP: wind as streaks only (use large direction arrows); routes and wind at the same visual weight.
+- [GS5 · TEST] Telugu cue timing: align script words to a Telugu Whisper pass split at pauses (`words_te2.py`), then check every Telugu exhibit cue on the frame; run freezedetect on both languages and give every hold over 2.5 s meaningful motion.
+- [GS6 · TEST] An archive picture that can't fill the frame sharply sits on a heavily blurred, darkened copy of itself (texture only), or uses a native-pixel crop that fills the full height (Hayman 2400×1870 at 1.0; Jahangir darbar 2327×3286).
+- [GS6 · TEST] Telugu fonts have no ≈ or → glyphs: spell out దాదాపు or use a dash. Telugu small labels run about 1.2× the English pixel size; kickers ≥ 30 px and secondary labels ≥ 26 px read at phone size.
+- [GS6 · TEST] Late defects: re-render only the affected windows between keyframes and splice frame-exactly by stream copy (`videos/2026-11-14_short_gs6_company_came_to_trade/pipeline/patch.py`), then re-run every QC check.
+- New lessons from each delivery are added here (→ WF-05, AN-02).
 

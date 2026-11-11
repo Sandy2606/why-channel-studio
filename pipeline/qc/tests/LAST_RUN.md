@@ -1,6 +1,6 @@
 # pipeline/qc self-test
 
-63 of 63 cases behaved as expected.
+64 of 64 cases behaved as expected.
 
 | Result | Case | Expected | Got | Check statuses |
 |---|---|---|---|---|
@@ -42,7 +42,8 @@
 | ok | sounds: catalogued but file missing | expected FAIL | got FAIL | source and licence recorded: PASS; image scale <= 1.0 (no enlargement): PASS; AI and composite images labelled: PASS; sounds: catalogued, file present, cleared for new work: FAIL; licences are actually correct: NOT PERFORMED |
 | ok | sounds: file present but uncatalogued | expected INCOMPLETE | got INCOMPLETE | source and licence recorded: PASS; image scale <= 1.0 (no enlargement): PASS; AI and composite images labelled: PASS; sounds: catalogued, file present, cleared for new work: REVIEW; licences are actually correct: NOT PERFORMED |
 | ok | sounds: provenance UNKNOWN, not cleared | expected FAIL | got FAIL | source and licence recorded: PASS; image scale <= 1.0 (no enlargement): PASS; AI and composite images labelled: PASS; sounds: catalogued, file present, cleared for new work: FAIL; licences are actually correct: NOT PERFORMED |
-| ok | sounds (real catalog): the 4 restricted sounds cannot be used for new work | expected FAIL | got FAIL | source and licence recorded: PASS; image scale <= 1.0 (no enlargement): PASS; AI and composite images labelled: PASS; sounds: catalogued, file present, cleared for new work: FAIL; licences are actually correct: NOT PERFORMED |
+| ok | sounds: owner-approved, source not recorded -> usable but flagged for review | expected INCOMPLETE | got INCOMPLETE | source and licence recorded: PASS; image scale <= 1.0 (no enlargement): PASS; AI and composite images labelled: PASS; sounds: catalogued, file present, cleared for new work: REVIEW; licences are actually correct: NOT PERFORMED |
+| ok | sounds (real catalog): the 4 owner-approved sounds resolve, flagged for review (provenance unverified) | expected INCOMPLETE | got INCOMPLETE | source and licence recorded: PASS; image scale <= 1.0 (no enlargement): PASS; AI and composite images labelled: PASS; sounds: catalogued, file present, cleared for new work: REVIEW; licences are actually correct: NOT PERFORMED |
 | ok | sounds (real catalog): approved and corrected-path sounds resolve | expected INCOMPLETE | got INCOMPLETE | source and licence recorded: PASS; image scale <= 1.0 (no enlargement): PASS; AI and composite images labelled: PASS; sounds: catalogued, file present, cleared for new work: PASS; licences are actually correct: NOT PERFORMED |
 | ok | sounds (real catalog): the retired lib/ path form is rejected | expected FAIL | got FAIL | source and licence recorded: PASS; image scale <= 1.0 (no enlargement): PASS; AI and composite images labelled: PASS; sounds: catalogued, file present, cleared for new work: FAIL; licences are actually correct: NOT PERFORMED |
 | ok | catalog integrity (real catalog): every entry has its file, no stale paths | expected INCOMPLETE | got INCOMPLETE | catalog integrity (every entry has its file): PASS; asset register: NOT PERFORMED |

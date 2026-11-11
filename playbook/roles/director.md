@@ -39,9 +39,9 @@
 3. Processes are shown on the object (→ DIR-03).
 4. The rhythm follows the information (→ DIR-04).
 5. Images stay within native resolution (→ LAY-05, MO-01).
-6. The caption lane is free in every composition (→ LAY-02).
+6. The whole frame is used deliberately, and captions stay readable without covering essential information (→ LAY-01, LAY-02).
 7. Subscribe reminders follow FMT-04 and FMT-05.
 8. Whole-film review before render: repetition, slideshow risk, a dead middle.
 
-**Failure conditions:** DIR-02 failures; a style not agreed; a composition that needs content in the caption lane.
+**Failure conditions:** DIR-02 failures; a style not agreed; a composition that leaves the lower frame unused without a reason, or where captions cover essential information.
 **Handoff:** the scene sheet and the asset needs go to the art director; motion previews (→ WF-02) go to the motion designer.

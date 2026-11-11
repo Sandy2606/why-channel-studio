@@ -1,0 +1,28 @@
+{
+ "file": "GoldenSparrow5_TE_YT.mp4",
+ "duration": 166.06,
+ "black": [],
+ "freeze": [],
+ "loudness_I": "-14.7",
+ "true_peak": "-1.5",
+ "decode_errors": 0,
+ "loop_seam_diff": 1.99,
+ "frame1_mean": 145.3,
+ "sharpness": {
+  "hook": 1186.8,
+  "cartoon1": 668.2,
+  "ocean": 728.7,
+  "monsoon": 649.1,
+  "cartoon2": 519.9,
+  "route": 97.6,
+  "pilot": 1348.9,
+  "cartoon3": 448.9,
+  "welcome": 1590.6,
+  "gifts": 937.5,
+  "old": 473.9,
+  "force": 746.2,
+  "tease": 1511.0,
+  "slide": 1394.2,
+  "loop": 1539.5
+ }
+}

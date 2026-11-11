@@ -600,44 +600,72 @@
   "source": "Freesound 675613 \"S20-12 Distant cannon fire\" (craigsmith)",
   "dur": 35.71,
   "use": "distant cannon fire (several shots)",
-  "note": "",
+  "note": "owner-approved for new work (2026-11-10); used once, very low, in GS 5/6 and GS 6/6",
   "license": "CC0 (as listed by Freesound)",
   "provenance": "PENDING: metadata matches the documented original (WAV, 48 kHz, 24-bit, mono, 35.705 s, 4.9 MB); audio not compared because the original needs a Freesound login; golden_sparrow_sfx_sources.txt still says MISSING",
   "hit_at": 3.6,
-  "licence_status": "PENDING VERIFICATION",
-  "approved_for_new_work": false
+  "licence_status": "APPROVED BY OWNER, PROVENANCE UNVERIFIED",
+  "approved_for_new_work": true,
+  "owner_approval": {
+   "date": "2026-11-10",
+   "by": "Sandeep (channel owner)",
+   "words": "I'm sure that it was from the free of source and will not get copy copyright claim",
+   "scope": "use in Why? productions"
+  },
+  "third_party_rights": "UNVERIFIED: the listed source is Freesound 675613 (CC0 as listed by Freesound; CC0 needs no credit), but this file has not been matched to that original because the download needs a Freesound login; the Freesound page could not be fetched on 2026-11-11 either. Owner approval is not proof of third-party usage rights"
  },
  "amb_fire": {
   "file": "amb_fire.mp3",
   "source": "unknown (user-supplied pack, 2026-10-26)",
   "dur": 8.5,
   "use": "fire crackle bed",
-  "note": "existing productions unchanged; not cleared for new work",
+  "note": "owner-approved for new work (2026-11-10); source and licence still unrecorded; keep \"license\": \"UNKNOWN\"",
   "license": "UNKNOWN",
   "provenance": "UNKNOWN: from the sound pack the user sent on 2026-10-26 (Dussehra long video), cut into tracks; the source site and licence were never recorded",
-  "licence_status": "UNKNOWN",
-  "approved_for_new_work": false
+  "licence_status": "APPROVED BY OWNER, SOURCE NOT RECORDED",
+  "approved_for_new_work": true,
+  "owner_approval": {
+   "date": "2026-11-10",
+   "by": "Sandeep (channel owner)",
+   "words": "I'm sure that it was from the free of source and will not get copy copyright claim",
+   "scope": "use in Why? productions"
+  },
+  "third_party_rights": "UNVERIFIED: the source site and licence were never recorded; owner approval is not proof of third-party usage rights"
  },
  "amb_crowd": {
   "file": "amb_crowd.mp3",
   "source": "unknown (user-supplied pack, 2026-10-26)",
   "dur": 9.4,
   "use": "procession crowd bed",
-  "note": "existing productions unchanged; not cleared for new work",
+  "note": "owner-approved for new work (2026-11-10); source and licence still unrecorded; keep \"license\": \"UNKNOWN\"",
   "license": "UNKNOWN",
   "provenance": "UNKNOWN: from the sound pack the user sent on 2026-10-26 (Dussehra long video), cut into tracks; the source site and licence were never recorded",
-  "licence_status": "UNKNOWN",
-  "approved_for_new_work": false
+  "licence_status": "APPROVED BY OWNER, SOURCE NOT RECORDED",
+  "approved_for_new_work": true,
+  "owner_approval": {
+   "date": "2026-11-10",
+   "by": "Sandeep (channel owner)",
+   "words": "I'm sure that it was from the free of source and will not get copy copyright claim",
+   "scope": "use in Why? productions"
+  },
+  "third_party_rights": "UNVERIFIED: the source site and licence were never recorded; owner approval is not proof of third-party usage rights"
  },
  "amb_drums": {
   "file": "amb_drums.mp3",
   "source": "unknown (user-supplied pack, 2026-10-26)",
   "dur": 9.1,
   "use": "festival drums bed",
-  "note": "existing productions unchanged; not cleared for new work",
+  "note": "owner-approved for new work (2026-11-10); source and licence still unrecorded; keep \"license\": \"UNKNOWN\"",
   "license": "UNKNOWN",
   "provenance": "UNKNOWN: from the sound pack the user sent on 2026-10-26 (Dussehra long video), cut into tracks; the source site and licence were never recorded",
-  "licence_status": "UNKNOWN",
-  "approved_for_new_work": false
+  "licence_status": "APPROVED BY OWNER, SOURCE NOT RECORDED",
+  "approved_for_new_work": true,
+  "owner_approval": {
+   "date": "2026-11-10",
+   "by": "Sandeep (channel owner)",
+   "words": "I'm sure that it was from the free of source and will not get copy copyright claim",
+   "scope": "use in Why? productions"
+  },
+  "third_party_rights": "UNVERIFIED: the source site and licence were never recorded; owner approval is not proof of third-party usage rights"
  }
 }
