@@ -1,0 +1,37 @@
+{
+ "en_53A": {
+  "word_match": 0.91,
+  "char_match": 0.97,
+  "hyp": "Indian, Arab, Persian, African, Chinese and Malay traders were crossing it long before Vasco Degama arrived."
+ },
+ "en_PILOT": {
+  "word_match": 0.96,
+  "char_match": 0.62,
+  "hyp": "His cruise journal calls him a Christian. But they call the Hindus of Calicut Christians too. So that word tells us little about his faith. Later, Portuguese chroniclers describe a navigator from Gujarat, Malemo Kanakwa. Malemo is a title, not a name. It means master navigator. The famous story that it was the Arab navigator Ibn Majid, most historians think that's unlikely. So the navigator who guided Vasco da Gama to Calicut was most likely from Gujarat in India."
+ },
+ "en_FORCE": {
+  "word_match": 1.0,
+  "char_match": 0.97,
+  "hyp": "The Portuguese used treaties and cannons. They allied with some rulers and bombarded others. A century later, the English came seeking trading permissions. And they used force too."
+ },
+ "en_L": {
+  "word_match": 1.0,
+  "char_match": 0.98,
+  "hyp": "So next time someone says, Europe discovered India."
+ },
+ "en_Q1": {
+  "word_match": 1.0,
+  "char_match": 1.0,
+  "hyp": "Wait, so who was already out on that ocean?"
+ },
+ "en_Q2": {
+  "word_match": 1.0,
+  "char_match": 1.0,
+  "hyp": "Okay, so who showed him the way?"
+ },
+ "en_Q3": {
+  "word_match": 1.0,
+  "char_match": 1.0,
+  "hyp": "And when he finally got there?"
+ }
+}

@@ -1,11 +1,11 @@
-# GOLDEN SPARROW · 5/6 · "Europe didn't discover India" · script v3 (Nov 10) · FOR APPROVAL
+# GOLDEN SPARROW · 5/6 · "Europe didn't discover India" · script v3 (Nov 10) · APPROVED FOR VOICE (with the final pilot sentence from your v3 review)
 Posts Fri Nov 13. Anna = approved film/Short audio, reused at sentence pauses (0 credits) except the NEW Anna lines marked below. NEW = 3 Anna lines (EN) / 4 Anna lines (TE) + 3 Chelli questions + loop (one take each).
 Estimated runtime: EN ≈ 2:11 · TE ≈ 2:32 (incl. end slide; new lines timed at the film voices' measured pace, EN 14.6 / TE 12.7 characters per second). Credits ≈ 1,980 (EN + TE; table at the end).
 Chips: 1/3 THE OCEAN · 2/3 THE PILOT · 3/3 THE WELCOME (TE: సముద్రం · దారి · స్వాగతం).
 Central question: if Europe didn't discover India, who was already on that ocean, and who showed da Gama the way?
 
 **v3 changes (your v2 review):**
-- Pilot line: "Christian" explained as unreliable evidence of his faith; "Malemo" explained as a title; name given as Malemo Canaqua; conclusion "most likely a navigator from Gujarat".
+- Pilot line: "Christian" explained as unreliable evidence of his faith; "Malemo" explained as a title; name given as Malemo Canaqua; conclusion (your final wording) "the navigator who guided Vasco da Gama to Calicut… was most likely from Gujarat, in India".
 - TE gains the thematic payoff (TE version of 5.9): "యూరప్ కొత్త ప్రపంచాన్ని కనుక్కోలేదు…".
 - 5.10 replaced in both languages: both powers used diplomacy and force (Portuguese treaties + bombardment; English permissions + force).
 - Unchanged: hook, three Chelli questions, Malacca, monsoon, Tunis merchants, gifts, tease, loop, and the v2 da Gama wording.
@@ -19,7 +19,7 @@ Central question: if Europe didn't discover India, who was already on that ocean
 4. [EXPLAIN] Their secret was the **wind**. ⏸ The **monsoon** blows one way for half the year, and back the other way for the rest. ⏸ Sailors timed whole voyages around it. (reuse 5.5)
 5. CHELLI [curious] Okay… so who showed **him** the way? (NEW) → chip 2/3
 6. [STORY] So in 1498, when da Gama reached **Malindi** in East Africa, he took on an experienced **pilot**… who guided his ships across to **Calicut**. (reuse 5.6, 1st sentence)
-7. [EVIDENCE · clear, building] **NEW:** His crew's journal calls him a '**Christian**'… but they called the **Hindus** of Calicut Christians too, so that word tells us little about his **faith**. ⏸ Later Portuguese chroniclers describe a navigator from **Gujarat**: **Malemo Canaqua**. ⏸ '**Malemo**' is a title, not a name. It means **master navigator**. ⏸ The famous story that it was the Arab navigator **Ibn Majid**? Most historians think that's **unlikely**. ⏸ So the man who guided Europe to India… was **most likely** a navigator from **Gujarat**. (NEW)
+7. [EVIDENCE · clear, building] **NEW:** His crew's journal calls him a '**Christian**'… but they called the **Hindus** of Calicut Christians too, so that word tells us little about his **faith**. ⏸ Later Portuguese chroniclers describe a navigator from **Gujarat**: **Malemo Canaqua**. ⏸ '**Malemo**' is a title, not a name. It means **master navigator**. ⏸ The famous story that it was the Arab navigator **Ibn Majid**? Most historians think that's **unlikely**. ⏸ So the navigator who guided **Vasco da Gama** to **Calicut**… was **most likely** from **Gujarat**, in India. (NEW)
 8. CHELLI [amused] And when he finally **got there**? (NEW) → chip 3/3
 9. [VIVID · with a smile] His crew's own journal records a strange welcome. ⏸ Two merchants from **Tunis**, who spoke Spanish and Italian, asked the first Portuguese man ashore: 'What brought you **here**?' ⏸ The answer: '**Christians**… and **spices**.' (reuse 5.7)
 10. [AMUSED] And da Gama's gifts for the king? **Hats**, **coral**, **sugar**, **honey**. ⏸ The king's officials **laughed**. They said the poorest merchant from Mecca gave more. (reuse 5.8)
@@ -36,7 +36,7 @@ Central question: if Europe didn't discover India, who was already on that ocean
 5. [EXPLAIN] వాళ్ల రహస్యం **గాలి**. ⏸ **రుతుపవనాలు** సగం సంవత్సరం ఒక వైపు, మిగతా సగం మరో వైపు వీస్తాయి. ⏸ నావికులు తమ ప్రయాణాలన్నీ దాని ప్రకారమే ప్లాన్ చేసేవారు. (reuse 5.5)
 6. CHELLI [curious] సరే… మరి **అతనికి** దారి చూపించింది ఎవరు? (NEW) → chip 2/3 దారి
 7. [STORY] 1498లో డ గామా తూర్పు ఆఫ్రికాలోని **మాలిండి** చేరినప్పుడు, అక్కడ అనుభవం ఉన్న ఒక **దారిచూపే నావికుడిని** ఎక్కించుకున్నాడు. అతనే ఓడలను **కాలికట్** వరకు తీసుకొచ్చాడు. (reuse 5.6, 1st sentence)
-8. [EVIDENCE · clear, building] **NEW:** డ గామా సిబ్బంది డైరీ అతన్ని '**క్రైస్తవుడు**' అని రాసింది… కానీ కాలికట్‌లోని **హిందువులను** కూడా వాళ్లు అలాగే పిలిచారు. అందుకే ఆ మాట అతని **మతాన్ని** చెప్పదు. ⏸ తర్వాతి పోర్చుగీస్ చరిత్రకారులు, **గుజరాత్‌కు** చెందిన ఒక నావికుడిని **మాలెమో కనాక్వా** అని రాశారు. ⏸ '**మాలెమో**' పేరు కాదు, బిరుదు: **నావికుల నాయకుడు** అని అర్థం. ⏸ అతను అరబ్ నావికుడు **ఇబ్న్ మాజిద్** అనే ప్రసిద్ధ కథ కూడా ఉంది… కానీ అది **నిజం కాకపోవచ్చని** చాలామంది చరిత్రకారులు అంటారు. ⏸ అంటే యూరప్‌కి భారత్ దారి చూపించింది… **బహుశా** గుజరాత్‌కు చెందిన ఒక **నావికుడే**. (NEW)
+8. [EVIDENCE · clear, building] **NEW:** డ గామా సిబ్బంది డైరీ అతన్ని '**క్రైస్తవుడు**' అని రాసింది… కానీ కాలికట్‌లోని **హిందువులను** కూడా వాళ్లు అలాగే పిలిచారు. అందుకే ఆ మాట అతని **మతాన్ని** చెప్పదు. ⏸ తర్వాతి పోర్చుగీస్ చరిత్రకారులు, **గుజరాత్‌కు** చెందిన ఒక నావికుడిని **మాలెమో కనాక్వా** అని రాశారు. ⏸ '**మాలెమో**' పేరు కాదు, బిరుదు: **నావికుల నాయకుడు** అని అర్థం. ⏸ అతను అరబ్ నావికుడు **ఇబ్న్ మాజిద్** అనే ప్రసిద్ధ కథ కూడా ఉంది… కానీ అది **నిజం కాకపోవచ్చని** చాలామంది చరిత్రకారులు అంటారు. ⏸ అంటే వాస్కో డ గామా ఓడలకు **కాలికట్** దారి చూపించిన నావికుడు… **బహుశా మన గుజరాత్‌కు** చెందినవాడే. (NEW)
 9. CHELLI [amused] మరి చివరికి **అక్కడికి** చేరాక? (NEW) → chip 3/3 స్వాగతం
 10. [VIVID · with a smile] డ గామా సిబ్బంది డైరీలో ఒక విచిత్రమైన స్వాగతం ఉంది. ⏸ **ట్యూనిస్** నుంచి వచ్చిన ఇద్దరు వ్యాపారులు, ఒడ్డుకి వచ్చిన మొదటి పోర్చుగీస్ మనిషిని అడిగారు: 'ఇంత దూరం **ఎందుకొచ్చారు**?' ⏸ జవాబు: '**క్రైస్తవుల** కోసం… **సుగంధ ద్రవ్యాల** కోసం.' (reuse 5.7)
 11. [AMUSED] రాజు కోసం డ గామా తెచ్చిన కానుకలు? **టోపీలు**, **పగడాలు**, **చక్కెర**, **తేనె**. ⏸ రాజు అధికారులు **నవ్వారు**. మక్కా నుంచి వచ్చే అతి పేద వ్యాపారి కూడా ఇంతకంటే ఎక్కువ ఇస్తాడన్నారు. (reuse 5.8)
