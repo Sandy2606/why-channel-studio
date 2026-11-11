@@ -1,5 +1,5 @@
 # GOLDEN SPARROW · 5/6 · "Europe didn't discover India" · script v3 (Nov 10) · FOR APPROVAL
-Posts Fri Nov 13. Anna = approved film/Short audio, reused at sentence pauses (0 credits) except the two NEW Anna lines below. NEW = 3 Anna lines (EN) / 4 Anna lines (TE) + 3 Chelli questions + loop (one take each).
+Posts Fri Nov 13. Anna = approved film/Short audio, reused at sentence pauses (0 credits) except the NEW Anna lines marked below. NEW = 3 Anna lines (EN) / 4 Anna lines (TE) + 3 Chelli questions + loop (one take each).
 Estimated runtime: EN ≈ 2:11 · TE ≈ 2:32 (incl. end slide; new lines timed at the film voices' measured pace, EN 14.6 / TE 12.7 characters per second). Credits ≈ 1,980 (EN + TE; table at the end).
 Chips: 1/3 THE OCEAN · 2/3 THE PILOT · 3/3 THE WELCOME (TE: సముద్రం · దారి · స్వాగతం).
 Central question: if Europe didn't discover India, who was already on that ocean, and who showed da Gama the way?
