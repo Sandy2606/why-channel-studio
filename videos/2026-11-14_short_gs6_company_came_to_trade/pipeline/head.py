@@ -136,6 +136,9 @@ def captions(img, t, scn):
     s = ' '.join(w[2] for w in ch); f, px = fit(s, 'head', px, ST.sw - 40)
     widths = [pick(w[2], 'head', px).getlength(w[2]) for w in ch]; sp = f.getlength(' '); tot = sum(widths) + sp * (len(ch) - 1); x = W / 2 - tot / 2
     _ib = f.getbbox(s, anchor='lm'); LY.reg('caption', (x + _ib[0] - 12, y + _ib[1] - 10, x + tot + 12, y + _ib[3] + 10), (x + _ib[0], y + _ib[1], x + tot, y + _ib[3]), owner=s)
+    # GS 6/6: captions may sit over moving visuals; a soft local shadow (not a band) keeps them readable
+    lay = Image.new('RGBA', (int(tot + 120), int(px * 2.6)), (0, 0, 0, 0)); ImageDraw.Draw(lay).rounded_rectangle((40, px * .5, tot + 80, px * 2.1), px * .6, fill=(6, 6, 6, 150))
+    lay = lay.filter(ImageFilter.GaussianBlur(18)); img.paste(lay, (int(x - 60), int(y - px * 1.3)), lay)
     for w, wd in zip(ch, widths):
         on = w[0] - 0.05 <= t
         cap_word(img, w[2], x, y, px, AMBER if (on and t <= w[1] + 0.12) else CREAM, 1.0 if on else 0.62)
