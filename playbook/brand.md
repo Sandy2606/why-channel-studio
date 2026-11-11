@@ -22,7 +22,7 @@ Channel-wide look. Role guides link here and never restate these values. Rule fo
 - **[LAY-03]** (P, playbook) **Safe zones.**
   - 9:16: key text between y = 250 and 1550; nothing important in the bottom ~370 px or the right ~140 px.
   - 16:9: captions at about y = 950; nothing important in the bottom-right corner (player controls and end-screen elements).
-- **[LAY-04]** (P, playbook) **Captions are the main text.** No headlines that paraphrase the voice.
+- **[LAY-04]** (C, v2 user Nov 10) **Captions are the main text.** Editorial labels and headlines are welcome where they add meaning (archival labels, kickers, data titles). Avoid on-screen text that merely duplicates the narration.
 - **[LAY-05]** (P, user Nov 10) **Sharp pictures only.** Never show a source image beyond its native resolution: the crop shown keeps at least ~1 source pixel per output pixel.
   - A low-resolution image appears at native size on a designed full-frame background; a blurred fill of the same picture is one allowed background.
   - For close-ups, use a sharper or larger source, or show the image smaller.

@@ -6,8 +6,8 @@
 
 ## Rules
 - **[MU-01]** (P, user Nov 6) All music is the user's own Gemini generations, kept in `music/`. Ask him for more by mood and length.
-- **[MU-02]** (P, user Oct 24) Music stays calm under the voice; no busy music.
-- **[MU-03]** (C, Phase 2A approval) Write a cue sheet per video: the mood per section, entries, changes and silences, matched to the story's shape. The number of changes is a judgment for each video.
+- **[MU-02]** (P, v2 user Oct 24 and Nov 10) Music never competes with the voice; no busy beds.
+- **[MU-03]** (C, v2 Phase 2A approval and user Nov 10) Write a cue sheet per video: the mood per section, entries, changes and silences, matched to the story's shape. The mood and the number of changes are creative judgments for each video.
 
 ## Checklist
 1. The tracks come from `music/` (→ MU-01).

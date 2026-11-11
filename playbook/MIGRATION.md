@@ -100,8 +100,8 @@ Status: **CURRENT** (the content lives on in the named rule), **METHOD** (a tech
 | 88 | CURRENT | ART-01 |  | - Never use footage from a different place for a named place. |
 | 89 | STRUCT |  |  |  |
 | 90 | STRUCT |  | ″ | ### Long video (16:9, 1920x1080) additions |
-| 91 | CURRENT | DIR-11 |  | - **Chapter progress bar** across the top, about 12 chapters, matching… |
-| 92 | CURRENT | DIR-11 | ″ | - **Chapter cards** ("STORY 1 · RAMA VS RAVANA") over a dimmed image. |
+| 91 | CURRENT | DIR-11 | now series-specific (DIR-11 v2, user Nov 10); fixed elements are options in series plans | - **Chapter progress bar** across the top, about 12 chapters, matching… |
+| 92 | CURRENT | DIR-11 | now series-specific (DIR-11 v2, user Nov 10); fixed elements are options in series plans | - **Chapter cards** ("STORY 1 · RAMA VS RAVANA") over a dimmed image. |
 | 93 | METHOD | methods/motion.md |  | - **2D motion-graphic explainers in the brand style** (anim_long.py): |
 | 94 | METHOD | methods/motion.md | ″ | - an India map with pulsing pins; |
 | 95 | METHOD | methods/motion.md | ″ | - word merges (DASHA + HARA → DUSSEHRA); |
@@ -119,8 +119,8 @@ Status: **CURRENT** (the content lives on in the named rule), **METHOD** (a tech
 | 107 | SUPERSEDED | ART-05 | one land mass with no borders replaced (user Nov 10, decision 4) | - **Maps:** draw land as ONE mass with NO political borders, so the Ka… |
 | 108 | SUPERSEDED | FMT-05 | fixed mid-video ask replaced (user Nov 10: story breaks) | - **Mid-video ask** (after roughly 45% of the video): a "WAIT." card, … |
 | 109 | SUPERSEDED | MU-03 | two-track bed was one video's choice; cue sheet per video (Phase 2A) | - **Music:** two calm tracks. Track 1 plays up to the ask; track 2 sta… |
-| 110 | CURRENT | DIR-11 |  | - **End card:** at least 5 s with WHY?, a subscribe tap and "COMMENT Y… |
-| 111 | CURRENT | DIR-11 | ″ | - **Proof cards:** at least one per chapter (UNESCO pages, traveller a… |
+| 110 | CURRENT | DIR-11 | now series-specific (DIR-11 v2, user Nov 10); fixed elements are options in series plans | - **End card:** at least 5 s with WHY?, a subscribe tap and "COMMENT Y… |
+| 111 | CURRENT | DIR-11 | now series-specific (DIR-11 v2, user Nov 10); fixed elements are options in series plans | - **Proof cards:** at least one per chapter (UNESCO pages, traveller a… |
 | 112 | CURRENT | ART-06 |  | - **AI images:** ask for the largest size (at least 1920 px wide) so t… |
 | 113 | SUPERSEDED | BR-08 | three-panel thumbnail replaced by cover rules + series layouts (user Oct 28–29) | - **Thumbnail (1280x720):** three AI panels for the three subjects wit… |
 | 114 | STRUCT |  |  |  |
@@ -180,7 +180,7 @@ Status: **CURRENT** (the content lives on in the named rule), **METHOD** (a tech
 | 168 | CURRENT | RS-02 |  | 1. **Research.** Verify every claim and record the outlet, date and UR… |
 | 169 | SUPERSEDED | ST-01 | "use the hook formula" replaced (user Nov 10) | 2. **Script.** Write English and natural spoken Telugu. |
 | 170 | SUPERSEDED | ST-01 | ″ | - Use the conversational voice and the hook formula. |
-| 171 | CURRENT | ST-10 |  | - One idea per line, with re-hooks every 30–45 s in the long video. |
+| 171 | CURRENT | ST-10 | fixed 30–45 s re-hook SUPERSEDED (ST-10 v2, user Nov 10) | - One idea per line, with re-hooks every 30–45 s in the long video. |
 | 172 | CURRENT | RS-08 | external review: the user reviews with ChatGPT; facts it flags are re-checked | - Get an external review (e.g. ChatGPT) and fix the facts it flags. |
 | 173 | METHOD | methods/editing.md | Pace Model v2 is ED-01 | 3. **Voice edit (pro Reels style).** |
 | 174 | METHOD | methods/editing.md | ″ | - **English:** transcribe with faster-whisper small.en at 16 kHz. |
@@ -244,7 +244,7 @@ Status: **CURRENT** (the content lives on in the named rule), **METHOD** (a tech
 | 232 | STRUCT |  | ″ | ## Story-cinema style (standing rule from Nov 4 2026, every Short from… |
 | 233 | CURRENT | ST-05 |  | The user asked for this to be the channel's continuing look so viewers… |
 | 234 | CURRENT | ST-05 | ″ | - **Tell it as a story with characters.** A family or person lives the… |
-| 235 | CURRENT | DIR-05 | build notes also in methods/motion.md | - **Characters = the long-video Anna & Chelli** (dl/chars2.py: anna(),… |
+| 235 | CURRENT | DIR-05 | split: DIR-05 (P) talking mouths, DIR-12 (C) continuous world and rig reuse | - **Characters = the long-video Anna & Chelli** (dl/chars2.py: anna(),… |
 | 236 | CURRENT | DIR-05 | ″ | - **Cartoons talk.** Mouths move with their own lines; drive them from… |
 | 237 | CURRENT | DIR-05 | ″ | - **Watching a film, not slides.** Use one continuous drawn world with… |
 | 238 | CURRENT | ART-03 |  | - **Body explanations use REAL-looking imagery, not cartoons** (user N… |
@@ -273,7 +273,7 @@ Status: **CURRENT** (the content lives on in the named rule), **METHOD** (a tech
 | 261 | CURRENT | GS-03 |  | - **Golden Sparrow 1/6 build (Nov 8 2026, approved): reuse the week's … |
 | 262 | CURRENT | RS-05 |  | - **Two-territory numbers (Nov 8):** when comparing figures across dif… |
 | 263 | CURRENT | ST-09 |  | - **Legal teasers (Nov 8):** narration stays short ("banned wearing ce… |
-| 264 | CURRENT | FMT-06 |  | - **Phone-readable end slide (Nov 8):** only 3 items (YOU'RE HERE n/6,… |
+| 264 | CURRENT | FMT-06 | slide content (P); hold timing → FMT-11 (C) | - **Phone-readable end slide (Nov 8):** only 3 items (YOU'RE HERE n/6,… |
 | 265 | CURRENT | ED-04 |  | - **Telugu checks (Nov 8):** verify every generated or reused Telugu l… |
 | 266 | CURRENT | QC-06 | freezedetect kept; the 4–5% push is a method (methods/motion.md), HOLDs exempt | - **Static-hold QA (Nov 8):** run freezedetect (n=0.003, d=1.5) on eve… |
 | 267 | METHOD | methods/editing.md |  | - **Render speed (Nov 8):** render the shared body once per language a… |
@@ -385,9 +385,9 @@ Status: **CURRENT** (the content lives on in the named rule), **METHOD** (a tech
 | 373 | CURRENT | ED-02 |  | - **Pacing (user, Oct 30):** information lines faster, branding/reques… |
 | 374 | METHOD | methods/editing.md |  | - **Whisper on generated voice:** use overlapping ~22 s windows (keep … |
 | 375 | EVIDENCE | history | KEEP → FMT-06, ED-02, BR-09 | **KEEP:** series slide, open questions with real-image cards, per-segm… |
-| 376 | CURRENT | ST-06 |  | - **Long video format (user, Oct 30):** 2D two-character story — ANNA … |
+| 376 | CURRENT | ST-06 | split: ST-06 (P, only where approved) cast and voices; ST-11 (C) film pattern | - **Long video format (user, Oct 30):** 2D two-character story — ANNA … |
 | 377 | CURRENT | FMT-03 |  | - **Shorts vs long:** each Short adds facts not in the long video; the… |
-| 378 | CURRENT | ST-06 |  | - **"Let me record this" framing (user, Oct 30):** in the cold open An… |
+| 378 | CURRENT | ST-11 |  | - **"Let me record this" framing (user, Oct 30):** in the cold open An… |
 | 379 | SUPERSEDED | PUB-03 | "2 niche + 2 searchable + #whyeveryquestion" replaced (user Nov 10, decision 5); limit → PLT-02; advice → PLT-08; no short IG cuts → FMT-09 | - **Instagram rules (Oct 30 audit):** max **5 hashtags** per post/Reel… |
 | 380 | METHOD | methods/motion.md |  | - **2D long-video pipeline (Diwali long, Oct 30):** `videos/2026-11-01… |
 | 381 | EVIDENCE | history |  | - Diwali long "DIWALI, EXPLAINED" (Nov 1, first 2D two-character video… |

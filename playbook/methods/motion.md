@@ -17,6 +17,8 @@ Method notes, not rules: they record how we currently do things and are updated 
   - Use them for the explaining parts. They can't do character animation; those beats stay on AI images with camera moves.
 
 ## Story-cinema build notes [PB:235–239]
+_When a project uses characters (→ DIR-05, DIR-12, ST-06); characters are not required in every video._
+
 - **Characters = the long-video Anna & Chelli** (dl/chars2.py: anna(), chelli()), recast per story (e.g. Raju & Meera); side characters reuse anna() with recoloured clothes plus extras (Gurpreet: turban + beard). Don't use the old flat stick figures (user: 'feels like a drum').
 - **Cartoons talk.** Mouths move with their own lines; drive them from the voice envelope (RMS per frame, gated by who owns the line). The narrator's third-person lines (hook and loop) don't move a character's mouth. Characters blink. In map or city shots, the asker appears as a round bust in the corner with a speech bubble that shows their line, and captions hide while the bubble is up.
 - **Watching a film, not slides.** Use one continuous drawn world with a camera (map → city → home → street; log-zoom moves, no hard cuts). Use dark cinematic grades, vignette and bokeh dust for "invisible" scales. Keep it simple and clean: flat shapes, at most two labels on screen.

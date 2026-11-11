@@ -13,7 +13,7 @@
 - **[RS-04]** (P, approved video Nov 6) Label every estimate with its year and who estimated it ("2025 · CAIT ESTIMATE"). In the voice, attribute each number in the same sentence.
 - **[RS-05]** (P, approved video Nov 8) When figures come from different borders (e.g. the undivided subcontinent vs the Republic of India), show them in separate panels, each with its own map icon, plus a "DIFFERENT BORDERS · NOT LIKE-FOR-LIKE" note. Cite the exact table and page.
 - **[RS-06]** (P, approved videos Nov 5) Prefer the primary or older record over repeated secondary dates. Crop a source capture before any claim we have found to be wrong.
-- **[RS-07]** (P, playbook) Use monetisation-safe material only: Pexels, CC BY/BY-SA with attribution, our own AI images, and the user's music.
+- **[RS-07]** (P, v2 user Nov 10) Use monetisation-safe material only: Pexels; CC BY/BY-SA with attribution; properly verified public-domain archival material, credited to its source; our original AI illustrations; and the user's music. Check the actual usage rights and conditions of every asset individually and record them in the asset register (→ ART-08).
 - **[RS-08]** (C, playbook) When unsure what works, research current best practice (platform docs, data studies) and cite it.
 
 ## Checklist

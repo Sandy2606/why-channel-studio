@@ -20,14 +20,14 @@ Channel: "Why?" and "Why? Telugu" (handles → BR-07). Faceless explainers and s
 ## Rule index
 | Topic | Rule IDs | Owner |
 |---|---|---|
-| Workflow, previews, release dates, after delivery, honest review | WF-01 – WF-06 | this file |
-| Shorts length, schedule, film vs Shorts, reminders, endings, exports | FMT-01 – FMT-10 | this file |
+| Workflow, previews, release dates, after delivery, honest review, light workflow | WF-01 – WF-07 | this file |
+| Shorts length, schedule, film vs Shorts, reminders, endings, exports | FMT-01 – FMT-11 | this file |
 | Credits, voice generation, voice library | CR-01 – CR-03 | this file |
 | Palette, fonts, series tag, components, look, Telugu text, handles, covers, CTA card | BR-01 – BR-09 | `brand.md` |
 | Full frame, captions, safe zones, captions as main text, image scale | LAY-01 – LAY-05 | `brand.md` |
 | Fact checking, sources, numbers, estimates, licences | RS-01 – RS-08 | `roles/research.md` |
-| Screenwriting standard, hooks, voice, examples, characters, formats, voice direction | ST-01 – ST-10 | `roles/story.md` |
-| Styles in the scene sheet, failing scenes, process shown, rhythm, film-not-slides, toolkit, long-film structure | DIR-01 – DIR-11 | `roles/director.md` |
+| Screenwriting standard, hooks, voice, examples, characters, formats, voice direction | ST-01 – ST-11 | `roles/story.md` |
+| Styles in the scene sheet, failing scenes, process shown, rhythm, film-not-slides, toolkit, long-film structure | DIR-01 – DIR-12 | `roles/director.md` |
 | Right place, labels, real imagery, image sourcing, maps, image size, real captures, owned assets first, clip sources | ART-01 – ART-09 | `roles/art.md` |
 | Moves within native resolution, animate information, historical look, libraries | MO-01 – MO-04 | `roles/motion.md` |
 | Music source, calm under voice, cue sheet | MU-01 – MU-03 | `roles/music.md` |
@@ -63,6 +63,7 @@ Templates (`templates/`) hold structure and rule IDs only, never rule text.
 - **[WF-04]** (P, user Nov 6) Release dates are fixed. Never propose moving them; flag critical blockers early.
 - **[WF-05]** (P, user Nov 10; Phase 2A approval Nov 10) After delivery: the score, defects and lessons go to `history.md` (EVIDENCE or TEST); a rule changes only when the user approves it, by the replace procedure above; commit and push every time.
 - **[WF-06]** (P, user Oct 24) After every delivery give a full, honest review: score each area, name every mistake and the upgrade needed. Never inflate.
+- **[WF-07]** (P, user Nov 10) Keep the workflow light. For straightforward Shorts, the role outputs are combined into three documents: one research-and-story brief (the production brief), one director's scene sheet with assets, music and sound cues, and one QC report. The roles are professional passes, not eleven separate reports.
 
 ## Formats
 - **[FMT-01]** (P, user Nov 10, replaces the Oct 31 targets) Every Short and Reel is under 3:00 including the ending, in both languages. The story sets the length. Plan with an internal safety margin from measured speech (method in `roles/editor.md`). Never pad to reach a duration or rush narration to meet a target. If a script is over budget, cut at script stage, not after voicing (user Oct 31).
@@ -70,7 +71,8 @@ Templates (`templates/`) hold structure and rule IDs only, never rule text.
 - **[FMT-03]** (C, user Oct 26) The film is a complete deep-dive, not a stitch of the Shorts; split it into parts if it is too big. Shorts carry the most interesting angles, add facts the film doesn't have, and drive viewers to it.
 - **[FMT-04]** (P, user Nov 1) Shorts have no mid-video subscribe card and no spoken schedule or subscribe lines. The schedule appears only on the series slide.
 - **[FMT-05]** (P, user Nov 10; card details user Oct 29) In long films, the brief sets the number of subscribe reminders and places them at story breaks, never at fixed intervals and never interrupting a scene. Mid-video cards are smaller than the end card, with click/bell SFX at about half volume and no extra narration, placed off the key visual, never in the first 15 s.
-- **[FMT-06]** (P, user Nov 1; slide Nov 8) Shorts other than a season's last end with the phone-readable series slide: YOU'RE HERE n/6, NEXT n+1/6 with tomorrow's tease, and the full-film pointer (YT "FULL FILM · RELATED VIDEO", IG "FULL FILM ON YOUTUBE · LINK IN BIO"), plus the on-screen Subscribe/Follow button, held about 5 s. Then a loop line runs into the opening and the last frame equals the first. Keep the whole ending short (8 s or less); never a long static end screen.
+- **[FMT-06]** (P, v2 user Nov 1, Nov 8 and Nov 10) Shorts other than a season's last end with the phone-readable series slide: YOU'RE HERE n/6, NEXT n+1/6 with tomorrow's tease, and the full-film pointer (YT "FULL FILM · RELATED VIDEO", IG "FULL FILM ON YOUTUBE · LINK IN BIO"). It carries the platform-correct on-screen Subscribe/Follow button, and its text stays readable on a phone. Then a loop line runs into the opening, and the last frame equals the first.
+- **[FMT-11]** (C, v2 user Nov 10) End-slide timing is an editing judgment: hold the slide long enough to read (about 5 s is typical) and keep the ending short (around 8 s or less). Never a long static end screen.
 - **[FMT-07]** (P, user Nov 10) The last Short of a season answers its own central question with a satisfying conclusion. It may then build anticipation for the next season with a question or teaser. A loop is optional.
 - **[FMT-08]** (C, user Oct 29) Each Short's tease names the next Short, so the week's topics are planned up front. No likes targets (engagement bait).
 - **[FMT-09]** (P, user Oct 28–30) Each Short has four exports: EN and TE, each in a YouTube (SUBSCRIBE) and an Instagram (FOLLOW) version. Instagram gets the same full video; no shortened IG cuts.

@@ -4,6 +4,154 @@
 
 Entry statuses: **SUPERSEDED** (replaced by a newer approved rule), **DROP** (tried and failed; never repeat), **EVIDENCE** (scores, measurements, lessons), **TEST** (a lesson awaiting approval or a second confirmation), **EXCEPTION (closed)**, **PROPOSAL (not adopted)**.
 
+## Final rule decisions (user, 2026-11-10)
+
+Inherited-rule revisions, the P/C scope safeguards and disclosure v3. Each old version is verbatim. Scope: channel-wide.
+
+### FMT-06 (earlier version) · SUPERSEDED by FMT-06 (current, 2026-11-10)
+- Reason: user's final Phase 2A rule decisions (Nov 10).
+- Old text:
+
+```text
+- **[FMT-06]** (P, user Nov 1; slide Nov 8) Shorts other than a season's last end with the phone-readable series slide: YOU'RE HERE n/6, NEXT n+1/6 with tomorrow's tease, and the full-film pointer (YT "FULL FILM · RELATED VIDEO", IG "FULL FILM ON YOUTUBE · LINK IN BIO"), plus the on-screen Subscribe/Follow button, held about 5 s. Then a loop line runs into the opening and the last frame equals the first. Keep the whole ending short (8 s or less); never a long static end screen.
+```
+
+### LAY-04 (earlier version) · SUPERSEDED by LAY-04 (current, 2026-11-10)
+- Reason: user's final Phase 2A rule decisions (Nov 10).
+- Old text:
+
+```text
+- **[LAY-04]** (P, playbook) **Captions are the main text.** No headlines that paraphrase the voice.
+```
+
+### DIR-08 (earlier version) · SUPERSEDED by DIR-08 (current, 2026-11-10)
+- Reason: user's final Phase 2A rule decisions (Nov 10).
+- Old text:
+
+```text
+- **[DIR-08]** (P, playbook) Frame 1 is bright, full-screen and meaningful, with no fade-in and no black first frame. The promise appears on screen from the first second.
+```
+
+### DIR-11 (earlier version) · SUPERSEDED by DIR-11 (current, 2026-11-10)
+- Reason: user's final Phase 2A rule decisions (Nov 10).
+- Old text:
+
+```text
+- **[DIR-11]** (C, playbook) **Long-film structure:**
+  - a chapter progress bar matching the YouTube chapters;
+  - chapter cards;
+  - at least one proof card per chapter;
+  - an end card of at least 5 s with room for end-screen elements.
+```
+
+### DIR-05 (earlier version) · SUPERSEDED by DIR-05 (current, 2026-11-10)
+- Reason: user's final Phase 2A rule decisions (Nov 10).
+- Old text:
+
+```text
+- **[DIR-05]** (P, user Nov 4) **A film, not slides.**
+  - Use one continuous drawn world with a camera where the story allows.
+  - Cartoons talk: mouths move naturally with their own lines (never drum-like flapping), and they blink.
+  - Characters reuse the Anna and Chelli rigs, recast per story; never stick figures.
+  - Body explanations go inside the body, follow the substance step by step, and start from human scale.
+```
+
+### DIR-07 (earlier version) · SUPERSEDED by DIR-07 (current, 2026-11-10)
+- Reason: user's final Phase 2A rule decisions (Nov 10).
+- Old text:
+
+```text
+- **[DIR-07]** (P, user Oct 2026) Shorts get explainer graphics for their ideas too.
+```
+
+### MU-02 (earlier version) · SUPERSEDED by MU-02 (current, 2026-11-10)
+- Reason: user's final Phase 2A rule decisions (Nov 10).
+- Old text:
+
+```text
+- **[MU-02]** (P, user Oct 24) Music stays calm under the voice; no busy music.
+```
+
+### MU-03 (earlier version) · SUPERSEDED by MU-03 (current, 2026-11-10)
+- Reason: user's final Phase 2A rule decisions (Nov 10).
+- Old text:
+
+```text
+- **[MU-03]** (C, Phase 2A approval) Write a cue sheet per video: the mood per section, entries, changes and silences, matched to the story's shape. The number of changes is a judgment for each video.
+```
+
+### RS-07 (earlier version) · SUPERSEDED by RS-07 (current, 2026-11-10)
+- Reason: user's final Phase 2A rule decisions (Nov 10).
+- Old text:
+
+```text
+- **[RS-07]** (P, playbook) Use monetisation-safe material only: Pexels, CC BY/BY-SA with attribution, our own AI images, and the user's music.
+```
+
+### PUB-05 (earlier version) · SUPERSEDED by PUB-05 (current, 2026-11-10)
+- Reason: user's final Phase 2A rule decisions (Nov 10).
+- Old text:
+
+```text
+- **[PUB-05]** (P, v2 user Nov 10; follows YouTube's official policy → PLT-09) Decide YouTube's "altered or synthetic content" setting per video, against the official policy as checked in PLT-09, and record the decision and its reason in the post-copy file.
+  - **Disclose** realistic content a viewer could mistake for real: a real person shown saying or doing something they didn't; altered footage of a real event or place; a realistic generated scene that didn't actually happen (for example a photoreal AI reconstruction of a historical scene); AI music that is the main focus of the video.
+  - **No disclosure needed** for clearly unrealistic or stylised content (animation, our cartoon characters, illustrated or paper-cut styles), minor edits (colour, lighting, filters, audio repair), production assistance (outlines, scripts), or the user's own cloned voice for narration and dubbing.
+  - **Ask the user** when a case is unclear. Two examples the policy page doesn't address directly: semi-realistic "DRAMATIZED" illustrations, and Sowmya's consented voice clone speaking a fictional character.
+```
+
+### ED-05 (earlier version) · SUPERSEDED by ED-05 (current, 2026-11-10)
+- Reason: user's final Phase 2A rule decisions (Nov 10).
+- Old text:
+
+```text
+- **[ED-05]** (P, playbook) Anchor scenes to spoken phrases, not to fixed times.
+```
+
+### ED-01 (earlier version) · SUPERSEDED by ED-01 (current, 2026-11-10)
+- Reason: user's final Phase 2A rule decisions (Nov 10).
+- Old text:
+
+```text
+- **[ED-01]** (P, user Oct 24–25) Give the audio a professional edit: remove silences and noises. Shorts get a tight, engaging pace. Long films use the Why? Pace Model v2 (user-approved Oct 25) and never the Shorts squeeze. Never use even 0.5 s pauses after every sentence.
+```
+
+### ED-02 (earlier version) · SUPERSEDED by ED-02 (current, 2026-11-10)
+- Reason: user's final Phase 2A rule decisions (Nov 10).
+- Old text:
+
+```text
+- **[ED-02]** (P, user Oct 30) Information lines and branding lines run a little faster; the Subscribe/Follow line itself runs at regular pace.
+```
+
+### ST-10 (earlier version) · SUPERSEDED by ST-10 (current, 2026-11-10)
+- Reason: user's final Phase 2A rule decisions (Nov 10).
+- Old text:
+
+```text
+- **[ST-10]** (C, playbook) One idea per line. In long films, re-hook every 30–45 s.
+```
+
+### ST-05 (earlier version) · SUPERSEDED by ST-05 (current, 2026-11-10)
+- Reason: user's final Phase 2A rule decisions (Nov 10).
+- Old text:
+
+```text
+- **[ST-05]** (P, user Nov 4) **Story Shorts use characters.** A person or family lives the problem. A second character asks the question a normal viewer would ask before each section, and the narrator answers. Side characters are tagged ILLUSTRATIVE EXAMPLE.
+```
+
+### ST-06 (earlier version) · SUPERSEDED by ST-06 (current, 2026-11-10)
+- Reason: user's final Phase 2A rule decisions (Nov 10).
+- Old text:
+
+```text
+- **[ST-06]** (P, user Oct 30) **Long-film format:** a 2D two-character story.
+  - Cast: ANNA, the explainer (the user's clones), and CHELLI, who is curious, has a "?" over her head and is voiced by Sowmya's clones.
+  - Opening: a cold open where Chelli fires all her questions → "Slow down, one at a time" → a title slide linking the questions → chapters, with the characters returning between them.
+  - Anna's phone records the answers ("Let me record this"), and he sometimes speaks to camera.
+  - Ending: the next-year questions, then the like/comment ask.
+  - Old customs are explained as what our ancestors built around their lifestyle; no line implies only women do housework.
+```
+
 ## Rule revisions after the reorganisation
 
 Each entry: the replaced version (verbatim), the replacement, the reason and date. Scope: channel-wide.
@@ -413,6 +561,35 @@ Channel: "Why?" (YouTube @WhyEveryQuestionHasaStory, Instagram @whyeveryquestion
   - **Research rule (user, Oct 31 — after the Diwali bonus miss):** before ANY script goes to the user, verify every law, rule, rate, date and number against a source dated within the last few months (search "current", "2026", "amended", "repealed", "replaced by"). Never rely on memory for laws or regulations — the Diwali long cited the Payment of Bonus Act 1965 a year after it was repealed by the Code on Wages (21 Nov 2025). Put the check date next to each source in the script.
   ```
 
+- PB:91: mandatory progress bar → series-specific (DIR-11 v2), user Nov 10.
+
+  ```text
+  - **Chapter progress bar** across the top, about 12 chapters, matching the YouTube chapter timestamps in the description.
+  ```
+
+- PB:92: mandatory chapter cards → series-specific (DIR-11 v2), user Nov 10.
+
+  ```text
+  - **Chapter cards** ("STORY 1 · RAMA VS RAVANA") over a dimmed image.
+  ```
+
+- PB:110: fixed end-card format → series-specific (DIR-11 v2), user Nov 10.
+
+  ```text
+  - **End card:** at least 5 s with WHY?, a subscribe tap and "COMMENT YOUR WHY BELOW", leaving room for YouTube end-screen elements.
+  ```
+
+- PB:111: proof card per chapter as a channel rule → series-specific (DIR-11 v2), user Nov 10.
+
+  ```text
+  - **Proof cards:** at least one per chapter (UNESCO pages, traveller accounts, news), not just one in the whole video.
+  ```
+
+- PB:171: "re-hooks every 30–45 s" → natural story turns (ST-10 v2), user Nov 10.
+
+  ```text
+  - One idea per line, with re-hooks every 30–45 s in the long video.
+  ```
 ### Saved notes and account-skill variants · SUPERSEDED
 - "CTA card in long videos once every 2–3 minutes" (a saved-notes variant of PB:365) → SUPERSEDED by FMT-05 (user Nov 10: story breaks, no fixed interval).
 - Account skill `why-channel-post-copy`: "Use at most 30 hashtags" (older text) and "2 niche + 2 searchable + #whyeveryquestionhasastory" → SUPERSEDED by PUB-03 and PLT-02 (user Nov 10). The skill itself changes only in Phase 2B.

@@ -15,14 +15,11 @@
   - **A scene passes with:** intentional stillness, archival evidence held long enough to read, and emotionally restrained beats. Mark each deliberate still as HOLD with its purpose.
 - **[DIR-03]** (P, user Nov 10) When the narration names the steps that change an object, show each change happening on the object itself, at the word, as precisely as in the film. Chips listed over a still are not enough.
 - **[DIR-04]** (C, user Nov 10) Every visual change should reveal information or advance the story. Avoid static illustrations, but don't force cuts every two seconds. A visual reset every 8–12 s is a guideline (user Nov 1).
-- **[DIR-05]** (P, user Nov 4) **A film, not slides.**
-  - Use one continuous drawn world with a camera where the story allows.
-  - Cartoons talk: mouths move naturally with their own lines (never drum-like flapping), and they blink.
-  - Characters reuse the Anna and Chelli rigs, recast per story; never stick figures.
-  - Body explanations go inside the body, follow the substance step by step, and start from human scale.
+- **[DIR-05]** (P, v2 user Nov 4 and Nov 10) Where a character appears to speak on screen, its mouth moves naturally with its own lines (never drum-like flapping) and it blinks. No stick figures. Body explanations go inside the body, follow the substance step by step, and start from human scale.
+- **[DIR-12]** (C, user Nov 4) **A film, not slides.** Use one continuous drawn world with a camera where the story allows. Reusing the Anna and Chelli rigs, recast per story, is an option. Characters are mandatory only where the series or project plan approves them (→ ST-06).
 - **[DIR-06]** (C, approved video Nov 10) Use a match cut plus one recurring object where the story has a real contrast or journey; it is not a stock effect.
-- **[DIR-07]** (P, user Oct 2026) Shorts get explainer graphics for their ideas too.
-- **[DIR-08]** (P, playbook) Frame 1 is bright, full-screen and meaningful, with no fade-in and no black first frame. The promise appears on screen from the first second.
+- **[DIR-07]** (C, v2 user Oct 2026 and Nov 10) Shorts get explainer graphics for their ideas too. How many, and which kind, is a directing choice.
+- **[DIR-08]** (P, v2 user Nov 10) Frame 1 is bright, full-screen and readable, with no fade-in and no black first frame (measured in QC-06). How the opening promise is presented is a story choice (→ ST-02).
 - **[DIR-09]** (C, user Nov 1 and approved videos) **Toolkit**, used where it fits:
   - named people as moving avatars against a threshold line;
   - an OLD vs NEW or before/after scoreboard;
@@ -34,11 +31,7 @@
   - an evidence board with real clippings;
   - single-object loops.
 - **[DIR-10]** (P, user Nov 4) Hold the camera steady during serious health information, and put a source chip on screen (e.g. US EPA · WHO).
-- **[DIR-11]** (C, playbook) **Long-film structure:**
-  - a chapter progress bar matching the YouTube chapters;
-  - chapter cards;
-  - at least one proof card per chapter;
-  - an end card of at least 5 s with room for end-screen elements.
+- **[DIR-11]** (C, v2 user Nov 10) **Long-film structure is series-specific.** Channel-wide, every film needs a coherent story, credible evidence, meaningful connections between chapters and a satisfying ending. The approved series or film plan sets the actual structure and visual treatments (for example progress bars, chapter cards, proof-card frequency, the end card). No single template is required.
 
 ## Checklist
 1. Every line has a stated visual purpose and a named style (→ DIR-01).

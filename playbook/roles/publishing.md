@@ -17,10 +17,13 @@
   - Choose the other hashtags for the actual video and platform, within the verified limits (→ PLT-02); there is no compulsory formula.
   - Never present hashtags as a guaranteed way to get views.
 - **[PUB-04]** (P, user Oct 26, Nov 8) After upload, set each YouTube Short's Related Video to the same-language film. On Instagram, point to the full film with "link in bio".
-- **[PUB-05]** (P, v2 user Nov 10; follows YouTube's official policy → PLT-09) Decide YouTube's "altered or synthetic content" setting per video, against the official policy as checked in PLT-09, and record the decision and its reason in the post-copy file.
-  - **Disclose** realistic content a viewer could mistake for real: a real person shown saying or doing something they didn't; altered footage of a real event or place; a realistic generated scene that didn't actually happen (for example a photoreal AI reconstruction of a historical scene); AI music that is the main focus of the video.
-  - **No disclosure needed** for clearly unrealistic or stylised content (animation, our cartoon characters, illustrated or paper-cut styles), minor edits (colour, lighting, filters, audio repair), production assistance (outlines, scripts), or the user's own cloned voice for narration and dubbing.
-  - **Ask the user** when a case is unclear. Two examples the policy page doesn't address directly: semi-realistic "DRAMATIZED" illustrations, and Sowmya's consented voice clone speaking a fictional character.
+- **[PUB-05]** (P, v3 user Nov 10; follows YouTube's official policy → PLT-09) For every upload, check the current official policy against the actual content, then record the disclosure decision and its reason in the post-copy file. Keep these cases distinct:
+  - **The user's own voice clone** (narration, dubbing): listed by YouTube as not needing disclosure.
+  - **A consented clone of another person's voice** (Sowmya's clones as Chelli): not addressed directly by the policy. It is not treated as the same case as the user's own clone; escalate it to the user unless he has decided it.
+  - **Clearly stylised animation** (cartoon characters, paper-cut and illustrated styles): no disclosure needed.
+  - **Realistic generated reconstructions** (a photoreal AI scene that didn't happen, altered footage of a real event or place): disclose.
+  - **AI-generated music** (the user's Gemini tracks): never exempted automatically because it is background music. Check it against the current policy for each upload; YouTube names AI music that is the main focus of a video as requiring disclosure.
+  - **Genuinely ambiguous cases** (e.g. semi-realistic DRAMATIZED illustrations) go to the user rather than being guessed.
 - **[PUB-06]** (P, user Oct 2026) The fixed CTA: "Whenever you get a question that starts with why, just comment it below. We'll do the research and get you the answer." Use the channel's Telugu CTA in the Telugu copy.
 - **[PUB-07]** (P, playbook) Never state a claim the video didn't verify. Numbers match what is on screen.
 
