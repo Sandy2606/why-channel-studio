@@ -13,7 +13,7 @@ Rules: FMT-01, ED-03, QC-06 (and QC-01 for the inspection sheets, which a person
 import argparse, os, re, subprocess, sys
 import numpy as np
 sys.path.insert(0, os.path.dirname(__file__))
-from common import Report, PASS, FAIL, REVIEW, NP, PROFILES, probe, detect_format, frame, load_json
+from common import Report, PASS, FAIL, REVIEW, NP, PROFILES, probe, detect_format, frame, load_json, last_frames
 
 
 def intervals(text, key_s, key_e):
@@ -104,11 +104,24 @@ def main(argv=None):
     else:
         m = float(f0.mean()); R.add('frame 1 brightness', PASS if m > 60 else FAIL, f'mean {m:.1f}/255 (min 60)', 'DIR-08')
     if a.loop:
-        fl = frame(a.video, max(0, dur - 0.25), W, H)
-        if f0 is None or fl is None: R.add('loop seam', NP, 'frames unreadable', 'FMT-06')
+        # the actual last decoded frame vs the first frame (both decoded the same way, 1/4 scale)
+        sw, sh = W // 4, H // 4
+        fb = subprocess.run(['ffmpeg', '-v', 'error', '-i', a.video, '-frames:v', '1', '-vf', f'scale={sw}:{sh}',
+                             '-f', 'rawvideo', '-pix_fmt', 'rgb24', '-'], capture_output=True).stdout
+        tail = last_frames(a.video, W, H, 0.5)
+        if len(fb) < sw * sh * 3 or len(tail) < 3:
+            R.add('loop seam (first vs final frame)', NP, 'frames unreadable', 'FMT-06')
         else:
-            d = float(np.abs(f0.astype(float) - fl.astype(float)).mean())
-            R.add('loop seam (first vs last frame)', PASS if d < 3.0 else FAIL, f'mean difference {d:.2f} (max 3.0)', 'FMT-06')
+            first = np.frombuffer(fb[:sw * sh * 3], np.uint8).reshape(sh, sw, 3).astype(float)
+            seq = [t.astype(float) for t in tail]
+            seam = float(np.abs(first - seq[-1]).mean())
+            R.add('loop seam (first vs actual final frame)', PASS if seam < 3.0 else FAIL,
+                  f'mean difference {seam:.2f} (max 3.0); final frame = decoded frame {len(seq)} of the last 0.5 s', 'FMT-06')
+            steps = [float(np.abs(x - y).mean()) for x, y in zip(seq, seq[1:])]
+            jump = max(steps) if steps else 0.0
+            where = (len(steps) - steps.index(jump)) / (info['fps'] or 30) if steps else 0
+            R.add('loop transition (last 0.5 s, frame to frame)', PASS if jump <= 25.0 else FAIL,
+                  f'largest frame-to-frame change {jump:.1f} (max 25; a hard cut is typically 40+), about {where:.2f} s before the end', 'FMT-06')
 
     # sharpness: Laplacian variance per scene, centre region (excludes corner and caption bands)
     import cv2

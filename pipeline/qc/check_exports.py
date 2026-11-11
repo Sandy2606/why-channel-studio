@@ -11,6 +11,26 @@ import argparse, os, sys
 import numpy as np
 sys.path.insert(0, os.path.dirname(__file__))
 from common import Report, PASS, FAIL, REVIEW, NP, PROFILES, probe, frame
+import subprocess
+AUDIO_SR = 8000
+
+
+def audio_window(path, t0, dur):
+    b = subprocess.run(['ffmpeg', '-v', 'error', '-ss', f'{t0:.3f}', '-t', f'{dur:.3f}', '-i', path, '-vn', '-ac', '1', '-ar', str(AUDIO_SR),
+                        '-f', 'f32le', '-'], capture_output=True).stdout
+    x = np.frombuffer(b, np.float32).astype(float)
+    return x if len(x) >= int(0.5 * AUDIO_SR) else None
+
+
+def xcorr_lag(x, y, sr, max_lag):
+    """lag (s) of y relative to x and the normalised correlation at that lag"""
+    n = min(len(x), len(y)); x, y = x[:n] - x[:n].mean(), y[:n] - y[:n].mean()
+    m = int(max_lag * sr); f = 1 << (2 * n - 1).bit_length()
+    cc = np.fft.irfft(np.fft.rfft(y, f) * np.conj(np.fft.rfft(x, f)), f)
+    cc = np.concatenate([cc[-m:], cc[:m + 1]]); k = int(np.argmax(cc)) - m
+    a, b = (x[:n - k], y[k:]) if k >= 0 else (x[-k:], y[:n + k])
+    c = float(np.dot(a, b) / (np.linalg.norm(a) * np.linalg.norm(b) + 1e-12))
+    return k / sr, c
 
 
 def main(argv=None):
@@ -19,6 +39,8 @@ def main(argv=None):
     ap.add_argument('--langs', default='EN,TE'); ap.add_argument('--platforms', default='YT,IG')
     ap.add_argument('--format', default='short', choices=list(PROFILES)); ap.add_argument('--pattern', default='{base}_{lang}_{platform}.mp4')
     ap.add_argument('--fps', type=float, default=30.0); ap.add_argument('--out')
+    ap.add_argument('--ending-seconds', type=float, default=10.0, help='tail excluded from the body comparison (platform-specific ending)')
+    ap.add_argument('--points', type=int, default=8, help='frames compared across the body')
     a = ap.parse_args(argv)
     P = PROFILES[a.format]; R = Report('check_exports', os.path.join(a.dir, a.base))
     found = {}
@@ -40,19 +62,40 @@ def main(argv=None):
             if info['fps'] and abs(info['fps'] - a.fps) > 0.05: probs.append(f"{info['fps']:.2f} fps (expected {a.fps:g})")
             R.add(f'{name}', FAIL if probs else PASS, '; '.join(probs) if probs else
                   f"{info['width']}x{info['height']}, {info['vcodec']}/{info['acodec']}, {info['duration']:.2f} s, {info['fps']:.0f} fps", 'FMT-09')
-    # same body across the platform versions of one language
+    # same body across the platform versions of one language: several frames across the body + audio sync.
+    # The last --ending-seconds (series slide, platform button, loop) may differ by design and are excluded.
     plats = a.platforms.split(',')
     for lang in a.langs.split(','):
         vs = [found[(lang, p)] for p in plats if (lang, p) in found]
         if len(vs) < 2: continue
-        d0 = vs[0][1]['duration']
-        diffs = [abs(v[1]['duration'] - d0) for v in vs[1:]]
         W, H = vs[0][1]['width'], vs[0][1]['height']
-        mids = [frame(v[0], d0 * 0.4, W, H) for v in vs]
-        body = [float(np.abs(mids[0].astype(float) - m.astype(float)).mean()) for m in mids[1:] if m is not None and mids[0] is not None]
-        ok = all(x <= 0.5 for x in diffs) and all(b < 2.0 for b in body)
-        R.add(f'{lang}: same body on every platform', PASS if ok else REVIEW,
-              f'duration differences {[round(x, 2) for x in diffs]} s; mid-frame difference {[round(b, 2) for b in body]}', 'FMT-09')
+        body_end = min(v[1]['duration'] for v in vs) - a.ending_seconds
+        if body_end < 2:
+            R.add(f'{lang}: same body on every platform', NP, f'body shorter than 2 s after excluding the last {a.ending_seconds} s', 'FMT-09'); continue
+        pts = [body_end * (i + 0.5) / a.points for i in range(a.points)]
+        diffs, bad = [], []
+        for t in pts:
+            fr = [frame(v[0], t, W, H) for v in vs]
+            if any(f is None for f in fr): bad.append(f'{t:.1f}s unreadable'); continue
+            d = max(float(np.abs(fr[0].astype(float) - f.astype(float)).mean()) for f in fr[1:])
+            diffs.append(round(d, 2))
+            if d >= 2.0: bad.append(f'{t:.1f}s differs ({d:.1f})')
+        R.add(f'{lang}: video body identical at {len(pts)} points (ending excluded)', FAIL if bad else PASS,
+              (f'mismatch: {bad}' if bad else f'max difference {max(diffs):.2f} (limit 2.0)') + f'; points {[round(t, 1) for t in pts]}', 'FMT-09')
+        lag_report, lag_bad = [], []
+        for v in vs[1:]:
+            win = min(5.0, body_end / 3)          # windows always end inside the body, never in the ending
+            for frac in (0.2, 0.5, 0.8):
+                t0 = min(max(0.0, body_end * frac - win / 2), body_end - win)
+                x, y = audio_window(vs[0][0], t0, win), audio_window(v[0], t0, win)
+                if x is None or y is None or x.std() < 1e-6: lag_bad.append(f'{t0:.0f}s: no audio'); continue
+                lag, c = xcorr_lag(x, y, AUDIO_SR, 0.5)
+                lag_report.append(f'{t0:.0f}s lag {lag * 1000:+.0f} ms r={c:.2f}')
+                if abs(lag) > 0.040 or c < 0.9: lag_bad.append(f'{t0:.0f}s lag {lag * 1000:+.0f} ms r={c:.2f}')
+        R.add(f'{lang}: audio in sync across platforms (3 windows, ending excluded)', FAIL if lag_bad else PASS,
+              ('; '.join(lag_bad) if lag_bad else '; '.join(lag_report)) + ' (limits: |lag| <= 40 ms, r >= 0.9)', 'FMT-09')
+        durs = [round(v[1]['duration'], 2) for v in vs]
+        R.add(f'{lang}: platform endings', PASS, f'durations {durs} s; the last {a.ending_seconds} s may differ by design (FMT-06)', 'FMT-06')
     R.coverage = dict(expected=len(a.langs.split(',')) * len(plats), found=len(found))
     return R.finish(a.out)
 

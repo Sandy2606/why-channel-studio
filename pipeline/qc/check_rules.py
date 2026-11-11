@@ -75,6 +75,15 @@ def main(argv=None):
     tids = set(REF.findall(' '.join(r[2] for r in rows))) - set(defs)
     okm = all(c[i] == 1 for i in range(1, a.old_lines + 1)) and len(c) == a.old_lines and not tids
     R.add('migration record complete', PASS if okm else FAIL, f'{len(rows)} rows' + (f'; unknown targets {tids}' if tids else ''), 'MIGRATION.md')
+    try:
+        from common import platform_limits
+        cfg = platform_limits(j('playbook/platform_rules.md'))
+        refs = {v['rule'] for v in cfg['limits'].values()}
+        okc = refs <= set(defs) and all({'value', 'rule', 'status', 'source', 'checked'} <= set(v) for v in cfg['limits'].values())
+        R.add('machine-readable platform limits parse and cite existing rules', PASS if okc else FAIL,
+              f"{len(cfg['limits'])} limits" if okc else f'unknown rules {sorted(refs - set(defs))} or missing fields', 'PLT')
+    except Exception as e:
+        R.add('machine-readable platform limits parse and cite existing rules', FAIL, str(e)[:200], 'PLT')
     R.coverage = dict(rules=len(defs), files_scanned=len(scope))
     return R.finish(a.out)
 

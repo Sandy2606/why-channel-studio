@@ -9,9 +9,9 @@ Rules: PUB-01 to PUB-05, PLT-02 to PLT-05, PLT-09.
 """
 import argparse, os, re, sys
 sys.path.insert(0, os.path.dirname(__file__))
-from common import Report, PASS, FAIL, REVIEW, NP
+from common import Report, PASS, FAIL, REVIEW, NP, platform_limits
+import datetime
 
-LIMITS = dict(ig_caption=2200, ig_hashtags=5, yt_title=100, yt_tags=500)
 BRAND = {'ENGLISH': '#whyeveryquestionhasastory', 'TELUGU': '#whytelugu'}
 HASHTAG = re.compile(r'(?<![\w&])#[^\s#.,;:!?()\[\]"]+')
 
@@ -30,8 +30,15 @@ def blocks(section):
 
 def main(argv=None):
     ap = argparse.ArgumentParser(); ap.add_argument('copy'); ap.add_argument('--out')
+    ap.add_argument('--rules', help='platform_rules.md to read limits from (default: the playbook copy)')
+    ap.add_argument('--today', help='YYYY-MM-DD (tests); default: today')
+    ap.add_argument('--max-age-days', type=int, default=14, help='how old the per-upload re-check may be')
     a = ap.parse_args(argv)
     R = Report('check_copy', a.copy)
+    cfg = platform_limits(a.rules); L = cfg['limits']
+    LIMITS = dict(ig_caption=L['ig_caption_max_chars']['value'], ig_hashtags=L['ig_hashtags_max']['value'],
+                  yt_title=L['yt_title_max_chars']['value'], yt_tags=L['yt_tags_max_chars']['value'])
+    today = datetime.date.fromisoformat(a.today) if a.today else datetime.date.today()
     text = open(a.copy).read()
     secs = re.split(r'^## ', text, flags=re.M)
     seen = 0
@@ -67,8 +74,22 @@ def main(argv=None):
     if not seen: R.add('copy sections', FAIL, 'no "## ENGLISH/TELUGU · YouTube/Instagram" sections found', 'PUB-01')
     disc = re.search(r'altered or synthetic content[^\n]*', text, re.I)
     R.add('disclosure decision recorded', PASS if disc else FAIL, disc.group(0)[:160] if disc else 'no "Altered or synthetic content" decision in the file', 'PUB-05')
-    ver = re.search(r'(verified|checked)[^\n]{0,60}20\d\d-\d\d-\d\d', text, re.I)
-    R.add('platform limits verification date', PASS if ver else FAIL, ver.group(0)[:120] if ver else 'no "verified/checked YYYY-MM-DD" line for the limits used', 'PUB-02')
+    # the central limits: their own verification status and age
+    used = ['ig_caption_max_chars', 'ig_hashtags_max', 'yt_title_max_chars', 'yt_tags_max_chars']
+    stale = [k for k in used if (today - datetime.date.fromisoformat(L[k]['checked'])).days > cfg['recheck_after_days']]
+    second = [f"{k} ({L[k]['rule']})" for k in used if L[k]['status'] != 'CONFIRMED']
+    R.add('central limits are current', REVIEW if stale else PASS,
+          f'older than {cfg["recheck_after_days"]} days: {stale}; update platform_rules.md' if stale else
+          f'read from platform_rules.md (checked {min(L[k]["checked"] for k in used)})', 'PLT-01..05')
+    if second: R.add('limits with only secondary sources', REVIEW, ', '.join(second) + ': no official page found; treat as provisional', 'PLT-03..05')
+    # the per-upload re-check (PUB-02): a stored verification date is not a re-check of the platform
+    m = re.search(r'limits re-?checked[^\n]*?(20\d\d-\d\d-\d\d)', text, re.I)
+    if not m:
+        R.add('platform limits re-checked for this upload', FAIL, 'no "Platform limits re-checked YYYY-MM-DD" line (PUB-02: re-check the official pages before publishing)', 'PUB-02')
+    else:
+        age = (today - datetime.date.fromisoformat(m.group(1))).days
+        R.add('platform limits re-checked for this upload', PASS if age <= a.max_age_days else REVIEW,
+              f'{m.group(0)[:120]} ({age} days ago)' + ('' if age <= a.max_age_days else f'; older than {a.max_age_days} days: re-check before publishing'), 'PUB-02')
     R.add('claims match the video; tone; Telugu naturalness', NP, 'human review', 'PUB-07')
     R.coverage = dict(sections=seen)
     return R.finish(a.out)

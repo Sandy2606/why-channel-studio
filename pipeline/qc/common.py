@@ -18,9 +18,26 @@ import json, os, subprocess, sys, datetime
 PASS, FAIL, REVIEW, NP = 'PASS', 'FAIL', 'REVIEW', 'NOT PERFORMED'
 REPO = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
 
+PLATFORM_RULES = os.path.join(REPO, 'playbook', 'platform_rules.md')
+
+
+def platform_limits(path=None):
+    """the single machine-readable limits block in platform_rules.md (```json qc-limits)"""
+    import re
+    text = open(path or PLATFORM_RULES).read()
+    m = re.search(r'```json qc-limits\s*\n(.*?)\n```', text, re.S)
+    if not m: raise RuntimeError('platform_rules.md has no ```json qc-limits block')
+    return json.loads(m.group(1))
+
+
+def limit(name, path=None):
+    return platform_limits(path)['limits'][name]['value']
+
+
 # Format profiles (brand.md LAY-03, FMT-01, PLT-01). Regions are fractions of the frame height.
+# The Short duration ceiling comes from platform_rules.md, not from this file.
 PROFILES = {
-    'short': dict(W=1080, H=1920, max_duration=180.0, top_band=(0.057, 0.130), caption_band=(0.708, 0.802), phone_w=390),
+    'short': dict(W=1080, H=1920, max_duration=float(limit('short_max_seconds')), top_band=(0.057, 0.130), caption_band=(0.708, 0.802), phone_w=390),
     'long':  dict(W=1920, H=1080, max_duration=None,  top_band=(0.0, 0.12),    caption_band=(0.80, 0.95),   phone_w=640),
 }
 
@@ -93,6 +110,17 @@ def frame(path, t, w, h):
                         '-f', 'rawvideo', '-pix_fmt', 'rgb24', '-'], capture_output=True).stdout
     if len(b) < w * h * 3: return None
     return np.frombuffer(b[:w * h * 3], np.uint8).reshape(h, w, 3)
+
+
+def last_frames(path, w, h, seconds=0.5, scale=4):
+    """every decoded frame of the last `seconds` (downscaled by `scale`), in order; the final item is the
+    actual last decoded frame of the file"""
+    import numpy as np
+    sw, sh = w // scale, h // scale
+    b = subprocess.run(['ffmpeg', '-v', 'error', '-sseof', f'-{seconds + 0.2:.2f}', '-i', path, '-vf', f'scale={sw}:{sh}',
+                        '-f', 'rawvideo', '-pix_fmt', 'rgb24', '-'], capture_output=True).stdout
+    n = len(b) // (sw * sh * 3)
+    return [np.frombuffer(b[i * sw * sh * 3:(i + 1) * sw * sh * 3], np.uint8).reshape(sh, sw, 3) for i in range(n)]
 
 
 def load_json(path, default=None):

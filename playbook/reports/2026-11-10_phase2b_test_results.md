@@ -61,3 +61,42 @@ A record, not instructions. All runs used the `pro-system` branch in this worksp
 3. A pull request. This session can push branches but its GitHub API write access is blocked (see the delivery note); the compare link is given instead.
 4. Fonts and colours remain human checks until `layout.reg()` records them. A proposed future change to `layout.py` is not part of this phase.
 5. The account-skill pointers: after the merge, with separate approval.
+
+## 6. Correction pass (after the user's Phase 2B review)
+**Self-test: 51 of 51 cases behaved as expected** (`pipeline/qc/tests/LAST_RUN.md`). The 19 new cases:
+- **Loop:** a crossfade back to frame 0 → PASS. Never returning → seam FAIL. A hard cut 0.25 s before the end → seam PASS but transition FAIL.
+- **Exports:**
+  - same body with different endings → PASS;
+  - body changed between 3 and 5 s → FAIL;
+  - IG audio 200 ms late → audio FAIL (video still PASS);
+  - the earlier "all four correct" case → PASS on 8 frames and 3 audio windows.
+- **Sounds:**
+  - catalog key, nested `amb/` path, `lib/` path and `sfx/` prefix → resolved, PASS;
+  - not catalogued and no file → FAIL;
+  - catalogued but file missing → FAIL;
+  - file present but uncatalogued → REVIEW;
+  - provenance UNKNOWN → FAIL (not cleared for new work);
+  - catalog integrity finds the missing file → FAIL.
+- **Limits:**
+  - the compliant copy re-checked 2 days earlier → PASS;
+  - a re-check 40 days old → REVIEW, and the central limits are stale → REVIEW;
+  - a `platform_rules.md` copy with a 3-hashtag limit fails a 4-hashtag caption, which proves the limits are read from the rules file.
+- **Human sign-off summary:**
+  - no sign-off → INCOMPLETE;
+  - partial → INCOMPLETE;
+  - every row signed PASS → PASS;
+  - a human FAIL → FAIL;
+  - a PASS without reviewer or date → INCOMPLETE (does not count).
+
+**Real videos (re-run with the corrected checkers):**
+- **Loop:** the first frame vs the actual final decoded frame. GS 4/6: 0.30 (EN), 0.29 (TE); GS 3/6: 0.79 / 0.66; GS 2/6: 0.41 / 0.40, all PASS. The largest change in the last 0.5 s is 0.4–4.8, far below a hard cut.
+- **Exports, GS 2/6, 3/6 and 4/6:** body identical at 8 points per language, and audio lag 0 ms with r = 1.00 in all 3 windows → PASS. GS 4/6 durations are 109.19 / 135.68 s.
+- **Catalog:**
+  - the current catalog: all 55 entries resolve to a file, but 28 record a stale `lib/` path → REVIEW;
+  - the proposed catalog: 74 entries, all present, with no path warning.
+- **Summary on GS 4/6 without a sign-off:** FAIL. The old post copy has no "limits re-checked" line (a rule that post-dates it), and no human rows are signed, so nothing is shown as a pass.
+
+**Bugs found and fixed during this pass:**
+1. Audio-sync windows could extend into the deliberately different ending (now always inside the body).
+2. A window of exactly 1 s was rejected as "no audio" (off-by-one).
+3. `--catalog-integrity` was skipped when a video had no register (now runs independently).

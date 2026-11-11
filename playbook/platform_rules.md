@@ -22,6 +22,22 @@ Before each publishing pass, re-verify any limit the copy depends on and record 
   - **Not addressed by the page:** historical reenactments, and cloned voices of other consenting people.
   - Status: CONFIRMED, YouTube Help "Disclosing use of altered or synthetic content" (support.google.com/youtube/answer/14328491), checked 2026-11-10. The page shows no last-updated date, so re-check before each publishing pass. How we apply it: PUB-05.
 
+## Machine-readable limits (used by `pipeline/qc`)
+The QC scripts read their limits only from this block; no script keeps its own copy. When a limit changes, update the PLT rule above **and** this block in the same commit (`check_rules.py` verifies that the block parses and cites existing rules). `checked` is the date the source was last verified; it is not a substitute for re-checking before publishing (→ PUB-02).
+
+```json qc-limits
+{
+  "recheck_after_days": 30,
+  "limits": {
+    "short_max_seconds":    {"value": 180,  "rule": "PLT-01", "status": "CONFIRMED",  "source": "https://support.google.com/youtube/answer/15424877", "checked": "2026-11-10"},
+    "ig_hashtags_max":      {"value": 5,    "rule": "PLT-02", "status": "CONFIRMED",  "source": "Instagram @creators on Threads, via https://www.socialmediatoday.com/news/instagram-implements-new-limits-on-hashtag-use/808309/", "checked": "2026-11-10"},
+    "ig_caption_max_chars": {"value": 2200, "rule": "PLT-03", "status": "SECONDARY",  "source": "third-party guides (2026); no official page found", "checked": "2026-11-10"},
+    "yt_tags_max_chars":    {"value": 500,  "rule": "PLT-04", "status": "SECONDARY",  "source": "third-party guides (2026); YouTube Help 146402 gives no number", "checked": "2026-11-10"},
+    "yt_title_max_chars":   {"value": 100,  "rule": "PLT-05", "status": "SECONDARY",  "source": "third-party guides (2026)", "checked": "2026-11-10"}
+  }
+}
+```
+
 ## Scheduling data
 - **[PLT-07]** (C) **Posting times** (set Oct 26 for an India audience; the user is in Texas). Status: NEEDS RE-CHECK against real audience data.
 

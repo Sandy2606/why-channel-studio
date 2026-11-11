@@ -24,4 +24,7 @@ Files, durations, encoding.
 | # | Found at (brief / script / scene sheet / preview / render) | Severity | Defect | Fix | Status |
 |---|---|---|---|---|---|
 
+## Human review
+Record human checks in `qc_signoff.md` (same folder) and combine everything with `pipeline/qc/qc_summary.py`. The summary stays INCOMPLETE until every human row is signed with a reviewer and a date.
+
 ## Score (→ QC-03; a target, not a substitute for the gate)
