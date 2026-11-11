@@ -1,12 +1,13 @@
 # Why? Channel Studio
 
-Production kit for **Why?** (YouTube @WhyEveryQuestionHasaStory · Instagram @whyeveryquestion) and **Why? Telugu**.
+Production kit for **Why?** and **Why? Telugu**. Accounts: see `playbook/brand.md` (BR-07).
 Claude clones this repo at the start of every video session, runs `bash setup.sh`, and pushes improvements back.
 
 ## Layout
 | Folder | What |
 |---|---|
-| `playbook/` | The production playbook (same as the `why-channel-video` skill): quality system, pacing model, sound design, script format, KEEP/DROP log |
+| `playbook/` | Master playbook (precedence, rule index, workflow), `brand.md`, `platform_rules.md`, `roles/` (11 role guides), `methods/` (technical notes), `templates/`, `history.md` (record only, not instructions), `MIGRATION.md` |
+| `plans/` | Series plans (e.g. `golden_sparrow.md`) and topic ideas |
 | `pipeline/long/` | 16:9 long-video renderer: `render_long.py`, 2D animations `anim_long.py`, captions/anchors `caps_long.py`, Pace Model `pacing.py` + `make_voice_v2.py`, voice chain `proasm.py`, synth fallback SFX `sfx.py` |
 | `pipeline/shorts/` | 9:16 Shorts renderer (Sunday Short version) |
 | `pipeline/styles/` | Library of 9 code-drawn animation styles for 9:16 and 16:9 (see its README) |
@@ -18,8 +19,8 @@ Claude clones this repo at the start of every video session, runs `bash setup.sh
 | `videos/<date>_<slug>/` | Per-video files: cues, phrase anchors, take lists, script, post copy, thumbnails |
 
 ## Brand
-Black `#0A0A0A` · cream `#F4F1EA` · amber `#FFB224` · Archivo Black + Space Mono · Telugu: Noto Sans Telugu Black.
+See `playbook/brand.md` (BR-01, BR-02).
 
 ## Adding sounds
 Drop real recordings (Pixabay / YouTube Audio Library; never AI-generated) into `sfx/` with a descriptive name.
-Wanted next: exact highlighter (Pixabay 385295), a real sub drop. Everything else is in the library.
+The wanted list is in `playbook/roles/sound.md`.

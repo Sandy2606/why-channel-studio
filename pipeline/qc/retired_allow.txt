@@ -1,0 +1,2 @@
+# Known benign retired-phrase hits ("path:line  # why")
+pipeline/remotion_effects/README.md:49  # Globe Arcs describes its borderless schematic world; use governed by ART-05

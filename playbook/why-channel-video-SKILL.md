@@ -1,439 +1,84 @@
 ---
 name: why-channel-video
-description: Produce a Why? channel explainer (Short or long, English + Telugu): research, script, edit voice takes, visuals list, full-screen v3-style render.
+description: Produce a Why? channel explainer (Short or long, English + Telugu): research, script, voice, scene sheet, render, QC and publishing. Master playbook: precedence, rule index, gated workflow, formats and credits.
 ---
 
-# Why? channel video production
+# Why? production system: master playbook
 
-Channel: "Why?" (YouTube @WhyEveryQuestionHasaStory, Instagram @whyeveryquestion) plus "Why? Telugu". Faceless explainers that answer a "Why…?" question.
+Channel: "Why?" and "Why? Telugu" (handles → BR-07). Faceless explainers and story documentaries that answer a "Why…?" question.
 
-## 0. Quality system (READ FIRST, applies to every video)
-- **Target: every video scores at least 8/10** on the scorecard. If the pre-render self-check predicts less than 8, fix it before rendering.
-- **After EVERY delivery, give a full, honest review with scores.**
-  - Sample frames (every 1.5 s, plus the first 3 s at 3 fps) and look at them.
-  - Run the QA checks.
-  - Score each area and state every mistake and the needed upgrade plainly. Never inflate.
-  - Re-check the video against every rule here and the user's notes. Breaking a known rule is an automatic finding.
-- **Living playbook.** After each review, update the KEEP / DROP log and propose the updated skill.
-- When unsure what works, research current best practice (vidIQ, platform docs, data studies) and cite it.
+## How rules work
+- **Load for every video:** this file, `brand.md`, `platform_rules.md`, the role guides for the stage you are in (`roles/`), the series plan (`plans/<series>.md`) and the video's production brief. **Never load `history.md` as instructions**: it is a record. `MIGRATION.md` records the Nov 2026 reorganisation.
+- **Precedence (highest first):** (1) the user's latest explicit instruction or approval for that topic and scope; (2) the video's approved plan (production brief + scene sheet); (3) the approved series plan; (4) the channel-wide rule in its owner file; (5) `history.md`, reference only. A video or series decision beats a channel rule only if it was approved after that rule or explicitly as an exception to it.
+- **What counts as approval:** the user's explicit instruction or approval of a stated rule (dated) → a CURRENT rule in the scope given. Approval of a finished video → evidence for that video, not a channel rule. Claude's proposals, audit recommendations and ChatGPT review points → PROPOSED until the user approves. Measurements and methods → evidence or method notes, updated by measuring.
+- **Replace, don't append:** (1) find the active rule by ID in the index below; (2) rewrite it in its owner file and raise its version; (3) move the old text to `history.md` as SUPERSEDED with date, replacement ID and version, reason, scope and the user's words; (4) update every reference (search the ID and the old wording); (5) confirm one current rule remains for that topic and scope.
+- **No new channel-wide rule without the user's approval.** Lessons from a video enter `history.md` as TEST.
+- **Exceptions** go in the brief's Exceptions table by rule ID, scope and date; they never edit the shared rule.
+- **Rule format:** each rule is defined once, as `**[ID]**`, in its owner file and cited elsewhere as `→ ID`. Tags: **P** = production rule (pass/fail), **C** = creative guidance (professional judgment). Sources in brackets.
+- The saved account skills `why-channel-video` and `why-channel-post-copy` are older copies. Where they disagree with these files, these files win.
 
-### Scorecard (weights)
-| Area | Weight | 8+/10 means |
+## Rule index
+| Topic | Rule IDs | Owner |
 |---|---|---|
-| Hook (first 2 s) | 20% | Frame 1 is bright, full-screen and meaningful (no fade-in). Shocking fact first, then the question, then "Let me explain". |
-| Pacing / editing | 15% | A visual change every 1.5–2.5 s (Shorts) or 2–4 s (long). No hold over 3 s (Shorts) or 4.5 s (long, unless it is an animation). No dead air over 0.15 s in Shorts; long videos follow the Pace Model. |
-| Captions | 15% | Word-by-word, synced, active word in amber, safe zones, spelling exactly as the script. |
-| Visual quality | 15% | Bright, full-screen, readable on a phone, the right footage for each named place, credits and sources present. |
-| Audio | 10% | Pro voice chain, -14 LUFS, calm music bed, NO hissy or noise SFX. |
-| Script / story | 10% | Conversational, one clear payoff, tight wording. Shorts are 45–60 s. |
-| Research / trust | 10% | Claims sourced on screen with proof cards; legends worded as beliefs or tradition. |
-| CTA / growth | 5% | Mid-video nudge plus an end button. Platform-correct wording (IG = FOLLOW, YT = SUBSCRIBE). Ending of 8 s or less. Shorts point to the long video. |
+| Workflow, previews, release dates, after delivery, honest review, light workflow | WF-01 – WF-07 | this file |
+| Shorts length, schedule, film vs Shorts, reminders, endings, exports | FMT-01 – FMT-11 | this file |
+| Credits, voice generation, voice library | CR-01 – CR-03 | this file |
+| Palette, fonts, series tag, components, look, Telugu text, handles, covers, CTA card | BR-01 – BR-09 | `brand.md` |
+| Full frame, captions, safe zones, captions as main text, image scale | LAY-01 – LAY-05 | `brand.md` |
+| Fact checking, sources, numbers, estimates, licences | RS-01 – RS-08 | `roles/research.md` |
+| Screenwriting standard, hooks, voice, examples, characters, formats, voice direction | ST-01 – ST-11 | `roles/story.md` |
+| Styles in the scene sheet, failing scenes, process shown, rhythm, film-not-slides, toolkit, long-film structure | DIR-01 – DIR-12 | `roles/director.md` |
+| Right place, labels, real imagery, image sourcing, maps, image size, real captures, owned assets first, clip sources | ART-01 – ART-09 | `roles/art.md` |
+| Moves within native resolution, animate information, historical look, libraries | MO-01 – MO-04 | `roles/motion.md` |
+| Music source, calm under voice, cue sheet | MU-01 – MU-03 | `roles/music.md` |
+| Real SFX only, on-screen events, variety, inventory, ambience | SD-01 – SD-05 | `roles/sound.md` |
+| Audio edit, pacing, loudness, Telugu and caption checks, phrase timing | ED-01 – ED-05 | `roles/editor.md` |
+| Delivery gate, severity, score, reporting, layout checks, technical checks | QC-01 – QC-06 | `roles/qc.md` |
+| Post copy, counts, hashtags, after upload, disclosure, CTA text, claims | PUB-01 – PUB-07 | `roles/publishing.md` |
+| Platform limits, disclosure policy and recommendations (dated, sourced) | PLT-01 – PLT-09 | `platform_rules.md` |
+| Data before diagnosis, weekly review, post-launch watch | AN-01 – AN-03 | `roles/analytics.md` |
+| Golden Sparrow series | GS-01 – GS-06 | `plans/golden_sparrow.md` |
 
-### Automatic QA checks (every render)
-- Duration and integrated loudness (ffmpeg ebur128, -14 LUFS).
-- Frame-1 brightness above 60/255.
-- Longest hold.
-- Voice pacing: Shorts have no silences over 0.16 s; long videos run the Pace Model report (wpm per role, deliberate pauses per minute).
-- Caption coverage.
-- Safe zones.
-  - 9:16: key text between y = 250 and 1550; nothing in the bottom ~370 px or the right ~140 px.
-  - 16:9: captions at about y = 950; nothing important in the bottom-right corner, where YouTube puts its controls and end-screen elements.
+Templates (`templates/`) hold structure and rule IDs only, never rule text.
 
-## Fixed brand
-- Colours: black #0A0A0A, cream #F4F1EA, amber #FFB224 accent, red for strikes and the subscribe button.
-- **Series tag (top-left stamp), user rule Oct 27:** week theme + video number / total that week, e.g. `GOLD · 2/6` (TE `గోల్డ్ · 2/6`). Not "GOLD WEEK", not bare "GOLD". The long video uses `GOLD · FULL STORY`.
-- Fonts: Archivo Black for headlines and captions, Space Mono for labels. Telugu uses Noto Sans Telugu Black (RAQM). Archivo has no ▶ or ↓ glyphs, so never use them.
-- **Script voice: conversational, talking TO the viewer.**
-  - Open with the shocking fact, then the question, then "Let me explain."
-  - Never open with "Hey" or "Do you know".
-  - Friend telling a friend, NOT a teacher quizzing a class (user, Oct 26): "Okay, look at this…", "here's what blew my mind", "this is my favourite part", "right?". Avoid quiz-style "So why does X? Let me explain" chains. Telugu the same: "ఒక్కసారి చూడండి", "నాకు షాకింగ్ అనిపించింది", "కదా?".
-- **Ending, 8 s or less:** full-video pointer (Shorts only), then a follow/subscribe line, then "comment your why".
-  - EN: "Subscribe for a new why every day, and comment your why below. We'll do the research and get you the answer."
-  - The user records both FOLLOW and SUBSCRIBE takes; IG versions use FOLLOW, YT versions use SUBSCRIBE.
-- **Subscribe/follow prompts, ALWAYS:**
-  - A mid-video nudge: in Shorts, a red pill around 25 s; in the long video, a full-screen ask with a tap animation timed to the voice.
-  - A big button on the end card with the same tap animation.
-  - Separate IG and YT exports for Shorts.
+## Workflow
+- **[WF-01]** (P, user Nov 8; additions Nov 10) Order of work:
+  1. Agree the topic.
+  2. Research and verify every fact (→ RS-01).
+  3. Write the full English and Telugu scripts (→ ST-07) in the production brief, with sources, a visual beat under each line and the estimated credits.
+  4. Script versions: the user asks for changes until he approves the final script. Nothing below starts before that.
+  5. Generate both voices, one take each, reusing the voice library (→ CR-02, CR-03).
+  6. Edit the voice (→ ED-01).
+  7. Send one message with the scene sheet (what is on screen for each line and the animation style for every line or chapter, → DIR-01) and the resource list (pictures, stock clips, screenshots with source links, music, SFX, image prompts).
+  8. The user gives changes until the scene sheet and its styles are agreed.
+  9. The user sends the assets. Never render before they arrive.
+  10. Send stills only if the style is changing; motion previews per WF-02.
+  11. Render English and Telugu, with separate YouTube and Instagram versions (→ FMT-09).
+  12. Run QC (→ QC-01).
+  13. Deliver the videos, cover and post copy.
+  14. One short honest report: score (→ QC-03), defects, credits used and credits left.
+  15. Update the system (→ WF-05), commit and push.
+- **[WF-02]** (P, user Nov 10) For an upgraded edit or a new or risky sequence, render 10–20 s previews of the key sequences in both languages with sound. Approval of the previews covers the full render.
+- **[WF-03]** (P, user Oct 27) Never render a full video only to test a style.
+- **[WF-04]** (P, user Nov 6) Release dates are fixed. Never propose moving them; flag critical blockers early.
+- **[WF-05]** (P, user Nov 10; Phase 2A approval Nov 10) After delivery: the score, defects and lessons go to `history.md` (EVIDENCE or TEST); a rule changes only when the user approves it, by the replace procedure above; commit and push every time.
+- **[WF-06]** (P, user Oct 24) After every delivery give a full, honest review: score each area, name every mistake and the upgrade needed. Never inflate.
+- **[WF-07]** (P, user Nov 10) Keep the workflow light. For straightforward Shorts, the role outputs are combined into three documents: one research-and-story brief (the production brief), one director's scene sheet with assets, music and sound cues, and one QC report. The roles are professional passes, not eleven separate reports.
 
-## Weekly model (long-first, from Oct 26 2026)
-- **Sunday:** record the long video plus Monday's Short.
-- **Monday:** post the long video plus Short part 1.
-- **Monday to Saturday:** one Short a day, each recorded the evening before and scheduled.
-- **The long video is a COMPLETE deep-dive,** not limited to the Shorts' content. If it is too big, split it into parts.
-- **Shorts are the most interesting or trending hooks,** and they drive viewers to the long video.
-  - YT Shorts: set "Related video" to the long video.
-  - IG: "full video on YouTube, link in bio".
+## Formats
+- **[FMT-01]** (P, user Nov 10, replaces the Oct 31 targets) Every Short and Reel is under 3:00 including the ending, in both languages. The story sets the length. Plan with an internal safety margin from measured speech (method in `roles/editor.md`). Never pad to reach a duration or rush narration to meet a target. If a script is over budget, cut at script stage, not after voicing (user Oct 31).
+- **[FMT-02]** (P, user Oct 29, Nov 6) The film posts on Sunday and Shorts Monday–Saturday; each video is made at least a day before it posts. Each week is a connected season: the Sunday film plus six connected Shorts.
+- **[FMT-03]** (C, user Oct 26) The film is a complete deep-dive, not a stitch of the Shorts; split it into parts if it is too big. Shorts carry the most interesting angles, add facts the film doesn't have, and drive viewers to it.
+- **[FMT-04]** (P, user Nov 1) Shorts have no mid-video subscribe card and no spoken schedule or subscribe lines. The schedule appears only on the series slide.
+- **[FMT-05]** (P, user Nov 10; card details user Oct 29) In long films, the brief sets the number of subscribe reminders and places them at story breaks, never at fixed intervals and never interrupting a scene. Mid-video cards are smaller than the end card, with click/bell SFX at about half volume and no extra narration, placed off the key visual, never in the first 15 s.
+- **[FMT-06]** (P, v2 user Nov 1, Nov 8 and Nov 10) Shorts other than a season's last end with the phone-readable series slide: YOU'RE HERE n/6, NEXT n+1/6 with tomorrow's tease, and the full-film pointer (YT "FULL FILM · RELATED VIDEO", IG "FULL FILM ON YOUTUBE · LINK IN BIO"). It carries the platform-correct on-screen Subscribe/Follow button, and its text stays readable on a phone. Then a loop line runs into the opening, and the last frame equals the first.
+- **[FMT-11]** (C, v2 user Nov 10) End-slide timing is an editing judgment: hold the slide long enough to read (about 5 s is typical) and keep the ending short (around 8 s or less). Never a long static end screen.
+- **[FMT-07]** (P, user Nov 10) The last Short of a season answers its own central question with a satisfying conclusion. It may then build anticipation for the next season with a question or teaser. A loop is optional.
+- **[FMT-08]** (C, user Oct 29) Each Short's tease names the next Short, so the week's topics are planned up front. No likes targets (engagement bait).
+- **[FMT-09]** (P, user Oct 28–30) Each Short has four exports: EN and TE, each in a YouTube (SUBSCRIBE) and an Instagram (FOLLOW) version. Instagram gets the same full video; no shortened IG cuts.
+- **[FMT-10]** (C, user Oct 29) "GOT A WHY? COMMENT IT" appears as on-screen text only, without voice.
 
-### Posting times
-The user is in Texas, so IST times are converted to local time.
-
-| Post | IST | CDT (until Oct 31) | CST (from Nov 1) |
-|---|---|---|---|
-| Long video | 5:00 PM | 6:30 AM | 5:30 AM |
-| IG Reel | 7:00 PM | 8:30 AM | 7:30 AM |
-| YT Short | 8:00 PM | 9:30 AM | 8:30 AM |
-
-- Metricool brand "whytelugu" (id 7312248) has Telugu IG and one YT channel. The English accounts are not connected yet.
-- Metricool's best-time data is generic until there are 2–3 weeks of history; re-check after that.
-
-## Style (required)
-- Modern explainer at the Think School / What If standard. Never epic or "Rajamouli" style.
-- EVERYTHING FULL-SCREEN. Low-res or off-ratio photos sit on a blurred full-frame fill behind a large sharp crop.
-- Look:
-  - Bright footage with dims scaled to about 50–60%, and a soft dark band only behind the captions.
-  - Captions are the main text, so don't add headlines that paraphrase the voice.
-  - Keep place cards (name plus a state pill), big pop-in numbers, and proof cards.
-  - Punch-in of about 7% (5% in 16:9) halfway through long shots.
-  - "AI ILLUSTRATION" labels, and CC/Pexels credits.
-- Never use footage from a different place for a named place.
-
-### Long video (16:9, 1920x1080) additions
-- **Chapter progress bar** across the top, about 12 chapters, matching the YouTube chapter timestamps in the description.
-- **Chapter cards** ("STORY 1 · RAMA VS RAVANA") over a dimmed image.
-- **2D motion-graphic explainers in the brand style** (anim_long.py):
-  - an India map with pulsing pins;
-  - word merges (DASHA + HARA → DUSSEHRA);
-  - "three stories → DAY 10" lanes;
-  - ✕/✓ loophole cards;
-  - a timeline;
-  - a town-as-stage map with a walking crowd;
-  - world-map arcs;
-  - a cycle diagram;
-  - day-count badges;
-  - a villain → power table.
-  - Use them for the explaining parts. They can't do character animation; those beats stay on AI images with camera moves.
-- **Animation style library (Nov 8 2026):** `pipeline/styles/` has Isometric, Paper-Cut, 3D Data Chart, Synthwave, 3D Explainer, Maths Diagram, Cartoon Explainer (Anna + Chelli), Domino Reveal and Glow Atom, for Shorts and long videos, English and Telugu. Pick from `pipeline/styles/README.md` when writing the scene sheet.
-- **Remotion effect clips (Nov 8 2026):** `pipeline/remotion_effects/` has 30 more effects, rendered as silent MP4s and cut in through ffmpeg or `remotion_clip.py` (Map Route, Headline, Stat Chart, Globe Arcs, Paper Desk, Type Slam and others; full list in its `manifest.json`). English and Telugu, 9:16 and 16:9, voice sync through `cues`. Free and local. Real data needs sources or the clip shows DEMO. Sound is added in the normal mix from `sfx/`. Name them in the scene sheet the same way as the nine Python styles.
-- **Maps:** draw land as ONE mass with NO political borders, so the Kashmir border can never be an issue.
-- **Mid-video ask** (after roughly 45% of the video): a "WAIT." card, then a "HOW OLD?" style tease, then a full-screen SUBSCRIBE button tapped on "I'm hoping you did". The music dips to about 25% during the ask.
-- **Music:** two calm tracks. Track 1 plays up to the ask; track 2 starts as the story resumes.
-- **End card:** at least 5 s with WHY?, a subscribe tap and "COMMENT YOUR WHY BELOW", leaving room for YouTube end-screen elements.
-- **Proof cards:** at least one per chapter (UNESCO pages, traveller accounts, news), not just one in the whole video.
-- **AI images:** ask for the largest size (at least 1920 px wide) so they aren't upscaled and soft.
-- **Thumbnail (1280x720):** three AI panels for the three subjects with amber name pills, at most 4–5 words of text (e.g. "DUSSEHRA IS NOT / ONE STORY"), plus a Telugu version.
-
-## Sound design system (user: "sound effects make a normal video extraordinary")
-- **Purpose:** sound follows what MOVES ON SCREEN (graphics, cards, maps, stamps), not the words. Never illustrate spoken words literally (no tree sounds for "Jammi", no elephant for "Mysuru"); the user said that feels artificial.
-- **Real recorded library only.** Generated SFX (code or AI) sounded "kiddy" (pings/bells/pops) or hissy. The user keeps the pack and attaches it each session; the catalog lives at sfxlib/catalog.json (role, hit point).
-  - Have: impact_big (hit at 2.17 s), impact_trailer (0.93 s, use once per video), sub_knock, heartbeat, riser (ends at 2.53 s), woosh_deep, swoosh_slow, page_turn, paper_slide, tick, ticker_run.
-  - Still needed: keyboard typing, key press, mouse click, camera shutter, polaroid, rubber stamp, marker scribble, highlighter, thumbtack/pin, map unfold, sub drop.
-- **One sound, one job ("physical desk-object" world, Vox / Johnny Harris style):**
-  - typing → text typing on letter by letter;
-  - mouse click → button tap;
-  - shutter → photo appears;
-  - paper slide + sub_knock → card lands;
-  - stamp → ✕/✓ verdicts;
-  - marker → circles, arrows, lines drawing;
-  - highlighter → word highlight;
-  - pin/map unfold → maps;
-  - tick/ticker_run → timeline years;
-  - page_turn + impact_big → new chapter;
-  - heartbeat/riser + music drop + impact → the big reveal.
-- **Design new animations for these sounds:** typewriter text for quotes and dates, a red marker circling the key word, a highlighter sweep, stamped verdicts, polaroid photo drops, page-turn chapters.
-- **Don't sound every movement.** Key actions and transitions only; vary the family (not one "thud" everywhere).
-- **Ambience:** only faint real ambience under real event footage (fire under burnings, crowd/drums under processions), and never in the explaining parts.
-- **Mix:** voice on top (-14 LUFS); SFX clearly audible but under the voice (duck about 45% while speaking); music lowest; silence before reveals; chapter = voice pause about 1.3 s + music dip + swell + boom, with the card landing on the boom.
-- **Script carries SFX cues** next to the mood and pause marks, e.g. `[⌨️ TYPE "1520"]`, `[✍️ CIRCLE "three"]`, `[⏸⏸ + BOOM]`.
-
-## Script format for long recordings (user request, from next video)
-- Every line starts with **[MOOD · delivery]** (hook/amazed/curious/storytelling/serious/dramatic/playful/proud/urgent/reflective). **Bold** marks the stress word.
-- ⏸ = stop 1–2 s, ⏸⏸ = 2–3 s (before reveals and chapters). These give clean cut points; the Pace Model sets the final rhythm.
-- Recording tips:
-  - record one chapter at a time;
-  - on a stumble, pause and redo the whole line (keep recording);
-  - smile on hook and ask lines;
-  - talk to one friend;
-  - questions go up at the end, names and numbers a touch slower;
-  - same room and mic distance every session;
-  - read each chapter once silently first.
-
-## Current order of work (user-confirmed Nov 8 2026; overrides older workflow notes)
-1. Agree the topic.
-2. Research and verify every fact against current sources.
-3. Write the full English and Telugu scripts with sources, a visual beat under each line and estimated ElevenLabs credits.
-4. **Script versions:** the user asks for changes to humanize it and we go through versions until the user approves the final script. Nothing below starts before that.
-5. Generate both voices in ElevenLabs, one take each, reusing saved lines from the voice library.
-6. Edit the voice: silences, pacing, mix.
-7. Send one message with the scene sheet (what is on screen for each line, **and the animation style for every line or chapter**) and the resource list (pictures, stock clips, screenshots with source links, music, SFX, Gemini image prompts).
-8. The user gives changes until the scene sheet and its animation styles are agreed.
-9. The user sends the assets. Never render before they arrive.
-10. Send stills only if the style is changing; otherwise go straight to rendering.
-11. Render the final videos: English and Telugu, with separate YouTube (Subscribe) and Instagram (Follow) versions for Shorts.
-12. Run the QA checks.
-13. Deliver the videos, thumbnail or cover and post copy.
-14. Give one short honest report: score (8.5 minimum), mistakes, credits used, credits left.
-15. Update the playbook, commit and push.
-
-## Workflow (phased; do not skip ahead)
-1. **Research.** Verify every claim and record the outlet, date and URL. Word legends as "tradition says". Re-check numbers, and cut factual slips from the audio.
-2. **Script.** Write English and natural spoken Telugu.
-   - Use the conversational voice and the hook formula.
-   - One idea per line, with re-hooks every 30–45 s in the long video.
-   - Get an external review (e.g. ChatGPT) and fix the facts it flags.
-3. **Voice edit (pro Reels style).**
-   - **English:** transcribe with faster-whisper small.en at 16 kHz.
-   - **Telugu:** transcribe per phrase with the CT2 te_med model. For retake-heavy passages, do a fine pass: energy segments with a 0.12 s merge, then whisper per segment, to find exact boundaries.
-   - Run whisper jobs sequentially; the machine has only 2 CPUs.
-   - Pick the best take of each line. When pieces overlap, clamp each end to the next start. Mark hand-tuned boundaries 'raw'.
-   - **Denoise, join and tighten:**
-     - Denoise first.
-     - **Shorts:** join pieces with 70 ms gaps, then compress pauses over 0.16 s to 0.10 s with crossfades.
-     - **Long videos:** NEVER use the Shorts squeeze; it made the first long cut 204 wpm and the user said it sounded like reading. Use the **Why? Pace Model** (pacing.py + make_voice_v2.py, build_long) instead.
-   - **Why? Pace Model v2 (long-form; user-approved Oct 25 2026). v1 at 159 wpm with 0.5 s sentence gaps felt slow ("can't watch it"); v2 uses a fast baseline with beats only where they work:**
-     - Every piece gets a role, and the role sets the pause after it and how much internal pause is kept.
-     - Fast roles: HOOK (whole intro up to "Let me explain"), TEASE (quick recaps), LIST (rapid-fire names and items, from story structure, never auto-detected), CTA. They get about 0.10–0.16 s gaps and internal pauses capped 0.16 → 0.10.
-     - ASK (the mid-video subscribe ask) is warm and quick: about 0.2 s gaps.
-     - EXPLAIN: 0.18 s after '.', 0.10 s after ',', 0.45 s after '?', and internal pauses capped 0.20 → 0.12.
-     - QUESTION gets a 0.45–0.50 s beat before the answer, including questions in the middle of a line, where the internal pause is kept at ≥ 0.35 s.
-     - PUNCH or reveal ("Power wasn't their problem", "A new beginning") gets a 0.50 s breath before it.
-     - Every chapter start gets a 1.30 s pause before it, filled with a music dip, swell and boom.
-     - Classify short lines by spoken duration, not word count (Telugu words are longer).
-     - **Targets:** EN overall about 172–176 wpm; EXPLAIN parts about 170; fast parts about 180+; about 2 deliberate beats per minute. Telugu: the same roles, and about 1.3× the Shorts-cut length.
-     - **Evidence:**
-       - Popular YouTube speech is about 171 wpm median; top TED talks about 175.
-       - Explainer and documentary narration is advised at about 135–160 wpm.
-       - Deliberate pauses run 0.6–1.5 s; speakers speed up for interest and slow down for weight.
-       - Calibrated to the narrator's raw pauses: '.' 0.6 s, ',' 0.4 s, '?' 0.66 s.
-     - Send 3 sample clips (hook → explaining, ask → next chapter, ending) for approval before the full render.
-   - **Chain:** de-esser, then pedalboard EQ, two compressors and a limiter. Finish with loudnorm -14.
-   - **Re-records:** denoise them with their own noise profile and match the tone (e.g. +2 dB high shelf at 3 kHz). Append them to the source with a 1 s gap and splice them in. Use 'raw' bounds so plosives such as the "P" in "Power" aren't trimmed.
-   - **Verify:** re-transcribe the final track and check every splice in isolation. Whisper blends neighbouring words in context.
-   - **Captions:**
-     - English: align the exact SCRIPT text to the whisper word times (difflib, interpolating unmatched words). Never patch whisper's spelling word by word, because whisper output varies between runs.
-     - Telugu: the script line per piece, with word times spread over that piece's voiced frames.
-   - **Scene timing:** anchor scenes to spoken phrases, not fixed times, so re-records re-time everything automatically.
-4. **Visuals list.**
-   - Pexels links and Wikimedia CC photos.
-   - ChatGPT image prompts (9:16 for Shorts, 16:9 for long videos).
-   - A CALM Gemini music prompt: minimal bed, soft piano or pads, no busy hi-hats, no vocals.
-   - Search and download stock yourself when the user hasn't supplied it. WebFetch on Pexels search pages works; direct download URLs:
-     - videos: pexels.com/download/video/ID/
-     - photos: images.pexels.com/photos/ID/pexels-photo-ID.jpeg?w=2400
-   - Wikimedia: use upload.wikimedia.org thumb URLs at standard sizes (960/1280/1920). Special:FilePath and the API are rate-limited (429).
-   - Pre-extract clip frames at 1080p and 30 fps. Vertical clips go on a blurred fill.
-5. **Render.**
-   - PIL frames piped to ffmpeg: libx264, CRF 19–20, 30 fps.
-   - Lead 0.15 s. Tail 0.7 s (Shorts) or 3 s (long).
-   - Render in 2 parallel parts. Long video speed is about 0.17 s per frame, so about 25 min for 5 min of video.
-   - Music: pick the least busy track. EQ-carve it (-5 dB at 2.2k, -5 dB high shelf at 6k, lowpass 10k), gain about 0.22–0.24, sidechain duck about 62%.
-   - SFX: follow the Sound design system above. Events come from the scene list and the animation args (pin, part, lane, slot, node and row times). Use real library files aligned on their hit points.
-   - Render a stills sheet and fix overlaps before the full render. Then run the QA checks.
-6. **Deliver.** Platform versions, covers or thumbnails, post copy (why-channel-post-copy, including chapters for long videos), then the honest review and scorecard.
-
-## Copyright
-- Monetization-safe only: Pexels, CC BY/BY-SA with attribution, own AI images, licensed music.
-- Flag YouTube "Altered or synthetic content" only when AI images look photoreal.
-- Avoid graphic blood in thumbnails.
-
-## Environment gotchas
-- Never `pkill -f` / `pgrep -f` with a pattern that also matches the shell's own command line; it kills the shell (exit 144). Kill by PID from `ps` filtered with `grep -v grep`.
-- Don't run heavy whisper jobs alongside renders unless you have to. Both slow to a crawl on 2 CPUs.
-
-## Story-cinema style (standing rule from Nov 4 2026, every Short from Diwali 6/6 on)
-The user asked for this to be the channel's continuing look so viewers recognise it from Short to Short.
-- **Tell it as a story with characters.** A family or person lives the problem (e.g. Raju at his window). A second character (Meera, the younger sister, voiced by Sowmya's clone) asks the question a normal viewer would ask *before* each section: "What even is PM2.5?", "Why does it get this bad?", "Did it work?". The narrator answers. Put a real-world side character where the topic needs one (e.g. Gurpreet the Punjab farmer, tagged ILLUSTRATIVE EXAMPLE).
-- **Characters = the long-video Anna & Chelli** (dl/chars2.py: anna(), chelli()), recast per story (e.g. Raju & Meera); side characters reuse anna() with recoloured clothes plus extras (Gurpreet: turban + beard). Don't use the old flat stick figures (user: 'feels like a drum').
-- **Cartoons talk.** Mouths move with their own lines; drive them from the voice envelope (RMS per frame, gated by who owns the line). The narrator's third-person lines (hook and loop) don't move a character's mouth. Characters blink. In map or city shots, the asker appears as a round bust in the corner with a speech bubble that shows their line, and captions hide while the bubble is up.
-- **Watching a film, not slides.** Use one continuous drawn world with a camera (map → city → home → street; log-zoom moves, no hard cuts). Use dark cinematic grades, vignette and bokeh dust for "invisible" scales. Keep it simple and clean: flat shapes, at most two labels on screen.
-- **Body explanations use REAL-looking imagery, not cartoons** (user Nov 4: 'realistic so viewers are amazed'): stock 3D renders/photos (Unsplash MCP works; Pixabay/Pexels clips via user) with Ken Burns, dark grade and my overlays (particles, inflammation glow, labels). Size comparisons start at human scale (one hair on a table, actual size) then go under the microscope, drawn to TRUE ratio (hair 70 µm = 280 px → PM2.5 = 10 px).
-- **Body explanations go inside the body.** Use a human example and follow the substance in: start with a macro lens (the particle next to a hair), then an x-ray band that sweeps through the clothes (torso first; keep the face visible), breathing in, particles travelling the airway into the lungs, inflamed red spots, a cough. Cut deeper (air sacs, immune cells, a capillary with blood cells), then pull back to the whole body to show the route to the heart and brain with HEART ATTACK / STROKE tags. Hold the camera steady during the serious health information. Put a source chip on screen (e.g. US EPA · WHO).
-- **Channel schedule** goes on the series slide subtitle ("SUN · FULL VIDEO · MON–SAT · SHORTS"), never mid-video.
-- **Telugu text:** the Telugu font has no µ ³ ≈ ≤ glyphs. te_text.surf now substitutes them (µg/m³ → మైక్రోగ్రాములు, ≈ → దాదాపు). Check Telugu stills for boxes before every render.
-
-## KEEP / DROP log (update after every review)
-**KEEP (working):**
-- Real sources and proof cards.
-- Pro voice edit with tight pauses.
-- Word-by-word captions aligned to the script.
-- Bright full-screen footage.
-- Place cards and big pop numbers.
-- AI art for mythology.
-- Calm, EQ-carved music, e.g. "the quiet meridian", "where the river bends", "before the world wakes".
-- Subscribe/follow nudges, and separate IG/YT exports.
-- Real effigy and event photos at climaxes.
-- 2D brand animations for the explaining parts (long video).
-- Phrase-anchored scene timing.
-- Why? Pace Model for long videos: fast hooks, lists and asks; explaining pace with natural pauses; beats after questions and before reveals (user: "it's good").
-- One explainer graphic per idea in Shorts too (user asked "add graphics for explanation"): element chain stopping at iron, balance scale, collapse, sugar-cube counter, spectrum, element tiles, Earth cutaway, timeline (Gold Short 1).
-- NASA SVS animations (public domain, credit Goddard/CI Lab) for space events; for 16:9 clips with moving subjects, use a wide feathered band over a starfield instead of a tight 9:16 crop (the subjects leave a tight crop).
-- Clips sent as original MP4s straight from Pexels/NASA (never through Descript: free-plan watermark).
-
-- **Golden Sparrow 1/6 build (Nov 8 2026, approved): reuse the week's film audio for Shorts.** Narrator lines come from the approved film/Short audio (0 credits; split only at sentence pauses), and only Chelli's questions, a re-voiced tease and the loop line are new. Total: 523 credits for both languages. Reference build: `videos/2026-11-09_short_gs1_golden_sparrow/pipeline` (render.py, cues.py, mix.py, build_voice.py, words.py). Library styles used: Cartoon Explainer (Anna & Chelli, mouths from the voice envelope), 3D Data Chart (per-bar `t0`, optional `novalues`), Maths-Diagram look (percent ring, people dots), Paper-Cut background with drawn figures.
-- **Two-territory numbers (Nov 8):** when comparing figures across different borders (1700 undivided subcontinent vs 1950 Republic of India), show them in separate panels, each with its own map icon, plus a "DIFFERENT BORDERS · NOT LIKE-FOR-LIKE" note. Cite the exact table and page (Maddison 2001, Table B-20, p. 263).
-- **Legal teasers (Nov 8):** narration stays short ("banned wearing certain kinds of it"). The exact scope (certain printed calicoes, in force 25 Dec 1722, exceptions, repealed 1774) goes on screen, not in the voice.
-- **Phone-readable end slide (Nov 8):** only 3 items (YOU'RE HERE n/6, NEXT n+1/6, full-film pointer) plus the Subscribe/Follow button. Hold it about 5 s (during the reused "next episode / full film linked" line), not 2 s. YT says "FULL FILM · RELATED VIDEO"; IG says "FULL FILM ON YOUTUBE · LINK IN BIO". After upload, set each Short's Related video to the same-language film.
-- **Telugu checks (Nov 8):** verify every generated or reused Telugu line with the te_med model (generic Whisper gives garbage on Telugu). Mixed-script captions: measure each word with its own font, or Latin words overlap Telugu ones.
-- **Static-hold QA (Nov 8):** run freezedetect (n=0.003, d=1.5) on every render. Graphic scenes get a slow 4–5% push-in so nothing sits frozen. The loop hold zooms frame 0 back to 1.0 so the last frame still equals the first.
-- **Render speed (Nov 8):** render the shared body once per language and only the slide + loop tail per platform, then concat with stream copy (2-CPU box: four 1.5-min versions in about 12 min).
-- **Post copy limits, check before sending (user, Nov 10):** Instagram caption 2,200 characters or less **and 5 hashtags or less** (Instagram's cap since Dec 2025; the GS 1/6 copy wrongly shipped 30 and had to be redone). YouTube tags 500 characters or less. Count with a script and state the counts in the copy file.
-
-- **Process steps must be shown happening, as precisely as in the film (user, Nov 10, after GS 2/6):** when narration names steps that change an object (red from the chay root, blue from indigo, wax…), show each change happening on the object itself at the word, as the film's `fx.kalam` does: lines drawn, then red soaking in, then blue, then wax. Chips listed over a still are not enough. Shorts get the same level of visual detail as the film. A 9:16 port of the kalam animation (`kalam9`, with step chips and a one-line explanation per step) is saved in `videos/2026-11-10_short_gs2_cloth_world_wanted/pipeline/render_scenes_kalam9_future.py`.
-- **Golden Sparrow 2/6 "The cloth the world wanted" (Nov 10): EN 2:27 / TE 2:51, approved.** Thread chain SPINNER→PORT, sequential broker callouts, legal timeline, globe-arcs. Holding back: the kalam step shown as chips over a still (fixed for the future, see above), a static end slide, the 1686 entry tight under the chain. Credits 395.
-
-- **Match cut + one recurring object (GS 3/6, Nov 10, approved):** for a central contrast, match-cut between the two objects at the same screen position (the diamond collapses into the fish-and-7 mark on one bale), then follow that one identifiable object through the rest of the story (hold → thread map → hoist → payment). Use it where the story has a real contrast or journey; do not turn it into a stock effect for every video.
-- **Motion previews before a full render (Nov 10):** for an upgraded edit, render 10–20 s previews of the key sequences in both languages with sound (`prev.sh` in `videos/2026-11-11_short_gs3_golconda_diamonds/pipeline`). Approval of the previews then covers the full render without another sample round.
-- **Golden Sparrow 3/6 "Diamonds made the legends, cloth filled the ships" (Nov 10): EN 1:44 / TE 2:02, visuals approved.** Diamond-first order, brighter frame 1 (82/255), real-geography maps (Krishna journey, ship routes, thread network), Tavernier evidence card, illustrative fleet reveal. Holding back: mine and evidence sections less dynamic than the payoff, simple ship cutouts on maps, short 1–1.7 s still moments. Credits 368.
-- **Golden Sparrow 4/6 "Follow the money" (Nov 10): EN 1:49 / TE 2:16, approved, honest 8.7.** Strengths: one coin carried through an uncluttered isometric money chain (farmer → collectors → treasury → armies/courts → bankers), careful revenue label (assessed demand, varied, often cash), museum-label annotations on the real farman, Virji Vora loans as arrows, Deccan/Mughal map that folds the sultanates as the front passes, restrained famine (rains fail → Mundy's own page → "historical estimates" → empty loom, near silence), thread from loom to port to sea routes, archival "EARLIER · 1498" cartouche. First video under the professional visual-QC gate (shared badge, caption lane, automated layout checks, defect log). Holding back: bottom fade read as a dark mask under full-screen pictures (fixed rule for next time: fill the whole screen), several revision rounds before render (red stamp, split-flap, badge, captions) that the QC gate should now catch earlier, flat vector maps score low on the sharpness metric (expected, not soft). Credits 1,037 (three historical corrections + the Telugu Madanna–Akkanna line).
-- **Golden Sparrow 5/6 "Europe didn't discover India" (Nov 11): EN 2:17 / TE 2:46, rendered, honest 8.8 (pre-review).**
-  - **Strengths:**
-    - One map with one line of light: the busy Indian Ocean is built people by people, with a Roman-coins-to-1498 time rail, and da Gama's single route plugs into the old network.
-    - Big wind arrows swing round at the monsoon reversal, with ships going to India and then home.
-    - The pilot is an evidence trail with one exhibit at a time:
-      - the crew's journal (manuscript shown alone, then a separate 1898 translation clipping);
-      - 'CHRISTIAN';
-      - Barros 1552 → MALEMO CANAQUA → title, not a name;
-      - IBN MAJID? → unlikely;
-      - a hedged Gujarat verdict on the map.
-    - A diplomacy-and-force ledger filled for both powers.
-  - **Holding back:**
-    - Six script/review rounds before the final render.
-    - The Telugu voice ran 14 s over its estimate.
-    - Flat vector maps score low on the sharpness metric (expected).
-    - The first full Telugu render had held cards (3–4 s with no motion) that freezedetect caught; motion was added before delivery.
-  - **Credits:** 2,072 (a long new evidence line in both languages).
-- **Evidence exhibits (GS 5/6, approved direction):**
-  - **KEEP:**
-    - Show one primary document at a time, with clean cuts (no cross-dissolves between documents).
-    - Lead with one large key term (≈90 px), then the document, then a small source line (≥24 px).
-    - Show a manuscript alone, labelled as what it is (e.g. surviving copy, early 1500s), before any translated quote. Never put a translation quote on the manuscript.
-    - Capture web-text clippings narrow (≈430 CSS px at 2.4×) and crop on whole lines, so they read on a phone.
-    - Label a stand-in object (e.g. a museum coin) "illustrative example, not the excavated original" when the excavated item's identification is uncertain.
-  - **DROP:**
-    - Showing wind as streaks only (use large direction arrows).
-    - Trade routes and wind at the same visual weight (routes go quiet and stop moving when the wind is the subject).
-- **Telugu cue timing (GS 5/6):**
-  - **KEEP:** align the script words to a Telugu Whisper pass split at pauses (`words_te2.py`), not character-proportional timing. Then check every Telugu exhibit cue on the frame.
-  - **KEEP:** run freezedetect on both languages, because slower Telugu narration creates longer holds. Give every hold of more than 2.5 s meaningful motion (a route ship advancing, a slow pan on real pixels, traffic on the routes).
-- **Golden Sparrow 6/6 "The company that came to trade" (season finale, Nov 11): EN 2:51.9 / TE 2:52.6, rendered, honest 8.6 (pre-review).**
-  - **Strong:** one season line (1608 ASKED → 1613 APPROVED → 1686 WAR LOST → 1717 FARMAN → 1740s WARS → 1757 PLASSEY → 1765 TAXES) runs through every scene and ends completed; Plassey as counted dots (1 dot ≈ 500 men, NAM figures) with Mir Jafar's cavalry leaving a visible gap; the payoff as a top-to-bottom chain (imported silver bullion → Indian cloth → Bengal's fields rising as revenue after 1765).
-  - **Holding back:** two composition rounds after the first previews (the 60–70 % working area was rejected); a patched re-render of four windows (sepoys over the caption line, two Telugu holds caught by freezedetect, label-edge and overlap defects from `layout.check()`).
-  - **Credits:** 257 (four new Chelli lines only; all narration reused from the film).
-- **Full-frame composition (user, Nov 11, GS 6/6; supersedes "keep every scene's content above ~1360"):**
-  - **KEEP:** treat the whole 1080×1920 frame as the canvas. Maps run edge to edge; diagrams can fill the lower frame (armies marching up from the bottom edge, fields at the bottom, timelines running off the bottom edge). Vary the composition per scene.
-  - **KEEP:** essential text stays above y ≈ 1540 and out of the right-hand button column in the lower half; only non-essential graphics run behind the platform overlays.
-  - **KEEP:** captions may sit over moving graphics with a soft local shadow (not a band). Moving elements (dots, coins, figures) are softened or skip the caption line (y ≈ 1405–1490); never over archive pictures registered as panels.
-  - **KEEP:** an archive picture that can't fill the frame sharply sits on a heavily blurred, darkened backdrop of itself (texture only), or uses a native-pixel crop that fills the full height (Hayman 2400×1870 at 1.0; Jahangir darbar 2327×3286).
-  - **KEEP:** Telugu fonts have no ≈ or → glyphs: spell out దాదాపు or use a dash. Telugu small labels run ~1.2× the English pixel size to read the same.
-  - **KEEP:** fix late defects by re-rendering only the affected windows between keyframes (`patch.py`, frame-exact stream copy), then re-run all QC.
-  - **DROP:** a fixed rectangular working area that leaves the bottom 30–40 % dark; tiny kickers (< 30 px) and secondary labels (< 26 px) at phone size.
-- **Archival styling for historical series (GS 4/6, approved):** annotations as museum labels (ink plate, thin gold rule, kicker + title, leader line to the exact spot on the source, soft highlighter); date reveals as an ink cartouche with an antique-gold double rule on a period map; no rubber stamps, split-flap boards or neon.
-
-- **Professional visual QC is a delivery gate (user, Nov 10, GS 4/6 previews), for every Why? and Why? Telugu video.** Technical QC (resolution, frames, sharpness, loudness, safe areas) is not enough; a video is not approved until it also passes visual QC. Every effect must look designed by the same editor in the same design system (premium editorial documentary), and an effect that looks out of place is replaced even if it works technically.
-  - **Palette:** ink #0A0A0A, cream #F4F1EA, amber #FFB224, plus restrained parchment, antique gold (#C4A05C) and muted earth tones. No neon red, aggressive glow, gaming-style type or flashy transitions in historical scenes (GS 4/6: the red "1498" rubber stamp and the split-flap board were rejected; replaced by an ink cartouche with an antique-gold double rule on the 1502 map, and museum-label annotation cards instead of stamps).
-  - **One component per UI element.** Corner badges come only from `pipeline/style_v2/layout.py` `badge()`: fill inset inside its border, drawn at 3x, text centred on its real ink box (Telugu-safe), fixed 60 px height, 26 px padding, full-round radius, 64 px from the frame edge, both corner badges on one centre line. The section chip hides in hook, tease and loop.
-  - **Checklist (record each item per video in QC_report.md, with every defect found and whether it was fixed):** (1) every text box, label, badge and card aligned; (2) fills inside borders; (3) consistent margins, padding, radii; (4) arrows and leader lines land exactly on their targets; (5) one font family per role, consistent size hierarchy and line spacing; (6) palette only; (7) no text beyond or touching a box edge; (8) no overlap of captions, labels, credits or animations; (9) clear hierarchy, uncluttered; (10) no modern-looking graphic in a historical scene; (11) no image enlarged beyond source resolution; (12) EN/TE and YT/IG checked independently (Telugu layouts are inspected on their own, never assumed from English).
-  - **Frame-level inspection:** full contact sheet of the whole video; keyframes at full 1080×1920; every text entrance, exit, transition and animation end point; first 3 s frame by frame; corner branding, caption band and edges cropped and inspected separately at 2x; a phone-size review (~390 px wide).
-  - **Captions get their own lane (user, Nov 10, GS 4/6):** captions must never sit on a picture, document, map label, card or credit. In 9:16 the lane is centred at y≈1446, above the YouTube/Instagram overlay (roughly the bottom 400 px); every scene keeps its content above ~1360 and credits sit at y≈1330 with the picture they describe. No black caption box: text with a drop shadow over a soft bottom fade (not a band). If a scene genuinely needs the lane, move the caption to the next free space rather than over the content. `layout.check()` flags any caption touching an image panel or registered text.
-  - **Use the whole screen; no masked bottom (user, Nov 10, after GS 4/6):** the GS 4/6 bottom fade read as a dark mask under full-screen pictures. From the next video, full-screen pictures, maps and graphics fill the frame to the bottom edge with no darkening band. Keep captions readable with text shadow/outline (or a tight per-line backing only where a picture is busy), and keep compositions designed so the caption lane falls on a calm part of the picture.
-  - **Automated layout checks:** components register their boxes with `layout.reg()`; `qc_layout.py` renders frames every 0.1–0.5 s and `layout.check()` flags text outside its box or under 8 px padding, boxes nearer than 40 px to a frame edge, overlaps between captions, credits, cards, labels and badges, and corner badges off their shared centre line. Automation does not replace human inspection.
-- **Sharp pictures only (user, Nov 10, after GS 3/6):** blurry frames damage the channel's reputation. Never zoom a source image beyond its native resolution: the crop shown must keep at least ~1 source pixel per output pixel (GS illustrations are only 1920×1080 or 1672×941, so in 9:16 they appear as native-pixel panels, never stretched to full height; GS 3/6's 2.4–3.2× pushes into the bale and hold were too soft). For close-ups, use a sharper or larger source, or show it smaller on a designed background. Draw maps and graphics at the final output size; never zoom a rendered map afterwards. QC: measure sharpness (Laplacian variance) per scene on the final file and fix any soft scene before delivery.
-
-**DROP (failed; never repeat):**
-- Epic/cinematic style.
-- Visuals in bands or boxes.
-- Basic take-picking with natural pauses.
-- Busy music (e.g. "under the marigold arch").
-- Hissy noise whooshes and risers.
-- Heavy dims.
-- Fade-in or a black first frame.
-- Long static or black end screens (Shorts).
-- Headlines that paraphrase the voice.
-- "SUBSCRIBE" on Instagram.
-- Holds over 4 s.
-- Wrong-place footage.
-- "Hey / Do you know" openers.
-- Endings over 8 s.
-- Patching whisper spellings word by word.
-- Political borders on maps.
-- Generated or synthetic SFX: pings, bells, sparkles, pops ("kids' video"); AI-generated SFX packs (hiss).
-- Literal ambience matched to spoken words (trees for "Jammi", elephant for "Mysuru").
-- Even 0.5 s pauses after every sentence ("sounds slow, can't hold interest").
-- Shorts-style pause squeezing on long videos (204 wpm, "sounds like reading").
-
-- **Credits rule (user, Nov 6):** before ANY paid generation that is not already in the approved plan (images, video, extra voice takes), price it with `estimate_only` and ask first. ElevenLabs image prices, per image: gemini-3-pro-image ≈ 1,218 cr · gemini-3.1-flash-image ≈ 406 · gemini-nano-banana-2.1 ≈ 204. Default generations_count = 1 unless the user asks for options.
-- **Music source (user, Nov 6):** all music tracks are the user's own Gemini generations; ask for more by mood and length (he generates them). Library now also has beneath_the_heavy_swell (sea/voyage, steady build) and the_last_threshold (dark suspense, builds to a loud plateau after ~75 s).
-- **Images (user, Nov 6):** ElevenLabs credits can't cover a film's images, so the user generates them free in the Gemini app on his phone, from a phone-friendly prompt-pack artifact (copy buttons, the reference sheet attached for character shots, a done checklist). He sends them back with their shot IDs. Character shots stay in Gemini; non-character shots can fall back to ChatGPT.
-- **Film grain cost (Nov 6):** per-frame random grain at σ≈5.5 drove x264 to ~50 Mbps (900 MB for 2.4 min). Use ≤ σ 3, or temporal denoise before the final encode (hqdn3d=2:2:8:8, crf 22, maxrate 10M ≈ 7.5 Mbps).
-- **Golden Sparrow visual system (user-approved Nov 6, after rejecting a 'slideshow' test):** animate information, not pictures. Three visual languages: cinematic reconstruction (2.5D depth parallax from Depth Anything V2 ONNX run locally, slow dolly, atmosphere), animated maps (Equal Earth world + regional maps, India's official outline, colour fields + route lines), evidence/data (document cards with highlight sweep, 100-square grid, counters, people grid, bars with reference line, flows with moving coins). Reveals sync to narration words (EN whisper word times; TE pause + character position). 16:9 and 9:16 composed separately; 9:16 safe area x 70–900, y 220–1500; min 34 px labels. Telugu graphics fully localised (glossary in visual_production_plan.md). Restrained treatment for famine, caste, child labour, battle. Proof of concept: videos/2026-11-08_long_golden_sparrow_s1/visuals/poc/poc.py.
-**Score history:**
-- Golden Sparrow 6/6 (finale, Nov 11): EN 2:52, TE 2:53, ~8.6 (pre-review). See the GS 6/6 entry above.
-- Golden Sparrow S1 v5 APPROVED (Nov 7): editorial thread cards (vary the reveal: doc / photo / pair / map), typed setup lines, payoff knots, vetted Pixabay ambience + sound bridges (reject recordings with modern rapid gunfire, intelligible modern speech, engine hum). Thumbnail: 2×3 contact sheet of the six chapter photos, undivided subcontinent in gold on the right, 'OUR TRUTH / BEFORE / BRITISH', Golden Sparrow pill, WHY? mark; Telugu in Noto Sans Telugu Black. Deliver masters >400 MB as byte-exact split parts (copy /b or cat).
-- Golden Sparrow S1 full films v3 (Nov 7): EN 13:51, TE 16:54, 1920×1080, −14 LUFS. v1 was rejected by the user as "a narrated slideshow" (painting → slow push-in → next painting, depth warp bending faces, plain subscribe pill, famine narration over an unrelated painting). v3 rebuilt only the edit, no new images and no paid video: explanations animated from real artwork (the Met palampore "made" on screen: mordant lines → red only where the mordant was → indigo → wax, labelled ILLUSTRATIVE RECONSTRUCTION), living stills (wheel spins with motion blur, lamp flicker, harbour water, crane bale sway, vat ripple), word-timed multi-cut sequences per line, documentary red marker on real documents (1721 Act, Mundy "great dearth"), maps with ships sailing in and bales flowing from villages to the port, dot armies (1 dot ≈ 100 soldiers), the 1765 revenue line swinging from emperor to Company, the channel's animated subscribe card at a chapter break, synced spot SFX. KEEP: one 'seq' renderer per line with cuts on word cues (EN word timestamps; TE phrase + character position) and a cue-miss log; resumable 50 s chunk rendering (atomic rename) + server-side watchdog check-ins; byte-exact split of masters for >400 MB delivery; speech-band SNR check per second against the no-SFX mix. DROP: depth parallax on any image with people; a whole line on one still; fully procedural "photo-real" textures (label them as graphics); chips that repeat what a diagram already says; parallel workers writing a shared cache without atomic rename; the 2-hour Telugu Whisper check on a 2-CPU box.
-- Golden Sparrow S1 film + 6 Shorts, narration recorded (Nov 6, picture not yet built): film EN 13:51 / TE 16:54. Shorts EN 1:22–2:39, TE 1:29–2:47, every one under 3:00. Recorded at natural pace (no atempo, no squeeze). Planning model was within 1–2% (EN est 13:42, TE 16:40). KEEP: a listening test (cold open + final question, both languages) before the full recording; a source-verification pass with cautious wording before any credits are spent; per-line takes reused for the Shorts, with only hook/bridge/tease pickups recorded new; narration measured ≥ 20 dB above the music in speech regions (duck 65%, bed 0.20); a darker ending (track −2 semitones, lowpass 2.6 k) under the cliffhanger; Shorts end 1.1 s after the last word; Whisper QC on every EN take; TE take-length vs model QC. DROP: urlencoding ElevenLabs signed URLs (403); calling Madanna/Akkanna "Telugu brothers" (origin debated); rupee figures in the voice that we cannot read in the source.
-- Ravana Short (Oct 23): not scored.
-- Saturday Short (Oct 24): v2 6.5, v3 about 7.5. The gaps were in the script: a question-first hook, and 75 s long.
-- Sunday Short "Why burn Ravana" (Oct 25): v1 8.0, v2 8.4. Remaining: an 8 s static end grid, estimated Telugu caption timing, and a 6 s AI image hold.
-- Gold Short 1 "Your gold came from dead stars" (Oct 26): EN 8.3, TE 8.0. Strong graphics and proof card. Holding it back: no on-screen hook text for the first 1.7 s, the iron-vs-gold scale is on screen only 1.5 s, Telugu caption timing is estimated, the meteor/panning clips are 1080p upscales, and the subscribe pop crowds the panning shot.
-- Gold Short 2 "Why gold never rusts" (Oct 27): EN 8.2, TE 8.0. Strong: friend-to-friend script, 2026 study proof card, iron-vs-gold O2 graphics, hexagon lattice, jar/medal story graphics. Holding it back: 79-83 s long, the voice says "rusty is" (caption fixed), the 1940 scene is a magazine page rather than one photo, Telugu caption timing estimated. User-sent 'acid fizz / jar / medal' WAVs were synthetic and rejected; Mixkit real ones used.
-- Diwali Short 5/6 "₹7 lakh crore of festive trade: where does it all go?" (Nov 6): EN 1:15, TE 1:24, ~9.0 (pre-review). Strong: shrink a huge number to "follow ₹100" with jars that fill (gold jar wobbles first, groceries overtakes it), running total to 100, a persistent "what this is a share of" heading, services shown as part of the headline (goods shelf fades back), only grocery coins flow to the kirana example, single-object loop (₹100 note placed back on the counter). KEEP: label every estimate with year + who estimated it ("2025 · CAIT ESTIMATE", "2026 FORECAST"); in voice, attribute each number in the same sentence. DROP: per-person division of a trade forecast (reads like average household spend); leading trim on lines that start with a soft nasal ("Now meet" lost its m: skip trim on that line); tealign on units split at ":" (collapsed timings; split TE units on . and ? only, with a proportional fallback).
-- Diwali Short 6/6 v6 (finale, story version, Nov 7): EN 2:26, TE 2:46. ~8.8 (honest: the first two visual passes were rejected; final uses the long-video characters plus a real-image body sequence). KEEP: questions asked by a character, real-looking anatomy, true-scale comparisons. DROP: stick-figure mouths, cartoon organs. Mistakes caught late: Telugu font boxes (µ ≈ ≤) that were already in the v3 render, and a blink on frame 0.
-- Diwali Short 6/6 (finale) "Why does Delhi's air get so bad around Diwali?" (Nov 7): EN 2:15, TE 2:40 (longer by design: problem → 3 reasons → effects → government action → how far → Beijing → fix, plus a mid-video channel note), ~9.1 (pre-review). Strong: one continuous 2D world with a drone camera (India map → Delhi top-down → Raju's flat → street → side-view sky slice → back out), log-zoom camera moves instead of cuts, a locator chip + progress strip (PROBLEM · WHY · EFFECTS · ACTION · BEIJING · FIX) so the viewer always knows where they are; SPIKE/TRAP/BUILD pins carried from the WHY section to the payoff; only two paper clippings, each with a tiny source chip; Beijing on its own regional card (no world map). KEEP: official India outline with full J&K and Ladakh (svg-maps/india, checked) for every India shot; abstract dot grids instead of invented city positions; PM2.5 amber vs PM10 teal badges; night overlay must go under the haze layer or the city never reads as night; randomise particle phases (phase tied to index draws diagonal streaks). DROP: comparing farm-fire counts in the voice when the window does not match the event (moved to the pinned comment); calling a baseline year "worst" without a source.
-- Diwali Short 4/6 "Why India's stock market opens on Diwali, for 70 minutes" (Nov 5): EN 1:09, TE 1:21, ~9.0 (pre-review). Strong: argument strip MUHURAT → NEW YEAR → NEW BOOKS → FIRST DEAL → 70 MIN, Samvat calendar flip 2082 → 2083, red Chopda Pujan ledger (kumkum swastika with dots + शुभ लाभ, never a stark black symbol), staged highlight across two rows of one real schedule table, data shown at fake zoom then true scale ("every move under 1%"), single-object loop (one diya lit in its frame-0 spot). KEEP: crop a source capture before any claim we have found to be wrong (Angel One "NSE 1992"); "EXAMPLE" tag on composite characters; year-vs-year bars, not OLD/NEW, when nothing permanently changed; 3–4 accelerating ticks instead of one tick per box. DROP: trusting repeated secondary dates (NSE "1992" is incorporation; equities began 3 Nov 1994). Check the primary/older record.
-- Diwali Short 3/6 "Why every home gets deep-cleaned before Diwali" (Nov 4): EN 1:17, TE 1:31, ~8.8 (pre-review). Strong: one causal chain shown as a running top strip (MONSOON → MOISTURE → MOULD → DRY → LIME, past words dim-amber, current word an amber pill), BELIEF + TIMING as equal cards (no "debunk" framing), staged highlights on ONE clipping (IMD: "withdrawn from the entire country" first, then the NE-monsoon/South India line with its own note), germs fading one by one (two stay: "can inactivate many", not "kills all"), zoomed clipping (wpx > frame width, centred on the highlight) for one-line quotes, loop via the same object (broom slides into its exact frame-0 spot, then the room fades in around it). KEEP: chain strip for "why" stories with 4–6 causes; qualifiers on screen when the voice says "much of India / many places". DROP: cairo arc() without new_path() (draws a stray line from the previous point).
-- Diwali Short 2/6 "That India-from-space photo? Not Diwali." (Nov 3): EN 1:21, TE 1:35, ~8.7. Strong: 3 visual sections (family-group gag → colour legend/years → NASA image + pixel), real page captures taken with Playwright (NASA EO paragraph, exact highlight rects from DOM ranges), legend that lights one colour at a time (HSV masks + glow), hero text "11 YEARS vs 1 NIGHT", loop. KEEP: Playwright element screenshots + Range.getClientRects() for clippings (real, exact highlights, narrow viewport = bigger text). DROP: hard scene cuts right on the last word (hold the hook ~0.6 s into the next line so stamps can land).
-- Diwali Short 1/6 "Is your Diwali bonus a gift… or the law?" (Nov 2): EN 2:36, TE 2:47, ~8.4. Strong: people avatars (Ravi below / Arjun above the ₹21,000 line), OLD vs NEW scoreboard, staged calculation, 1/4–4/4 progress chips, evidence-flash clippings (dim everything but the quoted words), loop ending (last line runs into the first, final frame = frame 0), on-air correction. Holding it back: avatars are simple, TE anchors partly by word-length estimate, the space teaser uses a blurred composite. KEEP: loop ending; Telugu on-screen text via te_text.py (EN→TE map, PIL+RAQM, cached). DROP: estimating Shorts runtime from raw takes without the standard squeeze + 1.08/1.10 pace (cost ~1,500 credits of needless re-voicing).
-- Gold long "Why Is Gold So Expensive?" (Oct 28): EN 8.4, TE 8.2. Strong: 8-chapter structure with progress bar, Johnny-Harris-style paper/clippings title sequence after "Let's go", periodic-table elimination, central-bank and price charts, NASA kilonova footage, Pace Model v2 with 6.6 s title gap. Holding it back: some chapter middles are graphic-on-dark for long stretches, Telugu captions estimated (no word timestamps), TE fusion/price anchors set by fractions. KEEP: TE take list keyed by EN piece prefixes so one cue file drives both languages.
-- Long video "Dussehra Is NOT One Story. It's Three." (Oct 26): v1 8.3 on visuals, but the pacing was too fast (204 wpm). v3 final: Pace Model v2 (172 wpm), chapter pause plus boom, motion-graphics SFX, faint real fire/crowd/drums. The user felt the SFX were still one-note; the next video uses the real-SFX system.
-
-## Update Oct 28 2026: new style, new workflow, voice via ElevenLabs
-- **Workflow (replaces record-first):** topic → Claude script (EN+TE, visual beat under each line, sources + exact lines to screenshot, credit estimate) → user humanizes & approves → Claude generates both voices in ElevenLabs (cloned "Sandeep English" / "Sandeep Telugu", eleven_v4, ONE take each, generations_count=1) → visuals/music/SFX/screenshot list → user sends assets → render 4 versions (EN/TE × YT/IG) → one-block report (score, issues, credits used, credits left).
-- **Credits:** ~0.46 credits/char (eleven_v4). Telugu ≈ 1,200/Short, English ≈ 450/Short. Budget 121k/month: ~30 Shorts + 4 long (~10 min). Reuse the saved CTA lines (voice_lib/te_gold3_take2_source.wav, 75.30–86.64 s: subscribe/follow/comment) instead of regenerating. ElevenLabs is for voice ONLY.
-- **Target score: 8.5/10.**
-- **Style v2 (approved):** dark glass cards with amber edge bar, amber→orange gradient on key numbers/words, glowing amber dot as the guide (travels to what matters; rides the highlighter tip), highlighter swipe (from "paper" style), NO red anywhere, no mascot face; plain logo "?"→"!" only at Why/payoff/ending. Helpers: pipeline/style_v2.
-- **Evidence board (Johnny Harris verification):** real screenshots → torn paper clippings with tape, source tag chip, amber highlighter sweeping the exact quoted line in sync with the voice; taped real photos; amber threads connect pieces; ending zooms out to the full board. Never use recreated/AI "screenshots" — verify the URL in the image (Gemini-made pack had a 404 URL).
-- **Telugu captions:** PIL + RAQM (cairo toy fonts can't shape Telugu). Timing: sentence boundaries from the TTS pause map, words spread by length.
-- **Gotcha:** pill/scale(0) → cairo singular matrix → "out of memory" crash mid-render; guard s<=0.01.
-
-**KEEP:** evidence clippings + highlighter sync (Gold 3), relativity ON/OFF switch payoff, drawn objects (metals, gold bar, spectrum, atom) when stock is missing, real Pexels clips for hook/key beats.
-**DROP:** red accents; "?" mascot with eye; recreated screenshots; two-take TTS generations.
-
-**Score history:**
-- Ravana new-style test (Oct 27): v1 ~8.0 (red + mascot rejected), v2 approved style.
-- **Golden Sparrow 1/6 "Was India really the golden sparrow?" (Nov 8): EN 1:33 / TE 1:43, approved, honest 8.5.** Strengths: two-territory GDP panels, Anna–Chelli question structure, cotton reveal, loop. Holding back: simple Paper-Cut figures and a nearly static paper background, end slide static for about 1.5 s after the click, chart opens near-empty for 0.5 s, IG captions shipped with 30 hashtags (limit 5). Credits 523.
-- Gold Short 3 "Why is gold yellow?" (Oct 28): EN/TE ~8.0. Holding back: soft BBC screenshot text, music not the gold-week bed, TE 69 s, TE captions sentence-level timing, no cover delivered.
-- **Covers (Oct 28):** hero image from ChatGPT (Claude gives the prompt; user generates) + Claude's layer: large taped real photo, real clipping with highlight, amber thread + glow dot linking them (user: "organic, stylish"), headline in the dark lower third (cream + amber gradient word), WHY? logo top-left, amber-outlined series pill "GOLD · 3/6" under the headline (TE: "గోల్డ్ · 3/6").
-- **Voice line library (Oct 28):** `voice_lib/` (see its README). Check every script line against `index.json` before generating; reuse exact sentence/phrase matches only (no single-word splicing); generate the rest per line, one take; save each new line + index entry. Write a week's Shorts lines word-for-word from the long-video script where possible to maximise reuse.
-- Gold Short 4 "Why is India bringing its gold back home?" (Oct 28): EN/TE ~8.3. First fully generated-voice video (both clones, eleven_v4, one take, mood tags work in Telugu too). Real print-to-PDF captures → crops found by text (clipkit.py: pdftotext -bbox → crop + exact-phrase highlight). Credits 2,167 (EN 1,164 incl. one-time EN CTA; TE 1,003). Real rate ≈1 credit/char. Holding back: TE runs 62 s; the board ending is busy; wide map makes cities small; EN "RBI" may sound slurred (check).
-- Asset rule: when a capture tool can't screenshot, print-to-PDF is fine — build clippings from the PDF at 300 dpi (sharper than phone screenshots). Verify every quoted line against the PDF text and the article date; label syndicated copies honestly (e.g. "REUTERS FACTBOX (VIA ENERGIESNET)").
-- **Voice direction (user, Oct 28):** expressive but LIGHT. Use mild tags only ([calm], [warm], [curious], [slightly serious], [conversational]); no strong ones ([excited], [amazed], [fast-paced], [intrigued]); at most one tag per line, many lines untagged. Consider higher stability for the clone.
-- **Length (user, Oct 28):** Shorts may run up to 3 min if interesting — don't trim content just to hit 60 s; don't count length as an issue in reviews.
-- Gold Short 5 "Why do Indians trust gold more than banks?" (Oct 29): EN/TE ~8.4. Template: kinetic data + evidence (flag race of the top-10 central banks with a running total → combined bar vs Indian homes; ₹ counter + price line; gold vs FD bars; $1 = ₹45 → ₹95 flip; rupee-vs-gold log chart; stopwatch loan; Mint clippings; taped family photos → "saving it for the future"). Credits 2,388 (EN 1,182, TE 1,206), ending lines reused from voice_lib. Holding back: ABC table clipping text is small, USD/INR yearly path is approximate (endpoints sourced), the ICMAI clipping lists Turkey as 10th while the voice says Netherlands (footnote "10th place varies by date"), TE captions sentence-level timing.
-- **₹ glyph (Oct 29):** Archivo Black / Space Mono have no ₹; `brand/fonts/` now hold copies with ₹ merged in (Poppins Bold / DejaVu Sans Mono), see `videos/2026-10-30_short_gold_dhanteras/pipeline/addrupee.py`. Install to ~/.fonts and run fc-cache.
-- **Caption fix (Oct 29):** whisper drops/duplicates words at chunk edges on generated voice. Transcribe in ~25 s windows, then snap to the exact script text with difflib (fixw.py) and interpolate missing words. TE captions: map spelled-out numbers to digits (CAPMAP in tealign5.py).
-- **Number check (Oct 29):** every on-screen formula must match the script math (caught "1.07^19" for a 20-year FD before delivery).
-**KEEP:** kinetic-data template for money topics; source footnote on screen when a ranking changes by date; reuse ending lines from voice_lib.
-- **Cover rule (user, Oct 29):** no recognizable person's face on covers; a face grabs the eye before the headline. Use a scene/object photo that matches the topic (e.g. dense Indian homes rooftops for Gold 5). Unsplash MCP works for these (images.unsplash.com downloads from the shell).
-- **CTA upgrade (user, Oct 29, from Gold 6 on; built: pipeline/style_v2/cta_card.py, sfx ui_click/ui_bell/ui_pop):** replace the plain SUBSCRIBE/FOLLOW pill with a realistic animated card. YT: profile picture + channel name/handle + Subscribe button; cursor glides in, clicks → "Subscribed", then clicks the bell → bell rings, "All". IG: profile picture + handle + Follow button; click → "Following" + check mark. Real SFX on each click/bell/tick. Synced to the CTA voice line. Needs: profile pictures for all 4 accounts, exact names/handles, real click/bell/tick sounds.
-- **Accounts (for the CTA card):** YT EN "Why?" @WhyEveryQuestionHasAStory · YT TE "why?telugu" @WhyTeluguStories · IG EN "Why?" why_everyquestionhasastory · IG TE "Why? Telugu" whytelugu. Profile pictures: brand/avatars/*_2160.png.
-- **CTA placement (user, Oct 29, all videos):** Shorts: the animated card at least twice — once mid-video, once at the end — plus a third time if the length allows. Long videos: **every 2 minutes** (user, Oct 30: "add that subscribe every 2 minutes in the full videos") — at ~2:00, 4:00, 6:00… snapped to the nearest Anna payoff line end (never after a question). Mid-video cards keep the click/bell/pop SFX at low volume (~50% of the end card) with no extra narration, are smaller and placed where they don't cover the key visual; drop them right after a payoff beat, never in the first 15 s. The end card stays synced to the spoken CTA line.
-- **Weekly schedule (user, Oct 29):** full (long) video every **Sunday**; one Short every day **Monday–Saturday**. Each video is made at least one day before it posts (Sunday's on Saturday, Monday's on Sunday…), earlier when there's time.
-- **New ending (from Gold 6):** series slide (week name, full-video thumbnail "▶ FULL VIDEO · on the channel", all Shorts 1/6–6/6 with covers + short titles, current one "YOU'RE HERE", next ones blurred "TOMORROW") + schedule CTA line, reused from voice_lib:
-  EN: "If you like learning things like this, we post a full video every Sunday and a new Short the other six days. So there's always something new. Subscribe (IG: Follow), and we'll make it worth it."
-  TE: "ఇలాంటి కొత్త విషయాలు నేర్చుకోవడం నచ్చితే, ప్రతి ఆదివారం ఒక full video, మిగతా ఆరు రోజులు రోజుకో Short పెడతాం. ఎప్పుడూ ఏదో ఒక కొత్తది ఉంటుంది. Subscribe చేయండి (IG: Follow అవ్వండి), మీకు నచ్చేలా చేస్తాం."
-  The animated subscribe/follow card clicks exactly on the spoken "Subscribe/Follow". "GOT A WHY? COMMENT IT" stays as on-screen text only (no voice).
-- **Teasers & open questions (user, Oct 29):** Shorts 1/6–5/6 end with a one-line hook for the next Short ("Tomorrow: why …?"), also shown on the series slide's "TOMORROW" card, so the whole week's topics are planned up front. The 6th Short and the Sunday full video instead end with 2–3 open questions on the same topic: "…that's a why for another day. If you want it, comment below." (TE: "అది ఇంకో రోజు చెప్పుకునే why. కావాలంటే, comment చేయండి.") No likes targets (Instagram demotes engagement bait).
-- Gold Short 6 "Why is gold falling right now?" (Oct 30): EN/TE ~8.5. First video with: variable pacing (info 1.12×, questions/wrap/schedule 1.10×, the Subscribe/Follow line at regular pace), animated subscribe/follow card mid (quieter SFX) + end (click lands on the spoken word), open-question ending ("a why for another day"), animated series slide (week + full video + 6 covers, YOU'RE HERE, NEXT · NEW SERIES THIS SUNDAY). Credits 4,020 (EN 1,942, TE 2,078; estimate was 3,100 — count TTS chars, numbers spelled out in Telugu add a lot). Holding back: captions hidden during the series slide; the 1st chart is two sourced points only; CERN capture is the home.cern substitute (original ALICE link dead).
-- **Pacing (user, Oct 30):** information lines faster, branding/request lines also a bit faster, the Subscribe/Follow line itself at regular pace. Implemented per segment in voice6.py (squeeze + atempo per segment).
-- **Whisper on generated voice:** use overlapping ~22 s windows (keep words that end before window−0.6 s) and snap to the script with difflib; a single pass drops 10 s chunks.
-**KEEP:** series slide, open questions with real-image cards, per-segment pacing, CTA card in-frame (no overlay pass needed).
-- **Long video format (user, Oct 30):** 2D two-character story — ANNA (brother, explainer, user's clone) + CHELLI (sister, curious, "?" over her head, user's sister's clones "Sowmya English" G2DgDPyZraka83R9s9m6 + "Sowmya Telugu" JsnbIwWwNIghQbTVEmpj (replaces Chaitra, Oct 30)). Cold open: Chelli fires all questions (incl. next-year ones) → "Slow down, one at a time" → title slide (evidence board, all questions threaded to a centre object) → chapters, characters return between each. Anna sometimes breaks the fourth wall ("you can see it on your screen"). Chelli's "last one, I promise" → Anna smirks to camera. Ending: "Hold on, hold on!" + next-year questions → "save them for the next Diwali video, or if you want them sooner, like and comment" → series slide → schedule CTA. Old customs: explain them as what our ancestors built around their lifestyle, and why the habit still makes sense today. Avoid lines implying only women do housework. Chelli delivery: subtly expressive, not over the top (user, Oct 30) — tags [cheerful], [curious, quick], [lightly insistent]; never [excited]/[urgent]/[shouting].
-- **Shorts vs long:** each Short adds facts not in the long video; the long video says so ("a new Short every day with more facts").
-- **"Let me record this" framing (user, Oct 30):** in the cold open Anna props up his phone to record the answers for YouTube (REC dot, both wave). That makes every talk-to-camera moment natural.
-- **Instagram rules (Oct 30 audit):** max **5 hashtags** per post/Reel (Instagram limit since Dec 2025) — 2 niche + 2 searchable + #whyeveryquestion. Spoken hook in the first 2 s (no slow text-only open). One why per Short. NO short IG cuts (user, Oct 30: keep the full information); keep IG = same full video. End IG Reels with an on-screen question. Daily Story with a poll for the next why. IG Name field should carry keywords (e.g. "Why? | Facts, Money & Science Explained").
-- **2D long-video pipeline (Diwali long, Oct 30):** `videos/2026-11-01_long_diwali_explained/pipeline/`: voice.py (per-line clips → Pace Model gaps: chapter 1.30 s, title 4.4 s, after '?' 0.45, punch 0.50, speaker change 0.28, same 0.20; internal pauses capped 0.40; atempo 1.06 except the Subscribe line), words.py (EN whisper per line + difflib snap; TE spread over voiced runs), clips.py (crop regions auto-found from first/last phrase), base/room/gfx1/gfx2/render.py (scene per script line, anchors by EN word, TE by number match or EN char fraction), mix.py (2 music tracks switching at chapter 4, duck 62%, chapter dips, real SFX by catalog hit points), thumb.py. Room shots: lip-sync from the voice envelope, listener looks at speaker, close-ups alternate with two-shots, REC + timer overlay after "Let me record this". ~0.07 s/frame.
-- Diwali long "DIWALI, EXPLAINED" (Nov 1, first 2D two-character video): EN 7:46 / TE 8:48, both -14 LUFS, frame 1 bright (mean 91). EN/TE ~8.3. Strong: cast + room set with lip-sync and REC framing, cold-open question cards → evidence-board title, 6 chapter cards + progress bar (6 dots + 3 locks), one graphic per idea (moon strip, drift band, adhik maas, watch, Sankranti vs Eid, Amavasya diyas, humidity gauge, lime wash, checklist, 12+1 tiles, ₹ formula, counter, jobs grid, NOT DIWALI stamp + legend, NASA panel, ticker board, chopda, trade tap, map, lid, Mumbai vs Delhi, IIT graph), real PDF clippings with highlights in every chapter, subscribe card every 2 min, series slide + end card. Holding back: some graphics go static after their animation for 6–8 s (lime wash, then/now split) → add slow camera pushes on gfx scenes; characters have one standing pose (no walk/sit), Anna's gesture is a single arm; IIT graph is illustrative (labelled); TE captions spread by length (no ASR); no sound auditioned by ear.
-- **Gotchas (Oct 30):** cairo `paint_with_alpha` ignores a rectangle path: clip to it first (painted whole cards amber). Telugu text through PIL at scale 0 → cairo "out of memory": txt() now returns early on a singular matrix. Noto Sans Telugu has no → glyph: Telugu strings swap it for "-". Never wait on `pgrep -f '<pattern>'` from a shell whose own command line contains the pattern; wait on PIDs or done-files. Render long videos in 4 chunks with done-files so a container restart only loses one chunk.
-**KEEP:** two-character 2D format; per-line voice clips (re-timing, reuse in Shorts); scene list keyed by script line numbers.
-- **Research rule (user, Oct 31 — after the Diwali bonus miss):** before ANY script goes to the user, verify every law, rule, rate, date and number against a source dated within the last few months (search "current", "2026", "amended", "repealed", "replaced by"). Never rely on memory for laws or regulations — the Diwali long cited the Payment of Bonus Act 1965 a year after it was repealed by the Code on Wages (21 Nov 2025). Put the check date next to each source in the script.
-- **Scene sheet before render (user, Oct 31):** after the script is locked: generate voices, then send ONE message with (a) the scene sheet — every line/beat with a 1-line description of what is on screen (layout, graphic, clipping, character/photo, SFX) and timing, (b) the resource list (screenshots/PDFs, photos, clips, SFX). The user reviews and asks for changes; render only after the scene sheet is agreed. Re-renders are the most expensive step.
-- **Animation style in the scene sheet (user, Nov 8 2026):** the scene sheet must name the animation style planned for every line or chapter (a library style from `pipeline/styles/README.md`, or the channel's other treatment such as real footage or evidence cards), so the user can agree or change it before anything renders.
-- **Telugu on-screen text (user, Oct 31):** the TE version must show Telugu text on screen (titles, labels, cards), not English. Use pipeline te_text.py pattern: an EN→TE dictionary; head/mono/pill/big_num/stamp route through PIL+RAQM when LANGV=te. Keep law names, months and numbers as the voice says them. Replace → with - in Telugu.
-- **Runtime check method:** always measure runtime AFTER the standard Shorts edit (proasm.squeeze maxgap 0.24/keep 0.15, tempo EN 1.08 / TE 1.10, 0.22–0.35 s line gaps). Raw-take totals overstate runtime by ~20%.
-- **SHORTS STYLE v3 = DEFAULT from Nov 1 2026 (user: "let's try this from now on"). Reference build: videos/2026-11-02_short_diwali_bonus/pipeline (render_b1.py, te_text.py).**
-  - Script: explain through 2–3 named people with concrete numbers; show OLD vs NEW (or before/after) with a recurring scoreboard; promise on screen from frame 0.
-  - Visuals: moving avatars against a threshold line; clippings as evidence flashes (dim all but the quoted words, highlighter sweep, ~1.5 s); staged calculations; progress chips (1/N) for lists; visual reset every 8–12 s; Telugu on-screen text in TE versions.
-  - Ending: NO mid-video subscribe card in Shorts; no spoken "full video every Sunday / subscribe" lines. Tomorrow teaser on the series slide ("Follow for N+1/6") with the Subscribe/Follow button on screen, then a LOOP line that runs into the first line while the picture fades back to frame 0 (last frame = first frame).
-  - Process: scene sheet approved before render; runtime ≤ 2:45 EN / ≤ 2:50 TE measured after the standard Shorts edit.
-  - Watch after posting: replay rate (loop) and any dip at the correction/legal-flash beats; keep or adjust per analytics.
-- **Shorts HARD LIMIT (user, Oct 31): every Short/Reel must be under 3:00, both languages. Target ≤ 2:45 EN and ≤ 2:50 TE including the end card.** Budget the script by real speech rate BEFORE recording (Sandeep EN ≈ 2.4 words/s; Telugu runs ≈ 15% longer than EN), never by a guess. Diwali 1/6 was scripted as "≈2:30 / ≈3:00" but recorded 3:12 / 3:41. If a draft is over budget, cut at script stage, not after voicing.
-- **Shorts visual rules (from ChatGPT storyboard review, Oct 31, agreed):** say the promise on screen in the first second; corrections ≤ 5 s; clippings are evidence flashes (zoom to one sentence, highlight 4–8 words, blur the rest, ~1.5 s); people get a simple avatar and move physically (above/below a line); reveal calculations in stages; show progress (1/3, 2/3…) for lists; no mid-video subscribe card in Shorts (the every-2-min card is for long videos only); visual reset every 8–12 s.
+## Credits
+- **[CR-01]** (P, user Nov 6) Before any paid generation that isn't in the approved plan (images, video, extra takes), price it and ask first. Default: one generation.
+- **[CR-02]** (P, user Oct 27–28) ElevenLabs is for voice (anything else only under CR-01). Generate one take per line. Budget about 2,000–2,400 credits per Short for both languages. Report credits used and credits left after every video. Measured rates are kept in `roles/editor.md` (method).
+- **[CR-03]** (P, user Oct 28) Check every script line against `voice_lib/index.json`. Reuse exact sentence or phrase matches only, never single words. Save every new line with an index entry.
