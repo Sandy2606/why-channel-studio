@@ -15,7 +15,7 @@ A record, not instructions. Nothing here is done without the user's approval.
 ## Preserving newer Golden Sparrow commits
 GS 5/6 and 6/6 deliveries will add commits to `main` before the merge. A rollback must remove only the Phase 2A/2B changes:
 - **Never reset `main` to `fb25e59`**: that would discard the newer Golden Sparrow commits.
-- **Record the actual merge SHA** in this file (and in the PR) right after merging: `MERGE_SHA = <to be filled at merge time>`.
+- **Record the actual merge SHA** in this file (and in the PR) right after merging: `MERGE_SHA = 26576379485170eccee0a50a7fefbd6950bd7003` (PR #2 merged 2026-11-11 with "Create a merge commit"; parents `20fe402` main and `0b91da4` pro-system).
 - A revert of the merge commit removes only what the merge brought in. Commits made on `main` before or after it stay.
 - Before merging, `main` is merged into `pro-system`, so the PR is tested against the real current `main`.
 

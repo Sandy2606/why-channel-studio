@@ -21,7 +21,8 @@ A record for the user's decision. **PR #2 is not merged.** Nothing below is done
     - lessons go to `history.md` as TEST (awaiting approval as rules);
     - the user's Nov 11 composition decision updates LAY-01 and LAY-02 (section 5).
 
-## 3. Files changed (`main` → `pro-system`): 52
+## 3. Files changed (`main` → `pro-system`): 53 (GitHub count)
+The list below was written before this report existed and counts 52; the 53rd file is this report (`playbook/reports/2026-11-11_pr2_premerge_report.md`), added in the last `pro-system` commit `0b91da4`. GitHub and `git diff --name-only 20fe402 2657637` both show 53.
 - **Modified (5):**
   - `CLAUDE.md` and `README.md` (load order for the new playbook);
   - `playbook/why-channel-video-SKILL.md` (now the master playbook: precedence, rule index, workflow, formats, credits);
@@ -103,3 +104,15 @@ This was confirmed on real files: the GS 6/6 Shorts (4 versions) and the Season 
   - Rehearsed today: after the revert, the tree equals `main` at `20fe402` exactly.
 - **Never** reset `main` to `fb25e59` or `20fe402`; that would discard later work.
 - A rollback can't affect any video build: PR #2 changes only Markdown, `pipeline/qc/`, `sfx/catalog.json` metadata and one `setup.sh` line.
+
+## 11. Post-merge record (2026-11-11)
+- PR #2 merged with **"Create a merge commit"** after the user's explicit approval. Before merging, `main` was still `20fe402` and `pro-system` `0b91da4`; the PR was moved from draft to ready, then merged with a head-SHA guard.
+- **Merge commit:** `26576379485170eccee0a50a7fefbd6950bd7003` (parents `20fe402` and `0b91da4`). This is the resulting `main` commit. Its tree is identical to `pro-system`'s, and it changed 53 files.
+- **On the merged `main`:**
+  - `bash setup.sh`: exit 0;
+  - `check_rules.py`: PASS (123 rules, 249 citations, no retired wording, migration 396/396, platform limits parse);
+  - catalog integrity: PASS (74 entries);
+  - self-tests: 64 of 64 as expected.
+- **Preserved (0 files changed by the merge):** `videos/` (1,264 files, 7 Golden Sparrow projects), `music/`, `brand/`, `voice_lib/`, `prompts/`, every file in `sfx/` except `catalog.json`, `pipeline/styles/`, `pipeline/style_v2/`, `pipeline/remotion_effects/`, `pipeline/long/`. The rendered film and Shorts outside the repository were not touched.
+- **Sounds:** `amb_fire`, `amb_crowd`, `amb_drums` (APPROVED BY OWNER, SOURCE NOT RECORDED; licence UNKNOWN) and `sfx_cannon_distant` (APPROVED BY OWNER, PROVENANCE UNVERIFIED; licence as listed) all keep "third-party rights: UNVERIFIED".
+- **Rollback, if ever needed:** `git revert -m 1 26576379485170eccee0a50a7fefbd6950bd7003`, then push.
