@@ -3,14 +3,14 @@ The only new recordings are Chelli's two approved lines in each language: one ta
 
 | | English | Telugu |
 |---|---|---|
-| Voice track (incl. 2.5 s series-slide hold at the end) | **2:49.9** | **2:50.6** |
-| Expected final video (+ 0.15 s lead, 0.3 s tail) | ≈ 2:50.4 | ≈ 2:51.1 |
+| Voice track (incl. 4.0 s Season 1 completion slide at the end) | **2:51.4** | **2:52.1** |
+| Expected final video (+ 0.15 s lead, 0.3 s tail) | ≈ 2:51.9 | ≈ 2:52.6 |
 | Under 3:00 | ✅ (≈ 9.6 s margin) | ✅ (≈ 8.9 s margin) |
 
-**Why Telugu is ≈ 2:51 and not the estimated 2:47:**
+**Why Telugu is ≈ 2:52 and not the estimated 2:47:**
 - The reworded first question is longer than estimated: EN 5.1 s and TE 6.0 s, against ~2.5 s assumed.
-- The finale's end slide holds 2.5 s.
-- Narration is not sped up. If you want more margin, a 2.0 s slide saves 0.5 s.
+- The finale's end slide holds 4.0 s (raised from 2.5 s after the Nov 11 review).
+- Narration is not sped up. Both versions stay about 7 s under 3:00.
 
 **Credits used: 257** (EN Q1 82 · EN Q2 51 · TE Q1 79 · TE Q2 45). ElevenLabs flow: "GS 6/6 voice (Nov 11)".
 

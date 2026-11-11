@@ -20,7 +20,7 @@ if __name__ == '__main__':
         R = rms(load(SRC[l])); out = []; marks = {}; t = 0.0; lv = {}
         for it in SEQ[l]:
             k = it[0]
-            if k == 'SLIDE': a = np.zeros(int(2.5 * SR), np.float32); g = 0.0
+            if k == 'SLIDE': a = np.zeros(int(4.0 * SR), np.float32); g = 0.0
             elif len(it) == 1:   # Chelli line: 0.25 s before (the cut already sits in a pause), 0.40 s after
                 a = trim(load(VD + f'{l}_{k}.mp3')); lv[k] = round(20 * np.log10(rms(a) / R), 1); a = fade(a * R / rms(a), 10); g = 0.40
                 out.append(np.zeros(int(0.25 * SR), np.float32)); t += 0.25
