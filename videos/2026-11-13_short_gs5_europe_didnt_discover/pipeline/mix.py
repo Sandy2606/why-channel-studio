@@ -1,8 +1,9 @@
 """GS 5/6: voice + real SFX (sfx/ only) + ducked approved music -> mix_<lang>_<plat>.wav (-14 LUFS).
 Events follow on-screen action. Built so far for the preview ranges (ocean/monsoon, route/pilot); other scenes are added after approval."""
 import os, sys, json, subprocess, numpy as np, scipy.io.wavfile as wf
-sys.path.insert(0, '/home/claude/gs5')
+sys.path.insert(0, '/home/claude/gs5'); sys.path.insert(0, '/home/claude/why-channel-studio/pipeline/style_v2')
 from cues import *
+import cta_card as CTA
 MUSIC = '/home/claude/why-channel-studio/music/where_the_river_bends.mp3'
 SR = 48000; LIB = '/home/claude/why-channel-studio/sfx/'
 CAT = json.load(open(LIB + 'catalog.json'))
@@ -51,6 +52,33 @@ E = [('page_turn', SCs['pilot'] + .05, .20), ('paper_slide', c_x + .05, .16), ('
 for n, t, g in E:
     if n.endswith('.mp3'): put(n, t, g, maxlen=1.6, fade=.3, path=LIB + n)
     else: put(n, t, g)
+
+# ---- hook: the 1502 map, the busy ocean, one small ship with a question
+bed(LIB + 'harbour_waves.wav', 0.0, SCs['cartoon1'] + .4, .40)
+put('map_unfold', AT('S5_hook', 'busy', 'ఎవరో') - .2, .14); put('ship_creak.mp3', AT('S5_hook', 'show', 'చూపించారు.') - .1, .20, maxlen=2.0, fade=.4, path=LIB + 'ship_creak.mp3')
+# ---- welcome: shore ambience, the clipping, the two quotes
+bed(LIB + 'harbour_waves.wav', SCs['welcome'], SCs['gifts'] + .3, .40); bed(LIB + 'amb/bazaar.mp3', SCs['welcome'], SCs['gifts'], .22)
+put('paper_slide', AT('5.7', 'Two', 'ట్యూనిస్') - .1, .16); put('marker', AT('5.7', 'Two', 'ట్యూనిస్') + .3, .12)
+put('page_turn', AT('5.7', "'What", "'ఇంత") - .15, .16); put('page_turn', AT('5.7', "'Christians…", "'క్రైస్తవుల") - .3, .16)
+# ---- gifts: a quiet court; one soft drop per label; the laugh is shown, not sounded
+bed(LIB + 'amb/court.mp3', SCs['gifts'], SCs['old'] + .2, .26)
+for en, te in (('Hats,', 'టోపీలు,'), ('coral,', 'పగడాలు,'), ('sugar,', 'చక్కెర,'), ('honey.', 'తేనె.')): put('paper_drop', AT('5.8', en, te) - .05, .10)
+put('page_turn', AT('5.8', 'laughed.', 'నవ్వారు.') - .25, .16)
+# ---- old world: the Cape line joins the network
+k5 = '5.9' if has('5.9') else 'OLD'
+bed(LIB + 'harbour_waves.wav', SCs['old'], SCs['force'] + .3, .30)
+put('swoosh_slow', AT(k5, 'old', 'అప్పటికే') - .1, .16)
+if not TE: put('map_unfold', AT(k5, 'middlemen', 'ప్రపంచంలోకి') - .2, .12)
+# ---- diplomacy and force: one paper per ledger cell; one distant cannon (owner-cleared; provenance unverified, no licence claimed)
+for en, te in (('treaties', 'ఒప్పందాలు'), ('cannons:', 'ఫిరంగులు'), ('permissions…', 'అనుమతులు'), ('force', 'బలాన్ని')): put('paper_slide', AT('FORCE', en, te) - .1, .12)
+put('cannon_distant', AT('FORCE', 'bombarded', 'ఫిరంగులు') + .05, .22)
+# ---- tease, series slide (real click/bell), loop
+put('swoosh_slow', SCs['tease'] + .05, .16)
+for n_, t_, g_ in CTA.events(SCs['slide'] + 0.9, PLAT):
+    if n_ != 'woosh_air': put(n_, t_, g_ * 0.8)
+put('swoosh_slow', SCs['loop'] + 0.05, 0.16)
+bed(LIB + 'harbour_waves.wav', SCs['loop'], DUR, .35, fade=.3)
+
 def run(tag):
     os.chdir(ROOT); wf.write(f'sfx_{tag}.wav', SR, SFX)
     subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', f'voice_{LANGV}.wav', '-af', f'adelay={int(LEAD*1000)}|{int(LEAD*1000)},apad', '-ac', '2', '-ar', '48000', '-t', str(DUR), f'vlead_{tag}.wav'], check=True)

@@ -155,7 +155,7 @@ RWORD = {'INDIAN': ('Indian,', 'భారతీయులు,'), 'ARAB': ('Arab,'
 PORTS = {'MALINDI': (40.12, -3.22), 'CALICUT': (75.78, 11.25), 'MALACCA': (102.25, 2.19), 'GUJARAT': (72.4, 22.2), 'PHANIGIRI': (79.53, 17.29)}
 PNAME = {'MALINDI': L('MALINDI', 'మాలిండి'), 'CALICUT': L('CALICUT', 'కాలికట్'), 'MALACCA': L('MALACCA', 'మలక్కా'), 'GUJARAT': L('GUJARAT', 'గుజరాత్'), 'PHANIGIRI': L('PHANIGIRI', 'ఫణిగిరి')}
 
-def draw_routes(img, m, t, lit, glow_k=None, thick=None, alpha=1.0):
+def draw_routes(img, m, t, lit, glow_k=None, thick=None, alpha=1.0, dots=True):
     """lit: {group: 0..1 draw-on}. Moving lantern dots show traffic on every lit route."""
     lay = Image.new('RGBA', (W * 2, H * 2), (0, 0, 0, 0)); d = ImageDraw.Draw(lay)
     dots = []
@@ -166,7 +166,7 @@ def draw_routes(img, m, t, lit, glow_k=None, thick=None, alpha=1.0):
         for si, seg in enumerate(segs):
             pts = m.path(seg); part = poly_part(pts, k)
             if len(part) > 1: d.line([(x * 2, y * 2) for x, y in part], fill=col + (int(225 * alpha),), width=wd * 2, joint='curve')
-            if k >= .999:
+            if k >= .999 and dots:
                 L_ = poly_len(pts); n = max(1, int(L_ / 170))
                 for j in range(n):
                     f = ((t * 46 / max(L_, 1)) + j / n + si * .37) % 1.0
@@ -237,7 +237,8 @@ def s_ocean(t, s0, s1):
     draw_routes(img, m, t, lit, thick=thick)
     for g, (lab, ll) in RLAB.items():
         k = e_out(prog(t, AT('53A', *RWORD[g]) - .05, AT('53A', *RWORD[g]) + .45))
-        if k > .01: x, y = m.P(*ll); map_label(img, lab, x, y, 30 if not TE else 30, INK, k * (1 - .35 * km if g != 'INDIAN' else 1), bg=(244, 236, 214))
+        k54 = (1 - e_io(prog(t, S('5.4') - .2, S('5.4') + .3))) if TE and has('5.4') else 1   # labels step aside for the coin
+        if k > .01 and k54 > .01: x, y = m.P(*ll); map_label(img, lab, x, y, 30 if not TE else 30, INK, k * k54 * (1 - .35 * km if g != 'INDIAN' else 1), bg=(244, 236, 214))
     # the time rail: Roman trade ... 1498, da Gama arrives last
     k_in = e_out(prog(t, s0 + .1, s0 + .7))
     if TE: k_fill = prog(t, s0 + .4, c_arr + .6); k_end = e_out(prog(t, s0 + .3, s0 + .9))
@@ -275,25 +276,42 @@ def s_coin(img, m, t):
     small(img, 'ఫణిగిరి నాణెం కాదు · ANS (MANTIS) · CC0', tx_, 1272, 23, MUTED, 'lm', kc, W - 120 - tx_)
     LY.reg('card', box, owner='coin')
 
+WIND_AT = [(61.0, 15.0), (66.5, 5.5), (87.5, 13.0), (79.0, 2.0)]
+def wind_arrow(img, x, y, ang, k, s=1.0, phase=0.0):
+    """a large, readable wind arrow (cream with an ink edge); it drifts along its own direction"""
+    if k <= .01: return
+    L_, Wd, Hd = 150 * s, 30 * s, 64 * s; dx, dy = math.cos(ang), math.sin(ang)
+    off = (phase % 1.0) * 26 * s - 13 * s; cx, cy = x + dx * off, y + dy * off
+    def P(u, v): return (cx + dx * u - dy * v, cy + dy * u + dx * v)
+    pts = [P(-L_ / 2, -Wd / 2), P(L_ / 2 - Hd, -Wd / 2), P(L_ / 2 - Hd, -Hd / 2), P(L_ / 2, 0), P(L_ / 2 - Hd, Hd / 2), P(L_ / 2 - Hd, Wd / 2), P(-L_ / 2, Wd / 2)]
+    lay = Image.new('RGBA', (W * 2, H * 2), (0, 0, 0, 0)); d = ImageDraw.Draw(lay)
+    d.polygon([(a * 2, b * 2) for a, b in pts], fill=(244, 236, 214, int(240 * k)), outline=(20, 18, 14, int(255 * k)), width=6)
+    lay = lay.resize((W, H), Image.LANCZOS); sh = lay.filter(ImageFilter.GaussianBlur(6)); img.paste(sh, (4, 6), sh); img.paste(lay, (0, 0), lay)
+
 def s_monsoon(t, s0, s1):
     m = OM(*MAP_A); img = m.base.copy()
     c_back = AT('5.5', 'back', 'మిగతా') - .1; c_sail = AT('5.5', 'Sailors', 'నావికులు') - .15
-    # the network stays, quieter, under the wind
-    draw_routes(img, m, t, {g: 1.0 for g in ROUTES}, alpha=.45)
-    rev = e_io(prog(t, c_back, c_back + 1.1)); dirk = 1 - 2 * rev; dirk = dirk if abs(dirk) > .08 else .08 * (1 if dirk >= 0 else -1)
-    k_in = e_out(prog(t, s0, s0 + .8))
-    wind(img, m, t, dirk, k_in * (1 - .7 * (1 - abs(dirk))))
-    # a ship rides the wind: Arabia -> Calicut, then home again
-    pts = m.path(ROUTES['ARAB'][0])
-    if t < c_back + .4: f = e_io(prog(t, s0 + .4, c_back + .2)); (x, y), ang = poly_at(pts, f)
-    else: f = e_io(prog(t, c_back + .6, c_sail + 1.2)); (x, y), ang = poly_at(pts, 1 - f); ang += math.pi
-    dhow(img, x, y - 22, ang, k_in, .9)
-    # the season plate at the top
-    swk = 1 - rev
-    for txt_, kk in ((L('JUN – SEP · SOUTH-WEST MONSOON', 'జూన్ – సెప్టెంబర్ · నైరుతి రుతుపవనాలు'), swk), (L('NOV – FEB · NORTH-EAST MONSOON', 'నవంబర్ – ఫిబ్రవరి · ఈశాన్య రుతుపవనాలు'), rev)):
-        if kk > .02: plate_text(img, (90, 306, W - 90, 436), L('THE WIND', 'గాలి'), txt_, k_in * kk, 38 if not TE else 36, owner='season')
-    # sailing calendar: the year split by the two winds (simplified)
-    kc = e_out(prog(t, c_sail, c_sail + .7))
+    k_in = e_out(prog(t, s0, s0 + .6))
+    # permanent trade routes: thin, quiet, no traffic (the wind is the subject now)
+    draw_routes(img, m, t, {g: 1.0 for g in ROUTES}, alpha=.32, dots=False)
+    # temporary wind: soft streaks + four big arrows that swing round at the reversal
+    rev = e_io(prog(t, c_back, c_back + .9)); turning = 0 < rev < 1
+    base = math.atan2(-.64, .77)                                    # south-west monsoon blows towards the north-east
+    wind(img, m, t, 1 if rev < .5 else -1, .55 * k_in * (1 - math.sin(math.pi * rev)), n=420)
+    for i, ll in enumerate(WIND_AT):
+        x, y = m.P(*ll); wind_arrow(img, x, y, base + math.pi * rev, k_in, 1.0, phase=t * .9 + i * .25 if not turning else 0)
+    # ships ride the wind: east to India in summer, west and home in winter
+    for summer, winter, off in ((ROUTES['ARAB'][0], ROUTES['ARAB'][0], 0.0),
+                                ([(41.5, -2.6), (52.0, 3.0), (64.0, 8.5), (75.6, 11.2)], [(41.5, -2.6), (50.0, 5.0), (61.0, 14.5), (70.4, 20.4)], .18)):
+        if t < c_back: pts = m.path(summer); f = e_io(prog(t, s0 + .3 + off, c_back + .1)); (x, y), ang = poly_at(pts, f)
+        else: pts = m.path(winter); f = e_io(prog(t, c_back + .5 + off * 4, c_sail + 1.6 + off * 4)); (x, y), ang = poly_at(pts, 1 - f); ang += math.pi
+        dhow(img, x, y - 26, ang, k_in, 1.25)
+    # season plate: one sentence a viewer can read without sound
+    for kk, kick, ttl in ((1 - rev, L('JUN – SEP · SOUTH-WEST MONSOON', 'జూన్ – సెప్టెంబర్ · నైరుతి రుతుపవనాలు'), L('WIND BLOWS TO INDIA', 'గాలి భారత్ వైపు')),
+                          (rev, L('NOV – FEB · NORTH-EAST MONSOON', 'నవంబర్ – ఫిబ్రవరి · ఈశాన్య రుతుపవనాలు'), L('WIND BLOWS BACK HOME', 'గాలి తిరిగి వెనక్కి'))):
+        if kk > .5 or (kk > .02 and not turning): plate_text(img, (80, 300, W - 80, 470), kick, ttl, k_in, 52 if not TE else 50, owner='season')
+    # sailing calendar (simplified): the year split by the two winds
+    kc = e_out(prog(t, c_sail, c_sail + .5))
     if kc > .01:
         box = (70, 1120, W - 70, 1335); plate(img, box, kc, alpha=232)
         ms = L(list('JFMAMJJASOND'), ['జన', 'ఫి', 'మా', 'ఏ', 'మే', 'జూ', 'జు', 'ఆ', 'సె', 'అ', 'న', 'డి'])
@@ -304,9 +322,9 @@ def s_monsoon(t, s0, s1):
             d.rounded_rectangle((x0 + 4, 1180, x0 + cw - 4, 1238), 8, fill=col + (int(235 * kc),))
         img.paste(lay, (0, 0), lay)
         for i, ch in enumerate(ms): small(img, ch, 100 + i * cw + cw / 2, 1209, 28 if not TE else 24, INK, 'mm', kc)
-        small(img, L('→ TOWARDS INDIA', '→ భారత్ వైపు'), 100 + 6.5 * cw, 1278, 27 if not TE else 27, RCOL['INDIAN'], 'mm', kc)
-        small(img, L('← HOME', '← తిరుగు'), 100 + 11 * cw - 10, 1278, 27 if not TE else 27, (150, 180, 200), 'mm', kc)
-        small(img, L('SAILING SEASONS FOLLOWED THE WINDS · SIMPLIFIED', 'గాలుల ప్రకారమే ప్రయాణాలు · సరళీకృతం'), W / 2, 1150, 24 if not TE else 25, MUTED, 'mm', kc)
+        small(img, L('→ TO INDIA', '→ భారత్ వైపు'), 100 + 6.5 * cw, 1278, 28, RCOL['INDIAN'], 'mm', kc)
+        small(img, L('← HOME', '← తిరుగు'), 100 + 11 * cw - 10, 1278, 28, (150, 180, 200), 'mm', kc)
+        small(img, L('SAILING SEASONS · SIMPLIFIED', 'ప్రయాణ కాలాలు · సరళీకృతం'), W / 2, 1150, 25, MUTED, 'mm', kc)
         LY.reg('card', box, owner='calendar')
     return img
 
@@ -409,103 +427,103 @@ def case_strip(img, m_unused, t, a, q=1.0, gujarat=0.0):
     img.paste(lay, (0, 0), lay)
     small(img, PNAME['MALINDI'], x0, y + 34, 25 if not TE else 26, PARCH, 'mm', a * .9)
     small(img, PNAME['CALICUT'], x1, y + 34, 25 if not TE else 26, PARCH, 'mm', a * .9)
-    dhow(img, W / 2, y - 22, 0, a * .9, .55)
+    xs = lerp(x0 + 40, x1 - 40, clamp(prog(t, S('PILOT'), E('PILOT')))); dhow(img, xs, y - 22, 0, a * .9, .55)
     small(img, L('THE PILOT · 1498', 'దారిచూపే నావికుడు · 1498'), W / 2, y + 34, 25 if not TE else 26, AMBER, 'mm', a * .9)
     LY.reg('card', (x0 - 30, y - 50, x1 + 30, y + 52), owner='case strip')
 
-def ex_head(img, n, title, a):
-    """exhibit heading above the document: EXHIBIT n · title"""
+def ex_kicker(img, n, sub, a):
+    """small exhibit kicker: EXHIBIT n OF 3 · what it is"""
     if a <= .01: return
-    small(img, L(f'EXHIBIT {n} OF 3', f'ఆధారం {n} / 3'), W / 2, 404, 28 if not TE else 28, AMBER, 'mm', a)
-    text(img, title, W / 2, 458, 46 if not TE else 42, CREAM, 'mm', 'head', a, ST.sw - 60, None)
+    small(img, L(f'EXHIBIT {n} OF 3 · ', f'ఆధారం {n} / 3 · ') + sub, W / 2, 404, 27 if not TE else 27, AMBER, 'mm', a, ST.sw - 40)
+
+def key_term(img, s, a, px=84, col=CREAM, y=480):
+    """the one thing to read: big, centred, alone on its line"""
+    if a <= .01: return
+    f, px = fit(s, 'head', px, ST.sw - 80); text(img, s, W / 2, y + (1 - a) * 14, px, col, 'mm', 'head', a, ST.sw - 80, (0, 0, 0))
+    bb = f.getbbox(s, anchor='mm'); LY.reg('label', (W / 2 + bb[0] - 10, y + bb[1] - 8, W / 2 + bb[2] + 10, y + bb[3] + 8), owner=s)
 
 def doc_label(img, y, kicker, sub, a, w=None):
     if a <= .01: return
     small(img, kicker, W / 2, y, 26 if not TE else 27, PARCH, 'mm', a, w or ST.sw - 60)
-    if sub: small(img, sub, W / 2, y + 38, 23 if not TE else 24, MUTED, 'mm', a, w or ST.sw - 60)
+    if sub: small(img, sub, W / 2, y + 38, 24 if not TE else 24, MUTED, 'mm', a, w or ST.sw - 60)
 
 def s_pilot(t, s0, s1):
-    # cues on the actual voice (EN: Whisper word times; TE: script words aligned to ASR chunks)
+    # cues on the actual voice (EN: Whisper word times; TE: script words aligned to the Telugu ASR chunks)
     c_x = AT('PILOT', "'Christian'…", "'క్రైస్తవుడు'") - .25
     c_h = AT('PILOT', 'but', 'కానీ') - .15; c_so = AT('PILOT', 'so', 'అందుకే') - .1
     c_lat = AT('PILOT', 'Later', 'తర్వాతి') - .2; c_name = AT('PILOT', 'Malemo', 'మాలెమో') - .15
     c_tit = AT('PILOT', 'title,', 'బిరుదు:') - .3; c_fam = AT('PILOT', 'famous', 'అతను') - .2
     c_unl = AT('PILOT', 'unlikely.', 'కానీ', n=1 if not TE else 2) - .2; c_ver = AT('PILOT', 'So', 'అంటే', n=2 if not TE else 1) - .2
     c_guj = AT('PILOT', 'Gujarat,', 'గుజరాత్‌కు', n=2) - .2
-    if t >= c_ver - .25: return s_verdict(t, c_ver, c_guj, s1)
+    if t >= c_ver: return s_verdict(t, c_ver, c_guj, s1)
     img = radial_bg(W, H, (30, 26, 20), (9, 9, 9), cy=.45, reach=.85).copy()
-    k_in = e_out(prog(t, s0 - .1, s0 + .5)); case_strip(img, None, t, .75 * k_in)
-    slide = lambda c, d=.45: e_io(prog(t, c, c + d))
-    # ---- EXHIBIT 1 · the voyage journal and the problem with "Christian"
-    if t < c_lat - .05:
-        out_ = e_io(prog(t, c_lat - .4, c_lat - .05)); a1 = k_in * (1 - out_); dx = -60 * out_
-        ex_head(img, 1, L("THE CREW'S JOURNAL, 1498", 'సిబ్బంది డైరీ, 1498'), a1)
-        # (a) the journal itself: a surviving manuscript copy (shown alone first, so no quotation sits on it)
-        k_ms = 1 - slide(c_x)
-        if k_ms > .01:
-            panel_nat(img, 'ROTEIRO', (170 + dx, 520, W - 170 + dx, 1110), 1.0, (.5, .30), (.5, .36), sc=.62, radius=10, a=a1 * k_ms)
-            doc_label(img, 1170, L('THE JOURNAL · A SURVIVING MANUSCRIPT COPY · EARLY 1500s', 'డైరీ · మిగిలిన చేతిరాత ప్రతి · 1500ల మొదట్లో'),
-                      L('PORTO MUNICIPAL LIBRARY, MS 804 · PUBLIC DOMAIN', 'పోర్టో మునిసిపల్ లైబ్రరీ, MS 804 · పబ్లిక్ డొమైన్'), a1 * k_ms)
-        # (b) the English translation (1898): "sent a Christian pilot"
-        k_tr = slide(c_x)
-        if k_tr > .01:
-            a_tr = a1 * k_tr; sw_ = slide(c_h); y1 = 690
-            small(img, L('ENGLISH TRANSLATION · E. G. RAVENSTEIN · 1898', 'ఆంగ్ల అనువాదం · E. G. RAVENSTEIN · 1898'), W / 2 + dx, 548, 23 if not TE else 25, AMBER, 'mm', a_tr)
-            b1 = clip_card(img, 'A1_christian_pilot', W / 2 + dx, y1 - 40 * sw_, 940, a_tr * (1 - .45 * sw_), e_io(prog(t, c_x + .5, c_x + 1.3)), 2, 0, 'A1')
-            if TE and sw_ < .5: small(img, "'రాజు ఒక క్రైస్తవ నావికుడిని పంపాడు'", W / 2 + dx, (b1[3] if b1 else 900) + 40, 25, PARCH, 'mm', a_tr * (1 - 2 * sw_))
-            # (c) the same journal on Calicut: "inhabited by Christians"
-            if sw_ > .01:
-                b2 = clip_card(img, 'A2_calecut_christians', W / 2 + dx + (1 - sw_) * 300, 930, 940, a1 * sw_, e_io(prog(t, c_h + .5, c_h + 1.4)), 0, 0, 'A2')
-                small(img, L('THE SAME JOURNAL, ON CALICUT', 'అదే డైరీ, కాలికట్ గురించి'), W / 2 + dx, (b2[1] if b2 else 840) - 34, 26 if not TE else 27, PARCH, 'mm', a1 * sw_)
-                if TE: small(img, "'కాలికట్ నగరంలో క్రైస్తవులు ఉంటారు'", W / 2 + dx, (b2[3] if b2 else 920) + 38, 25, PARCH, 'mm', a1 * sw_)
-            # what it shows (one short museum label)
-            ks = e_out(prog(t, c_so, c_so + .5))
-            if ks > .01:
-                plate_text(img, (110 + dx, 1090, W - 110 + dx, 1290), L('WHAT THIS SHOWS', 'దీని అర్థం'),
-                           L("'CHRISTIAN' DOESN'T TELL US HIS FAITH", "'క్రైస్తవుడు' అనే మాట అతని మతాన్ని చెప్పదు"), a1 * ks, 42 if not TE else 40, owner='ex1 label',
-                           sub=L("THE CREW CALLED CALICUT'S HINDUS 'CHRISTIANS' TOO", 'కాలికట్ హిందువులనూ వాళ్లు అలాగే పిలిచారు'))
-            small(img, L('HAKLUYT SOCIETY · VIA PROJECT GUTENBERG · PUBLIC DOMAIN', 'HAKLUYT SOCIETY · PROJECT GUTENBERG · పబ్లిక్ డొమైన్'), W / 2 + dx, 1330, 20 if not TE else 22, MUTED, 'mm', a_tr * (1 - e_out(prog(t, c_so, c_so + .5))))
-        if t < c_lat - .15: return img
-    # ---- EXHIBIT 2 · later Portuguese chroniclers: a Gujarati navigator, "Malemo" a title
-    if t < c_fam - .05:
-        kin = e_io(prog(t, c_lat - .15, c_lat + .25)); out_ = e_io(prog(t, c_fam - .4, c_fam - .05)); a2 = kin * (1 - out_); dx = 60 * (1 - kin) - 60 * out_
-        ex_head(img, 2, L('LATER PORTUGUESE CHRONICLERS', 'తర్వాతి పోర్చుగీస్ చరిత్రకారులు'), a2)
-        up = e_io(prog(t, c_name, c_name + .6))          # the title page steps back to make room for the name
-        ph = int(lerp(560, 400, up)); pw = int(ph * 700 / 640)
-        panel_nat(img, 'BARROS', (W / 2 - pw / 2 + dx, 510, W / 2 + pw / 2 + dx, 510 + ph), 1.0, (.47, .245), (.47, .245), sc=ph / 640, radius=8, a=a2, tint=(246, 238, 220))
-        doc_label(img, 510 + ph + 34, L('JOÃO DE BARROS · DÉCADAS DA ÁSIA · LISBON 1552', 'జోవో డి బారోస్ · DÉCADAS DA ÁSIA · లిస్బన్ 1552'),
-                  L('ALSO GÓIS AND CASTANHEDA · TITLE PAGE · PUBLIC DOMAIN', 'గోయిస్, కాస్టన్హెడా కూడా · టైటిల్ పేజీ · పబ్లిక్ డొమైన్'), a2 * (1 - e_io(prog(t, c_name - .1, c_name + .25))))
-        kn = e_out(prog(t, c_name + .3, c_name + .8))
-        if kn > .01:
-            kt = e_io(prog(t, c_tit, c_tit + .6)); box = (110 + dx, 1030, W - 110 + dx, 1310)
-            if kt < 1:
-                plate_text(img, box, L('A NAVIGATOR FROM GUJARAT', 'గుజరాత్‌కు చెందిన నావికుడు'), 'MALEMO CANAQUA', a2 * kn * (1 - kt), 66, owner='name',
-                           sub=L('RAVENSTEIN 1898, NOTE 132 · CITING BARROS, GÓIS', 'RAVENSTEIN 1898, NOTE 132 · బారోస్, గోయిస్ ఆధారంగా'))
-            if kt > 0:
-                plate_text(img, box, L("'MALEMO' ← MU'ALLIM", "'మాలెమో' ← ముఅల్లిమ్"), L('MASTER NAVIGATOR · A TITLE, NOT A NAME', 'నావికుల నాయకుడు · పేరు కాదు, బిరుదు'), a2 * kt, 46 if not TE else 44, owner='title',
-                           sub=L('RAVENSTEIN 1898, NOTE 132', 'RAVENSTEIN 1898, NOTE 132'))
-        if t < c_fam - .15: return img
-    # ---- EXHIBIT 3 · the Ibn Majid identification, and why it is questioned
-    kin = e_io(prog(t, c_fam - .15, c_fam + .25)); a3 = kin; dx = 60 * (1 - kin)
-    ex_head(img, 3, L('A LATER, FAMOUS STORY', 'తర్వాత వచ్చిన ఒక ప్రసిద్ధ కథ'), a3)
-    ku = e_io(prog(t, c_unl, c_unl + .6))
-    plate_text(img, (110 + dx, 560, W - 110 + dx, 860), L('THE STORY SAYS THE PILOT WAS', 'ఆ కథ ప్రకారం నావికుడు'), L('IBN MAJID, THE FAMOUS ARAB NAVIGATOR', 'ప్రసిద్ధ అరబ్ నావికుడు ఇబ్న్ మాజిద్'), a3 * (1 - .45 * ku), 48 if not TE else 44, owner='ibn majid')
+    k_in = e_out(prog(t, s0 - .1, s0 + .5)); case_strip(img, None, t, .7 * k_in)
+    pop = lambda c, d=.28: e_out(prog(t, c, c + d))           # elements arrive on a clean background (no cross-dissolves)
+    SRC1 = L('ENGLISH TRANSLATION · RAVENSTEIN 1898 · PROJECT GUTENBERG', 'ఆంగ్ల అనువాదం · RAVENSTEIN 1898 · PROJECT GUTENBERG')
+    # ---- EXHIBIT 1 · the voyage journal and the problem with "Christian"   (clean cut to exhibit 2 at c_lat)
+    if t < c_lat:
+        ex_kicker(img, 1, L("THE CREW'S JOURNAL, 1498", 'సిబ్బంది డైరీ, 1498'), k_in)
+        if t < c_x:   # (a) the journal itself, alone: a surviving manuscript copy
+            key_term(img, L("THE CREW'S JOURNAL", 'సిబ్బంది డైరీ'), k_in, 60)
+            panel_nat(img, 'ROTEIRO', (190, 560, W - 190, 1110), 1.0, (.5, .30), (.5, .34), sc=.62, radius=10, a=k_in)
+            doc_label(img, 1170, L('A SURVIVING MANUSCRIPT COPY · EARLY 1500s', 'మిగిలిన చేతిరాత ప్రతి · 1500ల మొదట్లో'),
+                      L('PORTO MUNICIPAL LIBRARY, MS 804 · PUBLIC DOMAIN', 'పోర్టో మునిసిపల్ లైబ్రరీ, MS 804 · పబ్లిక్ డొమైన్'), k_in)
+            return img
+        # (b) cut to the English translation (1898): the key word, then the two quotations
+        key_term(img, L("'CHRISTIAN'", "'క్రైస్తవుడు'"), pop(c_x), 92, AMBER)
+        a_ = pop(c_x + .05); sw_ = e_io(prog(t, c_h, c_h + .3))
+        b1 = clip_card(img, 'A1_christian_pilot', W / 2, 660 + 16 * (1 - a_), 940, a_ * (1 - .4 * sw_), e_io(prog(t, c_x + .4, c_x + 1.2)), 2, 0, 'A1')
+        if TE and b1: small(img, "'రాజు ఒక క్రైస్తవ నావికుడిని పంపాడు'", W / 2, b1[3] + 34, 25, PARCH, 'mm', a_ * (1 - sw_))
+        if t >= c_h:
+            a2 = pop(c_h)
+            small(img, L('THE SAME JOURNAL, ON CALICUT', 'అదే డైరీ, కాలికట్ గురించి'), W / 2, 852, 26 if not TE else 27, PARCH, 'mm', a2)
+            b2 = clip_card(img, 'A2_calecut_christians', W / 2, 935 + 16 * (1 - a2), 940, a2, e_io(prog(t, c_h + .4, c_h + 1.3)), 0, 0, 'A2')
+            if TE and b2: small(img, "'కాలికట్ నగరంలో క్రైస్తవులు ఉంటారు'", W / 2, b2[3] + 34, 25, PARCH, 'mm', a2)
+        if t >= c_so:
+            plate_text(img, (110, 1100, W - 110, 1300), None, L("THE WORD DOESN'T TELL US HIS FAITH", 'ఈ మాట అతని మతాన్ని చెప్పదు'), pop(c_so), 48 if not TE else 44, owner='ex1 label',
+                       sub=L("THE CREW CALLED CALICUT'S HINDUS 'CHRISTIANS' TOO", 'కాలికట్ హిందువులనూ వాళ్లు అలాగే పిలిచారు'))
+        else: small(img, SRC1, W / 2, 1330, 24 if not TE else 24, MUTED, 'mm', a_)
+        return img
+    # ---- EXHIBIT 2 · later Portuguese chroniclers: a Gujarati navigator, "Malemo" a title   (clean cut to exhibit 3 at c_fam)
+    if t < c_fam:
+        a2 = pop(c_lat); ex_kicker(img, 2, L('LATER PORTUGUESE CHRONICLERS', 'తర్వాతి పోర్చుగీస్ చరిత్రకారులు'), a2)
+        if t < c_name:
+            key_term(img, L('JOÃO DE BARROS, 1552', 'జోవో డి బారోస్, 1552'), a2, 60)
+            ph = 560; pw = int(ph * 700 / 640)
+            panel_nat(img, 'BARROS', (W / 2 - pw / 2, 560, W / 2 + pw / 2, 560 + ph), 1.0, (.47, .245), (.47, .245), sc=ph / 640, radius=8, a=a2, tint=(246, 238, 220))
+            doc_label(img, 1170, L('DÉCADAS DA ÁSIA · LISBON 1552 · TITLE PAGE', 'DÉCADAS DA ÁSIA · లిస్బన్ 1552 · టైటిల్ పేజీ'),
+                      L('ALSO GÓIS AND CASTANHEDA · PUBLIC DOMAIN', 'గోయిస్, కాస్టన్హెడా కూడా · పబ్లిక్ డొమైన్'), a2)
+            return img
+        an = pop(c_name); key_term(img, L('MALEMO CANAQUA', 'మాలెమో కనాక్వా'), an, 92, AMBER)
+        ph = 400; pw = int(ph * 700 / 640)
+        panel_nat(img, 'BARROS', (W / 2 - pw / 2, 580, W / 2 + pw / 2, 580 + ph), 1.0, (.47, .245), (.47, .245), sc=ph / 640, radius=8, a=1.0, tint=(246, 238, 220))
+        small(img, L('BARROS · GÓIS · CASTANHEDA · 16th CENTURY', 'బారోస్ · గోయిస్ · కాస్టన్హెడా · 16వ శతాబ్దం'), W / 2, 1030, 25 if not TE else 26, PARCH, 'mm', 1.0)
+        box = (110, 1090, W - 110, 1300)
+        if t < c_tit: plate_text(img, box, None, L('A NAVIGATOR FROM GUJARAT', 'గుజరాత్‌కు చెందిన నావికుడు'), pop(c_name + .2), 54 if not TE else 48, owner='name', sub=L('RAVENSTEIN 1898, NOTE 132', 'RAVENSTEIN 1898, NOTE 132'))
+        else: plate_text(img, box, L("'MALEMO' = MU'ALLIM", "'మాలెమో' = ముఅల్లిమ్"), L('MASTER NAVIGATOR: A TITLE, NOT A NAME', 'నావికుల నాయకుడు: పేరు కాదు, బిరుదు'), pop(c_tit), 46 if not TE else 42, owner='title',
+                        sub=L('RAVENSTEIN 1898, NOTE 132', 'RAVENSTEIN 1898, NOTE 132'))
+        return img
+    # ---- EXHIBIT 3 · the Ibn Majid identification, and why it is questioned   (clean cut to the map at c_ver)
+    a3 = pop(c_fam); ex_kicker(img, 3, L('A LATER, FAMOUS STORY', 'తర్వాత వచ్చిన ఒక ప్రసిద్ధ కథ'), a3)
+    ku = pop(c_unl, .35)
+    kd = e_io(prog(t, c_fam + .8, c_unl + .4))                   # doubt grows while the story is told: the name slowly greys
+    key_term(img, L('IBN MAJID?', 'ఇబ్న్ మాజిద్?'), a3, 96, tuple(int(lerp(c1, c2, kd)) for c1, c2 in zip(CREAM, (120, 114, 104))))
+    plate_text(img, (110, 600, W - 110, 820), L('THE STORY SAYS THE PILOT WAS', 'ఆ కథ ప్రకారం నావికుడు'), L('THE FAMOUS ARAB NAVIGATOR', 'ప్రసిద్ధ అరబ్ నావికుడు'), a3, 50 if not TE else 46, owner='ibn majid')
     if ku > .01:
-        lay = Image.new('RGBA', (W, H), (0, 0, 0, 0)); ImageDraw.Draw(lay).line((190 + dx, 710, 190 + dx + (W - 380) * ku, 710), fill=PARCH + (int(200 * ku),), width=3); img.paste(lay, (0, 0), lay)
-        plate_text(img, (110 + dx, 960, W - 110 + dx, 1230), L('HISTORIANS TODAY', 'ఈ రోజు చరిత్రకారులు'), L('MOST THINK IT UNLIKELY', 'చాలామంది ఇది నిజం కాకపోవచ్చు అంటారు'), a3 * ku, 52 if not TE else 44, owner='unlikely',
+        plate_text(img, (110, 930, W - 110, 1200), L('HISTORIANS TODAY', 'ఈ రోజు చరిత్రకారులు'), L('MOST THINK IT UNLIKELY', 'చాలామంది: నిజం కాకపోవచ్చు'), ku, 58 if not TE else 50, owner='unlikely',
                    sub='TIBBETTS 1971 · SUBRAHMANYAM 1997')
     return img
 
 def s_verdict(t, c_ver, c_guj, s1):
     """back to the map: the Malindi -> Calicut arc, and a thread to Gujarat (hedged)"""
-    m = OM(*MAP_B); img = m.base.copy(); kin = e_io(prog(t, c_ver - .25, c_ver + .35))
+    m = OM(*MAP_B); img = m.base.copy(); kin = e_io(prog(t, c_ver, c_ver + .35))
     draw_routes(img, m, t, {g: 1.0 for g in ROUTES}, alpha=.3)
     route_layer(img, m, t, 1.0, 1.0, a=1.0, w=8)
     xm, ym = m.P(*PORTS['MALINDI']); xc, yc = m.P(*PORTS['CALICUT']); xg, yg = m.P(*PORTS['GUJARAT'])
     pin(img, xm, ym, 1, CREAM, 11); pin(img, xc, yc, 1, AMBER, 12)
     map_label(img, PNAME['MALINDI'], xm + 30, ym + 50, 26 if not TE else 28, INK, 1); map_label(img, PNAME['CALICUT'], xc - 10, yc + 52, 26 if not TE else 28, INK, 1)
     # the pilot icon rides the arc; its thread rises to Gujarat
-    (px_, py_), _ = poly_at(m.path(ARCLL, 14), .55)
+    (px_, py_), _ = poly_at(m.path(ARCLL, 14), lerp(.40, .58, e_io(prog(t, c_ver, c_guj + .2))))
     kq = 1 - e_io(prog(t, c_guj, c_guj + .5)); pilot_icon(img, px_, py_ - 20, kin, kq)
     kt = e_io(prog(t, c_guj - .1, c_guj + 1.0))
     if kt > 0:
@@ -517,29 +535,187 @@ def s_verdict(t, c_ver, c_guj, s1):
     # the conclusion, clearly hedged
     kc = e_out(prog(t, c_guj + .3, c_guj + .9))
     if kc > .01:
-        plate_text(img, (90, 296, W - 90, 520), L('MOST LIKELY', 'బహుశా'), L('FROM GUJARAT, INDIA', 'గుజరాత్ నుంచి · భారత్'), kc, 60 if not TE else 56, owner='verdict',
-                   sub=L('BASED ON 16th-CENTURY PORTUGUESE CHRONICLES', '16వ శతాబ్దపు పోర్చుగీస్ చరిత్రకారుల ఆధారంగా'))
+        plate_text(img, (80, 290, W - 80, 540), L('THE ANSWER', 'జవాబు'), L('MOST LIKELY FROM GUJARAT', 'బహుశా గుజరాత్ నుంచే'), kc, 66 if not TE else 60, owner='verdict',
+                   sub=L('INDIA · BASED ON 16th-CENTURY PORTUGUESE CHRONICLES', 'భారత్ · 16వ శతాబ్దపు పోర్చుగీస్ చరిత్రకారుల ఆధారంగా'))
     # the case strip fades back into the full map
     case_strip(img, None, t, .75 * (1 - kin))
     return img
 
-# ------------------------------------------------------------------ dispatch (other scenes are built after the previews are approved)
-def s_todo(t, s0, s1, name):
-    img = radial_bg(W, H, (30, 26, 20), (9, 9, 9)).copy(); text(img, f'[{name}] · after preview approval', W / 2, H / 2, 40, MUTED, 'mm', 'head'); return img
+# ------------------------------------------------------------------ remaining scenes (full render)
+PK2 = '/home/claude/why-channel-studio/videos/2026-11-08_long_golden_sparrow_s1/visuals/pack2/'
+SRC.update({'CANTINO': (ARC + '01_PD10_Cantino_planisphere_(1502).jpg', (4700, 0, 8550, 4998)), 'G22': (PK2 + 'G22_v2.png', None), 'G23': (PK2 + 'G23_v2.png', None)})
+@functools.lru_cache(4)
+def NATS(key, s):
+    im = NAT(key); return im.resize((int(im.width * s), int(im.height * s)), Image.LANCZOS)
+def cover_nat(key, u, f0, f1, prescale=.5, k=.95):
+    """full-screen view of an archive picture that never enlarges it (scale <= 1.0), with a slow pan"""
+    im = NATS(key, prescale); w, h = im.size; base = max(W / w, H / h); assert base <= 1.0001, (key, base)
+    hw, hh = W / 2 / base, H / 2 / base; kk = e_io(clamp(u)); fx, fy = lerp(f0[0], f1[0], kk), lerp(f0[1], f1[1], kk)
+    cx = min(max(fx * w, hw), w - hw); cy = min(max(fy * h, hh), h - hh)
+    return grade(im.resize((W, H), Image.LANCZOS, box=(cx - hw, cy - hh, cx + hw, cy + hh)), k)
+def credit_line(img, s, y=1330, a=1.0):
+    if a <= .01: return
+    f = pick(s, 'monob', 24); w = f.getlength(s) + 30; lay = Image.new('RGBA', (W, H), (0, 0, 0, 0))
+    ImageDraw.Draw(lay).rounded_rectangle((W / 2 - w / 2, y - 22, W / 2 + w / 2, y + 22), 12, fill=(10, 10, 10, int(190 * a))); img.paste(lay, (0, 0), lay)
+    small(img, s, W / 2, y, 24, (214, 206, 188), 'mm', a, ST.sw - 20); LY.reg('credit', (W / 2 - w / 2, y - 22, W / 2 + w / 2, y + 22), owner=s[:30])
+def dramatized(img, x1, y0, a=1.0):
+    s = L('DRAMATIZED · ILLUSTRATION', 'నాటకీకరణ · చిత్రణ'); w = pick(s, 'head', 22).getlength(s); chip(img, s, x1 - 24 - w / 2 - 18, y0 + 34, 22, (24, 22, 19), CREAM, a=a)
 
+# ---- 1 · hook: a real European map of 1502 -> the busy ocean -> one small ship with a question
+def s_hook(t, s0, s1, frame0=False):
+    c_disc = AT('S5_hook', 'discover', 'కనిపెట్టలేదు.') - .1; c_busy = AT('S5_hook', 'busy', 'ఎవరో') - .2; c_show = AT('S5_hook', 'show', 'చూపించారు.') - .15
+    if frame0: t = 0.0
+    if t < c_busy + .5:
+        img = cover_nat('CANTINO', prog(t, 0, c_busy + .5), (.42, .55), (.56, .52), .5, .98)
+        ka = 1.0 if frame0 else 1.0
+        plate_text(img, (150, 330, W - 150, 520), L('VASCO DA GAMA · 1498', 'వాస్కో డ గామా · 1498'), L('DISCOVERED INDIA?', 'భారత్‌ను కనిపెట్టాడా?'), ka * (1 if t < c_disc + .2 else 1), 60 if not TE else 56, owner='hook')
+        credit_line(img, L('CANTINO PLANISPHERE · 1502 · BIBLIOTECA ESTENSE, MODENA', 'కాంటినో ప్రపంచ పటం · 1502 · ఎస్టెన్స్ లైబ్రరీ, మోడెనా'))
+        if t < c_busy: return img
+        m = OM(*MAP_A); mp = m.base.copy(); draw_routes(mp, m, t, {g: 1.0 for g in ROUTES})
+        return Image.blend(img, mp, e_io(prog(t, c_busy, c_busy + .5)))
+    m = OM(*MAP_A); img = m.base.copy(); draw_routes(img, m, t, {g: 1.0 for g in ROUTES})
+    small(img, L('TRADE ROUTES, LONG BEFORE 1498', '1498కి ఎంతో ముందే వ్యాపార మార్గాలు'), W / 2, 380, 28, PARCH, 'mm', e_out(prog(t, c_busy + .4, c_busy + .9)))
+    ks = e_out(prog(t, c_show, c_show + .4))
+    if ks > .01:
+        tr = m.path([(33.5, -34.0), (36.0, -27.0), (38.5, -20.0)]); lay = Image.new('RGBA', (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(lay)
+        for i in range(0, len(tr) - 1, 2): d.line((tr[i], tr[i + 1]), fill=CREAM + (int(220 * ks),), width=3)
+        img.paste(lay, (0, 0), lay); x, y = m.P(38.5, -20.0); dhow(img, x, y - 24, -1.2, ks, 1.0); text(img, '?', x + 4, y - 110, 72, AMBER, 'mm', 'head', ks, None, (0, 0, 0))
+    return img
+
+# ---- 9 · the welcome at Calicut: shore (dramatized) -> the journal's words -> the question -> the answer
+def s_welcome(t, s0, s1):
+    c_two = AT('5.7', 'Two', 'ట్యూనిస్') - .15; c_q = AT('5.7', "'What", "'ఇంత") - .15; c_a = AT('5.7', "'Christians…", "'క్రైస్తవుల") - .3
+    img = radial_bg(W, H, (30, 26, 20), (9, 9, 9), cy=.4, reach=.85).copy(); k = e_out(prog(t, s0, s0 + .4))
+    panel_nat(img, 'G22', (40, 300, W - 40, 300 + 560), prog(t, s0, s1), (.40, .5), (.58, .5), sc=.66, radius=14, a=k)
+    dramatized(img, W - 40, 300, k)
+    if t < c_two:
+        small(img, L("CALICUT · MAY 1498", 'కాలికట్ · మే 1498'), W / 2, 930, 30, AMBER, 'mm', k)
+        text(img, L("A STRANGE WELCOME", 'ఒక విచిత్రమైన స్వాగతం'), W / 2, 1000, 58 if not TE else 52, CREAM, 'mm', 'head', k, ST.sw - 60, None)
+        return img
+    if t < c_q:
+        a = e_out(prog(t, c_two, c_two + .3))
+        small(img, L("THE CREW'S JOURNAL · TR. RAVENSTEIN 1898", 'సిబ్బంది డైరీ · ఆంగ్ల అనువాదం 1898'), W / 2, 935, 25, AMBER, 'mm', a)
+        b = clip_card(img, 'W1_tunis', W / 2, 1090 + 14 * (1 - a), 940, a, e_io(prog(t, c_two + .3, c_two + 1.6)), 0, 0, 'W1')
+        if TE and b: small(img, "'ట్యూనిస్ నుంచి వచ్చిన ఇద్దరు వ్యాపారులు, స్పానిష్, ఇటాలియన్ మాట్లాడేవారు'", W / 2, b[3] + 34, 24, PARCH, 'mm', a)
+        return img
+    if t < c_a:
+        plate_text(img, (90, 960, W - 90, 1290), L('TWO MERCHANTS FROM TUNIS ASKED', 'ట్యూనిస్ వ్యాపారులు అడిగారు'), L("'WHAT BROUGHT YOU HERE?'", "'ఇంత దూరం ఎందుకొచ్చారు?'"), e_out(prog(t, c_q, c_q + .3)), 66 if not TE else 58, owner='q',
+                   sub=L("THE CREW'S JOURNAL, 1498", 'సిబ్బంది డైరీ, 1498'))
+        return img
+    plate_text(img, (90, 960, W - 90, 1290), L('THE PORTUGUESE ANSWER', 'పోర్చుగీసుల జవాబు'), L("'CHRISTIANS… AND SPICES.'", "'క్రైస్తవుల కోసం… సుగంధ ద్రవ్యాల కోసం.'"), e_out(prog(t, c_a, c_a + .3)), 66 if not TE else 54, owner='a',
+               sub=L("THE CREW'S JOURNAL, 1498", 'సిబ్బంది డైరీ, 1498'))
+    return img
+
+# ---- 10 · the gifts: labels land on the objects; the officials laughed
+GIFTS = [(('Hats,', 'టోపీలు,'), L('HATS', 'టోపీలు'), (620, 640), (-170, -150)), (('coral,', 'పగడాలు,'), L('CORAL', 'పగడాలు'), (720, 725), (-90, 150)),
+         (('sugar,', 'చక్కెర,'), L('SUGAR', 'చక్కెర'), (905, 612), (150, 150)), (('honey.', 'తేనె.'), L('HONEY', 'తేనె'), (1010, 540), (170, -190))]
+def s_gifts(t, s0, s1):
+    c_l = AT('5.8', 'laughed.', 'నవ్వారు.') - .25
+    img = radial_bg(W, H, (30, 26, 20), (9, 9, 9), cy=.4, reach=.85).copy(); k = e_out(prog(t, s0, s0 + .35)); sc = .66
+    box = (40, 300, W - 40, 300 + 600); u = prog(t, s0, s1); f0, f1 = (.47, .5), (.53, .5); panel_nat(img, 'G23', box, u, f0, f1, sc=sc, radius=14, a=k)
+    dramatized(img, W - 40, 300, k)
+    im = NAT('G23'); bw, bh = box[2] - box[0], box[3] - box[1]; kk_ = e_io(clamp(u)); fx = lerp(f0[0], f1[0], kk_) * im.width
+    fx = min(max(fx, bw / sc / 2), im.width - bw / sc / 2); ox = fx - bw / sc / 2; oy = im.height / 2 - bh / sc / 2
+    P = lambda x, y: (box[0] + (x - ox) * sc, box[1] + (y - oy) * sc)
+    for (w_en, w_te), lab, (gx, gy), (dx, dy) in GIFTS:
+        kk = e_out(prog(t, AT('5.8', w_en, w_te) - .1, AT('5.8', w_en, w_te) + .25))
+        if kk <= .01: continue
+        x, y = P(gx, gy); lx, ly = min(max(x + dx * .55, 150), W - 150), min(max(y + dy * .55, 360), 860)
+        lay = Image.new('RGBA', (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(lay); d.line((x, y, lx, ly), fill=GOLD_A + (int(240 * kk),), width=3)
+        d.ellipse((x - 7, y - 7, x + 7, y + 7), fill=AMBER + (int(255 * kk),)); img.paste(lay, (0, 0), lay); map_label(img, lab, lx, ly, 32, INK, kk)
+    if t < c_l:
+        small(img, L("DA GAMA'S GIFTS FOR THE KING", 'రాజు కోసం డ గామా కానుకలు'), W / 2, 960, 30, AMBER, 'mm', k)
+        small(img, L('THE FULL LIST ALSO HAD CLOTH, HOODS, BASINS AND OIL', 'జాబితాలో గుడ్డ, టోపీలు, పళ్లేలు, నూనె కూడా ఉన్నాయి'), W / 2, 1010, 24, MUTED, 'mm', k)
+        return img
+    plate_text(img, (90, 960, W - 90, 1300), L("THE KING'S OFFICIALS LAUGHED", 'రాజు అధికారులు నవ్వారు'), L("'THE POOREST MERCHANT FROM MECCA… GAVE MORE'", "'మక్కా నుంచి వచ్చే అతి పేద వ్యాపారి కూడా ఇంతకంటే ఎక్కువ ఇస్తాడు'"),
+               e_out(prog(t, c_l, c_l + .3)), 52 if not TE else 44, owner='mecca', sub=L("THE CREW'S JOURNAL, 1498 · TR. RAVENSTEIN", 'సిబ్బంది డైరీ, 1498 · RAVENSTEIN అనువాదం'))
+    return img
+
+# ---- 11 · not a new world, an old one: Portugal's thin Cape line plugs into the old network (EN: the middlemen routes to Europe)
+EUROPE = [[(45.0, 12.6), (43.3, 12.9), (41.0, 17.0), (38.0, 23.0), (34.6, 27.6), (32.6, 29.9), (31.2, 33.0)], [(56.5, 26.5), (52.5, 27.6), (49.8, 29.4), (47.8, 30.3), (44.5, 33.3)]]
+CAPE = [(28.0, -40.0), (33.5, -34.0), (36.5, -24.5), (40.6, -16.0), (40.9, -10.0), (40.12, -3.22), (47.0, 0.8), (56.0, 5.4), (66.0, 9.0), (75.78, 11.25)]
+def s_old(t, s0, s1):
+    k5 = '5.9' if has('5.9') else 'OLD'
+    c_new = AT(k5, 'new', 'కొత్త') - .1; c_old = AT(k5, 'old', 'అప్పటికే') - .15; c_mid = AT(k5, 'middlemen', 'ప్రపంచంలోకి') - .2
+    m = OM(*MAP_A); img = m.base.copy(); draw_routes(img, m, t, {g: 1.0 for g in ROUTES}, alpha=.85)
+    km = e_io(prog(t, c_mid, c_mid + .8)) if not TE else 0
+    if km > 0:
+        lay = Image.new('RGBA', (W * 2, H * 2), (0, 0, 0, 0)); d = ImageDraw.Draw(lay)
+        for seg in EUROPE:
+            p = poly_part(m.path(seg), km); d.line([(x * 2, y * 2) for x, y in p], fill=(196, 132, 110, 255), width=14, joint='curve')
+        lay = lay.resize((W, H), Image.LANCZOS); img.paste(lay, (0, 0), lay)
+        x, y = m.P(39.0, 21.0); map_label(img, 'TO EUROPE · MIDDLEMEN', x + 170, y + 10, 28, INK, km)
+        small(img, 'RED SEA & GULF ROUTES', W / 2, 1300, 26, PARCH, 'mm', km)
+    kc = e_io(prog(t, c_old, c_old + 1.4))
+    if kc > 0:
+        p = poly_part(m.path(CAPE, 12), kc); lay = Image.new('RGBA', (W * 2, H * 2), (0, 0, 0, 0)); d = ImageDraw.Draw(lay)
+        for i in range(0, len(p) - 1, 2): d.line(((p[i][0] * 2, p[i][1] * 2), (p[i + 1][0] * 2, p[i + 1][1] * 2)), fill=CREAM + (240,), width=8)
+        lay = lay.resize((W, H), Image.LANCZOS); img.paste(lay, (0, 0), lay)
+        if kc >= 1: x, y = m.P(75.78, 11.25); pin(img, x, y, 1, AMBER, 12, pulse=(t - c_old) * .8)
+        small(img, L("PORTUGAL'S ROUTE, 1498", 'పోర్చుగల్ మార్గం, 1498'), 250, 1250, 26, CREAM, 'mm', e_out(prog(t, c_old + .6, c_old + 1.0)))
+    a1 = e_out(prog(t, c_new, c_new + .3)); a2 = e_out(prog(t, c_old, c_old + .3))
+    if a1 > .01:
+        plate_text(img, (80, 300, W - 80, 470), '1498', L('NOT A NEW WORLD', 'కొత్త ప్రపంచం కాదు') if a2 < .5 else L('NOT A NEW WORLD · AN OLD ONE', 'కొత్త ప్రపంచం కాదు · పాత ప్రపంచం'), a1, 44 if not TE else 42, owner='old')
+    return img
+
+# ---- 12 · diplomacy and force: a two-row ledger, both columns filled for both powers
+FORCE_PINS = {'COCHIN': (76.27, 9.93), 'CALICUT': (75.78, 11.25), 'SURAT': (72.83, 21.17)}
+def s_force(t, s0, s1):
+    c_tr = AT('FORCE', 'treaties', 'ఒప్పందాలు') - .1; c_ca = AT('FORCE', 'cannons:', 'ఫిరంగులు') - .1
+    c_al = AT('FORCE', 'allied', 'ఒప్పందాలు') - .1; c_bo = AT('FORCE', 'bombarded', 'ఫిరంగులు') - .1
+    c_ce = AT('FORCE', 'century', 'శతాబ్దం') - .15; c_pe = AT('FORCE', 'permissions…', 'అనుమతులు') - .1; c_fo = AT('FORCE', 'force', 'బలాన్ని') - .1
+    m = OM(*MAP_B); img = m.base.copy(); draw_routes(img, m, t, {g: 1.0 for g in ROUTES}, alpha=.42)
+    for name, c, lab in (('COCHIN', c_al, L('COCHIN · ALLY', 'కొచ్చి · మిత్రుడు')), ('CALICUT', c_bo, L('CALICUT · BOMBARDED', 'కాలికట్ · ఫిరంగి దాడి')), ('SURAT', c_pe, L('SURAT · SWALLY', 'సూరత్ · స్వాలీ'))):
+        kk = e_out(prog(t, c, c + .4)); x, y = m.P(*FORCE_PINS[name])
+        if kk <= .01: continue
+        pin(img, x, y, kk, AMBER if name != 'COCHIN' else CREAM, 12)
+        if name in ('CALICUT', 'SURAT') and ((name == 'CALICUT' and t > c_bo) or (name == 'SURAT' and t > c_fo)):
+            c0 = c_bo if name == 'CALICUT' else c_fo; u = prog(t, c0, c0 + 4.5); lay = Image.new('RGBA', (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(lay)
+            for i in range(6):                                          # ink smoke drifts up and thins out over ~4.5 s
+                r = 16 + 60 * u + i * 8; d.ellipse((x - 60 + i * 12 - r, y - 30 - 160 * u - i * 10 - r, x - 60 + i * 12 + r, y - 30 - 160 * u - i * 10 + r), fill=(64, 60, 54, int(120 * (1 - u))))
+            lay = lay.filter(ImageFilter.GaussianBlur(6)); img.paste(lay, (0, 0), lay)
+        map_label(img, lab, x - 190 if name != 'SURAT' else x - 170, y + (34 if name == 'COCHIN' else -34), 26, INK, kk)
+    # the ledger
+    box = (60, 960, W - 60, 1330); kL = e_out(prog(t, s0, s0 + .4)); plate(img, box, kL, alpha=235)
+    c0x, c1x, c2x = 80, 330, 690; colw = 330
+    small(img, L('DIPLOMACY', 'దౌత్యం'), c1x + colw / 2 - 10, 1000, 28, AMBER, 'mm', kL); small(img, L('FORCE', 'బలం'), c2x + colw / 2 - 20, 1000, 28, AMBER, 'mm', kL)
+    rows = [(L('PORTUGUESE', 'పోర్చుగీసులు'), 1095, s0 + .1, (L('TREATIES', 'ఒప్పందాలు'), L('ALLY: COCHIN, 1500–03', 'మిత్రుడు: కొచ్చి, 1500–03'), c_tr), (L('CANNONS', 'ఫిరంగులు'), L('CALICUT: 1500, 1502', 'కాలికట్: 1500, 1502'), c_ca)),
+            (L('ENGLISH', 'ఇంగ్లీష్'), 1235, c_ce, (L('PERMISSIONS', 'అనుమతులు'), L('SURAT: 1608–13', 'సూరత్: 1608–13'), c_pe), (L('FORCE', 'బలం'), L('SWALLY: 1612', 'స్వాలీ: 1612'), c_fo))]
+    lay = Image.new('RGBA', (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(lay); d.line((80, 1030, W - 80, 1030), fill=GOLD_A + (int(160 * kL),), width=1); d.line((80, 1165, W - 80, 1165), fill=GOLD_A + (int(110 * kL),), width=1); img.paste(lay, (0, 0), lay)
+    for lab, y, cr, cell1, cell2 in rows:
+        kr = e_out(prog(t, cr, cr + .3)); text(img, lab, c0x + 10, y, 30 if not TE else 30, CREAM, 'lm', 'head', kr * kL, 240, None)
+        for (ttl, sub, cc), x0 in ((cell1, c1x), (cell2, c2x)):
+            kc = e_out(prog(t, cc, cc + .3)) * kL
+            if kc <= .01: continue
+            lay = Image.new('RGBA', (W, H), (0, 0, 0, 0)); ImageDraw.Draw(lay).rounded_rectangle((x0, y - 54, x0 + colw - 20, y + 54), 10, fill=(58, 50, 36, int(230 * kc)), outline=GOLD_A + (int(200 * kc),), width=2); img.paste(lay, (0, 0), lay)
+            text(img, ttl, x0 + (colw - 20) / 2, y - 16, 34 if not TE else 32, CREAM, 'mm', 'head', kc, colw - 50, None)
+            small(img, sub, x0 + (colw - 20) / 2, y + 28, 23, PARCH, 'mm', kc, colw - 40)
+    LY.reg('card', box, owner='ledger')
+    return img
+
+# ---- 13 · tease: the Company's arms, the next episode
+@functools.lru_cache(1)
+def ARMS():
+    im = Image.fromarray(FL.img('PD12')).convert('RGB'); im.thumbnail((440, 440), Image.LANCZOS); return im
+def s_tease(t, s0, s1):
+    img = radial_bg(W, H, (40, 34, 24), (9, 9, 9), cy=.42, reach=.8).copy(); k = e_out(prog(t, s0, s0 + .4))
+    a = ARMS(); m_ = Image.new('L', a.size, 0); ImageDraw.Draw(m_).rounded_rectangle((0, 0, a.width - 1, a.height - 1), 16, fill=int(255 * k))
+    x0, y0 = int(W / 2 - a.width / 2), int(540 - 30 * e_io(prog(t, s0, s1))); shadow(img, (x0, y0, x0 + a.width, y0 + a.height), k); img.paste(a, (x0, y0), m_); LY.reg('image', (x0, y0, x0 + a.width, y0 + a.height), owner='arms')
+    small(img, L('EAST INDIA COMPANY · ARMS · PUBLIC DOMAIN', 'ఈస్ట్ ఇండియా కంపెనీ చిహ్నం · పబ్లిక్ డొమైన్'), W / 2, y0 + a.height + 36, 24, MUTED, 'mm', k)
+    plate_text(img, (90, 300, W - 90, 470), L('NEXT · 6/6', 'తర్వాత · 6/6'), L('THE COMPANY THAT CAME TO TRADE', 'వ్యాపారానికి వచ్చిన కంపెనీ'), k, 50 if not TE else 48, owner='tease')
+    kq = e_out(prog(t, s0 + 1.0, s0 + 1.4))
+    plate_text(img, (90, 1060, W - 90, 1280), None, L('ASKED FOR PERMISSION… GAVE ORDERS', 'అనుమతి అడిగింది… ఆజ్ఞలు ఇచ్చింది'), kq, 50 if not TE else 46, owner='tease2')
+    return img
+
+def s_todo(t, s0, s1, name):
+    img = radial_bg(W, H, (30, 26, 20), (9, 9, 9)).copy(); text(img, f'[{name}]', W / 2, H / 2, 40, MUTED, 'mm', 'head'); return img
+
+FUNCS = {'hook': s_hook, 'ocean': s_ocean, 'monsoon': s_monsoon, 'route': s_route, 'pilot': s_pilot, 'welcome': s_welcome, 'gifts': s_gifts, 'old': s_old, 'force': s_force, 'tease': s_tease}
 def render(t):
     LY.reset(); name, s0, s1 = scene_at(t)
-    if name == 'ocean': img = s_ocean(t, s0, s1)
-    elif name == 'monsoon': img = s_monsoon(t, s0, s1)
-    elif name == 'route': img = s_route(t, s0, s1)
-    elif name == 'pilot': img = s_pilot(t, s0, s1)
-    elif name.startswith('cartoon'):
+    if name.startswith('cartoon'):
         k = {'cartoon1': 'Q1', 'cartoon2': 'Q2', 'cartoon3': 'Q3'}[name]; img = cartoon(t, s0, [('CHELLI', k)])
-    else: img = s_todo(t, s0, s1, name)
-    # short cross-fades between scenes
-    for n_, st_ in SC:
-        if 0 < t - st_ < .3 and n_ in ('monsoon', 'pilot') and n_ == name:
-            prev = SC[[x[0] for x in SC].index(n_) - 1]
-            pimg = {'ocean': s_ocean, 'route': s_route}.get(prev[0])
-            if pimg: img = Image.blend(pimg(st_ - .001, prev[1], st_), img, e_io((t - st_) / .3))
+    elif name == 'slide': img = s_slide(t, s0, s1)
+    elif name == 'loop': img = s_loop(t, s0, s1)
+    else: img = FUNCS[name](t, s0, s1)
     overlays(img, t, name); captions(img, t, name); return img

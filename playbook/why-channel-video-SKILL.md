@@ -274,6 +274,36 @@ The user asked for this to be the channel's continuing look so viewers recognise
 - **Motion previews before a full render (Nov 10):** for an upgraded edit, render 10–20 s previews of the key sequences in both languages with sound (`prev.sh` in `videos/2026-11-11_short_gs3_golconda_diamonds/pipeline`). Approval of the previews then covers the full render without another sample round.
 - **Golden Sparrow 3/6 "Diamonds made the legends, cloth filled the ships" (Nov 10): EN 1:44 / TE 2:02, visuals approved.** Diamond-first order, brighter frame 1 (82/255), real-geography maps (Krishna journey, ship routes, thread network), Tavernier evidence card, illustrative fleet reveal. Holding back: mine and evidence sections less dynamic than the payoff, simple ship cutouts on maps, short 1–1.7 s still moments. Credits 368.
 - **Golden Sparrow 4/6 "Follow the money" (Nov 10): EN 1:49 / TE 2:16, approved, honest 8.7.** Strengths: one coin carried through an uncluttered isometric money chain (farmer → collectors → treasury → armies/courts → bankers), careful revenue label (assessed demand, varied, often cash), museum-label annotations on the real farman, Virji Vora loans as arrows, Deccan/Mughal map that folds the sultanates as the front passes, restrained famine (rains fail → Mundy's own page → "historical estimates" → empty loom, near silence), thread from loom to port to sea routes, archival "EARLIER · 1498" cartouche. First video under the professional visual-QC gate (shared badge, caption lane, automated layout checks, defect log). Holding back: bottom fade read as a dark mask under full-screen pictures (fixed rule for next time: fill the whole screen), several revision rounds before render (red stamp, split-flap, badge, captions) that the QC gate should now catch earlier, flat vector maps score low on the sharpness metric (expected, not soft). Credits 1,037 (three historical corrections + the Telugu Madanna–Akkanna line).
+- **Golden Sparrow 5/6 "Europe didn't discover India" (Nov 11): EN 2:17 / TE 2:46, rendered, honest 8.8 (pre-review).**
+  - **Strengths:**
+    - One map with one line of light: the busy Indian Ocean is built people by people, with a Roman-coins-to-1498 time rail, and da Gama's single route plugs into the old network.
+    - Big wind arrows swing round at the monsoon reversal, with ships going to India and then home.
+    - The pilot is an evidence trail with one exhibit at a time:
+      - the crew's journal (manuscript shown alone, then a separate 1898 translation clipping);
+      - 'CHRISTIAN';
+      - Barros 1552 → MALEMO CANAQUA → title, not a name;
+      - IBN MAJID? → unlikely;
+      - a hedged Gujarat verdict on the map.
+    - A diplomacy-and-force ledger filled for both powers.
+  - **Holding back:**
+    - Six script/review rounds before the final render.
+    - The Telugu voice ran 14 s over its estimate.
+    - Flat vector maps score low on the sharpness metric (expected).
+    - The first full Telugu render had held cards (3–4 s with no motion) that freezedetect caught; motion was added before delivery.
+  - **Credits:** 2,072 (a long new evidence line in both languages).
+- **Evidence exhibits (GS 5/6, approved direction):**
+  - **KEEP:**
+    - Show one primary document at a time, with clean cuts (no cross-dissolves between documents).
+    - Lead with one large key term (≈90 px), then the document, then a small source line (≥24 px).
+    - Show a manuscript alone, labelled as what it is (e.g. surviving copy, early 1500s), before any translated quote. Never put a translation quote on the manuscript.
+    - Capture web-text clippings narrow (≈430 CSS px at 2.4×) and crop on whole lines, so they read on a phone.
+    - Label a stand-in object (e.g. a museum coin) "illustrative example, not the excavated original" when the excavated item's identification is uncertain.
+  - **DROP:**
+    - Showing wind as streaks only (use large direction arrows).
+    - Trade routes and wind at the same visual weight (routes go quiet and stop moving when the wind is the subject).
+- **Telugu cue timing (GS 5/6):**
+  - **KEEP:** align the script words to a Telugu Whisper pass split at pauses (`words_te2.py`), not character-proportional timing. Then check every Telugu exhibit cue on the frame.
+  - **KEEP:** run freezedetect on both languages, because slower Telugu narration creates longer holds. Give every hold of more than 2.5 s meaningful motion (a route ship advancing, a slow pan on real pixels, traffic on the routes).
 - **Archival styling for historical series (GS 4/6, approved):** annotations as museum labels (ink plate, thin gold rule, kicker + title, leader line to the exact spot on the source, soft highlighter); date reveals as an ink cartouche with an antique-gold double rule on a period map; no rubber stamps, split-flap boards or neon.
 
 - **Professional visual QC is a delivery gate (user, Nov 10, GS 4/6 previews), for every Why? and Why? Telugu video.** Technical QC (resolution, frames, sharpness, loudness, safe areas) is not enough; a video is not approved until it also passes visual QC. Every effect must look designed by the same editor in the same design system (premium editorial documentary), and an effect that looks out of place is replaced even if it works technically.
