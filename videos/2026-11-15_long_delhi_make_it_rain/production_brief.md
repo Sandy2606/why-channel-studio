@@ -25,6 +25,9 @@ TE title: ఢిల్లీకి కృత్రిమ వర్షం ఎం�
 | Nov 11 (approval v3) | ART-04: **Gemini.** A master reference for Anu and her family first, distinct from Chelli, consistent across chapters, lighting, clothing, balcony and paper boat. Show the master before the other character images. | this film and Shorts |
 | Nov 11 (approval v3) | BR-03 tags: EN "DELHI RAIN · n/6" and "DELHI RAIN · FULL STORY"; TE "ఢిల్లీ వర్షం · n/6" and "ఢిల్లీ వర్షం · పూర్తి కథ". | season |
 | Nov 11 (approval v3) | Keep the reuse matrix. After the fact checks, record one take per line and save each clean EN and TE clip to `voice_lib/` with its ID and metadata. Reuse in all six Shorts; new Short narration only where needed. Confirm the time-sensitive lines and the budget before spending credits. | season |
+| Nov 11 (motion test) | **Motion proof of concept approved** for Delhi Rain: characters live inside the scene; environment changes and meaningful actions carry the story; natural object motion, no repetitive zooms or warped faces; purposeful stillness allowed; painterly documentary look. Scope: this documentary only, not a channel-wide style change. | this film and Shorts |
+| Nov 11 (motion test) | **A0 accepted** as the master character appearance. B0 becomes the master location once provided. Priority: Anu's disappointed expression, back view and other missing poses. Every final scene image separate and high resolution. | this film and Shorts |
+| Nov 11 (motion test) | **AI disclosure: No** for the clearly illustrated fictional scenes (painted style, ILLUSTRATIVE tag; narrator = the user's own voice clone). Reassess on the complete final film and any other generated elements (→ PUB-05). | this film |
 
 ## Exceptions to shared rules
 | Rule ID | What differs | Why | Approved (date) | Scope |
@@ -520,6 +523,15 @@ Written for Telugu viewers, not translated line by line. Same facts, the same li
 **7.7** Science ఒక మేఘంతో **అద్భుతాలు** చేయగలదు. ⏸ కానీ ముందు… ఆ **మేఘం** ఉండాలి.
 
 ---
+
+## Voice recording (done Nov 11–12, WF-01 step 5)
+- **148 clips, one take each** (74 EN + 74 TE), eleven_v4, Sandeep English / Sandeep Telugu clones.
+- **Credits used: 15,785** (EN 7,679 · TE 8,106), exactly the confirmed budget. The ≈550 contingency is unused.
+- Raw speech: EN 8:38, TE 10:19, before the Pace Model edit (→ ED-01).
+- Saved to `voice_lib/` with index entries, tag `delhirain_film` (→ CR-03).
+- 6.2–6.3 were recorded last, from the Nov 11 status check. They are re-voiced only if the Nov 13 check changes anything.
+- **ASR check:** EN with Whisper small.en; TE with te_med (→ ED-04). Results in `/home/claude/delhirain/voice/asr_*.json` (working files).
+  - EN: every line matches the script, except **EN 6.0**: both small.en and medium hear "Chapter six, **Dehi** tries again". Needs a listen; a re-take would cost ≈31 credits (CR-01: ask first).
 
 ## Duration and credits (planning estimate; measured after recording, never sped up → FMT-01)
 | | English | Telugu |

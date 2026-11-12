@@ -1,4 +1,4 @@
-# Delhi Rain: image prompt pack v1, master references only (A0, B0)
+# Delhi Rain: image prompt pack v2 (A0 approved · B0 pending · Batches 1–2 ready)
 
 **How to make the images (→ ART-04, ART-06):**
 - **Where:** Gemini on your phone. Use **one Gemini chat for the whole season**, so it keeps the same faces and style.
@@ -71,3 +71,62 @@ Soft natural morning light, no text, letters, labels, logos or watermarks.
 | S13 | 7.7 | The skyline with a single cloud, the boat on the sill in the foreground |
 
 Shots S02, S07, S10 and S13 have no faces and reuse the B0 set, so if any Gemini image comes out inconsistent, those can be painted over or animated in code.
+
+---
+
+## Status
+- **A0: APPROVED** as the master for faces and outfits (Nov 11): `refs/A0_family_master.png`.
+- **B0:** still to come. The set batches (P1–P4) are written once it arrives.
+
+## How to make Batches 1–2 (→ ART-04, ART-06; motion-test direction approved Nov 11)
+- Stay in **the same Gemini chat** as A0. In every prompt, **attach A0** and say "edit". We change the pose and expression, never the face, hair, glasses or clothes.
+- **One figure per image**, full body (unless stated), on the **same plain warm-grey background** as A0, evenly lit, no shadow on the background. That lets us cut the figure out cleanly for animation.
+- **Portrait 3:4 at the highest resolution.** The figure should fill most of the height, at least 1600 px tall.
+- **No collages**, no text, no extra people. If a face drifts from A0, ask Gemini to "edit again, keep her face exactly as in A0" rather than starting over.
+- Send the images back with their IDs.
+
+## Batch 1: Anu's missing poses (priority)
+
+### A1a · Anu, back view, walking: left foot forward
+```
+Edit the attached character sheet. Show ONLY Anu, the 9-year-old girl, from directly behind, walking away from the viewer: her LEFT foot forward mid-step, the small cricket bat resting on her right shoulder, held by the taped handle. Keep her exactly as in the sheet: short chin-length dark bob, red glasses (only the arms of the frame visible from behind), mustard-yellow knitted hoodie with the hood down, teal scarf with fringed ends hanging at her back, navy track pants with two white side stripes, white canvas shoes. Full body, natural child proportions, no distortion. Same painterly style and the same plain warm-grey background as the sheet, evenly lit. Portrait 3:4, highest resolution. No text, no other people.
+```
+
+### A1b · Anu, back view, walking: right foot forward
+```
+Edit the attached character sheet. Same as the previous image of Anu walking away from the viewer from directly behind, bat on her right shoulder, but now her RIGHT foot is forward mid-step and her left arm swings slightly forward. Identical clothes, hair, scarf and proportions, same scale and position in the frame so the two images can alternate as a walk. Same painterly style and plain warm-grey background. Portrait 3:4, highest resolution. No text, no other people.
+```
+
+### A2 · Anu, disappointed (three-quarter)
+```
+Edit the attached character sheet. Show ONLY Anu in a three-quarter view facing left, standing still. She is quietly disappointed: head tilted slightly down, eyes looking down and to the side, mouth closed in a small frown, shoulders a little dropped. Her right hand lets the small cricket bat hang down beside her leg, its tip touching the ground. Keep her face, red glasses, short dark bob, mustard hoodie, teal scarf, navy track pants and white shoes exactly as in the sheet. A gentle, natural expression, not exaggerated or cartoonish. Full body, same painterly style, plain warm-grey background. Portrait 3:4, highest resolution. No text, no other people.
+```
+
+### A3 · Anu, hopeful, looking up (three-quarter)
+```
+Edit the attached character sheet. Show ONLY Anu in a three-quarter view facing right, standing still, looking up at the sky with quiet hope: chin raised, eyes wide behind her red glasses, lips slightly parted, a hint of a smile. Hands loosely together in front of her hoodie, no bat. Keep her face, glasses, hair and clothes exactly as in the sheet. Full body, same painterly style, plain warm-grey background. Portrait 3:4, highest resolution. No text, no other people.
+```
+
+### A4 · Anu, delighted, crouching by a puddle
+```
+Edit the attached character sheet. Show ONLY Anu crouching low in a side-on three-quarter view facing right, her arm reaching forward as if setting a small paper boat onto water just out of frame at the lower right. She is delighted: a wide natural smile showing the small gap in her front teeth, eyes bright. Keep her face, red glasses, short bob, mustard hoodie, teal scarf, navy track pants and white canvas shoes exactly as in the sheet. Do not draw the water or the boat. Full body, same painterly style, plain warm-grey background. Portrait 3:4, highest resolution. No text, no other people.
+```
+
+## Batch 2: Mum and Dad
+
+### A5 · Mum, reaching to stop Anu (three-quarter)
+```
+Edit the attached character sheet. Show ONLY the mother in a three-quarter view facing left, one step forward, her right hand reaching out at about the height of a 9-year-old's shoulder (as if gently resting it on a child just out of frame). Her expression is kind but firm, a small sad smile, eyebrows slightly raised: a gentle "not today". Keep her face, low bun, small black bindi, muted maroon saree and grey cardigan exactly as in the sheet. Full body, same painterly style, plain warm-grey background. Portrait 3:4, highest resolution. No text, no other people.
+```
+
+### A6 · Mum looking at her phone
+```
+Edit the attached character sheet. Show ONLY the mother in a three-quarter view facing right, looking down at a plain smartphone held in both hands at chest height. The phone's back faces the viewer, so the screen is NOT visible. Her expression is surprised and curious, eyebrows lifting. Keep her face, bun, bindi, maroon saree and grey cardigan exactly as in the sheet. Full body, same painterly style, plain warm-grey background. Portrait 3:4, highest resolution. No text, no other people.
+```
+
+### A7 · Mum and Dad looking up (from behind)
+```
+Edit the attached character sheet. Show ONLY the mother and father side by side, seen from behind and slightly to one side (three-quarter back view), both looking up at the sky. The father's hand rests lightly on the mother's shoulder. Keep their hair, clothes and proportions exactly as in the sheet: her low bun, maroon saree and grey cardigan; his short side-parted hair, navy V-neck sweater, light-blue checked collar and grey trousers. Full body, same painterly style, plain warm-grey background. Portrait 3:4, highest resolution. No text, no other people.
+```
+
+**After Batches 1–2:** the set batch (P1–P4, by editing B0), the props (boat, bat, folding hands), then A8 (Anu a year older) and the Solapur farmer. These follow the asset breakdown already approved.
