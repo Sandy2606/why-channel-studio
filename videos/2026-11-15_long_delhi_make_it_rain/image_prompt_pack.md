@@ -254,3 +254,28 @@ R5b: Exactly the same jar, shelf, angle, size and light as the attached image, b
 ```
 Same painterly style as the attached balcony view. A green-and-yellow Delhi CNG auto-rickshaw seen exactly from the side, facing left, no driver visible, no number plate text, no logos. Full vehicle, plain warm-grey background, even light, no shadows on the background, no text. Landscape, highest resolution.
 ```
+
+
+## Batch 5b · corrections only (Nov 12)
+Checked against A0/B0: **R4a, R4b, R5a, R5b and F0 pass** and stay as they are. Four images need one correction each.
+
+### A8 correction (ChatGPT, same conversation): attach A8 and A3
+```
+Edit the first attached image (Anu a year older). Keep her a little older and taller exactly as she is, but match the second attached image (Anu) in every other way: the same warm medium-brown skin tone, the same round face, the same dark-brown hair colour, and the same mustard-yellow hoodie with a front zip and a hood. Keep the red round glasses, teal scarf, navy track pants with white stripes and white canvas shoes. Change the pose to three-quarter view facing right, hands in the hoodie pockets, looking up at a grey sky with a thoughtful, patient expression. Plain warm-grey background, same painterly style, no text. Portrait, highest resolution.
+```
+
+### M3 correction (ChatGPT, same conversation): attach M3 and A5
+```
+Edit the first attached image. Keep the pose, the lowered hand, the saree, cardigan, bangle and watch exactly as they are. Replace only the face and hair so she is the same woman as in the second attached image: the same face shape, age, nose, eyes, eyebrows, small black bindi and low bun with a few loose strands. Keep the gentle, sympathetic expression. Plain warm-grey background, same painterly style, no text. Portrait, highest resolution.
+```
+
+### S1a correction (Gemini, for the size): attach S1a
+ChatGPT images max out at about 1536 px on the long side; Gemini gave our 2576 px plates.
+```
+Recreate the attached image as faithfully as possible at a larger size: the same dry, cracked farmland, the same tree on the left, the small farmhouse on the right, the low hills and the same flat pure green #00FF00 sky. Same painterly style and warm light. Landscape 16:9, at least 2560 px wide, no text.
+```
+
+### S1b correction (Gemini): attach S1a
+```
+Same painterly style as the attached field image, sky only, no land: a wide band of grey-white monsoon clouds drifting over a pale sky, layered at different heights, bright edges where the sun catches them. NO rain, no rain shafts or streaks falling from the clouds: these clouds pass without raining. Very wide format, about 3:1, at least 4000 px wide, no text.
+```
