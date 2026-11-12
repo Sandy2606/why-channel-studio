@@ -1,9 +1,9 @@
-# Production brief: Why Can't Delhi Make It Rain? · film + 6 Shorts · v2 (film scripts for review)
+# Production brief: Why Can't Delhi Make It Rain? · film + 6 Shorts · v3 (humanised film scripts for review)
 
 Owner of this season's plan (precedence level 2). Rules cited by ID.
 - Rules: main `07f71fd5f7fff882431673ae28b456a56af8eebc` (Mode A, Nov 11, 2026).
-- Stage: WF-01 steps 2–4. The film scripts (EN and TE) are below for review. Short scripts follow once the film is approved.
-- No voice, credits or render until you approve the script.
+- Stage: WF-01 step 4 (script versions). The film scripts (EN and TE) are below for approval. The Shorts follow once the film is approved.
+- No voice, credits or render until you approve.
 
 TE title: ఢిల్లీకి కృత్రిమ వర్షం ఎందుకు కురిపించలేకపోతున్నారు?
 
@@ -11,36 +11,46 @@ TE title: ఢిల్లీకి కృత్రిమ వర్షం ఎం�
 | Date | Decision | Scope |
 |---|---|---|
 | Nov 11 | Topic: "Why Can't Delhi Make It Rain?" The angle is the attempted fix, not a general pollution explainer. | season |
-| Nov 11 | "Not a standalone for the full week for our channel": film plus six connected Shorts (→ FMT-02, FMT-08). | season |
-| Nov 11 (review v1) | Arc approved with revisions: stronger hooks, scientific qualifications, the Solapur vs Delhi contrast as a major discovery. | season |
+| Nov 11 | "Not a standalone for the full week for our channel": the film plus six connected Shorts (→ FMT-02, FMT-08). | season |
+| Nov 11 (review v1) | Arc approved with revisions: stronger hooks, scientific qualifications, Solapur vs Delhi as the major discovery. | season |
 | Nov 11 (review v1) | **Narrator only.** Anna and Chelli stay with Golden Sparrow. | season |
-| Nov 11 (review v1) | Leave GS 6/6 untouched. A pinned comment or community post says Golden Sparrow will return. No date is promised. | season |
-| Nov 11 (review v1) | Keep Nov 15. Fact checks and both film scripts come first; no approval gate is skipped. | season |
-| Nov 11 (review v1) | Write EN and TE naturally for each audience. Don't translate line by line. Same verified facts in both. | season |
+| Nov 11 (review v1) | GS 6/6 untouched. A pinned comment or community post says Golden Sparrow will return; no date is promised. | season |
+| Nov 11 (review v1) | Keep Nov 15. Fact checks and both film scripts come first; no gate is skipped. | season |
+| Nov 11 (review v1) | Write EN and TE naturally for each audience, with the same verified facts. | season |
+| Nov 11 (review v2) | **Subscribe reminders: about one every two minutes.** A small animated card over the narration, about 2 s, using the existing CTA animation and SFX. No new voice lines or credits. Never during a discovery or an emotional moment. Placed in the scene sheet as editing cues, not in the narration. | this film |
+| Nov 11 (review v2) | **Humanise the whole script.** A relatable human experience early, carried through the science, the failure, the temporary relief and the answer. Concrete everyday examples. A knowledgeable friend telling a true story. No forced drama, no invented real events, no unsupported claims. Narrator only; illustrative people are visual only. Keep the fact checks and the approved structure. | this film |
 
-Disclosure: narrator only (Sandeep's voice clone), no photoreal AI people. The decision is made at post-copy stage (→ PUB-05).
+## Exceptions to shared rules
+| Rule ID | What differs | Why | Approved (date) | Scope |
+|---|---|---|---|---|
+| FMT-05 | Reminders come about every 2 minutes (EN ≈4, TE ≈4–5) rather than only at story breaks. Each still lands on the nearest calm line, never during a discovery or an emotional beat, and never in the first 15 s. | The user's decision (review v2) | Nov 11 | this film |
 
-## v1 → v2 changes
-1. **IIT Delhi report** [C10]:
-   - The primary PDF says "This study has not been through any peer review" and that AI language models were used.
-   - Voice: "a preliminary analysis by IIT Delhi researchers".
-   - Screen: "PRELIMINARY · NOT PEER-REVIEWED · IIT DELHI CAS, OCT 2025".
-2. **Moisture** [C3]:
-   - The "50% ideal" comparison is gone.
-   - The 15–20% figure is attributed to IIT Kanpur's director.
-   - The voice explains that a seedable cloud needs several things: water, droplets that can grow, rising air.
-3. **80–95%** is now explicitly *heavy natural* rain. The 1–5-day rebound is worded as an observed pattern ("typically").
-4. **Solapur** is now the big discovery (Chapter 5):
-   - Figures from the BAMS paper itself: 18.42% ± 2.57%, 100 km² downwind, the 2 hours after seeding, randomised seed and no-seed clouds.
-   - Followed directly by "Why can't Delhi copy it?"
-5. **2026:**
-   - Sirsa confirmed on Nov 11 that trials are ongoing under IIT Kanpur [C18]. No results are published.
-   - **Re-check on Nov 20, before Short 6/6 is locked.**
-   - I couldn't find the Nov 6 Hindustan Times report the review mentions. The Nov 11 confirmation covers it.
-6. **History:** Short 1/6 now rests on the original paper, Roy et al., *Indian J. Met. Geophys.* (now MAUSAM) 12(3), 1961, on the 1957–59 Delhi trials [C17].
-7. **Silver iodide's ice-like crystal** now rests on TU Wien, *Science Advances*, reported Dec 10, 2025 [C7].
-8. **Opening:** the cinematic contradiction (plane → waiting → no rain → "or something no aircraft could control?"). The answer unfolds through the film.
-9. **Short hooks** reworked from the review's directions. The 1/6 direction began "did you know", which ST-03 forbids, so it's rephrased.
+## v2 → v3 changes
+1. **A human thread through the whole film:**
+   - **Anu**, 9, and her family in **Mayur Vihar**, one of the areas the Oct 28 flights targeted [C2].
+   - Shown with the on-screen tag **ILLUSTRATIVE EXAMPLE · NOT A REAL PERSON** (→ ST-05). She's drawn and silent; the narrator tells her story.
+   - In the Telugu version she's part of a Telugu family settled in Delhi.
+   - She appears in every chapter:
+     - the hope (cold open);
+     - what Delhi wanted (Ch. 1);
+     - her balcony sky (Ch. 2 → 3);
+     - the "grey isn't cloud" moment (Ch. 3);
+     - the clear morning after real rain, then the haze returning (Ch. 4);
+     - "look up from Anu's balcony" vs Solapur (Ch. 5);
+     - a year older in 2026 (Ch. 6);
+     - the answer, put in terms of her mornings (payoff).
+2. **One recurring object (→ DIR-06):** Anu's **paper boat**. Folded for the promised rain, it stays dry on the sill. It finally floats after a real downpour, then sits on the sill again at the end.
+3. **Everyday examples for the science (→ ST-04):**
+   - a dust speck in a sunbeam (floating droplets);
+   - a water bottle in the freezer that stays liquid until you tap it (supercooling) [C19];
+   - silver iodide as a template;
+   - the salt jar going lumpy in the monsoon (salt pulls water from the air) [C20];
+   - the cloud as a kitchen that needs ingredients;
+   - smog as a blanket over the rooftops;
+   - the randomised trial as a coin toss.
+4. **Voice:** more of a friend telling the story ("Okay, picture this", "Here's the thing", "right?"; TE "ఒక్కసారి ఊహించండి", "కదా?") and fewer report-style sentences. Every fact, attribution and qualification from v2 is kept.
+5. **Visual concept: one continuous drawn world** (→ DIR-12) instead of a run of cards. Facts appear inside the scene where possible: the dry boat, the gauge on the balcony rail, the building across the road fading and returning. Source chips stay where the rules require them (RS-04 estimates, attributed quotes). See "Scene concepts" below.
+6. **Subscribe reminders** moved out of the script into editing cues (below).
 
 ## Schedule (→ WF-04, flagged, no date moves)
 - The film must be complete by **Sat Nov 14** for Sunday.
@@ -53,7 +63,8 @@ Disclosure: narrator only (Sandeep's voice clone), no photoreal AI people. The d
   - film script approved by Thu Nov 12;
   - scene sheet agreed by Fri Nov 13;
   - any licensed photos of the 2025 flights sent by Fri Nov 13.
-  - The film can also be built entirely from animation and maps, so it doesn't have to wait on photos.
+  - The film can be built entirely from animation and maps (no photos needed), but the Anu set is new drawing work.
+- **v3 adds about 2 min and ≈3,600 credits**, which also adds voice and render time.
 
 ## Central question and payoff (→ ST-01)
 - **Question:** Delhi had the planes, the scientists and the chemicals. Why didn't it rain? And would rain have fixed the smog anyway?
@@ -76,16 +87,53 @@ Disclosure: narrator only (Sandeep's voice clone), no photoreal AI people. The d
 
 - **Neutrality:** every claim is attributed to a named official or institution. The script takes no side between parties.
 
-## Retention check (applying ST-01 and ST-10 to this script)
+## Retention and human-story check (ST-01, ST-03, ST-04, ST-10)
 | Check | Where it's met |
 |---|---|
-| The opening leaves a question open | 0.4–0.6: no rain → "or something no aircraft could control?" The answer isn't given until Chapter 3 |
-| Each chapter ends on the next question | 1.4 → inside a cloud; 2.9 → the sky that day; 3.10 → would rain clean it?; 4.8 → is seeding fake?; 5.9 → so what now?; 6.5 → payoff |
-| Theory comes after the viewer knows why it matters | The cloud physics (Ch. 2) comes after the failure. The heights comes after "this wasn't bad luck" |
-| Memorable ending | 7.6: "But first, you need the cloud." |
-| Concrete people (ST-04) | Agrawal, Ghude, Prabhakaran, Sirsa, the Solapur team |
+| Relatable human experience early | 0.1–0.6: Anu can't play; the building across the road vanishes; "Not today. Again."; the paper boat |
+| Why someone in Delhi cares | 0.4–0.6 hope; 1.3 "Not water. Air."; 3.5 "the days Anu stays indoors" |
+| Carried through the science | 2.12 "the sky over Anu's balcony"; 3.6 "that grey isn't cloud"; 5.9 "look up from Anu's balcony" |
+| Through the failure, the relief and the answer | 0.9 dry boat; 4.2 boat floats; 4.6 the building fades again; 6.1 a year older; 7.6 "her clear mornings… from the ground" |
+| Everyday examples | dust in a sunbeam, freezer bottle, template, salt jar, kitchen, blanket, coin toss |
+| Friend's voice, not a report | "Okay, picture…", "Here's the thing", "You may have seen this at home", "And you know how salt behaves" |
+| Not forced or invented | Anu is labelled illustrative; she has no health claims and no real-event claims; only Mayur Vihar (a real target area) is factual |
+| Opening question stays open | The answer starts in Ch. 3 and lands in 7.1–7.7 |
+| Memorable end | "But first… you need the cloud." The boat waits on the sill |
 
-After publication: judge only on retention and viewed vs swiped-away data (→ AN-01 v2, AN-03 v2).
+## Scene concepts: film, not slides (→ DIR-02, DIR-03, DIR-06, DIR-12)
+Styles are proposed here for checking; the scene sheet names them per line for your approval (→ DIR-01).
+
+| Chapter | The continuous scene | Existing capability | Built for this film |
+|---|---|---|---|
+| Cold open | Anu's balcony in Mayur Vihar; the building across the road dissolves in haze. Mum's phone. The paper boat. The camera rises off the balcony and the flight line draws across the sky (Meerut → Delhi), with flares lighting over Burari, Karol Bagh, Mayur Vihar. The boat stays dry; a trace in the rain gauge | Map Route (Remotion #1) for the flight line; GS cinematic reconstruction (2.5D layers, no parallax on people → MO-02) | The balcony set and Anu, drawn in code. Option: recast the existing Chelli rig as Anu, silent, no lip-sync (→ DIR-12). No new voice |
+| 1 · The plan | Same sky; the flight line becomes the five-trial plan; ₹3.21 crore as a chip on the plan | Headline (Remotion #15) for the approval news, labelled ILLUSTRATIVE if generic | — |
+| 2 · Inside a cloud | One continuous push into the cloud: droplets float like dust in a sunbeam; the thermometer drops below zero; a freezer-bottle inset freezes on a tap; the silver iodide lattice slides under the ice lattice; crystals grow, fall and melt; a salt grain pulls droplets in, with a salt-jar inset | **Glow Atom** (the AgI crystal: "this one piece matters"); **3D Explainer** (cloud layers) | Droplet and crystal particle animation inside the cloud (process shown on the object → DIR-03) |
+| 3 · The wrong sky | Back down to the balcony: the cloud "kitchen" checklist is drawn on the cloud itself, half empty. Calendar strip Nov–Feb. "That grey isn't cloud" pull-back: a side view of the sky with smog as a blanket over the rooftops (<2 km) and seedable clouds above (2–5 km) | **3D Explainer** (sky layers); Before & After (Remotion #26) for cloud vs smog | — |
+| 4 · Rain vs smog | Real downpour over the same street; particles wash out; the building across the road returns; the boat floats. Then a day strip 1→5 as the haze rebuilds from traffic, dust and smoke | **Day Counter** (Remotion #24) for 1–5 days; Before & After (#26) for the clear vs hazy morning | Rain and particle washout over the balcony set |
+| 5 · Solapur | The camera flies south on the map (Map Route) to Solapur's rain shadow; a farmer looks up (ILLUSTRATIVE). Towering monsoon clouds; flares at the cloud base; clouds tagged SEED / NO SEED by a coin toss; rain bars. Then a split screen: Solapur's growing clouds vs Anu's empty November sky | Map Route (#1); **3D Data Chart** for seeded vs not-seeded, labelled with the BAMS source; split screen as in the GS lesson scene | — |
+| 6 · 2026 | Balcony a year on (a calendar on the wall); a plane passes over the haze; Money Stack for the cost estimates | **Money Stack** (Remotion #12), labelled "2025 · IIT KANPUR ESTIMATE" | — |
+| Payoff | The camera comes down from the sky to the ground: traffic, chimneys, dust, the things that fill the air. Then Anu's sill, the boat, a single cloud over the skyline. End card | **Domino Reveal** (the chain: no cloud → no rain → short relief → fix at the ground) | — |
+
+Every factual field in a Remotion effect carries its source, or DEMO if it's illustrative. The nine Python styles and the Remotion effects are kept as separate collections (CLAUDE.md 8).
+
+## Subscribe reminders: editing cues (scene sheet only; NOT narration, NOT sent to ElevenLabs)
+- **Card:** the existing `pipeline/style_v2/cta_card.py` mini card, used in the Diwali film the same way: scaled 0.5, top right, over the scene.
+- **Sounds:** the existing `ui_click`, `ui_pop` and `ui_bell` at about half volume, with `woosh_air` (→ FMT-05).
+- **Timing:** the shared card puts the click at 1.05 s and the bell at 2.05 s. For this film only, time is compressed ×1.2 in this film's render code: click ≈0.9 s, bell ≈1.7 s, fade from 2.2 s, gone by ≈2.5 s. The shared file isn't changed, so the Shorts keep their timing.
+- **Voice:** no new voice lines, no credits.
+
+Planned positions from the line-by-line estimate (EN 2.5 words/s, TE 10.82 chars/s, plus pauses and cards). Final times come from the recorded audio. Each card appears 0.3 s after the named line ends, so it plays over the *next* line, which is checked as a calm one:
+
+| # | EN ≈ | After EN line | TE ≈ | After TE line | Plays over | Why it's safe |
+|---|---|---|---|---|---|---|
+| 1 | 2:01 | 1.3 | 2:39 | 1.3 | 1.4 "let's go inside a cloud" | A transition, before the dive |
+| 2 | 4:32 | 3.2 | 4:35 | 2.8 | EN 3.3 "that wasn't bad luck" · TE 2.9 "bigger, faster" | Calm lines. Clear of 2.10 ("you need a cloud") and 3.5 ("the cruel part") |
+| 3 | 7:11 | 4.9 | 7:04 | 3.8 | EN 4.10 "is it fake?" · TE 3.9 "drifting above the problem" | Not on the downpour (4.2), the haze returning (4.6) or 3.6 ("grey isn't cloud") |
+| 4 | 9:25 | 6.3 | 9:10 | 4.9 | EN 6.4 cost · TE 4.10 "is it fake?" | Status/transition lines |
+| 5 | — | — | 12:08 | 6.3 | TE 6.4 cost | TE only (TE runs ≈3 min longer) |
+
+- **Never during:** the cold open, chapter cards, 4.2 (the boat floats), 5.5–5.6 (the Solapur result), 5.9 (the contrast) or the payoff 7.0–7.7.
+- **Spacing:** EN about every 2:00–2:40 (4 cards); TE about every 2:00–3:00 (5 cards).
 
 ## Season arc (→ FMT-02, FMT-03, FMT-08). ★ = a fact only that Short has
 | Day | Video | Opening direction | Key facts | ★ | Tease → next |
@@ -102,11 +150,12 @@ After publication: judge only on retention and viewed vs swiped-away data (→ A
 - EN: "Golden Sparrow Season 2 is coming back. This week we're taking a short break for a documentary week: Why Can't Delhi Make It Rain?"
 - TE: "బంగారు పిచ్చుక సీజన్ 2 మళ్లీ వస్తుంది. ఈ వారం ఒక ప్రత్యేక documentary week: ఢిల్లీకి కృత్రిమ వర్షం ఎందుకు కురిపించలేకపోతున్నారు?"
 
+
 ## Source register (→ RS-01 – RS-06). All checked Nov 11, 2026
 | ID | Claim | Source | Date checked | Wording note |
 |---|---|---|---|---|
 | C1 | Five trials approved, ₹3.21 crore outlay, IIT Kanpur, May 2025 | News on AIR, May 8, 2025: https://www.newsonair.gov.in/delhi-govt-approves-5-cloud-seeding-trials-at-₹3-21-crore-outlay-to-combat-air-pollution | 2026-11-11 | "set aside / sanctioned", not "spent" |
-| C2 | Oct 28, 2025: Cessna from Meerut; flares with silver iodide and salt compounds; Burari, Karol Bagh, Mayur Vihar, Badli | Business Standard, Oct 29, 2025: https://www.business-standard.com/india-news/second-cloud-seeding-trials-fail-in-delhi-here-s-why-it-didn-t-work-125102900187_1.html | 2026-11-11 | Reports differ on the flare count: show no count |
+| C2 | Oct 28, 2025: Cessna from Meerut; flares with silver iodide and salt compounds; Burari, Karol Bagh, Mayur Vihar, Badli | Business Standard, Oct 29, 2025: https://www.business-standard.com/india-news/second-cloud-seeding-trials-fail-in-delhi-here-s-why-it-didn-t-work-125102900187_1.html | 2026-11-11 | Reports differ on the flare count: show no count. Mayur Vihar is a real target area; Anu's family is ILLUSTRATIVE |
 | C3 | IMD: no rain in Delhi; Noida 0.1 mm, Greater Noida 0.2 mm (Delhi govt report). Agrawal: "very low moisture content — around 15 to 20 per cent"; "not completely successful" | Business Standard (as C2); Tribune, Oct 29, 2025: https://www.tribuneindia.com/news/delhi/no-rain-in-delhi-iit-kanpur-director-explains-why | 2026-11-11 | Attribute both. No 50% comparison |
 | C6 | IIT Kanpur reported a 6–10% PM reduction | Eco-Business/Mongabay (C12) | 2026-11-11 | Always paired with the dispute |
 | C7 | Silver iodide: "the same hexagonal symmetry and very similar distances between atoms" as ice; only the silver-terminated face matches | Physics World, Dec 10, 2025, on TU Wien, *Science Advances*: https://physicsworld.com/a/scientists-explain-why-seeding-clouds-with-silver-iodide-is-so-efficient/ | 2026-11-11 | — |
@@ -120,243 +169,278 @@ After publication: judge only on retention and viewed vs swiped-away data (→ A
 | C16 | Andhra Pradesh hygroscopic seeding 2003–2008: 12 districts, 2,200 sorties, 1,600 analysed | *Journal of Weather Modification* 41(1), 2009: https://journalofweathermodification.org/index.php/JWM/article/view/184 | 2026-11-11 | Programme facts only, no result |
 | C17 | Delhi monsoon trials 1957–59: salt seeds of suitable sizes released from ground-based generators | Roy, Ramana Murty, Srivastava, Khemani, *MAUSAM* 12(3), 1961, pp. 401–412: https://mausamjournal.imd.gov.in/index.php/MAUSAM/article/view/4212 | 2026-11-11 | Results not in the abstract: ⚠ read the full PDF before Short 1/6, or say only that the trials ran |
 | C18 | Nov 11, 2026: Sirsa says trials are ongoing under IIT Kanpur's supervision, as "part of an ongoing study"; details once the study "reaches completion"; IIT Kanpur sources say an aircraft is ready, pending moisture | The News Mill, Nov 11, 2026: https://thenewsmill.com/2026/11/delhi-environment-minister-confirms-iit-kanpur-cloud-seeding-trials/ | 2026-11-11 | ⚠ re-check Nov 20 for Short 6/6. The aircraft detail is unnamed sources: not used in the voice |
+| C19 | A bottle of water in a freezer can stay liquid below 0 °C (supercooled) and freeze in seconds when hit | BBC Science Focus, Len Fisher: https://www.sciencefocus.com/science/why-does-water-freeze-instantly-when-you-hit-a-bottle-just-out-of-the-freezer | 2026-11-11 | "can stay", "sometimes": it doesn't always happen |
+| C20 | Salt is hygroscopic: it absorbs water vapour from the air, so it clumps in humid weather | Indiana Public Media, A Moment of Science, Sep 18, 2019: https://www.ipm.org/show/amomentofscience/2019-09-18/salt-clumps | 2026-11-11 | Everyday analogy for hygroscopic seeding |
 
 Not used: UAE and China claims (no solid figures); Karnataka results; the "50% ideal" comparison.
 
 ---
 
-# FILM SCRIPT · ENGLISH
-Format → ST-07. **Bold** = stress, ⏸ = pause, → = visual beat. Tags are light (→ ST-08). Visual styles are proposed at scene-sheet stage (→ DIR-01).
+# FILM SCRIPT · ENGLISH (v3)
+Format → ST-07. **Bold** = stress, ⏸ = pause, → = visual beat. Tags are light (→ ST-08). Every Anu scene carries the tag ILLUSTRATIVE EXAMPLE · NOT A REAL PERSON on first appearance and a small "ILLUSTRATIVE" corner tag after that.
 
 ### COLD OPEN
-**0.1** [calm, low] October 28, 2025. ⏸ A small plane takes off from Meerut… and turns towards **Delhi**. [C2]
-→ Map: Meerut → Delhi flight line draws; plane icon; chip "28 OCT 2025 · IIT KANPUR TRIAL"
-**0.2** Under its wings are flares, packed with **silver iodide** and **salt**. ⏸ Over the city, it fires them into the clouds. [C2]
-→ Flare ignites under a wing (illustration); pins light over Burari, Karol Bagh, Mayur Vihar
-**0.3** Below, Delhi is choking in smog. ⏸ The hope is simple: make it **rain**… and wash the air clean. [C2]
-→ City under haze (no AQI figures shown)
-**0.4** [slower] Scientists watch the sky. ⏸ They wait. ⏸ And Delhi gets… **no rain**. [C3]
-→ Clock sweeps; dry street; chip "IMD: NO RAIN RECORDED IN DELHI"
-**0.5** Not in the city. ⏸ Noida got **0.1** of a millimetre. Greater Noida, **0.2**. [C3]
-→ Two near-empty rain gauges; chip "DELHI GOVERNMENT REPORT"
-**0.6** [curious] So what went wrong? ⏸ The plane? The chemicals? ⏸ Or something **no aircraft could ever control**?
-→ Title card: WHY CAN'T DELHI MAKE IT RAIN?
+**0.1** [warm, low] Okay, picture a winter morning in Delhi. ⏸ Mayur Vihar. ⏸ A nine-year-old… let's call her **Anu**… wants to go down and play.
+→ Anu at the balcony door with a cricket bat; tag ILLUSTRATIVE EXAMPLE · NOT A REAL PERSON
+**0.2** But from the balcony, the building across the road has **vanished**. ⏸ Just grey.
+→ The opposite building dissolves into haze as the line is spoken
+**0.3** Her mum shakes her head. ⏸ Not today. ⏸ **Again**.
+→ Mum's hand on the door; the bat goes back against the wall
+**0.4** [lighter] Then there's news on her mum's phone. ⏸ Scientists are sending a **plane** over Delhi… to make it **rain**. [C1][C2]
+→ A generic phone notification (no real outlet's branding); Anu reads over her shoulder
+**0.5** And Mayur Vihar is one of the places it's aiming for. [C2]
+→ The camera lifts slightly: Mayur Vihar marked in the haze
+**0.6** [warm] So Anu folds a **paper boat**. ⏸ For the puddles. ⏸ For a morning she can actually see the sky.
+→ Hands fold a paper boat; it's placed on the windowsill (the recurring object)
+**0.7** [calm] October 28, 2025. ⏸ A small plane takes off from Meerut, turns towards Delhi… and fires flares packed with **silver iodide** and **salt** into the clouds. [C2]
+→ The camera rises off the balcony; the Meerut → Delhi flight line draws across the sky; flares light over Burari, Karol Bagh, Mayur Vihar
+**0.8** [slower] Anu's family watches the sky. ⏸ The scientists watch the sky. ⏸ Everyone **waits**. [C3]
+→ The family on the balcony, looking up; a clock's shadow moves across the wall
+**0.9** And Delhi gets… **no rain**. ⏸ Not a drop recorded in the city. ⏸ Noida got **0.1** of a millimetre. Greater Noida, **0.2**. [C3]
+→ The boat on the sill stays dry; a rain gauge on the rail shows only a trace; small chip "IMD · DELHI GOVT REPORT"
+**0.10** [curious] So what went wrong? ⏸ The plane? The chemicals? ⏸ Or something **no aircraft could ever control**?
+→ The camera holds on the empty grey sky → title WHY CAN'T DELHI MAKE IT RAIN?
 
 ### CHAPTER 1 · A plan to make rain
 **1.0** Chapter one. **A plan to make rain.**
-→ Chapter card 1/6
-**1.1** [conversational] First, this wasn't a stunt. ⏸ In May 2025, Delhi's government approved **five trials**, run by scientists from **IIT Kanpur**. [C1]
-→ Approval document card (generic, labelled ILLUSTRATIVE); IIT Kanpur name chip
-**1.2** Money set aside: **₹3.21 crore**. [C1]
-→ Chip "₹3.21 CRORE SANCTIONED · MAY 2025"
-**1.3** It's called **cloud seeding**, and it isn't new. ⏸ Many countries use it, mostly to get more **water**. [C9]
-→ World map, soft pulses (no country count claimed)
-**1.4** To see why it didn't work over Delhi… we have to go **inside a cloud**.
-→ Camera flies up into a cloud
+**1.1** [conversational] Now, this wasn't a stunt. ⏸ In May 2025, Delhi's government approved **five trials**, run by scientists from **IIT Kanpur**… and set aside **₹3.21 crore**. [C1]
+→ The flight line in the sky splits into five trial markers; chip "₹3.21 CRORE SANCTIONED · MAY 2025"
+**1.2** It's called **cloud seeding**, and it isn't new. ⏸ Plenty of countries use it, mostly to squeeze a little more **water** out of the sky. [C9]
+→ The camera pulls back to a globe; soft pulses (no country count claimed)
+**1.3** But Delhi wanted something different. ⏸ Not water. **Air**. ⏸ Rain that would wash the smog away… even for a few days. [C2]
+→ Back to Anu's window: the haze; the boat
+**1.4** To see why it didn't work, let's go where the plane went. ⏸ **Inside a cloud**.
+→ One continuous move: from the window, up through the haze, into the cloud
 
 ### CHAPTER 2 · How do you make a cloud rain?
-**2.1** A cloud is **billions** of tiny water droplets. ⏸ Each one is so small, it just **floats**.
-→ Droplets drifting; scale chip
-**2.2** To fall as rain, they have to **grow**. ⏸ Big enough, heavy enough… to drop.
-→ One droplet swells, falls
-**2.3** High up, many clouds are **colder than zero**. ⏸ But the droplets don't freeze. They stay liquid… **supercooled**… waiting for something to freeze **on**. [C9]
-→ Thermometer below 0 °C; droplets shiver, stay liquid
-**2.4** [curious] That's where **silver iodide** comes in. ⏸ Its crystal looks almost exactly like **ice**: the same **six-sided** pattern, with its atoms spaced almost the same way. [C7]
-→ Ice hexagon lattice overlays the silver iodide lattice; chip "TU WIEN · SCIENCE ADVANCES"
-**2.5** The water treats it like ice. ⏸ Crystals form, grow, get heavy… and fall. ⏸ On the way down, they melt into **rain**.
-→ Crystal growth → fall → melt
-**2.6** Warmer clouds get **salt** instead. ⏸ Salt pulls in water, so droplets grow **bigger, faster**. [C9][C15]
-→ Salt grain draws droplets in
-**2.7** [slightly serious] But look at what **both** methods need. ⏸ A **cloud**. ⏸ And the **right** kind of cloud. [C9]
-→ Everything fades except one cloud outline
-**2.8** The World Meteorological Organization is clear: seeding **can't create** clouds that rain. ⏸ It only works on clouds that are **already there**. [C9]
-→ WMO statement card with highlight sweep
-**2.9** So on October 28… what was Delhi's sky **actually** like?
-→ Back to the Oct 28 map
+**2.1** Here's the thing. ⏸ A cloud is just **billions** of tiny water droplets… so light they **float**, like dust in a sunbeam.
+→ Inside the cloud: droplets drift and glint like dust in a light shaft
+**2.2** To fall as rain, they have to **grow**. ⏸ Heavier and heavier… until they drop.
+→ One droplet swells and falls out of frame
+**2.3** And high up, a lot of clouds are colder than **zero**. ⏸ But the droplets… don't freeze. [C9]
+→ A thermometer slides in and drops below 0 °C; the droplets stay liquid
+**2.4** [curious] You may have seen this at home. ⏸ A bottle of water forgotten in the freezer can stay **liquid**, below zero… and then you tap it, and it turns to **ice** in seconds. [C19]
+→ Inset: a freezer bottle; a tap; ice races through it
+**2.5** That's called **supercooled** water. ⏸ It's waiting for something to freeze **on**. [C19][C9]
+→ Back in the cloud: the droplets shiver, waiting
+**2.6** That's where **silver iodide** comes in. ⏸ Its crystal looks almost exactly like **ice**: the same six-sided pattern, with its atoms spaced almost the same way. [C7]
+→ Glow Atom: the AgI lattice slides under an ice lattice and the hexagons line up; small chip "TU WIEN · SCIENCE ADVANCES"
+**2.7** So the water treats it like ice. ⏸ It's a **template**. ⏸ Crystals form on it, grow, get heavy, fall… and melt into **rain** on the way down.
+→ Shown on the particle itself: crystal growth → fall → melt into a drop
+**2.8** Warmer clouds get **salt** instead. ⏸ And you know how salt behaves: leave the jar open in the monsoon and it goes **damp** and **lumpy**. ⏸ It pulls water right out of the air. [C20][C9]
+→ Inset: a salt jar clumping on a humid kitchen shelf → a salt grain in the cloud pulls droplets to it
+**2.9** In a cloud, that pull helps droplets grow **bigger, faster**. [C9][C15]
+→ Droplets merge around the salt grain and fall
+**2.10** [slightly serious] But look at what both tricks need. ⏸ A **cloud**. ⏸ And the **right** kind of cloud. [C9]
+→ Everything fades except the outline of one cloud
+**2.11** The World Meteorological Organization is clear about this: seeding can't **create** clouds that rain. ⏸ It only works on clouds that are **already there**. [C9]
+→ Evidence flash: the WMO sentence highlighted, the rest dimmed (≈1.5 s)
+**2.12** So on October 28… what was the sky over Anu's balcony actually like?
+→ The camera drops back out of the cloud towards Mayur Vihar
 
 ### CHAPTER 3 · The wrong sky
 **3.0** Chapter three. **The wrong sky.**
-**3.1** IIT Kanpur's director, **Manindra Agrawal**, said the clouds that day had **very low moisture**… around **15 to 20 percent**. [C3]
-→ Quote card "around 15 to 20 per cent · IIT KANPUR"
-**3.2** He called the trial "not **completely** successful." [C3]
-**3.3** [explaining] To be seeded, a cloud needs a lot: plenty of **water**, droplets ready to grow, and **rising air** to keep it building. ⏸ That day, Delhi's clouds didn't have **enough**. [C9][C3]
-→ Checklist on a cloud: WATER · DROPLETS · RISING AIR; the boxes stay half-empty
-**3.4** And this wasn't **bad luck**. ⏸ It's what Delhi's winter sky is usually like.
-**3.5** Winter is Delhi's **driest** season. ⏸ Sachin Ghude of IITM Pune says cloud cover is only about **20 percent** through the winter. [C12][C10]
-→ Calendar Nov–Feb; cloud-cover bar ≈20%; chip "IITM"
-**3.6** [slower] And here's the cruel part. ⏸ On the **worst** smog days, he says, "90 per cent of the time… there will hardly be **any clouds**." [C11]
-→ Ten smog-day tiles; nine show empty sky
-**3.7** The same calm, dry air that lets smog **build up** over the city… doesn't build **rain clouds**. [C10]
-→ Still air, smog thickening; no cloud forms
-**3.8** A **preliminary** analysis by IIT Delhi researchers found one more problem. ⏸ The smog sits **low**, under about **2 kilometres**. The clouds you could seed sit **higher**, between **2 and 5**. [C10]
-→ Side view of the sky: smog band low, cloud band above, gap labelled; chip "PRELIMINARY · NOT PEER-REVIEWED · IIT DELHI CAS, OCT 2025"
-**3.9** So even when good clouds **do** show up… they're often floating **above** the problem.
-**3.10** [curious] But say Delhi gets **lucky**. ⏸ Perfect clouds. Heavy rain. ⏸ Would the air be **clean**?
-→ *Subscribe reminder 1 here (story break; → FMT-05)*
+**3.1** IIT Kanpur's director, **Manindra Agrawal**, said the clouds that day had **very low moisture**… around **15 to 20 percent**. ⏸ He called the trial "not **completely** successful." [C3]
+→ Thin clouds over the balcony; small quote chip "IIT KANPUR DIRECTOR"
+**3.2** [explaining] Think of a cloud like a **kitchen**. ⏸ To cook up rain, it needs enough **water**, droplets ready to grow, and **rising air** to keep it building. ⏸ That day, the kitchen was nearly **empty**. [C9][C3]
+→ The three "ingredients" are drawn onto the cloud itself (WATER · DROPLETS · RISING AIR) and fill only a little
+**3.3** And that wasn't **bad luck**. ⏸ That's Delhi's winter sky.
+→ Calendar strip NOV → FEB slides along the balcony rail
+**3.4** Winter is Delhi's **driest** season. ⏸ Sachin Ghude of IITM Pune says cloud cover is only about **20 percent** through the winter. [C12][C10]
+→ The sky over the balcony: patches of cloud cover about a fifth of it; chip "IITM"
+**3.5** [slower] And here's the cruel part. ⏸ On the **worst** smog days… the days Anu stays indoors… he says, "90 per cent of the time… there will hardly be **any clouds**." [C11]
+→ Anu inside, bat against the wall; outside, flat grey
+**3.6** So that flat grey over her balcony? ⏸ On those days, a lot of it isn't **cloud** at all. ⏸ It's **smog**. [C11]
+→ The camera tilts up: the grey has no cloud shapes, just haze
+**3.7** The same calm, dry air that lets smog **pile up** over the city… doesn't build **rain clouds**. [C10]
+→ Still air; the haze thickens layer by layer; no cloud forms
+**3.8** A **preliminary** analysis by IIT Delhi researchers found one more problem. ⏸ The smog lies low, like a **blanket** over the rooftops, under about **2 kilometres**. ⏸ The clouds you could seed float **higher**, between **2 and 5**. [C10]
+→ 3D Explainer side view: the haze blanket on the rooftops, the cloud layer above, the gap marked; chip "PRELIMINARY · NOT PEER-REVIEWED · IIT DELHI CAS, OCT 2025"
+**3.9** So even when good clouds **do** turn up… they're often drifting **above** the problem.
+→ A cloud drifts across, high above the blanket
+**3.10** [curious] But say Delhi gets **lucky**. ⏸ Real clouds. Heavy rain. ⏸ Does Anu finally get her morning?
+→ The boat on the sill; the first drops hit the rail
 
 ### CHAPTER 4 · Can rain wash smog away?
 **4.0** Chapter four. **Can rain wash smog away?**
 **4.1** Heavy **natural** rain really does help. ⏸ The same IIT Delhi analysis says it can wash out **80 to 95 percent** of fine particles. [C10]
-→ Rain streaks; particle count drops; chip "HEAVY NATURAL RAIN · PRELIMINARY"
-**4.2** [slower] Light rain? ⏸ The effect is **minimal**. [C10]
-→ Drizzle; particles barely move
-**4.3** And even after a real downpour, pollution **typically** came back… within **one to five days**. [C10]
-→ Day strip 1–5; particles return (no AQI timeline invented)
-**4.4** Because rain doesn't **switch off** what makes the smog. ⏸ The next morning, the city starts filling the air **again**.
-→ Traffic, dust and smoke icons puff back in
-**4.5** Ghude's point: to keep Delhi's air at **moderate**, you'd need rain almost **every other day**. [C12]
-→ Calendar with alternate days marked rain
-**4.6** [slightly serious] And **artificial** rain? ⏸ **Thara Prabhakaran**, who led India's cloud-seeding programme **CAIPEEX**, says there's "no documented scientific evidence **yet** that cloud seeding can reduce pollution." [C12][C15]
-→ Quote card
-**4.7** IIT Kanpur **did** report a small drop in particles after the flights. ⏸ Other scientists **dispute** that. [C6][C12]
-→ Two cards: CLAIM · IIT KANPUR / DISPUTED · OTHER SCIENTISTS
-**4.8** [curious] So is cloud seeding just… **fake**? ⏸ Not at all. In the **right** place, it has worked.
+→ A downpour over the street; particles in the air are carried down with the drops; small chip "HEAVY NATURAL RAIN · PRELIMINARY"
+**4.2** [warm] Picture the morning after a real downpour. ⏸ The building across the road is **back**. ⏸ And Anu's paper boat finally gets a **puddle**.
+→ Clear morning; the opposite building is sharp; the boat floats in a puddle in the lane (HOLD 2 s: the emotional release)
+**4.3** [slower] A light drizzle, though? ⏸ The effect is **minimal**. [C10]
+→ Before & After: drizzle → the haze barely changes
+**4.4** And even after a big storm, pollution **typically** came back… within **one to five days**. [C10]
+→ Day Counter 1 → 5 on the wall calendar
+**4.5** Because rain doesn't **switch off** what makes the smog. ⏸ The next morning, the traffic, the dust, the smoke… start filling the air **again**.
+→ The street wakes up: traffic, a dusty site, smoke from a fire; particles rise
+**4.6** By the end of the week, the building across the road is **fading** again.
+→ The opposite building dissolves back into grey (the same move as 0.2, reversed then repeated)
+**4.7** Ghude worked it out: to keep Delhi's air at "moderate", you'd need rain almost **every other day**. ⏸ Every other day… all winter. [C12]
+→ The wall calendar fills with rain icons on alternate days
+**4.8** [slightly serious] And **artificial** rain? ⏸ **Thara Prabhakaran**, who led India's cloud-seeding programme **CAIPEEX**, says there's "no documented scientific evidence **yet** that cloud seeding can reduce pollution." [C12][C15]
+→ Evidence flash: the quote highlighted (≈1.5 s), held long enough to read
+**4.9** IIT Kanpur **did** report a small drop in particles after the flights. ⏸ Other scientists **dispute** that. [C6][C12]
+→ Two small tags side by side: CLAIM · IIT KANPUR / DISPUTED · OTHER SCIENTISTS
+**4.10** [curious] So is cloud seeding just… **fake**? ⏸ Not at all. ⏸ In the **right** place, it's worked.
+→ The camera lifts off the balcony and turns south
 
 ### CHAPTER 5 · Where seeding worked
 **5.0** Chapter five. **Where seeding worked.**
-**5.1** **Solapur**, Maharashtra. ⏸ It sits in a **rain shadow**: monsoon clouds pass over… and often don't give much. [C15]
-→ Maharashtra map; Solapur pin; rain-shadow shading
-**5.2** From **2017 to 2019**, IITM scientists flew into **growing monsoon clouds** there… and released **salt** at the base. [C15]
-→ Aircraft under a towering cumulus; flares at cloud base
-**5.3** And they ran it like a **real experiment**. ⏸ Some clouds were seeded. Others were left alone. ⏸ Which was which was picked at **random**, so they could compare. [C15]
-→ Clouds tagged SEED / NO SEED, shuffled
-**5.4** [clear, numbers slower] The result: about **18 percent more rain**, over **100 square kilometres** downwind, in the **two hours** after seeding. [C15]
-→ Chip "≈18% RELATIVE INCREASE · 100 KM² · 2 H · CAIPEEX · BAMS 2023"
-**5.5** [warm] That's **real**. ⏸ Peer-reviewed, and published. [C15]
-**5.6** [curious] So why can't Delhi just **copy Solapur**?
-→ Hold on the question
-**5.7** Look at what Solapur had: tall, wet **monsoon** clouds… already **growing**. ⏸ Seeding gave them a **push**. [C15]
-→ SOLAPUR · MONSOON panel
-**5.8** Delhi in November has **none** of that. ⏸ Seeding can **push** a cloud. ⏸ It can't **bring** one. [C9]
-→ Split screen: SOLAPUR · MONSOON vs DELHI · WINTER (empty sky)
-**5.9** Even the WMO says the **strongest** evidence is for one thing: seeding cold **mountain** clouds in winter, for more snow. ⏸ Bigger claims, it says, "should be treated with **suspicion**." [C9]
-→ Mountain snow animation; WMO quote card
-→ *Subscribe reminder 2 here (story break; → FMT-05)*
+**5.1** **Solapur**, in Maharashtra. ⏸ People here look up at the sky too… for a different reason.
+→ Map Route: the camera flies south to Solapur; an illustrative farmer looks up at passing clouds (ILLUSTRATIVE)
+**5.2** Solapur sits in a **rain shadow**. ⏸ Monsoon clouds pass over… and often don't give much. ⏸ When you farm here, every bit of rain **counts**. [C15]
+→ Clouds sail past the dry fields; rain-shadow shading
+**5.3** From **2017 to 2019**, IITM scientists flew into **growing** monsoon clouds here… and released salt at the base. [C15]
+→ The aircraft under a towering cumulus; flares at the cloud base
+**5.4** And they did it like a proper experiment. ⏸ Some clouds were seeded. Others were left alone. ⏸ Which was which was picked at **random**, like a **coin toss**, so the comparison was fair. [C15]
+→ A coin flips: each cloud is tagged SEED or NO SEED
+**5.5** [clear, numbers slower] The result: about **18 percent more rain**, over **100 square kilometres** downwind, in the **two hours** after seeding. [C15]
+→ 3D Data Chart: seeded vs not-seeded rain; chip "≈18% RELATIVE · 100 KM² · 2 H · CAIPEEX · BAMS 2023"
+**5.6** [warm] That's **real**. ⏸ Peer-reviewed, and published. [C15]
+→ HOLD on the result (discovery beat)
+**5.7** [curious] So why can't Delhi just **copy Solapur**?
+**5.8** Look at what Solapur had. ⏸ Tall, wet **monsoon** clouds… already **growing**. ⏸ Seeding gave them a **push**. [C15]
+→ Split screen left: Solapur's growing clouds
+**5.9** Now look up from Anu's balcony in November. ⏸ **None** of that. ⏸ Seeding can **push** a cloud. ⏸ It can't **bring** one. [C9]
+→ Split screen right: the flat grey sky over the balcony, the dry boat (the season's key contrast)
+**5.10** Even the WMO says the **strongest** evidence is for one thing: seeding cold **mountain** clouds in winter, for more snow. ⏸ Bigger claims, it says, "should be treated with **suspicion**." [C9]
+→ Snow over a mountain ridge; evidence flash on "treated with suspicion"
 
 ### CHAPTER 6 · Delhi tries again
 **6.0** Chapter six. **Delhi tries again.**
-**6.1** It's **2026**. ⏸ Delhi's air is bad again… and the planes are **back**. [C13]
-**6.2** Reports say two rounds of trials have been flown near Delhi's **airport**. ⏸ On November 11, Environment Minister **Manjinder Singh Sirsa** said trials are **ongoing**, under IIT Kanpur. [C13][C18]
-→ Map near IGI Airport (no flight paths drawn: not published); quote card
-**6.3** No results have been **published**. ⏸ He says details will come once the study is **complete**. [C18]
-→ Chip "RESULTS: NOT YET PUBLISHED · CHECKED 20 NOV" *(date updated at lock)*
-**6.4** And it isn't cheap. ⏸ IIT Kanpur's director estimated last year's two October 28 flights cost about **₹60 lakh**. ⏸ A whole winter of seeding? He estimated **₹25 to 30 crore**. [C11]
-→ Coin stack grows; chip "2025 · IIT KANPUR ESTIMATE"
-**6.5** [slower] That's if the right clouds **show up** at all.
+**6.1** It's **2026**. ⏸ Anu is a year older. ⏸ The grey is back… and so are the **planes**. [C13]
+→ The same balcony; a 2026 calendar; a plane crosses high above the haze
+**6.2** Reports say two rounds of trials have been flown near Delhi's **airport**. ⏸ On November 11, Environment Minister **Manjinder Singh Sirsa** said the trials are **ongoing**, under IIT Kanpur. [C13][C18]
+→ The map near IGI Airport (no flight paths drawn: none published); small quote chip
+**6.3** No results have been **published** yet. ⏸ He says details will come once the study is **complete**. [C18]
+→ Chip "RESULTS: NOT YET PUBLISHED · CHECKED 20 NOV" (date updated at lock)
+**6.4** And it isn't cheap. ⏸ IIT Kanpur's director estimated last year's two October flights cost about **₹60 lakh**. ⏸ A whole winter of seeding? He estimated **₹25 to 30 crore**. [C11]
+→ Money Stack grows; chip "2025 · IIT KANPUR ESTIMATE"
+**6.5** [slower] And that's only if the right clouds show up at all.
+→ The plane passes into empty grey
 
 ### PAYOFF
 **7.0** So… why can't Delhi make it rain?
 **7.1** [calm] Because cloud seeding doesn't **make** clouds. ⏸ It **nudges** clouds that are already there. [C9]
-**7.2** And on Delhi's **worst** winter days… the right clouds usually **aren't there**. [C11][C12]
-**7.3** Even when rain does come, the relief lasts **days**, not a season. [C10]
-**7.4** [slightly serious] Rain can **wash** the air. ⏸ It can't stop it getting **dirty again**.
+→ Domino Reveal begins: NO CLOUD
+**7.2** And on Delhi's worst winter days… the days Anu stays indoors… the right clouds usually **aren't there**. [C11][C12]
+→ → NO RAIN
+**7.3** Even when rain does come, the relief lasts **days**, not a winter. [C10]
+→ → SHORT RELIEF
+**7.4** [slightly serious] Rain can **wash** the air. ⏸ It can't stop the city filling it **again**.
+→ The camera comes down from the sky to street level: traffic, chimneys, dust
 **7.5** That's why the IIT Delhi analysis concludes the lasting fix isn't in the **clouds**… it's cutting what goes **into the air**. [C10]
-**7.6** [warm] Science can do amazing things with a cloud. ⏸ But first… you need **the cloud**.
-→ A single cloud over a clear Delhi skyline → end card (Subscribe; end screen: Short 1/6 + "Why does Delhi's air get so bad around Diwali?" → PUB-01 v3)
+→ → THE FIX IS ON THE GROUND (the last domino)
+**7.6** [warm] So Anu's clear mornings probably won't come from a plane. ⏸ They'll come from the **ground**: from what the city puts into its air. [C10]
+→ Back to the windowsill: the paper boat, dry again, waiting
+**7.7** Science can do amazing things with a cloud. ⏸ But first… you need **the cloud**.
+→ A single cloud over the Delhi skyline → end card (Subscribe; end screen: Short 1/6 + "Why does Delhi's air get so bad around Diwali?" → PUB-01 v3)
 
 ---
 
-# FILM SCRIPT · TELUGU
-Written for Telugu viewers, not translated line by line. Same facts and the same line numbers so the visuals match. English technical words are kept where viewers use them (cloud seeding, silver iodide, IIT). Numbers are spoken naturally (years in full words at voice stage).
+# FILM SCRIPT · TELUGU (v3)
+Written for Telugu viewers, not translated line by line. Same facts, the same line numbers and the same visuals. Here Anu belongs to a Telugu family settled in Delhi (still ILLUSTRATIVE EXAMPLE · NOT A REAL PERSON). English technical words are kept where viewers use them. Numbers and years are spoken naturally at voice stage.
 
 ### COLD OPEN
-**0.1** [calm, low] అక్టోబర్ 28, 2025. ⏸ Meerut నుంచి ఒక చిన్న విమానం బయలుదేరి… **ఢిల్లీ** వైపు తిరిగింది. [C2]
-**0.2** దాని రెక్కల కింద flares… వాటి నిండా **silver iodide**, **ఉప్పు**. ⏸ నగరం పైకి రాగానే, వాటిని మేఘాల్లోకి వదిలింది. [C2]
-**0.3** కింద ఢిల్లీ అంతా పొగమంచుతో ఊపిరాడట్లేదు. ⏸ ఆశ ఒక్కటే: **వర్షం** కురిపించాలి… గాలిని కడిగేయాలి. [C2]
-**0.4** [slower] శాస్త్రవేత్తలు ఆకాశం వైపే చూస్తున్నారు. ⏸ ఎదురుచూస్తున్నారు. ⏸ కానీ ఢిల్లీలో… **ఒక్క చుక్క కూడా పడలేదు**. [C3]
-**0.5** నగరంలో వర్షమే నమోదు కాలేదు. ⏸ Noidaలో **0.1** మిల్లీమీటర్. Greater Noidaలో **0.2**. [C3]
-**0.6** [curious] మరి తప్పు ఎక్కడ జరిగింది? ⏸ విమానంలోనా? chemicalsలోనా? ⏸ లేక… **ఏ విమానమూ control చేయలేని** ఇంకేదైనా ఉందా?
+**0.1** [warm, low] ఒక్కసారి ఊహించండి… ఢిల్లీలో ఒక చలికాలం ఉదయం. ⏸ మయూర్ విహార్. అక్కడ స్థిరపడిన ఒక తెలుగు కుటుంబం. ⏸ వాళ్ల తొమ్మిదేళ్ల పాప… **అను** అనుకుందాం… కిందకి వెళ్లి ఆడుకోవాలనుకుంటోంది.
+**0.2** కానీ balcony నుంచి చూస్తే, ఎదురుగా ఉన్న building **కనిపించట్లేదు**. ⏸ అంతా బూడిద రంగు.
+**0.3** అమ్మ తల అడ్డంగా ఊపింది. ⏸ ఈ రోజు కూడా కాదు. ⏸ **మళ్లీ**.
+**0.4** [lighter] ఇంతలో అమ్మ phoneలో ఒక వార్త. ⏸ ఢిల్లీ పైన వర్షం కురిపించడానికి శాస్త్రవేత్తలు ఒక **విమానాన్ని** పంపుతున్నారట. [C1][C2]
+**0.5** ఆ విమానం వెళ్లే ప్రాంతాల్లో మయూర్ విహార్ కూడా ఉంది. [C2]
+**0.6** [warm] అంతే… అను ఒక **కాగితం పడవ** చేసింది. ⏸ వాన నీళ్ల కోసం. ⏸ ఆకాశం స్పష్టంగా కనిపించే ఒక ఉదయం కోసం.
+**0.7** [calm] అక్టోబర్ 28, 2025. ⏸ Meerut నుంచి ఒక చిన్న విమానం బయలుదేరి, ఢిల్లీ వైపు తిరిగి… **silver iodide**, **ఉప్పు** నింపిన flaresను మేఘాల్లోకి వదిలింది. [C2]
+**0.8** [slower] అను కుటుంబం ఆకాశం వైపే చూస్తోంది. ⏸ శాస్త్రవేత్తలూ ఆకాశం వైపే చూస్తున్నారు. ⏸ అందరూ **ఎదురుచూస్తున్నారు**. [C3]
+**0.9** కానీ ఢిల్లీలో… **వర్షం పడలేదు**. ⏸ నగరంలో ఒక్క చుక్క కూడా నమోదు కాలేదు. ⏸ Noidaలో **0.1** మిల్లీమీటర్. Greater Noidaలో **0.2**. [C3]
+**0.10** [curious] మరి తప్పు ఎక్కడ జరిగింది? ⏸ విమానంలోనా? chemicalsలోనా? ⏸ లేక… **ఏ విమానమూ control చేయలేని** ఇంకేదైనా ఉందా?
 
 ### అధ్యాయం 1 · వర్షం కురిపించే plan
 **1.0** మొదటి అధ్యాయం. **వర్షం కురిపించే plan.**
-**1.1** [conversational] ముందు ఒక విషయం: ఇది ఏదో stunt కాదు. ⏸ May 2025లో ఢిల్లీ ప్రభుత్వం **ఐదు trials**కి ఆమోదం తెలిపింది. వాటిని నడిపింది **IIT Kanpur** శాస్త్రవేత్తలు. [C1]
-**1.2** దానికోసం కేటాయించింది: **₹3.21 కోట్లు**. [C1]
-**1.3** దీన్నే **cloud seeding** అంటారు. ఇది కొత్త ఆలోచన కాదు. ⏸ చాలా దేశాలు దీన్ని వాడుతున్నాయి… ఎక్కువగా **నీళ్ల** కోసం. [C9]
-**1.4** ఢిల్లీలో ఎందుకు పని చేయలేదో తెలియాలంటే… ఒక **మేఘం లోపలికి** వెళ్లాలి.
+**1.1** [conversational] ముందు ఒక విషయం… ఇది ఏదో stunt కాదు. ⏸ May 2025లో ఢిల్లీ ప్రభుత్వం **ఐదు trials**కి ఆమోదం తెలిపింది. వాటిని నడిపింది **IIT Kanpur** శాస్త్రవేత్తలు. ⏸ దానికోసం **₹3.21 కోట్లు** కేటాయించింది. [C1]
+**1.2** దీన్నే **cloud seeding** అంటారు. ఇది కొత్త ఆలోచన కాదు. ⏸ చాలా దేశాలు దీన్ని వాడుతున్నాయి… ఆకాశం నుంచి ఇంకొంచెం **నీళ్లు** రాబట్టుకోవడానికి. [C9]
+**1.3** కానీ ఢిల్లీకి కావాల్సింది వేరు. ⏸ నీళ్లు కాదు… **గాలి**. ⏸ పొగను కడిగేసే వర్షం… కనీసం కొన్ని రోజులైనా. [C2]
+**1.4** అది ఎందుకు పని చేయలేదో తెలియాలంటే, విమానం వెళ్లిన చోటికే వెళ్దాం. ⏸ **ఒక మేఘం లోపలికి**.
 
 ### అధ్యాయం 2 · మేఘం వర్షం ఎలా అవుతుంది?
-**2.1** మేఘం అంటే **కోట్లాది** చిన్న చిన్న నీటి బిందువులు. ⏸ అవి ఎంత చిన్నవంటే… గాల్లో అలా **తేలుతూనే** ఉంటాయి.
-**2.2** వర్షంగా పడాలంటే అవి **పెరగాలి**. ⏸ బరువెక్కాలి… అప్పుడే కిందకి పడతాయి.
-**2.3** పైకి వెళ్లేకొద్దీ చాలా మేఘాలు **సున్నా డిగ్రీల కంటే చల్లగా** ఉంటాయి. ⏸ అయినా బిందువులు గడ్డకట్టవు. ద్రవంగానే ఉంటాయి… వీటిని **supercooled** బిందువులు అంటారు. దేనిమీదైనా గడ్డకట్టడానికి ఎదురుచూస్తుంటాయి. [C9]
-**2.4** [curious] ఇక్కడే **silver iodide** పని మొదలవుతుంది. ⏸ దాని crystal అచ్చం **మంచు** లాగే ఉంటుంది: అదే **ఆరు మూలల** pattern, atoms మధ్య దాదాపు అదే దూరం. [C7]
-**2.5** నీరు దాన్ని మంచే అనుకుంటుంది. ⏸ Crystals ఏర్పడతాయి, పెరుగుతాయి, బరువెక్కి… కిందకి పడతాయి. ⏸ దారిలో కరిగి **వర్షం** అవుతాయి.
-**2.6** కాస్త వెచ్చగా ఉండే మేఘాలకు **ఉప్పు** వాడతారు. ⏸ ఉప్పు నీటిని తన వైపు లాగుతుంది. అందుకే బిందువులు **తొందరగా పెద్దవి** అవుతాయి. [C9][C15]
-**2.7** [slightly serious] కానీ ఈ రెండు పద్ధతులకూ కావాల్సింది ఒక్కటే. ⏸ ఒక **మేఘం**. ⏸ అదీ **సరైన** మేఘం. [C9]
-**2.8** World Meteorological Organization స్పష్టంగా చెప్తోంది: seeding వర్షం కురిసే మేఘాలను **సృష్టించలేదు**. ⏸ అప్పటికే **ఉన్న** మేఘాల మీదే పని చేస్తుంది. [C9]
-**2.9** మరి అక్టోబర్ 28న… ఢిల్లీ ఆకాశం **నిజంగా** ఎలా ఉంది?
+**2.1** అసలు విషయం ఏంటంటే… ⏸ మేఘం అంటే **కోట్లాది** చిన్న చిన్న నీటి బిందువులు. ⏸ ఎంత తేలికంటే… ఎండ కిరణంలో తేలే ధూళి కణాల్లా **తేలుతుంటాయి**.
+**2.2** వర్షంగా పడాలంటే అవి **పెరగాలి**. ⏸ బరువెక్కుతూ, బరువెక్కుతూ… చివరికి కిందకి పడతాయి.
+**2.3** పైకి వెళ్లేకొద్దీ చాలా మేఘాలు **సున్నా డిగ్రీల కంటే చల్లగా** ఉంటాయి. ⏸ అయినా ఆ బిందువులు… గడ్డకట్టవు. [C9]
+**2.4** [curious] ఇది మీరు ఇంట్లోనే చూసి ఉండొచ్చు. ⏸ Freezerలో మర్చిపోయిన నీళ్ల bottle కొన్నిసార్లు సున్నా కంటే చల్లగా ఉన్నా **నీళ్లలాగే** ఉంటుంది… దాన్ని ఒక్కసారి తట్టగానే, క్షణాల్లో **మంచు** అయిపోతుంది. [C19]
+**2.5** ఇలాంటి నీటినే **supercooled** నీరు అంటారు. ⏸ అది దేనిమీదైనా గడ్డకట్టడానికి **ఎదురుచూస్తుంటుంది**. [C19][C9]
+**2.6** ఇక్కడే **silver iodide** పని మొదలవుతుంది. ⏸ దాని crystal అచ్చం **మంచు** లాగే ఉంటుంది: అదే **ఆరు మూలల** pattern, atoms మధ్య దాదాపు అదే దూరం. [C7]
+**2.7** అందుకే నీరు దాన్ని మంచే అనుకుంటుంది. ⏸ అది ఒక **అచ్చు** లాంటిది. ⏸ దానిమీద crystals ఏర్పడి, పెరిగి, బరువెక్కి కిందకి పడతాయి… దారిలో కరిగి **వర్షం** అవుతాయి.
+**2.8** కాస్త వెచ్చగా ఉండే మేఘాలకు **ఉప్పు** వాడతారు. ⏸ ఉప్పు సంగతి మనకు తెలుసు కదా: వర్షాకాలంలో ఉప్పు డబ్బా తెరిచి ఉంచితే, ఉప్పు **తడిగా**, **ముద్దలుగా** అయిపోతుంది. ⏸ అది గాల్లోని నీటిని తన వైపు లాగుతుంది. [C20][C9]
+**2.9** మేఘంలో కూడా అదే లాగుడు వల్ల బిందువులు **తొందరగా పెద్దవి** అవుతాయి. [C9][C15]
+**2.10** [slightly serious] కానీ ఈ రెండు పద్ధతులకూ కావాల్సింది ఒక్కటే. ⏸ ఒక **మేఘం**. ⏸ అదీ **సరైన** మేఘం. [C9]
+**2.11** World Meteorological Organization ఈ విషయం స్పష్టంగా చెప్తోంది: seeding వర్షం కురిసే మేఘాలను **సృష్టించలేదు**. ⏸ అప్పటికే **ఉన్న** మేఘాల మీదే పని చేస్తుంది. [C9]
+**2.12** మరి అక్టోబర్ 28న… అను balcony పైన ఆకాశం **నిజంగా** ఎలా ఉంది?
 
 ### అధ్యాయం 3 · తప్పు ఆకాశం
 **3.0** మూడో అధ్యాయం. **తప్పు ఆకాశం.**
-**3.1** ఆ రోజు మేఘాల్లో తేమ **చాలా తక్కువ**… దాదాపు **15 నుంచి 20 శాతం** మాత్రమే అని IIT Kanpur director **మణీంద్ర అగ్రవాల్** చెప్పారు. [C3]
-**3.2** ఈ trial "**పూర్తిగా** విజయవంతం కాలేదు" అని ఆయనే ఒప్పుకున్నారు. [C3]
-**3.3** [explaining] Seed చేయాలంటే మేఘానికి చాలా కావాలి: బోలెడంత **నీరు**, పెరగడానికి సిద్ధంగా ఉన్న బిందువులు, మేఘాన్ని పైకి నెట్టే **గాలి**. ⏸ ఆ రోజు ఢిల్లీ మేఘాల్లో అవి **సరిపడా** లేవు. [C9][C3]
-**3.4** ఇది **దురదృష్టం** కాదు. ⏸ ఢిల్లీ చలికాలం ఆకాశం మామూలుగానే ఇలా ఉంటుంది.
-**3.5** చలికాలమే ఢిల్లీకి అత్యంత **పొడి** కాలం. ⏸ IITM Pune శాస్త్రవేత్త **సచిన్ ఘుడే** ప్రకారం, చలికాలం అంతా మేఘాలు దాదాపు **20 శాతమే**. [C12][C10]
-**3.6** [slower] ఇక్కడే అసలు **ట్విస్ట్**. ⏸ పొగ **అత్యంత ఎక్కువగా** ఉన్న రోజుల్లో, 90 శాతం సమయం **మేఘాలే దాదాపు ఉండవు** అంటారు ఆయన. [C11]
-**3.7** పొగను నగరం మీదే **నిలిపేసే** ప్రశాంతమైన, పొడి గాలి… వర్షం మేఘాలను మాత్రం **కట్టనివ్వదు**. [C10]
-**3.8** IIT Delhi పరిశోధకుల ఒక **ప్రాథమిక** విశ్లేషణ ఇంకో సమస్య చూపించింది. ⏸ పొగ **కిందే** ఉంటుంది… దాదాపు **2 కిలోమీటర్ల** లోపు. Seed చేయగలిగే మేఘాలు **పైన** ఉంటాయి… **2 నుంచి 5** కిలోమీటర్ల ఎత్తులో. [C10]
-**3.9** అంటే మంచి మేఘాలు వచ్చినా… అవి చాలాసార్లు సమస్యకు **పైనే** తేలుతుంటాయి.
-**3.10** [curious] సరే, ఢిల్లీకి **అదృష్టం** కలిసొచ్చిందనుకుందాం. ⏸ సరైన మేఘాలు. భారీ వర్షం. ⏸ అప్పుడైనా గాలి **శుభ్రం** అవుతుందా?
-→ *Subscribe reminder 1*
+**3.1** ఆ రోజు మేఘాల్లో తేమ **చాలా తక్కువ**… దాదాపు **15 నుంచి 20 శాతం** మాత్రమే అని IIT Kanpur director **మణీంద్ర అగ్రవాల్** చెప్పారు. ⏸ ఈ trial "**పూర్తిగా** విజయవంతం కాలేదు" అని ఆయనే ఒప్పుకున్నారు. [C3]
+**3.2** [explaining] మేఘాన్ని ఒక **వంటిల్లు** అనుకోండి. ⏸ వర్షం వండాలంటే సరిపడా **నీళ్లు** కావాలి, పెరగడానికి సిద్ధంగా ఉన్న బిందువులు కావాలి, మేఘాన్ని పైకి నెట్టే **గాలి** కావాలి. ⏸ ఆ రోజు ఆ వంటిల్లు దాదాపు **ఖాళీ**. [C9][C3]
+**3.3** ఇది **దురదృష్టం** కాదు. ⏸ ఢిల్లీ చలికాలం ఆకాశమే అంత.
+**3.4** చలికాలమే ఢిల్లీకి అత్యంత **పొడి** కాలం. ⏸ IITM Pune శాస్త్రవేత్త **సచిన్ ఘుడే** ప్రకారం, చలికాలం అంతా మేఘాలు దాదాపు **20 శాతమే**. [C12][C10]
+**3.5** [slower] ఇక్కడే అసలు **బాధ**. ⏸ పొగ **అత్యంత ఎక్కువగా** ఉండే రోజుల్లో… అంటే అను ఇంట్లోనే ఉండిపోయే రోజుల్లో… 90 శాతం సమయం **మేఘాలే దాదాపు ఉండవు** అంటారు ఆయన. [C11]
+**3.6** అంటే అను balcony పైన కనిపించే ఆ బూడిద రంగు? ⏸ ఆ రోజుల్లో అందులో చాలా భాగం **మేఘం కానే కాదు**. ⏸ అది **పొగ**. [C11]
+**3.7** పొగను నగరం మీదే **పోగుచేసే** ఆ ప్రశాంతమైన, పొడి గాలి… వర్షం మేఘాలను మాత్రం **కట్టనివ్వదు**. [C10]
+**3.8** IIT Delhi పరిశోధకుల ఒక **ప్రాథమిక** విశ్లేషణ ఇంకో సమస్య చూపించింది. ⏸ పొగ ఇళ్ల పైకప్పుల మీద **దుప్పటిలా** కిందే పరుచుకుంటుంది… దాదాపు **2 కిలోమీటర్ల** లోపు. ⏸ Seed చేయగలిగే మేఘాలు **పైన** తేలుతుంటాయి… **2 నుంచి 5** కిలోమీటర్ల ఎత్తులో. [C10]
+**3.9** అంటే మంచి మేఘాలు వచ్చినా… అవి చాలాసార్లు సమస్యకు **పైనే** తేలిపోతుంటాయి.
+**3.10** [curious] సరే, ఢిల్లీకి **అదృష్టం** కలిసొచ్చిందనుకుందాం. ⏸ నిజమైన మేఘాలు. భారీ వర్షం. ⏸ అప్పుడైనా అనుకి ఆ ఉదయం **దొరుకుతుందా**?
 
 ### అధ్యాయం 4 · వర్షం పొగను కడిగేస్తుందా?
 **4.0** నాలుగో అధ్యాయం. **వర్షం పొగను కడిగేస్తుందా?**
 **4.1** భారీ **సహజ** వర్షం నిజంగానే సాయం చేస్తుంది. ⏸ అదే IIT Delhi విశ్లేషణ ప్రకారం, అది **80 నుంచి 95 శాతం** సూక్ష్మ కణాలను కడిగేయగలదు. [C10]
-**4.2** [slower] చిన్న జల్లు? ⏸ దాని ప్రభావం **చాలా తక్కువ**. [C10]
-**4.3** గట్టి వాన పడిన తర్వాత కూడా, కాలుష్యం **సాధారణంగా** ఒకటి నుంచి ఐదు రోజుల్లో మళ్లీ పాత స్థాయికి వచ్చేసింది. [C10]
-**4.4** ఎందుకంటే పొగకు కారణమైనవాటిని వర్షం **ఆపదు**. ⏸ మర్నాడు ఉదయం నగరం మళ్లీ గాల్లోకి పొగ నింపడం **మొదలుపెడుతుంది**.
-**4.5** ఘుడే లెక్క ఏంటంటే: ఢిల్లీ గాలిని **moderate** స్థాయిలో ఉంచాలంటే… దాదాపు **రోజు విడిచి రోజు** వర్షం పడాలి. [C12]
-**4.6** [slightly serious] మరి **కృత్రిమ** వర్షం? ⏸ భారతదేశ cloud seeding పరిశోధన కార్యక్రమం **CAIPEEX**కి నాయకత్వం వహించిన **థారా ప్రభాకరన్** మాటల్లో: cloud seeding కాలుష్యాన్ని తగ్గిస్తుందని **ఇప్పటివరకు** శాస్త్రీయ ఆధారం ఏదీ నమోదు కాలేదు. [C12][C15]
-**4.7** Flights తర్వాత కణాలు కొద్దిగా తగ్గాయని IIT Kanpur **చెప్పింది**. ⏸ కానీ ఇతర శాస్త్రవేత్తలు దాన్ని **ఒప్పుకోవడం లేదు**. [C6][C12]
-**4.8** [curious] అంటే cloud seeding అంతా **బూటకమా**? ⏸ అస్సలు కాదు. **సరైన** చోట అది పని చేసింది.
+**4.2** [warm] గట్టి వాన పడిన మర్నాడు ఉదయాన్ని ఊహించండి. ⏸ ఎదురుగా building మళ్లీ **కనిపిస్తోంది**. ⏸ అను కాగితం పడవకి చివరికి ఒక **నీటి గుంట** దొరికింది.
+**4.3** [slower] కానీ చిన్న జల్లు? ⏸ దాని ప్రభావం **చాలా తక్కువ**. [C10]
+**4.4** పెద్ద వాన తర్వాత కూడా, కాలుష్యం **సాధారణంగా** ఒకటి నుంచి ఐదు రోజుల్లో… మళ్లీ వెనక్కి వచ్చేసింది. [C10]
+**4.5** ఎందుకంటే పొగకు కారణమైనవాటిని వర్షం **ఆపదు**. ⏸ మర్నాడు ఉదయమే traffic, ధూళి, పొగ… మళ్లీ గాల్లోకి చేరడం **మొదలవుతుంది**.
+**4.6** వారం తిరిగేసరికి, ఎదురుగా building మళ్లీ **మసకబారుతోంది**.
+**4.7** ఘుడే లెక్క ఏంటంటే: ఢిల్లీ గాలిని "moderate" స్థాయిలో ఉంచాలంటే, దాదాపు **రోజు విడిచి రోజు** వర్షం పడాలి. ⏸ రోజు విడిచి రోజు… చలికాలం మొత్తం. [C12]
+**4.8** [slightly serious] మరి **కృత్రిమ** వర్షం? ⏸ భారత cloud seeding కార్యక్రమం **CAIPEEX**కి నాయకత్వం వహించిన **థారా ప్రభాకరన్** మాటల్లో: cloud seeding కాలుష్యాన్ని తగ్గిస్తుందని **ఇప్పటివరకు** శాస్త్రీయ ఆధారం ఏదీ నమోదు కాలేదు. [C12][C15]
+**4.9** Flights తర్వాత కణాలు కొద్దిగా తగ్గాయని IIT Kanpur **చెప్పింది**. ⏸ కానీ ఇతర శాస్త్రవేత్తలు దాన్ని **ఒప్పుకోవడం లేదు**. [C6][C12]
+**4.10** [curious] అంటే cloud seeding అంతా **బూటకమా**? ⏸ అస్సలు కాదు. ⏸ **సరైన** చోట అది పని చేసింది.
 
 ### అధ్యాయం 5 · Seeding పని చేసిన చోటు
 **5.0** ఐదో అధ్యాయం. **Seeding పని చేసిన చోటు.**
-**5.1** మహారాష్ట్రలోని **సోలాపూర్**. ⏸ ఇది **వర్షచ్ఛాయ** ప్రాంతం: monsoon మేఘాలు పైనుంచి వెళ్లిపోతాయి… కానీ పెద్దగా వర్షం ఇవ్వవు. [C15]
-**5.2** **2017 నుంచి 2019** వరకు, IITM శాస్త్రవేత్తలు అక్కడ **పెరుగుతున్న monsoon మేఘాల్లోకి** విమానాల్లో వెళ్లి… మేఘం అడుగున **ఉప్పు** వదిలారు. [C15]
-**5.3** అది ఒక **పక్కా ప్రయోగం**. ⏸ కొన్ని మేఘాలను seed చేశారు. కొన్నింటిని అలాగే వదిలేశారు. ⏸ ఏది ఏదో **random**గా ఎంచుకున్నారు… పోల్చి చూడటానికి. [C15]
-**5.4** [clear, numbers slower] ఫలితం: seeding తర్వాత **రెండు గంటల్లో**, గాలి వెళ్లే దిశలో **100 చదరపు కిలోమీటర్ల** మేర, దాదాపు **18 శాతం ఎక్కువ వర్షం**. [C15]
-**5.5** [warm] ఇది **నిజం**. ⏸ Peer review అయ్యి, ప్రచురితమైన ఫలితం. [C15]
-**5.6** [curious] మరి ఢిల్లీ సోలాపూర్‌ను ఎందుకు **copy** చేయలేకపోతోంది?
-**5.7** సోలాపూర్‌కి ఏముందో చూడండి: ఎత్తైన, నీటితో నిండిన **monsoon** మేఘాలు… అప్పటికే **పెరుగుతున్నవి**. ⏸ Seeding వాటికి ఒక **తోపు** ఇచ్చింది. [C15]
-**5.8** నవంబర్‌లో ఢిల్లీకి అవేమీ **లేవు**. ⏸ Seeding మేఘాన్ని **నెట్టగలదు**. ⏸ మేఘాన్ని **తీసుకురాలేదు**. [C9]
-**5.9** WMO కూడా బలమైన ఆధారం **ఒక్కదానికే** ఉందంటోంది: చలికాలంలో **కొండల మీది** చల్లని మేఘాలను seed చేసి, ఎక్కువ మంచు కురిపించడం. ⏸ అంతకు మించిన పెద్ద వాదనలను "**అనుమానంతో** చూడాలి" అంటోంది. [C9]
-→ *Subscribe reminder 2*
+**5.1** మహారాష్ట్రలోని **సోలాపూర్**. ⏸ ఇక్కడి వాళ్లు కూడా ఆకాశం వైపు చూస్తుంటారు… కానీ వేరే కారణంతో.
+**5.2** సోలాపూర్ ఒక **వర్షచ్ఛాయ** ప్రాంతం. ⏸ Monsoon మేఘాలు పైనుంచి వెళ్లిపోతాయి… కానీ పెద్దగా వర్షం ఇవ్వవు. ⏸ ఇక్కడ వ్యవసాయం చేసేవాళ్లకు ప్రతి చినుకూ **విలువైనదే**. [C15]
+**5.3** **2017 నుంచి 2019** వరకు, IITM శాస్త్రవేత్తలు ఇక్కడ **పెరుగుతున్న** monsoon మేఘాల్లోకి విమానాల్లో వెళ్లి… మేఘం అడుగున ఉప్పు వదిలారు. [C15]
+**5.4** అది ఒక **పక్కా ప్రయోగం**. ⏸ కొన్ని మేఘాలను seed చేశారు. కొన్నింటిని అలాగే వదిలేశారు. ⏸ ఏది ఏదో **బొమ్మా బొరుసు** వేసినట్టు random గా ఎంచుకున్నారు… పోలిక న్యాయంగా ఉండటానికి. [C15]
+**5.5** [clear, numbers slower] ఫలితం: seeding తర్వాత **రెండు గంటల్లో**, గాలి వెళ్లే దిశలో **100 చదరపు కిలోమీటర్ల** మేర, దాదాపు **18 శాతం ఎక్కువ వర్షం**. [C15]
+**5.6** [warm] ఇది **నిజం**. ⏸ Peer review అయ్యి, ప్రచురితమైన ఫలితం. [C15]
+**5.7** [curious] మరి ఢిల్లీ సోలాపూర్‌ను ఎందుకు **copy** చేయలేకపోతోంది?
+**5.8** సోలాపూర్‌కి ఏముందో చూడండి. ⏸ ఎత్తైన, నీటితో నిండిన **monsoon** మేఘాలు… అప్పటికే **పెరుగుతున్నవి**. ⏸ Seeding వాటికి ఒక **తోపు** ఇచ్చింది. [C15]
+**5.9** ఇప్పుడు నవంబర్‌లో అను balcony నుంచి పైకి చూడండి. ⏸ అవేమీ **లేవు**. ⏸ Seeding మేఘాన్ని **నెట్టగలదు**. ⏸ మేఘాన్ని **తీసుకురాలేదు**. [C9]
+**5.10** WMO కూడా బలమైన ఆధారం **ఒక్కదానికే** ఉందంటోంది: చలికాలంలో **కొండల మీది** చల్లని మేఘాలను seed చేసి, ఎక్కువ మంచు కురిపించడం. ⏸ అంతకు మించిన పెద్ద వాదనలను "**అనుమానంతో** చూడాలి" అంటోంది. [C9]
 
 ### అధ్యాయం 6 · ఢిల్లీ మళ్లీ ప్రయత్నిస్తోంది
 **6.0** ఆరో అధ్యాయం. **ఢిల్లీ మళ్లీ ప్రయత్నిస్తోంది.**
-**6.1** ఇది **2026**. ⏸ ఢిల్లీ గాలి మళ్లీ పాడైంది… విమానాలు మళ్లీ **వచ్చాయి**. [C13]
+**6.1** ఇది **2026**. ⏸ అనుకి ఇప్పుడు ఇంకో ఏడాది వయసు పెరిగింది. ⏸ బూడిద రంగు ఆకాశం మళ్లీ వచ్చింది… విమానాలూ మళ్లీ **వచ్చాయి**. [C13]
 **6.2** ఢిల్లీ **విమానాశ్రయం** దగ్గర రెండు రౌండ్ల trials జరిగాయని వార్తలు చెప్తున్నాయి. ⏸ IIT Kanpur ఆధ్వర్యంలో trials **కొనసాగుతున్నాయని** నవంబర్ 11న పర్యావరణ మంత్రి **మంజీందర్ సింగ్ సిర్సా** చెప్పారు. [C13][C18]
 **6.3** ఫలితాలు ఇంకా **బయటికి రాలేదు**. ⏸ అధ్యయనం **పూర్తయ్యాక** వివరాలు చెప్తామన్నారు. [C18]
-**6.4** ఖర్చు కూడా తక్కువేం కాదు. ⏸ గత ఏడాది అక్టోబర్ 28 నాటి రెండు flightsకి దాదాపు **₹60 లక్షలు** అయ్యిందని IIT Kanpur director అంచనా వేశారు. ⏸ చలికాలం మొత్తం seeding చేయాలంటే? **₹25 నుంచి 30 కోట్లు** అని ఆయన అంచనా. [C11]
-**6.5** [slower] అదీ సరైన మేఘాలు **వస్తేనే**.
+**6.4** ఖర్చు కూడా తక్కువేం కాదు. ⏸ గత ఏడాది అక్టోబర్ నాటి రెండు flightsకి దాదాపు **₹60 లక్షలు** అయ్యిందని IIT Kanpur director అంచనా వేశారు. ⏸ చలికాలం మొత్తం seeding చేయాలంటే? **₹25 నుంచి 30 కోట్లు** అని ఆయన అంచనా. [C11]
+**6.5** [slower] అదీ… సరైన మేఘాలు **వస్తేనే**.
 
 ### ముగింపు
 **7.0** మరి… ఢిల్లీ ఎందుకు వర్షం కురిపించలేకపోతోంది?
 **7.1** [calm] ఎందుకంటే cloud seeding మేఘాలను **తయారు చేయదు**. ⏸ ఉన్న మేఘాలను కాస్త **నెడుతుంది**, అంతే. [C9]
-**7.2** ఢిల్లీలో పొగ **ఎక్కువున్న** చలికాలం రోజుల్లో… ఆ సరైన మేఘాలే సాధారణంగా **ఉండవు**. [C11][C12]
-**7.3** వర్షం పడినా, ఉపశమనం **కొన్ని రోజులే**. ఒక season మొత్తం కాదు. [C10]
-**7.4** [slightly serious] వర్షం గాలిని **కడగగలదు**. ⏸ కానీ అది మళ్లీ **మురికి** కాకుండా ఆపలేదు.
+**7.2** ఢిల్లీలో పొగ ఎక్కువుండే చలికాలం రోజుల్లో… అను ఇంట్లోనే ఉండిపోయే ఆ రోజుల్లో… సరైన మేఘాలే సాధారణంగా **ఉండవు**. [C11][C12]
+**7.3** వర్షం పడినా, ఉపశమనం **కొన్ని రోజులే**. చలికాలం మొత్తం కాదు. [C10]
+**7.4** [slightly serious] వర్షం గాలిని **కడగగలదు**. ⏸ కానీ నగరం దాన్ని మళ్లీ **నింపకుండా** ఆపలేదు.
 **7.5** అందుకే IIT Delhi విశ్లేషణ తేల్చింది: శాశ్వత పరిష్కారం **మేఘాల్లో** లేదు… గాల్లోకి **వెళ్లేదాన్ని తగ్గించడంలో** ఉంది. [C10]
-**7.6** [warm] Science ఒక మేఘంతో **అద్భుతాలు** చేయగలదు. ⏸ కానీ ముందు… ఆ **మేఘం** ఉండాలి.
+**7.6** [warm] అంటే అనుకి స్పష్టమైన ఉదయాలు బహుశా ఒక విమానం నుంచి రావు. ⏸ అవి **నేల** మీద నుంచే రావాలి: నగరం తన గాల్లోకి ఏం వదులుతోందో, దాని నుంచే. [C10]
+**7.7** Science ఒక మేఘంతో **అద్భుతాలు** చేయగలదు. ⏸ కానీ ముందు… ఆ **మేఘం** ఉండాలి.
 
 ---
 
 ## Duration and credits (planning estimate; measured after recording, never sped up → FMT-01)
-**Counts** (computed from this file, 63 lines per language):
-
 | | English | Telugu |
 |---|---|---|
-| Size | 993 words · 5,661 TTS characters | 5,863 characters (before numbers are spelled out) |
-| Speech alone | ≈6:20–6:55 (2.4–2.63 words/s) | ≈9:00 (10.82 chars/s) |
-| With pauses, chapter cards, title and end card | **≈8:00–8:45** | **≈10:30–11:15** |
+| Lines | 74 | 74 |
+| Size | 1,317 words · 7,370 TTS characters | 7,630 characters (before numbers are spelled out) |
+| Estimated length (speech + pauses + cards) | **≈10:00–10:45** | **≈12:45–13:45** |
 
-- **Credits:** ≈1 per character (→ `methods/editing.md`). That is ≈5,700 EN + ≈6,500 TE (with Telugu numbers spelled out) = **≈12,200** for the film, one take per line.
-- Shorts reuse the film's audio where a line matches (→ CR-03). Their new lines are estimated in the Shorts scripts.
-- Voice library: no matches are expected for a new topic. I'll check every line against `voice_lib/index.json` before voicing (→ CR-03).
-
-## Subscribe reminders (→ FMT-05)
-| Story break | Why here |
-|---|---|
-| After 3.10 | The failure is explained; the next question (rain vs smog) is set up |
-| After 5.9 | The Solapur discovery lands, before the 2026 chapter |
+- **v3 is about 2 minutes longer than v2** because the human thread runs through every chapter. The story sets the length (→ FMT-01). If you want it shorter, the easiest cuts are 1.2, 2.2, 4.3 and 5.1 (≈30 s EN), with no fact lost.
+- **Credits:** ≈1 per character. ≈7,400 EN + ≈8,400 TE (with numbers spelled out) = **≈15,800** for the film, one take per line (v2 was ≈12,200).
+- Voice library: no matches are expected for a new topic. Every line is checked against `voice_lib/index.json` before voicing (→ CR-03).
+- No subscribe lines are voiced; the reminders are editing cues only.
