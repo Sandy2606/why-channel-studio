@@ -1,4 +1,4 @@
-# Production brief: Why Can't Delhi Make It Rain? · film + 6 Shorts · v3 (humanised film scripts for review)
+# Production brief: Why Can't Delhi Make It Rain? · film + 6 Shorts · v3 (humanised film scripts · reuse plan · compliance review)
 
 Owner of this season's plan (precedence level 2). Rules cited by ID.
 - Rules: main `07f71fd5f7fff882431673ae28b456a56af8eebc` (Mode A, Nov 11, 2026).
@@ -134,6 +134,74 @@ Planned positions from the line-by-line estimate (EN 2.5 words/s, TE 10.82 chars
 
 - **Never during:** the cold open, chapter cards, 4.2 (the boat floats), 5.5–5.6 (the Solapur result), 5.9 (the contrast) or the payoff 7.0–7.7.
 - **Spacing:** EN about every 2:00–2:40 (4 cards); TE about every 2:00–3:00 (5 cards).
+
+## Film-to-Short narration reuse plan (→ CR-03, FMT-03, CR-02)
+This applies CR-03 at planning stage. The film lines are recorded once (one take each) and saved to `voice_lib/` with index entries. Each Short then reuses those exact sentences or phrases, cut only at ⏸ pauses or sentence ends. New voice is recorded only where a Short needs it:
+- its own standalone hook (→ ST-02, PLT-08);
+- its ★ fact the film doesn't have (→ FMT-03);
+- its tease naming the next Short (→ FMT-08);
+- its loop line (→ FMT-06).
+
+Shorts have no subscribe card or subscribe line (→ FMT-04). The series slide is on-screen text only (→ FMT-06, FMT-10).
+
+Library check (Nov 11): all 74 EN and 74 TE film lines were checked against `voice_lib/index.json` (550 entries). There are **0 exact matches**, as expected for a new topic, so the whole film is new voice.
+
+Film line IDs are the same in both languages, so the matrix applies to EN and TE. The new-line wording below is a **draft for the Shorts scripts** (approved separately, → WF-01 step 4). Telugu new lines will be written natively at that stage.
+
+| Short | Reused film lines (EN and TE) | Genuinely new voice lines (draft EN wording) | New EN chars ≈ |
+|---|---|---|---|
+| **1/6** Delhi's first rain plan wasn't in 2025 | 0.7 · 0.8 (phrases "The scientists watch the sky." / "Everyone waits.") · 0.9 | **N1.1** hook: "Delhi's 2025 rain flights weren't its first try." · **N1.2** ★ "In 1957, scientists were already releasing salt into Delhi's monsoon sky, from generators on the ground." [C17] · **N1.3** ★ "In the winter of 1971 and '72, they tried silver iodide: eleven days seeded, eleven left alone to compare." [C14] · **N1.4** ★ "An IITM report says the seeded days showed a tendency towards more rain. A tendency, not proof." [C14] · **N1.5** bridge: "So Delhi has been trying for nearly seventy years. Why is it still so hard?" · **N1.T** tease: "Next: how something that looks like smoke is supposed to make a cloud rain." · **N1.L** loop line | ≈530 |
+| **2/6** Can smoke make rain? | 2.1 · 2.2 · 2.3 · 2.4 · 2.5 · 2.6 · 2.7 · 2.8 · 2.9 · 2.10 · 2.11 | **N2.1** hook: "Scientists fire something that looks like smoke into a cloud… and it can turn into rain. How?" · **N2.2** ★ "Here's the strange bit: only one face of that crystal does the trick. The silver side matches ice. The iodine side doesn't." [C7] · **N2.T** tease: "So why didn't it work over Delhi? Next: Delhi's wrong sky." · **N2.L** loop | ≈310 |
+| **3/6** Delhi's worst air, the wrong sky | 0.1 · 0.2 (Anu intro) · 3.1 · 3.2 · 3.4 · 3.5 · 3.6 · 3.7 · 3.8 · 3.9 | **N3.1** hook: "On Delhi's most polluted days, the sky is missing the one thing cloud seeding needs." · **N3.2** ★ "IIT Delhi's preliminary analysis found winter humidity, up where clouds form, sits around 40 to 55 percent, well short of the roughly 80 it takes to saturate." [C10] · **N3.T** tease: "But if it rained tonight, how long before the smog came back?" · **N3.L** loop | ≈340 |
+| **4/6** Rain tonight, smog by…? | 0.1 · 0.6 (phrase "So Anu folds a paper boat.") · 4.1 · 4.2 · 4.3 · 4.4 · 4.5 · 4.6 · 4.7 | **N4.1** hook: "Suppose Delhi gets heavy rain tonight. How long before the smog comes back?" · **N4.2** ★ "And it doesn't all come back at once. Fine particles typically return in four to five days. Gases like nitrogen oxides, in two to three." [C10] · **N4.T** tease: "So has cloud seeding ever actually worked? Next: Solapur." · **N4.L** loop | ≈300 |
+| **5/6** Solapur did it. Why can't Delhi? | 5.2 · 5.3 · 5.4 · 5.5 · 5.6 · 5.8 · 5.9 (phrases from "None of that." to the end) · 5.10 | **N5.1** hook: "Scientists got more rain to fall near Solapur. So why can't Delhi copy them?" · **N5.2** ★ "Closer to home, Andhra Pradesh ran its own seeding programme from 2003 to 2008: twelve districts, more than two thousand flights." [C16] · **N5.3** "But running a programme isn't the same as proving it worked. That's why Solapur's coin-toss design mattered." · **N5.4** "Now look up at Delhi's sky in November." (standalone version of 5.9's Anu phrase) · **N5.T** tease: "So is Delhi trying again this winter?" · **N5.L** loop | ≈450 |
+| **6/6** Delhi is trying again. Has anything changed? | 6.2 · 6.3 · 6.4 · 6.5 · 7.0 · 7.1 · 7.2 (phrases "And on Delhi's worst winter days…" / "the right clouds usually aren't there.") · 7.3 · 7.4 · 7.5 · 7.7 | **N6.1** hook: "It's 2026, and the planes are back over Delhi. Has anything actually changed?" · **N6.2** ★ "IIT Delhi's analysis is blunt: cloud seeding 'cannot be recommended as a primary or strategic measure'." [C10] · **N6.S** status line, **only if** the Nov 20 re-check changes 6.2/6.3 [C18] · **N6.Q** next-season question (→ FMT-07; topic is your decision) | ≈300 (+≈100 if N6.S) |
+
+**Credits for the Shorts:** ≈2,330 EN characters new across all six, plus a similar Telugu amount (≈2,500 with numbers spelled out). That's **≈4,800 credits for the whole week of Shorts**, about 800 per Short against the CR-02 budget of 2,000–2,400. Reused film lines cost nothing. All Shorts' estimated lengths are under 3:00 (→ FMT-01); measured times come at the Shorts script stage.
+
+**Week total:** film ≈15,800 + Shorts ≈4,800 = **≈20,600 credits**.
+
+## Compliance review against existing rules (Nov 11, rules at main `89e20d7`)
+COVERED = in this brief now. PLANNED = scheduled for a later WF-01 stage, not a gap. GAP = missing now, with the smallest fix proposed below for your approval.
+
+| Area | Rule IDs | Status | Where / note |
+|---|---|---|---|
+| **Research and sources** | RS-01, RS-02, RS-03, RS-04, RS-05, RS-06 | **COVERED** | Register C1–C20 with dates; `check_sources.py` PASS (17 claims); estimates labelled; disputed claims paired. Two follow-ups are already scheduled: C17 full paper before Short 1/6, C18 re-check Nov 20 before 6/6 |
+| | RS-07, RS-08 | **PLANNED** (assets, scene sheet) | Licences go in the asset register (ART-08) |
+| **Storytelling, human connection, payoff** | ST-01, ST-02, ST-03, ST-04, ST-05, ST-08, ST-10 | **COVERED** | Human-story check table; Anu tagged ILLUSTRATIVE (ST-05); light tags |
+| | ST-06, ST-11 | **COVERED** (not used) | Narrator only, by your decision |
+| | ST-07 (script delivery format) | **COVERED**, except SFX cues: **PLANNED** | Sound cues go in the scene sheet (WF-07, SD-04) |
+| **Film-to-Short reuse and credits** | CR-03, FMT-03, CR-02, CR-01 | **COVERED** | Reuse matrix above; library check done; film and Shorts credit estimates; no paid generation outside voice |
+| **Subscribe reminders** | FMT-05 (+ exception), BR-09, FMT-04 | **COVERED** | 4 EN / 5 TE editing cues; existing card and SFX; FMT-05 exception recorded; no card in Shorts |
+| **Visual direction and animation** | DIR-01 (styles per line), DIR-04, DIR-09 | **PLANNED** (scene sheet, WF-01 step 7) | The scene-concept table is a draft |
+| | DIR-02, DIR-03, DIR-06, DIR-12, MO-04 | **COVERED** (concept) | Continuous world, processes on the object, paper-boat recurring object, Python and Remotion kept separate |
+| | ART-03: science explanations use real-looking imagery | **GAP** | The concept uses code-drawn particles and Glow Atom for inside the cloud. Fix 1 below |
+| | ART-07: real captures only, never recreated screenshots | **GAP** | Cold open "generic phone notification" and Ch. 1 "Headline … ILLUSTRATIVE if generic". Fix 2 below |
+| | ART-04, DIR-05: character images | **GAP** | The concept says Anu is drawn in code; ART-04 says character shots come from your Gemini prompt pack. Fix 3 below |
+| | ART-02, ART-05, ART-06, ART-08, LAY-01–05, MO-01–03 | **PLANNED** (scene sheet, assets, render) | Map Route must use India's official outline (ART-05); full-frame and caption rules at render |
+| | BR-03: series tag | **GAP** | No season tag is set yet. Fix 4 below |
+| | BR-01, BR-02, BR-05, BR-06 | **PLANNED** (render) | Palette and fonts unchanged; Telugu graphics fully Telugu |
+| **Music** | MU-01, MU-02, MU-03 | **PLANNED** (scene sheet cue sheet) | The 6 tracks in `music/` are the first choice. If none fits a contemporary investigation, I'll ask for new tracks by mood in the scene-sheet message |
+| **SFX** | SD-01, SD-02, SD-03, SD-05 | **PLANNED** (scene sheet) | Real recordings only |
+| | SD-04 (inventory and topic extras) | **PLANNED**, with early notice | The catalog has `rain_light_loop`, `wind_ambience`, `footsteps_soft_indoor`, `paper_slide` and `phone_typing`. It has **no heavy rain, small propeller aircraft, city traffic or ice-crack** sounds. They'll be requested in the visuals list (WF-01 step 7); I'm flagging them now because of the Nov 14 date (WF-04) |
+| **English and Telugu** | ST-07, BR-06, FMT-09 | **COVERED** (scripts) / **PLANNED** (graphics, exports) | Both scripts written natively; TE graphics and four exports per Short at render |
+| | ED-01, ED-02, ED-03, ED-04, ED-05 | **PLANNED** (voice edit, render) | Pace Model; te_med check on every Telugu line |
+| **Approvals, rendering and QC** | WF-01, WF-04 | **COVERED** | At step 4 now; no voice before approval; date risk flagged |
+| | WF-02, WF-03 | **PLANNED** | 10–20 s previews of the new sequences (Anu's balcony world, inside the cloud) in both languages, before the full render |
+| | QC-01 – QC-06 | **PLANNED** (QC stage) | Separate technical and creative QC, each language and platform independently |
+| **Publishing** | PUB-01 v3 – PUB-07, PLT-01 – PLT-09, BR-07, BR-08 | **PLANNED** (post copy and covers) | Disclosure (PUB-05): the narrator is your own voice clone, which YouTube lists as not needing disclosure. AI music and any semi-realistic Anu images are checked per upload; ambiguous cases come to you. **The pending `check_copy.py` correction must be approved and merged before the first publishing approval**, as you required |
+| | PUB-04, FMT-06 | **PLANNED** | Related video / link in bio; series slide on Shorts 1–5 |
+| **Analytics** | AN-01, AN-02, AN-03 | **PLANNED** (after publishing) | 48 h provisional review; judged only on retention and viewed vs swiped-away |
+
+### Proposed fixes (this brief only; no rule changes)
+None of the gaps needs a rule change. The rules are right; the draft scene concept didn't follow them. These are corrections to this brief's scene-concept table. They'll be applied in the scene sheet if you approve:
+
+1. **ART-03 (inside the cloud):** real cloud footage (Pexels or NASA, → ART-09) as the base, with real-looking rendered droplets and ice crystals growing on it. The silver-iodide and ice lattice comparison stays as a labelled scientific diagram (like the GS evidence cards), not a cartoon. Glow Atom is used only if you agree it reads as a diagram.
+2. **ART-07 (the news):** no recreated phone or headline screens.
+   - The cold open shows Anu's mum looking at her phone with the screen **turned away or unreadable**, and the narration carries the news.
+   - Ch. 1 uses a **real capture** of the News on AIR approval article [C1], verified for URL, line and date.
+3. **ART-04 / DIR-05 (Anu):** Anu and her family come from a phone-friendly Gemini prompt pack you generate (ILLUSTRATIVE, stylised, not photoreal, so PUB-05 stays simple), sent back by shot ID. The alternative is code-drawn figures (no stick figures). **Your choice.**
+4. **BR-03 (series tag):** proposed **`DELHI RAIN · n/6`** and film **`DELHI RAIN · FULL STORY`**; TE **`ఢిల్లీ వర్షం · n/6`** and **`ఢిల్లీ వర్షం · పూర్తి కథ`**.
 
 ## Season arc (→ FMT-02, FMT-03, FMT-08). ★ = a fact only that Short has
 | Day | Video | Opening direction | Key facts | ★ | Tease → next |
