@@ -533,6 +533,7 @@ Written for Telugu viewers, not translated line by line. Same facts, the same li
 - 6.2–6.3 were recorded last, from the Nov 11 status check. They are re-voiced only if the Nov 13 check changes anything.
 - **ASR check:** EN with Whisper small.en; TE with te_med (→ ED-04). Results in `/home/claude/delhirain/voice/asr_*.json` (working files).
   - EN: every line matches the script, except **EN 6.0**: both small.en and medium hear "Chapter six, **Dehi** tries again". Needs a listen; a re-take would cost ≈31 credits (CR-01: ask first).
+- **ASR result (Nov 11):** EN 74/74 pass (6.0 fixed by take 2). TE 74/74 pass: 55 at ≥0.80 on the first run; the other 19 were cut off by the recogniser at ~120 characters on long Telugu lines, so they were re-checked in ~6 s chunks, scoring Telugu-script words only. All 19 now 0.80–0.96 with no dropped phrases. Lowest (2.6, 2.11) are only English terms written in Telugu letters. Final voice assembly is cleared.
 
 ## Duration and credits (planning estimate; measured after recording, never sped up → FMT-01)
 | | English | Telugu |
