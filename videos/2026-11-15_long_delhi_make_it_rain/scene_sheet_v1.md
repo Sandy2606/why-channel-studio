@@ -105,7 +105,7 @@ Important actions use two to four matching poses with natural timing (cross-fade
 | Scene | Action | Poses (all from the selected A0-consistent set) | Missing? |
 |---|---|---|---|
 | 1 | Anu walks out onto the balcony | A1 back view + mirrored-leg stride | — |
-| 3 | Mum (on her phone) notices, steps in and reaches for Anu's shoulder; Anu turns, disappointed; Mum lowers her hand | Mum A6 → A5 → M3 (Batch 5; A6 until it arrives); Anu A1 back → three-quarter turn (ChatGPT A1a) → A2; shoulders sink slightly on "Again" | — |
+| 3 | Mum (on her phone) notices, steps in and reaches for Anu's shoulder; Anu turns, disappointed; Mum lowers her hand | Mum M3 → A5 → M3 → A6 (no phone while she reaches; she takes the phone out for the news in 0.4: A5 and M3 have no phone, so this keeps the phone continuous); Anu A1 back → three-quarter turn (ChatGPT A1a) → A2; shoulders sink slightly on "Again" | — |
 | 4 | The news; Anu looks up, hopeful | Mum A6 (phone back to camera); Anu A2 → A3 | — |
 | 5 | The paper boat | R3 hands → R1 set down on the sill | — |
 | 7 | The family watches the sky | A7 (parents, from behind) + A3 | — |
