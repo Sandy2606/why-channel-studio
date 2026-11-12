@@ -19,11 +19,31 @@ TE title: ఢిల్లీకి కృత్రిమ వర్షం ఎం�
 | Nov 11 (review v1) | Write EN and TE naturally for each audience, with the same verified facts. | season |
 | Nov 11 (review v2) | **Subscribe reminders: about one every two minutes.** A small animated card over the narration, about 2 s, using the existing CTA animation and SFX. No new voice lines or credits. Never during a discovery or an emotional moment. Placed in the scene sheet as editing cues, not in the narration. | this film |
 | Nov 11 (review v2) | **Humanise the whole script.** A relatable human experience early, carried through the science, the failure, the temporary relief and the answer. Concrete everyday examples. A knowledgeable friend telling a true story. No forced drama, no invented real events, no unsupported claims. Narrator only; illustrative people are visual only. Keep the fact checks and the approved structure. | this film |
+| Nov 11 (approval v3) | **Film script v3 approved** creatively and structurally, subject to accuracy corrections: a real final-check date on the 2026 chip; re-check the official 2026 status before locking 6.2–6.3; keep preliminary findings qualified in voice and on screen. | this film |
+| Nov 11 (approval v3) | ART-03 fix approved: real cloud footage, plus realistic droplet and ice-crystal animation labelled ILLUSTRATIVE SCIENTIFIC RECONSTRUCTION. | this film |
+| Nov 11 (approval v3) | ART-07 fix approved: no recreated screenshots; the phone stays unreadable; a verified News on AIR capture with attribution and a rights check. | this film |
+| Nov 11 (approval v3) | ART-04: **Gemini.** A master reference for Anu and her family first, distinct from Chelli, consistent across chapters, lighting, clothing, balcony and paper boat. Show the master before the other character images. | this film and Shorts |
+| Nov 11 (approval v3) | BR-03 tags: EN "DELHI RAIN · n/6" and "DELHI RAIN · FULL STORY"; TE "ఢిల్లీ వర్షం · n/6" and "ఢిల్లీ వర్షం · పూర్తి కథ". | season |
+| Nov 11 (approval v3) | Keep the reuse matrix. After the fact checks, record one take per line and save each clean EN and TE clip to `voice_lib/` with its ID and metadata. Reuse in all six Shorts; new Short narration only where needed. Confirm the time-sensitive lines and the budget before spending credits. | season |
 
 ## Exceptions to shared rules
 | Rule ID | What differs | Why | Approved (date) | Scope |
 |---|---|---|---|---|
 | FMT-05 | Reminders come about every 2 minutes (EN ≈4, TE ≈4–5) rather than only at story breaks. Each still lands on the nearest calm line, never during a discovery or an emotional beat, and never in the first 15 s. | The user's decision (review v2) | Nov 11 | this film |
+
+## Lock corrections (after v3 approval, Nov 11)
+1. **2026 status re-checked** on Nov 11 (IST evening; Nov 12 07:00 IST is the latest check):
+   - Sirsa (Nov 11, ANI via Asianet Newsable and The News Mill): trials are "continuous… part of an ongoing study", overseen by IIT Kanpur. Details only "once the study yields positive results and reaches completion".
+   - Outlook (Nov 11, citing NDTV and unnamed IIT Kanpur sources): an attempt is possible if clouds are spotted, with an aircraft ready. No flight is confirmed and no results are reported.
+   - **6.2–6.3 are accurate as written.** No change.
+2. **6.3 chip** shows the actual date of the last status check before render lock, never a date after the Nov 15 release.
+   - **Final re-check:** the morning of Nov 13 (IST), before render.
+   - **If anything has changed** (a flight, a result, an official statement), only 6.2–6.3 are re-voiced, in EN and TE. The contingency for that is in the budget.
+   - **Order:** 6.2–6.3 are recorded last, so they reflect the newest check.
+3. **Preliminary findings:**
+   - In the voice: "preliminary" now also qualifies the conclusion in 7.5 (EN and TE). 3.8 already says it, and 4.1 refers back with "the same… analysis".
+   - On screen: every C10 visual (3.4, 3.7, 3.8, 4.1, 4.4, 7.3, 7.5) carries "PRELIMINARY · NOT PEER-REVIEWED · IIT DELHI CAS". TE: "ప్రాథమిక విశ్లేషణ · PEER REVIEW కాలేదు · IIT DELHI CAS".
+4. **News on AIR capture** (ART-07): verify the URL, the quoted line and the date on the live page. Record the attribution "NEWS ON AIR (PRASAR BHARATI), 8 MAY 2025" and the site's terms of use in the asset register before use (→ RS-07, ART-08). If the terms don't allow it, use the C1 fact on a sourced label instead.
 
 ## v2 → v3 changes
 1. **A human thread through the whole film:**
@@ -236,7 +256,7 @@ None of the gaps needs a rule change. The rules are right; the draft scene conce
 | C15 | CAIPEEX: Solapur rain-shadow region, 2017–19; hygroscopic seeding at the base of growing warm-based convective clouds; 18.42% ± 2.57% relative increase over 100 km² downwind, 2 h after seeding; 150 seed / 122 no-seed randomised samples | Prabhakaran et al., *BAMS* Nov 2023, doi:10.1175/BAMS-D-21-0291.1 (PDF: https://eprints.iisc.ac.in/85377/1/bul_ame_met_soc_104_11_2023.pdf); Tribune/PTI, Oct 26, 2023 | 2026-11-11 | "about 18 percent"; screen "≈18% · RELATIVE · 100 KM² · BAMS 2023". Prabhakaran = CAIPEEX project director (Tribune) |
 | C16 | Andhra Pradesh hygroscopic seeding 2003–2008: 12 districts, 2,200 sorties, 1,600 analysed | *Journal of Weather Modification* 41(1), 2009: https://journalofweathermodification.org/index.php/JWM/article/view/184 | 2026-11-11 | Programme facts only, no result |
 | C17 | Delhi monsoon trials 1957–59: salt seeds of suitable sizes released from ground-based generators | Roy, Ramana Murty, Srivastava, Khemani, *MAUSAM* 12(3), 1961, pp. 401–412: https://mausamjournal.imd.gov.in/index.php/MAUSAM/article/view/4212 | 2026-11-11 | Results not in the abstract: ⚠ read the full PDF before Short 1/6, or say only that the trials ran |
-| C18 | Nov 11, 2026: Sirsa says trials are ongoing under IIT Kanpur's supervision, as "part of an ongoing study"; details once the study "reaches completion"; IIT Kanpur sources say an aircraft is ready, pending moisture | The News Mill, Nov 11, 2026: https://thenewsmill.com/2026/11/delhi-environment-minister-confirms-iit-kanpur-cloud-seeding-trials/ | 2026-11-11 | ⚠ re-check Nov 20 for Short 6/6. The aircraft detail is unnamed sources: not used in the voice |
+| C18 | Nov 11, 2026: Sirsa says trials are ongoing under IIT Kanpur's supervision, as "part of an ongoing study"; details once the study "reaches completion"; IIT Kanpur sources say an aircraft is ready, pending moisture | The News Mill, Nov 11, 2026: https://thenewsmill.com/2026/11/delhi-environment-minister-confirms-iit-kanpur-cloud-seeding-trials/ | 2026-11-11 | Re-checked Nov 11/12: unchanged (also Asianet Newsable/ANI, Nov 11: https://newsable.asianetnews.com/india/delhi-minister-provides-update-on-cloud-seeding-trials-for-air-quality-articleshow-qzy2b9m ; Outlook, Nov 11: https://www.outlookindia.com/national/artificial-rain-possible-in-delhi-today-as-aqi-stays-very-poor-report). Final film check Nov 13; Short 6/6 re-check Nov 20. Aircraft-ready detail is unnamed sources: not voiced |
 | C19 | A bottle of water in a freezer can stay liquid below 0 °C (supercooled) and freeze in seconds when hit | BBC Science Focus, Len Fisher: https://www.sciencefocus.com/science/why-does-water-freeze-instantly-when-you-hit-a-bottle-just-out-of-the-freezer | 2026-11-11 | "can stay", "sometimes": it doesn't always happen |
 | C20 | Salt is hygroscopic: it absorbs water vapour from the air, so it clumps in humid weather | Indiana Public Media, A Moment of Science, Sep 18, 2019: https://www.ipm.org/show/amomentofscience/2019-09-18/salt-clumps | 2026-11-11 | Everyday analogy for hygroscopic seeding |
 
@@ -321,7 +341,7 @@ Format → ST-07. **Bold** = stress, ⏸ = pause, → = visual beat. Tags are li
 **3.6** So that flat grey over her balcony? ⏸ On those days, a lot of it isn't **cloud** at all. ⏸ It's **smog**. [C11]
 → The camera tilts up: the grey has no cloud shapes, just haze
 **3.7** The same calm, dry air that lets smog **pile up** over the city… doesn't build **rain clouds**. [C10]
-→ Still air; the haze thickens layer by layer; no cloud forms
+→ Still air; the haze thickens layer by layer; no cloud forms; chip "PRELIMINARY · IIT DELHI CAS"
 **3.8** A **preliminary** analysis by IIT Delhi researchers found one more problem. ⏸ The smog lies low, like a **blanket** over the rooftops, under about **2 kilometres**. ⏸ The clouds you could seed float **higher**, between **2 and 5**. [C10]
 → 3D Explainer side view: the haze blanket on the rooftops, the cloud layer above, the gap marked; chip "PRELIMINARY · NOT PEER-REVIEWED · IIT DELHI CAS, OCT 2025"
 **3.9** So even when good clouds **do** turn up… they're often drifting **above** the problem.
@@ -332,13 +352,13 @@ Format → ST-07. **Bold** = stress, ⏸ = pause, → = visual beat. Tags are li
 ### CHAPTER 4 · Can rain wash smog away?
 **4.0** Chapter four. **Can rain wash smog away?**
 **4.1** Heavy **natural** rain really does help. ⏸ The same IIT Delhi analysis says it can wash out **80 to 95 percent** of fine particles. [C10]
-→ A downpour over the street; particles in the air are carried down with the drops; small chip "HEAVY NATURAL RAIN · PRELIMINARY"
+→ A downpour over the street; particles in the air are carried down with the drops; small chip "HEAVY NATURAL RAIN · PRELIMINARY · NOT PEER-REVIEWED"
 **4.2** [warm] Picture the morning after a real downpour. ⏸ The building across the road is **back**. ⏸ And Anu's paper boat finally gets a **puddle**.
 → Clear morning; the opposite building is sharp; the boat floats in a puddle in the lane (HOLD 2 s: the emotional release)
 **4.3** [slower] A light drizzle, though? ⏸ The effect is **minimal**. [C10]
 → Before & After: drizzle → the haze barely changes
 **4.4** And even after a big storm, pollution **typically** came back… within **one to five days**. [C10]
-→ Day Counter 1 → 5 on the wall calendar
+→ Day Counter 1 → 5 on the wall calendar; chip "TYPICAL PATTERN · PRELIMINARY · NOT PEER-REVIEWED"
 **4.5** Because rain doesn't **switch off** what makes the smog. ⏸ The next morning, the traffic, the dust, the smoke… start filling the air **again**.
 → The street wakes up: traffic, a dusty site, smoke from a fire; particles rise
 **4.6** By the end of the week, the building across the road is **fading** again.
@@ -381,7 +401,7 @@ Format → ST-07. **Bold** = stress, ⏸ = pause, → = visual beat. Tags are li
 **6.2** Reports say two rounds of trials have been flown near Delhi's **airport**. ⏸ On November 11, Environment Minister **Manjinder Singh Sirsa** said the trials are **ongoing**, under IIT Kanpur. [C13][C18]
 → The map near IGI Airport (no flight paths drawn: none published); small quote chip
 **6.3** No results have been **published** yet. ⏸ He says details will come once the study is **complete**. [C18]
-→ Chip "RESULTS: NOT YET PUBLISHED · CHECKED 20 NOV" (date updated at lock)
+→ Chip "RESULTS: NOT YET PUBLISHED · CHECKED <FINAL CHECK DATE>": the date of the last official-status check before render lock (Nov 13 at the latest). Never a date after the Nov 15 release
 **6.4** And it isn't cheap. ⏸ IIT Kanpur's director estimated last year's two October flights cost about **₹60 lakh**. ⏸ A whole winter of seeding? He estimated **₹25 to 30 crore**. [C11]
 → Money Stack grows; chip "2025 · IIT KANPUR ESTIMATE"
 **6.5** [slower] And that's only if the right clouds show up at all.
@@ -397,8 +417,8 @@ Format → ST-07. **Bold** = stress, ⏸ = pause, → = visual beat. Tags are li
 → → SHORT RELIEF
 **7.4** [slightly serious] Rain can **wash** the air. ⏸ It can't stop the city filling it **again**.
 → The camera comes down from the sky to street level: traffic, chimneys, dust
-**7.5** That's why the IIT Delhi analysis concludes the lasting fix isn't in the **clouds**… it's cutting what goes **into the air**. [C10]
-→ → THE FIX IS ON THE GROUND (the last domino)
+**7.5** That's why IIT Delhi's **preliminary** analysis concludes the lasting fix isn't in the **clouds**… it's cutting what goes **into the air**. [C10]
+→ → THE FIX IS ON THE GROUND (the last domino); chip "PRELIMINARY · NOT PEER-REVIEWED · IIT DELHI CAS"
 **7.6** [warm] So Anu's clear mornings probably won't come from a plane. ⏸ They'll come from the **ground**: from what the city puts into its air. [C10]
 → Back to the windowsill: the paper boat, dry again, waiting
 **7.7** Science can do amazing things with a cloud. ⏸ But first… you need **the cloud**.
@@ -495,7 +515,7 @@ Written for Telugu viewers, not translated line by line. Same facts, the same li
 **7.2** ఢిల్లీలో పొగ ఎక్కువుండే చలికాలం రోజుల్లో… అను ఇంట్లోనే ఉండిపోయే ఆ రోజుల్లో… సరైన మేఘాలే సాధారణంగా **ఉండవు**. [C11][C12]
 **7.3** వర్షం పడినా, ఉపశమనం **కొన్ని రోజులే**. చలికాలం మొత్తం కాదు. [C10]
 **7.4** [slightly serious] వర్షం గాలిని **కడగగలదు**. ⏸ కానీ నగరం దాన్ని మళ్లీ **నింపకుండా** ఆపలేదు.
-**7.5** అందుకే IIT Delhi విశ్లేషణ తేల్చింది: శాశ్వత పరిష్కారం **మేఘాల్లో** లేదు… గాల్లోకి **వెళ్లేదాన్ని తగ్గించడంలో** ఉంది. [C10]
+**7.5** అందుకే IIT Delhi **ప్రాథమిక** విశ్లేషణ తేల్చింది: శాశ్వత పరిష్కారం **మేఘాల్లో** లేదు… గాల్లోకి **వెళ్లేదాన్ని తగ్గించడంలో** ఉంది. [C10]
 **7.6** [warm] అంటే అనుకి స్పష్టమైన ఉదయాలు బహుశా ఒక విమానం నుంచి రావు. ⏸ అవి **నేల** మీద నుంచే రావాలి: నగరం తన గాల్లోకి ఏం వదులుతోందో, దాని నుంచే. [C10]
 **7.7** Science ఒక మేఘంతో **అద్భుతాలు** చేయగలదు. ⏸ కానీ ముందు… ఆ **మేఘం** ఉండాలి.
 
@@ -509,6 +529,17 @@ Written for Telugu viewers, not translated line by line. Same facts, the same li
 | Estimated length (speech + pauses + cards) | **≈10:00–10:45** | **≈12:45–13:45** |
 
 - **v3 is about 2 minutes longer than v2** because the human thread runs through every chapter. The story sets the length (→ FMT-01). If you want it shorter, the easiest cuts are 1.2, 2.2, 4.3 and 5.1 (≈30 s EN), with no fact lost.
-- **Credits:** ≈1 per character. ≈7,400 EN + ≈8,400 TE (with numbers spelled out) = **≈15,800** for the film, one take per line (v2 was ≈12,200).
+- **Final recording budget (locked script, Nov 11):**
+
+| Item | EN | TE | Credits ≈ |
+|---|---|---|---|
+| Film, 74 + 74 lines, one take each | 7,641 chars (incl. light tags) | 7,900 chars + 25 numbers spelled out (≈+300) | **≈15,850** |
+| Contingency: re-voice 6.2–6.3 only if the Nov 13 check changes them | — | — | ≈550 |
+| Six Shorts, new lines only (reuse matrix) | ≈2,330 | ≈2,500 | ≈4,800 (confirmed at Shorts script approval) |
+| **Week** | | | **≈21,200** (≈20,650 without contingency) |
+
+- **Order of recording:** EN film, then TE film, with 6.2–6.3 last in each.
+- **Balance:** read before the first call. If it doesn't cover the film plus contingency, I stop and tell you before generating anything.
+- Each clean clip goes into `voice_lib/` with an index entry: lang, text, file, voice, model eleven_v4, source "Delhi Rain film, line <ID>", tag `delhirain_film_<ID>` (→ CR-03).
 - Voice library: no matches are expected for a new topic. Every line is checked against `voice_lib/index.json` before voicing (→ CR-03).
 - No subscribe lines are voiced; the reminders are editing cues only.
