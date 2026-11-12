@@ -1,4 +1,4 @@
-# Delhi Rain: image prompt pack v2 (A0 approved · B0 pending · Batches 1–2 ready)
+# Delhi Rain: image prompt pack v3 (A0 + B0 approved · Batches 1–4 ready)
 
 **How to make the images (→ ART-04, ART-06):**
 - **Where:** Gemini on your phone. Use **one Gemini chat for the whole season**, so it keeps the same faces and style.
@@ -76,7 +76,7 @@ Shots S02, S07, S10 and S13 have no faces and reuse the B0 set, so if any Gemini
 
 ## Status
 - **A0: APPROVED** as the master for faces and outfits (Nov 11): `refs/A0_family_master.png`.
-- **B0:** still to come. The set batches (P1–P4) are written once it arrives.
+- **B0: RECEIVED** (Nov 11) and used as the master location: `refs/B0_balcony_boat_master.png`. Doorway view from inside, black grille, tulsi, plastic chair, two towels on the line, rain-gauge cup on the rail, cream-and-brown block across the road, ruled-paper boat with a red margin line.
 
 ## How to make Batches 1–2 (→ ART-04, ART-06; motion-test direction approved Nov 11)
 - Stay in **the same Gemini chat** as A0. In every prompt, **attach A0** and say "edit". We change the pose and expression, never the face, hair, glasses or clothes.
@@ -129,4 +129,57 @@ Edit the attached character sheet. Show ONLY the mother in a three-quarter view 
 Edit the attached character sheet. Show ONLY the mother and father side by side, seen from behind and slightly to one side (three-quarter back view), both looking up at the sky. The father's hand rests lightly on the mother's shoulder. Keep their hair, clothes and proportions exactly as in the sheet: her low bun, maroon saree and grey cardigan; his short side-parted hair, navy V-neck sweater, light-blue checked collar and grey trousers. Full body, same painterly style, plain warm-grey background. Portrait 3:4, highest resolution. No text, no other people.
 ```
 
-**After Batches 1–2:** the set batch (P1–P4, by editing B0), the props (boat, bat, folding hands), then A8 (Anu a year older) and the Solapur farmer. These follow the asset breakdown already approved.
+
+## Batch 3: empty sets (edit B0; attach B0, and A0 only for style)
+Same rules: same Gemini chat; **attach B0**; "edit"; **no people**; **landscape 16:9 at the highest resolution** (≥1920 px wide). Keep every object, colour and the exact view of B0 unless the prompt says otherwise.
+
+How the layers are used: the haze is animated in code **between** the foreground (room, door, balcony, rail) and the background (the block across the road). So the foreground comes on a flat green that we key out, and the background comes on its own.
+
+### P1a · Doorway view, empty, full plate
+```
+Edit the attached image. Keep ONLY the left scene (the view from inside the room through the open balcony door) and extend it to fill a full landscape 16:9 frame, removing the three paper-boat views on the right. Keep the exact view, light and every object: curtain, door frame and open door, plastic chair, tulsi pot, clothesline with the two towels, black grille railing with the small measuring cup, the cream-and-brown apartment block across the road, trees, sky. REMOVE the paper boat from the floor. No people. Same painterly style. Highest resolution.
+```
+
+### P1b · Doorway view, foreground only (for compositing)
+```
+Edit the image you just made (P1a). Keep everything from the room up to and including the balcony railing exactly as it is: curtain, door frame and door, floor, plastic chair, tulsi pot, clothesline and towels, railing and cup. Replace EVERYTHING beyond the railing (the apartment block across the road, the trees, the street, the parked cars and the sky) with one flat, solid, pure green colour (#00FF00), with no texture or shading. Keep crisp edges along the railing bars. No people. Landscape 16:9, highest resolution.
+```
+
+### P1c · The view across the road, background only
+```
+Edit the image you made (P1a). Remove the room, door, curtain, balcony floor, chair, plant, clothesline and railing completely. Show ONLY what is beyond the railing (the cream-and-brown apartment block across the road, the trees, the street with parked cars, and the clear winter sky), repainted naturally where the foreground used to cover it, and extended about 10% wider on every side. Same light, same painterly style, no people. Landscape 16:9, highest resolution.
+```
+
+### P2 · The balcony seen from outside, looking into the room
+```
+Using the attached image as the master for this flat, paint the reverse view: from out on the balcony, near the railing, looking back IN through the open balcony door into the room. Show the same door frame and open wooden door, the same curtain, the plastic chair and tulsi pot on the balcony in the foreground, and through the doorway a modest Indian living room (a sofa, a wall clock, a framed picture, a red-oxide floor). The towels on the clothesline hang across the top of the frame. Same morning light, same painterly style, no people. Landscape 16:9, highest resolution.
+```
+
+### P3 · The windowsill close-up, no boat
+```
+Edit the attached image. A close-up of the wooden windowsill inside the room, beside the balcony door: the worn wooden sill across the lower third of the frame, the window glass and frame behind it, and through the glass a soft, out-of-focus view of the railing and the apartment block across the road. NO paper boat, no books, no pencils. Same light, same painterly style, no people. Landscape 16:9, highest resolution.
+```
+
+### P4 · The lane below after rain
+```
+Using the attached image as the master for this neighbourhood, paint the narrow lane below the balcony on a clear morning just after heavy rain: wet road, a wide shallow puddle in the foreground reflecting the blue sky and the cream-and-brown apartment block, parked cars along the side, a few fallen leaves. No paper boat, no people. Same painterly style. Landscape 16:9, highest resolution.
+```
+
+## Batch 4: props (on plain warm-grey, for cutting out)
+
+### R1 · The paper boat, isolated
+```
+Edit the attached image. Show ONLY the same folded paper boat (made from a page of a school notebook with faint blue ruled lines and a red margin line), large and centred, in a three-quarter side view, on a plain flat warm-grey background like the character sheet, evenly lit, with a soft shadow under it. Same painterly style. Landscape 16:9, highest resolution. No text, no other objects.
+```
+
+### R2 · Anu's bat, isolated (attach A0)
+```
+Edit the attached character sheet. Show ONLY Anu's small, worn wooden cricket bat with the white taped handle, standing upright and slightly leaning, on the same plain warm-grey background, evenly lit. Same painterly style. Portrait 3:4, highest resolution. No text, no people.
+```
+
+### R3 · Anu's hands folding the boat (attach A0 and B0)
+```
+Using the attached character sheet (Anu) and the attached image (the paper boat), paint a close-up of Anu's two small hands, with the mustard-yellow knitted cuffs of her hoodie, folding the last fold of the same ruled-paper boat on a wooden windowsill. Show only her hands and wrists, no face. Soft morning light, same painterly style. Landscape 16:9, highest resolution. No text.
+```
+
+**After Batches 1–4:** A8 (Anu a year older) and the Solapur farmer. These follow the asset breakdown already approved.

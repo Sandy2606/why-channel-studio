@@ -28,6 +28,7 @@ TE title: ఢిల్లీకి కృత్రిమ వర్షం ఎం�
 | Nov 11 (motion test) | **Motion proof of concept approved** for Delhi Rain: characters live inside the scene; environment changes and meaningful actions carry the story; natural object motion, no repetitive zooms or warped faces; purposeful stillness allowed; painterly documentary look. Scope: this documentary only, not a channel-wide style change. | this film and Shorts |
 | Nov 11 (motion test) | **A0 accepted** as the master character appearance. B0 becomes the master location once provided. Priority: Anu's disappointed expression, back view and other missing poses. Every final scene image separate and high resolution. | this film and Shorts |
 | Nov 11 (motion test) | **AI disclosure: No** for the clearly illustrated fictional scenes (painted style, ILLUSTRATIVE tag; narrator = the user's own voice clone). Reassess on the complete final film and any other generated elements (→ PUB-05). | this film |
+| Nov 11 (B0) | **B0 received and locked as the master location** (doorway view, grille, tulsi, chair, towels, gauge cup, the block across the road, the ruled-paper boat). Sets and props are made by editing B0. | this film and Shorts |
 
 ## Exceptions to shared rules
 | Rule ID | What differs | Why | Approved (date) | Scope |
