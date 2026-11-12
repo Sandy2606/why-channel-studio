@@ -95,6 +95,25 @@ Style keys:
 | 44 | 7.4–7.5 | 8:24 / 10:01 | The camera comes down to street level (traffic, chimneys, dust), then the last domino: THE FIX IS ON THE GROUND. Chip "PRELIMINARY · NOT PEER-REVIEWED · IIT DELHI CAS" | WORLD + Domino | — | P1c | impact (soft) on the last domino | — |
 | 45 | 7.6–7.7 | 8:35 / 10:16 | Back to the sill: the paper boat, dry, waiting (P3 + R1). A single cloud over the skyline → end card (Subscribe; end screen: Short 1/6 + the Diwali Delhi-air Short, → PUB-01 v3) | WORLD | **HOLD**: the last image | P3, R1 | ui_click + ui_bell (end card) | resolve |
 
+## Story first: faces and actions before decorative text (approved Nov 11)
+- When a face, expression, gesture or key action enters the area of the series badge, a chip, a chapter number or the preview label, that text fades out (~0.3 s) and returns when the area is clear or at the next transition. Useful labels are delayed, never dropped.
+- Captions stay readable but never sit over a face, a gesture or a scientific demonstration: moving elements fade before the caption line, and if a face would sit in the caption lane, the caption moves to the top lane for that moment.
+- Checked in visual QC on every scene (→ QC-01).
+
+## Character actions: coordinated poses (approved Nov 11)
+Important actions use two to four matching poses with natural timing (cross-fades of 0.2–0.3 s, small weight shifts, breath), never bouncing, face warping or zooms.
+| Scene | Action | Poses (all from the selected A0-consistent set) | Missing? |
+|---|---|---|---|
+| 1 | Anu walks out onto the balcony | A1 back view + mirrored-leg stride | — |
+| 3 | Mum (on her phone) notices, steps in and reaches for Anu's shoulder; Anu turns, disappointed; Mum lowers her hand | Mum A6 → A5 → A6; Anu A1 back → three-quarter turn (ChatGPT A1a) → A2; shoulders sink slightly on "Again" | — |
+| 4 | The news; Anu looks up, hopeful | Mum A6 (phone back to camera); Anu A2 → A3 | — |
+| 5 | The paper boat | R3 hands → R1 set down on the sill | — |
+| 7 | The family watches the sky | A7 (parents, from behind) + A3 | — |
+| 23 | Anu indoors, disappointed | A2, the bat leaning by the wall | — |
+| 28 | The boat on the puddle | A4 (delighted, crouching); the boat already afloat, drifting from her | — |
+| 40 | A year on | A3 + the 2026 calendar (A8 proposal) | A8 if you prefer a new image |
+No new pose is essential for these scenes. If you want Mum's "lowering her hand" beat to show a sympathetic face rather than her phone pose, the one asset to add is: **Mum, three-quarter facing left, hand lowering, sympathetic look (same chat as A5/A6, from A0)**.
+
 ## Natural rain vs seeded rain (approved Nov 11: keep the two visibly distinct)
 - **Natural rain** (scenes 26–28, 29's downpour side): real clouds, full painted downpour over the street, labelled "HEAVY NATURAL RAIN" (TE: "భారీ సహజ వర్షం"). No plane, no flares in these scenes.
 - **Seeded attempts over Delhi** (scenes 6–9, 40–42): the plane and flares, then a grey sky and the dry boat; at most a trace on the gauge. No falling rain over Delhi in any seeding scene.
