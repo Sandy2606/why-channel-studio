@@ -7523,7 +7523,10 @@
   "line": "6.0",
   "delivery": "",
   "dur": 2.85,
-  "tts_prompt": "Chapter six. Delhi tries again."
+  "tts_prompt": "Chapter six. Delhi tries again.",
+  "active": false,
+  "status": "SUPERSEDED Nov 12 2026: \"Delhi\" pronounced like \"Dehi\" (user review); kept for the record",
+  "superseded_by": "voice_lib/en/7c54d9a329f0.mp3"
  },
  {
   "lang": "en",
@@ -8742,5 +8745,22 @@
   "delivery": "",
   "dur": 6.03,
   "tts_prompt": "Science ఒక మేఘంతో అద్భుతాలు చేయగలదు. … కానీ ముందు… ఆ మేఘం ఉండాలి."
+ },
+ {
+  "lang": "en",
+  "text": "Chapter six. Delhi tries again.",
+  "file": "voice_lib/en/7c54d9a329f0.mp3",
+  "voice": "Sandeep English (grcC6bYJfJbBq5S549Id)",
+  "model": "eleven_v4",
+  "source": "Delhi Rain film, retake approved by user Nov 12 2026",
+  "tag": "delhirain_film",
+  "speaker": "NARRATOR",
+  "line": "6.0",
+  "delivery": "",
+  "dur": 2.77,
+  "take": 2,
+  "active": true,
+  "tts_prompt": "Chapter six. Delly tries again.",
+  "note": "Phonetic spelling in the TTS prompt only, to force DEL-ee; script wording unchanged. Verified: Whisper small.en and medium both hear \"Delhi\"."
  }
 ]
