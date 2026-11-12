@@ -95,6 +95,12 @@ Style keys:
 | 44 | 7.4–7.5 | 8:24 / 10:01 | The camera comes down to street level (traffic, chimneys, dust), then the last domino: THE FIX IS ON THE GROUND. Chip "PRELIMINARY · NOT PEER-REVIEWED · IIT DELHI CAS" | WORLD + Domino | — | P1c | impact (soft) on the last domino | — |
 | 45 | 7.6–7.7 | 8:35 / 10:16 | Back to the sill: the paper boat, dry, waiting (P3 + R1). A single cloud over the skyline → end card (Subscribe; end screen: Short 1/6 + the Diwali Delhi-air Short, → PUB-01 v3) | WORLD | **HOLD**: the last image | P3, R1 | ui_click + ui_bell (end card) | resolve |
 
+## Natural rain vs seeded rain (approved Nov 11: keep the two visibly distinct)
+- **Natural rain** (scenes 26–28, 29's downpour side): real clouds, full painted downpour over the street, labelled "HEAVY NATURAL RAIN" (TE: "భారీ సహజ వర్షం"). No plane, no flares in these scenes.
+- **Seeded attempts over Delhi** (scenes 6–9, 40–42): the plane and flares, then a grey sky and the dry boat; at most a trace on the gauge. No falling rain over Delhi in any seeding scene.
+- **Seeding where it worked** (Solapur, scenes 35–37): real growing cumulus and the measured result as a chart ("≈18% RELATIVE…"), never shown as a dramatic downpour.
+- **Inside the cloud** (scenes 13–18): how ice and rain form, labelled ILLUSTRATIVE SCIENTIFIC RECONSTRUCTION.
+
 ## Telugu
 - The same shots, with Telugu on-screen text throughout (→ BR-06). Chips use the agreed Telugu wording, e.g. "ప్రాథమిక విశ్లేషణ · PEER REVIEW కాలేదు".
 - The scenes are longer; the motion is timed from the Telugu narration's own anchors.
