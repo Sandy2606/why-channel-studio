@@ -146,7 +146,7 @@ Every factual field in a Remotion effect carries its source, or DEMO if it's ill
 - **Timing:** the shared card puts the click at 1.05 s and the bell at 2.05 s. For this film only, time is compressed ×1.2 in this film's render code: click ≈0.9 s, bell ≈1.7 s, fade from 2.2 s, gone by ≈2.5 s. The shared file isn't changed, so the Shorts keep their timing.
 - **Voice:** no new voice lines, no credits.
 
-Planned positions from the line-by-line estimate (EN 2.5 words/s, TE 10.82 chars/s, plus pauses and cards). Final times come from the recorded audio. Each card appears 0.3 s after the named line ends, so it plays over the *next* line, which is checked as a calm one:
+**Superseded by measured positions in `scene_sheet_v1.md` (EN 1:40 · 3:41 · 5:54 · 7:48; TE 2:02 · 4:27 · 6:18 · 9:17).** Original planning estimate below, from the line-by-line estimate (EN 2.5 words/s, TE 10.82 chars/s, plus pauses and cards). Final times come from the recorded audio. Each card appears 0.3 s after the named line ends, so it plays over the *next* line, which is checked as a calm one:
 
 | # | EN ≈ | After EN line | TE ≈ | After TE line | Plays over | Why it's safe |
 |---|---|---|---|---|---|---|
