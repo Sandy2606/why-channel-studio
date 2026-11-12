@@ -9,3 +9,8 @@
 162 clips (81 EN + 81 TE), one per script line, two speakers: ANNA (Sandeep clones) and CHELLI (Sowmya clones, subtle tags).
 Extra fields: `speaker`, `line` (script line number), `delivery` (tag used), `dur` (seconds).
 Reuse in the Diwali Shorts: filter `index.json` by `tag == "diwali_long"` and `line`. Line→file map: `videos/2026-11-01_long_diwali_explained/voice_takes.json`.
+
+## Delhi Rain film (Nov 12 2026), tag `delhirain_film`
+148 clips (74 EN + 74 TE), one take per script line, narrator only (Sandeep clones), eleven_v4.
+Extra fields: `speaker`, `line` (film script line number in `videos/2026-11-15_long_delhi_make_it_rain/production_brief.md`), `delivery` (light tag used, if any), `dur`, `tts_prompt` (exact text sent, with numbers spelled out).
+Reuse in the six Delhi Rain Shorts: filter by `tag == "delhirain_film"` and `line`, per the film-to-Short reuse matrix in the brief.
