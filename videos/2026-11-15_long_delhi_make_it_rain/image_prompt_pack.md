@@ -1,4 +1,4 @@
-# Delhi Rain: image prompt pack v3 (A0 + B0 approved · Batches 1–4 ready)
+# Delhi Rain: image prompt pack v4 (A0 + B0 approved · Batches 1–4 received · Batch 5 = the only images still missing)
 
 **How to make the images (→ ART-04, ART-06):**
 - **Where:** Gemini on your phone. Use **one Gemini chat for the whole season**, so it keeps the same faces and style.
@@ -183,3 +183,74 @@ Using the attached character sheet (Anu) and the attached image (the paper boat)
 ```
 
 **After Batches 1–4:** A8 (Anu a year older) and the Solapur farmer. These follow the asset breakdown already approved.
+
+
+---
+
+## Batch 5 · the only images still missing (Nov 11)
+Make these in the **same ChatGPT image conversation** as A2–A6, so faces and painting style stay identical. One image per prompt, largest size, **no collages**. Everything already supplied stays as it is.
+
+| Priority | ID | For scenes | Attach |
+|---|---|---|---|
+| High | **P1b** railing foreground layer | 2, 22, 24, 31, 38, 40, 44 (haze passes behind the railing cleanly) | P2 (Gemini balcony view) |
+| High | **M3** Mum lowering her hand, sympathetic | 3 (the "not today" beat) | A0, A5, A6 |
+| High | **A8** Anu a year older | 40 | A0, A3 |
+| High | **F0** Solapur farmer | 35 | A0 (style only) |
+| High | **S1a** Solapur field plate, sky as flat green | 35 | A0 (style only) |
+| High | **S1b** monsoon sky plate (wide, for drifting clouds) | 35 | S1a |
+| High | **R4a / R4b** water bottle: liquid / frozen | 15 (supercooled water) | none |
+| High | **R5a / R5b** salt jar: dry / clumped | 17 (salt pulls in water) | none |
+| Optional | **R6** auto-rickshaw, side view | 31, 44 (traffic) | P2 |
+
+### P1b · Railing foreground layer (edit of P2)
+```
+Edit the attached balcony image. Keep the black iron railing, the terracotta tulsi pot and plant, the cream wall on the left and the balcony floor and ledge exactly as they are: same position, same size, same painting, same light. Replace EVERYTHING beyond the railing (the apartment block, trees, road, cars and sky) with one flat, pure green colour #00FF00, including the gaps between the railing bars and inside the X shapes. No other changes. Same size as the original, highest resolution, no text.
+```
+
+### M3 · Mum lowering her hand, sympathetic
+```
+Same woman as in the attached images (the mother: oval face, hair in a low bun, small black bindi, muted maroon cotton saree with the gold border, grey cable-knit cardigan, gold bangle, small wristwatch). Same painterly style and the same scale as the attached reaching pose. Full body, three-quarter view facing left. Her left hand is coming down from a child's shoulder height to her side, fingers relaxed; her right hand holds the plain smartphone low, screen turned away from the viewer. Gentle, sympathetic expression, a small sad smile, head tilted slightly down to the left as if looking at a child. Plain warm-grey background, even light, no shadows on the background, no text. Portrait, highest resolution.
+```
+
+### A8 · Anu, a year older
+```
+Same girl as in the attached images (Anu: round face, big dark eyes, small gap in her front teeth, short straight chin-length bob with a straight fringe, round red-framed glasses), now about one year older: slightly taller and slimmer in the face, her bob grown a little longer, just below the chin. Same mustard-yellow knitted hoodie (sleeves now a little short at the wrists), navy track pants with white side stripes, white canvas shoes, teal woollen scarf. Same painterly style and scale. Full body, three-quarter view facing right, hands in her hoodie pockets, looking up at a grey sky with a thoughtful, patient expression (not smiling). Plain warm-grey background, even light, no shadows on the background, no text. Portrait, highest resolution.
+```
+
+### F0 · Solapur farmer (ILLUSTRATIVE EXAMPLE · NOT A REAL PERSON)
+```
+Use only the painting style of the attached image; this is a different person. A farmer from the Solapur district of Maharashtra, about 50, lean and sun-weathered, short greying hair and moustache, wearing a faded white cotton shirt with rolled sleeves, a plain off-white dhoti, worn leather sandals, a folded cotton towel over one shoulder. Full body, three-quarter view facing left, standing still, one hand raised to shade his eyes as he looks up at the sky, a calm, hopeful, slightly worried expression. Respectful, natural, not a stereotype. Painterly illustration, soft brushwork, warm daylight, clearly painted and not a photograph. Plain warm-grey background, no shadows on the background, no text. Portrait, highest resolution.
+```
+
+### S1a · Solapur field plate (sky as flat green)
+```
+Same painterly style as the attached image, NO people. A wide view of dry farmland in the Solapur district of Maharashtra after a weak monsoon: dark cracked black-cotton soil, sparse short jowar rows, a single neem tree in the middle distance, a low stone field boundary, flat land to a low horizon. Warm, hazy daylight. Replace the entire sky above the horizon with one flat, pure green colour #00FF00 (a clean horizon edge). Landscape 16:9, at least 2560 px wide, no text.
+```
+
+### S1b · Monsoon sky plate (for drifting clouds)
+```
+Same painterly style as the attached field image, sky only, no land: a wide band of grey-white monsoon clouds passing over a pale sky, layered at different heights, bright edges where the sun catches them, clearly not raining. Very wide format (about 3:1), at least 4000 px wide, so it can drift slowly behind the field. No text.
+```
+
+### R4a / R4b · Water bottle, liquid and frozen (ILLUSTRATIVE)
+Make R4a first, then R4b with R4a attached.
+```
+R4a: A clear plastic 1-litre water bottle, label-free, full of clear water, standing upright, frosty condensation on the outside as if just taken out of a freezer. Realistic painterly style, soft studio light, centred, plain warm-grey background, no shadows on the background, no text, no brand. Portrait, highest resolution.
+```
+```
+R4b: Exactly the same bottle, same position, same angle, same size and same light as the attached image, but the water inside has turned to white, feathery slush ice that fills the bottle from top to bottom. No other changes, no text.
+```
+
+### R5a / R5b · Salt jar, dry and clumped (ILLUSTRATIVE)
+Make R5a first, then R5b with R5a attached.
+```
+R5a: A small clear glass jar with a metal lid set beside it, filled two-thirds with fine, free-flowing white table salt, on a plain kitchen shelf edge. Realistic painterly style, soft daylight, centred, plain warm-grey background, no text, no brand. Landscape, highest resolution.
+```
+```
+R5b: Exactly the same jar, shelf, angle, size and light as the attached image, but the salt has absorbed moisture from humid air: it has formed hard lumps and clumps stuck to the glass. No other changes, no text.
+```
+
+### R6 · Auto-rickshaw, side view (optional)
+```
+Same painterly style as the attached balcony view. A green-and-yellow Delhi CNG auto-rickshaw seen exactly from the side, facing left, no driver visible, no number plate text, no logos. Full vehicle, plain warm-grey background, even light, no shadows on the background, no text. Landscape, highest resolution.
+```
