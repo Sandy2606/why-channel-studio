@@ -42,15 +42,15 @@ Channel: "Why?" and "Why? Telugu" (handles → BR-07). Faceless explainers and s
 Templates (`templates/`) hold structure and rule IDs only, never rule text.
 
 ## Workflow
-- **[WF-01]** (P, user Nov 8; additions Nov 10; step 3 v2 Nov 13) Order of work:
+- **[WF-01]** (P, user Nov 8; additions Nov 10; step 3 v3 Nov 14) Order of work:
   1. Agree the topic.
   2. Research and verify every fact (→ RS-01).
-  3. Write the full English and Telugu scripts (→ ST-07) in the production brief as an **audiovisual script** (v2, user Nov 13): the story and the viewing plan are written together, before any voice. Each beat names
+  3. Write the full English and Telugu scripts (→ ST-07) in the production brief as an **audiovisual script** (v3, user Nov 13–14): the story and the viewing plan are written together, before any voice. Each beat names
      - **who** carries it: the host on camera, the narrator voice-over, or a story character;
      - **the line** in English and in natural Telugu;
      - **what is on screen** and its treatment (host framing and gesture, human scene, evidence card, WHY? reveal, a named style or effect);
      - **why it is there**: the question it raises, the point it proves or the feeling it creates.
-     Before approval the script is read twice: as a viewer (curious? clear? want the next beat?) and as a director (can every line be shown? does each host appearance earn its place? can we make it with our tools and budget?). A line that can't be shown is rewritten at script stage. The host, the WHY? reveal and evidence cards are optional per story, never forced. Sources and the estimated credits are included. The scene sheet (step 7) later adds exact timing, styles and assets.
+     Before approval the script is read twice: as a viewer (curious? clear? want the next beat?) and as a director (can every line be shown? does each host appearance earn its place? can we make it with our tools and budget?). A good line that is hard to show gets a meaningful visual treatment first; it is rewritten only when that genuinely improves the story. If a scene needs character animation we don't have yet, the script says so and proposes how to make it (free local methods first; new assets approved by the user). The host, the WHY? reveal and evidence cards are optional per story, never forced. Curiosity, human connection, viewer understanding and retention are the priorities; the techniques stay flexible (→ methods/host_led.md). Sources and the estimated credits are included. The scene sheet (step 7) later adds exact timing, styles and assets.
   4. Script versions: the user asks for changes until he approves the final script. Nothing below starts before that.
   5. Generate both voices, one take each, reusing the voice library (→ CR-02, CR-03).
   6. Edit the voice (→ ED-01).

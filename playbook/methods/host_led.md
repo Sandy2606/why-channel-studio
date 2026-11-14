@@ -20,16 +20,41 @@ Make the audience curious and keep them watching, without losing the channel's e
   - one restrained push-in across the card.
 - **WHY? question reveal.** The amber dot lands, the brand "?" draws up from it, the WHY wordmark locks, and a short kicker (e.g. DELHI vs SOLAPUR) appears. A slow halftone drift keeps the hold alive. Used once per Short, at the central question.
 
+## Priorities (user, Nov 14)
+**Curiosity, human connection, viewer understanding and retention come first. Every technique below is a tool for those, never a limit.** The aim is not to reproduce the reference Reel or repeat one formula. It is our own recognizable, human documentary storytelling, keeping the channel identity, factual accuracy, bilingual quality, asset privacy and the fixed release schedule.
+
 ## Writing for the host (at script stage)
-- Give him the turns: the hook question, the twist, sometimes the tease. Typically 2–4 appearances in a Short, each under about 8 s, roughly a third of the runtime at most. Explanations stay on visuals.
-- On-camera lines are short and direct. The narrator carries the explaining.
-- Write the moves the art can do today:
+- **Start from the viewer.** What are they thinking and feeling at this beat? What question do they want answered? What makes them want the next scene?
+- **Write behaviour, not only dialogue.** The presenter can notice something, hesitate, react to evidence, look toward a character, challenge an assumption or share the viewer's question before answering. A human situation can open a Short as well as the host can. Choose whichever stops the scroll for this story.
+- **These are starting points, not limits:**
+  - how many times the host appears and for how long;
+  - how much of a Short he occupies (twice may be right; half the Short with a second character may be right; no host at all may be right);
+  - whether he walks, turns, smiles, reacts or interacts with characters;
+  - whether a WHY? card, a chart or a presenter shot is used at all;
+  - whether the first shot is the host or a human moment.
+- **Don't write down to the current art.** It does today:
   - talk, blink, raise the brows, glance at the board, nod;
-  - point to the board (frame right), an open palm, a raised "tell me" palm.
-- If a story needs a move the art doesn't have yet (a head shake, a smile, a turn, a walk-in, a lean), name it in the script. Then:
-  - the art comes as free Gemini poses from the approved likeness;
-  - the user checks the likeness;
-  - any paid generation is priced and asked first (→ CR-01).
+  - point to the board (frame right), an open palm, a raised "tell me" palm;
+  - a close-up framing (the sharp close-up face frames).
+
+  If a scene needs more (a head shake, a smile, a turn, a walk-in, handling an object), the script names it and proposes how to make it:
+  - free local methods first: Gemini poses from the approved likeness, then our 2D compositing;
+  - the user checks the likeness and approves new assets;
+  - paid generation is priced first (→ CR-01).
+
+  No new gestures just for their own sake: the next story tells us what we need.
+- **Hard to show isn't a reason to cut a good line.** Find a meaningful visual treatment first; rewrite only when that improves the story.
+- **The presenter enters the story (option).** Sometimes he steps into the illustrated world instead of the studio: beside a historical map, handling a recreated object, watching an event, talking with a story character. This is built with our existing 2D animation and compositing, and used only when the story benefits.
+
+## Judge by viewers
+The pilot's 8.5/10 rates presentation quality, not audience response. For each Short made this way, read the real data before drawing conclusions (→ AN-01):
+- how many viewers stay through the opening;
+- where they leave;
+- average percentage viewed;
+- rewatches;
+- clicks to the full film.
+
+Feed what the data shows into the next scripts (→ AN-02).
 
 ## Assets and privacy
 - **The likeness assets are PRIVATE and never committed to this repository (it is public):** H_ref05, the reference artwork, the mouth and blink frames, the body poses, the studio plates, and the likeness-specific rig code.

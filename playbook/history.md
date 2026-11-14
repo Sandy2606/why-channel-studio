@@ -4,6 +4,14 @@
 
 Entry statuses: **SUPERSEDED** (replaced by a newer approved rule), **DROP** (tried and failed; never repeat), **EVIDENCE** (scores, measurements, lessons), **TEST** (a lesson awaiting approval or a second confirmation), **EXCEPTION (closed)**, **PROPOSAL (not adopted)**.
 
+## Rule revision (user, 2026-11-14)
+
+User's words (Nov 14): "Curiosity, human connection, viewer understanding and retention are the creative priorities. The production techniques must remain flexible." "Don't limit creative writing to the movements the current host artwork supports." "Don't automatically rewrite a good line just because it's difficult to visualize. Find a meaningful visual treatment first, and revise the line when that genuinely improves the story." Scope: channel-wide.
+
+### WF-01 step 3 v2 · SUPERSEDED by WF-01 step 3 v3 (2026-11-14)
+- Old sentence: "A line that can't be shown is rewritten at script stage. The host, the WHY? reveal and evidence cards are optional per story, never forced."
+- Also changed: methods/host_led.md (host-appearance numbers and the move list are now starting points, not limits).
+
 ## Rule revisions (user, 2026-11-13)
 
 User's words (Nov 13): "from now on as we already made the full video so while scripting only will choose way to incorporate our character we have created so that it will be clear instead of adding some other lines for it after developing the complete script and redoing everything it will be clear before the voice generation"; "Everything is changeable as per our convenience are primary goal is to make audience curious about the content we are making and get more views … keeping our channel essence … don't think the character cannot move". Scope: channel-wide.
