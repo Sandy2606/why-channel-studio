@@ -25,7 +25,7 @@ Mark each claim in the script as [C1], [C2]… so `pipeline/qc/check_sources.py`
 |---|---|---|---|---|
 
 ## Script (→ ST-07)
-English and Telugu, numbered lines with [MOOD · delivery], bold stress, ⏸, a visual beat under each line.
+English and Telugu, numbered lines with [MOOD · delivery], bold stress, ⏸, the audiovisual plan per beat (who: host on camera / narrator / character · on screen + treatment · why), → WF-01 step 3.
 
 ## Duration and credits
 - Estimated runtime from measured speech, with margin (→ FMT-01):

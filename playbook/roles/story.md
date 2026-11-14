@@ -24,9 +24,9 @@
   - chapters, with the characters returning between them;
   - Anna's phone records the answers ("Let me record this"), and he sometimes speaks to camera;
   - an ending with the next questions before the like/comment ask.
-- **[ST-07]** (P, user Oct 28, Nov 8) Every script delivery gives the full English and the full Telugu script, in this format:
+- **[ST-07]** (P, user Oct 28, Nov 8; v2 Nov 13) Every script delivery gives the full English and the full Telugu script, in this format:
   - numbered lines with [MOOD · delivery] tags, bold stress words and ⏸ pause marks;
-  - a visual beat under each line;
+  - the audiovisual plan for each beat: who carries it, what is on screen and why (→ WF-01 step 3);
   - SFX cues where needed (e.g. `[⌨️ TYPE "1520"]`);
   - sources with check dates;
   - the credit estimate.

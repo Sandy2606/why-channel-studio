@@ -20,7 +20,7 @@
 - **[DIR-06]** (C, approved video Nov 10) Use a match cut plus one recurring object where the story has a real contrast or journey; it is not a stock effect.
 - **[DIR-07]** (C, v2 user Oct 2026 and Nov 10) Shorts get explainer graphics for their ideas too. How many, and which kind, is a directing choice.
 - **[DIR-08]** (P, v2 user Nov 10) Frame 1 is bright, full-screen and readable, with no fade-in and no black first frame (measured in QC-06). How the opening promise is presented is a story choice (→ ST-02).
-- **[DIR-09]** (C, user Nov 1 and approved videos) **Toolkit**, used where it fits:
+- **[DIR-09]** (C, user Nov 1 and approved videos; v2 user Nov 13) **Toolkit**, used where it fits:
   - named people as moving avatars against a threshold line;
   - an OLD vs NEW or before/after scoreboard;
   - evidence flashes: one sentence highlighted, the rest dimmed, about 1.5 s, corrections ≤ 5 s;
@@ -30,6 +30,7 @@
   - place cards and big numbers;
   - an evidence board with real clippings;
   - single-object loops.
+  - **host-led editorial** (tested Nov 13, optional): the WHY? presenter on camera at the story's turns, original source-cited evidence cards, and the WHY? question reveal at the one central question. Method and tested components: `methods/host_led.md`.
 - **[DIR-10]** (P, user Nov 4) Hold the camera steady during serious health information, and put a source chip on screen (e.g. US EPA · WHO).
 - **[DIR-11]** (C, v2 user Nov 10) **Long-film structure is series-specific.** Channel-wide, every film needs a coherent story, credible evidence, meaningful connections between chapters and a satisfying ending. The approved series or film plan sets the actual structure and visual treatments (for example progress bars, chapter cards, proof-card frequency, the end card). No single template is required.
 

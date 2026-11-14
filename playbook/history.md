@@ -4,6 +4,36 @@
 
 Entry statuses: **SUPERSEDED** (replaced by a newer approved rule), **DROP** (tried and failed; never repeat), **EVIDENCE** (scores, measurements, lessons), **TEST** (a lesson awaiting approval or a second confirmation), **EXCEPTION (closed)**, **PROPOSAL (not adopted)**.
 
+## Rule revisions (user, 2026-11-13)
+
+User's words (Nov 13): "from now on as we already made the full video so while scripting only will choose way to incorporate our character we have created so that it will be clear instead of adding some other lines for it after developing the complete script and redoing everything it will be clear before the voice generation"; "Everything is changeable as per our convenience are primary goal is to make audience curious about the content we are making and get more views … keeping our channel essence … don't think the character cannot move". Scope: channel-wide.
+
+### WF-01 step 3 (earlier version) · SUPERSEDED by WF-01 step 3 v2 (2026-11-13)
+- Reason: audiovisual scripting. The host, characters and on-screen plan are written with the story, before voice.
+- References updated: ST-07 (v2), templates/production_brief.md.
+- Old text:
+
+```text
+  3. Write the full English and Telugu scripts (→ ST-07) in the production brief, with sources, a visual beat under each line and the estimated credits.
+```
+
+### DIR-09 (earlier version) · SUPERSEDED by DIR-09 v2 (2026-11-13)
+- Reason: host-led editorial added to the toolkit as a tested, optional treatment (pilot approved Nov 13). Method: methods/host_led.md.
+- Old text:
+
+```text
+- **[DIR-09]** (C, user Nov 1 and approved videos) **Toolkit**, used where it fits:
+  - named people as moving avatars against a threshold line;
+  - an OLD vs NEW or before/after scoreboard;
+  - evidence flashes: one sentence highlighted, the rest dimmed, about 1.5 s, corrections ≤ 5 s;
+  - staged calculations;
+  - 1/N progress chips;
+  - a chain strip for "why" stories;
+  - place cards and big numbers;
+  - an evidence board with real clippings;
+  - single-object loops.
+```
+
 ## Final rule decisions (user, 2026-11-10)
 
 Inherited-rule revisions, the P/C scope safeguards and disclosure v3. Each old version is verbatim. Scope: channel-wide.
@@ -747,6 +777,8 @@ Channel: "Why?" (YouTube @WhyEveryQuestionHasaStory, Instagram @whyeveryquestion
 - [GS6 · EVIDENCE] **Golden Sparrow 6/6 "The company that came to trade" (season finale, Nov 11): EN 2:51.9 / TE 2:52.6, approved ("perfect").** Strong: one season line (1608 ASKED → 1613 APPROVED → 1686 WAR LOST → 1717 FARMAN → 1740s WARS → 1757 PLASSEY → 1765 TAXES) through every scene, completed at the end; Plassey as counted dots (1 dot ≈ 500 men, National Army Museum figures) with Mir Jafar's cavalry leaving a visible gap; the payoff as a top-to-bottom chain (imported silver bullion → Indian cloth → Bengal's fields rising as revenue after 1765). Holding back: two composition rounds (the 60–70 % working area was rejected → LAY-01 v2, LAY-02 v3); four windows re-rendered after QC (sepoys over the caption line, two Telugu holds, label-edge and overlap defects). Credits 257.
 - [GS6 · EVIDENCE] Golden Sparrow Season 1 complete (Nov 11): film + six Shorts approved.
 
+- [HOST · EVIDENCE] **Host-led editorial pilot (Nov 13): Delhi Rain Solapur beat, 9:16, EN 18.7 s / TE 20.87 s, approved as a successful pilot.** User/ChatGPT review: concept 8.5, v2 visuals 8.5 (v1 7.8 → v2 polish). Built from three approved voice_lib clips per language, 0 credits. Strong: the host on camera at the turn (brow raise on the question, amber strike-through on the answer, a point that motivates the cut to the evidence); an original evidence card with a labelled baseline and the +18% drawn on the spoken number; the WHY? question reveal. v1 defects fixed in v2: the Telugu chart was half-built for about 6 s (both bars now rise together, the difference is drawn on "18"); evidence text too small; the value read as cloud counts (now RAINFALL INDEX · UNSEEDED = 100); the chart was static between chips (now a restrained push-in); empty lower frame. Holding back: prototype mouth shapes, one gesture, a soft-focus background (the plate is shorter than 9:16), mixed Telugu labels.
+
 ## TEST (lessons awaiting approval)
 
 - [GS5 · TEST] Evidence exhibits: one primary document at a time with clean cuts; a large key term (≈90 px) first, then the document, then a small source line (≥24 px); a manuscript shown alone and labelled before any translated quote, never a translation over the manuscript; web clippings captured narrow (≈430 CSS px at 2.4×) and cropped on whole lines; a stand-in object labelled "illustrative example, not the excavated original".
@@ -755,5 +787,7 @@ Channel: "Why?" (YouTube @WhyEveryQuestionHasaStory, Instagram @whyeveryquestion
 - [GS6 · TEST] An archive picture that can't fill the frame sharply sits on a heavily blurred, darkened copy of itself (texture only), or uses a native-pixel crop that fills the full height (Hayman 2400×1870 at 1.0; Jahangir darbar 2327×3286).
 - [GS6 · TEST] Telugu fonts have no ≈ or → glyphs: spell out దాదాపు or use a dash. Telugu small labels run about 1.2× the English pixel size; kickers ≥ 30 px and secondary labels ≥ 26 px read at phone size.
 - [GS6 · TEST] Late defects: re-render only the affected windows between keyframes and splice frame-exactly by stream copy (`videos/2026-11-14_short_gs6_company_came_to_trade/pipeline/patch.py`), then re-run every QC check.
+- [HOST · TEST] Comparison charts: show the full comparison as the card lands, then draw the difference on the spoken number; never leave a half-built chart on screen while the voice catches up (Telugu word order puts numbers late).
+- [HOST · TEST] Label what a chart's numbers are (index, baseline) from the card's first frame; keep secondary labels to two lines; the citation goes under the captions with the DOI as secondary text.
 - New lessons from each delivery are added here (→ WF-05, AN-02).
 
