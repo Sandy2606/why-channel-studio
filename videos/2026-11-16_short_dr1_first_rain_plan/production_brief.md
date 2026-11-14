@@ -29,6 +29,15 @@
   - The same report calls 1957 the first trial, and the 2025 trial was meant to ease winter air pollution.
 - **C1 / C2 / C3**: the 2025 trial, its pollution purpose, and the Oct 28 result (reused film lines 0.7–0.9).
 
+### Source register for this Short (rows from the film brief, C17 updated after the full read)
+| ID | Claim | Source | Date checked | Wording note |
+|---|---|---|---|---|
+| C1 | Five trials approved, ₹3.21 crore outlay, IIT Kanpur, May 2025 | News on AIR, May 8, 2025: https://www.newsonair.gov.in/delhi-govt-approves-5-cloud-seeding-trials-at-₹3-21-crore-outlay-to-combat-air-pollution | 2026-11-11 | "set aside / sanctioned", not "spent" |
+| C2 | Oct 28, 2025: Cessna from Meerut; flares with silver iodide and salt compounds; Burari, Karol Bagh, Mayur Vihar | Business Standard, Oct 29, 2025: https://www.business-standard.com/india-news/second-cloud-seeding-trials-fail-in-delhi-here-s-why-it-didn-t-work-125102900187_1.html | 2026-11-11 | Show no flare count. Anu's family is ILLUSTRATIVE |
+| C3 | IMD: no rain in Delhi; Noida 0.1 mm, Greater Noida 0.2 mm (Delhi govt report) | Business Standard (as C2); Tribune, Oct 29, 2025: https://www.tribuneindia.com/news/delhi/no-rain-in-delhi-iit-kanpur-director-explains-why | 2026-11-11 | Attribute to IMD / Delhi govt report |
+| C14 | Winter 1971–72: ground silver-iodide generators at NPL; 11 seeded and 11 control days; preliminary tendency to more rain | PTI via The Week, Oct 28, 2025: https://www.theweek.in/wire-updates/national/2025/10/28/des72-dl-cloud-seeding-history.html (citing an IITM report) | 2026-11-11 | "a tendency", never "it worked" |
+| C17 | NPL monsoon trials 1957–59: ground salt-water spray; 18 units: 12 positive tendency, 2 negative, 4 inconclusive; no "fully dependable conclusion" | Roy, Ramana Murty, Srivastava, Khemani, *MAUSAM* 12(3), 1961, pp. 401–412: https://mausamjournal.imd.gov.in/index.php/MAUSAM/article/view/4212 | 2026-11-14 | Full paper read. "Tendencies, not proof"; CC BY-NC, page not reproduced |
+
 ## Runtime and credits (estimates, → FMT-01, CR-02)
 - New lines: EN ≈1,100 characters, TE ≈1,220. **≈2,330 credits** at ~1 credit per character. Reused: H1 (phrase), 0.7, 0.8, 0.9.
 - Runtime: EN ≈2:00, TE ≈2:15, both under 3:00.
