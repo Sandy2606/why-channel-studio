@@ -792,6 +792,8 @@ Channel: "Why?" (YouTube @WhyEveryQuestionHasaStory, Instagram @whyeveryquestion
 
 - [DR1 v2 · EVIDENCE] **Delhi Rain 1/6 v2 "cinematic evidence-driven" rebuild (Nov 14): EN 1:55.8 / TE 2:19.8 delivered for the user's final review; honest EN 8.8 / TE 8.6 before review.** User review of v1: the host filled about half the Short with long unchanging shots ("I felt like swiping away"). v2 keeps the voice, the human story and the research, and adds: explanatory overlays on the 1957 lawn; an original SOURCE card for Roy et al. 1961; the 1971–72 continuous animation (timeline → self-drawing generator → calendar → balance with uncertainty); S1b monsoon and G6 flares (new user art); a smoggy balcony with the parents where the goal is not shown as a result; the real Business Standard headline (wording checked) in our layout; a 68-year counter. Host appears where the story needs him. Optional treatment documented: `methods/cinematic_evidence.md`, DIR-09 toolkit item.
 
+- [DR1 v3 · EVIDENCE] **Delhi Rain 1/6 v3 (Nov 14), round 2 after the user's review of v2:** rewind from TODAY 2026 to 1957 replaces the zoom out of the board; the painting develops and opens with soft edges; subtitles move per chunk to free space; spacing fixed; India → Delhi-region map with Survey of India boundaries (DataMeet), an India inset and an India Gate landmark; small subscribe/follow reminders about every 30 s at the user's request (conflicts with FMT-04; rule change pending approval). Delivered for final review, not published.
+
 ## TEST (lessons awaiting approval)
 
 - [GS5 · TEST] Evidence exhibits: one primary document at a time with clean cuts; a large key term (≈90 px) first, then the document, then a small source line (≥24 px); a manuscript shown alone and labelled before any translated quote, never a translation over the manuscript; web clippings captured narrow (≈430 CSS px at 2.4×) and cropped on whole lines; a stand-in object labelled "illustrative example, not the excavated original".
@@ -812,5 +814,6 @@ Channel: "Why?" (YouTube @WhyEveryQuestionHasaStory, Instagram @whyeveryquestion
 - [DR1 v2 · TEST] Explain inside the picture: leader-line labels, diagram windows and flowing arrows on a painted plate carry a 12 s narration better than cuts or a host stand-up.
 - [DR1 v2 · TEST] Build Telugu beats in Telugu order (finding before source, "to compare" before the second group); check Telugu frames separately for empty dark space and enlarge the key objects.
 - [DR1 v2 · TEST] Clear the deferred text list at the start of every frame; a section that never flushed leaked its labels into later sections.
+- [DR1 v3 · TEST] Fill narration pauses with the next meaningful step (the 1957 painting starts developing in the pause after "1957") rather than holding a static card.
 - New lessons from each delivery are added here (→ WF-05, AN-02).
 

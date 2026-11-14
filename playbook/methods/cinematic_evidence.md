@@ -40,6 +40,9 @@
   - Chemistry is shown as it is (silver iodide as particles that ice can form on).
 - **Season and place:** Delhi winter is cool grey haze, not snow.
 - **Each language keyed to its own words.** Telugu word order can reverse beats: there the finding comes before the report, and "to compare" comes before the second eleven days. Build the same beats in each language's order and pace; never stretch or speed the voice to match English.
+- **Subtitles move with the picture** (user, Nov 14): no fixed subtitle line. Each subtitle chunk takes the first free position (lower, middle-low, low, then high) that overlaps no registered label or reserved key area such as faces, the board or key objects. Numbers in subtitles are amber and underlined.
+- **Time jumps:** start from TODAY and rewind fast through the years, slowing to stop exactly on the spoken year. Then the era's painting develops from sepia to colour and opens with soft edges into the full frame. Don't zoom a rectangle out of a board.
+- **Places:** show where a place is before the details, for example India, then the region (with an India inset), then the route. Use India's official boundary (Survey of India, via DataMeet) and credit the data. Give Delhi a landmark marker (India Gate silhouette, drawn).
 - **Freeze checks:** thin line drawings and small moving sprites can trigger `freezedetect` while genuinely moving. Look at the frames before calling something a hold, and record such cases as detector false positives.
 
 ## Building blocks used (reusable)

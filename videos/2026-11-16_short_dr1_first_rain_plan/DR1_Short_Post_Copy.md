@@ -43,6 +43,7 @@ SOURCES
 CREDITS
 - Illustrations: AI-generated for WHY? and labelled (the 1957 lawn is an ILLUSTRATIVE RECONSTRUCTION; the boy, his grandfather and Anu's family are ILLUSTRATIVE, not real people; the 2025 plane and the radar screen are illustrations). The presenter is an illustrated host.
 - The 18-trial chart, the flight map (schematic) and the board cards: WHY? graphics drawn from the sources above.
+- Map: India boundary as per the Survey of India, from DataMeet (india-composite, CC0); state boundaries by the DataMeet India community (CC BY 4.0): https://github.com/datameet/maps
 - Sound: "Passage of small propeller plane", Joseph Sardin, BigSoundBank no. 2478 (CC0); other effects from free-licence libraries. Music: original track generated for WHY?.
 
 #delhirain #cloudseeding #delhipollution #shorts #whyeveryquestionhasastory
@@ -82,6 +83,7 @@ SOURCES
 
 CREDITS
 - చిత్రాలు: WHY? కోసం AI తో రూపొందించినవి (ఉదాహరణ పాత్రలు, నిజమైన వ్యక్తులు కాదు). Charts, map, cards: WHY? graphics.
+- Map: Survey of India సరిహద్దు, DataMeet (CC0); రాష్ట్ర సరిహద్దులు DataMeet India community (CC BY 4.0): https://github.com/datameet/maps
 - Plane sound: Joseph Sardin, BigSoundBank no. 2478 (CC0). Music: original WHY? track. Sound effects: free-licence libraries.
 
 #ఢిల్లీవర్షం #cloudseeding #delhirain #shorts #WhyTelugu
