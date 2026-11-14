@@ -41,7 +41,7 @@ SOURCES
 - News on AIR, May 8, 2025 (trials approved to tackle air pollution): https://www.newsonair.gov.in/delhi-govt-approves-5-cloud-seeding-trials-at-₹3-21-crore-outlay-to-combat-air-pollution
 
 CREDITS
-- Illustrations: AI-generated for WHY? and labelled (the 1957 lawn is an ILLUSTRATIVE RECONSTRUCTION; the boy and his grandfather are ILLUSTRATIVE, not real people). The presenter is an illustrated host.
+- Illustrations: AI-generated for WHY? and labelled (the 1957 lawn is an ILLUSTRATIVE RECONSTRUCTION; the boy, his grandfather and Anu's family are ILLUSTRATIVE, not real people; the 2025 plane and the radar screen are illustrations). The presenter is an illustrated host.
 - The 18-trial chart, the flight map (schematic) and the board cards: WHY? graphics drawn from the sources above.
 - Sound: "Passage of small propeller plane", Joseph Sardin, BigSoundBank no. 2478 (CC0); other effects from free-licence libraries. Music: original track generated for WHY?.
 

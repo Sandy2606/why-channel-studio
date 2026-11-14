@@ -31,6 +31,7 @@
   - an evidence board with real clippings;
   - single-object loops.
   - **host-led editorial** (tested Nov 13, optional): the WHY? presenter on camera at the story's turns, original source-cited evidence cards, and the WHY? question reveal at the one central question. Method and tested components: `methods/host_led.md`.
+  - **cinematic evidence-driven storytelling** (approved Nov 14 as an optional capability, not a template): painterly human story, genuine evidence as original SOURCE cards, continuous explanatory animation and purposeful host appearances. Method and craft notes: `methods/cinematic_evidence.md`.
 - **[DIR-10]** (P, user Nov 4) Hold the camera steady during serious health information, and put a source chip on screen (e.g. US EPA · WHO).
 - **[DIR-11]** (C, v2 user Nov 10) **Long-film structure is series-specific.** Channel-wide, every film needs a coherent story, credible evidence, meaningful connections between chapters and a satisfying ending. The approved series or film plan sets the actual structure and visual treatments (for example progress bars, chapter cards, proof-card frequency, the end card). No single template is required.
 
