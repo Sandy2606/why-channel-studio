@@ -1,7 +1,7 @@
 # Production brief: DELHI RAIN · 1/6 "Delhi's first rain plan wasn't in 2025" · Short · script v2 (audiovisual, final polish)
 
 - Rules: main (Nov 14, 2026), including WF-01 step 3 v3 (audiovisual script) and methods/host_led.md.
-- Stage: creative direction approved Nov 14. **v2 = final polish for sign-off**; then voice (step 5). Resource list at the end. No voice, credits or render until the user signs off v2.
+- Stage: **script v2 approved for voice (Nov 14).** Voice generated and saved (step 5). Next: voice edit, scene sheet with timing, assets, previews where needed, render, QC.
 - Posts **Mon Nov 16** (fixed, → WF-04). Series plan and sources: `videos/2026-11-15_long_delhi_make_it_rain/production_brief.md` (reuse matrix, C1–C20).
 - Tag: EN `DELHI RAIN · 1/6` · TE `ఢిల్లీ వర్షం · 1/6` (→ BR-03).
 
@@ -162,58 +162,86 @@ TE on-screen text, for example:
 - Voice library checked (→ CR-03): no exact matches for the new lines; the reuse stays H1 (phrase), 0.7, 0.8, 0.9.
 - New characters: EN ≈1,100, TE ≈1,220 → **≈2,330 credits** (approved).
 
-## Resource list (WF-01 step 7; the full scene sheet with timing follows the voice)
+## Voice (WF-01 step 5, done Nov 14)
+- 24 new lines generated, one take each, eleven_v4: EN `Sandeep English`, TE `Sandeep Telugu`. Saved to `voice_lib/` with tag `delhirain_s1`.
+- **Credits used: 2,494** (EN 1,190 · TE 1,304), against the ≈2,330 estimate (+7%: about 1.08 credits per character).
+- Left until the reset on **Fri Nov 27, 8:26 pm CT: 15,755**.
+- ASR check (EN, small.en): every line matches the script.
+- **Hook clip confirmed:**
+  - EN line 1 = the first sentence of `voice_lib/en/ebf37a6813ad.mp3`, "Delhi sent a plane into the clouds to make it rain.";
+  - TE line 1 = the first sentence of `voice_lib/te/af439acb29b0.mp3`, "ఢిల్లీ వర్షం కోసం మేఘాల్లోకి ఒక విమానాన్ని పంపింది." (the approved host H1 take, Nov 12, `delhirain_host_H1`).
+  - Each is cut at its first sentence pause.
+- Reused unchanged: 0.7 `en/411307bd9678` · `te/d7a183980d6a`; 0.8 `en/b9ce9d2508c2` · `te/1d9a7cbaf720`; 0.9 `en/eb79830c0be7` · `te/a5eef3c236e9`.
 
-### A · From the Delhi Rain film chat (approved artwork, no likeness): please ask that chat to send or push these
-| ID | Asset | Used in |
+## Credit forecast: remaining five Shorts (2/6–6/6)
+Measured rate from 1/6: ≈2.2 credits per new English character (EN plus its Telugu). The film-line reuse stays as planned (→ CR-03).
+
+| Short | Matrix new EN chars | Lean (matrix lines only) | With host turns (≈+200 EN chars) |
+|---|---|---|---|
+| 2/6 Can smoke make rain? | ≈310 | ≈680 | ≈1,120 |
+| 3/6 The wrong sky | ≈340 | ≈750 | ≈1,190 |
+| 4/6 Rain tonight, smog by…? | ≈300 | ≈660 | ≈1,100 |
+| 5/6 Solapur did it | ≈450 | ≈990 | ≈1,430 |
+| 6/6 Delhi tries again | ≈300 (+100 if the status changes) | ≈660–880 | ≈1,100–1,320 |
+| **Total** | | **≈3,750–3,950** | **≈5,950–6,150** |
+
+- Reuse opportunities that lower these:
+  - 5/6 reuses all of the film's Solapur lines (5.2–5.10). Its host turn can reuse "So why can't Delhi just copy Solapur?" (`en/737199a396cd`) and the preview's evidence card.
+  - 2/6 reuses the whole Ch. 2 science chain.
+  - 6/6 reuses 6.2–7.7.
+  - The host lines should be short turns, not new narration.
+- **⚠ Critical blocker to flag early (→ WF-04):** after the Shorts, about **9,600–12,000 credits** remain before the Nov 27 reset. Next Sunday's film (Nov 22) and next week's Shorts both fall before that reset. The Delhi Rain film alone used 15,785. The next film can't be voiced at that size from the remaining balance. The decision is the user's:
+  - a shorter or reuse-heavy film;
+  - extra credits (paid: priced and asked first, → CR-01);
+  - another approach.
+  Release dates are not moved.
+
+## Resource audit and list (for every need: whether it exists, where, or how it's made)
+
+### Visual adjustments approved Nov 14
+- **The 1957 card shows from frame 1.** A yellowed corner peeks out under the 2025 card on the board, with a faint shadow and a slightly raised edge. During line 1, his eyes go to it (the existing EYES-R glance). The lift starts on the last word of line 1 ("rain"), so the discovery begins at about 1.5 s with no new dialogue.
+- **G1 resolution, corrected.** The camera pan must stay at native resolution in 9:16 (1080×1920 crop, ≥1 source pixel per output pixel, → LAY-05). So G1 is made **3:4 portrait at Gemini's full size (1792×2400 or larger; send the original file, not a screenshot)**. That allows about 700 px of horizontal and 480 px of vertical camera travel at native resolution. A 16:9 image (2576×1438) would be shorter than the frame and is not usable for this pan. The same 3:4 full-size rule applies to G2–G4.
+
+### 1 · Already exists: reuse
+| Need | Where |
+|---|---|
+| Host body, point pose, eye glance, close-up frames, mouth rig, studio plate with the blank board | Private host pack (this workspace only; never in the repo) |
+| Card lift (line 2) | **No new pose:** the existing point pose (BODY-03) reaches the board, and the card's corner is pinned to his fingertip and flips up in our compositor. H-LIFT is made only if this looks false in stills |
+| Lip-sync, keyword strike, evidence card, WHY? reveal, series slide, captions, badge | Tested code from the host-led pilot; `pipeline/style_v2`; `cta_card.py` |
+| A0 family master, B0 balcony master | Repo `videos/2026-11-15_long_delhi_make_it_rain/refs/` |
+| India map for line 11 (Meerut → Delhi flight line) | Official outline in the repo (MAP-1, `india_official.json`). The flight line and plane silhouette are drawn in code, as in the film |
+| Music | `music/the_quiet_meridian.mp3` |
+| SFX | Catalog: `paper_slide`, `pin_push`, `tick`, `stamp`, `machine_hum`, `marker`, `sub_knock`, `ui_click`/`mouse_click`, `bell_ring` (CTA) |
+| Voice | Done (above) |
+
+### 2 · Approved film artwork in the Delhi Rain chat's workspace: needs sending (no likeness)
+| ID | What | Used for |
 |---|---|---|
-| A0 | Family master reference (Anu, Mum, Dad) | style and consistency for the grandfather |
-| B0 | Balcony master plate (grille, tulsi, gauge cup, the block across the road) | lines 5, 12, 13 |
-| R1 / P3 | Paper boat and sill crops | lines 5, 13 |
-| Anu cutouts | Anu at the rail looking up (back view or profile) | line 12 |
-| Plane/flare shots | The film's 0.7 plane-and-flare scene (frames or its source art) | line 11 |
-| Sky plates | The flat grey Delhi sky used under 0.8–0.9 | lines 12–13 |
+| A3 | Anu hopeful | lines 5, 12 |
+| A7 | Mum and Dad from behind | line 12 ("Anu's family watches the sky") |
+| P2 | Reverse view from the balcony (sky) | lines 12–13 |
+| P3 | Sill close-up | line 13 |
+| R1 | Paper boat | lines 5, 13 |
+| Plane sound | BigSoundBank #2478 (CC0), the film's propeller pass | line 11 |
+| Map render code (optional) | The film's map scene script, for an exact visual match on line 11 | line 11 |
 
-### B · New pictures: free Gemini prompts on your phone (attach A0 for style; one image each)
-**G1 · 1957 NPL lawn (16:9, ≥2400 px wide, so the 9:16 pan stays sharp):**
-> Painterly documentary illustration in the same style as the attached reference. July 1957, the lawn of a government science laboratory in New Delhi: a low cream-coloured colonial-era building behind, two 1950s scientists in white half-sleeve shirts and trousers standing beside two small ground-level spray machines on the grass, a fine white mist rising upward into a sky of building monsoon cumulus clouds, warm midday light. Leave clear empty space on the right third of the frame (a person will be added there later). No text, no logos, no modern objects.
+### 3 · New, made by you in Gemini (free; 3:4 portrait, full size; attach A0 for style)
+| ID | Prompt |
+|---|---|
+| **G1** · 1957 NPL lawn | *Painterly documentary illustration in the same style as the attached reference, portrait 3:4. July 1957, the lawn of a government science laboratory in New Delhi: a low cream colonial-era building in the background, two 1950s Indian scientists in white half-sleeve shirts and trousers beside two small ground-level spray machines on the grass, a fine white mist rising upward into tall building monsoon cumulus clouds, warm midday light. Keep the lower-right quarter as open lawn with no people (a person will be added there). No text, no logos, no modern objects.* |
+| **G2** · The boy, 1957 | *Same painterly style, portrait 3:4. 1957 Delhi: a ten-year-old Indian boy in a simple cotton half-shirt and shorts sits on a flat rooftop parapet, chin resting on his hands, watching a thin white mist rise into monsoon clouds in the distance; old Delhi rooftops around him. Three-quarter view, face in the upper half of the frame, soft warm light. No text.* |
+| **G3** · The grandfather, today | *Same painterly style, portrait 3:4, the same person as the boy in the previous image, now about 79 years old: grey hair, kind lined face, the same eyes, a simple cardigan over a cotton shirt. Exactly the same pose, framing and three-quarter angle as the boy (chin resting on his hands), on a modern Delhi apartment balcony in winter under a flat grey sky. No text.* (Make it in the same chat as G2 so the face carries over.) |
+| **G4** · Grandfather and Anu | *Same style, portrait 3:4; use the attached balcony (B0) and family (A0) references. The grandfather from the previous image stands beside nine-year-old Anu at the balcony grille, both looking up at the flat grey sky; he has a small, knowing half-smile, she looks hopeful, holding her paper boat. Back three-quarter view.* (Same chat as G3.) |
 
-**G2 · The boy, 1957 (9:16, ≥1080×1920):**
-> Same painterly style. 1957 Delhi: a ten-year-old Indian boy in a simple cotton half-shirt and shorts sits on a flat rooftop parapet, chin resting on his hands, watching a thin white mist rise into the monsoon clouds far away; old Delhi rooftops around him. Three-quarter view of his face, clear eyes, soft warm light. No text.
+Checks on arrival: likeness and consistency with A0 (you), sharpness at native size (QC-06), labels (ILLUSTRATIVE / ILLUSTRATIVE RECONSTRUCTION), and AI disclosure assessed per upload (→ PUB-05).
 
-**G3 · The grandfather, today (9:16; same framing as G2 for the match cut):**
-> Same painterly style and the same person as the boy in the previous image, now about 79 years old: grey hair, kind lined face, the same eyes, simple cardigan over a cotton shirt. Three-quarter view of his face in exactly the same pose and framing as the boy (chin resting on his hands), on a modern Delhi apartment balcony in winter with a flat grey sky. No text.
+### 4 · Drawn in our code (nothing to provide)
+- Board cards: OCT 28, 2025 with the 1957 corner showing, 1957 (yellowed), and 1971–72 with 11+11 day squares.
+- The 18-dot evidence card (12 POSITIVE TENDENCY · 2 NEGATIVE · 4 INCONCLUSIVE · TENDENCIES, NOT PROOF, with citation).
+- The verdict label, the 0.1/0.2 mm gauge chips, the smog greying the studio window, the 1957 mist particles over G1.
+- The WHY? reveal (kicker 1957 → 2025), the series slide 1/6 → 2/6, captions and tags in EN and TE.
 
-**G4 · Grandfather and Anu at the rail (16:9; matches B0):**
-> Same style; use the attached balcony (B0) and family (A0) references. The grandfather from the previous image stands beside nine-year-old Anu at the balcony grille, both looking up at the flat grey sky; he has a small, knowing half-smile, she looks hopeful, holding her paper boat. Back three-quarter view. No text.
-
-Rules: the likeness is checked by you; images are labelled ILLUSTRATIVE (G1: ILLUSTRATIVE RECONSTRUCTION); AI disclosure is assessed per upload (→ PUB-05).
-
-### C · Host (private assets; likeness check by you)
-| ID | Need | How |
-|---|---|---|
-| H-LIFT | Reach-and-lift: his right hand lifting a card off the board at shoulder height | One Gemini edit of `BODY-01b` from the private pack ("same person, same clothes and framing; right arm raised to shoulder height, fingers lifting the corner of a paper card pinned to a board on his right"). Neutral face, so the mouth rig still applies |
-| Studio plate, existing poses | Point, open palm, close-up frames | Already in the private pack |
-| 1957 scene | The host composited into G1, revealed by the pan | Existing body pose, graded to the scene |
-
-### D · Drawn in our code (no assets needed)
-The studio board cards (OCT 28, 2025 · 1957 · 1971–72 with 11+11 day squares), the 18-dot evidence card, the verdict label, the WHY? reveal (kicker 1957 → 2025), the series slide (→ FMT-06), captions and tags.
-
-### E · Music and sound (already in the studio library; nothing new needed)
-- Music: `the_quiet_meridian.mp3` (the film's cold-open cue), low and calm under the voice (→ MU-02).
-- SFX:
-  - `paper_slide.wav`: the card lift;
-  - `pin_push.wav`: the 1971 card;
-  - `tick.wav`: the dot groups;
-  - `stamp.wav` (soft): the verdict;
-  - `machine_hum.wav` (low): the 1957 sprayers;
-  - `marker.wav`: the WHY? "?";
-  - `sub_knock.wav`: the dot lands;
-  - `mouse_click.wav` / `ui_click.wav`: the Subscribe/Follow button.
-- No whooshes or hiss.
-
-### F · Order to make Monday
-1. **Sat:** you sign off v2. I generate both voices (≈2,330 credits) and edit them.
-2. **Sat:** you make G1–G4 and H-LIFT; the film chat sends section A.
-3. **Sun:** the scene sheet with timing, stills of the new looks, then the EN/TE × YT/IG render, QC, cover and post copy.
-4. **Mon Nov 16:** post at your scheduled time.
+### 5 · Considered and not used
+- Archive photos of 1950s NPL or real sprayers: none found under a licence we can use. G1 is labelled ILLUSTRATIVE RECONSTRUCTION instead.
+- The MAUSAM 1961 paper's pages: CC BY-NC, so they're cited on the card, not reproduced.
+- A host walk animation: not needed (camera-pan reveal approved).
