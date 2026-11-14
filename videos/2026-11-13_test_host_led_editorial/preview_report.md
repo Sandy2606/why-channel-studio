@@ -45,3 +45,25 @@ Both are 9:16, 1080×1920, 30 fps.
 2. A second framing (MCU) for questions.
 3. Evidence card: a third beat in the static stretch, or a shorter card. Telugu condition line on two larger lines.
 4. A native 9:16 studio plate (≥1920 px tall), so the background can be sharp when wanted.
+
+---
+
+# Polish pass v2 (Nov 13, 2026, after the user's review)
+The concept was approved in principle (user: 8.5/10 concept, 7.8/10 execution). One focused polish pass was requested: Telugu chart timing, phone readability, frame composition. Host, voice, WHY? reveal and Telugu length are unchanged.
+
+| Request | Change |
+|---|---|
+| Telugu chart timing | Both bars now rise together as the card lands, so the 100 vs 118 comparison is complete in about 1.5 s in both languages. On the spoken "18", a dashed reference at the unseeded level and an amber **+18%** bracket draw the difference, and the headline lands. |
+| Phone readability | The numbers are labelled **RAINFALL INDEX · UNSEEDED CLOUDS = 100** (TE: వర్షపాత సూచిక · సీడ్ చేయని మేఘాలు = 100). The values read 100 and 118, with no "%", so they can't be read as cloud counts. The conditions are on two larger lines (36/34 px; TE 38). Chips are 38–40 px. The citation moved below the captions, still inside the safe zone, with the DOI kept as secondary text. |
+| Composition | A larger chart that fills y≈410–1180. One restrained push-in across the card (still a downscale), so no stretch freezes. The WHY? lockup is larger and centred in the safe area. |
+
+Automated QC (v2): PASS on dimensions, duration (EN 18.7 s, TE 20.87 s), black frames, **freezes (now none in either language)**, −14.3 LUFS, −1.5 dBTP, dropouts, decode and frame 1. EN sharpness at 0 s stays REVIEW: the intentional soft-focus studio background. Visual QC (QC-01) is a human review.
+
+Honest score, v2 execution: **8.2 / 10**.
+
+Still open:
+- prototype mouth shapes;
+- one gesture;
+- the soft background (no native 9:16 plate);
+- the Telugu headline arrives late by design, because it follows the spoken "18";
+- the lower ~350 px under the citation is the platform overlay zone.
