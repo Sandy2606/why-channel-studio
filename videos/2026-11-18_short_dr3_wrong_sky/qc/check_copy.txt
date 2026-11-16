@@ -1,0 +1,28 @@
+## check_copy: DR3_Short_Post_Copy.md
+
+**Overall: INCOMPLETE**
+
+Coverage: sections: 4
+
+| Check | Rule | Status | Detail |
+|---|---|---|---|
+| English YT title length | PLT-05 | PASS | 66 characters (limit 100) |
+| English YT tags length | PLT-04 | PASS | 234 characters (limit 500; a ceiling, not a target) |
+| English YT description has sources and credits | PUB-01 | PASS | present |
+| English YT brand hashtag | PUB-03 | PASS | #whyeveryquestionhasastory present |
+| Telugu YT title length | PLT-05 | PASS | 75 characters (limit 100) |
+| Telugu YT tags length | PLT-04 | PASS | 151 characters (limit 500; a ceiling, not a target) |
+| Telugu YT description has sources and credits | PUB-01 | PASS | present |
+| Telugu YT brand hashtag | PUB-03 | PASS | #whytelugu present |
+| English IG caption length | PLT-03 | PASS | 1002 characters (1007 UTF-16 units; limit 2200) |
+| English IG hashtags | PLT-02 | PASS | 5 (limit 5) |
+| English IG brand hashtag | PUB-03 | PASS | #whyeveryquestionhasastory present |
+| Telugu IG caption length | PLT-03 | PASS | 861 characters (866 UTF-16 units; limit 2200) |
+| Telugu IG hashtags | PLT-02 | PASS | 5 (limit 5) |
+| Telugu IG brand hashtag | PUB-03 | PASS | #whytelugu present |
+| disclosure decision recorded | PUB-05 | PASS | Altered or synthetic content: No** (PUB-05; same judgement as 1/6 and 2/6). Narration is your own voice clone. Every picture is a labelled painted illustration  |
+| central limits are current | PLT-01..05 | PASS | read from platform_rules.md (checked 2026-11-10) |
+| limits with only secondary sources | PLT-03..05 | REVIEW | ig_caption_max_chars (PLT-03), yt_title_max_chars (PLT-05), yt_tags_max_chars (PLT-04): no official page found; treat as provisional |
+| platform limits re-checked for this upload | PUB-02 | PASS | limits re-checked 2026-11-16 (0 days ago) |
+| claims match the video; tone; Telugu naturalness | PUB-07 | NOT PERFORMED | human review |
+
