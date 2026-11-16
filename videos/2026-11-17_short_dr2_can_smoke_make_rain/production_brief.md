@@ -1,4 +1,4 @@
-# DELHI RAIN 2/6 · "Can smoke make rain?" · Short (EN + TE, YT + IG) · production brief v2 · SCRIPT v2 APPROVED (Nov 16) · voice done · scene sheet final · preview sent
+# DELHI RAIN 2/6 · "Can smoke make rain?" · Short (EN + TE, YT + IG) · production brief v2 · SCRIPT v2 APPROVED (Nov 16) · voice done · scene sheet final · preview approved · RENDERED + QC (Nov 16) · awaiting final viewing approval
 
 - **Posts Tue Nov 17** (series plan, fixed, → WF-04). Rules SHA `58aaf2c`.
 - **Series plan and sources:** `videos/2026-11-15_long_delhi_make_it_rain/production_brief.md` (reuse matrix row 2/6; C7, C9, C15, C19, C20).
