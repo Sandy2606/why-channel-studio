@@ -1,4 +1,4 @@
-# DELHI RAIN 4/6 · "Rain tonight, smog by…?" · Short (EN + TE, YT + IG) · production brief v1 · SCRIPT v1 FOR APPROVAL (Nov 18)
+# DELHI RAIN 4/6 · "Rain tonight, smog by…?" · Short (EN + TE, YT + IG) · production brief v2 · SCRIPT APPROVED with three adjustments (Nov 18) · voiced · RENDERED + QC · awaiting final viewing approval
 
 - Posts **Thu Nov 19** (fixed, → WF-04). Series plan and sources: `videos/2026-11-15_long_delhi_make_it_rain/production_brief.md` (C1–C20).
 - Rules: main `55a58f1`.
@@ -101,3 +101,12 @@ And it all starts with one question…
 | Cross-sections, day strip, source icons, calendar, source cards, Solapur pin | Drawn in code |
 | Host | One turn on line 9 (proposed) |
 | Music and SFX | Film bed; catalog SFX (rain_light_loop, wind, ticks); reminder click |
+
+## Approval and adjustments (Nov 18, user review with ChatGPT)
+- Creative direction approved, including the gases-vs-particles comparison (the user confirms the report supports ~2–3 d NOx/SO₂ and ~4–5 d PM, with weather-dependent variability).
+- **Line 11 (film 4.7):** cut at the pause before "all winter" (EN 7.66 s, TE 9.56 s).
+- **Line 5:** labelled HYPOTHETICAL; Anu's reaction kept with a new consistent illustration (A4 not accessible).
+- **Line 13:** IIT Kanpur's drop shown with the objections and NOT SHOWN THAT SEEDING CAUSED ANY DROP.
+- **Line 14/15:** Solapur shown as rainfall enhancement, not proof of cleaner air. The new tease line is "Next: Solapur… where seeding added rain." / "తర్వాతి భాగంలో: seeding తో వర్షం పెరిగిన చోటు… సోలాపూర్."
+- **Voice:** 4 lines per language, 635 credits, tag `delhirain_s4`.
+- **Length:** EN 1:55.0, TE 2:14.6.
