@@ -1,4 +1,4 @@
-# DELHI RAIN 5/6 · "Solapur did it. Why can't Delhi?" · Short (EN + TE, YT + IG) · production brief v1 · SCRIPT v1 FOR APPROVAL (Nov 19)
+# DELHI RAIN 5/6 · "Solapur did it. Why can't Delhi?" · Short (EN + TE, YT + IG) · production brief v2 · RENDERED, AWAITING FINAL VIEWING APPROVAL (Nov 19)
 
 - Posts **Fri Nov 20** (fixed, → WF-04). Series plan and sources: `videos/2026-11-15_long_delhi_make_it_rain/production_brief.md` (C1–C20).
 - Rules: main `006bc62`.
@@ -99,3 +99,15 @@ It all started with one experiment…
 | Western Ghats cross-section, India map with Solapur / undivided AP / Delhi pins, coin-toss clouds, rain gauges, programme vs test columns, mountain snow clouds, source and quote cards | Drawn in code (the India outline comes from 1/6's map data) |
 | Host | One turn on line 9 (5.7) |
 | Music and SFX | Film bed; catalog SFX (rain, wind, paper, ticks, coin-like tick); reminder click |
+
+## v2: corrections applied (user review, Nov 19)
+1. ≈18% shown as a relative RAINFALL INDEX: not seeded = 100, seeded ≈118 (relative estimate · radar analysis), with suitable monsoon clouds, 100 km² downwind, 2 hours after seeding. 150 seeded / 122 unseeded labelled RADAR-ANALYSIS SAMPLES.
+2. Film line 5.10 dropped. New **line 13**:
+   - EN: "The WMO says the clearest evidence is for seeding cold mountain clouds in winter. Results depend on the kind of cloud. What worked in Solapur can't simply be copied to Delhi."
+   - TE: "WMO ప్రకారం, బలమైన ఆధారం చలికాలంలో కొండల మీది చల్లని మేఘాలను seed చేయడానికే ఉంది. ఫలితాలు మేఘం రకాన్ని బట్టి మారతాయి. సోలాపూర్‌లో పని చేసినదాన్ని ఢిల్లీలో అలాగే copy చేయలేం."
+3. Neutral twin-turboprop labelled ILLUSTRATIVE AIRCRAFT. Undivided Andhra Pradesh drawn as today's AP + Telangana (DataMeet), 2003–08, then PROGRAMME vs RANDOMISED TEST.
+
+## Actuals
+- New voice: lines 1, 7, 8, 11, 13, 14, 15 per language; **1,293 credits**. Line 12 = film 5.9 from "None of that." Host turn on line 9 (film 5.7).
+- Length: **EN 1:43 (102.8 s), TE 2:04 (124.5 s)**.
+- QC: 0 FAIL on all four files (see QC_report.md). Status: sent for final viewing approval; not published.
