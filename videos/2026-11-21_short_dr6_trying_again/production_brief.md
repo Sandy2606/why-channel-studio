@@ -1,4 +1,4 @@
-# DELHI RAIN 6/6 · "Delhi is trying again. Has anything changed?" · Short (EN + TE, YT + IG) · production brief v2 · SCRIPT v2 APPROVED FOR VOICE AND PRODUCTION (Nov 20)
+# DELHI RAIN 6/6 · "Delhi is trying again. Has anything changed?" · Short (EN + TE, YT + IG) · production brief v2 · RENDERED, AWAITING FINAL VIEWING APPROVAL (Nov 20)
 
 - Posts **Sat Nov 21** (fixed, → WF-04). Last Short of the series (→ FMT-07: answers the series question, then Option A as a separate curiosity bridge; no next season is promised). Series plan and sources: `videos/2026-11-15_long_delhi_make_it_rain/production_brief.md` (C1–C22).
 - Rules: main `8cf355f`.
@@ -137,3 +137,8 @@ So if Delhi's clean air has to come from the ground… ⏸ what's really filling
 | P2 balcony, P3 sill, A3 Anu, G4 (slide card), host pack | Have (local) |
 | Delhi-NCR map (DataMeet), flight track, western-disturbance band, AQI strip, report cards, cost cards, quote card, nudge/make, winter calendar, verdict arrows, answer card | Drawn in code |
 | Music and SFX | Film bed; catalog SFX (plane pass, wind, light rain, paper, ticks, marker); reminder click |
+
+## Actuals
+- New voice: lines 1, 2, 3, 4, 7, 13, 16 per language; **1,786 credits** (balance about 9,670). Film 7.2 trimmed to its first and last phrases at delivered pauses.
+- Length: **EN 2:01 (121.1 s), TE 2:25 (144.9 s)**.
+- QC: 0 FAIL on all four files (see QC_report.md). Status: sent for final viewing approval; not published.
